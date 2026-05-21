@@ -1,330 +1,287 @@
 # HG-AI-Infra-SKILLS
 
-`HG-AI-Infra-SKILLS` 是一套面向 LLM Serving、性能分析、SGLang 优化和模型优化历史检索的 Codex Skills 工程。它把常用的 AI Infra 工作流拆成可复用的 skill：benchmark、torch profiler trace 分析、模型架构图查询、SGLang 线上故障排查、SGLang SOTA 优化闭环，以及本地/社区优化历史知识库。
+`HG-AI-Infra-SKILLS` 是一套面向 LLM Serving、性能分析、线上故障排查、模型优化历史检索和 DCU/ROCm kernel 经验沉淀的 Codex Skills 仓库。它把常见的 AI Infra 工作流拆成可复用的 skill、知识库和辅助脚本，方便你在同一个仓库里完成 benchmark、profiling、PR 分析、历史查询和优化闭环。
 
-本工程适合下面这些场景：
+这个仓库适合下面几类工作：
 
-- 对比 SGLang、vLLM、TensorRT-LLM 在同一模型和 workload 下的部署性能。
-- 分析 torch profiler trace，拆分 prefill/decode 阶段，定位 kernel、overlap、fusion 和空泡问题。
-- 查询模型架构图、模型相关 PR 历史、本地 fork 提交历史。
-- 排查 SGLang 线上服务健康、延迟、吞吐、crash、hang、PD/EP/HiCache 问题。
-- 围绕一个模型持续优化，直到追平或超过同环境下的。
+- 比较 SGLang、vLLM、TensorRT-LLM 在同一模型、同一 workload 下的部署效果
+- 分析 `torch.profiler` trace，定位 kernel、overlap、fusion 和 bubble 问题
+- 查询模型架构图、社区 PR 优化历史、本地提交历史
+- 排查 SGLang 线上服务异常
+- 围绕一个模型持续做 SGLang SOTA 优化闭环
+- 为 LightOp / DCU / ROCm 场景查找 kernel 证据、profiling 证据和下一步优化方向
 
-## 目录结构
+## 仓库内容
+
+仓库大体分成三类内容：
+
+1. **直接可用的 skills**：可以作为对话指令使用，比如 `$llm-torch-profiler-analysis`。
+2. **知识库型内容**：如 `model-pr-optimization-history`、`model-pr-optimization-hg-history`，用于为优化判断提供历史证据。
+3. **辅助脚本与测试**：用于生成、校验、查询和回归测试这些 skills。
+
+## Skills 总览
+
+### 1. `llm-serving-auto-benchmark`
+
+作用：跨框架 LLM Serving benchmark。适合比较 SGLang、vLLM、TensorRT-LLM 或其他 serving 框架在同一模型、同一 workload、同一 GPU 预算下的表现。
+
+典型能力：
+
+- 基于 cookbook 或本地配置生成候选启动命令
+- 校验框架 CLI 参数是否真实存在
+- 汇总 benchmark 结果并输出对比表
+- 保留失败/跳过候选，便于复盘
+
+推荐提示词：
 
 ```text
-HG-AI-Infra-SKILLS/
-  README.md
-  skills/
-    llm-serving-auto-benchmark/
-    llm-torch-profiler-analysis/
-    model-architecture-diagram/
-    model-optimization/
-      model-pr-diff-dossier/
-    sglang-prod-incident-triage/
-    sglang-sota-humanize-loop/
-  model-pr-optimization-history/
-  model-pr-optimization-hg-history/
-  tools/
-  tests/
+$llm-serving-auto-benchmark
+工作目录是：<路径> 工作容器是：<容器名>
+请针对模型 <模型名>，在 <GPU型号/数量> 和 <SLA> 约束下，对比 SGLang、vLLM 的最佳部署参数。
+请先确认可用 cookbook / 启动命令，再设计候选搜索空间，最后输出可执行的 benchmark 方案和结果汇总格式。
 ```
 
-## Skills 一览
+### 2. `llm-torch-profiler-analysis`
 
-### `llm-serving-auto-benchmark`
+作用：统一分析 LLM Serving 的 `torch.profiler` trace，支持 SGLang、vLLM
 
-路径：`skills/llm-serving-auto-benchmark/`
+典型能力：
 
-功能：跨框架 LLM Serving benchmark。用于在相同模型、相同 workload、相同 GPU 预算和相同 SLA 下比较 SGLang、vLLM、TensorRT-LLM 等框架。
+- 分析已有 `trace.json` / `trace.json.gz`
+- 对 live server 进行 profiling
+- 输出 kernel、overlap-opportunity、fuse-pattern、bubble-gap 分析
+- 必要时生成模型结构图并嵌入报告
 
-主要能力：
-
-- 根据 cookbook YAML 生成 SGLang/vLLM/TensorRT-LLM 启动候选。
-- 校验目标框架 CLI 参数是否存在。
-- 汇总 benchmark JSONL，输出 markdown/CSV 对比表。
-- 保留失败、跳过、SLA 不通过的候选，便于复盘。
-
-重要文件：
-
-- `SKILL.md`：skill 主说明。
-- `configs/cookbook-llm/`：模型 benchmark 配置，例如 `minimax-m2.5.yaml`、`qwen3-235b-a22b.yaml`、`deepseek-v3.2.yaml`。
-- `scripts/validate_cookbook_configs.py`：校验 cookbook 配置并渲染候选命令。
-- `scripts/compare_benchmark_results.py`：将 benchmark JSONL 转成结果表。
-- `references/result-schema.md`：benchmark 结果 JSONL 字段约定。
-- `references/framework-reference.md`：框架参数和注意事项。
-
-常用命令：
-
-```bash
-cd HG-AI-Infra-SKILLS
-
-python3 skills/llm-serving-auto-benchmark/scripts/validate_cookbook_configs.py \
-  skills/llm-serving-auto-benchmark/configs/cookbook-llm
-
-python3 skills/llm-serving-auto-benchmark/scripts/compare_benchmark_results.py \
-  --input /path/to/results.jsonl \
-  --output /path/to/summary.md
-```
-
-### `llm-torch-profiler-analysis`
-
-路径：`skills/llm-torch-profiler-analysis/`
-
-功能：统一分析 LLM Serving 的 torch profiler trace。支持 SGLang、vLLM、TensorRT-LLM。
-
-主要能力：
-
-- 分析已有 `trace.json` 或 `trace.json.gz`。
-- 对 live server 进行 profiler capture。
-- 区分 prefill 和 decode 阶段。
-- 输出 kernel table、overlap-opportunity table、fuse-pattern table。
-- 输出 bubble-gap 分析，包括 `Global idle bubble` 和 `Per-stream gap`。
-- 分析前会参考本地提交历史和社区 PR 历史，寻找可借鉴优化思路。
-
-重要文件：
-
-- `SKILL.md`：英文主说明。
-- `skill_ch.md`：中文说明。
-- `scripts/analyze_llm_torch_profile.py`：统一 trace 分析入口。
-- `scripts/analyze_sglang_torch_profile.py`：兼容旧 SGLang 分析入口。
-- `scripts/render_triage_markdown_bundle.py`：将多份分析结果汇总成一个 markdown。
-- `scripts/probe_llm_server.py`：探测 OpenAI-compatible 服务。
-- `scripts/run_sglang_torch_profile_host.sh`、`run_vllm_torch_profile_host.sh`、`run_trtllm_pytorch_profile_host.sh`：host 侧 profile 示例脚本。
-- `references/fuse-overlap-catalog.md`、`overlap-catalog.md`、`heuristics.md`：融合、重叠、启发式分析知识。
-
-常用命令：
-
-```bash
-cd HG-AI-Infra-SKILLS
-
-python3 skills/llm-torch-profiler-analysis/scripts/analyze_llm_torch_profile.py \
-  --input /path/to/traces
-
-python3 skills/llm-torch-profiler-analysis/scripts/render_triage_markdown_bundle.py \
-  --analysis-root /path/to/analysis_root \
-  --output /path/to/bundle.md
-```
-
-如果宿主机默认 `python3` 过老，可使用系统已有的 Python 3.8/3.10：
-
-```bash
-/usr/bin/python3.8 skills/llm-torch-profiler-analysis/scripts/analyze_llm_torch_profile.py \
-  --input /path/to/traces
-```
-
-### `model-architecture-diagram`
-
-路径：`skills/model-architecture-diagram/`
-
-功能：查询公开原始模型架构图。支持 LLM、VLM、MoE、diffusion、OCR 等模型族。
-
-主要能力：
-
-- 根据模型名查询已索引的公开原始架构图。
-- 返回原始图片 Markdown 和来源。
-- 不复制远端图片，只保留公开原始 URL。
-
-重要文件：
-
-- `SKILL.md`：skill 主说明。
-- `scripts/model_architecture_diagram.py`：模型架构图查询脚本。
-- `references/diagram-index.json`：架构图索引。
-- `references/source-notes.md`：来源说明。
-
-常用命令：
-
-```bash
-cd HG-AI-Infra-SKILLS
-
-python3 skills/model-architecture-diagram/scripts/model_architecture_diagram.py "minimax-m2.5"
-python3 skills/model-architecture-diagram/scripts/model_architecture_diagram.py "GLM-5" --format json
-python3 skills/model-architecture-diagram/scripts/model_architecture_diagram.py --list-known
-```
-
-### `model-pr-diff-dossier`
-
-路径：`skills/model-optimization/model-pr-diff-dossier/`
-
-功能：创建或审查模型 PR 优化历史文档时使用的质量门禁 skill。
-
-主要能力：
-
-- 要求每个 PR 卡片必须基于真实 diff，而不是标题级总结。
-- 记录 PR 动机、实现要点、关键代码摘录、已读文件、验证风险。
-- 用于维护 `model-pr-optimization-history` 的文档质量。
-
-重要文件：
-
-- `SKILL.md`：逐 PR diff 审计要求。
-- `references/card-schema.md`：PR 卡片格式约定，如果存在则优先参考。
-
-### `sglang-prod-incident-triage`
-
-路径：`skills/sglang-prod-incident-triage/`
-
-功能：SGLang 线上故障排查。核心原则是 replay-first：先保存现场和可复现请求，再进入 profiler、trace、coredump 或分布式 debug。
-
-适用问题：
-
-- `/health` 或 `/health_generate` 异常。
-- 延迟、吞吐、TTFT、TPOT 回退。
-- queue 堆积。
-- 请求 timeout、hang。
-- CUDA crash 或 crash dump。
-- PD、EP、HiCache、分布式 stall。
-- 部署后输出错误。
-
-重要文件：
-
-- `SKILL.md`：故障排查主流程。
-- `scripts/incident_artifact_tool.py`：采集和汇总服务现场 bundle。
-- `scripts/replay_trusted_request_dump.py`：重放可信 request dump。
-- `references/decision-tree.md`：问题分类决策树。
-- `references/endpoints-and-signals.md`：SGLang endpoint 和监控信号说明。
-- `references/replay-trace-profile.md`：replay、trace、profile 流程。
-- `references/case-studies.md`：案例。
-
-常用命令：
-
-```bash
-cd HG-AI-Infra-SKILLS
-
-python3 skills/sglang-prod-incident-triage/scripts/incident_artifact_tool.py collect-bundle \
-  --base-url http://127.0.0.1:30000 \
-  --outdir /tmp/incident_bundle
-
-python3 skills/sglang-prod-incident-triage/scripts/incident_artifact_tool.py summarize-bundle \
-  /tmp/incident_bundle
-```
-
-### `sglang-sota-humanize-loop`
-
-路径：`skills/sglang-sota-humanize-loop/`
-
-功能：围绕一个模型执行 SGLang SOTA 性能优化闭环。该 skill 是顶层编排流程，会串联 benchmark、profiler、history 查询和代码 patch。
-
-流程概览：
-
-1. 使用 `llm-serving-auto-benchmark` 做公平跨框架 benchmark。
-2. 找出 SGLang 与 vLLM/TensorRT-LLM 的差距。
-3. 使用 `llm-torch-profiler-analysis` 分析 SGLang 和领先框架。
-4. 查询 `model-pr-optimization-history` 和 `model-pr-optimization-hg-history`。
-5. 生成 root-cause、patch 计划和 Humanize RLCR 迭代。
-6. 反复 benchmark/profile/patch，直到达到停止条件。
-
-重要文件：
-
-- `SKILL.md`：完整 SOTA loop 说明。
-- `references/refined-plan-template.md`：Humanize plan 模板。
-
-## 两个模型优化知识库
-
-### `model-pr-optimization-history`
-
-路径：`model-pr-optimization-history/`
-
-功能：开源社区 GitHub PR 历史知识库。用于查询 SGLang/vLLM 社区在各模型上的历史优化、fast path、fusion、overlap、MoE、attention、cache、sampler、loader 等改动。
-
-目录结构：
+推荐提示词：
 
 ```text
-model-pr-optimization-history/
-  SKILL.md
-  README.md
-  scripts/query.py
-  sglang/<model>/README.zh.md
-  sglang/<model>/README.en.md
-  vllm/<model>/README.zh.md
-  vllm/<model>/README.en.md
+$llm-torch-profiler-analysis
+工作目录是：<路径> 工作容器是：<容器名>
+请分析这个 trace 目录 / 文件：<trace 路径>。
+模型是 <模型名>，框架是 <SGLang/vLLM/TensorRT-LLM>。
+请输出一份完整的中文 triage 报告，包含 kernel、overlap、fuse-pattern、bubble-gap 和模型结构图。
+
+
+工作目录是：<路径> 工作容器是：<容器名>
+根据提供的起服务脚步指令，抓取输入4k输出1的trace并进行分析
+模型是 <模型名>，框架是 <SGLang/vLLM/TensorRT-LLM>。
+请输出一份完整的中文 triage 报告，包含 kernel、overlap、fuse-pattern、bubble-gap 和模型结构图。
 ```
 
-常用命令：
+### 3. `model-architecture-diagram`
 
-```bash
-cd HG-AI-Infra-SKILLS/model-pr-optimization-history
+作用：查询公开的原始模型架构图，适合 LLM、VLM、MoE、diffusion、OCR 等模型族。
 
-python3 scripts/query.py --list
-python3 scripts/query.py --framework sglang --model minimax --lang zh minimax moe
-python3 scripts/query.py --framework vllm "qwen3 fused qk norm" --limit 5
-```
+典型能力：
 
-### `model-pr-optimization-hg-history`
+- 返回公开原始图片链接
+- 附带来源说明
+- 找不到时明确返回 `no_match`
 
-路径：`model-pr-optimization-hg-history/`
-
-功能：本地 `sglang` 和 `vllm` 工作树提交历史知识库。它记录本地 fork 中模型相关和框架级优化提交，和开源社区 PR 历史互补。
-
-目录结构：
+推荐提示词：
 
 ```text
-model-pr-optimization-hg-history/
-  SKILL.md
-  README.md
-  scripts/query.py
-  sglang/<model>/README.zh.md
-  sglang/<model>/README.en.md
-  sglang/shared/README.zh.md
-  vllm/<model>/README.zh.md
-  vllm/<model>/README.en.md
-  vllm/shared/README.zh.md
+$model-architecture-diagram
+工作目录是：<路径> 工作容器是：<容器名>
+请帮我查询 <模型名> 的公开原始架构图，返回可直接引用的图片 Markdown 和来源说明。
+如果没有可用图，请明确告诉我没有匹配结果。
 ```
 
-常用命令：
+### 4. `model-compute-simulation`
+
+作用：做 operator 级的计算模拟，估算 FLOPs、tensor shape、MFU，并用于并行方式和算子路径的 what-if 分析。
+
+典型能力：
+
+- 展开模型的 operator 序列
+- 计算关键算子的 FLOPs / tensor shape
+- 根据延迟估算 MFU
+- 分析 TP / DP / batch / sequence 长度变化的影响
+
+推荐提示词：
+
+```text
+$model-compute-simulation
+工作目录是：<路径> 工作容器是：<容器名>
+请基于模型 <模型名> 和 serving shape <batch/seq/并行配置>，展开 operator 级计算模板，估算关键算子的 FLOPs、tensor shape 和 MFU。
+请同时给出不同并行策略或 batch 设定下的对比结论。
+```
+
+### 5. `sglang-prod-incident-triage`
+
+作用：SGLang 线上故障排查，采用 replay-first 的流程先还原问题，再决定用 profiler、trace、coredump 还是分布式调试工具。
+
+典型能力：
+
+- 处理 health check 异常
+- 排查延迟、吞吐、queue 堆积、timeout、hang
+- 分析 crash dump、输出错误、PD/EP/HiCache 问题
+- 采集现场 bundle 并回放请求
+
+推荐提示词：
+
+```text
+$sglang-prod-incident-triage
+工作目录是：<路径> 工作容器是：<容器名>
+请帮我排查 SGLang 线上问题。
+现象是 <错误现象>，服务地址是 <base url>，我手头有 <日志/请求样本/crash dump/trace>。
+请先给出现场采集、回放和下一步 debug 的顺序，不要一上来就做 profiling。
+```
+
+### 6. `sglang-sota-humanize-loop`
+
+作用：围绕一个模型自动跑 SGLang SOTA 优化闭环，先做公平 benchmark，再做 profiler 对比，再进入 patch 与 RLCR 迭代。
+
+典型能力：
+
+- 对比 SGLang / vLLM / TensorRT-LLM
+- 找出差距并定位根因
+- 结合历史知识库和 profiler 证据做 patch
+- 迭代到追平或超过最优结果
+
+推荐提示词：
+
+```text
+$sglang-sota-humanize-loop
+请针对模型 <模型名>，在 <目标环境> 下启动 SGLang SOTA 优化闭环。
+请先完成公平 benchmark，再分析领先框架的 profiler 证据，随后给出可执行 patch、验证计划和持续迭代策略。
+```
+
+### 7. `vllm-pr-summary`
+
+作用：分析 vLLM 的某个 GitHub PR，输出中文结构化总结、代码分析、技术原理、讨论亮点和风险评估。
+
+典型能力：
+
+- 拉取 PR 数据和 diff
+- 生成带 Mermaid 图的报告
+- 适合 review、学习和决策前阅读
+
+推荐提示词：
+
+```text
+$vllm-pr-summary
+请分析 vllm 的 PR #<PR号>，输出一份中文总结报告。
+要求覆盖背景、代码修改、技术原理、讨论亮点和风险分析，并给出最终结论。
+```
+
+### 8. `model-pr-optimization-history`
+
+作用：查询开源社区 PR 历史，专门为 SGLang / vLLM / TensorRT-LLM 的模型优化提供证据。
+
+典型能力：
+
+- 查找某个模型在社区里做过哪些优化
+- 对比 fast path、fusion、overlap、MoE、attention、cache、sampler 等方向
+- 为后续 patch 选择提供历史依据
+
+推荐提示词：
+
+```text
+$model-pr-history-knowledge
+请帮我查询开源社区里与 <框架> / <模型> / <优化方向> 相关的 PR 历史。
+重点告诉我之前做过哪些 fast path、fusion、overlap、cache 或 sampler 相关改动，以及它们对当前问题的启发。
+```
+
+### 9. `model-pr-optimization-hg-history`
+
+作用：查询本地 `sglang` / `vllm` 工作树中的提交历史，和开源社区 PR 历史互补。
+
+典型能力：
+
+- 查找本地 fork 里的模型优化提交
+- 按模型、模块、优化主题检索
+- 为 profiling 和 patch 选择提供本地证据
+
+推荐提示词：
+
+```text
+$model-pr-history-knowledge
+请帮我查询本地仓库里与 <框架> / <模型> / <优化方向> 相关的提交历史。
+重点告诉我本地 fork 已经有哪些类似优化、对应文件在哪里、以及我接下来该优先看哪条路径。
+```
+
+### 10. `lightop-kernel-knowledge`
+
+作用：面向 LightOp / DCU / ROCm 的 kernel 证据检索 skill，优先查本地实现，再查 ROCm / PyTorch / upstream 证据。
+
+典型能力：
+
+- 找对应 operator 的本地实现与测试
+- 查 dispatcher、binding、config table
+- 参考 ROCm / HIP / MIOpen / rocBLAS / Triton AMD 证据
+- 判断一个 CUDA 思路如何迁移到 DCU / HIP
+
+推荐提示词：
+
+```text
+$lightop-kernel-knowledge
+请围绕 <算子/模块名> 帮我查 LightOp / DCU / ROCm 的实现证据。
+请优先从本地代码和测试出发，再补充 upstream 资料，并给出下一步最值得验证的优化方向。
+```
+
+## 安装方式
+
+### 方式一：把单个 skill 安装到 Codex skills 目录
+
+如果你只想用其中几个 skill，最稳妥的方式是把对应目录复制到 Codex 的 skills 根目录：
 
 ```bash
-cd HG-AI-Infra-SKILLS/model-pr-optimization-hg-history
+mkdir -p ~/.codex/skills
 
-python3 scripts/query.py --list
-python3 scripts/query.py --framework sglang --model minimax --lang zh minimax moe
-python3 scripts/query.py --framework sglang --model shared --lang zh hicache
-python3 scripts/query.py --framework vllm --model minimax --lang zh rms quant
+cp -a /path/to/HG-AI-Infra-SKILLS/skills/llm-serving-auto-benchmark ~/.codex/skills/
+cp -a /path/to/HG-AI-Infra-SKILLS/skills/llm-torch-profiler-analysis ~/.codex/skills/
+cp -a /path/to/HG-AI-Infra-SKILLS/skills/model-architecture-diagram ~/.codex/skills/
 ```
 
-## `tools/`
-
-`tools/` 放知识库生成脚本。
-
-- `rebuild_model_pr_history_from_git.py`：从框架 git trace 和 GitHub PR API 重建开源社区 PR history。需要能访问 GitHub API，通常还需要 `gh` CLI。
-- `rebuild_model_pr_hg_history_from_local_git.py`：从本地 `sglang` / `vllm` 工作树的 `git log --name-only` 重建本地提交 history，不依赖 GitHub API。
-
-常用命令：
+对知识库型内容，也可以按需一并复制：
 
 ```bash
-cd HG-AI-Infra-SKILLS
-
-python3 tools/rebuild_model_pr_hg_history_from_local_git.py --dry-run
-python3 tools/rebuild_model_pr_hg_history_from_local_git.py
-
-MODEL_PR_HG_HISTORY_LIMIT=5000 \
-SGLANG_HG_HISTORY_ROOT=/path/to/sglang \
-VLLM_HG_HISTORY_ROOT=/path/to/vllm \
-python3 tools/rebuild_model_pr_hg_history_from_local_git.py
+cp -a /path/to/HG-AI-Infra-SKILLS/model-pr-optimization-history ~/.codex/skills/
+cp -a /path/to/HG-AI-Infra-SKILLS/model-pr-optimization-hg-history ~/.codex/skills/
 ```
 
-重建社区 PR history 示例：
+### 方式二：把整个仓库放到可扫描位置
+
+如果你的 Codex 环境支持递归扫描子目录，可以直接把整个仓库放到 skills 根目录下管理：
 
 ```bash
-cd HG-AI-Infra-SKILLS
-
-SGLANG_PR_HISTORY_ROOT=/path/to/sglang \
-VLLM_PR_HISTORY_ROOT=/path/to/vllm \
-MODEL_PR_HISTORY_ROOT=$PWD/model-pr-optimization-history \
-python3 tools/rebuild_model_pr_history_from_git.py --dry-run
+mkdir -p ~/.codex/skills
+cp -a /path/to/HG-AI-Infra-SKILLS ~/.codex/skills/
 ```
 
-## `tests/`
+### 方式三：从 git 安装
 
-`tests/` 放基础回归测试，覆盖 benchmark 配置、profiler 分析脚本、模型架构图查询、SOTA 文档约束和 PR dossier 质量。
+```bash
+git clone <repo-url> HG-AI-Infra-SKILLS
+cp -a HG-AI-Infra-SKILLS/skills/<skill-name> ~/.codex/skills/
+```
 
-测试文件：
+## 使用方式
 
-- `test_compare_benchmark_results.py`
-- `test_llm_serving_cookbook_configs.py`
-- `test_llm_serving_docs.py`
-- `test_llm_torch_profiler_analysis.py`
-- `test_model_architecture_diagram.py`
-- `test_model_pr_dossier_quality.py`
-- `test_sglang_sota_humanize_loop_docs.py`
+安装后，在对话里直接用技能名触发：
+
+```text
+$llm-serving-auto-benchmark ...
+$llm-torch-profiler-analysis ...
+$sglang-prod-incident-triage ...
+```
+
+一般建议你一次只触发一个主 skill，再让它调用需要的历史知识库或辅助技能。比如：
+
+- 做 benchmark 时，优先用 `llm-serving-auto-benchmark`
+- 看 trace 时，优先用 `llm-torch-profiler-analysis`
+- 排查线上问题时，优先用 `sglang-prod-incident-triage`
+- 做 SGLang 持续优化时，优先用 `sglang-sota-humanize-loop`
+- 查历史证据时，优先用 `model-pr-optimization-history` 或 `model-pr-optimization-hg-history`
+
+## 测试与脚本
+
+仓库里还带有回归测试和重建脚本，用来保证 skill 文档、查询逻辑和结果格式稳定：
+
+- `tests/`：基础回归测试
+- `tools/rebuild_model_pr_history_from_git.py`：重建社区 PR 历史
+- `tools/rebuild_model_pr_hg_history_from_local_git.py`：重建本地提交历史
 
 运行测试：
 
@@ -333,144 +290,17 @@ cd HG-AI-Infra-SKILLS
 python3 -m pytest tests
 ```
 
-如果默认 `python3` 版本过老，请换成系统已有的新版本：
+如果默认 `python3` 版本过老，改用系统里的新版本即可：
 
 ```bash
 /usr/bin/python3.8 -m pytest tests
 /usr/bin/python3.10 -m pytest tests
 ```
 
-## 安装
-
-### 方式一：作为 Codex skills 目录直接使用
-
-如果你的 Codex 环境支持从指定目录加载 skills，可以直接把本仓库放到 Codex 可扫描的 skills 根目录下。例如：
-
-```bash
-mkdir -p ~/.codex/skills
-cp -a /path/to/HG-AI-Infra-SKILLS ~/.codex/skills/
-```
-
-然后在对话中引用对应 skill，例如：
-
-```text
-$llm-torch-profiler-analysis 分析 /path/to/traces
-$model-architecture-diagram 查询 minimax-m2.5 架构图
-```
-
-### 方式二：只安装 `skills/` 下的单个 skill
-
-如果只想安装某个 skill，可以复制单个目录：
-
-```bash
-mkdir -p ~/.codex/skills
-
-cp -a HG-AI-Infra-SKILLS/skills/llm-torch-profiler-analysis \
-  ~/.codex/skills/
-
-cp -a HG-AI-Infra-SKILLS/skills/llm-serving-auto-benchmark \
-  ~/.codex/skills/
-```
-
-注意：`llm-torch-profiler-analysis` 会联动查询两个 history 知识库。如果需要完整能力，建议同时保留：
-
-```text
-model-pr-optimization-history/
-model-pr-optimization-hg-history/
-```
-
-### 方式三：从 git 仓库安装
-
-在线环境中可以 clone 后复制：
-
-```bash
-git clone <repo-url> HG-AI-Infra-SKILLS
-mkdir -p ~/.codex/skills
-cp -a HG-AI-Infra-SKILLS ~/.codex/skills/
-```
-
-如果使用内部 Git 服务：
-
-```bash
-git clone ssh://<your-git-server>/<group>/HG-AI-Infra-SKILLS.git
-```
-
-## 离线安装
-
-离线安装推荐使用 tar 包或 zip 包。在线机器先打包：
-
-```bash
-cd /path/to
-tar --exclude='__pycache__' -czf HG-AI-Infra-SKILLS.tar.gz HG-AI-Infra-SKILLS
-```
-
-把 `HG-AI-Infra-SKILLS.tar.gz` 拷贝到离线机器后解压：
-
-```bash
-mkdir -p ~/.codex/skills
-tar -xzf HG-AI-Infra-SKILLS.tar.gz -C ~/.codex/skills
-```
-
-如果只离线分发工程而不接入 Codex，也可以解压到任意工作目录：
-
-```bash
-tar -xzf HG-AI-Infra-SKILLS.tar.gz -C /public/home/yangyn1/work_space/2026/minmax/skills
-```
-
-离线环境注意事项：
-
-- `model-architecture-diagram` 默认返回远端原始图片 URL；离线环境无法直接显示远端图片，但仍可查询到 URL 和来源。
-- `model-pr-optimization-history` 是已生成的社区 PR 文档，可离线查询；重建它通常需要 GitHub API 和 `gh` CLI。
-- `model-pr-optimization-hg-history` 是已生成的本地提交文档，可离线查询；如果离线机器也有本地 `sglang` / `vllm` git 工作树，可以重新生成。
-- profiler、benchmark、incident triage 相关脚本不自动安装 SGLang/vLLM/TensorRT-LLM，需要目标环境已有对应框架和依赖。
-
-## Python 版本
-
-部分脚本使用：
-
-```python
-from __future__ import annotations
-```
-
-如果默认 `python3` 太老，会出现类似错误：
-
-```text
-SyntaxError: future feature annotations is not defined
-```
-
-请使用 Python 3.8 或更高版本：
-
-```bash
-/usr/bin/python3.8 <script.py>
-/usr/bin/python3.10 <script.py>
-```
-
 ## 使用建议
 
-### 进行一次模型性能优化
+- 做性能优化时，先 benchmark，再 profiler，再查历史证据，最后 patch。
+- 处理线上异常时，先采集现场和可复现请求，再决定要不要 profiling。
+- 如果目标是 LightOp / DCU / ROCm kernel 优化，先用知识 skill 找证据，再用 profiling skill 量化瓶颈。
+- `ask-codex` 和 `ask-gemini` 适合做辅助研究，不适合作为主流程替代品。
 
-推荐顺序：
-
-1. 用 `llm-serving-auto-benchmark` 做跨框架 benchmark。
-2. 用 `llm-torch-profiler-analysis` 分析慢场景 trace。
-3. 查询 `model-pr-optimization-history` 的社区 PR 先例。
-4. 查询 `model-pr-optimization-hg-history` 的本地提交先例。
-5. 如果目标是持续优化 SGLang，进入 `sglang-sota-humanize-loop`。
-
-### 处理线上服务异常
-
-推荐顺序：
-
-1. 用 `sglang-prod-incident-triage` 采集 bundle。
-2. 保存 request dump 或 crash dump。
-3. 在干净环境 replay。
-4. 只有在问题已经缩小到计算路径时，再进入 `llm-torch-profiler-analysis`。
-
-### 查询模型资料
-
-```bash
-python3 skills/model-architecture-diagram/scripts/model_architecture_diagram.py "minimax-m2.5"
-
-cd model-pr-optimization-hg-history
-python3 scripts/query.py --framework sglang --model minimax --lang zh
-```

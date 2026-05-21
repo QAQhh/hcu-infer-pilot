@@ -20,15 +20,27 @@ Use a config-driven workflow:
 - keep failed candidates in the result file
 - pick the best SLA-passing candidate after normalizing the results
 
-For model-specific starting points, prefer the shipped configs in
-`configs/cookbook-llm/`. They define a framework-neutral LLM serving cookbook
-model set and translate each entry into framework-native SGLang, vLLM, and
-TensorRT-LLM server flags. Validate those configs before a real run:
+For model-specific starting points, query the vendored Hygon DCU inference
+cookbook under `configs/dcu-inference-cookbook/docs/model-deployment/` first
+instead of selecting from the legacy local `configs/cookbook-llm/` YAML
+snapshot:
 
 ```bash
 python skills/llm-serving-auto-benchmark/scripts/validate_cookbook_configs.py \
-  skills/llm-serving-auto-benchmark/configs/cookbook-llm
+  --list-remote-recipes \
+  --print-recipe-commands \
+  --model MiniMax-M2.5
 ```
+
+By default this reads matching markdown docs from
+`configs/dcu-inference-cookbook/docs/model-deployment/` and captures each
+recipe's exported environment variables plus the server launch command from
+shell code blocks. Pass `--model-deployment-dir <dir>` to point at another
+deployment-doc directory, or `--cookbook-repo-dir <repo>` when using another
+local checkout. Add `--refresh-cookbook` only when that checkout should be
+updated from GitHub. Treat local YAML files under `configs/cookbook-llm/` only
+as a compatibility/offline validation snapshot, not as the primary cookbook
+selection source.
 
 If you have captured target-environment `--help` files, add
 `--help-dir <artifact-help-dir>`. That check only loads configs, verifies the
@@ -104,15 +116,23 @@ one normalized JSONL row per candidate.
 
 The `scripts/` directory contains exactly two tools:
 
-- `validate_cookbook_configs.py`: load cookbook YAML, render bounded candidate
-  server commands, and check flag names against captured `--help` snapshots
-  without launching servers.
+- `validate_cookbook_configs.py`: query the vendored Hygon DCU inference
+  cookbook deployment docs under `configs/dcu-inference-cookbook/docs/model-deployment/`,
+  capture recipe environment variables and server launch commands, and for
+  compatibility YAML load configs, render bounded candidate server commands,
+  and check flag names against captured `--help` snapshots without launching
+  servers.
 - `compare_benchmark_results.py`: turn normalized per-candidate JSONL into the
   markdown and optional CSV tables described in the Output Contract.
 
-Cookbook configs under `configs/cookbook-llm/` must pass the validator. The
-shorter [references/example-plan.yaml](references/example-plan.yaml) is a
-one-off runtime-plan skeleton and is not expected to pass as-is. Use
+The primary cookbook source is the vendored
+[HYGON-AI/dcu-inference-cookbook](https://github.com/HYGON-AI/dcu-inference-cookbook)
+checkout in `configs/dcu-inference-cookbook/`, specifically
+`docs/model-deployment/` for launch recipes. Compatibility configs under
+`configs/cookbook-llm/` must still pass the validator when they are used for
+offline or regression checks. The shorter
+[references/example-plan.yaml](references/example-plan.yaml) is a one-off
+runtime-plan skeleton and is not expected to pass as-is. Use
 [references/result-schema.md](references/result-schema.md) as the single source
 of truth for SLA key names.
 

@@ -22,6 +22,13 @@ class LlmServingDocsTest(unittest.TestCase):
         self.assertIn("reject", text.lower())
         self.assertIn("non-PyTorch TensorRT-LLM server backend", text)
 
+    def test_remote_cookbook_is_the_default_selection_source(self) -> None:
+        text = read_skill_file("SKILL.md")
+
+        self.assertIn("HYGON-AI/dcu-inference-cookbook", text)
+        self.assertIn("--list-remote-recipes", text)
+        self.assertIn("instead of selecting from the local `configs/cookbook-llm/` snapshot", text)
+
     def test_example_plan_pins_tensorrt_backend_outside_search_space(self) -> None:
         text = read_skill_file("references", "example-plan.yaml")
         frameworks = text.split("frameworks:\n", 1)[1]

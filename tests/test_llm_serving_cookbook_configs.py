@@ -42,6 +42,20 @@ class LlmServingCookbookConfigsTest(unittest.TestCase):
             with self.subTest(path=path.name):
                 self.assertEqual(self.mod.validate_config(path), [])
 
+    def test_remote_cookbook_docs_can_be_selected_by_model_keyword(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            minimax = repo / "docs" / "model-deployment" / "sglang" / "minimax-m2.5.md"
+            qwen = repo / "docs" / "model-deployment" / "vllm" / "qwen3.md"
+            minimax.parent.mkdir(parents=True)
+            qwen.parent.mkdir(parents=True)
+            minimax.write_text("# MiniMax-M2.5\n", encoding="utf-8")
+            qwen.write_text("# Qwen3\n", encoding="utf-8")
+
+            matches = self.mod.find_remote_cookbook_docs(repo, "MiniMax-M2.5")
+
+        self.assertEqual([path.name for path in matches], ["minimax-m2.5.md"])
+
     def test_every_config_has_three_framework_sections(self) -> None:
         for path in self.config_paths():
             with self.subTest(path=path.name):

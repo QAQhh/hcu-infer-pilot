@@ -12,13 +12,26 @@ import argparse
 import itertools
 import re
 import shlex
+import subprocess
+import tempfile
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional, Tuple
 
 import yaml
 
 FRAMEWORKS = ("sglang", "vllm", "tensorrt_llm")
 ALLOWED_SOURCE_KINDS = {"llm_serving_cookbook"}
+DEFAULT_COOKBOOK_REPO_URL = "https://github.com/HYGON-AI/dcu-inference-cookbook.git"
+DEFAULT_LOCAL_COOKBOOK_DIR = (
+    Path(__file__).resolve().parents[1] / "configs" / "dcu-inference-cookbook"
+)
+DEFAULT_MODEL_DEPLOYMENT_DIR = DEFAULT_LOCAL_COOKBOOK_DIR / "docs" / "model-deployment"
+SERVER_COMMAND_PATTERNS = (
+    re.compile(r"(^|\s)python3?\s+-m\s+sglang\.launch_server\b"),
+    re.compile(r"(^|\s)sglang\.launch_server\b"),
+    re.compile(r"(^|\s)vllm\s+serve\b"),
+    re.compile(r"(^|\s)trtllm-serve\s+serve\b"),
+)
 
 SEQUENCE_LIMIT_KEY = {
     "sglang": "context_length",
@@ -127,6 +140,215 @@ def load_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
+def _run_git(args: list[str]) -> None:
+    subprocess.run(args, check=True)
+
+
+def checkout_cookbook_repo(
+    repo_url: str = DEFAULT_COOKBOOK_REPO_URL,
+    repo_dir: Optional[Path] = None,
+    refresh: bool = False,
+) -> Tuple[Path, Optional[tempfile.TemporaryDirectory]]:
+    """Return a local checkout of the remote cookbook repository."""
+    if repo_dir is not None:
+        if not repo_dir.exists():
+            _run_git(["git", "clone", "--depth", "1", repo_url, str(repo_dir)])
+        elif refresh:
+            _run_git(["git", "-C", str(repo_dir), "fetch", "--depth", "1", "origin"])
+            _run_git(["git", "-C", str(repo_dir), "checkout", "FETCH_HEAD"])
+        return repo_dir, None
+
+    tmp = tempfile.TemporaryDirectory(prefix="hygon-dcu-cookbook-")
+    checkout = Path(tmp.name) / "dcu-inference-cookbook"
+    _run_git(["git", "clone", "--depth", "1", repo_url, str(checkout)])
+    return checkout, tmp
+
+
+def _remote_doc_score(path: Path, model_query: str) -> int:
+    query = model_query.lower()
+    text = str(path).lower()
+    score = 0
+    for token in re.split(r"[^a-z0-9]+", query):
+        if len(token) > 1 and token in text:
+            score += 1
+    if query and query in text:
+        score += 8
+    return score
+
+
+def find_remote_cookbook_docs(repo_root: Path, model_query: str = "") -> list[Path]:
+    docs = sorted(
+        path
+        for path in repo_root.rglob("*")
+        if path.is_file() and path.suffix.lower() in {".md", ".mdx"}
+    )
+    if not model_query:
+        return docs
+    scored = [(path, _remote_doc_score(path.relative_to(repo_root), model_query)) for path in docs]
+    return [path for path, score in scored if score > 0]
+
+
+def find_model_deployment_docs(deployment_root: Path, model_query: str = "") -> list[Path]:
+    docs = sorted(
+        path
+        for path in deployment_root.rglob("*")
+        if path.is_file() and path.suffix.lower() in {".md", ".mdx"}
+    )
+    if not model_query:
+        return docs
+    scored = [
+        (path, _remote_doc_score(path.relative_to(deployment_root), model_query))
+        for path in docs
+    ]
+    return [path for path, score in scored if score > 0]
+
+
+def _iter_markdown_bash_blocks(text: str) -> list[tuple[str, str]]:
+    blocks: list[tuple[str, str]] = []
+    current_heading = ""
+    in_block = False
+    block_is_shell = False
+    block_lines: list[str] = []
+
+    for raw_line in text.splitlines():
+        line = raw_line.rstrip("\n")
+        fence = re.match(r"^\s*```([A-Za-z0-9_-]*)\s*$", line)
+        if fence:
+            if in_block:
+                if block_is_shell:
+                    blocks.append((current_heading, "\n".join(block_lines)))
+                in_block = False
+                block_is_shell = False
+                block_lines = []
+            else:
+                in_block = True
+                language = fence.group(1).lower()
+                block_is_shell = language in {"", "bash", "shell", "sh"}
+            continue
+
+        if in_block:
+            if block_is_shell:
+                block_lines.append(line)
+            continue
+
+        heading = re.match(r"^\s{0,3}#{1,6}\s+(.+?)\s*$", line)
+        if heading:
+            current_heading = heading.group(1)
+
+    return blocks
+
+
+def _strip_inline_comment(line: str) -> str:
+    in_single = False
+    in_double = False
+    escaped = False
+    for index, char in enumerate(line):
+        if escaped:
+            escaped = False
+            continue
+        if char == "\\":
+            escaped = True
+            continue
+        if char == "'" and not in_double:
+            in_single = not in_single
+            continue
+        if char == '"' and not in_single:
+            in_double = not in_double
+            continue
+        if char == "#" and not in_single and not in_double:
+            if index == 0 or line[index - 1].isspace():
+                return line[:index].rstrip()
+    return line
+
+
+def _logical_shell_lines(block: str) -> list[str]:
+    logical_lines: list[str] = []
+    current = ""
+    for raw_line in block.splitlines():
+        line = _strip_inline_comment(raw_line.rstrip()).strip()
+        if not line:
+            continue
+        has_continuation = line.endswith("\\")
+        if has_continuation:
+            line = line[:-1].rstrip()
+        current = f"{current} {line}".strip() if current else line
+        if not has_continuation:
+            logical_lines.append(current)
+            current = ""
+    if current:
+        logical_lines.append(current)
+    return logical_lines
+
+
+def _parse_export(line: str) -> Optional[Tuple[str, str]]:
+    match = re.match(r"^export\s+([A-Za-z_][A-Za-z0-9_]*)=(.*)$", line)
+    if not match:
+        return None
+    value = match.group(2).strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
+        value = value[1:-1]
+    return match.group(1), value
+
+
+def _is_server_command(line: str) -> bool:
+    return any(pattern.search(line) for pattern in SERVER_COMMAND_PATTERNS)
+
+
+def extract_model_deployment_recipes(path: Path) -> list[dict[str, Any]]:
+    text = path.read_text(encoding="utf-8", errors="replace")
+    recipes: list[dict[str, Any]] = []
+    for heading, block in _iter_markdown_bash_blocks(text):
+        env: dict[str, str] = {}
+        commands: list[str] = []
+        for line in _logical_shell_lines(block):
+            export = _parse_export(line)
+            if export:
+                key, value = export
+                env[key] = value
+                continue
+            if _is_server_command(line):
+                commands.append(line)
+
+        for command in commands:
+            recipes.append(
+                {
+                    "title": heading or path.stem,
+                    "path": path,
+                    "environment": env,
+                    "server_command": command,
+                }
+            )
+    return recipes
+
+
+def _print_deployment_recipes(
+    deployment_root: Path,
+    docs: list[Path],
+    include_details: bool,
+) -> None:
+    for path in docs:
+        recipes = extract_model_deployment_recipes(path)
+        rel = path.relative_to(deployment_root)
+        if not include_details:
+            print(rel)
+            continue
+        if not recipes:
+            print(f"# {rel}")
+            print("(no server command found)")
+            continue
+        for index, recipe in enumerate(recipes, start=1):
+            print(f"# {rel} :: {recipe['title']} [{index}]")
+            environment = recipe["environment"]
+            if environment:
+                print("environment:")
+                for key, value in environment.items():
+                    print(f"  {key}={value}")
+            else:
+                print("environment: {}")
+            print("server_command:")
+            print(f"  {recipe['server_command']}")
+
+
 def _as_list(value: Any) -> list[Any]:
     if isinstance(value, list):
         return value
@@ -220,7 +442,7 @@ def load_help_flags(help_dir: Path) -> dict[str, set[str]]:
 def _known_flag(
     framework: str,
     key: str,
-    help_flags: dict[str, set[str]] | None,
+    help_flags: Optional[dict[str, set[str]]],
 ) -> bool:
     static_keys = STATIC_SERVER_FLAGS[framework]
     if key not in static_keys:
@@ -236,7 +458,7 @@ def _known_flag(
 def _validate_framework(
     config: dict[str, Any],
     framework: str,
-    help_flags: dict[str, set[str]] | None,
+    help_flags: Optional[dict[str, set[str]]],
     max_candidates: int,
 ) -> list[str]:
     errors: list[str] = []
@@ -287,7 +509,7 @@ def _validate_framework(
 
 def validate_config(
     path: Path,
-    help_flags: dict[str, set[str]] | None = None,
+    help_flags: Optional[dict[str, set[str]]] = None,
 ) -> list[str]:
     errors: list[str] = []
     try:
@@ -400,10 +622,90 @@ def iter_config_files(paths: list[Path]) -> list[Path]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("paths", nargs="+", type=Path)
+    parser.add_argument("paths", nargs="*", type=Path)
+    parser.add_argument(
+        "--cookbook-repo-url",
+        default=DEFAULT_COOKBOOK_REPO_URL,
+        help="Remote Hygon DCU inference cookbook git URL.",
+    )
+    parser.add_argument(
+        "--cookbook-repo-dir",
+        type=Path,
+        default=DEFAULT_LOCAL_COOKBOOK_DIR,
+        help=(
+            "Local checkout/cache for the Hygon DCU inference cookbook. "
+            f"Defaults to {DEFAULT_LOCAL_COOKBOOK_DIR}."
+        ),
+    )
+    parser.add_argument(
+        "--model-deployment-dir",
+        type=Path,
+        help=(
+            "Directory containing dcu-inference-cookbook docs/model-deployment "
+            "markdown files. Defaults to <cookbook-repo-dir>/docs/model-deployment."
+        ),
+    )
+    parser.add_argument(
+        "--refresh-cookbook",
+        action="store_true",
+        help="Fetch the latest remote cookbook when --cookbook-repo-dir already exists.",
+    )
+    parser.add_argument(
+        "--list-remote-recipes",
+        action="store_true",
+        help=(
+            "List matching cookbook deployment docs. This now reads the local "
+            "configs/dcu-inference-cookbook/docs/model-deployment snapshot by default; "
+            "use --refresh-cookbook to update the local checkout first."
+        ),
+    )
+    parser.add_argument(
+        "--print-recipe-commands",
+        action="store_true",
+        help=(
+            "With --list-remote-recipes, also print server commands and exported "
+            "environment variables extracted from matching deployment markdown."
+        ),
+    )
+    parser.add_argument(
+        "--model",
+        default="",
+        help="Model name or keyword used with --list-remote-recipes.",
+    )
     parser.add_argument("--help-dir", type=Path)
     parser.add_argument("--print-commands", action="store_true")
     args = parser.parse_args()
+
+    if args.list_remote_recipes:
+        repo: Optional[Path] = None
+        tmp: Optional[tempfile.TemporaryDirectory] = None
+        deployment_root = args.model_deployment_dir
+        if deployment_root is None:
+            repo, tmp = checkout_cookbook_repo(
+                args.cookbook_repo_url,
+                args.cookbook_repo_dir,
+                args.refresh_cookbook,
+            )
+            deployment_root = repo / "docs" / "model-deployment"
+        try:
+            if not deployment_root.exists():
+                parser.error(f"model deployment directory does not exist: {deployment_root}")
+            docs = find_model_deployment_docs(deployment_root, args.model)
+            _print_deployment_recipes(
+                deployment_root,
+                docs,
+                include_details=args.print_recipe_commands,
+            )
+        finally:
+            if tmp is not None:
+                tmp.cleanup()
+        return
+
+    if not args.paths:
+        parser.error(
+            "paths are required for YAML validation. Use --list-remote-recipes "
+            "to select recipes from the remote HYGON-AI/dcu-inference-cookbook repository."
+        )
 
     help_flags = load_help_flags(args.help_dir) if args.help_dir else None
     failed = False
