@@ -1,0 +1,6 @@
+[submodule "skills/llm-serving-auto-benchmark/configs/dcu-inference-cookbook"]
+	path = skills/llm-serving-auto-benchmark/configs/dcu-inference-cookbook
+	url = https://github.com/HYGON-AI/dcu-inference-cookbook.git
+[submodule "skills/lightop-skills"]
+	path = skills/lightop-skills
+	url = https://developer.sourcefind.cn/codes/whlwhlwhl/lightop-skiils.git
