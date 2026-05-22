@@ -222,7 +222,88 @@ $lightop-kernel-knowledge
 
 ## 安装方式
 
-### 方式一：把单个 skill 安装到 Codex skills 目录
+### 方式一：使用一键安装脚本（推荐）
+
+仓库根目录提供了 `install_all_skills.sh`，用于安装本仓库维护的全部主 skills。默认安装到 Codex 的 skills 目录：
+
+```text
+${CODEX_HOME:-$HOME/.codex}/skills
+```
+
+基本用法：
+
+```bash
+cd /path/to/HG-AI-Infra-SKILLS
+
+# 先预览安装动作，不写入文件
+./install_all_skills.sh --dry-run
+
+# 安装到 Codex skills 目录
+./install_all_skills.sh
+
+# 已存在同名 skill 时强制覆盖
+./install_all_skills.sh --force
+```
+
+安装到不同目标：
+
+```bash
+# 只安装到 Codex
+./install_all_skills.sh --target codex
+
+# 只安装到 Claude
+./install_all_skills.sh --target claude
+
+# 同时安装到 Codex 和 Claude
+./install_all_skills.sh --target both --force
+```
+
+指定安装目录：
+
+```bash
+./install_all_skills.sh \
+  --target codex \
+  --codex-skills-dir /path/to/codex/skills
+
+./install_all_skills.sh \
+  --target claude \
+  --claude-skills-dir /path/to/claude/skills
+```
+
+安装模式：
+
+```bash
+# 默认：主 skills 使用软链接安装，Humanize skills 会复制并替换运行时路径
+./install_all_skills.sh --link
+
+# 自包含安装：复制主 skills，而不是软链接
+./install_all_skills.sh --copy --force
+```
+
+脚本会安装本仓库维护的主 skills：
+
+- `llm-serving-auto-benchmark`
+- `llm-torch-profiler-analysis`
+- `model-architecture-diagram`
+- `model-compute-simulation`
+- `sglang-prod-incident-triage`
+- `sglang-sota-humanize-loop`
+- `vllm-pr-summary`
+- `model-pr-optimization-history`
+- `model-pr-optimization-hg-history`
+- `lightop-kernel-knowledge`
+- `ask-codex`
+- `ask-gemini`
+- `humanize`
+- `humanize-gen-plan`
+- `humanize-refine-plan`
+- `humanize-rlcr`
+- `lightop-kernel-agent-loop`
+- `dcu-profiler-report`
+
+注意：脚本会跳过 cookbook 和 `evidence/pull-bundles` 里嵌套的示例 skills，避免把资料快照中的第三方样例也注册到本地环境。
+
+### 方式二：把单个 skill 安装到 Codex skills 目录
 
 如果你只想用其中几个 skill，最稳妥的方式是把对应目录复制到 Codex 的 skills 根目录：
 
@@ -241,7 +322,7 @@ cp -a /path/to/HG-AI-Infra-SKILLS/model-pr-optimization-history ~/.codex/skills/
 cp -a /path/to/HG-AI-Infra-SKILLS/model-pr-optimization-hg-history ~/.codex/skills/
 ```
 
-### 方式二：把整个仓库放到可扫描位置
+### 方式三：把整个仓库放到可扫描位置
 
 如果你的 Codex 环境支持递归扫描子目录，可以直接把整个仓库放到 skills 根目录下管理：
 
@@ -250,11 +331,12 @@ mkdir -p ~/.codex/skills
 cp -a /path/to/HG-AI-Infra-SKILLS ~/.codex/skills/
 ```
 
-### 方式三：从 git 安装
+### 方式四：从 git 安装
 
 ```bash
 git clone <repo-url> HG-AI-Infra-SKILLS
-cp -a HG-AI-Infra-SKILLS/skills/<skill-name> ~/.codex/skills/
+cd HG-AI-Infra-SKILLS
+./install_all_skills.sh
 ```
 
 ## 使用方式
@@ -303,4 +385,3 @@ python3 -m pytest tests
 - 处理线上异常时，先采集现场和可复现请求，再决定要不要 profiling。
 - 如果目标是 LightOp / DCU / ROCm kernel 优化，先用知识 skill 找证据，再用 profiling skill 量化瓶颈。
 - `ask-codex` 和 `ask-gemini` 适合做辅助研究，不适合作为主流程替代品。
-
