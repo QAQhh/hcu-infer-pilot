@@ -235,6 +235,8 @@ ${CODEX_HOME:-$HOME/.codex}/skills
 ```bash
 cd /path/to/HG-AI-Infra-SKILLS
 
+git submodule update --init --recursive
+
 # 先预览安装动作，不写入文件
 ./install_all_skills.sh --dry-run
 
