@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Install all maintained HG-AI-Infra-SKILLS skills.
+# Install all maintained DCU-Infer-Pilot skills.
 #
 # By default this installs to Codex:
 #   ${CODEX_HOME:-$HOME/.codex}/skills
@@ -59,7 +59,7 @@ HUMANIZE_SKILLS=(
 
 usage() {
   cat <<'EOF'
-Install all maintained HG-AI-Infra-SKILLS skills.
+Install all maintained DCU-Infer-Pilot skills.
 
 Usage:
   install_all_skills.sh [options]
@@ -68,7 +68,7 @@ Options:
   --target MODE             codex|claude|both (default: codex)
   --codex-skills-dir PATH   Codex skills dir (default: ${CODEX_HOME:-~/.codex}/skills)
   --claude-skills-dir PATH  Claude skills dir (default: ~/.claude/skills)
-  --repo-root PATH          HG-AI-Infra-SKILLS root (default: script directory)
+  --repo-root PATH          DCU-Infer-Pilot root (default: script directory)
   --link                    Install regular skills as symlinks (default)
   --copy                    Copy regular skills instead of symlinking
   --force                   Replace existing target skill directories/symlinks
@@ -103,11 +103,11 @@ EOF
 }
 
 log() {
-  printf '[install-hg-ai-infra-skills] %s\n' "$*"
+  printf '[install-DCU-Infer-Pilot] %s\n' "$*"
 }
 
 die() {
-  printf '[install-hg-ai-infra-skills] Error: %s\n' "$*" >&2
+  printf '[install-DCU-Infer-Pilot] Error: %s\n' "$*" >&2
   exit 1
 }
 

@@ -1,6 +1,6 @@
-# HG-AI-Infra-SKILLS
+# DCU-Infer-Pilot
 
-`HG-AI-Infra-SKILLS` 是一套面向 LLM Serving、性能分析、线上故障排查、模型优化历史检索和 DCU/ROCm kernel 经验沉淀的 Codex Skills 仓库。它把常见的 AI Infra 工作流拆成可复用的 skill、知识库和辅助脚本，方便你在同一个仓库里完成 benchmark、profiling、PR 分析、历史查询和优化闭环。
+`DCU-Infer-Pilot` 是一套面向 LLM Serving、性能分析、线上故障排查、模型优化历史检索和 DCU/ROCm kernel 经验沉淀的 Codex Skills 仓库。它把常见的 AI Infra 工作流拆成可复用的 skill、知识库和辅助脚本，方便你在同一个仓库里完成 benchmark、profiling、PR 分析、历史查询和优化闭环。
 
 这个仓库适合下面几类工作：
 
@@ -233,7 +233,7 @@ ${CODEX_HOME:-$HOME/.codex}/skills
 基本用法：
 
 ```bash
-cd /path/to/HG-AI-Infra-SKILLS
+cd /path/to/DCU-Infer-Pilot
 
 git submodule update --init --recursive
 
@@ -312,16 +312,16 @@ git submodule update --init --recursive
 ```bash
 mkdir -p ~/.codex/skills
 
-cp -a /path/to/HG-AI-Infra-SKILLS/skills/llm-serving-auto-benchmark ~/.codex/skills/
-cp -a /path/to/HG-AI-Infra-SKILLS/skills/llm-torch-profiler-analysis ~/.codex/skills/
-cp -a /path/to/HG-AI-Infra-SKILLS/skills/model-architecture-diagram ~/.codex/skills/
+cp -a /path/to/DCU-Infer-Pilot/skills/llm-serving-auto-benchmark ~/.codex/skills/
+cp -a /path/to/DCU-Infer-Pilot/skills/llm-torch-profiler-analysis ~/.codex/skills/
+cp -a /path/to/DCU-Infer-Pilot/skills/model-architecture-diagram ~/.codex/skills/
 ```
 
 对知识库型内容，也可以按需一并复制：
 
 ```bash
-cp -a /path/to/HG-AI-Infra-SKILLS/model-pr-optimization-history ~/.codex/skills/
-cp -a /path/to/HG-AI-Infra-SKILLS/model-pr-optimization-hg-history ~/.codex/skills/
+cp -a /path/to/DCU-Infer-Pilot/model-pr-optimization-history ~/.codex/skills/
+cp -a /path/to/DCU-Infer-Pilot/model-pr-optimization-hg-history ~/.codex/skills/
 ```
 
 ### 方式三：把整个仓库放到可扫描位置
@@ -330,14 +330,14 @@ cp -a /path/to/HG-AI-Infra-SKILLS/model-pr-optimization-hg-history ~/.codex/skil
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -a /path/to/HG-AI-Infra-SKILLS ~/.codex/skills/
+cp -a /path/to/DCU-Infer-Pilot ~/.codex/skills/
 ```
 
 ### 方式四：从 git 安装
 
 ```bash
-git clone <repo-url> HG-AI-Infra-SKILLS
-cd HG-AI-Infra-SKILLS
+git clone <repo-url> DCU-Infer-Pilot
+cd DCU-Infer-Pilot
 ./install_all_skills.sh
 ```
 
@@ -370,7 +370,7 @@ $sglang-prod-incident-triage ...
 运行测试：
 
 ```bash
-cd HG-AI-Infra-SKILLS
+cd DCU-Infer-Pilot
 python3 -m pytest tests
 ```
 
