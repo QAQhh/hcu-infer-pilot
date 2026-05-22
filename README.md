@@ -227,6 +227,7 @@ $lightop-kernel-knowledge
 仓库根目录提供了 `install_all_skills.sh`，用于安装本仓库维护的全部主 skills。默认安装到 Codex 的 skills 目录：
 
 ```text
+git submodule update --init --recursive
 ${CODEX_HOME:-$HOME/.codex}/skills
 ```
 
