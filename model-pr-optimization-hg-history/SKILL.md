@@ -12,6 +12,14 @@ coverage, timelines, changed files, implementation notes, and validation/risk
 notes. Framework-wide commits that cannot be pinned to one model family should
 go into the framework `shared/` bucket instead of being dropped.
 
+The `sglang/` framework history is local-fork only. Do not store commits that
+are reachable from the upstream GitHub repository
+`sgl-project/sglang`. When rebuilding or updating SGLang history, compare
+against local `refs/remotes/github-official/*` refs and keep only commits that
+are not reachable from those refs. Missing official refs should be treated as a
+blocker for SGLang history regeneration rather than silently mixing upstream
+GitHub commits into this local knowledge base.
+
 Use it before patching model-specific serving paths, choosing an SGLang SOTA
 optimization target, or explaining why the local framework fork already has a
 faster path.
@@ -46,17 +54,21 @@ Useful options:
    history too when vLLM is the leading competitor or its trace suggests a
    missing SGLang fast path. If the trace points to a framework-wide runtime,
    parser, or utility gap, also check the framework `shared/` bucket.
-3. Extract only actionable evidence:
+3. For SGLang updates, enforce the local-only filter before writing docs:
+   fetch or verify `refs/remotes/github-official/*` from
+   `https://github.com/sgl-project/sglang.git`, remove commits reachable from
+   those refs, and preserve only local fork commits.
+4. Extract only actionable evidence:
    - model implementation files and symbols
    - local commits that changed the hot source path
    - prior fusions, overlap work, quantization, MoE, attention, cache, sampler,
      or loader changes
    - local fork changes that may explain a known gap or pending support issue
    - validation lanes and regression risks implied by the commit cards
-4. Save a short note in the active run artifacts, for example
+5. Save a short note in the active run artifacts, for example
    `history/model-pr-history-notes.md`, with paths read, commit hashes, source
    files, and the decision each item influenced.
-5. Do not copy long commit cards into the final answer. Cite paths and summarize the
+6. Do not copy long commit cards into the final answer. Cite paths and summarize the
    relevant implementation/risk.
 
 ## Model Slugs

@@ -4,7 +4,7 @@
 
 | File | Local commits |
 | --- | --- |
-| - | No matching implementation file on current main |
+| - | no local-only commit |
 
 ## Local Commit Coverage Summary
 
@@ -13,15 +13,16 @@
 - Commits in this document: 0
 - Auto-classification note: commits matching model files or model names enter the model bucket; runtime, backend, scheduler, cache, CI, and test commits that cannot be pinned to one model family enter the framework `shared/` bucket.
 - Trace command: `git log --name-only`
+- Filter note: commits reachable from `sgl-project/sglang` GitHub refs were removed; this document keeps only local fork commits.
 
 ## Timeline
 
 | Date | Commit | Category | Title | Main files |
 | --- | --- | --- | --- | --- |
-| - | - | - | no local commit found | - |
+| - | - | - | no local-only commit found | - |
 
 ## Per-Commit Audit Cards
 
 ### Local commit search conclusion
 
-- No local commit was confirmed for this model bucket; regenerate local history when implementation files or commits appear.
+- Commits reachable from `sgl-project/sglang` GitHub refs were removed; no local-only commit remains in the baseline history.

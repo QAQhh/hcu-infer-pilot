@@ -5,6 +5,10 @@ This generator writes `model-pr-optimization-hg-history` from the local
 `sglang` and `vllm` worktrees. It intentionally does not call GitHub APIs:
 `model-pr-optimization-history` tracks open-source community PRs, while this
 tree tracks local fork commits.
+
+For SGLang, this tree must not duplicate upstream `sgl-project/sglang`
+history. The generator filters out any commit reachable from local
+`refs/remotes/github-official/*` refs and keeps only local fork commits.
 """
 
 from __future__ import annotations
@@ -49,6 +53,16 @@ TODAY = date.today().isoformat()
 
 COMMIT_LIMIT = int(os.environ.get("MODEL_PR_HG_HISTORY_LIMIT", "3000"))
 MAX_COMMITS_PER_DOC = int(os.environ.get("MODEL_PR_HG_HISTORY_MAX_DOC_COMMITS", "80"))
+SGLANG_OFFICIAL_REF_PREFIX = os.environ.get(
+    "SGLANG_HG_HISTORY_OFFICIAL_REF_PREFIX",
+    "refs/remotes/github-official",
+)
+SGLANG_REQUIRE_OFFICIAL_FILTER = (
+    os.environ.get("SGLANG_HG_HISTORY_REQUIRE_OFFICIAL_FILTER", "1") != "0"
+)
+SGLANG_DISABLE_OFFICIAL_FILTER = (
+    os.environ.get("SGLANG_HG_HISTORY_DISABLE_OFFICIAL_FILTER", "0") == "1"
+)
 LOCAL_MODEL_TITLES = dict(MODEL_TITLES)
 LOCAL_MODEL_TITLES[SHARED_BUCKET] = "Shared Framework Commits"
 
@@ -70,6 +84,45 @@ def run(cmd: list[str], cwd: Path, check: bool = True) -> str:
     if check and proc.returncode != 0:
         raise RuntimeError(f"command failed: {' '.join(cmd)}\n{proc.stderr}")
     return proc.stdout
+
+
+def official_sglang_commits() -> set[str]:
+    """Return commits reachable from the official GitHub SGLang refs.
+
+    The refs are expected to be fetched locally, for example:
+
+    git fetch https://github.com/sgl-project/sglang.git \
+      '+refs/heads/*:refs/remotes/github-official/*'
+
+    We do not fetch here because this generator must remain deterministic in
+    offline/internal environments. If the refs are missing, fail closed by
+    default instead of writing GitHub upstream commits into the local history.
+    """
+
+    if SGLANG_DISABLE_OFFICIAL_FILTER:
+        return set()
+
+    repo = FRAMEWORK_ROOTS["sglang"]
+    refs = [
+        line.strip()
+        for line in run(
+            ["git", "for-each-ref", "--format=%(refname)", SGLANG_OFFICIAL_REF_PREFIX],
+            repo,
+        ).splitlines()
+        if line.strip()
+    ]
+    if not refs:
+        message = (
+            "missing local official SGLang refs for local-only filtering: "
+            f"{SGLANG_OFFICIAL_REF_PREFIX}. Fetch them with: "
+            "git fetch https://github.com/sgl-project/sglang.git "
+            "'+refs/heads/*:refs/remotes/github-official/*'"
+        )
+        if SGLANG_REQUIRE_OFFICIAL_FILTER:
+            raise RuntimeError(message)
+        print(f"warning: {message}")
+        return set()
+    return set(run(["git", "rev-list", *refs], repo).splitlines())
 
 
 def git_files(framework: str) -> list[str]:
@@ -111,6 +164,22 @@ def parse_commits(framework: str) -> list[CommitInfo]:
     if current:
         commits.append(current)
     return commits
+
+
+def filter_local_only_commits(
+    framework: str,
+    commits: list[CommitInfo],
+    official_commits: set[str],
+) -> list[CommitInfo]:
+    if framework != "sglang" or SGLANG_DISABLE_OFFICIAL_FILTER:
+        return commits
+    filtered = [commit for commit in commits if commit.sha not in official_commits]
+    removed = len(commits) - len(filtered)
+    print(
+        "sglang local-only filter: "
+        f"removed {removed} upstream GitHub commits, kept {len(filtered)} local commits"
+    )
+    return filtered
 
 
 def file_category(path: str) -> str:
@@ -356,6 +425,9 @@ def render_zh(framework: str, model: str, files: list[str], commits: list[Commit
     cards = "\n\n".join(card_zh(commit) for commit in commits)
     if not cards:
         cards = "### 本地提交检索结论\n\n- 未确认到可归入该模型桶的本地提交；如果后续出现实现文件或提交，需要重新生成本地历史。"
+    filter_note = ""
+    if framework == "sglang" and not SGLANG_DISABLE_OFFICIAL_FILTER:
+        filter_note = "\n- 过滤说明: 已剔除可从 `sgl-project/sglang` GitHub refs 到达的官方提交；本文件仅保留本地 fork 独有提交。"
     body = clean_block(
         f"""\
         # {framework} {title} 本地提交优化历史
@@ -370,7 +442,7 @@ def render_zh(framework: str, model: str, files: list[str], commits: list[Commit
         - 生成日期: {TODAY}
         - 文档提交数: {len(commits)}
         - 自动归类说明: 直接命中模型文件或模型名的提交进入模型桶；无法安全锚定到单一模型家族的运行时、后端、调度、缓存、CI、测试提交进入 framework `shared/` 桶。
-        - 追溯命令: `git log --name-only`
+        - 追溯命令: `git log --name-only`{filter_note}
 
         ## 时间线
 
@@ -389,6 +461,9 @@ def render_en(framework: str, model: str, files: list[str], commits: list[Commit
     cards = "\n\n".join(card_en(commit) for commit in commits)
     if not cards:
         cards = "### Local commit search conclusion\n\n- No local commit was confirmed for this model bucket; regenerate local history when implementation files or commits appear."
+    filter_note = ""
+    if framework == "sglang" and not SGLANG_DISABLE_OFFICIAL_FILTER:
+        filter_note = "\n- Filter note: commits reachable from `sgl-project/sglang` GitHub refs were removed; this document keeps only local fork commits."
     body = clean_block(
         f"""\
         # {framework} {title} Local Commit Optimization History
@@ -403,7 +478,7 @@ def render_en(framework: str, model: str, files: list[str], commits: list[Commit
         - Generated date: {TODAY}
         - Commits in this document: {len(commits)}
         - Auto-classification note: commits matching model files or model names enter the model bucket; runtime, backend, scheduler, cache, CI, and test commits that cannot be pinned to one model family enter the framework `shared/` bucket.
-        - Trace command: `git log --name-only`
+        - Trace command: `git log --name-only`{filter_note}
 
         ## Timeline
 
@@ -420,20 +495,38 @@ def render_en(framework: str, model: str, files: list[str], commits: list[Commit
 def write_indexes() -> None:
     model_lines = "\n".join(f"- `{model}`" for model in MODEL_ORDER)
     for framework, title in (("sglang", "SGLang"), ("vllm", "vLLM")):
+        filter_policy = ""
+        if framework == "sglang" and not SGLANG_DISABLE_OFFICIAL_FILTER:
+            filter_policy = (
+                "\nFilter policy:\n\n"
+                "- SGLang bucket docs keep only local fork commits that are not "
+                "reachable from local `refs/remotes/github-official/*`, fetched "
+                "from `sgl-project/sglang`.\n"
+                "- Buckets with no remaining local-only commits keep an explicit "
+                "empty result row instead of preserving GitHub upstream commits.\n"
+            )
         path = HISTORY_ROOT / framework / "README.md"
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(
-            f"# {title} Local Commit Optimization History\n\nCurrent buckets:\n\n{model_lines}\n",
+            f"# {title} Local Commit Optimization History\n{filter_policy}\nCurrent buckets:\n\n{model_lines}\n",
             encoding="utf-8",
         )
 
 
 def rebuild(dry_run: bool = False) -> None:
     HISTORY_ROOT.mkdir(parents=True, exist_ok=True)
+    official_by_framework = {
+        "sglang": official_sglang_commits(),
+        "vllm": set(),
+    }
     write_indexes()
     for framework in ("sglang", "vllm"):
         all_files = git_files(framework)
-        commits = parse_commits(framework)
+        commits = filter_local_only_commits(
+            framework,
+            parse_commits(framework),
+            official_by_framework[framework],
+        )
         model_to_commits: dict[str, list[CommitInfo]] = {}
         model_to_shas: dict[str, set[str]] = {}
         for model in [m for m in MODEL_ORDER if m != SHARED_BUCKET]:
@@ -461,9 +554,40 @@ def rebuild(dry_run: bool = False) -> None:
 
 
 def main() -> int:
+    global SGLANG_DISABLE_OFFICIAL_FILTER
+    global SGLANG_OFFICIAL_REF_PREFIX
+    global SGLANG_REQUIRE_OFFICIAL_FILTER
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--sglang-official-ref-prefix",
+        default=SGLANG_OFFICIAL_REF_PREFIX,
+        help=(
+            "Local ref prefix containing fetched sgl-project/sglang refs. "
+            "Used to filter upstream GitHub commits out of SGLang hg-history."
+        ),
+    )
+    parser.add_argument(
+        "--allow-missing-sglang-official-filter",
+        action="store_true",
+        help=(
+            "Do not fail when official SGLang refs are missing. This is only "
+            "for diagnostics; normal SGLang history regeneration should fail closed."
+        ),
+    )
+    parser.add_argument(
+        "--disable-sglang-official-filter",
+        action="store_true",
+        help=(
+            "Disable SGLang official GitHub filtering. This should not be used "
+            "for committed model-pr-optimization-hg-history updates."
+        ),
+    )
     args = parser.parse_args()
+    SGLANG_OFFICIAL_REF_PREFIX = args.sglang_official_ref_prefix
+    SGLANG_REQUIRE_OFFICIAL_FILTER = not args.allow_missing_sglang_official_filter
+    SGLANG_DISABLE_OFFICIAL_FILTER = args.disable_sglang_official_filter
     missing = [str(path) for path in FRAMEWORK_ROOTS.values() if not path.exists()]
     if missing:
         raise SystemExit(f"missing local framework worktrees: {', '.join(missing)}")

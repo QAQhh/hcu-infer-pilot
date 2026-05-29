@@ -15,6 +15,20 @@ kernel, overlap, or fusion ideas.
 - `scripts/query.py`: small local search helper for model slugs, doc paths, and
   keyword snippets.
 
+SGLang history is intentionally local-only. When updating `sglang/`, remove
+any commit reachable from `sgl-project/sglang` GitHub refs and keep only local
+fork commits. The generator expects those refs to exist locally under
+`refs/remotes/github-official/*`; refresh them with:
+
+```bash
+git -C /path/to/sglang fetch https://github.com/sgl-project/sglang.git \
+  '+refs/heads/*:refs/remotes/github-official/*'
+```
+
+If the official refs are missing, SGLang history regeneration should fail
+closed rather than writing upstream GitHub commits into this local knowledge
+base.
+
 Each model history is bilingual when practical (`README.zh.md` and
 `README.en.md`) and should be grounded in local git commits, source files, and
 validation/risk notes.

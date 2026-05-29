@@ -1,5 +1,10 @@
 # SGLang Local Commit Optimization History
 
+Filter policy:
+
+- SGLang bucket docs keep only local fork commits that are not reachable from local `refs/remotes/github-official/*`, fetched from `sgl-project/sglang`.
+- Buckets with no remaining local-only commits keep an explicit empty result row instead of preserving GitHub upstream commits.
+
 Current buckets:
 
 - `deepseek-v3-r1`

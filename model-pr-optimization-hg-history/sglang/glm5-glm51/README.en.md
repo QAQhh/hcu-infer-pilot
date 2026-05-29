@@ -4,17 +4,16 @@
 
 | File | Local commits |
 | --- | --- |
-| `docs/platforms/ascend_npu_glm5_examples.md` | `2d583799e`, `210d0fbae`, `56891e46b`, `f65c885e7`, `123f57b84`, `c34832c02` |
-| `test/registered/amd/accuracy/mi30x/test_glm5_eval_amd.py` | `23adb5075` |
-| `test/registered/amd/accuracy/mi35x/test_glm5_eval_mi35x.py` | `23adb5075` |
+| - | no local-only commit |
 
 ## Local Commit Coverage Summary
 
 - Source worktree: `/public/home/yangyn1/work_space/2026/minmax/skills/sglang`
 - Generated date: 2026-05-20
-- Commits in this document: 18
+- Commits in this document: 6
 - Auto-classification note: commits matching model files or model names enter the model bucket; runtime, backend, scheduler, cache, CI, and test commits that cannot be pinned to one model family enter the framework `shared/` bucket.
 - Trace command: `git log --name-only`
+- Filter note: commits reachable from `sgl-project/sglang` GitHub refs were removed; this document keeps only local fork commits.
 
 ## Timeline
 
@@ -26,18 +25,6 @@
 | 2026-04-25 | `78557fe3d` | 通用实现调整 | 【GLM5】避免DCU路径加载TileLang和TVM依赖 | `python/sglang/srt/layers/attention/nsa/nsa_indexer.py` |
 | 2026-04-23 | `c40804b20` | 性能/后端优化 | 【GLM5-融合算子】1. 融合set_kv_buffer和quant算子 2. paged mqa logits算子融合 3. 融合get_logits_head_gate算子 | `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/mem_cache/memory_pool.py` |
 | 2026-04-10 | `2854c89b4` | 性能/后端优化 | 适配glm5 & 接入topk_transform融合算子 & 适配cp功能 & 暂时移除ttft优化 | `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py` |
-| 2026-03-25 | `2d583799e` | 调度/缓存/PD | Update ascend docs (#20846) | `docs/platforms/ascend_npu_best_practice.md`, `docs/platforms/ascend_npu_deepseek_example.md`, `docs/platforms/ascend_npu_glm5_examples.md` |
-| 2026-03-17 | `da2447891` | 性能/后端优化 | [AMD] Fix CI: update transformers in Qwen 3.5 and GLM-5 nightly tests (#20750) | `.github/workflows/nightly-test-amd-rocm720.yml`, `.github/workflows/nightly-test-amd.yml` |
-| 2026-03-17 | `210d0fbae` | 调度/缓存/PD | Update ascend docs (#20674) | `docs/platforms/ascend_npu_glm5_examples.md`, `docs/platforms/ascend_npu_qwen3_5_examples.md`, `docs/platforms/ascend_npu_support_features.md` |
-| 2026-03-09 | `be63f982b` | 性能/后端优化 | [V32/GLM5] Control the threshold of applying dense attention with an environ (#20062) | `docs/references/environment_variables.md`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/nsa_backend.py` |
-| 2026-03-07 | `d28f35240` | 通用实现调整 | [V32/GLM5] Change default setting of V32 nvfp4 on TP4 (#20086) | `python/sglang/srt/server_args.py` |
-| 2026-02-25 | `56891e46b` | 模型支持/运行时入口 | [Ascend ] Add qwen3.5 122B/35B/27B deployment examples on doc (#19339) | `docs/platforms/ascend_npu_glm5_examples.md`, `docs/platforms/ascend_npu_qwen3_5_examples.md` |
-| 2026-02-24 | `23adb5075` | 性能/后端优化 | [AMD] [GLM-5 Day 0] Add GLM-5 nightly test (#18911) | `.github/workflows/nightly-test-amd-rocm720.yml`, `.github/workflows/nightly-test-amd.yml`, `test/registered/amd/accuracy/mi30x/test_glm5_eval_amd.py` |
-| 2026-02-22 | `eddf19329` | 性能/后端优化 | [DSv32] [GLM5] Improve Model Quality by Avoiding FP32 Precision Loss in `weights_proj` (#19041) | `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/layers/deep_gemm_wrapper/compile_utils.py`, `python/sglang/srt/layers/deep_gemm_wrapper/entrypoint.py` |
-| 2026-02-17 | `1b659bcb0` | 性能/后端优化 | Fix GLM-5 fused shared expert (#18804) | `python/sglang/srt/models/glm4_moe.py` |
-| 2026-02-13 | `f65c885e7` | 测试/文档/基准 | Modify glm5 readme on npu (#18768) | `docs/platforms/ascend_npu_glm5_examples.md` |
-| 2026-02-12 | `123f57b84` | 调度/缓存/PD | update glm5 readme on npu (#18657) | `docs/platforms/ascend_npu_glm5_examples.md` |
-| 2026-02-12 | `c34832c02` | 测试/文档/基准 | glm5 md (#18655) | `docs/platforms/ascend_npu_glm5_examples.md` |
 
 ## Per-Commit Audit Cards
 
@@ -109,141 +96,77 @@
   - runtime-perf: `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`; `python/sglang/srt/layers/attention/nsa_backend.py`
 - Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
-### Commit `2d583799e` - Update ascend docs (#20846)
+<!-- LOCAL_ONLY_DEV_BRANCH_UPDATE_START -->
+## Local-only dev branch update from v0.5.8_dev to v0.5.12_dev
 
-- Full hash: `2d583799ebb8ba67732e8bc5c70e814734491337`
-- Date/author: 2026-03-25 / amote-i
-- Auto category: 调度/缓存/PD
-- Main files: `docs/platforms/ascend_npu_best_practice.md`, `docs/platforms/ascend_npu_deepseek_example.md`, `docs/platforms/ascend_npu_glm5_examples.md`, `docs/platforms/ascend_npu_support_features.md`, `docs/platforms/ascend_npu_support_models.md`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - docs-bench: `docs/platforms/ascend_npu_best_practice.md`; `docs/platforms/ascend_npu_deepseek_example.md`; `docs/platforms/ascend_npu_glm5_examples.md`; `docs/platforms/ascend_npu_support_features.md`; `docs/platforms/ascend_npu_support_models.md`
-- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+### Coverage Note
 
-### Commit `da2447891` - [AMD] Fix CI: update transformers in Qwen 3.5 and GLM-5 nightly tests (#20750)
+- Source index: `LOCAL_ONLY_COMMITS_v0.5.8_dev_to_v0.5.12_dev_by_branch.md`
+- Source worktree: `/public/home/yangyn1/work_space/2026/sglang/sglang`
+- Scope: only local fork commits that are not reachable from `sgl-project/sglang` GitHub refs.
+- Commits in this section: 4
+- Classification note: commits matching a concrete model name, model file, or model-family signal enter that model bucket; runtime, backend, CI, merge/base, PD/cache, and generic quantization commits that cannot be pinned to one model family enter `shared`.
 
-- Full hash: `da24478913f5fbac87644c3679e051ed5276fdbe`
-- Date/author: 2026-03-17 / Michael
-- Auto category: 性能/后端优化
-- Main files: `.github/workflows/nightly-test-amd-rocm720.yml`, `.github/workflows/nightly-test-amd.yml`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - ci: `.github/workflows/nightly-test-amd-rocm720.yml`; `.github/workflows/nightly-test-amd.yml`
-- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+### Timeline
 
-### Commit `210d0fbae` - Update ascend docs (#20674)
+| Date | Commit | Branch update | Category | Title | Main files |
+| --- | --- | --- | --- | --- | --- |
+| 2026-03-18 | `c6c74dbdc` | `v0.5.8_dev..v0.5.9_dev` | 模型支持/运行时入口 | GLM5 Test | `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/layers/attention/flashmla_backend.py`, `python/sglang/srt/layers/attention/nsa/index_buf_accessor.py` 等 16 个文件 |
+| 2026-03-26 | `5f51de15a` | `v0.5.8_dev..v0.5.9_dev` | 模型支持/运行时入口 | GLM-5 adaptation | `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/layers/attention/nsa_backend.py`, `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py` 等 6 个文件 |
+| 2026-03-27 | `40a938509` | `v0.5.8_dev..v0.5.9_dev` | 调度/缓存/PD | add prefill flashmla_sparse kv_cache fp8 for GLM-5 | `python/sglang/srt/layers/attention/nsa_backend.py`, `sgl-kernel/setup_rocm.py` |
+| 2026-03-30 | `511c78385` | `v0.5.8_dev..v0.5.9_dev` | 调度/缓存/PD | GLM5 MTP adapt | `python/sglang/srt/layers/attention/nsa_backend.py` |
 
-- Full hash: `210d0fbaef41bb18a83320e1fbe8f50c9d0c9ead`
-- Date/author: 2026-03-17 / amote-i
-- Auto category: 调度/缓存/PD
-- Main files: `docs/platforms/ascend_npu_glm5_examples.md`, `docs/platforms/ascend_npu_qwen3_5_examples.md`, `docs/platforms/ascend_npu_support_features.md`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - docs-bench: `docs/platforms/ascend_npu_glm5_examples.md`; `docs/platforms/ascend_npu_qwen3_5_examples.md`; `docs/platforms/ascend_npu_support_features.md`
-- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+### Per-Commit Audit Cards
 
-### Commit `be63f982b` - [V32/GLM5] Control the threshold of applying dense attention with an environ (#20062)
+#### Commit `c6c74dbdc` - GLM5 Test
 
-- Full hash: `be63f982b7b7f0451a3ccbb13f6fe2ecf6c39796`
-- Date/author: 2026-03-09 / Baizhou Zhang
-- Auto category: 性能/后端优化
-- Main files: `docs/references/environment_variables.md`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/nsa_backend.py`, `python/sglang/srt/server_args.py`, `test/registered/quant/test_deepseek_v32_fp4_4gpu.py`, `test/registered/quant/test_deepseek_v32_fp4_mtp_4gpu.py`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - docs-bench: `docs/references/environment_variables.md`
-  - other: `python/sglang/srt/environ.py`
-  - runtime-model: `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/srt/layers/attention/nsa_backend.py`
-  - tests: `test/registered/quant/test_deepseek_v32_fp4_4gpu.py`; `test/registered/quant/test_deepseek_v32_fp4_mtp_4gpu.py`
-- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
-
-### Commit `d28f35240` - [V32/GLM5] Change default setting of V32 nvfp4 on TP4 (#20086)
-
-- Full hash: `d28f35240a28de1e09967975e258b3dd7e74924f`
-- Date/author: 2026-03-07 / Baizhou Zhang
-- Auto category: 通用实现调整
-- Main files: `python/sglang/srt/server_args.py`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-model: `python/sglang/srt/server_args.py`
-- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
-
-### Commit `56891e46b` - [Ascend ] Add qwen3.5 122B/35B/27B deployment examples on doc (#19339)
-
-- Full hash: `56891e46bc1ac4f75e8e541b61810f777cda8209`
-- Date/author: 2026-02-25 / Hexq0210
+- Full hash: `c6c74dbdca35022867b4b68400fe87f9d7666790`
+- Date/author: 2026-03-18 / niuhb
+- Branch update: `v0.5.8_dev..v0.5.9_dev`
 - Auto category: 模型支持/运行时入口
-- Main files: `docs/platforms/ascend_npu_glm5_examples.md`, `docs/platforms/ascend_npu_qwen3_5_examples.md`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Main files: `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/layers/attention/flashmla_backend.py`, `python/sglang/srt/layers/attention/nsa/index_buf_accessor.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/layers/attention/nsa_backend.py`, `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe_triton_kernels.py`, `python/sglang/srt/layers/moe/topk.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py` 等 16 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
 - Reviewed files:
-  - docs-bench: `docs/platforms/ascend_npu_glm5_examples.md`; `docs/platforms/ascend_npu_qwen3_5_examples.md`
-- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+  - runtime-model: `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/flashmla_backend.py`; `python/sglang/srt/layers/attention/nsa/index_buf_accessor.py`; `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`; `python/sglang/srt/layers/attention/nsa_backend.py`; `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe_triton_kernels.py`; `python/sglang/srt/layers/moe/topk.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py` 等 10 个文件
+  - other: `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/mem_cache/memory_pool.py`; `python/sglang/srt/speculative/eagle_info_v2.py`
+- Risk and verification: Touches model entry or runtime adaptation; main risks are weight loading, parallel partitioning, quant config, and short-generation correctness.
 
-### Commit `23adb5075` - [AMD] [GLM-5 Day 0] Add GLM-5 nightly test (#18911)
+#### Commit `5f51de15a` - GLM-5 adaptation
 
-- Full hash: `23adb50751d50638e52504ea223ad9d6677fd478`
-- Date/author: 2026-02-24 / Michael
-- Auto category: 性能/后端优化
-- Main files: `.github/workflows/nightly-test-amd-rocm720.yml`, `.github/workflows/nightly-test-amd.yml`, `test/registered/amd/accuracy/mi30x/test_glm5_eval_amd.py`, `test/registered/amd/accuracy/mi30x/test_gsm8k_eval_amd.py`, `test/registered/amd/accuracy/mi35x/test_glm5_eval_mi35x.py`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Full hash: `5f51de15a2c8993abd00cc90d8c22f976b9da7dc`
+- Date/author: 2026-03-26 / niuhb
+- Branch update: `v0.5.8_dev..v0.5.9_dev`
+- Auto category: 模型支持/运行时入口
+- Main files: `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/layers/attention/nsa_backend.py`, `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/fp8_utils.py`, `python/sglang/srt/models/deepseek_v2.py`
+- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
 - Reviewed files:
-  - ci: `.github/workflows/nightly-test-amd-rocm720.yml`; `.github/workflows/nightly-test-amd.yml`
-  - tests: `test/registered/amd/accuracy/mi30x/test_glm5_eval_amd.py`; `test/registered/amd/accuracy/mi30x/test_gsm8k_eval_amd.py`; `test/registered/amd/accuracy/mi35x/test_glm5_eval_mi35x.py`
-- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`; `python/sglang/srt/layers/attention/nsa_backend.py`; `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/fp8_utils.py`
+- Risk and verification: Touches model entry or runtime adaptation; main risks are weight loading, parallel partitioning, quant config, and short-generation correctness.
 
-### Commit `eddf19329` - [DSv32] [GLM5] Improve Model Quality by Avoiding FP32 Precision Loss in `weights_proj` (#19041)
+#### Commit `40a938509` - add prefill flashmla_sparse kv_cache fp8 for GLM-5
 
-- Full hash: `eddf193292d310b416473815cffb0c9d13985be2`
-- Date/author: 2026-02-22 / Ziang Li
-- Auto category: 性能/后端优化
-- Main files: `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/layers/deep_gemm_wrapper/compile_utils.py`, `python/sglang/srt/layers/deep_gemm_wrapper/entrypoint.py`, `test/registered/kernels/test_nsa_indexer.py`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - other: `python/sglang/srt/layers/deep_gemm_wrapper/compile_utils.py`; `python/sglang/srt/layers/deep_gemm_wrapper/entrypoint.py`
-  - runtime-perf: `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`
-  - tests: `test/registered/kernels/test_nsa_indexer.py`
-- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
-
-### Commit `1b659bcb0` - Fix GLM-5 fused shared expert (#18804)
-
-- Full hash: `1b659bcb088fd303ee472c0720eeb1a3797cffa1`
-- Date/author: 2026-02-17 / Frank Minors
-- Auto category: 性能/后端优化
-- Main files: `python/sglang/srt/models/glm4_moe.py`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-perf: `python/sglang/srt/models/glm4_moe.py`
-- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
-
-### Commit `f65c885e7` - Modify glm5 readme on npu (#18768)
-
-- Full hash: `f65c885e7ccda97c31a8d6619d1620ff8bdb008e`
-- Date/author: 2026-02-13 / BourneSun0527
-- Auto category: 测试/文档/基准
-- Main files: `docs/platforms/ascend_npu_glm5_examples.md`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - docs-bench: `docs/platforms/ascend_npu_glm5_examples.md`
-- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
-
-### Commit `123f57b84` - update glm5 readme on npu (#18657)
-
-- Full hash: `123f57b84bbaeb23e673d33598279fcf564f9607`
-- Date/author: 2026-02-12 / fy
+- Full hash: `40a93850978de3f1418bc484079c3ed252ec34c4`
+- Date/author: 2026-03-27 / niuhb
+- Branch update: `v0.5.8_dev..v0.5.9_dev`
 - Auto category: 调度/缓存/PD
-- Main files: `docs/platforms/ascend_npu_glm5_examples.md`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Main files: `python/sglang/srt/layers/attention/nsa_backend.py`, `sgl-kernel/setup_rocm.py`
+- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
 - Reviewed files:
-  - docs-bench: `docs/platforms/ascend_npu_glm5_examples.md`
-- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+  - runtime-perf: `python/sglang/srt/layers/attention/nsa_backend.py`; `sgl-kernel/setup_rocm.py`
+- Risk and verification: Touches scheduling, cache, PD, or MTP paths; verify prefill/decode ordering, first-token correctness, concurrency, and long-context stability.
 
-### Commit `c34832c02` - glm5 md (#18655)
+#### Commit `511c78385` - GLM5 MTP adapt
 
-- Full hash: `c34832c02c28360cca5657f26741001dd9d3fe7c`
-- Date/author: 2026-02-12 / liupeng374
-- Auto category: 测试/文档/基准
-- Main files: `docs/platforms/ascend_npu_glm5_examples.md`
-- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Full hash: `511c78385d2165c95fcd3e73a79dcca93b4430f8`
+- Date/author: 2026-03-30 / niuhb
+- Branch update: `v0.5.8_dev..v0.5.9_dev`
+- Auto category: 调度/缓存/PD
+- Main files: `python/sglang/srt/layers/attention/nsa_backend.py`
+- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
 - Reviewed files:
-  - docs-bench: `docs/platforms/ascend_npu_glm5_examples.md`
-- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+  - runtime-perf: `python/sglang/srt/layers/attention/nsa_backend.py`
+- Risk and verification: Touches scheduling, cache, PD, or MTP paths; verify prefill/decode ordering, first-token correctness, concurrency, and long-context stability.
+
+<!-- LOCAL_ONLY_DEV_BRANCH_UPDATE_END -->
