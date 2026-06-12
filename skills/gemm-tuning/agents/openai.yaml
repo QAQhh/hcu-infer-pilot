@@ -1,0 +1,6 @@
+interface:
+  display_name: "GEMM Tuning"
+  short_description: "Capture and tune hipBLASLt or rocBLAS GEMM shapes"
+  default_prompt: "Use $gemm-tuning to capture SGLang GEMM shapes and validate hipBLASLt or rocBLAS tuning."
+policy:
+  allow_implicit_invocation: true
