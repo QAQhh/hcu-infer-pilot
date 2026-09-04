@@ -1,0 +1,4 @@
+interface:
+  display_name: "HCU AITER MoE Tuning"
+  short_description: "在 HCU ROCm 上收集并调优 AITER MoE 配置"
+  default_prompt: "Use $hcu-aiter-moe-tuning to collect missing MoE sizes and produce a validated AITER tuning CSV."

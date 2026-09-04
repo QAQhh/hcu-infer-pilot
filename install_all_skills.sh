@@ -44,6 +44,7 @@ REGULAR_SKILLS=(
   "model-pr-optimization-history|${REPO_ROOT}/model-pr-optimization-history"
   "model-pr-optimization-hg-history|${REPO_ROOT}/model-pr-optimization-hg-history"
   "lightop-kernel-knowledge|${REPO_ROOT}/skills/lightop-skills/knowledge"
+  "hcu-aiter-moe-tuning|${REPO_ROOT}/skills/hcu-aiter-moe-tuning"
 )
 
 HUMANIZE_SKILLS=(
@@ -86,6 +87,7 @@ Installed skills:
   model-pr-optimization-history
   model-pr-optimization-hg-history
   lightop-kernel-knowledge
+  hcu-aiter-moe-tuning
   ask-codex
   ask-gemini
   humanize
@@ -131,6 +133,7 @@ resolve_repo_root() {
     "model-pr-optimization-history|${REPO_ROOT}/model-pr-optimization-history"
     "model-pr-optimization-hg-history|${REPO_ROOT}/model-pr-optimization-hg-history"
     "lightop-kernel-knowledge|${REPO_ROOT}/skills/lightop-skills/knowledge"
+    "hcu-aiter-moe-tuning|${REPO_ROOT}/skills/hcu-aiter-moe-tuning"
   )
 }
 

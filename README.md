@@ -10,6 +10,7 @@
 - 排查 SGLang 线上服务异常
 - 围绕一个模型持续做 SGLang SOTA 优化闭环
 - 为 LightOp / DCU / ROCm 场景查找 kernel 证据、profiling 证据和下一步优化方向
+- 为新模型、TP/EP 组合和 gfx 架构收集并调优 AITER ASM fused-MoE 配置
 
 ## 仓库内容
 
@@ -220,6 +221,27 @@ $lightop-kernel-knowledge
 请优先从本地代码和测试出发，再补充 upstream 资料，并给出下一步最值得验证的优化方向。
 ```
 
+### 11. `hcu-aiter-moe-tuning`
+
+作用：在 HCU ROCm 环境为 AITER ASM fused-MoE 收集、调优、校验和安装配置，适用于新模型、TP/EP shape、FP8/INT8 W8A8 或 gfx936/gfx938 缺少配置的场景。
+
+典型能力：
+
+- 从模型配置、并行策略和运行时权重推导 AITER MoE lookup shape
+- 使用 `ASM_MOE_LOG` 收集真实 prefill、decode、并发和分块 token size
+- 检查现有 CSV 的精确覆盖，生成 smoke/full 调优输入
+- 处理多卡调优、断点续跑、重复行和 runtime key 冲突
+- 备份并合并 tuned CSV，验证 AITER lookup、数值精度、性能和 SGLang 服务
+
+推荐提示词：
+
+```text
+$hcu-aiter-moe-tuning
+模型路径是 <模型路径>，AITER 路径是 <AITER 路径>，目标是 <gfx936/gfx938>，并行配置是 <TP/EP>。
+请先从模型和框架代码确认 MoE shape，再收集真实 prefill/decode size、检查已有配置覆盖，并准备可断点续跑的调优包。
+未经确认不要占用 GPU、启动服务或修改已安装的 AITER 表。
+```
+
 ## 安装方式
 
 ### 方式一：使用一键安装脚本（推荐）
@@ -295,6 +317,7 @@ git submodule update --init --recursive
 - `model-pr-optimization-history`
 - `model-pr-optimization-hg-history`
 - `lightop-kernel-knowledge`
+- `hcu-aiter-moe-tuning`
 - `ask-codex`
 - `ask-gemini`
 - `humanize`
@@ -316,6 +339,7 @@ mkdir -p ~/.codex/skills
 cp -a /path/to/DCU-Infer-Pilot/skills/llm-serving-auto-benchmark ~/.codex/skills/
 cp -a /path/to/DCU-Infer-Pilot/skills/llm-torch-profiler-analysis ~/.codex/skills/
 cp -a /path/to/DCU-Infer-Pilot/skills/model-architecture-diagram ~/.codex/skills/
+cp -a /path/to/DCU-Infer-Pilot/skills/hcu-aiter-moe-tuning ~/.codex/skills/
 ```
 
 对知识库型内容，也可以按需一并复制：
@@ -350,6 +374,7 @@ cd DCU-Infer-Pilot
 $llm-serving-auto-benchmark ...
 $llm-torch-profiler-analysis ...
 $sglang-prod-incident-triage ...
+$hcu-aiter-moe-tuning ...
 ```
 
 一般建议你一次只触发一个主 skill，再让它调用需要的历史知识库或辅助技能。比如：
