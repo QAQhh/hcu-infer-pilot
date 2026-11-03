@@ -936,3 +936,1030 @@
 - Risk and verification: Touches performance or backend paths; validate with prefill/decode traces, end-to-end throughput, and correctness smoke tests before reusing.
 
 <!-- LOCAL_ONLY_DEV_BRANCH_UPDATE_END -->
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_START -->
+## Local-only branch update from v0.5.12_dev to release/20260825_v0.5.18
+
+### Coverage Note
+
+- Source repository: `HYGON-AI/sglang-das`; branch tips: `v0.5.12_dev`@`6c946e92f`, `v0.5.15.post1_dev`@`c8ba30447`, `release/20260825_v0.5.18`@`2c841655f`
+- Scope: only local fork commits that are not reachable from `sgl-project/sglang` GitHub refs; merge commits are kept.
+- Generated date: 2026-11-03
+- Commits in this section: 122 (merges: 113)
+- Branch segments: `v0.5.12_dev..v0.5.15.post1_dev`, `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Classification note: commits matching a concrete model name or model file enter that model bucket (possibly several); other runtime, backend, CI and test commits enter `shared`; merge-only or no-relevant-path commits enter `unclassified`. Bulk sync/rename commits touching more than 150 files (e.g. squash syncs of official main) also enter only `unclassified`: they carry upstream code and are not local-only implementations. Auto-classified; diffs were not reviewed one by one.
+
+### Touched Files
+
+| File | Local commits |
+| --- | --- |
+| `test/registered/unit/function_call/test_function_call_parser.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `test/registered/unit/managers/test_mm_process_config.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `test/registered/unit/model_loader/test_modelopt_loader.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `test/registered/unit/server_args/test_server_args.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `test/run_suite.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `.github/workflows/hcu-full-enabled.yml` | `c43b06722`, `b97d7df6e`, `b7bd14f19`, `b781224d4` |
+| `.github/workflows/pr-test-hcu.yml` | `c43b06722`, `b97d7df6e`, `b7bd14f19`, `b781224d4` |
+| `README.md` | `c43b06722`, `b97d7df6e`, `b781224d4`, `16d7caa10` |
+| `python/sglang/kernels/ops/quantization/fp8_kernel.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/distributed/parallel_state.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/environ.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/activation.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/attention/deepseek_v4_backend.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/attention/dsv4/compressor.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/attention/dsv4/indexer.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/layernorm.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/moe/mega_moe.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/moe/topk.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/quantization/fp8.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/layers/quantization/fp8_utils.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/mem_cache/memory_pool.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/model_executor/forward_batch_info.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/model_loader/loader.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/models/deepseek_common/utils.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/models/deepseek_v2.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/models/deepseek_v4.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/models/minimax_m2.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/models/qwen3_5.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/server_args.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `python/sglang/srt/utils/common.py` | `b97d7df6e`, `b781224d4`, `ba31df0c0`, `16d7caa10` |
+| `test/registered/attention/test_deterministic.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `16d7caa10` |
+| `test/registered/lora/test_lora_openai_api.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `16d7caa10` |
+| `test/registered/model_loading/test_external_models.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `16d7caa10` |
+| `test/registered/openai_server/function_call/test_anthropic_tool_use.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `16d7caa10` |
+| `test/registered/openai_server/validation/test_large_max_new_tokens.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `16d7caa10` |
+| `test/registered/openai_server/validation/test_matched_stop.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `16d7caa10` |
+| `test/registered/profiling/test_start_profile.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `16d7caa10` |
+| `test/registered/radix_cache/test_radix_attention.py` | `c43b06722`, `b7bd14f19`, `b781224d4`, `16d7caa10` |
+| ... | 3798 more files omitted |
+
+### Timeline
+
+| Date | Commit | Branch update | Category | Title | Main files |
+| --- | --- | --- | --- | --- | --- |
+| 2026-06-23 | `0fc998757` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C01 | no direct file change / merge |
+| 2026-06-23 | `571813832` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C02 | no direct file change / merge |
+| 2026-06-24 | `8303d60f7` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C03 | no direct file change / merge |
+| 2026-06-30 | `810624fbe` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C04 | no direct file change / merge |
+| 2026-06-30 | `08c1fd5a0` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C05 | no direct file change / merge |
+| 2026-07-01 | `16cff03a2` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C06 | no direct file change / merge |
+| 2026-07-02 | `593df5e14` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C07 | no direct file change / merge |
+| 2026-07-03 | `01f8caf22` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C08 | no direct file change / merge |
+| 2026-07-06 | `2ada58179` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C09 | no direct file change / merge |
+| 2026-07-07 | `5f232f552` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoint C10 | no direct file change / merge |
+| 2026-07-08 | `bae695b56` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main checkpoints C11-C13 | no direct file change / merge |
+| 2026-07-08 | `293fa64f0` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge commit '2ad00faae1f4f413330fbc1241dc2c79f44ac4d4' into sync/official-main-C14-C16-20260616 | no direct file change / merge |
+| 2026-07-09 | `15abf620c` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official SGLang C17-C19 into DCU bootstrap | no direct file change / merge |
+| 2026-07-09 | `76d14014a` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main bootstrap C01-C19 into main | no direct file change / merge |
+| 2026-07-09 | `d8f3057b3` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main catchup 20260623 into DCU main | no direct file change / merge |
+| 2026-07-13 | `b9cf8ac56` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main catchup 20260625 into DCU main | no direct file change / merge |
+| 2026-07-13 | `dcd4013b3` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official SGLang main through 2026-06-29 | no direct file change / merge |
+| 2026-07-13 | `c4de02791` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official SGLang main through 2026-07-03 | no direct file change / merge |
+| 2026-07-14 | `f96aaeb79` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main catch-up through 20260706 | no direct file change / merge |
+| 2026-07-14 | `6cd17f3e3` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official SGLang main through 2026-07-09 | no direct file change / merge |
+| 2026-07-14 | `1a2c734e5` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main catch-up through 20260710 | no direct file change / merge |
+| 2026-07-15 | `9ec22c5c9` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge sync/official-main-catchup-20260710 into main | no direct file change / merge |
+| 2026-07-15 | `7fa6d89c3` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main catch-up through 20260712 | no direct file change / merge |
+| 2026-07-15 | `4cc240b90` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main catch-up through 20260713 | no direct file change / merge |
+| 2026-07-15 | `21a4a455e` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge official main through v0.5.15.post1 equivalent | no direct file change / merge |
+| 2026-07-15 | `d67c7e44e` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(dcu): forward-port v0.5.12_dev step 1 | no direct file change / merge |
+| 2026-07-15 | `d71a069b7` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(dcu): forward-port v0.5.12_dev step 2 | no direct file change / merge |
+| 2026-07-15 | `0d3dbd7ab` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(dcu): forward-port v0.5.12_dev step 3 | no direct file change / merge |
+| 2026-07-16 | `69315951c` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(dcu): forward-port v0.5.12_dev step 4 | no direct file change / merge |
+| 2026-07-16 | `bdd8d46cc` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(dcu): forward-port v0.5.12_dev step 5 | no direct file change / merge |
+| 2026-07-16 | `7df16485f` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(dcu): land v0.5.12_dev forward-port on main | no direct file change / merge |
+| 2026-07-20 | `c43b06722` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | ci(hcu): port v0.5.12 wheel staging gate | `.github/open-source-compliance.json`, `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/dcu-manual-model-test.yml` and 372 files in total |
+| 2026-07-21 | `2d509d387` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | Merge pull request #113 from HYGON-AI/v0.5.15.post1_dev_rye_megamoe_cp | no direct file change / merge |
+| 2026-07-22 | `e20e686c7` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge: sync v0.5.15.post1_dev into HCU port | no direct file change / merge |
+| 2026-07-22 | `f0d6741cc` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(dcu): forward-port v0.5.12_dev daily 20260722 | no direct file change / merge |
+| 2026-07-22 | `c32209f6d` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | Merge pull request #115 from HYGON-AI/v0.5.15_dev_lzg | no direct file change / merge |
+| 2026-07-22 | `1f3d470dc` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(dcu): integrate origin/v0.5.15.post1_dev PR#115 into forward-port 20260722 | no direct file change / merge |
+| 2026-07-23 | `599610198` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | merge: sync latest v0.5.15.post1_dev into HCU port | no direct file change / merge |
+| 2026-07-23 | `bee4b423f` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | Merge pull request #114 from HYGON-AI/hcu/v0.5.15.post1-port | no direct file change / merge |
+| 2026-07-29 | `d42b0a3bf` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(hcu): forward-port v0.5.12_dev daily 20260729 | no direct file change / merge |
+| 2026-07-29 | `cce4bdd61` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge pull request #148 from HYGON-AI/ci/align-workflows-v0515-0729 | no direct file change / merge |
+| 2026-08-03 | `d08093cb4` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | Merge pull request #158 from HYGON-AI/lvj-repox-patch-1 | no direct file change / merge |
+| 2026-08-03 | `b97d7df6e` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | Forward port/v0.5.12 dev daily 20260729 (#146) | `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml` and 184 files in total |
+| 2026-08-06 | `b91477f29` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | chore(hcu): anchor forward-port base to ac04c9cb (no content change) | no direct file change / merge |
+| 2026-08-06 | `4da105483` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | merge(hcu): forward-port v0.5.12_dev daily 20260806 (ac04c9cb..b1b81c18f) | no direct file change / merge |
+| 2026-08-06 | `34b6864a2` | `v0.5.12_dev..v0.5.15.post1_dev` | 通用实现调整 | Merge pull request #173 from HYGON-AI/forward-port/v0.5.12-dev-daily-20260806 | no direct file change / merge |
+| 2026-08-07 | `654ff007e` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | [BugFix] fix the lmslim and lightop calling issues regressions (#176) | no direct file change / merge |
+| 2026-08-07 | `b7bd14f19` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | ci(hcu): normalize HCU suite names | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml` and 199 files in total |
+| 2026-08-11 | `ad1fea5d7` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Merge pull request #177 from HYGON-AI/hcu/align-v0515-ci | no direct file change / merge |
+| 2026-08-12 | `856b425b8` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | Merge pull request #185 from HYGON-AI/v0.5.15.post1_dev_rye_dspark_bugfix | no direct file change / merge |
+| 2026-08-12 | `74e12e1e8` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | Merge pull request #189 from HYGON-AI/hcu/fix-ciupload-v0515 | no direct file change / merge |
+| 2026-08-13 | `97a1938e2` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | Merge pull request #192 from HYGON-AI/rye_dspark_bugfix | no direct file change / merge |
+| 2026-07-21 | `4859ed3b8` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge official main daily 20260721 | no direct file change / merge |
+| 2026-07-24 | `b781224d4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Rename DCU integration to HCU and sanitize runtime logs | `.github/open-source-compliance.json`, `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/dcu-manual-model-test.yml` and 466 files in total |
+| 2026-07-24 | `cb01580d4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #124 from HYGON-AI/sanitize-hcu-runtime-log-audit-20260723 | no direct file change / merge |
+| 2026-07-27 | `49764eb37` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #131 from HYGON-AI/lvjia-repoguy-patch-1 | no direct file change / merge |
+| 2026-07-29 | `ba31df0c0` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Sync/official main daily 20260728 (#136) | `.claude/skills/add-jit-kernel/SKILL.md`, `.claude/skills/add-sgl-kernel/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md` and 1924 files in total |
+| 2026-07-29 | `3bd903cb2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge pull request #147 from HYGON-AI/ci/align-workflows-main-0729 | no direct file change / merge |
+| 2026-08-04 | `8bb597e2c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'd703c086ff42655c602b85c9f0ac935215f8c4cc' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `2ceaca5ef` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '2d509d387218fb0e71ca4880cba8c56570316ab3' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `050d160da` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'f0d6741cc1fc14ad8d74a12777345d23ec8ed7fc' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `4315f50a0` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '1f3d470dc5ff3365a87ae317ea12ef341335fffe' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `9c451b2d2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '9fc04a7a2cebc525a96301d3e8e9515bb0a5b4b6' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `7ac99d59b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'c43b06722' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `1462076bb` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '1e2fec228' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `de2659dc6` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '358a33714' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `bb91d55c7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '416bbd9b9' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `515526331` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '81e3561ae' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `0792d89a9` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '811aa027d' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `235a6b991` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '15a656ea6' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `b2e118b59` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '9864c8451' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `a822ab35c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '9b86479ac' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `8bb3f9ecb` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'ac56ca009' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `d91d2c7d7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'bee4b423f68fa27792f5d8ed79eb9ecbb5e0f4e6' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `f628e2a98` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '7482123c3' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `128f5f73b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '0710e82a0' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `fc4bd96f4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit '997e64560' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `19889fe0e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'cce4bdd61' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `e1ad3a989` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'e7106de94' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `9e305f571` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'd08093cb4' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `74d439192` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'de696eab9' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-04 | `9dda7e375` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge commit 'b97d7df6e' into forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-06 | `1672d9e47` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #170 from HYGON-AI/forward-port/v0.5.15-post1-dev-20260804 | no direct file change / merge |
+| 2026-08-07 | `eda349619` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | chore(hcu): anchor daily sync base to official edc0e5489 (no content change) | no direct file change / merge |
+| 2026-08-10 | `80e01615e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Sync/official main daily 20260807 | no direct file change / merge |
+| 2026-08-10 | `37b7742e7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Sync/official main 20260810 (v0.5.17) | no direct file change / merge |
+| 2026-08-10 | `6f86e904d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge pull request #179 from HYGON-AI/sync/official-main-20260810 | no direct file change / merge |
+| 2026-08-10 | `8f7a660e5` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge pull request #183 from HYGON-AI/sync/official-main-20260810 | no direct file change / merge |
+| 2026-08-12 | `5daa79af7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | merge(hcu): forward-port v0.5.15.post1_dev through 20260811 | no direct file change / merge |
+| 2026-08-12 | `9b76db90d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #184 from HYGON-AI/forward-port/v0.5.15-post1-dev-20260811 | no direct file change / merge |
+| 2026-08-14 | `1c349c31f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | merge(hcu): forward-port v0.5.15.post1_dev through 20260813 | no direct file change / merge |
+| 2026-08-17 | `d95af36e1` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #206 from HYGON-AI/forward-port/v0.5.15-post1-dev-20260813 | no direct file change / merge |
+| 2026-08-17 | `9f4368f10` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | merge(hcu): backport official main through 20260817 (92b1d382c7) | no direct file change / merge |
+| 2026-08-17 | `d20a4750f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge pull request #208 from HYGON-AI/backport/official-main-20260817 | no direct file change / merge |
+| 2026-08-24 | `2e8f1408b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #214 from Crowder13/main | no direct file change / merge |
+| 2026-08-25 | `16d7caa10` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | sync(hcu): official main through 20260824 (c8e1ddc707) | `.claude/rules/comment-style.md`, `.claude/skills/ci-workflow-guide/SKILL.md`, `.claude/skills/cookbook-add-model/SKILL.md` and 1857 files in total |
+| 2026-08-25 | `dd41b1f06` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge branch 'main' into sync/official-main-daily-20260824 | no direct file change / merge |
+| 2026-08-25 | `97aa7a298` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #224 from dddddddxl/hcu/fork-pr-target | no direct file change / merge |
+| 2026-08-25 | `4eacd3c36` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge branch 'main' into sync/official-main-daily-20260824 | no direct file change / merge |
+| 2026-08-25 | `8ba0c9376` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #226 from dddddddxl/hcu/allow-fork-checkout | no direct file change / merge |
+| 2026-08-25 | `7481b1f54` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge branch 'main' into sync/official-main-daily-20260824 | no direct file change / merge |
+| 2026-08-25 | `a3cfa2a97` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge pull request #222 from RyeYuan/sync/official-main-daily-20260824 | no direct file change / merge |
+| 2026-08-25 | `688659c15` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Merge pull request #228 from dddddddxl/hcu/dynamic-runner-ownership | no direct file change / merge |
+| 2026-08-26 | `89d8ac7b1` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #233 from Crowder13/release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-26 | `700dd657d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge pull request #237 from HYGON-AI/zyh/test-release-workflow | no direct file change / merge |
+| 2026-08-26 | `5f2c97ef7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | Merge pull request #239 from dddddddxl/hcu/enable-v0518-ci | no direct file change / merge |
+| 2026-08-27 | `91856a154` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | Merge pull request #245 from dddddddxl/hcu/fix-safe-directory-v0518 | no direct file change / merge |
+| 2026-08-27 | `d92a60a7f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #250 from aivictor0901-tech/release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-28 | `3cf589201` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #253 from aivictor0901-tech/release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-28 | `8a65f5ecd` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge branch 'HYGON-AI:release/20260825_v0.5.18' into release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-28 | `b4b3aaee6` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge branch 'HYGON-AI:release/20260825_v0.5.18' into release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-28 | `52cddf2fa` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge branch 'release/20260825_v0.5.18' of github.com:wufan-ToBeWater/sglang-das into release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-28 | `45c5fad8d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge branch 'release/20260825_v0.5.18' of github.com:wufan-ToBeWater/sglang-das into release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-28 | `1cac982c2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge branch 'release/20260825_v0.5.18' of github.com:wufan-ToBeWater/sglang-das into release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-28 | `c16848ebe` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #251 from wufan-ToBeWater/release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-28 | `72dac21ce` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [bugfix] torchaudio版本装的不对 (#257) | `docker/hcu.Dockerfile` |
+| 2026-08-29 | `1b8d95c85` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #258 from aivictor0901-tech/release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-31 | `2d4eb83cc` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | Merge pull request #261 from xinleishang/fix/20260829_v0.5.18_hicache_pp | no direct file change / merge |
+| 2026-08-31 | `6378905dc` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #270 from dddddddxl/hcu/remove-amd-pr-state-v0518 | no direct file change / merge |
+| 2026-08-31 | `84a65ccdd` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | Merge pull request #271 from xingjinliang/fix/dismatch-shape-of-one-step-off-policy | no direct file change / merge |
+| 2026-09-02 | `f5a24dc84` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 模型支持/运行时入口 | [FEATURE]0.5.18镜像新增安装nixl (#283) | `docker/hcu.Dockerfile` |
+| 2026-09-07 | `cd8f78f01` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): include MLA absorb q kernel in HIP build (#293) |  |
+
+### Per-Commit Audit Cards
+
+- The timeline lists all 122 commits; audit cards cover only the most recent 80.
+
+#### Commit `b97d7df6e` - Forward port/v0.5.12 dev daily 20260729 (#146)
+
+- Full hash: `b97d7df6ee606d51c8a96b07b447b1a536a7e0af`
+- Date/author: 2026-08-03 / RyeYuan
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/quality-baseline-scan.yml`, `.github/workflows/release-pr-hcu.yml`, `README.md`, `README_DCU.md` 等 184 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`; `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/quality-baseline-scan.yml`; `.github/workflows/release-pr-hcu.yml`
+  - docs-bench: `docs/dcu-pr-ci-visual-guide.html`; `docs/hcu-pr-ci-visual-guide.html`; `docs/internal/dcu-main-conflict-ledger.md`
+  - other: `README.md`; `README_DCU.md`; `THIRD_PARTY_NOTICES.md`; `python/sglang/check_env.py`; `python/sglang/multimodal_gen/envs.py`; `python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py`; `python/sglang/multimodal_gen/runtime/loader/fsdp_load.py`; `python/sglang/multimodal_gen/runtime/loader/utils.py` 等 32 个文件
+  - runtime-model: `python/sglang/multimodal_gen/configs/pipeline_configs/ltx_2.py`; `python/sglang/multimodal_gen/configs/pipeline_configs/wan.py`; `python/sglang/multimodal_gen/configs/sample/ltx_2.py`; `python/sglang/multimodal_gen/configs/sample/sampling_params.py`; `python/sglang/multimodal_gen/runtime/models/dits/ltx_2.py`; `python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py`; `python/sglang/multimodal_gen/runtime/server_args/server_args.py`; `python/sglang/srt/configs/model_config.py` 等 33 个文件
+  - runtime-perf: `python/sglang/jit_kernel/csrc/add_constant.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh` 等 101 个文件
+  - tests: `python/sglang/multimodal_gen/test/server/test_server_common.py`; `python/sglang/multimodal_gen/test/server/test_server_utils.py`; `python/sglang/test/hcu_accuracy_report.py`; `python/sglang/test/hcu_cookbook_utils.py`; `python/sglang/test/hcu_server_guard.py`; `python/sglang/test/run_eval.py`; `python/sglang/test/simple_eval_common.py`; `python/sglang/test/simple_eval_mmlu.py` 等 9 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `b91477f29` - chore(hcu): anchor forward-port base to ac04c9cb (no content change)
+
+- Full hash: `b91477f2961992d12adb427475d633118cdc9fe3`
+- Date/author: 2026-08-06 / RyeYuan
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `4da105483` - merge(hcu): forward-port v0.5.12_dev daily 20260806 (ac04c9cb..b1b81c18f)
+
+- Full hash: `4da105483f725fb89c5689a4f299abb09f305571`
+- Date/author: 2026-08-06 / RyeYuan
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `34b6864a2` - Merge pull request #173 from HYGON-AI/forward-port/v0.5.12-dev-daily-20260806
+
+- Full hash: `34b6864a208cb053f0dffaec4f54ea0df0d4788a`
+- Date/author: 2026-08-06 / lizhigong
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `654ff007e` - [BugFix] fix the lmslim and lightop calling issues regressions (#176)
+
+- Full hash: `654ff007ee5e1f60aee5b7a07a42fcac7a61ff93`
+- Date/author: 2026-08-07 / YuanYuan
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 缺陷修复
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `b7bd14f19` - ci(hcu): normalize HCU suite names
+
+- Full hash: `b7bd14f19898fe547e644590f0096bef715f0072`
+- Date/author: 2026-08-07 / LvJIA-RG
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `README_HCU.md`, `scripts/ci/hcu/hcu_ci_pd.py`, `test/registered/4-gpu-models/test_qwen3_next_models.py`, `test/registered/attention/test_create_kvindices.py`, `test/registered/attention/test_deterministic.py` 等 199 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`
+  - other: `README_HCU.md`; `scripts/ci/hcu/hcu_ci_pd.py`
+  - tests: `test/registered/4-gpu-models/test_qwen3_next_models.py`; `test/registered/attention/test_create_kvindices.py`; `test/registered/attention/test_deterministic.py`; `test/registered/attention/test_fa3.py`; `test/registered/attention/test_hybrid_attn_backend.py`; `test/registered/attention/test_pack_paged_kv_to_varlen.py`; `test/registered/attention/test_torch_native_attention_backend.py`; `test/registered/attention/test_triton_attention_backend.py` 等 194 个文件
+- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+
+#### Commit `ad1fea5d7` - Merge pull request #177 from HYGON-AI/hcu/align-v0515-ci
+
+- Full hash: `ad1fea5d74f6264de5734bee8971bbade980343d`
+- Date/author: 2026-08-11 / dingxinlong
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `856b425b8` - Merge pull request #185 from HYGON-AI/v0.5.15.post1_dev_rye_dspark_bugfix
+
+- Full hash: `856b425b86102879467e89dc3912c76af654643c`
+- Date/author: 2026-08-12 / YuanYuan
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 缺陷修复
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `74e12e1e8` - Merge pull request #189 from HYGON-AI/hcu/fix-ciupload-v0515
+
+- Full hash: `74e12e1e8fbd5e38be975645f64355df8b671e57`
+- Date/author: 2026-08-12 / lizhigong
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 缺陷修复
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `97a1938e2` - Merge pull request #192 from HYGON-AI/rye_dspark_bugfix
+
+- Full hash: `97a1938e2bd04cffd7f07570e7d91679034c4dbc`
+- Date/author: 2026-08-13 / YuanYuan
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 缺陷修复
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `4859ed3b8` - Merge official main daily 20260721
+
+- Full hash: `4859ed3b833fd6c505d8740b7ef879b35cf0857f`
+- Date/author: 2026-07-21 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `b781224d4` - Rename DCU integration to HCU and sanitize runtime logs
+
+- Full hash: `b781224d4dae58889ba9bcc3efc0ff20fb424dc4`
+- Date/author: 2026-07-24 / LvJIA-RG
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: `.github/open-source-compliance.json`, `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/dcu-manual-model-test.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/labeler.yml`, `.github/workflows/lint-dcu.yml`, `.github/workflows/lint-hcu.yml` 等 466 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/open-source-compliance.json`; `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/dcu-manual-model-test.yml`; `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/hcu-manual-model-test.yml`; `.github/workflows/labeler.yml`; `.github/workflows/lint-dcu.yml`; `.github/workflows/lint-hcu.yml` 等 14 个文件
+  - docs-bench: `docs/dcu-pr-ci-visual-guide.html`; `docs/hcu-pr-ci-visual-guide.html`
+  - other: `NOTICE`; `README.md`; `README_DCU.md`; `README_HCU.md`; `THIRD_PARTY_NOTICES.md`; `python/sglang/check_env.py`; `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py` 等 33 个文件
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py` 等 14 个文件
+  - runtime-perf: `python/sglang/jit_kernel/dsv4/attn.py`; `python/sglang/jit_kernel/dsv4/compress.py`; `python/sglang/jit_kernel/dsv4/elementwise.py`; `python/sglang/jit_kernel/dsv4/gemm.py`; `python/sglang/jit_kernel/dsv4/moe.py`; `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/kernels/ops/attention/dsa/index_buf_accessor.py`; `python/sglang/kernels/ops/attention/dsa/tilelang_kernel.py` 等 77 个文件
+  - tests: `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`; `python/sglang/test/ci/ci_register.py`; `python/sglang/test/dcu_cookbook_utils.py`; `python/sglang/test/dcu_utils.py`; `python/sglang/test/hcu_cookbook_utils.py`; `python/sglang/test/hcu_utils.py`; `python/sglang/test/simple_eval_mmmu_vlm.py`; `python/sglang/test/test_utils.py` 等 326 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `cb01580d4` - Merge pull request #124 from HYGON-AI/sanitize-hcu-runtime-log-audit-20260723
+
+- Full hash: `cb01580d4618170ce8b9f3713b766508ca81782d`
+- Date/author: 2026-07-24 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `49764eb37` - Merge pull request #131 from HYGON-AI/lvjia-repoguy-patch-1
+
+- Full hash: `49764eb373aef40ab1809215717d7c2222cfc5d8`
+- Date/author: 2026-07-27 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `ba31df0c0` - Sync/official main daily 20260728 (#136)
+
+- Full hash: `ba31df0c0da941467ef94a6c114a375af39b488f`
+- Date/author: 2026-07-29 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: `.claude/skills/add-jit-kernel/SKILL.md`, `.claude/skills/add-sgl-kernel/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md`, `.claude/skills/cookbook-add-model/templates/benchmarks.jsx.tmpl`, `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`, `.claude/skills/cookbook-migrate-model/SKILL.md`, `.claude/skills/cookbook-review-pr/SKILL.md`, `.claude/skills/llm-torch-profiler-analysis/references/fuse-overlap-catalog.md` 等 1924 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/MAINTAINER.md`; `.github/labeler.yml`; `.github/workflows/_pr-test-check-changes.yml`; `.github/workflows/diffusion-ci-gt-gen-npu.yml`; `.github/workflows/diffusion-ci-gt-gen.yml`; `.github/workflows/lint.yml` 等 28 个文件
+  - docs-bench: `benchmark/bench_linear_attention/bench_cutedsl_kda_decode.py`; `benchmark/bench_linear_attention/bench_gdn_qkv_split.py`; `benchmark/hicache/bench_hicache_write_back.py`; `benchmark/hicache/perf.py`; `benchmark/kernels/all_reduce/benchmark_fused_ar_rms_quant_amd.py`; `benchmark/kernels/bench_fused_gate_sigmoid_mul_add.py`; `benchmark/kernels/bench_fused_sigmoid_mul.py`; `benchmark/kernels/deepseek/benchmark_cute_dsl_fp8_paged_mqa_logits.py` 等 47 个文件
+  - other: `.claude/skills/cookbook-add-model/references/authoring-reference.md`; `.claude/skills/cookbook-add-model/templates/benchmarks.jsx.tmpl`; `.claude/skills/cookbook-migrate-model/SKILL.md`; `.claude/skills/cookbook-review-pr/SKILL.md`; `.claude/skills/llm-torch-profiler-analysis/references/fuse-overlap-catalog.md`; `3rdparty/amd/wheel/sglang/pyproject.toml`; `docker/Dockerfile`; `python/pyproject.toml` 等 159 个文件
+  - runtime-model: `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`; `.pre-commit-config.yaml`; `python/sglang/multimodal_gen/runtime/models/dits/krea2.py`; `python/sglang/multimodal_gen/runtime/models/dits/ltx_2.py`; `python/sglang/multimodal_gen/runtime/models/dits/sana_wm_components.py`; `python/sglang/multimodal_gen/runtime/models/dits/zimage.py`; `python/sglang/multimodal_gen/runtime/models/vaes/hunyuanvae.py`; `python/sglang/srt/configs/load_config.py` 等 74 个文件
+  - runtime-perf: `.claude/skills/add-jit-kernel/SKILL.md`; `.claude/skills/add-sgl-kernel/SKILL.md`; `.claude/skills/llm-torch-profiler-analysis/scripts/triage_kernel_helpers.py`; `python/sglang/jit_kernel/.clang-format`; `python/sglang/jit_kernel/__init__.py`; `python/sglang/jit_kernel/__main__.py`; `python/sglang/jit_kernel/activation.py`; `python/sglang/jit_kernel/add_constant.py` 等 1037 个文件
+  - tests: `.claude/skills/write-sglang-test/SKILL.md`; `python/sglang/jit_kernel/tests/deepseek_v4/__init__.py`; `python/sglang/jit_kernel/tests/deepseek_v4/common.py`; `python/sglang/jit_kernel/tests/kv_canary/__init__.py`; `python/sglang/jit_kernel/tests/kv_canary/_canary_helpers.py`; `python/sglang/jit_kernel/tests/kv_canary/_constants.py`; `python/sglang/jit_kernel/tests/kv_canary/_differential.py`; `python/sglang/jit_kernel/tests/kv_canary/_fixtures.py` 等 579 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `3bd903cb2` - Merge pull request #147 from HYGON-AI/ci/align-workflows-main-0729
+
+- Full hash: `3bd903cb2346916401221961348f8ec8a736d1b1`
+- Date/author: 2026-07-29 / dddddddxl
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `8bb597e2c` - Merge commit 'd703c086ff42655c602b85c9f0ac935215f8c4cc' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `8bb597e2c956c7758fab3907f35e60e10fde68b9`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `2ceaca5ef` - Merge commit '2d509d387218fb0e71ca4880cba8c56570316ab3' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `2ceaca5ef2cf2a735ca187a1655db3f7387b3346`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `050d160da` - Merge commit 'f0d6741cc1fc14ad8d74a12777345d23ec8ed7fc' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `050d160dafdfa4e406ca9afa988f5593f9d4b20e`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `4315f50a0` - Merge commit '1f3d470dc5ff3365a87ae317ea12ef341335fffe' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `4315f50a076ba0bc2d56ebdd0fcd4f7b96af4e8e`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `9c451b2d2` - Merge commit '9fc04a7a2cebc525a96301d3e8e9515bb0a5b4b6' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `9c451b2d26be1dc7eb84b3b5a5ff5b5ded6fa98f`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `7ac99d59b` - Merge commit 'c43b06722' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `7ac99d59b3ba889e0e6975e6e3576caf30d134af`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `1462076bb` - Merge commit '1e2fec228' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `1462076bbac783eda6f9c8e7352668f44dd0b8e0`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `de2659dc6` - Merge commit '358a33714' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `de2659dc628759ae256f67ce14ffb0eccf1b10aa`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `bb91d55c7` - Merge commit '416bbd9b9' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `bb91d55c7ab3b90cc09139d5f6c1b92301ee46fe`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `515526331` - Merge commit '81e3561ae' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `5155263318cf7b01fa78ed0606f330b9e76d7db4`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `0792d89a9` - Merge commit '811aa027d' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `0792d89a997bdc052b84469179e107928543c521`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `235a6b991` - Merge commit '15a656ea6' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `235a6b99156b98a95255264a42741465a0c534c5`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `b2e118b59` - Merge commit '9864c8451' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `b2e118b59a6f7a5762e70e821a430d3ff525894d`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `a822ab35c` - Merge commit '9b86479ac' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `a822ab35c92cc04fdbe4952d559d5fcff7471898`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `8bb3f9ecb` - Merge commit 'ac56ca009' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `8bb3f9ecbb788865a359428361afbb60833f303b`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `d91d2c7d7` - Merge commit 'bee4b423f68fa27792f5d8ed79eb9ecbb5e0f4e6' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `d91d2c7d72c8aa86fd871a978e82fc989663c03a`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `f628e2a98` - Merge commit '7482123c3' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `f628e2a9840d4dd0ef850f8fe8a193761b01b27a`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `128f5f73b` - Merge commit '0710e82a0' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `128f5f73b6ff1885819fe35889a076ab1cc57b41`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `fc4bd96f4` - Merge commit '997e64560' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `fc4bd96f4346ee32b05f9713b4c2e5aa3f3a584c`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `19889fe0e` - Merge commit 'cce4bdd61' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `19889fe0e241c5613ddcd3db6c82b2a11d01b36e`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `e1ad3a989` - Merge commit 'e7106de94' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `e1ad3a98986cfb1809b1ec5999e62029786d0cda`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `9e305f571` - Merge commit 'd08093cb4' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `9e305f5717087f05b2f415bd641e4c4d903dbdb3`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `74d439192` - Merge commit 'de696eab9' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `74d439192d38be421aecd837ae692785ca5bface`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `9dda7e375` - Merge commit 'b97d7df6e' into forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `9dda7e375e0a8a8815ebacafec60cb8015cd77c3`
+- Date/author: 2026-08-04 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `1672d9e47` - Merge pull request #170 from HYGON-AI/forward-port/v0.5.15-post1-dev-20260804
+
+- Full hash: `1672d9e470a59c952e881dfebe9bae6ac914656e`
+- Date/author: 2026-08-06 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `eda349619` - chore(hcu): anchor daily sync base to official edc0e5489 (no content change)
+
+- Full hash: `eda349619bd4ca60246bea0a2623c4b494bd7ea9`
+- Date/author: 2026-08-07 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `80e01615e` - Sync/official main daily 20260807
+
+- Full hash: `80e01615e8ea05d69b290ee983490bf4f44c599e`
+- Date/author: 2026-08-10 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `37b7742e7` - Sync/official main 20260810 (v0.5.17)
+
+- Full hash: `37b7742e7e55116c01f8565fe578b2478c476560`
+- Date/author: 2026-08-10 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `6f86e904d` - Merge pull request #179 from HYGON-AI/sync/official-main-20260810
+
+- Full hash: `6f86e904d21870cf1f638e4713725ecca120f757`
+- Date/author: 2026-08-10 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `8f7a660e5` - Merge pull request #183 from HYGON-AI/sync/official-main-20260810
+
+- Full hash: `8f7a660e58527db05b130f5609d95b86885f84da`
+- Date/author: 2026-08-10 / YuanYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `5daa79af7` - merge(hcu): forward-port v0.5.15.post1_dev through 20260811
+
+- Full hash: `5daa79af74da9583663ed20eb29779320ce7bece`
+- Date/author: 2026-08-12 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `9b76db90d` - Merge pull request #184 from HYGON-AI/forward-port/v0.5.15-post1-dev-20260811
+
+- Full hash: `9b76db90d66ff3f0379f66a52b24102bf7fb264d`
+- Date/author: 2026-08-12 / YuanYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `1c349c31f` - merge(hcu): forward-port v0.5.15.post1_dev through 20260813
+
+- Full hash: `1c349c31fc7f51c71c63d812b1213b3fe1f47edf`
+- Date/author: 2026-08-14 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `d95af36e1` - Merge pull request #206 from HYGON-AI/forward-port/v0.5.15-post1-dev-20260813
+
+- Full hash: `d95af36e1331aa3c7064eb837dd7103b6406b8a8`
+- Date/author: 2026-08-17 / YuanYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `9f4368f10` - merge(hcu): backport official main through 20260817 (92b1d382c7)
+
+- Full hash: `9f4368f104fbf93f744eafef685ebe8f8a94ff3c`
+- Date/author: 2026-08-17 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `d20a4750f` - Merge pull request #208 from HYGON-AI/backport/official-main-20260817
+
+- Full hash: `d20a4750f11e581c0691752f3d6b7389312a6819`
+- Date/author: 2026-08-17 / YuanYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `2e8f1408b` - Merge pull request #214 from Crowder13/main
+
+- Full hash: `2e8f1408b42432408dc0087dec9f8520204d5a75`
+- Date/author: 2026-08-24 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `16d7caa10` - sync(hcu): official main through 20260824 (c8e1ddc707)
+
+- Full hash: `16d7caa1065abd2af782f3afc35c3dc4da745cde`
+- Date/author: 2026-08-25 / RyeYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: `.claude/rules/comment-style.md`, `.claude/skills/ci-workflow-guide/SKILL.md`, `.claude/skills/cookbook-add-model/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md`, `.claude/skills/cookbook-add-model/references/diffusion-authoring.md`, `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`, `.claude/skills/cookbook-add-model/templates/diffusion-config.jsx.tmpl`, `.claude/skills/cookbook-add-model/templates/diffusion-page.mdx.tmpl` 等 1857 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.claude/skills/ci-workflow-guide/SKILL.md`; `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/FOLDER_README.md`; `.github/labeler.yml`; `.github/update_ci_permission.py`; `.github/workflows/_npu-pr-test-stage.yml`; `.github/workflows/_npu-single-node-test-stage.yml` 等 42 个文件
+  - docs-bench: `benchmark/hicache/bench_buffer_mode.py`; `docs/cookbook/autoregressive/Baidu/PaddleOCR-VL.mdx`; `docs/cookbook/autoregressive/Baidu/Unlimited-OCR.mdx`; `docs/cookbook/autoregressive/DeepReinforce/Ornith-1.0.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4.mdx`; `docs/cookbook/autoregressive/GLM/GLM-4.6V.mdx`; `docs/cookbook/autoregressive/GLM/GLM-5.2.mdx`; `docs/cookbook/autoregressive/Google/Gemma4.mdx` 等 115 个文件
+  - other: `.claude/rules/comment-style.md`; `.claude/skills/cookbook-add-model/SKILL.md`; `.claude/skills/cookbook-add-model/references/authoring-reference.md`; `.claude/skills/cookbook-add-model/references/diffusion-authoring.md`; `.claude/skills/cookbook-add-model/templates/diffusion-page.mdx.tmpl`; `.claude/skills/cookbook-add-model/templates/page.mdx.tmpl`; `.claude/skills/llm-torch-profiler-analysis/references/fuse-overlap-catalog.md`; `.claude/skills/sglang-runtime-context/SKILL.md` 等 288 个文件
+  - runtime-model: `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`; `.claude/skills/cookbook-add-model/templates/diffusion-config.jsx.tmpl`; `.pre-commit-config.yaml`; `docker/sgl-router.Dockerfile`; `experimental/sgl-router/Cargo.toml`; `experimental/sgl-router/README.md`; `experimental/sgl-router/sgl-kv-indexer/.gitignore`; `experimental/sgl-router/sgl-kv-indexer/Cargo.toml` 等 257 个文件
+  - runtime-perf: `docker/rocm.Dockerfile`; `experimental/sgl-router/src/policies/cache_aware_zmq.rs`; `python/sglang/kernel_api_logging.py`; `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce.cuh`; `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce_hip.cuh`; `python/sglang/kernels/aot/csrc/common_extension.cc`; `python/sglang/kernels/aot/csrc/cpu/activation.cpp`; `python/sglang/kernels/aot/csrc/cpu/torch_extension_cpu.cpp` 等 453 个文件
+  - tests: `experimental/sgl-router/sgl-kv-indexer/tests/common/id.rs`; `experimental/sgl-router/sgl-kv-indexer/tests/common/kv.rs`; `experimental/sgl-router/sgl-kv-indexer/tests/common/net.rs`; `experimental/sgl-router/sgl-kv-indexer/tests/grpc_contract.rs`; `experimental/sgl-router/sgl-kv-indexer/tests/memory_integration.rs`; `experimental/sgl-router/tests/component/policies/cache_aware_zmq.rs`; `experimental/sgl-router/tests/e2e/chat_completions/test_two_router_convergence.py`; `experimental/sgl-router/tests/e2e/infra/gateway.py` 等 702 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `dd41b1f06` - Merge branch 'main' into sync/official-main-daily-20260824
+
+- Full hash: `dd41b1f06dee84cdb3a77eb2a4c3cdd64306bebc`
+- Date/author: 2026-08-25 / YuanYuan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `97aa7a298` - Merge pull request #224 from dddddddxl/hcu/fork-pr-target
+
+- Full hash: `97aa7a298a3274cddc7b19c55123fed05e112336`
+- Date/author: 2026-08-25 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `4eacd3c36` - Merge branch 'main' into sync/official-main-daily-20260824
+
+- Full hash: `4eacd3c36d9ee880fae87ea072e22fb5bf641b30`
+- Date/author: 2026-08-25 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `8ba0c9376` - Merge pull request #226 from dddddddxl/hcu/allow-fork-checkout
+
+- Full hash: `8ba0c9376f157769b4fd8bccb560af739b61d15b`
+- Date/author: 2026-08-25 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `7481b1f54` - Merge branch 'main' into sync/official-main-daily-20260824
+
+- Full hash: `7481b1f5430eb91025166a3f0a6a9e920ef8348a`
+- Date/author: 2026-08-25 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `a3cfa2a97` - Merge pull request #222 from RyeYuan/sync/official-main-daily-20260824
+
+- Full hash: `a3cfa2a979442d114187460e31d42f3fb4744441`
+- Date/author: 2026-08-25 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `688659c15` - Merge pull request #228 from dddddddxl/hcu/dynamic-runner-ownership
+
+- Full hash: `688659c15694195ee0c6fab18de26b60b313b82f`
+- Date/author: 2026-08-25 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `89d8ac7b1` - Merge pull request #233 from Crowder13/release/20260825_v0.5.18
+
+- Full hash: `89d8ac7b1d97151c0389e34cc9f4d097fce7ef99`
+- Date/author: 2026-08-26 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `700dd657d` - Merge pull request #237 from HYGON-AI/zyh/test-release-workflow
+
+- Full hash: `700dd657dce63efa2b6869e337a8522705b5acdd`
+- Date/author: 2026-08-26 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `5f2c97ef7` - Merge pull request #239 from dddddddxl/hcu/enable-v0518-ci
+
+- Full hash: `5f2c97ef71d6adce5c910a0a78054bb27dcdf3c0`
+- Date/author: 2026-08-26 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 测试/文档/基准
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `91856a154` - Merge pull request #245 from dddddddxl/hcu/fix-safe-directory-v0518
+
+- Full hash: `91856a15449b4aeaf8dbc6c6ed73681b86d03f1d`
+- Date/author: 2026-08-27 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 缺陷修复
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `d92a60a7f` - Merge pull request #250 from aivictor0901-tech/release/20260825_v0.5.18
+
+- Full hash: `d92a60a7f0500b0d022aaeefaadb02f59c0e903f`
+- Date/author: 2026-08-27 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `3cf589201` - Merge pull request #253 from aivictor0901-tech/release/20260825_v0.5.18
+
+- Full hash: `3cf5892012c37f06edb9f1e495a2cbb2b872038c`
+- Date/author: 2026-08-28 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `8a65f5ecd` - Merge branch 'HYGON-AI:release/20260825_v0.5.18' into release/20260825_v0.5.18
+
+- Full hash: `8a65f5ecd8ec0ea9cac3add863bda1f18578d994`
+- Date/author: 2026-08-28 / wufan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `b4b3aaee6` - Merge branch 'HYGON-AI:release/20260825_v0.5.18' into release/20260825_v0.5.18
+
+- Full hash: `b4b3aaee6e8f6bfe75965f70d1382e0a49e6cf28`
+- Date/author: 2026-08-28 / wufan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `52cddf2fa` - Merge branch 'release/20260825_v0.5.18' of github.com:wufan-ToBeWater/sglang-das into release/20260825_v0.5.18
+
+- Full hash: `52cddf2fa5a5f2a3a00b782f52af82b9659f87b4`
+- Date/author: 2026-08-28 / wufan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `45c5fad8d` - Merge branch 'release/20260825_v0.5.18' of github.com:wufan-ToBeWater/sglang-das into release/20260825_v0.5.18
+
+- Full hash: `45c5fad8de90135528ff9e02e94a46f4f770774d`
+- Date/author: 2026-08-28 / wufan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `1cac982c2` - Merge branch 'release/20260825_v0.5.18' of github.com:wufan-ToBeWater/sglang-das into release/20260825_v0.5.18
+
+- Full hash: `1cac982c2125bee1bda17c1a8472302dd66e9b74`
+- Date/author: 2026-08-28 / wufan
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `c16848ebe` - Merge pull request #251 from wufan-ToBeWater/release/20260825_v0.5.18
+
+- Full hash: `c16848ebe82f2466525eb44f4ca369d948ad4301`
+- Date/author: 2026-08-28 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `72dac21ce` - [bugfix] torchaudio版本装的不对 (#257)
+
+- Full hash: `72dac21ce7211142fe7194f932a9cafdde7d6be6`
+- Date/author: 2026-08-28 / Crowder13
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 缺陷修复
+- Main files: `docker/hcu.Dockerfile`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `docker/hcu.Dockerfile`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+#### Commit `1b8d95c85` - Merge pull request #258 from aivictor0901-tech/release/20260825_v0.5.18
+
+- Full hash: `1b8d95c85b5a2442939ccc5abc0225b1a7e943f3`
+- Date/author: 2026-08-29 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `2d4eb83cc` - Merge pull request #261 from xinleishang/fix/20260829_v0.5.18_hicache_pp
+
+- Full hash: `2d4eb83cc759a3e318b287cb37efc64bf8f8099c`
+- Date/author: 2026-08-31 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 缺陷修复
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `6378905dc` - Merge pull request #270 from dddddddxl/hcu/remove-amd-pr-state-v0518
+
+- Full hash: `6378905dc61607a8ad0f04db03b078379da14692`
+- Date/author: 2026-08-31 / Lvjiajia
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `84a65ccdd` - Merge pull request #271 from xingjinliang/fix/dismatch-shape-of-one-step-off-policy
+
+- Full hash: `84a65ccddc0ba1bc553012a5497bdc8b54069f79`
+- Date/author: 2026-08-31 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 缺陷修复
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `f5a24dc84` - [FEATURE]0.5.18镜像新增安装nixl (#283)
+
+- Full hash: `f5a24dc843be70821c51186c22c4211b7326646d`
+- Date/author: 2026-09-02 / Crowder13
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 模型支持/运行时入口
+- Main files: `docker/hcu.Dockerfile`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `docker/hcu.Dockerfile`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+#### Commit `cd8f78f01` - fix(hcu): include MLA absorb q kernel in HIP build (#293)
+
+- Full hash: `cd8f78f01f9b6cc9f379e7393a369f378eab35c2`
+- Date/author: 2026-09-07 / maxiaobetter
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: 未记录文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_END -->

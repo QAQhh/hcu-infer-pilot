@@ -106,3 +106,130 @@
 - Risk and verification: Touches model entry or runtime adaptation; main risks are weight loading, parallel partitioning, quant config, and short-generation correctness.
 
 <!-- LOCAL_ONLY_DEV_BRANCH_UPDATE_END -->
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_START -->
+## Local-only branch update from v0.5.12_dev to release/20260825_v0.5.18
+
+### Coverage Note
+
+- Source repository: `HYGON-AI/sglang-das`; branch tips: `v0.5.12_dev`@`6c946e92f`, `v0.5.15.post1_dev`@`c8ba30447`, `release/20260825_v0.5.18`@`2c841655f`
+- Scope: only local fork commits that are not reachable from `sgl-project/sglang` GitHub refs; merge commits are kept.
+- Generated date: 2026-11-03
+- Commits in this section: 4 (merges: 0)
+- Branch segments: `v0.5.12_dev..v0.5.15.post1_dev`, `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Classification note: commits matching a concrete model name or model file enter that model bucket (possibly several); other runtime, backend, CI and test commits enter `shared`; merge-only or no-relevant-path commits enter `unclassified`. Bulk sync/rename commits touching more than 150 files (e.g. squash syncs of official main) also enter only `unclassified`: they carry upstream code and are not local-only implementations. Auto-classified; diffs were not reviewed one by one.
+
+### Touched Files
+
+| File | Local commits |
+| --- | --- |
+| `python/sglang/srt/models/mimo_v2.py` | `1e2fec228`, `123e9539e`, `cb50fb561` |
+| `python/sglang/check_env.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/kernels/ops/quantization/fp8_kernel.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/distributed/parallel_state.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/environ.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/activation.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/attention/deepseek_v4_backend.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/attention/dsv4/indexer.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/attention/fla/chunk_delta_h.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/attention/flashattention_backend.py` | `1e2fec228`, `cb50fb561` |
+| `python/sglang/srt/layers/layernorm.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/moe/ep_moe/layer.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/moe/fused_moe_triton/fused_marlin_moe.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/moe/topk.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/fp8.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/fp8_utils.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/moe_wna16.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/mxfp4.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/quark/schemes/quark_w8a8_fp8_moe.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/w8a8_fp8.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/w8a8_int8.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/mem_cache/memory_pool.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/model_executor/forward_batch_info.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/model_executor/model_runner.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/bailing_moe.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/deepseek_common/utils.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/deepseek_v2.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/deepseek_v4.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/hunyuan_v3.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/mimo_v2_nextn.py` | `cb50fb561`, `4af5b4974` |
+| `python/sglang/srt/models/minimax_m2.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/qwen2.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/qwen3.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/qwen3_5.py` | `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/models/qwen3_moe.py` | `1e2fec228`, `123e9539e` |
+| ... | 120 more files omitted |
+
+### Timeline
+
+| Date | Commit | Branch update | Category | Title | Main files |
+| --- | --- | --- | --- | --- | --- |
+| 2026-07-20 | `1e2fec228` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | feat(hcu): port runtime and kernel rename | `python/sglang/check_env.py`, `python/sglang/jit_kernel/dsv4/attn.py`, `python/sglang/jit_kernel/dsv4/elementwise.py` and 109 files in total |
+| 2026-07-31 | `123e9539e` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | fix lint: satisfy pre-commit on the forward-port diff | `python/sglang/check_env.py`, `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_v1.cuh` and 91 files in total |
+| 2026-09-11 | `cb50fb561` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat: support mimo v2 flash channel fp8 for 5.18 (#343) | `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/models/mimo_v2.py`, `python/sglang/srt/models/mimo_v2_nextn.py` |
+| 2026-09-14 | `4af5b4974` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Mimo v2 pro update and bug fix (#354) | `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/models/mimo_v2_nextn.py` |
+
+### Per-Commit Audit Cards
+
+#### Commit `1e2fec228` - feat(hcu): port runtime and kernel rename
+
+- Full hash: `1e2fec228a9a8b1e781c3592eff356eeb8b584ed`
+- Date/author: 2026-07-20 / tianlinyang77
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/check_env.py`, `python/sglang/jit_kernel/dsv4/attn.py`, `python/sglang/jit_kernel/dsv4/elementwise.py`, `python/sglang/jit_kernel/dsv4/gemm.py`, `python/sglang/jit_kernel/dsv4/moe.py`, `python/sglang/jit_kernel/fp8_blockwise_gemm.py`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/mxfp8.py` 等 109 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/check_env.py`; `python/sglang/multimodal_gen/csrc/render/hunyuan3d_rasterizer/__init__.py`; `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/layernorm.py` 等 13 个文件
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py` 等 14 个文件
+  - runtime-perf: `python/sglang/jit_kernel/dsv4/attn.py`; `python/sglang/jit_kernel/dsv4/elementwise.py`; `python/sglang/jit_kernel/dsv4/gemm.py`; `python/sglang/jit_kernel/dsv4/moe.py`; `python/sglang/jit_kernel/fp8_blockwise_gemm.py`; `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/jit_kernel/mxfp8.py`; `python/sglang/jit_kernel/sparse_mla_q8kv8_prefill_sm90.py` 等 80 个文件
+  - tests: `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`; `sgl-kernel/tests/test_moe_align.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `123e9539e` - fix lint: satisfy pre-commit on the forward-port diff
+
+- Full hash: `123e9539ea23dde2f1a12b0374c1375bbfb10989`
+- Date/author: 2026-07-31 / RyeYuan
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/check_env.py`, `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_v1.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`, `python/sglang/kernels/ops/quantization/fp8_kernel.py`, `python/sglang/multimodal_gen/runtime/layers/attention/backends/flash_attn.py`, `python/sglang/multimodal_gen/runtime/layers/attention/layer.py`, `python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py` 等 91 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/check_env.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/communicator.py`; `python/sglang/srt/layers/layernorm.py` 等 14 个文件
+  - runtime-model: `python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_nextn.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py` 等 19 个文件
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/topk_v1.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/kernels/ops/quantization/fp8_kernel.py`; `python/sglang/multimodal_gen/runtime/layers/attention/backends/flash_attn.py`; `python/sglang/multimodal_gen/runtime/layers/attention/layer.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/distributed/device_communicators/quick_all_reduce.py` 等 56 个文件
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`; `python/sglang/test/simple_eval_mmlu.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `cb50fb561` - feat: support mimo v2 flash channel fp8 for 5.18 (#343)
+
+- Full hash: `cb50fb561aa174070f79fa98f7bd1638660970d6`
+- Date/author: 2026-09-11 / daishiqiang123
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/models/mimo_v2.py`, `python/sglang/srt/models/mimo_v2_nextn.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/mimo_v2.py`; `python/sglang/srt/models/mimo_v2_nextn.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `4af5b4974` - Mimo v2 pro update and bug fix (#354)
+
+- Full hash: `4af5b4974cc38a4e57896270d069b526e2db00ba`
+- Date/author: 2026-09-14 / daishiqiang123
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/models/mimo_v2_nextn.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/mimo_v2_nextn.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/utils.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_END -->
