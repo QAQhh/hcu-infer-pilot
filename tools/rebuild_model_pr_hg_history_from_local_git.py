@@ -57,6 +57,9 @@ WORKTREE_LABELS = {
 TODAY = date.today().isoformat()
 
 COMMIT_LIMIT = int(os.environ.get("MODEL_PR_HG_HISTORY_LIMIT", "3000"))
+# Read history from every branch, not just the checked-out one. Fork work is
+# often spread over several release branches (e.g. the vllm fork).
+LOG_ALL_REFS = os.environ.get("MODEL_PR_HG_HISTORY_LOG_ALL_REFS", "0") == "1"
 MAX_COMMITS_PER_DOC = int(os.environ.get("MODEL_PR_HG_HISTORY_MAX_DOC_COMMITS", "80"))
 SGLANG_OFFICIAL_REF_PREFIX = os.environ.get(
     "SGLANG_HG_HISTORY_OFFICIAL_REF_PREFIX",
@@ -152,10 +155,12 @@ def git_files(framework: str) -> list[str]:
 
 def parse_commits(framework: str) -> list[CommitInfo]:
     fmt = "\x02%H\x01%h\x01%ad\x01%an\x01%s"
+    extra = ["--all"] if LOG_ALL_REFS else []
     out = run(
         [
             "git",
             "log",
+            *extra,
             f"--max-count={COMMIT_LIMIT}",
             "--date=short",
             # Rename detection needs blob contents; on a blob:none partial clone
@@ -581,9 +586,18 @@ def main() -> int:
     global SGLANG_DISABLE_OFFICIAL_FILTER
     global SGLANG_OFFICIAL_REF_PREFIX
     global SGLANG_REQUIRE_OFFICIAL_FILTER
+    global LOG_ALL_REFS
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--all-refs",
+        action="store_true",
+        help=(
+            "Read history from all refs instead of only the checked-out branch. "
+            "Required when fork commits live on several release branches."
+        ),
+    )
     parser.add_argument(
         "--framework",
         action="append",
@@ -619,6 +633,7 @@ def main() -> int:
         ),
     )
     args = parser.parse_args()
+    LOG_ALL_REFS = LOG_ALL_REFS or args.all_refs
     SGLANG_OFFICIAL_REF_PREFIX = args.sglang_official_ref_prefix
     SGLANG_REQUIRE_OFFICIAL_FILTER = not args.allow_missing_sglang_official_filter
     SGLANG_DISABLE_OFFICIAL_FILTER = args.disable_sglang_official_filter
