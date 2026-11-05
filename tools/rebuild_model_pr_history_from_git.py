@@ -22,6 +22,7 @@ import fnmatch
 import json
 import os
 import re
+import shutil
 import subprocess
 from collections import defaultdict
 from dataclasses import dataclass, field
@@ -324,7 +325,51 @@ def run(cmd: list[str], cwd: Path | None = None, check: bool = True, timeout: in
     return proc.stdout
 
 
+def github_http_api(path: str, paginate: bool = False) -> Any:
+    """Fallback GitHub REST client used when the `gh` CLI is unavailable.
+
+    Reads the token from GH_TOKEN/GITHUB_TOKEN and, for TLS-intercepting
+    proxies, an explicit CA bundle from MODEL_PR_HISTORY_CA_BUNDLE.
+    """
+    import http.client
+    import ssl
+    import urllib.request
+
+    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    cafile = os.environ.get("MODEL_PR_HISTORY_CA_BUNDLE")
+    context = ssl.create_default_context(cafile=cafile) if cafile else ssl.create_default_context()
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": "dcu-infer-pilot-pr-history"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    url = "https://api.github.com/" + path.lstrip("/")
+    values: list[Any] = []
+    while url:
+        payload = None
+        link = ""
+        for attempt in range(3):
+            try:
+                request = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(request, timeout=45, context=context) as response:
+                    payload = json.loads(response.read().decode("utf-8"))
+                    link = response.headers.get("Link", "")
+                break
+            except (TimeoutError, OSError, http.client.HTTPException) as exc:
+                if attempt == 2:
+                    raise
+                import time
+
+                time.sleep(2 + 2 * attempt)
+        if not paginate:
+            return payload
+        values.extend(payload if isinstance(payload, list) else [payload])
+        match = re.search(r'<([^>]+)>;\s*rel="next"', link)
+        url = match.group(1) if match else ""
+    return values
+
+
 def gh_api(path: str, paginate: bool = False) -> Any:
+    if shutil.which("gh") is None:
+        return github_http_api(path, paginate)
     cmd = ["gh", "api", path]
     if paginate:
         cmd.append("--paginate")
@@ -475,6 +520,9 @@ def trace_model_prs(framework: str, files: list[str]) -> dict[int, TraceInfo]:
                 "log",
                 "--date=short",
                 "--format=\x02%H\x01%ad\x01%s",
+                # Rename detection needs blob contents; on a blob:none partial
+                # clone that triggers lazy fetches and fails in offline runs.
+                "--no-renames",
                 "--name-only",
                 "--",
                 *chunk,
@@ -584,7 +632,7 @@ def fetch_pr_bundle(framework: str, number: int, cache: dict[str, Any]) -> tuple
         return entry.get("info"), entry.get("files", [])
     try:
         info = gh_api(f"repos/{repo}/pulls/{number}")
-        files = gh_api(f"repos/{repo}/pulls/{number}/files?per_page=100", paginate=True)
+        files = gh_api(f"repos/{repo}/pulls/{number}/files?per_page=30", paginate=True)
     except Exception as exc:  # keep the rebuild resilient to deleted private refs
         info = {"number": number, "html_url": f"https://github.com/{repo}/pull/{number}", "title": f"unavailable PR #{number}", "state": "unknown", "fetch_error": str(exc)}
         files = []
@@ -1181,11 +1229,12 @@ def update_indexes() -> None:
     )
 
 
-def rebuild(dry_run: bool = False) -> None:
+def rebuild(dry_run: bool = False, frameworks: tuple[str, ...] = ("sglang", "vllm")) -> None:
     cache = load_cache()
-    all_files = {framework: git_files(framework) for framework in REPOS}
-    update_indexes()
-    for framework in ("sglang", "vllm"):
+    all_files = {framework: git_files(framework) for framework in frameworks}
+    if not dry_run:
+        update_indexes()
+    for framework in frameworks:
         print(f"== {framework} ==")
         shared_files = shared_bucket_files(framework, all_files[framework])
         shared_raw_traces = trace_model_prs(framework, shared_files)
@@ -1204,7 +1253,7 @@ def rebuild(dry_run: bool = False) -> None:
         if not dry_run:
             shared_dir = HISTORY_ROOT / framework / SHARED_BUCKET
             shared_dir.mkdir(parents=True, exist_ok=True)
-        for model in MODEL_ORDER:
+        for model in [m for m in MODEL_ORDER if m != SHARED_BUCKET]:
             files = selected_files(framework, model, all_files[framework])
             raw_traces = trace_model_prs(framework, files)
             traces = filter_traces_by_subject(model, raw_traces)
@@ -1267,12 +1316,23 @@ def rebuild(dry_run: bool = False) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--framework",
+        action="append",
+        choices=("sglang", "vllm"),
+        help=(
+            "Only rebuild the given framework; repeat for both. Defaults to all. "
+            "Use this when only one upstream worktree is available."
+        ),
+    )
     args = parser.parse_args()
-    missing = [str(path) for path in FRAMEWORK_ROOTS.values() if not path.exists()]
+    frameworks = tuple(args.framework) if args.framework else ("sglang", "vllm")
+    missing = [str(FRAMEWORK_ROOTS[name]) for name in frameworks if not FRAMEWORK_ROOTS[name].exists()]
     if missing:
         raise SystemExit(f"missing framework worktrees: {', '.join(missing)}")
-    HISTORY_ROOT.mkdir(parents=True, exist_ok=True)
-    rebuild(dry_run=args.dry_run)
+    if not args.dry_run:
+        HISTORY_ROOT.mkdir(parents=True, exist_ok=True)
+    rebuild(dry_run=args.dry_run, frameworks=frameworks)
 
 
 if __name__ == "__main__":
