@@ -1,0 +1,16 @@
+mode=user
+source=csv
+hardware_type=NMZ
+strategy=common
+gpu_ids=0
+should_clean=0
+chunk_size=1
+tune_warmup_times=3
+tune_loop_times=10
+bench_warmup_times=3
+bench_loop_times=10
+test_times=2
+enable_bestkernel_csv=0
+cu_count=64
+update_target_config=0
+enable_mk_n_threshold=0
