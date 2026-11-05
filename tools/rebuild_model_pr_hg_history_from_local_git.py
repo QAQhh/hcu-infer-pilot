@@ -77,10 +77,19 @@ class CommitInfo:
     files: list[str] = field(default_factory=list)
 
 
-def run(cmd: list[str], cwd: Path, check: bool = True) -> str:
+def run(cmd: list[str], cwd: Path, check: bool = True, stdin_text: str | None = None) -> str:
     if cmd and cmd[0] == "git":
         cmd = ["git", "-c", f"safe.directory={cwd}", *cmd[1:]]
-    proc = subprocess.run(cmd, cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    proc = subprocess.run(
+        cmd,
+        cwd=cwd,
+        text=True,
+        input=stdin_text,
+        encoding="utf-8",
+        errors="replace",
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+    )
     if check and proc.returncode != 0:
         raise RuntimeError(f"command failed: {' '.join(cmd)}\n{proc.stderr}")
     return proc.stdout
@@ -122,7 +131,12 @@ def official_sglang_commits() -> set[str]:
             raise RuntimeError(message)
         print(f"warning: {message}")
         return set()
-    return set(run(["git", "rev-list", *refs], repo).splitlines())
+    # Feed the refs through stdin: the local sgl-project/sglang ref set can hold
+    # thousands of entries, which exceeds the Windows command-line length limit
+    # (WinError 206) when expanded into argv.
+    return set(
+        run(["git", "rev-list", "--stdin"], repo, stdin_text="\n".join(refs) + "\n").splitlines()
+    )
 
 
 def git_files(framework: str) -> list[str]:
@@ -139,6 +153,9 @@ def parse_commits(framework: str) -> list[CommitInfo]:
             "log",
             f"--max-count={COMMIT_LIMIT}",
             "--date=short",
+            # Rename detection needs blob contents; on a blob:none partial clone
+            # that triggers lazy fetches and fails in offline/sandboxed runs.
+            "--no-renames",
             f"--format={fmt}",
             "--name-only",
         ],
@@ -514,12 +531,14 @@ def write_indexes() -> None:
 
 
 def rebuild(dry_run: bool = False) -> None:
-    HISTORY_ROOT.mkdir(parents=True, exist_ok=True)
+    if not dry_run:
+        HISTORY_ROOT.mkdir(parents=True, exist_ok=True)
     official_by_framework = {
         "sglang": official_sglang_commits(),
         "vllm": set(),
     }
-    write_indexes()
+    if not dry_run:
+        write_indexes()
     for framework in ("sglang", "vllm"):
         all_files = git_files(framework)
         commits = filter_local_only_commits(
