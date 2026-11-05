@@ -4,13 +4,93 @@
 
 | File | Local commits |
 | --- | --- |
-| - | no local-only commit |
+| `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4.mdx` | `4975d6490a`, `36b93840b5`, `ab43824b09`, `16229e94d0`, `ca25bc4275`, `ee0f2375e5`, `50bacb0280`, `16d7caa106` |
+| `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1.mdx` | `4975d6490a`, `36b93840b5`, `ab43824b09`, `ca25bc4275` |
+| `docs/docs/hardware-platforms/ascend-npus/model-deployment/best-practices/deepseek_v4_flash.mdx` | `4975d6490a`, `36b93840b5`, `ab43824b09`, `16229e94d0`, `ca25bc4275`, `50bacb0280` |
+| `docs/docs/hardware-platforms/ascend-npus/model-deployment/tutorials/deepseek_v4_flash.mdx` | `4975d6490a`, `36b93840b5`, `ab43824b09`, `16229e94d0`, `ca25bc4275`, `50bacb0280` |
+| `docs/internal/deepseek-v4-nmz28-tp8-20261010.md` | `36b93840b5` |
+| `docs/src/snippets/agentx/deepseek-ai/deepseek-v4.jsx` | `4975d6490a`, `36b93840b5` |
+| `docs/src/snippets/agentx/deepseek-ai/deepseek-v4_1.jsx` | `4975d6490a`, `36b93840b5` |
+| `docs/src/snippets/configs/deepseek-ai/deepseek-v4-benchmarks.jsx` | `ee0f2375e5` |
+| `docs/src/snippets/configs/deepseek-ai/deepseek-v4.jsx` | `4975d6490a`, `36b93840b5`, `ab43824b09`, `16229e94d0`, `ca25bc4275`, `ee0f2375e5`, `50bacb0280`, `16d7caa106` |
+| `docs/src/snippets/configs/deepseek-ai/deepseek-v4_1.jsx` | `4975d6490a`, `36b93840b5`, `16229e94d0`, `ca25bc4275` |
+| `examples/runtime/deepseek_v4/benchmark_deepseek_5090.py` | `50bacb0280` |
+| `python/sglang/kernels/aot/csrc/elementwise/deepseek_v4_topk.cu` | `4975d6490a`, `36b93840b5`, `16d7caa106` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/block_amax.cuh` | `4975d6490a`, `16229e94d0` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/c1.cuh` | `15c7204b7a`, `36b93840b5`, `ab43824b09`, `16229e94d0` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/c128.cuh` | `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/c128_online_v2.cuh` | `4975d6490a`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/c128_v2.cuh` | `50bacb0280`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/c2.cuh` | `15c7204b7a`, `36b93840b5`, `16229e94d0` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/c4.cuh` | `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/c4_v2.cuh` | `50bacb0280`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/c_plan.cuh` | `15c7204b7a`, `4975d6490a`, `16229e94d0`, `ca25bc4275`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/candidate_block_table.cuh` | `4975d6490a`, `16229e94d0` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/common.cuh` | `756ae5b4fe`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/flashmla_sched_meta.cuh` | `4975d6490a`, `16229e94d0` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/fp4_indexer_rope.cuh` | `15c7204b7a`, `ab43824b09`, `16229e94d0` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/fp4_indexer_rope_hip.cuh` | `4975d6490a`, `ab43824b09` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/fp8_cvt.cuh` | `ca25bc4275` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/fp8_wo_a_group_major_quant.cuh` | `16d7caa106`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/fused_norm_rope.cuh` | `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/fused_norm_rope_v2.cuh` | `756ae5b4fe`, `16229e94d0`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/hash_topk.cuh` | `4975d6490a`, `ca25bc4275`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/linear_bf16_fp32.cuh` | `756ae5b4fe` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/main_norm_rope.cuh` | `36b93840b5`, `756ae5b4fe`, `ab43824b09`, `16229e94d0`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh` | `4975d6490a`, `36b93840b5`, `50bacb0280`, `16d7caa106`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/mhc_boundary_gfx95.cuh` | `36b93840b5` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/mhc_post_combine_norm_prefill.cuh` | `16229e94d0` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/mxfp8_gemv_gfx95.cuh` | `ab43824b09` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/online_c128_mtp.cuh` | `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/paged_mqa_metadata.cuh` | `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/rope.cuh` | `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh` | `16229e94d0`, `ee0f2375e5`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/store.cuh` | `16229e94d0`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/topk_bf16_small.cuh` | `4975d6490a`, `16229e94d0` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/topk_v1.cuh` | `4975d6490a`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/topk_v2.cuh` | `5f67ce01c3`, `4975d6490a`, `36b93840b5`, `ab43824b09`, `16229e94d0`, `ca25bc4275`, `ee0f2375e5`, `50bacb0280`, `16d7caa106`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/wo_a_fused.cuh` | `4975d6490a`, `16229e94d0` |
+| `python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/compress.cuh` | `ba31df0c0d` |
+| `python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/compress_v2.cuh` | `ba31df0c0d` |
+| `python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/fp4_utils.cuh` | `15c7204b7a`, `ab43824b09`, `16229e94d0` |
+| `python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/fp8_utils.cuh` | `ca25bc4275`, `ba31df0c0d` |
+| `python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/kv_layout.cuh` | `4975d6490a`, `36b93840b5`, `ab43824b09`, `16229e94d0` |
+| `python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/kvcacheio.cuh` | `ba31df0c0d` |
+| `python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/topk_impl.cuh` | `5f67ce01c3`, `4975d6490a`, `16229e94d0`, `50bacb0280`, `16d7caa106`, `ba31df0c0d` |
+| `python/sglang/kernels/ops/attention/deepseek_v4_rope.py` | `4975d6490a`, `ee0f2375e5` |
+| `python/sglang/srt/arg_groups/deepseek_v4_hook.py` | `5343b311c2`, `15c7204b7a`, `4975d6490a`, `36b93840b5`, `756ae5b4fe`, `ab43824b09`, `16229e94d0`, `ca25bc4275`, `ee0f2375e5`, `50bacb0280`, `16d7caa106`, `618f17ede5`, ... (19 total) |
+| `python/sglang/srt/arg_groups/model_overrides/deepseek_v4.py` | `ab43824b09`, `16229e94d0`, `ee0f2375e5`, `50bacb0280` |
+| `python/sglang/srt/configs/deepseek_v4.py` | `16229e94d0` |
+| `python/sglang/srt/configs/deepseek_v41.py` | `15c7204b7a`, `16229e94d0` |
+| `python/sglang/srt/layers/attention/deepseek_v4_backend.py` | `5343b311c2`, `15c7204b7a`, `4975d6490a`, `36b93840b5`, `756ae5b4fe`, `ab43824b09`, `16229e94d0`, `ca25bc4275`, `ee0f2375e5`, `50bacb0280`, `7b3548f974`, `16d7caa106`, ... (37 total) |
+| `python/sglang/srt/layers/attention/deepseek_v4_backend_hip_radix.py` | `4975d6490a`, `36b93840b5`, `ab43824b09`, `16229e94d0`, `ca25bc4275`, `ee0f2375e5`, `16d7caa106`, `ad2ff869c6` |
+| `python/sglang/srt/layers/attention/deepseek_v4_mega_backend.py` | `4975d6490a` |
+| `python/sglang/srt/layers/attention/deepseek_v4_trtllm_backend.py` | `4975d6490a`, `36b93840b5`, `ca25bc4275` |
+| `python/sglang/srt/mem_cache/cp_cache_layer_split/deepseek_v4_helpers.py` | `5343b311c2`, `15c7204b7a` |
+| `python/sglang/srt/mem_cache/cp_cache_layer_split/deepseek_v4_layout.py` | `15c7204b7a` |
+| `python/sglang/srt/mem_cache/cp_cache_layer_split/deepseek_v4_pool.py` | `5343b311c2`, `15c7204b7a` |
+| `python/sglang/srt/mem_cache/deepseek_v4_compress_state.py` | `16229e94d0`, `ee0f2375e5`, `16d7caa106`, `c5c5cc2270` |
+| `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py` | `5343b311c2`, `15c7204b7a`, `4975d6490a`, `36b93840b5`, `756ae5b4fe`, `ab43824b09`, `16229e94d0`, `ca25bc4275`, `ee0f2375e5`, `6742d20c8c`, `c5c5cc2270`, `ba31df0c0d`, ... (19 total) |
+| `python/sglang/srt/models/deepseek_common/amd/deepseek_v4_fused_mhc.py` | `5343b311c2`, `4975d6490a`, `36b93840b5`, `ee0f2375e5`, `50bacb0280`, `16d7caa106` |
+| `python/sglang/srt/models/deepseek_common/amd/deepseek_v4_gfx95_dense.py` | `36b93840b5` |
+| `python/sglang/srt/models/deepseek_common/amd/deepseek_v4_hip.py` | `5343b311c2`, `4975d6490a`, `36b93840b5` |
+| `python/sglang/srt/models/deepseek_common/amd/deepseek_v4_wo_a_fp8.py` | `4975d6490a`, `ee0f2375e5` |
+| `python/sglang/srt/models/deepseek_v4.py` | `5343b311c2`, `15c7204b7a`, `5f67ce01c3`, `4975d6490a`, `36b93840b5`, `756ae5b4fe`, `ab43824b09`, `6049c219ec`, `16229e94d0`, `ca25bc4275`, `ee0f2375e5`, `50bacb0280`, ... (64 total) |
+| `python/sglang/srt/models/deepseek_v41_vit.py` | `16229e94d0` |
+| `python/sglang/srt/models/deepseek_v4_boundary.py` | `4975d6490a` |
+| `python/sglang/srt/models/deepseek_v4_dspark.py` | `5343b311c2`, `15c7204b7a`, `4975d6490a`, `36b93840b5`, `756ae5b4fe`, `16229e94d0`, `ee0f2375e5`, `50bacb0280`, `16d7caa106`, `e7106de947`, `ba31df0c0d` |
+| `python/sglang/srt/models/deepseek_v4_mhc.py` | `15c7204b7a`, `4975d6490a`, `36b93840b5` |
+| `python/sglang/srt/models/deepseek_v4_nextn.py` | `4975d6490a`, `16229e94d0`, `ca25bc4275`, `ee0f2375e5` |
+| `python/sglang/srt/models/deepseek_v4_platform_stage.py` | `4975d6490a` |
+| `python/sglang/srt/models/deepseek_v4_replay_tail.py` | `4975d6490a` |
+| `python/sglang/srt/multimodal/deepseek_v41_image_processing.py` | `5343b311c2`, `16229e94d0` |
+| ... | 56 more files omitted from table; all were used for git tracing. |
 
 ## Local Commit Coverage Summary
 
-- Source worktree: `/public/home/yangyn1/work_space/2026/minmax/skills/sglang`
-- Generated date: 2026-05-20
-- Commits in this document: 0
+- Source worktree: `HYGON-AI/sglang-das`
+- Generated date: 2026-11-05
+- Commits in this document: 92
 - Auto-classification note: commits matching model files or model names enter the model bucket; runtime, backend, scheduler, cache, CI, and test commits that cannot be pinned to one model family enter the framework `shared/` bucket.
 - Trace command: `git log --name-only`
 - Filter note: commits reachable from `sgl-project/sglang` GitHub refs were removed; this document keeps only local fork commits.
@@ -19,262 +99,2477 @@
 
 | Date | Commit | Category | Title | Main files |
 | --- | --- | --- | --- | --- |
-| - | - | - | no local-only commit found | - |
+| 2026-11-03 | `5343b311c2` | 性能/后端优化 | Feat/20261102 Sync latest deepseek-v4.1 optimizations to main (#640) | `python/sglang/kernels/ops/attention/dsv4/attn.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer_rope_hcu.py` |
+| 2026-10-26 | `15c7204b7a` | 性能/后端优化 | [Feat] [HCU] dsv4.1: Sync feature branch updates into main (#594) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `python/sglang/kernels/aot/benchmark/bench_rope_fp4.py` |
+| 2026-10-21 | `5f67ce01c3` | 性能/后端优化 | Sync/rel 2 main 20261021 dsv4 validated (#576) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `.gitignore` |
+| 2026-10-20 | `4975d6490a` | 性能/后端优化 | Sync/official main daily 20261019 (#560) | `.agents/skills/ci-workflow-guide/SKILL.md`, `.agents/skills/cookbook-add-model/SKILL.md`, `.agents/skills/generate-profile/SKILL.md` |
+| 2026-10-12 | `36b93840b5` | 性能/后端优化 | Sync/official main daily 20261009 (#500) | `.agents/skills/add-jit-kernel/SKILL.md`, `.agents/skills/add-sgl-kernel/SKILL.md`, `.agents/skills/babysit-pr-to-pass-ci/SKILL.md` |
+| 2026-09-30 | `756ae5b4fe` | 性能/后端优化 | Sync/20260929 rye rel 2 main (#470) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/quality-gate.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-09-29 | `ab43824b09` | 性能/后端优化 | Sync/official main daily 20260928 (#452) | `.claude/rules/cookbook-first.md`, `.claude/skills/add-jit-kernel/SKILL.md`, `.claude/skills/add-sgl-kernel/SKILL.md` |
+| 2026-09-28 | `6049c219ec` | 性能/后端优化 | Glm5.3 flash (#427) | `python/sglang/kernels/aot/CMakeLists.txt`, `python/sglang/kernels/aot/csrc/common_extension.cc`, `python/sglang/kernels/aot/csrc/common_extension_rocm.cc` |
+| 2026-09-23 | `88b0efdfe9` | 测试/文档/基准 | adapt ci to feat/20260920_deepseek-v4.1 (#442) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-23 | `9cd15042af` | 模型支持/运行时入口 | feat(citest): 更新镜像测试用例, 适配 0.5.18 (Qwen3.8 / DeepSeek-V4) (#433) | `docker/image-citest-conf-hcu.yaml` |
+| 2026-09-20 | `16229e94d0` | 性能/后端优化 | Sync/official main daily 20260920 (#410) | `.claude/skills/add-jit-kernel/SKILL.md`, `.claude/skills/babysit-pr-to-pass-ci/SKILL.md`, `.claude/skills/ci-test-audit/SKILL.md` |
+| 2026-09-14 | `ca25bc4275` | 性能/后端优化 | Sync/official main daily 20260914 (#362) | `.claude/rules/unit-test-admission.md`, `.claude/skills/ci-workflow-guide/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md` |
+| 2026-09-08 | `ee0f2375e5` | 性能/后端优化 | Sync/official main daily 20260907 (#328) | `.claude/skills/cookbook-add-model/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md`, `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl` |
+| 2026-09-01 | `50bacb0280` | 性能/后端优化 | Sync/official main daily 20260831 (#273) | `.claude/skills/sglang-runtime-context/SKILL.md`, `.github/CI_PERMISSIONS.json`, `.github/workflows/_npu-single-node-test-stage.yml` |
+| 2026-08-25 | `7b3548f974` | 性能/后端优化 | fix lint: apply pre-commit fixes across the 20260824 sync diff | `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce_hip.cuh`, `python/sglang/kernels/aot/csrc/kvcacheio/transfer.cu`, `python/sglang/kernels/ops/moe/ep_moe_kernels.py` |
+| 2026-08-25 | `16d7caa106` | 性能/后端优化 | sync(hcu): official main through 20260824 (c8e1ddc707) | `.claude/rules/comment-style.md`, `.claude/skills/ci-workflow-guide/SKILL.md`, `.claude/skills/cookbook-add-model/SKILL.md` |
+| 2026-08-06 | `725659198b` | 缺陷修复 | Revert "fix assert when mtp enable and step >1" | `python/sglang/srt/layers/attention/deepseek_v4_backend.py` |
+| 2026-08-05 | `a0840f493c` | 缺陷修复 | [BugFix] recall hcu changes in pre_mhc changes to fix the accuracy issues | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-08-05 | `6742d20c8c` | 性能/后端优化 | Fix lint for request-scoped C128 state pool | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py` |
+| 2026-08-04 | `618f17ede5` | 缺陷修复 | fix: resolve lint errors (ruff unused import, black formatting) | `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/managers/scheduler.py` |
+| 2026-08-04 | `ff6161f885` | 缺陷修复 | Abort requests that exceed KV cache pool capacity with detailed 413 error Fix --swa-full-tokens-ratio 0.8 invalid | `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/server_args.py` |
+| 2026-08-04 | `a1dd37d220` | 缺陷修复 | fix: resolve lint errors (isort, ruff F821, trailing-whitespace, black) | `python/sglang/srt/layers/attention/deepseek_v4_backend.py` |
+| 2026-08-03 | `b97d7df6ee` | 性能/后端优化 | Forward port/v0.5.12 dev daily 20260729 (#146) | `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml` |
+| 2026-08-03 | `9a2b01399d` | 缺陷修复 | fix assert when mtp enable and step >1 | `python/sglang/srt/layers/attention/deepseek_v4_backend.py` |
+| 2026-08-02 | `c5c5cc2270` | 性能/后端优化 | [Opt]Optimize DSV4 C128 state pool with request-scoped allocation | `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/dsv4/c128_cleanup.py` |
+| 2026-07-31 | `e7106de947` | 性能/后端优化 | V0.5.15.post1 dev to support dspark on HCU (#142) | `python/sglang/benchmark/dspark_sps_profiler.py`, `python/sglang/srt/arg_groups/speculative_hook.py`, `python/sglang/srt/managers/overlap_utils.py` |
+| 2026-07-31 | `123e9539ea` | 性能/后端优化 | fix lint: satisfy pre-commit on the forward-port diff | `python/sglang/check_env.py`, `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_v1.cuh` |
+| 2026-07-29 | `25ffedc227` | 性能/后端优化 | fix(hcu): repair forward-port compatibility gaps | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/kernels/ops/quantization/fp8_kernel.py`, `python/sglang/srt/batch_overlap/two_batch_overlap.py` |
+| 2026-07-29 | `ba31df0c0d` | 性能/后端优化 | Sync/official main daily 20260728 (#136) | `.claude/skills/add-jit-kernel/SKILL.md`, `.claude/skills/add-sgl-kernel/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md` |
+| 2026-07-28 | `864b3413b0` | 性能/后端优化 | support dpsk-v4-int8 | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py` |
+| 2026-07-27 | `38c750157f` | 性能/后端优化 | fix：修复接口改动. | `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/activation.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py` |
+| 2026-07-24 | `b781224d4d` | 性能/后端优化 | Rename DCU integration to HCU and sanitize runtime logs | `.github/open-source-compliance.json`, `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-07-22 | `aa2309e220` | 性能/后端优化 | chore(compliance): add HYGON headers and provenance | `README.md`, `THIRD_PARTY_NOTICES.md`, `python/sglang/check_env.py` |
+| 2026-07-22 | `73c7e6c8f5` | 性能/后端优化 | [feat]:迁移lightop调用方式到新的接口. | `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/activation.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py` |
+| 2026-07-21 | `a596be0dc0` | 性能/后端优化 | [BugFix] Fix DeepSeek-V4 pure-TP startup after official main daily 20260721 merge | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/utils/compile.py` |
+| 2026-07-21 | `470ae85b52` | 性能/后端优化 | style: apply pre-commit formatting (black/isort/ruff) | `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-21 | `e876bb9ff3` | 性能/后端优化 | [FEAT] support cp+MegaMoE in prefill w/o cuda-graph | `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/moe/mega_moe.py` |
+| 2026-07-20 | `1e2fec228a` | 性能/后端优化 | feat(hcu): port runtime and kernel rename | `python/sglang/check_env.py`, `python/sglang/jit_kernel/dsv4/attn.py`, `python/sglang/jit_kernel/dsv4/elementwise.py` |
+| 2026-06-17 | `94659d14a3` | 性能/后端优化 | [dsv4] cp support megamoe | `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-17 | `d703c086ff` | 性能/后端优化 | [BugFix] Fix the accuracy issues of DeepSeek-V4 in TP/CP/DP/EP | `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/mem_cache/allocator/paged.py` |
+| 2026-07-14 | `84a8a08ac2` | 缺陷修复 | [BugFix] skip pre-warmup of mHC for DCU and update validation docs | `docs/internal/dcu-main-catchup-20260703-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-13 | `6bf9d18729` | 性能/后端优化 | fix(dcu): reconcile DSV4 prewarm and fused Q imports | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-13 | `4fb3f09391` | 性能/后端优化 | runtime: migrate current main DCU interfaces to HCU | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/batch_overlap/single_batch_overlap.py`, `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py` |
+| 2026-07-08 | `1a61a9b603` | 缺陷修复 | Fix the PP assertion issue | `python/sglang/srt/arg_groups/deepseek_v4_hook.py` |
+| 2026-07-06 | `ad2ff869c6` | 性能/后端优化 | [BugFix] Backport partial bugfixes from C10 and also have to assign SGLANG_USE_AITER_AG=0 to ensure accuracy now | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend_hip_radix.py` |
+| 2026-07-05 | `2d561a3ec2` | 性能/后端优化 | chore: add modification notices for DCU changes | `NOTICE`, `THIRD_PARTY_NOTICES.md`, `python/sglang/jit_kernel/deepseek_v4.py` |
+| 2026-07-03 | `fc241f4ad3` | 缺陷修复 | [BugFix] Sync to official changes to remove first pre-warmup of mHC | `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-02 | `379da22b45` | 性能/后端优化 | fix: address PR review and lint failures | `python/sglang/srt/eplb/expert_distribution.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/moe/topk.py` |
+| 2026-07-02 | `249a70dbef` | 性能/后端优化 | [Addition] deliver one validation doc and support multi-stream in hip backend | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-02 | `71cbfd64b9` | 缺陷修复 | [bugfix] fix C16 BF16 KV cache writes | `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/mem_cache/utils.py` |
+| 2026-06-30 | `631212b521` | 调度/缓存/PD | feat(eplb): make expert distribution collection PP-safe | `python/sglang/srt/eplb/expert_distribution.py`, `python/sglang/srt/eplb/expert_location.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py` |
+| 2026-06-30 | `129b3d05e8` | 模型支持/运行时入口 | feat: Add lightop topk env & Improve multi stream overlap. | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-24 | `1b2694156d` | 缺陷修复 | [fix(deepseek-v4)]: remove unused codes and use ScheduleBatch extend_lens/prefix_lens in init_new | `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-24 | `5b19ad4642` | 性能/后端优化 | [fix(deepseek-v4)]: keep DCU on non-HIP attention backend + compressor | `python/sglang/srt/layers/attention/attention_registry.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py` |
+| 2026-06-23 | `e4802da346` | 性能/后端优化 | [feature] c16 DeepSeek V4 BF16 KV cache support | `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`, `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/arg_groups/deepseek_v4_hook.py` |
+| 2026-06-10 | `af4e7a5d4c` | 模型支持/运行时入口 | 增加fp8_einsum算子环境变量控制 | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-08 | `d834f0200a` | 模型支持/运行时入口 | 适配fp8—einsum算子 | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-10 | `1be11e42e4` | 性能/后端优化 | [BugFix] fix the bug of dp and jit kernel | `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/dsv4/compress.py`, `python/sglang/srt/layers/communicator.py` |
+| 2026-06-10 | `9f7cb70608` | 性能/后端优化 | [BugFix] fix the bug of cp/ep | `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-09 | `623d6eca1c` | 缺陷修复 | [BugFix] fix the acc bug due to Q NaN generations, and fix the other tiny typos | `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/models/deepseek_v2.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-03 | `9abf0b3f48` | 性能/后端优化 | [BugFix] fix the running issues of tilelang in compressor_v2 mode, SGLANG_OPT_USE_COMPRESSOR_V2=false could be removed | `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/dsv4/compress.py` |
+| 2026-06-03 | `a1fd5486ac` | 性能/后端优化 | [BugFix] fix some bugs when using fused kernels | `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/metadata.py` |
+| 2026-06-03 | `e6ed9a5b07` | 性能/后端优化 | 修改mhc_post算子传参 | `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-02 | `1e0cf19d00` | 性能/后端优化 | [feature] add dspk fuse_op | `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-06-02 | `262c0c8208` | 性能/后端优化 | Resolve the issue of errors during the startup service phase | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/utils.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py` |
+| 2026-06-01 | `0b8715f673` | 性能/后端优化 | 融合QNORM_ROPE_KV_ROPE_QUANT | `python/sglang/srt/environ.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-29 | `91863feeff` | 性能/后端优化 | [feature] support deepseek-v4-flash-int8 | `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-01 | `c8eff9d693` | 性能/后端优化 | 优化quant_k_cache算子和rmsnorm算子 | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-26 | `d1d74545ba` | 性能/后端优化 | 优化quant_k_cache算子和rmsnorm算子 | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py` |
+| 2026-05-25 | `2f1c501c23` | 性能/后端优化 | fix jit kernel for store kvcache | `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh` |
+| 2026-05-22 | `fc6da7e471` | 性能/后端优化 | 接入aiter的tilelang mhc_pre/mhc_post算子 | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-22 | `1f86903ae5` | 性能/后端优化 | split prefill/decode for attention | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/__init__.py` |
+| 2026-05-20 | `e684ee941a` | 性能/后端优化 | fix deepseek v4 pro blockwise && channelwise | `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`, `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py` |
+| 2026-05-20 | `e92c263e5f` | 调度/缓存/PD | add Pipeline Parallelism (PP) and PD support for DeepSeek-V4 | `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-19 | `1e8c3e8430` | 性能/后端优化 | 添加aiter moe算子权重重排逻辑+优化linear_bf16_fp32算子+优化act_quant算子+融合silu_mul_fp8_quant算子 | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py` |
+| 2026-05-21 | `e170935b68` | 性能/后端优化 | 适配deepseekv4 | `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh` |
+| 2026-05-20 | `2702c30f56` | 缺陷修复 | backup dcu deepseek v4 debug state | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/mhc.py` |
+| 2026-05-09 | `ddc13994fd` | 性能/后端优化 | 接入lightop的Marlin MOE W8A8算子 | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-09 | `ce5d45fc5e` | 性能/后端优化 | 1. add aiter moe; 2. split attn for prefill/decode | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` |
+| 2026-05-09 | `fe0cc03a87` | 性能/后端优化 | [bug fix] fix the dpsk-v4 mtp start issue, but multi-request input is failed still | `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-05-07 | `f059177569` | 模型支持/运行时入口 | support fp8 channel-wise load weight | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-06 | `cc008ad804` | 性能/后端优化 | 删除deepgemm meta | `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/model_executor/model_runner.py` |
+| 2026-04-30 | `1087fc571b` | 缺陷修复 | fix mhc | `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-04-30 | `d0534f2f9f` | 性能/后端优化 | first version for fp8 block | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-04-30 | `8cfd8b5eaa` | 性能/后端优化 | [compile fix] replace cuda_fp8 with hip/hip_fp8 to avoid jit compile errors | `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh` |
+| 2026-04-29 | `5b6499d058` | 性能/后端优化 | fix topk_transform_512 jit | `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_1024.cuh`, `python/sglang/srt/layers/attention/dsv4/metadata.py` |
+| 2026-04-29 | `3230bc2bdc` | 性能/后端优化 | [compile fix] rename all '__grid_constant__' with global SGL_GRID_CONSTANT to avoid compiling issues | `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hisparse_transfer.cuh` |
+| 2026-04-29 | `87c5bd8807` | 性能/后端优化 | 修复CompressorPrefillPlan中使用jit kernel编译deepseek_v4/common.cuh时报错的问题 | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/include/sgl_kernel/utils.h` |
+| 2026-04-28 | `f824dca292` | 性能/后端优化 | fix jit for compress_fused_norm_rope_inplace | `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/attention/dsv4/compressor.py` |
+| 2026-04-28 | `b4cb76a970` | 性能/后端优化 | fix jit for compress_forward | `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh` |
+| 2026-04-28 | `99690f7d1c` | 性能/后端优化 | Ignore error exceptions and allow the service to start. | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py` |
+| 2026-04-28 | `321fa6969e` | 性能/后端优化 | patch for deepseekv4 | `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h` |
 
 ## Per-Commit Audit Cards
 
-### Local commit search conclusion
+### Commit `5343b311c2` - Feat/20261102 Sync latest deepseek-v4.1 optimizations to main (#640)
 
-- Commits reachable from `sgl-project/sglang` GitHub refs were removed; no local-only commit remains in the baseline history.
+- Full hash: `5343b311c2951da5dcd3617e9a91b76cb9070e04`
+- Date/author: 2026-11-03 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/kernels/ops/attention/dsv4/attn.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer_rope_hcu.py`, `python/sglang/kernels/ops/moe/fill_padded_rows.py`, `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/arg_groups/fields/exec_.py`, `python/sglang/srt/arg_groups/pd_disaggregation_hook.py`, `python/sglang/srt/configs/model_config.py` 等 93 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/arg_groups/fields/exec_.py`; `python/sglang/srt/arg_groups/pd_disaggregation_hook.py`; `python/sglang/srt/disaggregation/base/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/encoder/preprocessor.py`; `python/sglang/srt/disaggregation/encoder/receiver.py`; `python/sglang/srt/disaggregation/mooncake/conn.py` 等 26 个文件
+  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/disaggregation/encoder/server.py`; `python/sglang/srt/model_executor/encoder_swa_replay.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/model_executor/runner/eager_runner.py`; `python/sglang/srt/models/deepseek_common/amd/deepseek_v4_fused_mhc.py`; `python/sglang/srt/models/deepseek_v2.py` 等 10 个文件
+  - runtime-perf: `python/sglang/kernels/ops/attention/dsv4/attn.py`; `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py`; `python/sglang/kernels/ops/attention/dsv4/fp4_indexer_rope_hcu.py`; `python/sglang/kernels/ops/moe/fill_padded_rows.py`; `python/sglang/srt/distributed/device_communicators/cuda_wrapper.py`; `python/sglang/srt/eplb/lplb_hip_waterfill.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/low_ratio_backend_hip.py` 等 31 个文件
+  - tests: `test/registered/kernels/ops/attention/test_fp4_indexer.py`; `test/registered/unit/disaggregation/test_encode_receiver.py`; `test/registered/unit/layers/attention/test_dsv41_rope_fq_store.py`; `test/registered/unit/layers/cp/test_interleave_cp_gather_memory.py`; `test/registered/unit/layers/dsv41_hcu_indexq_rounding.json`; `test/registered/unit/layers/moe/test_hcu_compressed_tensors_w4a8_deepep_ll.py`; `test/registered/unit/layers/moe/test_topk_padding_hcu_guard.py`; `test/registered/unit/layers/quantization/test_compressed_tensors_w8a8_int8_hcu_layout.py` 等 26 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
-<!-- LOCAL_ONLY_DEV_BRANCH_UPDATE_START -->
-## Local-only dev branch update from v0.5.8_dev to v0.5.12_dev
+### Commit `15c7204b7a` - [Feat] [HCU] dsv4.1: Sync feature branch updates into main (#594)
+
+- Full hash: `15c7204b7a3b6edaa222cff80018d8e5f2b2ad0e`
+- Date/author: 2026-10-26 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `python/sglang/kernels/aot/benchmark/bench_rope_fp4.py`, `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`, `python/sglang/kernels/aot/csrc/elementwise/rope_fp4.hip`, `python/sglang/kernels/aot/include/sgl_kernel_ops.h`, `python/sglang/kernels/aot/python/sgl_kernel/__init__.py`, `python/sglang/kernels/aot/python/sgl_kernel/elementwise.py` 等 139 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/arg_groups/field_order.py`; `python/sglang/srt/arg_groups/fields/parallel.py`; `python/sglang/srt/arg_groups/model_hook.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py` 等 21 个文件
+  - runtime-model: `python/sglang/srt/configs/deepseek_v41.py`; `python/sglang/srt/entrypoints/http_server.py`; `python/sglang/srt/entrypoints/openai/serving_chat.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner_components/load_model_utils.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/model_executor/runner/eager_runner.py`; `python/sglang/srt/model_executor/runner_utils/deepep_adapter.py` 等 12 个文件
+  - runtime-perf: `python/sglang/kernels/aot/benchmark/bench_rope_fp4.py`; `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`; `python/sglang/kernels/aot/csrc/elementwise/rope_fp4.hip`; `python/sglang/kernels/aot/include/sgl_kernel_ops.h`; `python/sglang/kernels/aot/python/sgl_kernel/__init__.py`; `python/sglang/kernels/aot/python/sgl_kernel/elementwise.py`; `python/sglang/kernels/aot/setup_hip.py`; `python/sglang/kernels/aot/setup_rocm.py` 等 64 个文件
+  - tests: `python/sglang/kernels/aot/tests/test_rope_fp4.py`; `test/manual/dsv4/lightop_fp4_indexer.md`; `test/manual/dsv4/test_lightop_fp4_indexer.py`; `test/manual/dsv4/test_rebase_contracts.py`; `test/registered/attention/unittests/dsv4/test_hcu_store_dispatch.py`; `test/registered/attention/unittests/dsv4/test_layer_split_fused_store.py`; `test/registered/cp/test_cp_strategy_unit.py`; `test/registered/kernels/ops/attention/test_dsv41_candidate_blocks_lightop.py` 等 40 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `5f67ce01c3` - Sync/rel 2 main 20261021 dsv4 validated (#576)
+
+- Full hash: `5f67ce01c3ec1894916d16627eaca4959fbe2d90`
+- Date/author: 2026-10-21 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `.gitignore`, `benchmark/kernels/fused_moe_triton/common_utils.py`, `benchmark/kernels/fused_moe_triton/tuning_fused_moe_triton.py`, `benchmark/kernels/minimax_router_gemv.py`, `docs/internal/rel-2-main-20261020-release-updates.md`, `python/sglang/benchmark/serving.py` 等 307 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+  - docs-bench: `benchmark/kernels/fused_moe_triton/common_utils.py`; `benchmark/kernels/fused_moe_triton/tuning_fused_moe_triton.py`; `benchmark/kernels/minimax_router_gemv.py`; `docs/internal/rel-2-main-20261020-release-updates.md`
+  - other: `.gitignore`; `python/sglang/benchmark/serving.py`; `python/sglang/srt/arg_groups/field_order.py`; `python/sglang/srt/arg_groups/fields/exec_.py`; `python/sglang/srt/arg_groups/fields/memory.py`; `python/sglang/srt/arg_groups/fields/schedule.py`; `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/arg_groups/parallel_hook.py` 等 54 个文件
+  - runtime-model: `python/sglang/srt/entrypoints/http_server.py`; `python/sglang/srt/entrypoints/openai/serving_chat.py`; `python/sglang/srt/layers/deep_gemm_wrapper/configurer.py`; `python/sglang/srt/model_executor/cpu_graph_runner.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/model_executor/model_runner_components/load_model_utils.py`; `python/sglang/srt/model_executor/model_runner_components/misc_utils.py` 等 23 个文件
+  - runtime-perf: `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`; `python/sglang/kernels/aot/csrc/elementwise/activation.cu`; `python/sglang/kernels/aot/csrc/gemm/per_token_quant_fp8.cu`; `python/sglang/kernels/aot/include/sgl_kernel_ops.h`; `python/sglang/kernels/aot/include/utils.h`; `python/sglang/kernels/aot/setup_hip.py`; `python/sglang/kernels/aot/setup_rocm.py`; `python/sglang/kernels/jit/csrc/deepseek_v4/topk_v2.cuh` 等 125 个文件
+  - tests: `python/sglang/srt/layers/attention/minimax_sparse_ops/tests/test_flash_with_topk_idx.py`; `python/sglang/srt/layers/attention/minimax_sparse_ops/tests/test_fp8_attn_gemm.py`; `python/sglang/test/few_shot_gsm8k.py`; `python/sglang/test/kits/linker_load_failure_kit.py`; `test/manual/hcu/test_kimi_k3_serial_sbo.py`; `test/registered/attention/test_triton_attention_kernels.py`; `test/registered/attention/test_verify_shared_kv.py`; `test/registered/cp/test_cp_strategy_unit.py` 等 99 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `4975d6490a` - Sync/official main daily 20261019 (#560)
+
+- Full hash: `4975d6490ac2c71c2d88c8a86b96a6f7061050ab`
+- Date/author: 2026-10-20 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.agents/skills/ci-workflow-guide/SKILL.md`, `.agents/skills/cookbook-add-model/SKILL.md`, `.agents/skills/generate-profile/SKILL.md`, `.agents/skills/processor-model-parity/SKILL.md`, `.agents/skills/write-sglang-test/SKILL.md`, `.claude/rules/prefer-sgl-eval.md`, `.github/CI_PERMISSIONS.json`, `.github/CODEOWNERS` 等 2248 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.agents/skills/ci-workflow-guide/SKILL.md`; `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/actions/download-rust-ext/action.yml`; `.github/actions/wait-for-jobs/action.yml`; `.github/labeler.yml`; `.github/pull_request_template.md`; `.github/scripts/pr-check-comment.cjs` 等 54 个文件
+  - docs-bench: `benchmark/hicache/bench_host_memory_migration.py`; `benchmark/kernels/lora_csgmv/bench_csgmv_split_k.py`; `benchmark/kernels/lora_csgmv/tune_lora_csgmv.py`; `docs/cookbook/autoregressive/Cloudflare/clef.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1.mdx`; `docs/cookbook/autoregressive/GLM/GLM-5.3-Flash.mdx`; `docs/cookbook/autoregressive/IFM/Jais-3.mdx` 等 155 个文件
+  - other: `.agents/skills/cookbook-add-model/SKILL.md`; `.agents/skills/generate-profile/SKILL.md`; `.agents/skills/processor-model-parity/SKILL.md`; `.claude/rules/prefer-sgl-eval.md`; `.gitignore`; `README.md`; `docker/Dockerfile`; `docker/Dockerfile.cu134` 等 336 个文件
+  - runtime-model: `.pre-commit-config.yaml`; `docker/sgl-router.Dockerfile`; `experimental/sgl-router/ARCHITECTURE.md`; `experimental/sgl-router/Cargo.lock`; `experimental/sgl-router/Cargo.toml`; `experimental/sgl-router/POLICY_DESIGN.md`; `experimental/sgl-router/README.md`; `experimental/sgl-router/REFERENCE.md` 等 335 个文件
+  - runtime-perf: `docker/rocm.Dockerfile`; `experimental/sgl-router/src/policies/scoring/prefix_cache.rs`; `experimental/sgl-router/src/policies_reorg/cache_aware.rs`; `experimental/sgl-router/src/server/routes/cache.rs`; `python/sglang/kernels/README.md`; `python/sglang/kernels/__init__.py`; `python/sglang/kernels/aot/benchmark/bench_dsv4_norm_rope.py`; `python/sglang/kernels/aot/benchmark/bench_flashmla_mega.py` 等 574 个文件
+  - tests: `.agents/skills/write-sglang-test/SKILL.md`; `docs/scripts/tests/wan-animate-2-config.test.mjs`; `experimental/sgl-router/tests/component/discovery/static_urls.rs`; `experimental/sgl-router/tests/component/policies/cache_prefix_provider.rs`; `experimental/sgl-router/tests/component/policies/kv_events_hash_parity.rs`; `experimental/sgl-router/tests/component/policies/kv_events_peer_bootstrap.rs`; `experimental/sgl-router/tests/component/policies_reorg.rs`; `experimental/sgl-router/tests/component/policies_reorg_admission.rs` 等 794 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `36b93840b5` - Sync/official main daily 20261009 (#500)
+
+- Full hash: `36b93840b54b8c41fe395e6f3e3f9a5463fe17ba`
+- Date/author: 2026-10-12 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.agents/skills/add-jit-kernel/SKILL.md`, `.agents/skills/add-sgl-kernel/SKILL.md`, `.agents/skills/babysit-pr-to-pass-ci/SKILL.md`, `.agents/skills/babysit-pr-to-pass-ci/agents/openai.yaml`, `.agents/skills/ci-test-audit/SKILL.md`, `.agents/skills/ci-test-audit/action-items.md`, `.agents/skills/ci-workflow-guide/SKILL.md`, `.agents/skills/clean-startup-log/SKILL.md` 等 2736 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.agents/skills/ci-workflow-guide/SKILL.md`; `.claude/skills/ci-workflow-guide/SKILL.md`; `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/actions/check-maintenance/action.yml`; `.github/labeler.yml`; `.github/workflows/_npu-pr-test-stage.yml`; `.github/workflows/_npu-single-node-test-stage.yml` 等 38 个文件
+  - docs-bench: `benchmark/deepseek_v3/README.md`; `benchmark/kernels/bench_block_verification.py`; `benchmark/kernels/fused_moe_triton/benchmark_sglang_fused_moe_triton.py`; `benchmark/kernels/lora_csgmv/tune_lora_csgmv.py`; `docs/.mintignore`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-Math-V2.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-OCR-2.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-OCR.mdx` 等 154 个文件
+  - other: `.agents/skills/babysit-pr-to-pass-ci/SKILL.md`; `.agents/skills/babysit-pr-to-pass-ci/agents/openai.yaml`; `.agents/skills/ci-test-audit/SKILL.md`; `.agents/skills/ci-test-audit/action-items.md`; `.agents/skills/clean-startup-log/SKILL.md`; `.agents/skills/clean-startup-log/references/noise-sources.md`; `.agents/skills/compute-mamba-ratio/SKILL.md`; `.agents/skills/cookbook-add-model/SKILL.md` 等 475 个文件
+  - runtime-model: `.agents/skills/cookbook-add-model/templates/config.jsx.tmpl`; `.agents/skills/llm-torch-profiler-analysis/scripts/probe_llm_server.py`; `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`; `.claude/skills/llm-torch-profiler-analysis/scripts/probe_llm_server.py`; `.pre-commit-config.yaml`; `docker/sgl-router.Dockerfile`; `experimental/sgl-router/Cargo.lock`; `experimental/sgl-router/Cargo.toml` 等 351 个文件
+  - runtime-perf: `.agents/skills/add-jit-kernel/SKILL.md`; `.agents/skills/add-sgl-kernel/SKILL.md`; `.agents/skills/debug-cuda-crash/SKILL.md`; `.agents/skills/debug-distributed-hang/SKILL.md`; `.agents/skills/kernel-organization/SKILL.md`; `.agents/skills/llm-torch-profiler-analysis/scripts/triage_kernel_helpers.py`; `.claude/rules/kernel-benchmark.md`; `.claude/skills/add-jit-kernel/SKILL.md` 等 705 个文件
+  - tests: `.agents/skills/kl-consistency-test/SKILL.md`; `.agents/skills/mechanical-refactor-verify/scripts/tests/proof_generator/conftest.py`; `.agents/skills/mechanical-refactor-verify/scripts/tests/proof_generator/generator_testlib.py`; `.agents/skills/mechanical-refactor-verify/scripts/tests/proof_generator/test_infer_extract_functions.py`; `.agents/skills/mechanical-refactor-verify/scripts/tests/proof_generator/test_infer_extracts.py`; `.agents/skills/mechanical-refactor-verify/scripts/tests/proof_generator/test_infer_imports.py`; `.agents/skills/mechanical-refactor-verify/scripts/tests/proof_generator/test_infer_moves.py`; `.agents/skills/mechanical-refactor-verify/scripts/tests/proof_generator/test_main_single_commit.py` 等 1013 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `756ae5b4fe` - Sync/20260929 rye rel 2 main (#470)
+
+- Full hash: `756ae5b4fe26cf9ad666d46cda6c45b14b3abc60`
+- Date/author: 2026-09-30 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/quality-gate.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `README_HCU.md`, `benchmark/eplb/README.md`, `benchmark/eplb/prepare_static_lp.py`, `benchmark/glm53/README.md`, `benchmark/kernels/elementwise/benchmark_concat_mla_absorb_q_hcu.py` 等 308 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/quality-gate.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+  - docs-bench: `benchmark/eplb/README.md`; `benchmark/eplb/prepare_static_lp.py`; `benchmark/glm53/README.md`; `benchmark/kernels/elementwise/benchmark_concat_mla_absorb_q_hcu.py`; `docs/internal/README_BF16_FLASHMLA.md`
+  - other: `README_HCU.md`; `python/pyproject_hcu.toml`; `python/sglang/benchmark/datasets/generated_shared_prefix.py`; `python/sglang/benchmark/serving.py`; `python/sglang/srt/arg_groups/choices.py`; `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/arg_groups/field_order.py`; `python/sglang/srt/arg_groups/fields/disagg.py` 等 61 个文件
+  - runtime-model: `python/sglang/srt/configs/dspark.py`; `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/configs/qwen3_5.py`; `python/sglang/srt/entrypoints/http_server.py`; `python/sglang/srt/entrypoints/openai/serving_chat.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/model_executor/pool_configurator.py` 等 30 个文件
+  - runtime-perf: `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`; `python/sglang/kernels/aot/csrc/elementwise/concat_mla_absorb_q_hcu.cu`; `python/sglang/kernels/aot/csrc/elementwise/pos_enc.cu`; `python/sglang/kernels/aot/setup_hip.py`; `python/sglang/kernels/aot/setup_rocm.py`; `python/sglang/kernels/jit/csrc/deepseek_v4/common.cuh`; `python/sglang/kernels/jit/csrc/deepseek_v4/fused_norm_rope_v2.cuh`; `python/sglang/kernels/jit/csrc/deepseek_v4/linear_bf16_fp32.cuh` 等 158 个文件
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`; `python/sglang/test/simple_eval_aime25.py`; `python/sglang/test/simple_eval_aime26.py`; `python/sglang/test/simple_eval_common.py`; `python/sglang/test/simple_eval_mmlu.py`; `test/hcu_humaneval_judge.py`; `test/manual/ep/test_kimi_k3_eplb.py`; `test/manual/layers/test_hy4_ihc_tilelang.py` 等 51 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `ab43824b09` - Sync/official main daily 20260928 (#452)
+
+- Full hash: `ab43824b09055fc790bd5a9166a6a6182b1bccc3`
+- Date/author: 2026-09-29 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.claude/rules/cookbook-first.md`, `.claude/skills/add-jit-kernel/SKILL.md`, `.claude/skills/add-sgl-kernel/SKILL.md`, `.claude/skills/ci-test-audit/action-items.md`, `.claude/skills/ci-workflow-guide/SKILL.md`, `.claude/skills/clean-startup-log/SKILL.md`, `.claude/skills/clean-startup-log/references/noise-sources.md`, `.claude/skills/cookbook-add-model/SKILL.md` 等 2576 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.claude/skills/ci-workflow-guide/SKILL.md`; `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/MAINTAINER.md`; `.github/actions/check-pr-test-health/action.test.cjs`; `.github/actions/check-pr-test-health/action.yml`; `.github/actions/wait-for-jobs/action.yml`; `.github/labeler.yml` 等 38 个文件
+  - docs-bench: `benchmark/deepseek_v3/README.md`; `benchmark/disaggregation/bench_cached_prefix.py`; `benchmark/dllm/README.md`; `benchmark/gsm8k/README.md`; `benchmark/gsm8k/bench_sglang.py`; `benchmark/hf3fs/bench_zerocopy.py`; `benchmark/io/bench_mm_token_padding.py`; `benchmark/kernels/all_gather/benchmark_mscclpp.py` 等 167 个文件
+  - other: `.claude/rules/cookbook-first.md`; `.claude/skills/ci-test-audit/action-items.md`; `.claude/skills/clean-startup-log/SKILL.md`; `.claude/skills/clean-startup-log/references/noise-sources.md`; `.claude/skills/cookbook-add-model/SKILL.md`; `.claude/skills/cookbook-review-pr/SKILL.md`; `.claude/skills/env-var-conventions/SKILL.md`; `.claude/skills/generate-profile/SKILL.md` 等 313 个文件
+  - runtime-model: `.pre-commit-config.yaml`; `experimental/sgl-router/Cargo.lock`; `experimental/sgl-router/Cargo.toml`; `experimental/sgl-router/POLICY_DESIGN.md`; `experimental/sgl-router/README.md`; `experimental/sgl-router/benches/tree_lookup.rs`; `experimental/sgl-router/monitoring/grafana-dashboard.json`; `experimental/sgl-router/src/buckets_reorg.rs` 等 229 个文件
+  - runtime-perf: `.claude/skills/add-jit-kernel/SKILL.md`; `.claude/skills/add-sgl-kernel/SKILL.md`; `.claude/skills/kernel-organization/SKILL.md`; `docker/rocm-gfx1151.Dockerfile`; `docker/rocm.Dockerfile`; `experimental/sgl-router/src/policies/scoring/prefix_cache.rs`; `experimental/sgl-router/src/policies_reorg/cache_aware.rs`; `python/sglang/kernels/README.md` 等 865 个文件
+  - tests: `.claude/skills/write-sglang-test/SKILL.md`; `experimental/sgl-router/tests/component/discovery/static_urls.rs`; `experimental/sgl-router/tests/component/main.rs`; `experimental/sgl-router/tests/component/policies/cache_prefix_provider.rs`; `experimental/sgl-router/tests/component/policies/decode.rs`; `experimental/sgl-router/tests/component/policies/fused_score.rs`; `experimental/sgl-router/tests/component/policies/kv_events_hash_parity.rs`; `experimental/sgl-router/tests/component/policies/kv_events_tree_concurrent.rs` 等 964 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `6049c219ec` - Glm5.3 flash (#427)
+
+- Full hash: `6049c219ec044420bbacce7eddfe7ae31e031625`
+- Date/author: 2026-09-28 / leon.wang
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/kernels/aot/CMakeLists.txt`, `python/sglang/kernels/aot/csrc/common_extension.cc`, `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`, `python/sglang/kernels/aot/csrc/elementwise/kpool_write_plan.cu`, `python/sglang/kernels/aot/csrc/elementwise/topk.hip`, `python/sglang/kernels/aot/csrc/kvcacheio/transfer.cu`, `python/sglang/kernels/aot/include/sgl_kernel_ops.h`, `python/sglang/kernels/aot/python/sgl_kernel/__init__.py` 等 196 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/arg_groups/field_order.py`; `python/sglang/srt/arg_groups/fields/__init__.py`; `python/sglang/srt/arg_groups/fields/parallel.py`; `python/sglang/srt/arg_groups/fields/serving.py`; `python/sglang/srt/arg_groups/fields/spec.py`; `python/sglang/srt/arg_groups/model_hook.py`; `python/sglang/srt/arg_groups/model_overrides/deepseek_v2.py`; `python/sglang/srt/arg_groups/overrides.py` 等 73 个文件
+  - runtime-model: `python/sglang/srt/configs/__init__.py`; `python/sglang/srt/configs/glm5_next.py`; `python/sglang/srt/configs/mamba_utils.py`; `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/disaggregation/encoder/server.py`; `python/sglang/srt/entrypoints/anthropic/serving.py`; `python/sglang/srt/entrypoints/engine.py`; `python/sglang/srt/entrypoints/http_server.py` 等 33 个文件
+  - runtime-perf: `python/sglang/kernels/aot/CMakeLists.txt`; `python/sglang/kernels/aot/csrc/common_extension.cc`; `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`; `python/sglang/kernels/aot/csrc/elementwise/kpool_write_plan.cu`; `python/sglang/kernels/aot/csrc/elementwise/topk.hip`; `python/sglang/kernels/aot/csrc/kvcacheio/transfer.cu`; `python/sglang/kernels/aot/include/sgl_kernel_ops.h`; `python/sglang/kernels/aot/python/sgl_kernel/__init__.py` 等 88 个文件
+  - tests: `test/manual/test_hcu_delta_rule_cuda.py`; `test/registered/quant/test_fp8_utils.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `88b0efdfe9` - adapt ci to feat/20260920_deepseek-v4.1 (#442)
+
+- Full hash: `88b0efdfe9e0b690e820e47a929ccf971adf57ce`
+- Date/author: 2026-09-23 / 463975089
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+### Commit `9cd15042af` - feat(citest): 更新镜像测试用例, 适配 0.5.18 (Qwen3.8 / DeepSeek-V4) (#433)
+
+- Full hash: `9cd15042af60905ef088d409908e41e330fbf345`
+- Date/author: 2026-09-23 / Crowder13
+- Auto category: 模型支持/运行时入口
+- Main files: `docker/image-citest-conf-hcu.yaml`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `docker/image-citest-conf-hcu.yaml`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+### Commit `16229e94d0` - Sync/official main daily 20260920 (#410)
+
+- Full hash: `16229e94d0a0a218875ab0db2133c12d9695abd1`
+- Date/author: 2026-09-20 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.claude/skills/add-jit-kernel/SKILL.md`, `.claude/skills/babysit-pr-to-pass-ci/SKILL.md`, `.claude/skills/ci-test-audit/SKILL.md`, `.claude/skills/ci-test-audit/action-items.md`, `.claude/skills/sglang-runtime-context/SKILL.md`, `.claude/skills/write-sglang-test/SKILL.md`, `.github/CI_PERMISSIONS.json`, `.github/CODEOWNERS` 等 1391 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/workflows/_npu-single-node-test-stage.yml`; `.github/workflows/_pr-test-check-changes.yml`; `.github/workflows/amd-aiter-scout.yml`; `.github/workflows/amd-ci-job-monitor.yml`; `.github/workflows/bot-bump-sglang-version.yml`; `.github/workflows/ci-coverage-overview.yml` 等 26 个文件
+  - docs-bench: `benchmark/agentic-rollout/README.md`; `benchmark/agentic-rollout/explore.py`; `benchmark/agentic-rollout/metrics.py`; `benchmark/agentic-rollout/plot.py`; `benchmark/agentic-rollout/simulate.py`; `benchmark/agentic-rollout/spec/README.md`; `benchmark/agentic-rollout/spec/evidence/feature-00-session-hicache-latency.md`; `benchmark/agentic-rollout/spec/feature-00-session-hicache-latency.md` 等 100 个文件
+  - other: `.claude/skills/babysit-pr-to-pass-ci/SKILL.md`; `.claude/skills/ci-test-audit/SKILL.md`; `.claude/skills/ci-test-audit/action-items.md`; `.claude/skills/sglang-runtime-context/SKILL.md`; `.gitignore`; `.gitleaksignore`; `docker/Dockerfile.cu134`; `docker/npu.Dockerfile` 等 177 个文件
+  - runtime-model: `docker/sgl-router.Dockerfile`; `experimental/sgl-router/Cargo.lock`; `experimental/sgl-router/Cargo.toml`; `experimental/sgl-router/README.md`; `experimental/sgl-router/benches/tree_lookup.rs`; `experimental/sgl-router/deny.toml`; `experimental/sgl-router/monitoring/README.md`; `experimental/sgl-router/monitoring/grafana-dashboard.json` 等 205 个文件
+  - runtime-perf: `.claude/skills/add-jit-kernel/SKILL.md`; `experimental/sgl-router/src/policies/cache_aware.rs`; `experimental/sgl-router/src/server/routes/cache.rs`; `python/sglang/kernels/aot/CMakeLists.txt`; `python/sglang/kernels/aot/csrc/common_extension.cc`; `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`; `python/sglang/kernels/aot/csrc/cpu/CMakeLists.txt`; `python/sglang/kernels/aot/csrc/cpu/bmm.cpp` 等 417 个文件
+  - tests: `.claude/skills/write-sglang-test/SKILL.md`; `benchmark/agentic-rollout/tests/test_explore.py`; `benchmark/agentic-rollout/tests/test_simulate.py`; `experimental/sgl-router/tests/component/discovery/static_urls.rs`; `experimental/sgl-router/tests/component/policies/bucket_domains.rs`; `experimental/sgl-router/tests/component/policies/kv_events_tree_concurrent.rs`; `experimental/sgl-router/tests/component/policies/kv_events_two_subscribers.rs`; `experimental/sgl-router/tests/component/policies/zmq_helpers.rs` 等 466 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `ca25bc4275` - Sync/official main daily 20260914 (#362)
+
+- Full hash: `ca25bc4275b93e02a48a2f8158835f372fee3553`
+- Date/author: 2026-09-14 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.claude/rules/unit-test-admission.md`, `.claude/skills/ci-workflow-guide/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md`, `.claude/skills/cookbook-migrate-model/SKILL.md`, `.claude/skills/cookbook-migrate-model/references/dimension-mapping.md`, `.claude/skills/sglang-runtime-context/SKILL.md`, `.claude/skills/write-sglang-test/SKILL.md`, `.codespellrc` 等 1457 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.claude/skills/ci-workflow-guide/SKILL.md`; `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/FOLDER_README.md`; `.github/actions/download-rust-ext/action.yml`; `.github/actions/wait-for-jobs/action.yml`; `.github/labeler.yml`; `.github/workflows/_docker-build-and-publish.yml` 等 43 个文件
+  - docs-bench: `benchmark/bench_linear_attention/bench_int8_checkpoint_reuse.py`; `benchmark/kernels/attention/bench_gdn_replayssm_decode.py`; `benchmark/kernels/fused_moe_triton/common_utils.py`; `benchmark/simulator/bench_runner.py`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V3.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V3_2.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4_1.mdx` 等 112 个文件
+  - other: `.claude/rules/unit-test-admission.md`; `.claude/skills/cookbook-add-model/references/authoring-reference.md`; `.claude/skills/cookbook-migrate-model/SKILL.md`; `.claude/skills/cookbook-migrate-model/references/dimension-mapping.md`; `.claude/skills/sglang-runtime-context/SKILL.md`; `.codespellrc`; `.gitleaksignore`; `3rdparty/amd/wheel/README.md` 等 194 个文件
+  - runtime-model: `experimental/sgl-router/monitoring/README.md`; `experimental/sgl-router/src/policies/buckets.rs`; `experimental/sgl-router/src/policies/mod.rs`; `experimental/sgl-router/src/proxy/mod.rs`; `experimental/sgl-router/src/proxy/sse.rs`; `experimental/sgl-router/src/server/metrics.rs`; `experimental/sgl-router/src/server/routes/chat.rs`; `python/sglang/launch_server.py` 等 85 个文件
+  - runtime-perf: `3rdparty/amd/wheel/sgl-kernel/build_rocm.sh`; `3rdparty/amd/wheel/sgl-kernel/rename_wheels_rocm.sh`; `docker/patches/sgl-kernel-gfx1151.sh`; `docker/rocm-gfx1151.Dockerfile`; `docker/rocm.Dockerfile`; `experimental/sgl-router/src/policies/cache_aware.rs`; `python/sglang/kernels/aot/CMakeLists.txt`; `python/sglang/kernels/aot/Dockerfile` 等 357 个文件
+  - tests: `.claude/skills/write-sglang-test/SKILL.md`; `experimental/sgl-router/tests/component/policies/bucket_domains.rs`; `experimental/sgl-router/tests/proxy/bucket_routing.rs`; `experimental/sgl-router/tests/proxy/chat_routing.rs`; `python/sglang/kernels/aot/tests/test_awq_dequant.py`; `python/sglang/kernels/aot/tests/test_cutlass_mla.py`; `python/sglang/kernels/aot/tests/test_flash_attn_sparse.py`; `python/sglang/kernels/aot/tests/test_fused_qk_norm_rope.py` 等 666 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `ee0f2375e5` - Sync/official main daily 20260907 (#328)
+
+- Full hash: `ee0f2375e5fb285e4fb021a9831fa88018244679`
+- Date/author: 2026-09-08 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.claude/skills/cookbook-add-model/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md`, `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`, `.claude/skills/llm-torch-profiler-analysis/scripts/triage_kernel_helpers.py`, `.claude/skills/mechanical-refactor-verify/scripts/mechanical_refactor_proof_generator.py`, `.claude/skills/mechanical-refactor-verify/scripts/mechanical_refactor_reproduction_utils.py`, `.claude/skills/mechanical-refactor-verify/scripts/tests/proof_generator/test_infer_moves.py`, `.claude/skills/mechanical-refactor-verify/scripts/tests/reproduction_cli/cli_testlib.py` 等 3141 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/actions/download-rust-ext/action.yml`; `.github/workflows/_npu-pr-test-stage.yml`; `.github/workflows/_npu-single-node-test-stage.yml`; `.github/workflows/_pr-test-check-changes.yml`; `.github/workflows/_pr-test-rust-ext-build.yml`; `.github/workflows/_pr-test-simulator-cpu.yml` 等 43 个文件
+  - docs-bench: `benchmark/asr/bench_sglang.py`; `benchmark/bench_linear_attention/bench_kda_flashinfer_mtp.py`; `benchmark/gsm8k/bench_sglang.py`; `benchmark/hf3fs/bench_client.py`; `benchmark/hf3fs/bench_storage.py`; `benchmark/hf3fs/bench_zerocopy.py`; `benchmark/hicache/bench_mix.py`; `benchmark/hicache/bench_multiturn.py` 等 106 个文件
+  - other: `.claude/skills/cookbook-add-model/SKILL.md`; `.claude/skills/cookbook-add-model/references/authoring-reference.md`; `.claude/skills/mechanical-refactor-verify/scripts/mechanical_refactor_proof_generator.py`; `.claude/skills/mechanical-refactor-verify/scripts/mechanical_refactor_reproduction_utils.py`; `.claude/skills/sglang-prod-incident-triage/scripts/incident_artifact_tool.py`; `.claude/skills/sglang-runtime-context/SKILL.md`; `.git-blame-ignore-revs`; `.gitignore` 等 399 个文件
+  - runtime-model: `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`; `.pre-commit-config.yaml`; `experimental/sgl-router/README.md`; `experimental/sgl-router/benches/policy_select.rs`; `experimental/sgl-router/monitoring/README.md`; `experimental/sgl-router/monitoring/grafana-dashboard.json`; `experimental/sgl-router/sgl-kv-indexer/Cargo.toml`; `experimental/sgl-router/sgl-kv-indexer/README.md` 等 310 个文件
+  - runtime-perf: `.claude/skills/llm-torch-profiler-analysis/scripts/triage_kernel_helpers.py`; `3rdparty/amd/tuning/benchmark_moe_rocm.py`; `3rdparty/amd/wheel/sgl-kernel/rocm_hipify.py`; `docker/rocm.Dockerfile`; `experimental/sgl-router/src/policies/cache_aware.rs`; `experimental/sgl-router/src/policies/cache_aware_zmq.rs`; `experimental/sgl-router/src/policies/scoring/prefix_cache.rs`; `python/sglang/kernels/aot/benchmark/bench_amd_deterministic_allreduce.py` 等 575 个文件
+  - tests: `.claude/skills/mechanical-refactor-verify/scripts/tests/proof_generator/test_infer_moves.py`; `.claude/skills/mechanical-refactor-verify/scripts/tests/reproduction_cli/cli_testlib.py`; `.claude/skills/mechanical-refactor-verify/scripts/tests/reproduction_utils/test_add_imports.py`; `.claude/skills/mechanical-refactor-verify/scripts/tests/reproduction_utils/test_extract_symbols_to_new_module.py`; `.claude/skills/mechanical-refactor-verify/scripts/tests/reproduction_utils/test_move_assign.py`; `.claude/skills/mechanical-refactor-verify/scripts/tests/reproduction_utils/test_move_symbol.py`; `experimental/sgl-router/sgl-kv-indexer/tests/common/kv.rs`; `experimental/sgl-router/sgl-kv-indexer/tests/grpc_contract.rs` 等 1708 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `50bacb0280` - Sync/official main daily 20260831 (#273)
+
+- Full hash: `50bacb028023ba6d0155267a7c0f7841d5ec3fd7`
+- Date/author: 2026-09-01 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `.claude/skills/sglang-runtime-context/SKILL.md`, `.github/CI_PERMISSIONS.json`, `.github/workflows/_npu-single-node-test-stage.yml`, `.github/workflows/_pr-test-stage.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/nightly-test-amd-rocm720.yml`, `.github/workflows/nightly-test-amd.yml`, `.github/workflows/nightly-test-npu.yml` 等 1215 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/CI_PERMISSIONS.json`; `.github/workflows/_npu-single-node-test-stage.yml`; `.github/workflows/_pr-test-stage.yml`; `.github/workflows/amd-ci-job-monitor.yml`; `.github/workflows/nightly-test-amd-rocm720.yml`; `.github/workflows/nightly-test-amd.yml`; `.github/workflows/nightly-test-npu.yml`; `.github/workflows/pr-test-amd-extra.yml` 等 21 个文件
+  - docs-bench: `benchmark/kernels/fused_moe_triton/common_utils.py`; `benchmark/lean_kernel_sweep.py`; `benchmark/unified_memory/bench_peer_aware_eviction.py`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V3_2.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4.mdx`; `docs/cookbook/autoregressive/GLM/GLM-5.2.mdx`; `docs/cookbook/autoregressive/GLM/GLM-5.3-Flash.mdx`; `docs/cookbook/autoregressive/GLM/GLM-5.3.mdx` 等 84 个文件
+  - other: `.claude/skills/sglang-runtime-context/SKILL.md`; `docker/Dockerfile`; `docker/Dockerfile.cu134`; `docker/kimi_k3/apply_deepep_k3_patch.sh`; `docker/kimi_k3/kimi_k3_cu12.Dockerfile`; `docker/kimi_k3/kimi_k3_cu13.Dockerfile`; `docker/npu.Dockerfile`; `python/pyproject.toml` 等 242 个文件
+  - runtime-model: `python/sglang/benchmark/one_batch_server.py`; `python/sglang/launch_server.py`; `python/sglang/srt/configs/__init__.py`; `python/sglang/srt/configs/bailing_hybrid.py`; `python/sglang/srt/configs/embedding_model_spec.py`; `python/sglang/srt/configs/hybrid_arch.py`; `python/sglang/srt/configs/inkling.py`; `python/sglang/srt/configs/load_config.py` 等 88 个文件
+  - runtime-perf: `docker/rocm.Dockerfile`; `python/sglang/kernels/aot/CMakeLists.txt`; `python/sglang/kernels/aot/cmake/flashmla.cmake`; `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce.cuh`; `python/sglang/kernels/aot/csrc/allreduce/quick_all_reduce.cuh`; `python/sglang/kernels/aot/csrc/allreduce/quick_all_reduce_base.h`; `python/sglang/kernels/aot/csrc/cpu/extend.cpp`; `python/sglang/kernels/aot/csrc/cpu/torch_extension_cpu.cpp` 等 360 个文件
+  - tests: `python/sglang/test/accuracy_test_runner.py`; `python/sglang/test/ascend/e2e/test_npu_accuracy_utils.py`; `python/sglang/test/ascend/e2e/test_npu_multi_node_utils.py`; `python/sglang/test/ascend/e2e/test_npu_performance_utils.py`; `python/sglang/test/ci/ci_utils.py`; `python/sglang/test/ci/fork_test_worker.py`; `python/sglang/test/config_publishers.py`; `python/sglang/test/gpt_oss_common.py` 等 420 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `7b3548f974` - fix lint: apply pre-commit fixes across the 20260824 sync diff
+
+- Full hash: `7b3548f97409d83b7e7dde4c3ad71e2f30955267`
+- Date/author: 2026-08-25 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce_hip.cuh`, `python/sglang/kernels/aot/csrc/kvcacheio/transfer.cu`, `python/sglang/kernels/ops/moe/ep_moe_kernels.py`, `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/hardware_backend/npu/utils.py`, `python/sglang/srt/layers/attention/aiter_backend.py`, `python/sglang/srt/layers/attention/attention_registry.py` 等 46 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/hardware_backend/npu/utils.py`; `python/sglang/srt/sampling/sampling_batch_info.py`; `python/sglang/srt/speculative/draft_utils.py`; `python/sglang/srt/speculative/eagle_utils.py`; `python/sglang/srt/utils/common.py`
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/qwen3_5.py`; `python/sglang/srt/models/qwen3_vl.py`
+  - runtime-perf: `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce_hip.cuh`; `python/sglang/kernels/aot/csrc/kvcacheio/transfer.cu`; `python/sglang/kernels/ops/moe/ep_moe_kernels.py`; `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/attention/aiter_backend.py`; `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/base_attn_backend.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py` 等 22 个文件
+  - tests: `test/registered/hicache/test_hicache_storage_3fs_backend.py`; `test/registered/openai_server/validation/test_matched_stop.py`; `test/registered/pp/test_pp_single_node.py`; `test/registered/profiling/test_start_profile.py`; `test/registered/unit/entrypoints/openai/test_serving_embedding.py`; `test/registered/unit/function_call/test_function_call_parser.py`; `test/registered/unit/function_call/test_json_schema_constraint.py`; `test/registered/unit/mem_cache/test_radix_cache_unit.py` 等 12 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `16d7caa106` - sync(hcu): official main through 20260824 (c8e1ddc707)
+
+- Full hash: `16d7caa1065abd2af782f3afc35c3dc4da745cde`
+- Date/author: 2026-08-25 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `.claude/rules/comment-style.md`, `.claude/skills/ci-workflow-guide/SKILL.md`, `.claude/skills/cookbook-add-model/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md`, `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`, `.claude/skills/cookbook-add-model/templates/page.mdx.tmpl`, `.claude/skills/llm-torch-profiler-analysis/references/fuse-overlap-catalog.md`, `.claude/skills/sglang-runtime-context/SKILL.md` 等 1308 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.claude/skills/ci-workflow-guide/SKILL.md`; `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/FOLDER_README.md`; `.github/labeler.yml`; `.github/update_ci_permission.py`; `.github/workflows/_npu-pr-test-stage.yml`; `.github/workflows/_npu-single-node-test-stage.yml` 等 41 个文件
+  - docs-bench: `benchmark/hicache/bench_buffer_mode.py`; `docs/cookbook/autoregressive/Baidu/PaddleOCR-VL.mdx`; `docs/cookbook/autoregressive/Baidu/Unlimited-OCR.mdx`; `docs/cookbook/autoregressive/DeepReinforce/Ornith-1.0.mdx`; `docs/cookbook/autoregressive/DeepSeek/DeepSeek-V4.mdx`; `docs/cookbook/autoregressive/GLM/GLM-4.6V.mdx`; `docs/cookbook/autoregressive/GLM/GLM-5.2.mdx`; `docs/cookbook/autoregressive/Google/Gemma4.mdx` 等 79 个文件
+  - other: `.claude/rules/comment-style.md`; `.claude/skills/cookbook-add-model/SKILL.md`; `.claude/skills/cookbook-add-model/references/authoring-reference.md`; `.claude/skills/cookbook-add-model/templates/page.mdx.tmpl`; `.claude/skills/llm-torch-profiler-analysis/references/fuse-overlap-catalog.md`; `.claude/skills/sglang-runtime-context/SKILL.md`; `3rdparty/amd/wheel/sglang/pyproject.toml`; `README.md` 等 183 个文件
+  - runtime-model: `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`; `.pre-commit-config.yaml`; `docker/sgl-router.Dockerfile`; `experimental/sgl-router/Cargo.toml`; `experimental/sgl-router/README.md`; `experimental/sgl-router/sgl-kv-indexer/.gitignore`; `experimental/sgl-router/sgl-kv-indexer/Cargo.toml`; `experimental/sgl-router/sgl-kv-indexer/README.md` 等 190 个文件
+  - runtime-perf: `docker/rocm.Dockerfile`; `experimental/sgl-router/src/policies/cache_aware_zmq.rs`; `python/sglang/kernel_api_logging.py`; `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce.cuh`; `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce_hip.cuh`; `python/sglang/kernels/aot/csrc/common_extension.cc`; `python/sglang/kernels/aot/csrc/cpu/activation.cpp`; `python/sglang/kernels/aot/csrc/cpu/torch_extension_cpu.cpp` 等 271 个文件
+  - tests: `experimental/sgl-router/sgl-kv-indexer/tests/common/id.rs`; `experimental/sgl-router/sgl-kv-indexer/tests/common/kv.rs`; `experimental/sgl-router/sgl-kv-indexer/tests/common/net.rs`; `experimental/sgl-router/sgl-kv-indexer/tests/grpc_contract.rs`; `experimental/sgl-router/sgl-kv-indexer/tests/memory_integration.rs`; `experimental/sgl-router/tests/component/policies/cache_aware_zmq.rs`; `experimental/sgl-router/tests/e2e/chat_completions/test_two_router_convergence.py`; `experimental/sgl-router/tests/e2e/infra/gateway.py` 等 544 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `725659198b` - Revert "fix assert when mtp enable and step >1"
+
+- Full hash: `725659198b33689a1ab18146ed00c502d9d5a15e`
+- Date/author: 2026-08-06 / RyeYuan
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `a0840f493c` - [BugFix] recall hcu changes in pre_mhc changes to fix the accuracy issues
+
+- Full hash: `a0840f493c5012862925011a80a13f0d7dd68579`
+- Date/author: 2026-08-05 / RyeYuan
+- Auto category: 缺陷修复
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `6742d20c8c` - Fix lint for request-scoped C128 state pool
+
+- Full hash: `6742d20c8c2dadc30f3d2b00ccb4b8986fdaf9f0`
+- Date/author: 2026-08-05 / lijing
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/disaggregation/utils.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/dsv4/compressor_v2.py` 等 11 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/disaggregation/utils.py`
+  - runtime-model: `python/sglang/srt/model_executor/pool_configurator.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`; `python/sglang/srt/model_executor/model_runner_kv_cache_mixin.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `618f17ede5` - fix: resolve lint errors (ruff unused import, black formatting)
+
+- Full hash: `618f17ede51400a15b6e568c05872fefc30f2983`
+- Date/author: 2026-08-04 / chaoyujiang
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/managers/scheduler.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `ff6161f885` - Abort requests that exceed KV cache pool capacity with detailed 413 error Fix --swa-full-tokens-ratio 0.8 invalid
+
+- Full hash: `ff6161f885a0b4996f830b0fbfcae6336bad16fb`
+- Date/author: 2026-08-04 / chaoyujiang
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/server_args.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `a1dd37d220` - fix: resolve lint errors (isort, ruff F821, trailing-whitespace, black)
+
+- Full hash: `a1dd37d22036de10659a38cd14b9cccece8d9d02`
+- Date/author: 2026-08-04 / chaoyujiang
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `b97d7df6ee` - Forward port/v0.5.12 dev daily 20260729 (#146)
+
+- Full hash: `b97d7df6ee606d51c8a96b07b447b1a536a7e0af`
+- Date/author: 2026-08-03 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/quality-baseline-scan.yml`, `.github/workflows/release-pr-hcu.yml`, `README.md`, `README_DCU.md` 等 166 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`; `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/quality-baseline-scan.yml`; `.github/workflows/release-pr-hcu.yml`
+  - docs-bench: `docs/dcu-pr-ci-visual-guide.html`; `docs/hcu-pr-ci-visual-guide.html`; `docs/internal/dcu-main-conflict-ledger.md`
+  - other: `README.md`; `README_DCU.md`; `THIRD_PARTY_NOTICES.md`; `python/sglang/check_env.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/base/conn.py`; `python/sglang/srt/disaggregation/decode.py` 等 27 个文件
+  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/managers/tp_worker.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/apertus.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_nextn.py` 等 26 个文件
+  - runtime-perf: `python/sglang/jit_kernel/csrc/add_constant.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh` 等 97 个文件
+  - tests: `python/sglang/test/hcu_accuracy_report.py`; `python/sglang/test/hcu_cookbook_utils.py`; `python/sglang/test/hcu_server_guard.py`; `python/sglang/test/run_eval.py`; `python/sglang/test/simple_eval_common.py`; `python/sglang/test/simple_eval_mmlu.py`; `python/sglang/test/simple_eval_mmmu_vlm.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `9a2b01399d` - fix assert when mtp enable and step >1
+
+- Full hash: `9a2b01399db386fc1867adb012c0bd491d1cf077`
+- Date/author: 2026-08-03 / chaoyujiang
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `c5c5cc2270` - [Opt]Optimize DSV4 C128 state pool with request-scoped allocation
+
+- Full hash: `c5c5cc22701ed2ad0ad2790c479370b1c62fdf68`
+- Date/author: 2026-08-02 / lijing
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/dsv4/c128_cleanup.py`, `python/sglang/jit_kernel/dsv4/compress.py`, `python/sglang/srt/disaggregation/base/conn.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` 等 20 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/disaggregation/base/conn.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/nixl/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/disaggregation/utils.py`; `python/sglang/srt/environ.py` 等 9 个文件
+  - runtime-model: `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/jit_kernel/dsv4/c128_cleanup.py`; `python/sglang/jit_kernel/dsv4/compress.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`; `python/sglang/srt/mem_cache/deepseek_v4_compress_state.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py` 等 9 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `e7106de947` - V0.5.15.post1 dev to support dspark on HCU (#142)
+
+- Full hash: `e7106de947db9db2d8dee246d40a276b0bcc728e`
+- Date/author: 2026-07-31 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/benchmark/dspark_sps_profiler.py`, `python/sglang/srt/arg_groups/speculative_hook.py`, `python/sglang/srt/managers/overlap_utils.py`, `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/models/deepseek_v4.py`, `python/sglang/srt/models/deepseek_v4_dspark.py`, `python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py`, `python/sglang/srt/speculative/dspark_components/kernels/dspark_draft_model.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/benchmark/dspark_sps_profiler.py`; `python/sglang/srt/arg_groups/speculative_hook.py`; `python/sglang/srt/managers/overlap_utils.py`
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/deepseek_v4_dspark.py`; `python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py`
+  - runtime-perf: `python/sglang/srt/speculative/dspark_components/kernels/dspark_draft_model.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `123e9539ea` - fix lint: satisfy pre-commit on the forward-port diff
+
+- Full hash: `123e9539ea23dde2f1a12b0374c1375bbfb10989`
+- Date/author: 2026-07-31 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/check_env.py`, `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_v1.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`, `python/sglang/kernels/ops/quantization/fp8_kernel.py`, `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/prefill.py` 等 88 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/check_env.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/communicator.py`; `python/sglang/srt/layers/layernorm.py` 等 14 个文件
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_nextn.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py` 等 18 个文件
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/topk_v1.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/kernels/ops/quantization/fp8_kernel.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/distributed/device_communicators/quick_all_reduce.py`; `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py` 等 54 个文件
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`; `python/sglang/test/simple_eval_mmlu.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `25ffedc227` - fix(hcu): repair forward-port compatibility gaps
+
+- Full hash: `25ffedc2276699992e11eec0bddc867a8862663b`
+- Date/author: 2026-07-29 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/kernels/ops/quantization/fp8_kernel.py`, `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`, `python/sglang/srt/layers/quantization/fp8_utils.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py` 等 14 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - other: `python/sglang/srt/batch_overlap/two_batch_overlap.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/kernels/ops/quantization/fp8_kernel.py`; `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`; `python/sglang/srt/layers/quantization/fp8_utils.py`; `python/sglang/srt/layers/quantization/w8a8_fp8.py`; `python/sglang/srt/mem_cache/memory_pool.py`; `python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py` 等 9 个文件
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `ba31df0c0d` - Sync/official main daily 20260728 (#136)
+
+- Full hash: `ba31df0c0da941467ef94a6c114a375af39b488f`
+- Date/author: 2026-07-29 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `.claude/skills/add-jit-kernel/SKILL.md`, `.claude/skills/add-sgl-kernel/SKILL.md`, `.claude/skills/cookbook-add-model/references/authoring-reference.md`, `.claude/skills/cookbook-add-model/templates/benchmarks.jsx.tmpl`, `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`, `.claude/skills/cookbook-migrate-model/SKILL.md`, `.claude/skills/cookbook-review-pr/SKILL.md`, `.claude/skills/llm-torch-profiler-analysis/references/fuse-overlap-catalog.md` 等 1780 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/CI_PERMISSIONS.json`; `.github/CODEOWNERS`; `.github/MAINTAINER.md`; `.github/labeler.yml`; `.github/workflows/_pr-test-check-changes.yml`; `.github/workflows/lint.yml`; `.github/workflows/nightly-test-amd-miles-rocm700.yml`; `.github/workflows/nightly-test-amd-miles-rocm720.yml` 等 26 个文件
+  - docs-bench: `benchmark/bench_linear_attention/bench_cutedsl_kda_decode.py`; `benchmark/bench_linear_attention/bench_gdn_qkv_split.py`; `benchmark/hicache/bench_hicache_write_back.py`; `benchmark/hicache/perf.py`; `benchmark/kernels/all_reduce/benchmark_fused_ar_rms_quant_amd.py`; `benchmark/kernels/bench_fused_gate_sigmoid_mul_add.py`; `benchmark/kernels/bench_fused_sigmoid_mul.py`; `benchmark/kernels/deepseek/benchmark_cute_dsl_fp8_paged_mqa_logits.py` 等 47 个文件
+  - other: `.claude/skills/cookbook-add-model/references/authoring-reference.md`; `.claude/skills/cookbook-add-model/templates/benchmarks.jsx.tmpl`; `.claude/skills/cookbook-migrate-model/SKILL.md`; `.claude/skills/cookbook-review-pr/SKILL.md`; `.claude/skills/llm-torch-profiler-analysis/references/fuse-overlap-catalog.md`; `3rdparty/amd/wheel/sglang/pyproject.toml`; `docker/Dockerfile`; `python/pyproject.toml` 等 146 个文件
+  - runtime-model: `.claude/skills/cookbook-add-model/templates/config.jsx.tmpl`; `.pre-commit-config.yaml`; `python/sglang/srt/configs/load_config.py`; `python/sglang/srt/configs/mamba_utils.py`; `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/disaggregation/encode_server.py`; `python/sglang/srt/entrypoints/engine.py`; `python/sglang/srt/entrypoints/http_server.py` 等 69 个文件
+  - runtime-perf: `.claude/skills/add-jit-kernel/SKILL.md`; `.claude/skills/add-sgl-kernel/SKILL.md`; `.claude/skills/llm-torch-profiler-analysis/scripts/triage_kernel_helpers.py`; `python/sglang/jit_kernel/.clang-format`; `python/sglang/jit_kernel/__init__.py`; `python/sglang/jit_kernel/__main__.py`; `python/sglang/jit_kernel/activation.py`; `python/sglang/jit_kernel/add_constant.py` 等 965 个文件
+  - tests: `.claude/skills/write-sglang-test/SKILL.md`; `python/sglang/jit_kernel/tests/deepseek_v4/__init__.py`; `python/sglang/jit_kernel/tests/deepseek_v4/common.py`; `python/sglang/jit_kernel/tests/kv_canary/__init__.py`; `python/sglang/jit_kernel/tests/kv_canary/_canary_helpers.py`; `python/sglang/jit_kernel/tests/kv_canary/_constants.py`; `python/sglang/jit_kernel/tests/kv_canary/_differential.py`; `python/sglang/jit_kernel/tests/kv_canary/_fixtures.py` 等 527 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `864b3413b0` - support dpsk-v4-int8
+
+- Full hash: `864b3413b09b4e27d3da92bcc9b73516f13a83d3`
+- Date/author: 2026-07-28 / chaoyujiang
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/moe/utils.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `38c750157f` - fix：修复接口改动.
+
+- Full hash: `38c750157fb1485c24cc9135e71c923a6054ee66`
+- Date/author: 2026-07-27 / luoyao
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/activation.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/layers/attention/nsa/tilelang_kernel.py`, `python/sglang/srt/layers/layernorm.py`, `python/sglang/srt/layers/moe/mega_moe.py` 等 21 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/layernorm.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py`; `python/sglang/srt/models/minimax_m2.py`; `python/sglang/srt/models/qwen2.py`; `python/sglang/srt/models/qwen3.py`; `python/sglang/srt/models/qwen3_5.py`
+  - runtime-perf: `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`; `python/sglang/srt/layers/attention/nsa/tilelang_kernel.py`; `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py`; `python/sglang/srt/layers/moe/topk.py` 等 12 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `b781224d4d` - Rename DCU integration to HCU and sanitize runtime logs
+
+- Full hash: `b781224d4dae58889ba9bcc3efc0ff20fb424dc4`
+- Date/author: 2026-07-24 / LvJIA-RG
+- Auto category: 性能/后端优化
+- Main files: `.github/open-source-compliance.json`, `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/dcu-manual-model-test.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/labeler.yml`, `.github/workflows/lint-dcu.yml`, `.github/workflows/lint-hcu.yml` 等 464 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - ci: `.github/open-source-compliance.json`; `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/dcu-manual-model-test.yml`; `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/hcu-manual-model-test.yml`; `.github/workflows/labeler.yml`; `.github/workflows/lint-dcu.yml`; `.github/workflows/lint-hcu.yml` 等 14 个文件
+  - docs-bench: `docs/dcu-pr-ci-visual-guide.html`; `docs/hcu-pr-ci-visual-guide.html`
+  - other: `NOTICE`; `README.md`; `README_DCU.md`; `README_HCU.md`; `THIRD_PARTY_NOTICES.md`; `python/sglang/check_env.py`; `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py` 等 33 个文件
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py` 等 14 个文件
+  - runtime-perf: `python/sglang/jit_kernel/dsv4/attn.py`; `python/sglang/jit_kernel/dsv4/compress.py`; `python/sglang/jit_kernel/dsv4/elementwise.py`; `python/sglang/jit_kernel/dsv4/gemm.py`; `python/sglang/jit_kernel/dsv4/moe.py`; `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/kernels/ops/attention/dsa/index_buf_accessor.py`; `python/sglang/kernels/ops/attention/dsa/tilelang_kernel.py` 等 76 个文件
+  - tests: `python/sglang/test/ci/ci_register.py`; `python/sglang/test/dcu_cookbook_utils.py`; `python/sglang/test/dcu_utils.py`; `python/sglang/test/hcu_cookbook_utils.py`; `python/sglang/test/hcu_utils.py`; `python/sglang/test/simple_eval_mmmu_vlm.py`; `python/sglang/test/test_utils.py`; `scripts/ci/dcu/tests/test_check_hcu_runtime_text.py` 等 325 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `aa2309e220` - chore(compliance): add HYGON headers and provenance
+
+- Full hash: `aa2309e220d9a0df4325928ff969a214c7806e03`
+- Date/author: 2026-07-22 / Lv Jiajia
+- Auto category: 性能/后端优化
+- Main files: `README.md`, `THIRD_PARTY_NOTICES.md`, `python/sglang/check_env.py`, `python/sglang/jit_kernel/csrc/add_constant.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh` 等 151 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `README.md`; `THIRD_PARTY_NOTICES.md`; `python/sglang/check_env.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/disaggregation/base/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/environ.py` 等 22 个文件
+  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/managers/tp_worker.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/apertus.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_nextn.py` 等 24 个文件
+  - runtime-perf: `python/sglang/jit_kernel/csrc/add_constant.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/hisparse_transfer.cuh` 等 82 个文件
+  - tests: `python/sglang/test/hcu_server_guard.py`; `python/sglang/test/simple_eval_common.py`; `test/manual/ep/test_eplb.py`; `test/manual/test_expert_distribution.py`; `test/registered/hcu/accuracy/bw1100/test_deepseek_v32_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_glm51_int8_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_kimi_k26_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_minimax_m25_eval_hcu.py` 等 23 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `73c7e6c8f5` - [feat]:迁移lightop调用方式到新的接口.
+
+- Full hash: `73c7e6c8f50ff20c1093426c6adf88744ef9c202`
+- Date/author: 2026-07-22 / luoyao
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/activation.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/attention/dsv4/metadata.py`, `python/sglang/srt/layers/attention/dsv4/quant_k_cache.py`, `python/sglang/srt/layers/attention/fla/layernorm_gated.py` 等 38 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/communicator.py`; `python/sglang/srt/layers/layernorm.py`; `python/sglang/srt/layers/linear.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py`; `python/sglang/srt/models/minimax_m2.py`; `python/sglang/srt/models/qwen2.py`; `python/sglang/srt/models/qwen3.py`; `python/sglang/srt/models/qwen3_5.py`
+  - runtime-perf: `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/attention/dsv4/metadata.py`; `python/sglang/srt/layers/attention/dsv4/quant_k_cache.py`; `python/sglang/srt/layers/attention/fla/layernorm_gated.py`; `python/sglang/srt/layers/attention/flashattention_backend.py` 等 26 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `a596be0dc0` - [BugFix] Fix DeepSeek-V4 pure-TP startup after official main daily 20260721 merge
+
+- Full hash: `a596be0dc0287d572cc64f5ea0c589f1da706b7e`
+- Date/author: 2026-07-21 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/utils/compile.py`, `python/sglang/srt/hardware_backend/npu/utils.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/utils/common.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - other: `python/sglang/srt/hardware_backend/npu/utils.py`; `python/sglang/srt/utils/common.py`
+  - runtime-perf: `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/jit_kernel/utils/compile.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `470ae85b52` - style: apply pre-commit formatting (black/isort/ruff)
+
+- Full hash: `470ae85b5277b2fdb97ef98268c9e241e3383d6b`
+- Date/author: 2026-07-21 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/models/deepseek_v4.py`, `python/sglang/srt/utils/common.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/utils/common.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `e876bb9ff3` - [FEAT] support cp+MegaMoE in prefill w/o cuda-graph
+
+- Full hash: `e876bb9ff3176ca4590a1deec0d69082d1195af3`
+- Date/author: 2026-07-21 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/managers/scheduler_components/dp_attn.py`, `python/sglang/srt/utils/common.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/utils/common.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `1e2fec228a` - feat(hcu): port runtime and kernel rename
+
+- Full hash: `1e2fec228a9a8b1e781c3592eff356eeb8b584ed`
+- Date/author: 2026-07-20 / tianlinyang77
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/check_env.py`, `python/sglang/jit_kernel/dsv4/attn.py`, `python/sglang/jit_kernel/dsv4/elementwise.py`, `python/sglang/jit_kernel/dsv4/gemm.py`, `python/sglang/jit_kernel/dsv4/moe.py`, `python/sglang/jit_kernel/fp8_blockwise_gemm.py`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/mxfp8.py` 等 106 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/check_env.py`; `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/layernorm.py`; `python/sglang/srt/managers/overlap_utils.py` 等 12 个文件
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py` 等 14 个文件
+  - runtime-perf: `python/sglang/jit_kernel/dsv4/attn.py`; `python/sglang/jit_kernel/dsv4/elementwise.py`; `python/sglang/jit_kernel/dsv4/gemm.py`; `python/sglang/jit_kernel/dsv4/moe.py`; `python/sglang/jit_kernel/fp8_blockwise_gemm.py`; `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/jit_kernel/mxfp8.py`; `python/sglang/jit_kernel/sparse_mla_q8kv8_prefill_sm90.py` 等 79 个文件
+  - tests: `sgl-kernel/tests/test_moe_align.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `94659d14a3` - [dsv4] cp support megamoe
+
+- Full hash: `94659d14a39813dd07318b6c681c213c9ec498bd`
+- Date/author: 2026-06-17 / SYChen123
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `d703c086ff` - [BugFix] Fix the accuracy issues of DeepSeek-V4 in TP/CP/DP/EP
+
+- Full hash: `d703c086ff42655c602b85c9f0ac935215f8c4cc`
+- Date/author: 2026-07-17 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/mem_cache/allocator/paged.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/mem_cache/allocator/paged.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `84a8a08ac2` - [BugFix] skip pre-warmup of mHC for DCU and update validation docs
+
+- Full hash: `84a8a08ac230ba2fd78f8c902c5073aef51f949f`
+- Date/author: 2026-07-14 / RyeYuan
+- Auto category: 缺陷修复
+- Main files: `docs/internal/dcu-main-catchup-20260703-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - docs-bench: `docs/internal/dcu-main-catchup-20260703-conflict-review.md`; `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `6bf9d18729` - fix(dcu): reconcile DSV4 prewarm and fused Q imports
+
+- Full hash: `6bf9d18729fc409cb64b99ad842b9eb0282c5385`
+- Date/author: 2026-07-13 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `4fb3f09391` - runtime: migrate current main DCU interfaces to HCU
+
+- Full hash: `4fb3f09391ef791a7dd3811b0c610d6b89ae8ea0`
+- Date/author: 2026-07-13 / DCU CI Bot
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/batch_overlap/single_batch_overlap.py`, `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/activation.py`, `python/sglang/srt/layers/attention/attention_registry.py` 等 78 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/layernorm.py`; `python/sglang/srt/layers/mhc.py`; `python/sglang/srt/managers/overlap_utils.py`; `python/sglang/srt/model_loader/loader.py` 等 14 个文件
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py`; `python/sglang/srt/models/minimax_m2.py` 等 13 个文件
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`; `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/dcu_mla_backend.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py` 等 51 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `1a61a9b603` - Fix the PP assertion issue
+
+- Full hash: `1a61a9b60384813547d70cc8b703758c9799ee70`
+- Date/author: 2026-07-08 / lijing
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+### Commit `ad2ff869c6` - [BugFix] Backport partial bugfixes from C10 and also have to assign SGLANG_USE_AITER_AG=0 to ensure accuracy now
+
+- Full hash: `ad2ff869c60361435978336aa2faa4d79e648f53`
+- Date/author: 2026-07-06 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend_hip_radix.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/models/deepseek_v4.py`, `python/sglang/test/kits/attention_unittest/attention_methods/dsv4_attention.py`, `test/manual/core/test_dsv4_cached_loc_invalidation.py`, `test/manual/core/test_dsv4_hicache_swa_translation_cache.py` 等 9 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend_hip_radix.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+  - tests: `python/sglang/test/kits/attention_unittest/attention_methods/dsv4_attention.py`; `test/manual/core/test_dsv4_cached_loc_invalidation.py`; `test/manual/core/test_dsv4_hicache_swa_translation_cache.py`; `test/manual/core/test_dsv4_stale_loc_crash.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `2d561a3ec2` - chore: add modification notices for DCU changes
+
+- Full hash: `2d561a3ec23bdc4e0bfeebf73eea1fe638dc3e80`
+- Date/author: 2026-07-05 / Lv Jiajia
+- Auto category: 性能/后端优化
+- Main files: `NOTICE`, `THIRD_PARTY_NOTICES.md`, `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/dsv4/compress.py`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/include/sgl_kernel/utils.h`, `python/sglang/jit_kernel/utils.py`, `python/sglang/srt/arg_groups/deepseek_v4_hook.py` 等 250 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `NOTICE`; `THIRD_PARTY_NOTICES.md`; `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/environ.py` 等 23 个文件
+  - runtime-model: `python/sglang/srt/model_executor/input_buffers.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/qwen3.py`; `python/sglang/srt/speculative/eagle_worker.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/jit_kernel/dsv4/compress.py`; `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/jit_kernel/include/sgl_kernel/utils.h`; `python/sglang/jit_kernel/utils.py`; `python/sglang/srt/layers/attention/aiter_backend.py`; `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/base_attn_backend.py` 等 68 个文件
+  - tests: `python/sglang/test/ci/ci_register.py`; `python/sglang/test/few_shot_gsm8k.py`; `python/sglang/test/run_eval.py`; `python/sglang/test/simple_eval_mmlu.py`; `python/sglang/test/simple_eval_mmmu_vlm.py`; `python/sglang/test/test_utils.py`; `sgl-kernel/tests/test_moe_align.py`; `sgl-kernel/tests/test_norm.py` 等 153 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `fc241f4ad3` - [BugFix] Sync to official changes to remove first pre-warmup of mHC
+
+- Full hash: `fc241f4ad3244b6822ca0829f49ccc7283772727`
+- Date/author: 2026-07-03 / RyeYuan
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/layers/mhc.py`
+  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `379da22b45` - fix: address PR review and lint failures
+
+- Full hash: `379da22b4522bd2549e42f3357c01c52e5531e7e`
+- Date/author: 2026-07-02 / whlwhlwhl
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/eplb/expert_distribution.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/moe/topk.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py`, `python/sglang/srt/mem_cache/allocator.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/eplb/expert_distribution.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/moe/topk.py`; `python/sglang/srt/managers/scheduler_pp_mixin.py`; `python/sglang/srt/mem_cache/allocator.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `249a70dbef` - [Addition] deliver one validation doc and support multi-stream in hip backend
+
+- Full hash: `249a70dbef3117794005c238f5cfbd8c40487579`
+- Date/author: 2026-07-02 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `71cbfd64b9` - [bugfix] fix C16 BF16 KV cache writes
+
+- Full hash: `71cbfd64b9dbd7b4c94b96f95635c474ce1884e5`
+- Date/author: 2026-07-02 / wangaq
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/mem_cache/utils.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`; `python/sglang/srt/mem_cache/utils.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `631212b521` - feat(eplb): make expert distribution collection PP-safe
+
+- Full hash: `631212b5219db20397db2dea44eec0713ada38b5`
+- Date/author: 2026-06-30 / whlwhlwhl
+- Auto category: 调度/缓存/PD
+- Main files: `python/sglang/srt/eplb/expert_distribution.py`, `python/sglang/srt/eplb/expert_location.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/eplb/expert_distribution.py`; `python/sglang/srt/eplb/expert_location.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler_pp_mixin.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `129b3d05e8` - feat: Add lightop topk env & Improve multi stream overlap.
+
+- Full hash: `129b3d05e88b35ae5dfa72fdd3f05fd199c480f3`
+- Date/author: 2026-06-30 / Alone-wl
+- Auto category: 模型支持/运行时入口
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `1b2694156d` - [fix(deepseek-v4)]: remove unused codes and use ScheduleBatch extend_lens/prefix_lens in init_new
+
+- Full hash: `1b2694156d787b4f0248e43ff987f0d85ba6b075`
+- Date/author: 2026-06-24 / RyeYuan
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `5b19ad4642` - [fix(deepseek-v4)]: keep DCU on non-HIP attention backend + compressor
+
+- Full hash: `5b19ad46427f6f9ecc81f830bbc49e418ddc3d2e`
+- Date/author: 2026-06-24 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/attention_registry.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `e4802da346` - [feature] c16 DeepSeek V4 BF16 KV cache support
+
+- Full hash: `e4802da34676b3b01f5ca6e2ef7202978fa11b8a`
+- Date/author: 2026-06-23 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`, `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/model_executor/pool_configurator.py` 等 9 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+  - runtime-model: `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`; `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `af4e7a5d4c` - 增加fp8_einsum算子环境变量控制
+
+- Full hash: `af4e7a5d4c31d9121f8bf61afcf1a523c039787f`
+- Date/author: 2026-06-10 / lj1999
+- Auto category: 模型支持/运行时入口
+- Main files: `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `d834f0200a` - 适配fp8—einsum算子
+
+- Full hash: `d834f0200a2bae177a58ef906ac2ed6822619ca3`
+- Date/author: 2026-06-08 / lj1999
+- Auto category: 模型支持/运行时入口
+- Main files: `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `1be11e42e4` - [BugFix] fix the bug of dp and jit kernel
+
+- Full hash: `1be11e42e4064e1fd54f45800c802a23c2fae046`
+- Date/author: 2026-06-10 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/dsv4/compress.py`, `python/sglang/srt/layers/communicator.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/layers/communicator.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/dsv4/compress.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `9f7cb70608` - [BugFix] fix the bug of cp/ep
+
+- Full hash: `9f7cb7060831c3659c091e0aa9b476f1457d32b4`
+- Date/author: 2026-06-10 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/models/deepseek_v2.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `623d6eca1c` - [BugFix] fix the acc bug due to Q NaN generations, and fix the other tiny typos
+
+- Full hash: `623d6eca1cfe185569a6007c9bdd7074849c7ac5`
+- Date/author: 2026-06-09 / RyeYuan
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/models/deepseek_v2.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `9abf0b3f48` - [BugFix] fix the running issues of tilelang in compressor_v2 mode, SGLANG_OPT_USE_COMPRESSOR_V2=false could be removed
+
+- Full hash: `9abf0b3f4834a8a3e32f708803245abcf60dfde4`
+- Date/author: 2026-06-03 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/dsv4/compress.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/dsv4/compress.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `a1fd5486ac` - [BugFix] fix some bugs when using fused kernels
+
+- Full hash: `a1fd5486ac9ba404a618feba3027e4155c2dd596`
+- Date/author: 2026-06-03 / RyeYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/metadata.py`, `python/sglang/srt/layers/moe/hash_topk.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/metadata.py`; `python/sglang/srt/layers/moe/hash_topk.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `e6ed9a5b07` - 修改mhc_post算子传参
+
+- Full hash: `e6ed9a5b07d4517f7df167b02d5ac33786382ac0`
+- Date/author: 2026-06-03 / lj1999
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/hash_topk.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `1e0cf19d00` - [feature] add dspk fuse_op
+
+- Full hash: `1e0cf19d00038a402b8963db6c95792097c4bc37`
+- Date/author: 2026-06-02 / whlwhlwhl
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/layers/moe/topk.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/moe/hash_topk.py`; `python/sglang/srt/layers/moe/topk.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `262c0c8208` - Resolve the issue of errors during the startup service phase
+
+- Full hash: `262c0c8208aa3252cbe4994e1daee65f96208bdb`
+- Date/author: 2026-06-02 / lizhigong
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/utils.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/jit_kernel/utils.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `0b8715f673` - 融合QNORM_ROPE_KV_ROPE_QUANT
+
+- Full hash: `0b8715f673a03299fd4785ffc91026f6db7d335f`
+- Date/author: 2026-06-01 / lj1999
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `91863feeff` - [feature] support deepseek-v4-flash-int8
+
+- Full hash: `91863feeffd5c3e0c84faed442c2b0de0dc8c03d`
+- Date/author: 2026-05-29 / leon.wang
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `c8eff9d693` - 优化quant_k_cache算子和rmsnorm算子
+
+- Full hash: `c8eff9d6932b905160f9586cdf4cbd18412c00b7`
+- Date/author: 2026-06-01 / lizhigong
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `d1d74545ba` - 优化quant_k_cache算子和rmsnorm算子
+
+- Full hash: `d1d74545ba85703f453d8a87e2bac36b9f52660e`
+- Date/author: 2026-05-26 / lj1999
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/dsv4/quant_k_cache.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/quant_k_cache.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `2f1c501c23` - fix jit kernel for store kvcache
+
+- Full hash: `2f1c501c23ce5280ad8326973c438223b9045458`
+- Date/author: 2026-05-25 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `fc6da7e471` - 接入aiter的tilelang mhc_pre/mhc_post算子
+
+- Full hash: `fc6da7e4719df03967a6a876eb4e0c2769e54010`
+- Date/author: 2026-05-22 / lj1999
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/layers/mhc.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `1f86903ae5` - split prefill/decode for attention
+
+- Full hash: `1f86903ae56cb3268695c850cf8e53fed7d2374a`
+- Date/author: 2026-05-22 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/__init__.py`, `python/sglang/srt/layers/attention/dsv4/dequant_k_cache.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/attention/dsv4/sparse_prefill_utils.py`, `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/__init__.py`; `python/sglang/srt/layers/attention/dsv4/dequant_k_cache.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/attention/dsv4/sparse_prefill_utils.py`; `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `e684ee941a` - fix deepseek v4 pro blockwise && channelwise
+
+- Full hash: `e684ee941aa0cd3e0b6956bd8cfbf77780e3948e`
+- Date/author: 2026-05-20 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`, `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py`, `python/sglang/srt/mem_cache/allocator.py`, `python/sglang/srt/model_executor/cuda_graph_runner.py`, `python/sglang/srt/model_executor/input_buffers.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py` 等 9 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/model_executor/input_buffers.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`; `python/sglang/srt/layers/moe/hash_topk.py`; `python/sglang/srt/managers/scheduler_pp_mixin.py`; `python/sglang/srt/mem_cache/allocator.py`; `python/sglang/srt/model_executor/cuda_graph_runner.py`
+  - tests: `python/sglang/test/few_shot_gsm8k.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `e92c263e5f` - add Pipeline Parallelism (PP) and PD support for DeepSeek-V4
+
+- Full hash: `e92c263e5f786e064efe68e336229f7f29c8be52`
+- Date/author: 2026-05-20 / lj1999
+- Auto category: 调度/缓存/PD
+- Main files: `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `1e8c3e8430` - 添加aiter moe算子权重重排逻辑+优化linear_bf16_fp32算子+优化act_quant算子+融合silu_mul_fp8_quant算子
+
+- Full hash: `1e8c3e843089155442aaeae9f87d8a67d42f3edc`
+- Date/author: 2026-05-19 / lj1999
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/linear.py`, `python/sglang/srt/models/deepseek_v2.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/layers/linear.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `e170935b68` - 适配deepseekv4
+
+- Full hash: `e170935b68e13979057922a8bd8da551323f6da4`
+- Date/author: 2026-05-21 / lizhigong
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`, `python/sglang/jit_kernel/utils.py`, `python/sglang/srt/layers/attention/debug_flash_mla_adapter.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py` 等 19 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/layers/deepseek_v4_rope.py`; `python/sglang/srt/layers/mhc.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`; `python/sglang/jit_kernel/utils.py`; `python/sglang/srt/layers/attention/debug_flash_mla_adapter.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py` 等 16 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `2702c30f56` - backup dcu deepseek v4 debug state
+
+- Full hash: `2702c30f56f35a0e17b230ed52c721ffedb7e893`
+- Date/author: 2026-05-20 / lizhigong
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/mhc.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/layers/mhc.py`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+### Commit `ddc13994fd` - 接入lightop的Marlin MOE W8A8算子
+
+- Full hash: `ddc13994fd00759822a994a7805dc276a930cf42`
+- Date/author: 2026-05-09 / lj1999
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `ce5d45fc5e` - 1. add aiter moe; 2. split attn for prefill/decode
+
+- Full hash: `ce5d45fc5e6642a244679e22bbbb7a193522a461`
+- Date/author: 2026-05-09 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/environ.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `fe0cc03a87` - [bug fix] fix the dpsk-v4 mtp start issue, but multi-request input is failed still
+
+- Full hash: `fe0cc03a87aa38eb665f97aa2f2d10beb0c7c775`
+- Date/author: 2026-05-09 / yuanyuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`; `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `f059177569` - support fp8 channel-wise load weight
+
+- Full hash: `f059177569bbb58f76b03fb1ea0f2cbc11bb3a23`
+- Date/author: 2026-05-07 / flyingdown
+- Auto category: 模型支持/运行时入口
+- Main files: `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `cc008ad804` - 删除deepgemm meta
+
+- Full hash: `cc008ad804daa52196262a3b1765486ebd87d98a`
+- Date/author: 2026-05-06 / flyingdown
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/model_executor/model_runner.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `1087fc571b` - fix mhc
+
+- Full hash: `1087fc571bb42486b63566eb783e3d6924f15961`
+- Date/author: 2026-04-30 / flyingdown
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/layers/mhc.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+### Commit `d0534f2f9f` - first version for fp8 block
+
+- Full hash: `d0534f2f9f2bfb7958a3757dce679acfe2c999fe`
+- Date/author: 2026-04-30 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/managers/tp_worker.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `8cfd8b5eaa` - [compile fix] replace cuda_fp8 with hip/hip_fp8 to avoid jit compile errors
+
+- Full hash: `8cfd8b5eaa6ba2b479e428bb1dd718bed7e7bccb`
+- Date/author: 2026-04-30 / yuanyuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `5b6499d058` - fix topk_transform_512 jit
+
+- Full hash: `5b6499d0584b74ae70e6b1f5e85740058cd04820`
+- Date/author: 2026-04-29 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_1024.cuh`, `python/sglang/srt/layers/attention/dsv4/metadata.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/topk_1024.cuh`; `python/sglang/srt/layers/attention/dsv4/metadata.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/quantization/fp8.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `3230bc2bdc` - [compile fix] rename all '__grid_constant__' with global SGL_GRID_CONSTANT to avoid compiling issues
+
+- Full hash: `3230bc2bdc8a440d9b730ae30b46fe11b8d7db23`
+- Date/author: 2026-04-29 / YuanYuan
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hisparse_transfer.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/rmsnorm.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh` 等 16 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/hisparse_transfer.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/rmsnorm.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh` 等 16 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `87c5bd8807` - 修复CompressorPrefillPlan中使用jit kernel编译deepseek_v4/common.cuh时报错的问题
+
+- Full hash: `87c5bd8807f9f458c7f32515dd8fd361f9e4ae0e`
+- Date/author: 2026-04-29 / lipenghui
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/include/sgl_kernel/utils.h`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/jit_kernel/include/sgl_kernel/utils.h`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `f824dca292` - fix jit for compress_fused_norm_rope_inplace
+
+- Full hash: `f824dca292035c7ca8281f96bd89c0fb73b71e68`
+- Date/author: 2026-04-28 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/attention/dsv4/compressor.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`; `python/sglang/srt/layers/attention/dsv4/compressor.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `b4cb76a970` - fix jit for compress_forward
+
+- Full hash: `b4cb76a970858e7b5a59f8d78baa5e297896802b`
+- Date/author: 2026-04-28 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `99690f7d1c` - Ignore error exceptions and allow the service to start.
+
+- Full hash: `99690f7d1c2a6d1c9a70f43ae76fea47e84d2b77`
+- Date/author: 2026-04-28 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+### Commit `321fa6969e` - patch for deepseekv4
+
+- Full hash: `321fa6969eb3244dccff753460693004e2dda71d`
+- Date/author: 2026-04-28 / wangaq
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`, `python/sglang/jit_kernel/utils.py`, `python/sglang/srt/layers/attention/dsv4/metadata.py`, `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/layers/moe/fused_moe_triton/layer.py` 等 11 个文件
+- Implementation signal: This commit comes from local framework `git log --name-only`; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Reviewed files:
+  - other: `python/sglang/srt/layers/mhc.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/jit_kernel/utils.py`; `python/sglang/srt/layers/attention/dsv4/metadata.py`; `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` 等 9 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+<!-- LOCAL_ONLY_FULL_MAIN_TO_20261105_START -->
+## Local-only branch update from hg-full-base to main
 
 ### Coverage Note
 
-- Source index: `LOCAL_ONLY_COMMITS_v0.5.8_dev_to_v0.5.12_dev_by_branch.md`
-- Source worktree: `/public/home/yangyn1/work_space/2026/sglang/sglang`
-- Scope: only local fork commits that are not reachable from `sgl-project/sglang` GitHub refs.
-- Commits in this section: 17
-- Classification note: commits matching a concrete model name, model file, or model-family signal enter that model bucket; runtime, backend, CI, merge/base, PD/cache, and generic quantization commits that cannot be pinned to one model family enter `shared`.
+- Source repository: `HYGON-AI/sglang-das`; branch tips: `hg-full-base`@`92b1d382c`, `main`@`5343b311c`
+- Scope: only local fork commits that are not reachable from `sgl-project/sglang` GitHub refs; merge commits are kept.
+- Generated date: 2026-11-05
+- Commits in this section: 85 (merges: 0)
+- Branch segments: `hg-full-base..main`
+- Classification note: commits matching a concrete model name or model file enter that model bucket (possibly several); other runtime, backend, CI and test commits enter `shared`; merge-only or no-relevant-path commits enter `unclassified`. Bulk sync/rename commits touching more than 150 files (e.g. squash syncs of official main) also enter only `unclassified`: they carry upstream code and are not local-only implementations. Auto-classified; diffs were not reviewed one by one.
+
+### Touched Files
+
+| File | Local commits |
+| --- | --- |
+| `python/sglang/srt/models/deepseek_v4.py` | `321fa6969`, `99690f7d1`, `5b6499d05`, `d0534f2f9`, `1087fc571`, `f05917756`, `ddc13994f`, `e92c263e5`, `e684ee941`, `e170935b6`, `1f86903ae`, `fc6da7e47`, ... (48 total) |
+| `python/sglang/srt/layers/attention/deepseek_v4_backend.py` | `cc008ad80`, `ce5d45fc5`, `e170935b6`, `1f86903ae`, `d1d74545b`, `262c0c820`, `1e0cf19d0`, `a1fd5486a`, `9f7cb7060`, `e4802da34`, `ad2ff869c`, `4fb3f0939`, ... (24 total) |
+| `python/sglang/srt/layers/attention/dsv4/indexer.py` | `99690f7d1`, `1e8c3e843`, `e170935b6`, `1f86903ae`, `91863feef`, `262c0c820`, `9f7cb7060`, `599b7490f`, `129b3d05e`, `c4cc0a73b`, `f8b2eefcf`, `379da22b4`, ... (18 total) |
+| `python/sglang/srt/environ.py` | `ce5d45fc5`, `1e8c3e843`, `2702c30f5`, `1f86903ae`, `fc6da7e47`, `d1d74545b`, `0b8715f67`, `129b3d05e`, `4fb3f0939`, `37074c9af`, `1e2fec228`, `123e9539e`, ... (16 total) |
+| `python/sglang/srt/layers/attention/dsv4/compressor.py` | `f824dca29`, `e170935b6`, `d1d74545b`, `1e0cf19d0`, `e4802da34`, `5b19ad464`, `4fb3f0939`, `1e2fec228`, `a596be0dc`, `73c7e6c8f`, `38c750157`, `c5c5cc227`, ... (14 total) |
+| `python/sglang/srt/layers/moe/mega_moe.py` | `94659d14a`, `4fb3f0939`, `1e2fec228`, `e876bb9ff`, `470ae85b5`, `73c7e6c8f`, `38c750157`, `25ffedc22`, `7b3548f97`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` | `321fa6969`, `99690f7d1`, `5b6499d05`, `ce5d45fc5`, `ddc13994f`, `e170935b6`, `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `123e9539e`, `15c7204b7` |
+| `python/sglang/srt/models/deepseek_v2.py` | `1e8c3e843`, `623d6eca1`, `9f7cb7060`, `b5f9777d2`, `1e2fec228`, `73c7e6c8f`, `123e9539e`, `3d0f94345`, `7b3548f97`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/moe/ep_moe/layer.py` | `fe0cc03a8`, `1e0cf19d0`, `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `864b3413b`, `25ffedc22`, `123e9539e`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py` | `1e0cf19d0`, `623d6eca1`, `e4802da34`, `71cbfd64b`, `ad2ff869c`, `73c7e6c8f`, `c5c5cc227`, `6742d20c8`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/model_executor/model_runner.py` | `99690f7d1`, `cc008ad80`, `e92c263e5`, `e684ee941`, `fc241f4ad`, `4fb3f0939`, `1e2fec228`, `123e9539e`, `3d0f94345`, `7b3548f97` |
+| `python/sglang/jit_kernel/deepseek_v4.py` | `99690f7d1`, `87c5bd880`, `d0534f2f9`, `1e8c3e843`, `262c0c820`, `e4802da34`, `4fb3f0939`, `c5c5cc227`, `6742d20c8` |
+| `python/sglang/srt/layers/moe/topk.py` | `1e0cf19d0`, `379da22b4`, `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `123e9539e`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/model_executor/forward_batch_info.py` | `1b2694156`, `4fb3f0939`, `1e2fec228`, `123e9539e`, `e7106de94`, `3d0f94345`, `7b3548f97`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/arg_groups/deepseek_v4_hook.py` | `94659d14a`, `e4802da34`, `1a61a9b60`, `e876bb9ff`, `ff6161f88`, `618f17ede`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/attention/dsv4/metadata.py` | `321fa6969`, `5b6499d05`, `e170935b6`, `a1fd5486a`, `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `15c7204b7` |
+| `docs/internal/dcu-main-conflict-ledger.md` | `249a70dbe`, `ad2ff869c`, `84a8a08ac`, `b5f9777d2`, `a596be0dc`, `25ffedc22`, `a0840f493` |
+| `python/sglang/srt/disaggregation/mooncake/conn.py` | `4fb3f0939`, `1e2fec228`, `c5c5cc227`, `6742d20c8`, `3d0f94345`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/disaggregation/prefill.py` | `37074c9af`, `123e9539e`, `c5c5cc227`, `6742d20c8`, `3d0f94345`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/distributed/parallel_state.py` | `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `123e9539e`, `7b3548f97`, `15c7204b7` |
+| `python/sglang/srt/layers/mhc.py` | `321fa6969`, `1087fc571`, `2702c30f5`, `e170935b6`, `fc6da7e47`, `fc241f4ad`, `4fb3f0939` |
+| `python/sglang/srt/mem_cache/memory_pool.py` | `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `25ffedc22`, `123e9539e`, `7b3548f97` |
+| `python/sglang/srt/disaggregation/decode.py` | `123e9539e`, `c5c5cc227`, `6742d20c8`, `3d0f94345`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/attention/nsa/nsa_indexer.py` | `99690f7d1`, `cc008ad80`, `e170935b6`, `4fb3f0939`, `73c7e6c8f`, `38c750157` |
+| `python/sglang/srt/models/qwen3_5.py` | `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `123e9539e`, `7b3548f97` |
+| `python/sglang/srt/models/qwen3_moe.py` | `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `25ffedc22`, `123e9539e` |
+| `python/sglang/srt/utils/common.py` | `4fb3f0939`, `1e2fec228`, `e876bb9ff`, `470ae85b5`, `a596be0dc`, `7b3548f97` |
+| `python/sglang/srt/disaggregation/utils.py` | `c5c5cc227`, `6742d20c8`, `3d0f94345`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/activation.py` | `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `123e9539e` |
+| `python/sglang/srt/layers/layernorm.py` | `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `123e9539e` |
+| `python/sglang/srt/layers/moe/fused_moe_triton/layer.py` | `321fa6969`, `e684ee941`, `1f86903ae`, `123e9539e`, `15c7204b7` |
+| `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py` | `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` | `e170935b6`, `9f7cb7060`, `4fb3f0939`, `1e2fec228`, `15c7204b7` |
+| `python/sglang/srt/layers/quantization/fp8.py` | `321fa6969`, `5b6499d05`, `4fb3f0939`, `1e2fec228`, `123e9539e` |
+| `python/sglang/srt/layers/quantization/fp8_utils.py` | `4fb3f0939`, `1e2fec228`, `38c750157`, `25ffedc22`, `123e9539e` |
+| `python/sglang/srt/managers/scheduler.py` | `123e9539e`, `ff6161f88`, `618f17ede`, `3d0f94345`, `5343b311c` |
+| `python/sglang/srt/managers/scheduler_pp_mixin.py` | `e684ee941`, `631212b52`, `379da22b4`, `3d0f94345`, `7b3548f97` |
+| `python/sglang/srt/model_executor/pool_configurator.py` | `e4802da34`, `c5c5cc227`, `6742d20c8`, `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/models/bailing_moe.py` | `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `123e9539e` |
+| `python/sglang/srt/models/hunyuan_v3.py` | `4fb3f0939`, `1e2fec228`, `73c7e6c8f`, `38c750157`, `123e9539e` |
+| ... | 492 more files omitted |
 
 ### Timeline
 
 | Date | Commit | Branch update | Category | Title | Main files |
 | --- | --- | --- | --- | --- | --- |
-| 2026-04-28 | `14671daae` | `v0.5.11_dev..v0.5.12_dev` | 模型支持/运行时入口 | patch for deepseekv4 | `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h` 等 11 个文件 |
-| 2026-04-28 | `24f89924a` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | Ignore error exceptions and allow the service to start. | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py` 等 7 个文件 |
-| 2026-04-28 | `bc0809390` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | fix jit for compress_forward | `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh` 等 4 个文件 |
-| 2026-04-28 | `dbd0d5c1d` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | fix jit for compress_fused_norm_rope_inplace | `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/attention/dsv4/compressor.py` |
-| 2026-04-29 | `66bb0d501` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | [compile fix] rename all '__grid_constant__' with global SGL_GRID_CONSTANT to avoid compiling issues | `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hisparse_transfer.cuh` 等 16 个文件 |
-| 2026-04-29 | `6f3103454` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | 修复CompressorPrefillPlan中使用jit kernel编译deepseek_v4/common.cuh时报错的问题 | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/include/sgl_kernel/utils.h` |
-| 2026-04-29 | `cf0af79d2` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | fix topk_transform_512 jit | `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_1024.cuh`, `python/sglang/srt/layers/attention/dsv4/metadata.py` 等 6 个文件 |
-| 2026-04-30 | `51f4fe3e1` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | fix mhc | `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/models/deepseek_v4.py` |
-| 2026-04-30 | `53c8956fd` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | [compile fix] replace cuda_fp8 with hip/hip_fp8 to avoid jit compile errors | `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh` 等 4 个文件 |
-| 2026-04-30 | `83e281dc0` | `v0.5.11_dev..v0.5.12_dev` | 模型支持/运行时入口 | first version for fp8 block | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/models/deepseek_v4.py` |
-| 2026-05-06 | `0c411213f` | `v0.5.11_dev..v0.5.12_dev` | 性能/后端优化 | 删除deepgemm meta | `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/model_executor/model_runner.py` |
-| 2026-05-07 | `070988441` | `v0.5.11_dev..v0.5.12_dev` | 模型支持/运行时入口 | support fp8 channel-wise load weight | `python/sglang/srt/models/deepseek_v4.py` |
-| 2026-05-09 | `0dbd5074d` | `v0.5.11_dev..v0.5.12_dev` | 模型支持/运行时入口 | 接入lightop的Marlin MOE W8A8算子 | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/models/deepseek_v4.py` |
-| 2026-05-09 | `452e413c1` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | [bug fix] fix the dpsk-v4 mtp start issue, but multi-request input is failed still | `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-05-09 | `7ecb521af` | `v0.5.11_dev..v0.5.12_dev` | 调度/缓存/PD | 1. add aiter moe; 2. split attn for prefill/decode | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` 等 4 个文件 |
-| 2026-05-20 | `139c5c455` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | backup dcu deepseek v4 debug state | `python/sglang/multimodal_gen/runtime/layers/quantization/fp8.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/mhc.py` |
-| 2026-05-21 | `b306ccfe4` | `v0.5.11_dev..v0.5.12_dev` | 模型支持/运行时入口 | 适配deepseekv4 | `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh` 等 19 个文件 |
+| 2026-04-28 | `321fa6969` | `hg-full-base..main` | 性能/后端优化 | patch for deepseekv4 | `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h` and 11 files in total |
+| 2026-04-28 | `99690f7d1` | `hg-full-base..main` | 性能/后端优化 | Ignore error exceptions and allow the service to start. | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py` and 7 files in total |
+| 2026-04-28 | `b4cb76a97` | `hg-full-base..main` | 性能/后端优化 | fix jit for compress_forward | `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh` and 4 files in total |
+| 2026-04-28 | `f824dca29` | `hg-full-base..main` | 性能/后端优化 | fix jit for compress_fused_norm_rope_inplace | `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/attention/dsv4/compressor.py` |
+| 2026-04-29 | `87c5bd880` | `hg-full-base..main` | 性能/后端优化 | 修复CompressorPrefillPlan中使用jit kernel编译deepseek_v4/common.cuh时报错的问题 | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/include/sgl_kernel/utils.h` |
+| 2026-04-29 | `3230bc2bd` | `hg-full-base..main` | 性能/后端优化 | [compile fix] rename all '__grid_constant__' with global SGL_GRID_CONSTANT to avoid compiling issues | `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hisparse_transfer.cuh` and 16 files in total |
+| 2026-04-29 | `5b6499d05` | `hg-full-base..main` | 性能/后端优化 | fix topk_transform_512 jit | `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_1024.cuh`, `python/sglang/srt/layers/attention/dsv4/metadata.py` and 6 files in total |
+| 2026-04-30 | `8cfd8b5ea` | `hg-full-base..main` | 性能/后端优化 | [compile fix] replace cuda_fp8 with hip/hip_fp8 to avoid jit compile errors | `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh` and 4 files in total |
+| 2026-04-30 | `d0534f2f9` | `hg-full-base..main` | 性能/后端优化 | first version for fp8 block | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-04-30 | `1087fc571` | `hg-full-base..main` | 缺陷修复 | fix mhc | `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-06 | `cc008ad80` | `hg-full-base..main` | 性能/后端优化 | 删除deepgemm meta | `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/model_executor/model_runner.py` |
+| 2026-05-07 | `f05917756` | `hg-full-base..main` | 模型支持/运行时入口 | support fp8 channel-wise load weight | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-09 | `fe0cc03a8` | `hg-full-base..main` | 性能/后端优化 | [bug fix] fix the dpsk-v4 mtp start issue, but multi-request input is failed still | `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-05-09 | `ce5d45fc5` | `hg-full-base..main` | 性能/后端优化 | 1. add aiter moe; 2. split attn for prefill/decode | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` and 4 files in total |
+| 2026-05-09 | `ddc13994f` | `hg-full-base..main` | 性能/后端优化 | 接入lightop的Marlin MOE W8A8算子 | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-19 | `1e8c3e843` | `hg-full-base..main` | 性能/后端优化 | 添加aiter moe算子权重重排逻辑+优化linear_bf16_fp32算子+优化act_quant算子+融合silu_mul_fp8_quant算子 | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py` and 5 files in total |
+| 2026-05-20 | `2702c30f5` | `hg-full-base..main` | 性能/后端优化 | backup dcu deepseek v4 debug state | `python/sglang/multimodal_gen/runtime/layers/quantization/fp8.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/mhc.py` |
+| 2026-05-20 | `e92c263e5` | `hg-full-base..main` | 调度/缓存/PD | add Pipeline Parallelism (PP) and PD support for DeepSeek-V4 | `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-20 | `e684ee941` | `hg-full-base..main` | 性能/后端优化 | fix deepseek v4 pro blockwise && channelwise | `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`, `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py` and 9 files in total |
+| 2026-05-21 | `e170935b6` | `hg-full-base..main` | 性能/后端优化 | 适配deepseekv4 | `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh` and 19 files in total |
+| 2026-05-22 | `1f86903ae` | `hg-full-base..main` | 性能/后端优化 | split prefill/decode for attention | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/__init__.py` and 8 files in total |
+| 2026-05-22 | `fc6da7e47` | `hg-full-base..main` | 性能/后端优化 | 接入aiter的tilelang mhc_pre/mhc_post算子 | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-05-25 | `2f1c501c2` | `hg-full-base..main` | 性能/后端优化 | fix jit kernel for store kvcache | `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh` |
+| 2026-05-26 | `d1d74545b` | `hg-full-base..main` | 性能/后端优化 | 优化quant_k_cache算子和rmsnorm算子 | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py` and 5 files in total |
+| 2026-05-29 | `91863feef` | `hg-full-base..main` | 性能/后端优化 | [feature] support deepseek-v4-flash-int8 | `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-01 | `c8eff9d69` | `hg-full-base..main` | 性能/后端优化 | 优化quant_k_cache算子和rmsnorm算子 | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-01 | `0b8715f67` | `hg-full-base..main` | 性能/后端优化 | 融合QNORM_ROPE_KV_ROPE_QUANT | `python/sglang/srt/environ.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-02 | `262c0c820` | `hg-full-base..main` | 性能/后端优化 | Resolve the issue of errors during the startup service phase | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/utils.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py` and 5 files in total |
+| 2026-06-02 | `1e0cf19d0` | `hg-full-base..main` | 性能/后端优化 | [feature] add dspk fuse_op | `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py` and 6 files in total |
+| 2026-06-03 | `e6ed9a5b0` | `hg-full-base..main` | 性能/后端优化 | 修改mhc_post算子传参 | `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-03 | `a1fd5486a` | `hg-full-base..main` | 性能/后端优化 | [BugFix] fix some bugs when using fused kernels | `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/metadata.py` and 4 files in total |
+| 2026-06-03 | `9abf0b3f4` | `hg-full-base..main` | 性能/后端优化 | [BugFix] fix the running issues of tilelang in compressor_v2 mode, SGLANG_OPT_USE_COMPRESSOR_V2=false could be removed | `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/dsv4/compress.py` |
+| 2026-06-08 | `d834f0200` | `hg-full-base..main` | 模型支持/运行时入口 | 适配fp8—einsum算子 | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-09 | `623d6eca1` | `hg-full-base..main` | 缺陷修复 | [BugFix] fix the acc bug due to Q NaN generations, and fix the other tiny typos | `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/models/deepseek_v2.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-10 | `9f7cb7060` | `hg-full-base..main` | 性能/后端优化 | [BugFix] fix the bug of cp/ep | `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` and 5 files in total |
+| 2026-06-10 | `1be11e42e` | `hg-full-base..main` | 性能/后端优化 | [BugFix] fix the bug of dp and jit kernel | `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/dsv4/compress.py`, `python/sglang/srt/layers/communicator.py` and 4 files in total |
+| 2026-06-10 | `af4e7a5d4` | `hg-full-base..main` | 模型支持/运行时入口 | 增加fp8_einsum算子环境变量控制 | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-17 | `94659d14a` | `hg-full-base..main` | 性能/后端优化 | [dsv4] cp support megamoe | `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-23 | `e4802da34` | `hg-full-base..main` | 性能/后端优化 | [feature] c16 DeepSeek V4 BF16 KV cache support | `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`, `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/arg_groups/deepseek_v4_hook.py` and 9 files in total |
+| 2026-06-23 | `599b7490f` | `hg-full-base..main` | 缺陷修复 | bugfix: fix topk vmfault issue | `python/sglang/srt/layers/attention/dsv4/indexer.py` |
+| 2026-06-24 | `5b19ad464` | `hg-full-base..main` | 性能/后端优化 | [fix(deepseek-v4)]: keep DCU on non-HIP attention backend + compressor | `python/sglang/srt/layers/attention/attention_registry.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py` |
+| 2026-06-24 | `1b2694156` | `hg-full-base..main` | 缺陷修复 | [fix(deepseek-v4)]: remove unused codes and use ScheduleBatch extend_lens/prefix_lens in init_new | `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-30 | `129b3d05e` | `hg-full-base..main` | 模型支持/运行时入口 | feat: Add lightop topk env & Improve multi stream overlap. | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-06-30 | `c4cc0a73b` | `hg-full-base..main` | 性能/后端优化 | fix(dsv4): preserve DCU elementwise and topk paths | `python/sglang/jit_kernel/dsv4/elementwise.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py` |
+| 2026-06-30 | `631212b52` | `hg-full-base..main` | 调度/缓存/PD | feat(eplb): make expert distribution collection PP-safe | `python/sglang/srt/eplb/expert_distribution.py`, `python/sglang/srt/eplb/expert_location.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py` and 4 files in total |
+| 2026-06-30 | `f8b2eefcf` | `hg-full-base..main` | 通用实现调整 | feat(dsv4): generalize top-k index transformation | `python/sglang/srt/layers/attention/dsv4/indexer.py` |
+| 2026-06-30 | `f2d0e86d7` | `hg-full-base..main` | 性能/后端优化 | fix(dsv4): repair DCU sgl-kernel and JIT build | `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `sgl-kernel/setup_hip.py` |
+| 2026-07-02 | `71cbfd64b` | `hg-full-base..main` | 缺陷修复 | [bugfix] fix C16 BF16 KV cache writes | `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/mem_cache/utils.py` and 4 files in total |
+| 2026-07-02 | `249a70dbe` | `hg-full-base..main` | 性能/后端优化 | [Addition] deliver one validation doc and support multi-stream in hip backend | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-02 | `379da22b4` | `hg-full-base..main` | 性能/后端优化 | fix: address PR review and lint failures | `python/sglang/srt/eplb/expert_distribution.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/moe/topk.py` and 6 files in total |
+| 2026-07-03 | `fc241f4ad` | `hg-full-base..main` | 缺陷修复 | [BugFix] Sync to official changes to remove first pre-warmup of mHC | `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-05 | `1e967ec11` | `hg-full-base..main` | 性能/后端优化 | chore: add Apache headers for DCU files | `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/runtime/layers/ring_attention.py`, `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py` and 121 files in total |
+| 2026-07-06 | `ad2ff869c` | `hg-full-base..main` | 性能/后端优化 | [BugFix] Backport partial bugfixes from C10 and also have to assign SGLANG_USE_AITER_AG=0 to ensure accuracy now | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend_hip_radix.py` and 9 files in total |
+| 2026-07-08 | `1a61a9b60` | `hg-full-base..main` | 缺陷修复 | Fix the PP assertion issue | `python/sglang/srt/arg_groups/deepseek_v4_hook.py` |
+| 2026-07-13 | `4fb3f0939` | `hg-full-base..main` | 性能/后端优化 | runtime: migrate current main DCU interfaces to HCU | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py` and 80 files in total |
+| 2026-07-13 | `6bf9d1872` | `hg-full-base..main` | 性能/后端优化 | fix(dcu): reconcile DSV4 prewarm and fused Q imports | `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-14 | `84a8a08ac` | `hg-full-base..main` | 缺陷修复 | [BugFix] skip pre-warmup of mHC for DCU and update validation docs | `docs/internal/dcu-main-catchup-20260703-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-07-14 | `b5f9777d2` | `hg-full-base..main` | 缺陷修复 | Fix DCU DSV4 hash top-k router dtype | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v2.py` |
+| 2026-07-16 | `37074c9af` | `hg-full-base..main` | 缺陷修复 | Fix dsv4 full token pool | `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/environ.py` |
+| 2026-07-17 | `d703c086f` | `hg-full-base..main` | 性能/后端优化 | [BugFix] Fix the accuracy issues of DeepSeek-V4 in TP/CP/DP/EP | `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/mem_cache/allocator/paged.py` |
+| 2026-07-20 | `1e2fec228` | `hg-full-base..main` | 性能/后端优化 | feat(hcu): port runtime and kernel rename | `python/sglang/check_env.py`, `python/sglang/jit_kernel/dsv4/attn.py`, `python/sglang/jit_kernel/dsv4/elementwise.py` and 109 files in total |
+| 2026-07-21 | `e876bb9ff` | `hg-full-base..main` | 性能/后端优化 | [FEAT] support cp+MegaMoE in prefill w/o cuda-graph | `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/moe/mega_moe.py` and 5 files in total |
+| 2026-07-21 | `470ae85b5` | `hg-full-base..main` | 性能/后端优化 | style: apply pre-commit formatting (black/isort/ruff) | `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/models/deepseek_v4.py` and 4 files in total |
+| 2026-07-21 | `a596be0dc` | `hg-full-base..main` | 性能/后端优化 | [BugFix] Fix DeepSeek-V4 pure-TP startup after official main daily 20260721 merge | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/utils/compile.py` and 7 files in total |
+| 2026-07-22 | `73c7e6c8f` | `hg-full-base..main` | 性能/后端优化 | [feat]:迁移lightop调用方式到新的接口. | `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/activation.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py` and 38 files in total |
+| 2026-07-27 | `38c750157` | `hg-full-base..main` | 性能/后端优化 | fix：修复接口改动. | `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/activation.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py` and 21 files in total |
+| 2026-07-28 | `864b3413b` | `hg-full-base..main` | 性能/后端优化 | support dpsk-v4-int8 | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py` and 4 files in total |
+| 2026-07-29 | `25ffedc22` | `hg-full-base..main` | 性能/后端优化 | fix(hcu): repair forward-port compatibility gaps | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/kernels/ops/quantization/fp8_kernel.py`, `python/sglang/multimodal_gen/test/server/test_server_utils.py` and 15 files in total |
+| 2026-07-31 | `123e9539e` | `hg-full-base..main` | 性能/后端优化 | fix lint: satisfy pre-commit on the forward-port diff | `python/sglang/check_env.py`, `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_v1.cuh` and 91 files in total |
+| 2026-07-31 | `e7106de94` | `hg-full-base..main` | 性能/后端优化 | V0.5.15.post1 dev to support dspark on HCU (#142) | `python/sglang/benchmark/dspark_sps_profiler.py`, `python/sglang/srt/arg_groups/speculative_hook.py`, `python/sglang/srt/managers/overlap_utils.py` and 8 files in total |
+| 2026-08-02 | `c5c5cc227` | `hg-full-base..main` | 性能/后端优化 | [Opt]Optimize DSV4 C128 state pool with request-scoped allocation | `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/dsv4/c128_cleanup.py` and 20 files in total |
+| 2026-08-03 | `9a2b01399` | `hg-full-base..main` | 缺陷修复 | fix assert when mtp enable and step >1 | `python/sglang/srt/layers/attention/deepseek_v4_backend.py` |
+| 2026-08-04 | `a1dd37d22` | `hg-full-base..main` | 缺陷修复 | fix: resolve lint errors (isort, ruff F821, trailing-whitespace, black) | `python/sglang/srt/layers/attention/deepseek_v4_backend.py` |
+| 2026-08-04 | `ff6161f88` | `hg-full-base..main` | 缺陷修复 | Abort requests that exceed KV cache pool capacity with detailed 413 error Fix --swa-full-tokens-ratio 0.8 invalid | `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/server_args.py` |
+| 2026-08-04 | `618f17ede` | `hg-full-base..main` | 缺陷修复 | fix: resolve lint errors (ruff unused import, black formatting) | `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/managers/scheduler.py` |
+| 2026-08-05 | `6742d20c8` | `hg-full-base..main` | 性能/后端优化 | Fix lint for request-scoped C128 state pool | `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py` and 11 files in total |
+| 2026-08-05 | `a0840f493` | `hg-full-base..main` | 缺陷修复 | [BugFix] recall hcu changes in pre_mhc changes to fix the accuracy issues | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py` |
+| 2026-08-06 | `3d0f94345` | `hg-full-base..main` | 性能/后端优化 | fix(hcu): fully revert files owned by the skipped source commits | `python/sglang/jit_kernel/dsv4/compress.py`, `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/disaggregation/common/conn.py` and 20 files in total |
+| 2026-08-06 | `725659198` | `hg-full-base..main` | 缺陷修复 | Revert "fix assert when mtp enable and step >1" | `python/sglang/srt/layers/attention/deepseek_v4_backend.py` |
+| 2026-08-25 | `7b3548f97` | `hg-full-base..main` | 性能/后端优化 | fix lint: apply pre-commit fixes across the 20260824 sync diff | `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce_hip.cuh`, `python/sglang/kernels/aot/csrc/kvcacheio/transfer.cu`, `python/sglang/kernels/ops/moe/ep_moe_kernels.py` and 48 files in total |
+| 2026-09-23 | `9cd15042a` | `hg-full-base..main` | 模型支持/运行时入口 | feat(citest): 更新镜像测试用例, 适配 0.5.18 (Qwen3.8 / DeepSeek-V4) (#433) | `docker/image-citest-conf-hcu.yaml` |
+| 2026-09-23 | `f2d49c2c0` | `hg-full-base..main` | 缺陷修复 | FIX(DSV4): 补全 system/reminder 结尾对话的 assistant 生成前缀并解析 markdown 伪工具调用 (#435) | `python/sglang/srt/entrypoints/openai/encoding_dsv4.py`, `python/sglang/srt/function_call/deepseekv4_detector.py`, `test/registered/unit/function_call/test_deepseekv4_detector.py` |
+| 2026-09-23 | `88b0efdfe` | `hg-full-base..main` | 测试/文档/基准 | adapt ci to feat/20260920_deepseek-v4.1 (#442) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-10-26 | `15c7204b7` | `hg-full-base..main` | 性能/后端优化 | [Feat] [HCU] dsv4.1: Sync feature branch updates into main (#594) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `python/sglang/kernels/aot/benchmark/bench_rope_fp4.py` and 139 files in total |
+| 2026-11-03 | `5343b311c` | `hg-full-base..main` | 性能/后端优化 | Feat/20261102 Sync latest deepseek-v4.1 optimizations to main (#640) | `python/sglang/kernels/ops/attention/dsv4/attn.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer_rope_hcu.py` and 93 files in total |
 
 ### Per-Commit Audit Cards
 
-#### Commit `14671daae` - patch for deepseekv4
+- The timeline lists all 85 commits; audit cards cover only the most recent 80.
 
-- Full hash: `14671daae3602521808d74d3a8879cc525fbb2f3`
-- Date/author: 2026-04-28 / wangaq
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 模型支持/运行时入口
-- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`, `python/sglang/jit_kernel/utils.py`, `python/sglang/srt/layers/attention/dsv4/metadata.py`, `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/layers/moe/fused_moe_triton/layer.py` 等 11 个文件
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
-  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/jit_kernel/utils.py`; `python/sglang/srt/layers/attention/dsv4/metadata.py`; `python/sglang/srt/layers/mhc.py`; `python/sglang/srt/layers/moe/fused_moe_triton/layer.py` 等 10 个文件
-- Risk and verification: Touches model entry or runtime adaptation; main risks are weight loading, parallel partitioning, quant config, and short-generation correctness.
+#### Commit `3230bc2bd` - [compile fix] rename all '__grid_constant__' with global SGL_GRID_CONSTANT to avoid compiling issues
 
-#### Commit `24f89924a` - Ignore error exceptions and allow the service to start.
-
-- Full hash: `24f89924ad7b1c8bf3638e369185562510848b14`
-- Date/author: 2026-04-28 / wangaq
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 缺陷修复
-- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v4.py`
-  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
-
-#### Commit `bc0809390` - fix jit for compress_forward
-
-- Full hash: `bc0809390ff44101388966a545729bcfb47e4a33`
-- Date/author: 2026-04-28 / wangaq
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 缺陷修复
-- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c128.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/c4.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
-
-#### Commit `dbd0d5c1d` - fix jit for compress_fused_norm_rope_inplace
-
-- Full hash: `dbd0d5c1d5487d095e0a9dcc2f85fccacb3f2fa4`
-- Date/author: 2026-04-28 / wangaq
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 缺陷修复
-- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/attention/dsv4/compressor.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`; `python/sglang/srt/layers/attention/dsv4/compressor.py`
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
-
-#### Commit `66bb0d501` - [compile fix] rename all '__grid_constant__' with global SGL_GRID_CONSTANT to avoid compiling issues
-
-- Full hash: `66bb0d501453dbc6d3cdab54e50e120a1e49462c`
+- Full hash: `3230bc2bdc8a440d9b730ae30b46fe11b8d7db23`
 - Date/author: 2026-04-29 / YuanYuan
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 缺陷修复
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
 - Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/hisparse_transfer.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/rmsnorm.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh` 等 16 个文件
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
   - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/hash_topk.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/hisparse_transfer.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/rmsnorm.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh` 等 16 个文件
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
-#### Commit `6f3103454` - 修复CompressorPrefillPlan中使用jit kernel编译deepseek_v4/common.cuh时报错的问题
+#### Commit `5b6499d05` - fix topk_transform_512 jit
 
-- Full hash: `6f31034548aa5e75156ca0d11c790b52cfdb2e81`
-- Date/author: 2026-04-29 / lipenghui
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 缺陷修复
-- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/include/sgl_kernel/utils.h`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/jit_kernel/include/sgl_kernel/utils.h`
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
-
-#### Commit `cf0af79d2` - fix topk_transform_512 jit
-
-- Full hash: `cf0af79d2b9e5d7dde3034ae033148484137d255`
+- Full hash: `5b6499d0584b74ae70e6b1f5e85740058cd04820`
 - Date/author: 2026-04-29 / wangaq
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 缺陷修复
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
 - Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_1024.cuh`, `python/sglang/srt/layers/attention/dsv4/metadata.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/models/deepseek_v4.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
   - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
   - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/topk_1024.cuh`; `python/sglang/srt/layers/attention/dsv4/metadata.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/quantization/fp8.py`
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
-#### Commit `51f4fe3e1` - fix mhc
+#### Commit `8cfd8b5ea` - [compile fix] replace cuda_fp8 with hip/hip_fp8 to avoid jit compile errors
 
-- Full hash: `51f4fe3e15958a80d5b010553e39773306ae770b`
+- Full hash: `8cfd8b5eaa6ba2b479e428bb1dd718bed7e7bccb`
+- Date/author: 2026-04-30 / yuanyuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `d0534f2f9` - first version for fp8 block
+
+- Full hash: `d0534f2f9f2bfb7958a3757dce679acfe2c999fe`
+- Date/author: 2026-04-30 / wangaq
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/managers/tp_worker.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `1087fc571` - fix mhc
+
+- Full hash: `1087fc571bb42486b63566eb783e3d6924f15961`
 - Date/author: 2026-04-30 / flyingdown
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
+- Branch update: `hg-full-base..main`
 - Auto category: 缺陷修复
 - Main files: `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/models/deepseek_v4.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/layers/mhc.py`
   - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
-  - runtime-perf: `python/sglang/srt/layers/mhc.py`
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
 
-#### Commit `53c8956fd` - [compile fix] replace cuda_fp8 with hip/hip_fp8 to avoid jit compile errors
+#### Commit `cc008ad80` - 删除deepgemm meta
 
-- Full hash: `53c8956fd09e16724610ba75e79396b68c1ea1e9`
-- Date/author: 2026-04-30 / yuanyuan
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 缺陷修复
-- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/mega_moe_pre_dispatch.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant_tmp.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
-
-#### Commit `83e281dc0` - first version for fp8 block
-
-- Full hash: `83e281dc0fba863706e4c153364b92bf890b7a4c`
-- Date/author: 2026-04-30 / wangaq
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 模型支持/运行时入口
-- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/models/deepseek_v4.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
-  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`
-  - other: `python/sglang/srt/managers/tp_worker.py`
-- Risk and verification: Touches model entry or runtime adaptation; main risks are weight loading, parallel partitioning, quant config, and short-generation correctness.
-
-#### Commit `0c411213f` - 删除deepgemm meta
-
-- Full hash: `0c411213f0a7d161d8b123c0cbae4937fb47ac2c`
+- Full hash: `cc008ad804daa52196262a3b1765486ebd87d98a`
 - Date/author: 2026-05-06 / flyingdown
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
+- Branch update: `hg-full-base..main`
 - Auto category: 性能/后端优化
 - Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/model_executor/model_runner.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
   - runtime-model: `python/sglang/srt/model_executor/model_runner.py`
   - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`
-- Risk and verification: Touches performance or backend paths; validate with prefill/decode traces, end-to-end throughput, and correctness smoke tests before reusing.
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
-#### Commit `070988441` - support fp8 channel-wise load weight
+#### Commit `f05917756` - support fp8 channel-wise load weight
 
-- Full hash: `070988441ce2e10efb6b1f92b6eabf26c01985bd`
+- Full hash: `f059177569bbb58f76b03fb1ea0f2cbc11bb3a23`
 - Date/author: 2026-05-07 / flyingdown
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
+- Branch update: `hg-full-base..main`
 - Auto category: 模型支持/运行时入口
 - Main files: `python/sglang/srt/models/deepseek_v4.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
   - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
-- Risk and verification: Touches model entry or runtime adaptation; main risks are weight loading, parallel partitioning, quant config, and short-generation correctness.
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
 
-#### Commit `0dbd5074d` - 接入lightop的Marlin MOE W8A8算子
+#### Commit `fe0cc03a8` - [bug fix] fix the dpsk-v4 mtp start issue, but multi-request input is failed still
 
-- Full hash: `0dbd5074d1c37570390f3edd2af0460d6160867e`
+- Full hash: `fe0cc03a87aa38eb665f97aa2f2d10beb0c7c775`
+- Date/author: 2026-05-09 / yuanyuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`; `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `ce5d45fc5` - 1. add aiter moe; 2. split attn for prefill/decode
+
+- Full hash: `ce5d45fc5e6642a244679e22bbbb7a193522a461`
+- Date/author: 2026-05-09 / wangaq
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `ddc13994f` - 接入lightop的Marlin MOE W8A8算子
+
+- Full hash: `ddc13994fd00759822a994a7805dc276a930cf42`
 - Date/author: 2026-05-09 / lj1999
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 模型支持/运行时入口
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
 - Main files: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/models/deepseek_v4.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
   - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
   - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`
-- Risk and verification: Touches model entry or runtime adaptation; main risks are weight loading, parallel partitioning, quant config, and short-generation correctness.
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
-#### Commit `452e413c1` - [bug fix] fix the dpsk-v4 mtp start issue, but multi-request input is failed still
+#### Commit `1e8c3e843` - 添加aiter moe算子权重重排逻辑+优化linear_bf16_fp32算子+优化act_quant算子+融合silu_mul_fp8_quant算子
 
-- Full hash: `452e413c154ce1524a19ca3edf1c2a11a18fa059`
-- Date/author: 2026-05-09 / yuanyuan
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 缺陷修复
-- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`, `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/fused_norm_rope.cuh`; `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
+- Full hash: `1e8c3e843089155442aaeae9f87d8a67d42f3edc`
+- Date/author: 2026-05-19 / lj1999
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/linear.py`, `python/sglang/srt/models/deepseek_v2.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/layers/linear.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
-#### Commit `7ecb521af` - 1. add aiter moe; 2. split attn for prefill/decode
+#### Commit `2702c30f5` - backup dcu deepseek v4 debug state
 
-- Full hash: `7ecb521af66be463683f38b2ff26f9db46b477f9`
-- Date/author: 2026-05-09 / wangaq
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 调度/缓存/PD
-- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe_triton_kernels.py`
-  - other: `python/sglang/srt/environ.py`
-- Risk and verification: Touches scheduling, cache, PD, or MTP paths; verify prefill/decode ordering, first-token correctness, concurrency, and long-context stability.
-
-#### Commit `139c5c455` - backup dcu deepseek v4 debug state
-
-- Full hash: `139c5c455ad3b6d448b812be3ce633af6fa64d2f`
+- Full hash: `2702c30f56f35a0e17b230ed52c721ffedb7e893`
 - Date/author: 2026-05-20 / lizhigong
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 缺陷修复
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
 - Main files: `python/sglang/multimodal_gen/runtime/layers/quantization/fp8.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/mhc.py`
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
-  - runtime-perf: `python/sglang/multimodal_gen/runtime/layers/quantization/fp8.py`; `python/sglang/srt/layers/mhc.py`
-  - other: `python/sglang/srt/environ.py`
-- Risk and verification: Bug-fix commit; validate the trigger condition, accuracy regression, and exceptional path before reusing it.
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/layers/mhc.py`
+  - runtime-perf: `python/sglang/multimodal_gen/runtime/layers/quantization/fp8.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
-#### Commit `b306ccfe4` - 适配deepseekv4
+#### Commit `e92c263e5` - add Pipeline Parallelism (PP) and PD support for DeepSeek-V4
 
-- Full hash: `b306ccfe4ef332f3c1b5c5cec620f6ba64998ebd`
+- Full hash: `e92c263e5f786e064efe68e336229f7f29c8be52`
+- Date/author: 2026-05-20 / lj1999
+- Branch update: `hg-full-base..main`
+- Auto category: 调度/缓存/PD
+- Main files: `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `e684ee941` - fix deepseek v4 pro blockwise && channelwise
+
+- Full hash: `e684ee941aa0cd3e0b6956bd8cfbf77780e3948e`
+- Date/author: 2026-05-20 / wangaq
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`, `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py`, `python/sglang/srt/mem_cache/allocator.py`, `python/sglang/srt/model_executor/cuda_graph_runner.py`, `python/sglang/srt/model_executor/input_buffers.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py` 等 9 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/model_executor/input_buffers.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`; `python/sglang/srt/layers/moe/hash_topk.py`; `python/sglang/srt/managers/scheduler_pp_mixin.py`; `python/sglang/srt/mem_cache/allocator.py`; `python/sglang/srt/model_executor/cuda_graph_runner.py`
+  - tests: `python/sglang/test/few_shot_gsm8k.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `e170935b6` - 适配deepseekv4
+
+- Full hash: `e170935b68e13979057922a8bd8da551323f6da4`
 - Date/author: 2026-05-21 / lizhigong
-- Branch update: `v0.5.11_dev..v0.5.12_dev`
-- Auto category: 模型支持/运行时入口
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
 - Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`, `python/sglang/jit_kernel/utils.py`, `python/sglang/srt/layers/attention/debug_flash_mla_adapter.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py` 等 19 个文件
-- Implementation signal: This commit comes from a local dev branch update and is not reachable from `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
-- Reviewed files:
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/layers/deepseek_v4_rope.py`; `python/sglang/srt/layers/mhc.py`
   - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
-  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`; `python/sglang/jit_kernel/utils.py`; `python/sglang/srt/layers/attention/debug_flash_mla_adapter.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py` 等 18 个文件
-- Risk and verification: Touches model entry or runtime adaptation; main risks are weight loading, parallel partitioning, quant config, and short-generation correctness.
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/silu_and_mul_masked_post_quant.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`; `python/sglang/jit_kernel/utils.py`; `python/sglang/srt/layers/attention/debug_flash_mla_adapter.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py` 等 16 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
-<!-- LOCAL_ONLY_DEV_BRANCH_UPDATE_END -->
+#### Commit `1f86903ae` - split prefill/decode for attention
+
+- Full hash: `1f86903ae56cb3268695c850cf8e53fed7d2374a`
+- Date/author: 2026-05-22 / wangaq
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/__init__.py`, `python/sglang/srt/layers/attention/dsv4/dequant_k_cache.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/attention/dsv4/sparse_prefill_utils.py`, `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/__init__.py`; `python/sglang/srt/layers/attention/dsv4/dequant_k_cache.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/attention/dsv4/sparse_prefill_utils.py`; `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `fc6da7e47` - 接入aiter的tilelang mhc_pre/mhc_post算子
+
+- Full hash: `fc6da7e4719df03967a6a876eb4e0c2769e54010`
+- Date/author: 2026-05-22 / lj1999
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/layers/mhc.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `2f1c501c2` - fix jit kernel for store kvcache
+
+- Full hash: `2f1c501c23ce5280ad8326973c438223b9045458`
+- Date/author: 2026-05-25 / wangaq
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/store.cuh`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `d1d74545b` - 优化quant_k_cache算子和rmsnorm算子
+
+- Full hash: `d1d74545ba85703f453d8a87e2bac36b9f52660e`
+- Date/author: 2026-05-26 / lj1999
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/dsv4/quant_k_cache.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/quant_k_cache.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `91863feef` - [feature] support deepseek-v4-flash-int8
+
+- Full hash: `91863feeffd5c3e0c84faed442c2b0de0dc8c03d`
+- Date/author: 2026-05-29 / leon.wang
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `c8eff9d69` - 优化quant_k_cache算子和rmsnorm算子
+
+- Full hash: `c8eff9d6932b905160f9586cdf4cbd18412c00b7`
+- Date/author: 2026-06-01 / lizhigong
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `0b8715f67` - 融合QNORM_ROPE_KV_ROPE_QUANT
+
+- Full hash: `0b8715f673a03299fd4785ffc91026f6db7d335f`
+- Date/author: 2026-06-01 / lj1999
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `262c0c820` - Resolve the issue of errors during the startup service phase
+
+- Full hash: `262c0c8208aa3252cbe4994e1daee65f96208bdb`
+- Date/author: 2026-06-02 / lizhigong
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/utils.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/jit_kernel/utils.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `1e0cf19d0` - [feature] add dspk fuse_op
+
+- Full hash: `1e0cf19d00038a402b8963db6c95792097c4bc37`
+- Date/author: 2026-06-02 / whlwhlwhl
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/layers/moe/topk.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/moe/hash_topk.py`; `python/sglang/srt/layers/moe/topk.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `e6ed9a5b0` - 修改mhc_post算子传参
+
+- Full hash: `e6ed9a5b07d4517f7df167b02d5ac33786382ac0`
+- Date/author: 2026-06-03 / lj1999
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/hash_topk.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `a1fd5486a` - [BugFix] fix some bugs when using fused kernels
+
+- Full hash: `a1fd5486ac9ba404a618feba3027e4155c2dd596`
+- Date/author: 2026-06-03 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/metadata.py`, `python/sglang/srt/layers/moe/hash_topk.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/main_norm_rope.cuh`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/metadata.py`; `python/sglang/srt/layers/moe/hash_topk.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `9abf0b3f4` - [BugFix] fix the running issues of tilelang in compressor_v2 mode, SGLANG_OPT_USE_COMPRESSOR_V2=false could be removed
+
+- Full hash: `9abf0b3f4834a8a3e32f708803245abcf60dfde4`
+- Date/author: 2026-06-03 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/dsv4/compress.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/dsv4/compress.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `d834f0200` - 适配fp8—einsum算子
+
+- Full hash: `d834f0200a2bae177a58ef906ac2ed6822619ca3`
+- Date/author: 2026-06-08 / lj1999
+- Branch update: `hg-full-base..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `623d6eca1` - [BugFix] fix the acc bug due to Q NaN generations, and fix the other tiny typos
+
+- Full hash: `623d6eca1cfe185569a6007c9bdd7074849c7ac5`
+- Date/author: 2026-06-09 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/models/deepseek_v2.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `9f7cb7060` - [BugFix] fix the bug of cp/ep
+
+- Full hash: `9f7cb7060831c3659c091e0aa9b476f1457d32b4`
+- Date/author: 2026-06-10 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/models/deepseek_v2.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `1be11e42e` - [BugFix] fix the bug of dp and jit kernel
+
+- Full hash: `1be11e42e4064e1fd54f45800c802a23c2fae046`
+- Date/author: 2026-06-10 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/dsv4/compress.py`, `python/sglang/srt/layers/communicator.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/layers/communicator.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/dsv4/compress.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `af4e7a5d4` - 增加fp8_einsum算子环境变量控制
+
+- Full hash: `af4e7a5d4c31d9121f8bf61afcf1a523c039787f`
+- Date/author: 2026-06-10 / lj1999
+- Branch update: `hg-full-base..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `94659d14a` - [dsv4] cp support megamoe
+
+- Full hash: `94659d14a39813dd07318b6c681c213c9ec498bd`
+- Date/author: 2026-06-17 / SYChen123
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `e4802da34` - [feature] c16 DeepSeek V4 BF16 KV cache support
+
+- Full hash: `e4802da34676b3b01f5ca6e2ef7202978fa11b8a`
+- Date/author: 2026-06-23 / wangaq
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`, `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/model_executor/pool_configurator.py` 等 9 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+  - runtime-model: `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/topk.cuh`; `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `599b7490f` - bugfix: fix topk vmfault issue
+
+- Full hash: `599b7490f1cbbee50a235a7eba71a553c32c39bb`
+- Date/author: 2026-06-23 / Alone-wl
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `5b19ad464` - [fix(deepseek-v4)]: keep DCU on non-HIP attention backend + compressor
+
+- Full hash: `5b19ad46427f6f9ecc81f830bbc49e418ddc3d2e`
+- Date/author: 2026-06-24 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/attention_registry.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `1b2694156` - [fix(deepseek-v4)]: remove unused codes and use ScheduleBatch extend_lens/prefix_lens in init_new
+
+- Full hash: `1b2694156d787b4f0248e43ff987f0d85ba6b075`
+- Date/author: 2026-06-24 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `129b3d05e` - feat: Add lightop topk env & Improve multi stream overlap.
+
+- Full hash: `129b3d05e88b35ae5dfa72fdd3f05fd199c480f3`
+- Date/author: 2026-06-30 / Alone-wl
+- Branch update: `hg-full-base..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `c4cc0a73b` - fix(dsv4): preserve DCU elementwise and topk paths
+
+- Full hash: `c4cc0a73b69ec48614c91ca8e586a29152fc171a`
+- Date/author: 2026-06-30 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/dsv4/elementwise.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/jit_kernel/dsv4/elementwise.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `631212b52` - feat(eplb): make expert distribution collection PP-safe
+
+- Full hash: `631212b5219db20397db2dea44eec0713ada38b5`
+- Date/author: 2026-06-30 / whlwhlwhl
+- Branch update: `hg-full-base..main`
+- Auto category: 调度/缓存/PD
+- Main files: `python/sglang/srt/eplb/expert_distribution.py`, `python/sglang/srt/eplb/expert_location.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/eplb/expert_distribution.py`; `python/sglang/srt/eplb/expert_location.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler_pp_mixin.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `f8b2eefcf` - feat(dsv4): generalize top-k index transformation
+
+- Full hash: `f8b2eefcff4f4cd163c16768ec2dca1f6aafce35`
+- Date/author: 2026-06-30 / whlwhlwhl
+- Branch update: `hg-full-base..main`
+- Auto category: 通用实现调整
+- Main files: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `f2d0e86d7` - fix(dsv4): repair DCU sgl-kernel and JIT build
+
+- Full hash: `f2d0e86d71b3242666d72f22fce42bea42b1667f`
+- Date/author: 2026-06-30 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `sgl-kernel/setup_hip.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `sgl-kernel/setup_hip.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `71cbfd64b` - [bugfix] fix C16 BF16 KV cache writes
+
+- Full hash: `71cbfd64b9dbd7b4c94b96f95635c474ce1884e5`
+- Date/author: 2026-07-02 / wangaq
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/mem_cache/utils.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`; `python/sglang/srt/mem_cache/utils.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `249a70dbe` - [Addition] deliver one validation doc and support multi-stream in hip backend
+
+- Full hash: `249a70dbef3117794005c238f5cfbd8c40487579`
+- Date/author: 2026-07-02 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `379da22b4` - fix: address PR review and lint failures
+
+- Full hash: `379da22b4522bd2549e42f3357c01c52e5531e7e`
+- Date/author: 2026-07-02 / whlwhlwhl
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/eplb/expert_distribution.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/moe/topk.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py`, `python/sglang/srt/mem_cache/allocator.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/eplb/expert_distribution.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/moe/topk.py`; `python/sglang/srt/managers/scheduler_pp_mixin.py`; `python/sglang/srt/mem_cache/allocator.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `fc241f4ad` - [BugFix] Sync to official changes to remove first pre-warmup of mHC
+
+- Full hash: `fc241f4ad3244b6822ca0829f49ccc7283772727`
+- Date/author: 2026-07-03 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/mhc.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/layers/mhc.py`
+  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `1e967ec11` - chore: add Apache headers for DCU files
+
+- Full hash: `1e967ec11d7417188930e2c7183b63ebe3e5f55a`
+- Date/author: 2026-07-05 / Lv Jiajia
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/runtime/layers/ring_attention.py`, `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`, `python/sglang/srt/layers/attention/dcu_mla_backend.py`, `python/sglang/srt/layers/attention/debug_flash_mla_adapter.py`, `python/sglang/srt/layers/attention/dsv4/dequant_k_cache.py`, `python/sglang/srt/layers/attention/dsv4/sparse_prefill_utils.py`, `python/sglang/srt/layers/attention/flashattention_interface.py` 等 121 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/profile/prof.py`; `scripts/ci/dcu/dcu_ci_cleanup_container.sh`; `scripts/ci/dcu/dcu_ci_exec.sh`; `scripts/ci/dcu/dcu_ci_install_dependency.sh`; `scripts/ci/dcu/dcu_ci_start_container.sh`; `scripts/ci/dcu/verify_dcu_registration.py`
+  - runtime-perf: `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`; `python/sglang/multimodal_gen/runtime/layers/ring_attention.py`; `python/sglang/srt/layers/attention/dcu_mla_backend.py`; `python/sglang/srt/layers/attention/debug_flash_mla_adapter.py`; `python/sglang/srt/layers/attention/dsv4/dequant_k_cache.py`; `python/sglang/srt/layers/attention/dsv4/sparse_prefill_utils.py`; `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/layers/attention/lightop_concat.py` 等 18 个文件
+  - tests: `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`; `python/sglang/test/dcu_cookbook_utils.py`; `python/sglang/test/dcu_utils.py`; `test/registered/4-gpu-models/test_qwen3_next_models.py`; `test/registered/attention/test_fa3.py`; `test/registered/attention/test_local_attn.py`; `test/registered/core/test_gpt_oss_1gpu.py`; `test/registered/core/test_page_size.py` 等 97 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `ad2ff869c` - [BugFix] Backport partial bugfixes from C10 and also have to assign SGLANG_USE_AITER_AG=0 to ensure accuracy now
+
+- Full hash: `ad2ff869c60361435978336aa2faa4d79e648f53`
+- Date/author: 2026-07-06 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend_hip_radix.py`, `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`, `python/sglang/srt/models/deepseek_v4.py`, `python/sglang/test/kits/attention_unittest/attention_methods/dsv4_attention.py`, `test/manual/core/test_dsv4_cached_loc_invalidation.py`, `test/manual/core/test_dsv4_hicache_swa_translation_cache.py` 等 9 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend_hip_radix.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`
+  - tests: `python/sglang/test/kits/attention_unittest/attention_methods/dsv4_attention.py`; `test/manual/core/test_dsv4_cached_loc_invalidation.py`; `test/manual/core/test_dsv4_hicache_swa_translation_cache.py`; `test/manual/core/test_dsv4_stale_loc_crash.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `1a61a9b60` - Fix the PP assertion issue
+
+- Full hash: `1a61a9b60384813547d70cc8b703758c9799ee70`
+- Date/author: 2026-07-08 / lijing
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+#### Commit `4fb3f0939` - runtime: migrate current main DCU interfaces to HCU
+
+- Full hash: `4fb3f09391ef791a7dd3811b0c610d6b89ae8ea0`
+- Date/author: 2026-07-13 / DCU CI Bot
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`, `python/sglang/srt/batch_overlap/single_batch_overlap.py`, `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/environ.py` 等 80 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/layernorm.py`; `python/sglang/srt/layers/mhc.py`; `python/sglang/srt/managers/overlap_utils.py`; `python/sglang/srt/model_loader/loader.py` 等 14 个文件
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py`; `python/sglang/srt/models/minimax_m2.py` 等 13 个文件
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`; `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`; `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/dcu_mla_backend.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py` 等 52 个文件
+  - tests: `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `6bf9d1872` - fix(dcu): reconcile DSV4 prewarm and fused Q imports
+
+- Full hash: `6bf9d18729fc409cb64b99ad842b9eb0282c5385`
+- Date/author: 2026-07-13 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `84a8a08ac` - [BugFix] skip pre-warmup of mHC for DCU and update validation docs
+
+- Full hash: `84a8a08ac230ba2fd78f8c902c5073aef51f949f`
+- Date/author: 2026-07-14 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `docs/internal/dcu-main-catchup-20260703-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `docs/internal/dcu-main-catchup-20260703-conflict-review.md`; `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `b5f9777d2` - Fix DCU DSV4 hash top-k router dtype
+
+- Full hash: `b5f9777d2609d174738aa48de8263c819fa94e0d`
+- Date/author: 2026-07-14 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v2.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `37074c9af` - Fix dsv4 full token pool
+
+- Full hash: `37074c9af6a735966d576d42dd98bfcc65bb5dd1`
+- Date/author: 2026-07-16 / lijing
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/environ.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/environ.py`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+#### Commit `d703c086f` - [BugFix] Fix the accuracy issues of DeepSeek-V4 in TP/CP/DP/EP
+
+- Full hash: `d703c086ff42655c602b85c9f0ac935215f8c4cc`
+- Date/author: 2026-07-17 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/mem_cache/allocator/paged.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/jit_kernel/include/sgl_kernel/deepseek_v4/fp8_utils.cuh`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/mem_cache/allocator/paged.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `1e2fec228` - feat(hcu): port runtime and kernel rename
+
+- Full hash: `1e2fec228a9a8b1e781c3592eff356eeb8b584ed`
+- Date/author: 2026-07-20 / tianlinyang77
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/check_env.py`, `python/sglang/jit_kernel/dsv4/attn.py`, `python/sglang/jit_kernel/dsv4/elementwise.py`, `python/sglang/jit_kernel/dsv4/gemm.py`, `python/sglang/jit_kernel/dsv4/moe.py`, `python/sglang/jit_kernel/fp8_blockwise_gemm.py`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/mxfp8.py` 等 109 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/check_env.py`; `python/sglang/multimodal_gen/csrc/render/hunyuan3d_rasterizer/__init__.py`; `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/layernorm.py` 等 13 个文件
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py` 等 14 个文件
+  - runtime-perf: `python/sglang/jit_kernel/dsv4/attn.py`; `python/sglang/jit_kernel/dsv4/elementwise.py`; `python/sglang/jit_kernel/dsv4/gemm.py`; `python/sglang/jit_kernel/dsv4/moe.py`; `python/sglang/jit_kernel/fp8_blockwise_gemm.py`; `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/jit_kernel/mxfp8.py`; `python/sglang/jit_kernel/sparse_mla_q8kv8_prefill_sm90.py` 等 80 个文件
+  - tests: `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`; `sgl-kernel/tests/test_moe_align.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `e876bb9ff` - [FEAT] support cp+MegaMoE in prefill w/o cuda-graph
+
+- Full hash: `e876bb9ff3176ca4590a1deec0d69082d1195af3`
+- Date/author: 2026-07-21 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/managers/scheduler_components/dp_attn.py`, `python/sglang/srt/utils/common.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/utils/common.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `470ae85b5` - style: apply pre-commit formatting (black/isort/ruff)
+
+- Full hash: `470ae85b5277b2fdb97ef98268c9e241e3383d6b`
+- Date/author: 2026-07-21 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/models/deepseek_v4.py`, `python/sglang/srt/utils/common.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/utils/common.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `a596be0dc` - [BugFix] Fix DeepSeek-V4 pure-TP startup after official main daily 20260721 merge
+
+- Full hash: `a596be0dc0287d572cc64f5ea0c589f1da706b7e`
+- Date/author: 2026-07-21 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `python/sglang/jit_kernel/utils/compile.py`, `python/sglang/srt/hardware_backend/npu/utils.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/utils/common.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - other: `python/sglang/srt/hardware_backend/npu/utils.py`; `python/sglang/srt/utils/common.py`
+  - runtime-perf: `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `python/sglang/jit_kernel/utils/compile.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `73c7e6c8f` - [feat]:迁移lightop调用方式到新的接口.
+
+- Full hash: `73c7e6c8f50ff20c1093426c6adf88744ef9c202`
+- Date/author: 2026-07-22 / luoyao
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/activation.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`, `python/sglang/srt/layers/attention/dsv4/metadata.py`, `python/sglang/srt/layers/attention/dsv4/quant_k_cache.py`, `python/sglang/srt/layers/attention/fla/layernorm_gated.py` 等 38 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/communicator.py`; `python/sglang/srt/layers/layernorm.py`; `python/sglang/srt/layers/linear.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py`; `python/sglang/srt/models/minimax_m2.py`; `python/sglang/srt/models/qwen2.py`; `python/sglang/srt/models/qwen3.py`; `python/sglang/srt/models/qwen3_5.py`
+  - runtime-perf: `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`; `python/sglang/srt/layers/attention/dsv4/metadata.py`; `python/sglang/srt/layers/attention/dsv4/quant_k_cache.py`; `python/sglang/srt/layers/attention/fla/layernorm_gated.py`; `python/sglang/srt/layers/attention/flashattention_backend.py` 等 26 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `38c750157` - fix：修复接口改动.
+
+- Full hash: `38c750157fb1485c24cc9135e71c923a6054ee66`
+- Date/author: 2026-07-27 / luoyao
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/activation.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`, `python/sglang/srt/layers/attention/nsa/tilelang_kernel.py`, `python/sglang/srt/layers/layernorm.py`, `python/sglang/srt/layers/moe/mega_moe.py` 等 21 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/layernorm.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/hunyuan_v3.py`; `python/sglang/srt/models/mimo_v2.py`; `python/sglang/srt/models/minimax_m2.py`; `python/sglang/srt/models/qwen2.py`; `python/sglang/srt/models/qwen3.py`; `python/sglang/srt/models/qwen3_5.py`
+  - runtime-perf: `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`; `python/sglang/srt/layers/attention/nsa/tilelang_kernel.py`; `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py`; `python/sglang/srt/layers/moe/topk.py` 等 12 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `864b3413b` - support dpsk-v4-int8
+
+- Full hash: `864b3413b09b4e27d3da92bcc9b73516f13a83d3`
+- Date/author: 2026-07-28 / chaoyujiang
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/moe/utils.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `25ffedc22` - fix(hcu): repair forward-port compatibility gaps
+
+- Full hash: `25ffedc2276699992e11eec0bddc867a8862663b`
+- Date/author: 2026-07-29 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/kernels/ops/quantization/fp8_kernel.py`, `python/sglang/multimodal_gen/test/server/test_server_utils.py`, `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`, `python/sglang/srt/layers/quantization/fp8_utils.py` 等 15 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - other: `python/sglang/srt/batch_overlap/two_batch_overlap.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/kernels/ops/quantization/fp8_kernel.py`; `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`; `python/sglang/srt/layers/quantization/fp8_utils.py`; `python/sglang/srt/layers/quantization/w8a8_fp8.py`; `python/sglang/srt/mem_cache/memory_pool.py`; `python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py` 等 9 个文件
+  - tests: `python/sglang/multimodal_gen/test/server/test_server_utils.py`; `python/sglang/test/hcu_cookbook_utils.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `123e9539e` - fix lint: satisfy pre-commit on the forward-port diff
+
+- Full hash: `123e9539ea23dde2f1a12b0374c1375bbfb10989`
+- Date/author: 2026-07-31 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/check_env.py`, `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`, `python/sglang/jit_kernel/csrc/deepseek_v4/topk_v1.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`, `python/sglang/kernels/ops/quantization/fp8_kernel.py`, `python/sglang/multimodal_gen/runtime/layers/attention/backends/flash_attn.py`, `python/sglang/multimodal_gen/runtime/layers/attention/layer.py`, `python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py` 等 91 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/check_env.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/communicator.py`; `python/sglang/srt/layers/layernorm.py` 等 14 个文件
+  - runtime-model: `python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/deepseek_nextn.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py` 等 19 个文件
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/common.cuh`; `python/sglang/jit_kernel/csrc/deepseek_v4/topk_v1.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/kernels/ops/quantization/fp8_kernel.py`; `python/sglang/multimodal_gen/runtime/layers/attention/backends/flash_attn.py`; `python/sglang/multimodal_gen/runtime/layers/attention/layer.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/distributed/device_communicators/quick_all_reduce.py` 等 56 个文件
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`; `python/sglang/test/simple_eval_mmlu.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `e7106de94` - V0.5.15.post1 dev to support dspark on HCU (#142)
+
+- Full hash: `e7106de947db9db2d8dee246d40a276b0bcc728e`
+- Date/author: 2026-07-31 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/benchmark/dspark_sps_profiler.py`, `python/sglang/srt/arg_groups/speculative_hook.py`, `python/sglang/srt/managers/overlap_utils.py`, `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/models/deepseek_v4.py`, `python/sglang/srt/models/deepseek_v4_dspark.py`, `python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py`, `python/sglang/srt/speculative/dspark_components/kernels/dspark_draft_model.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/benchmark/dspark_sps_profiler.py`; `python/sglang/srt/arg_groups/speculative_hook.py`; `python/sglang/srt/managers/overlap_utils.py`
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/deepseek_v4_dspark.py`; `python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py`
+  - runtime-perf: `python/sglang/srt/speculative/dspark_components/kernels/dspark_draft_model.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `c5c5cc227` - [Opt]Optimize DSV4 C128 state pool with request-scoped allocation
+
+- Full hash: `c5c5cc22701ed2ad0ad2790c479370b1c62fdf68`
+- Date/author: 2026-08-02 / lijing
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`, `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/jit_kernel/dsv4/c128_cleanup.py`, `python/sglang/jit_kernel/dsv4/compress.py`, `python/sglang/srt/disaggregation/base/conn.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` 等 20 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/disaggregation/base/conn.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/nixl/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/disaggregation/utils.py`; `python/sglang/srt/environ.py` 等 9 个文件
+  - runtime-model: `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/jit_kernel/csrc/deepseek_v4/c_plan.cuh`; `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/jit_kernel/dsv4/c128_cleanup.py`; `python/sglang/jit_kernel/dsv4/compress.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`; `python/sglang/srt/mem_cache/deepseek_v4_compress_state.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py` 等 9 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `9a2b01399` - fix assert when mtp enable and step >1
+
+- Full hash: `9a2b01399db386fc1867adb012c0bd491d1cf077`
+- Date/author: 2026-08-03 / chaoyujiang
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `a1dd37d22` - fix: resolve lint errors (isort, ruff F821, trailing-whitespace, black)
+
+- Full hash: `a1dd37d22036de10659a38cd14b9cccece8d9d02`
+- Date/author: 2026-08-04 / chaoyujiang
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `ff6161f88` - Abort requests that exceed KV cache pool capacity with detailed 413 error Fix --swa-full-tokens-ratio 0.8 invalid
+
+- Full hash: `ff6161f885a0b4996f830b0fbfcae6336bad16fb`
+- Date/author: 2026-08-04 / chaoyujiang
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/server_args.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `618f17ede` - fix: resolve lint errors (ruff unused import, black formatting)
+
+- Full hash: `618f17ede51400a15b6e568c05872fefc30f2983`
+- Date/author: 2026-08-04 / chaoyujiang
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/managers/scheduler.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `6742d20c8` - Fix lint for request-scoped C128 state pool
+
+- Full hash: `6742d20c8c2dadc30f3d2b00ccb4b8986fdaf9f0`
+- Date/author: 2026-08-05 / lijing
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/deepseek_v4.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/disaggregation/utils.py`, `python/sglang/srt/layers/attention/dsv4/compressor.py`, `python/sglang/srt/layers/attention/dsv4/compressor_v2.py` 等 11 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/disaggregation/utils.py`
+  - runtime-model: `python/sglang/srt/model_executor/pool_configurator.py`
+  - runtime-perf: `python/sglang/jit_kernel/deepseek_v4.py`; `python/sglang/srt/layers/attention/dsv4/compressor.py`; `python/sglang/srt/layers/attention/dsv4/compressor_v2.py`; `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py`; `python/sglang/srt/model_executor/model_runner_kv_cache_mixin.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `a0840f493` - [BugFix] recall hcu changes in pre_mhc changes to fix the accuracy issues
+
+- Full hash: `a0840f493c5012862925011a80a13f0d7dd68579`
+- Date/author: 2026-08-05 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/models/deepseek_v4.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-model: `python/sglang/srt/models/deepseek_v4.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `3d0f94345` - fix(hcu): fully revert files owned by the skipped source commits
+
+- Full hash: `3d0f9434512ab52e842d3e42549756f022d0b572`
+- Date/author: 2026-08-06 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/jit_kernel/dsv4/compress.py`, `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/disaggregation/utils.py`, `python/sglang/srt/managers/cache_controller.py` 等 20 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/disaggregation/utils.py`; `python/sglang/srt/managers/schedule_batch.py`; `python/sglang/srt/speculative/eagle_info.py`
+  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/server_args.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/jit_kernel/dsv4/compress.py`; `python/sglang/srt/managers/cache_controller.py`; `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/managers/scheduler_pp_mixin.py`; `python/sglang/srt/mem_cache/hiradix_cache.py`; `python/sglang/srt/speculative/eagle_draft_cuda_graph_runner.py`; `python/sglang/srt/speculative/eagle_draft_extend_cuda_graph_runner.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `725659198` - Revert "fix assert when mtp enable and step >1"
+
+- Full hash: `725659198b33689a1ab18146ed00c502d9d5a15e`
+- Date/author: 2026-08-06 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/srt/layers/attention/deepseek_v4_backend.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `7b3548f97` - fix lint: apply pre-commit fixes across the 20260824 sync diff
+
+- Full hash: `7b3548f97409d83b7e7dde4c3ad71e2f30955267`
+- Date/author: 2026-08-25 / RyeYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce_hip.cuh`, `python/sglang/kernels/aot/csrc/kvcacheio/transfer.cu`, `python/sglang/kernels/ops/moe/ep_moe_kernels.py`, `python/sglang/multimodal_gen/runtime/layers/usp.py`, `python/sglang/multimodal_gen/test/unit/test_server_args.py`, `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/hardware_backend/npu/utils.py` 等 48 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/multimodal_gen/runtime/layers/usp.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/hardware_backend/npu/utils.py`; `python/sglang/srt/sampling/sampling_batch_info.py`; `python/sglang/srt/speculative/draft_utils.py`; `python/sglang/srt/speculative/eagle_utils.py`; `python/sglang/srt/utils/common.py`
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/deepseek_v4.py`; `python/sglang/srt/models/qwen3_5.py`; `python/sglang/srt/models/qwen3_vl.py`
+  - runtime-perf: `python/sglang/kernels/aot/csrc/allreduce/custom_all_reduce_hip.cuh`; `python/sglang/kernels/aot/csrc/kvcacheio/transfer.cu`; `python/sglang/kernels/ops/moe/ep_moe_kernels.py`; `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/attention/aiter_backend.py`; `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/base_attn_backend.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py` 等 22 个文件
+  - tests: `python/sglang/multimodal_gen/test/unit/test_server_args.py`; `test/registered/hicache/test_hicache_storage_3fs_backend.py`; `test/registered/openai_server/validation/test_matched_stop.py`; `test/registered/pp/test_pp_single_node.py`; `test/registered/profiling/test_start_profile.py`; `test/registered/unit/entrypoints/openai/test_serving_embedding.py`; `test/registered/unit/function_call/test_function_call_parser.py`; `test/registered/unit/function_call/test_json_schema_constraint.py` 等 13 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `9cd15042a` - feat(citest): 更新镜像测试用例, 适配 0.5.18 (Qwen3.8 / DeepSeek-V4) (#433)
+
+- Full hash: `9cd15042af60905ef088d409908e41e330fbf345`
+- Date/author: 2026-09-23 / Crowder13
+- Branch update: `hg-full-base..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `docker/image-citest-conf-hcu.yaml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `docker/image-citest-conf-hcu.yaml`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+#### Commit `f2d49c2c0` - FIX(DSV4): 补全 system/reminder 结尾对话的 assistant 生成前缀并解析 markdown 伪工具调用 (#435)
+
+- Full hash: `f2d49c2c0e3cb3ca4dd89130cb5e2a408b0ac54b`
+- Date/author: 2026-09-23 / JackPeng
+- Branch update: `hg-full-base..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/entrypoints/openai/encoding_dsv4.py`, `python/sglang/srt/function_call/deepseekv4_detector.py`, `test/registered/unit/function_call/test_deepseekv4_detector.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/function_call/deepseekv4_detector.py`
+  - runtime-model: `python/sglang/srt/entrypoints/openai/encoding_dsv4.py`
+  - tests: `test/registered/unit/function_call/test_deepseekv4_detector.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `88b0efdfe` - adapt ci to feat/20260920_deepseek-v4.1 (#442)
+
+- Full hash: `88b0efdfe9e0b690e820e47a929ccf971adf57ce`
+- Date/author: 2026-09-23 / 463975089
+- Branch update: `hg-full-base..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `15c7204b7` - [Feat] [HCU] dsv4.1: Sync feature branch updates into main (#594)
+
+- Full hash: `15c7204b7a3b6edaa222cff80018d8e5f2b2ad0e`
+- Date/author: 2026-10-26 / YuanYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `python/sglang/kernels/aot/benchmark/bench_rope_fp4.py`, `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`, `python/sglang/kernels/aot/csrc/elementwise/rope_fp4.hip`, `python/sglang/kernels/aot/include/sgl_kernel_ops.h`, `python/sglang/kernels/aot/python/sgl_kernel/__init__.py`, `python/sglang/kernels/aot/python/sgl_kernel/elementwise.py` 等 139 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/arg_groups/field_order.py`; `python/sglang/srt/arg_groups/fields/parallel.py`; `python/sglang/srt/arg_groups/model_hook.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py` 等 21 个文件
+  - runtime-model: `python/sglang/srt/configs/deepseek_v41.py`; `python/sglang/srt/entrypoints/http_server.py`; `python/sglang/srt/entrypoints/openai/serving_chat.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner_components/load_model_utils.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/model_executor/runner/eager_runner.py`; `python/sglang/srt/model_executor/runner_utils/deepep_adapter.py` 等 12 个文件
+  - runtime-perf: `python/sglang/kernels/aot/benchmark/bench_rope_fp4.py`; `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`; `python/sglang/kernels/aot/csrc/elementwise/rope_fp4.hip`; `python/sglang/kernels/aot/include/sgl_kernel_ops.h`; `python/sglang/kernels/aot/python/sgl_kernel/__init__.py`; `python/sglang/kernels/aot/python/sgl_kernel/elementwise.py`; `python/sglang/kernels/aot/setup_hip.py`; `python/sglang/kernels/aot/setup_rocm.py` 等 64 个文件
+  - tests: `python/sglang/kernels/aot/tests/test_rope_fp4.py`; `test/manual/dsv4/lightop_fp4_indexer.md`; `test/manual/dsv4/test_lightop_fp4_indexer.py`; `test/manual/dsv4/test_rebase_contracts.py`; `test/registered/attention/unittests/dsv4/test_hcu_store_dispatch.py`; `test/registered/attention/unittests/dsv4/test_layer_split_fused_store.py`; `test/registered/cp/test_cp_strategy_unit.py`; `test/registered/kernels/ops/attention/test_dsv41_candidate_blocks_lightop.py` 等 40 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `5343b311c` - Feat/20261102 Sync latest deepseek-v4.1 optimizations to main (#640)
+
+- Full hash: `5343b311c2951da5dcd3617e9a91b76cb9070e04`
+- Date/author: 2026-11-03 / YuanYuan
+- Branch update: `hg-full-base..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/kernels/ops/attention/dsv4/attn.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer_rope_hcu.py`, `python/sglang/kernels/ops/moe/fill_padded_rows.py`, `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/arg_groups/fields/exec_.py`, `python/sglang/srt/arg_groups/pd_disaggregation_hook.py`, `python/sglang/srt/configs/model_config.py` 等 93 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/arg_groups/fields/exec_.py`; `python/sglang/srt/arg_groups/pd_disaggregation_hook.py`; `python/sglang/srt/disaggregation/base/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/encoder/preprocessor.py`; `python/sglang/srt/disaggregation/encoder/receiver.py`; `python/sglang/srt/disaggregation/mooncake/conn.py` 等 26 个文件
+  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/disaggregation/encoder/server.py`; `python/sglang/srt/model_executor/encoder_swa_replay.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/model_executor/runner/eager_runner.py`; `python/sglang/srt/models/deepseek_common/amd/deepseek_v4_fused_mhc.py`; `python/sglang/srt/models/deepseek_v2.py` 等 10 个文件
+  - runtime-perf: `python/sglang/kernels/ops/attention/dsv4/attn.py`; `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py`; `python/sglang/kernels/ops/attention/dsv4/fp4_indexer_rope_hcu.py`; `python/sglang/kernels/ops/moe/fill_padded_rows.py`; `python/sglang/srt/distributed/device_communicators/cuda_wrapper.py`; `python/sglang/srt/eplb/lplb_hip_waterfill.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/low_ratio_backend_hip.py` 等 31 个文件
+  - tests: `test/registered/kernels/ops/attention/test_fp4_indexer.py`; `test/registered/unit/disaggregation/test_encode_receiver.py`; `test/registered/unit/layers/attention/test_dsv41_rope_fq_store.py`; `test/registered/unit/layers/cp/test_interleave_cp_gather_memory.py`; `test/registered/unit/layers/dsv41_hcu_indexq_rounding.json`; `test/registered/unit/layers/moe/test_hcu_compressed_tensors_w4a8_deepep_ll.py`; `test/registered/unit/layers/moe/test_topk_padding_hcu_guard.py`; `test/registered/unit/layers/quantization/test_compressed_tensors_w8a8_int8_hcu_layout.py` 等 26 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+<!-- LOCAL_ONLY_FULL_MAIN_TO_20261105_END -->

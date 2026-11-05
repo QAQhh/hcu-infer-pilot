@@ -7,7 +7,6 @@ Filter policy:
 
 Current buckets:
 
-- `AITER_LOCAL_COMMITS.md` - local-only AITER PR/commit index with source SGLang branch/update provenance
 - `deepseek-v3-r1`
 - `deepseek-v31`
 - `deepseek-v32`
