@@ -4,25 +4,25 @@
 
 | 文件 | git 追溯到的 PR |
 | --- | --- |
-| `docs/basic_usage/llama4.md` | [#13421](https://github.com/sgl-project/sglang/pull/13421) |
-| `docs_new/cookbook/autoregressive/Llama/Llama4.mdx` | 无直接 PR 号提交 |
-| `docs_new/docs/basic_usage/llama4.mdx` | 无直接 PR 号提交 |
-| `docs_new/src/snippets/autoregressive/llama4-maverick-deployment.jsx` | 无直接 PR 号提交 |
-| `docs_new/src/snippets/autoregressive/llama4-scout-deployment.jsx` | 无直接 PR 号提交 |
+| `docs/cookbook/autoregressive/Meta/Llama4.mdx` | 无直接 PR 号提交 |
+| `docs/src/snippets/autoregressive/llama4-maverick-deployment.jsx` | 无直接 PR 号提交 |
+| `docs/src/snippets/autoregressive/llama4-scout-deployment.jsx` | 无直接 PR 号提交 |
 | `examples/chat_template/tool_chat_template_llama4_pythonic.jinja` | [#6679](https://github.com/sgl-project/sglang/pull/6679) |
-| `python/sglang/srt/models/llama4.py` | [#5092](https://github.com/sgl-project/sglang/pull/5092), [#5127](https://github.com/sgl-project/sglang/pull/5127), [#5128](https://github.com/sgl-project/sglang/pull/5128), [#5144](https://github.com/sgl-project/sglang/pull/5144), [#5159](https://github.com/sgl-project/sglang/pull/5159), [#5194](https://github.com/sgl-project/sglang/pull/5194), [#6752](https://github.com/sgl-project/sglang/pull/6752), [#7729](https://github.com/sgl-project/sglang/pull/7729), [#8512](https://github.com/sgl-project/sglang/pull/8512), [#8683](https://github.com/sgl-project/sglang/pull/8683), [#9101](https://github.com/sgl-project/sglang/pull/9101), [#10047](https://github.com/sgl-project/sglang/pull/10047), ... (16 total) |
+| `python/sglang/srt/arg_groups/model_overrides/llama4.py` | 无直接 PR 号提交 |
+| `python/sglang/srt/models/llama4.py` | [#5092](https://github.com/sgl-project/sglang/pull/5092), [#5127](https://github.com/sgl-project/sglang/pull/5127), [#5128](https://github.com/sgl-project/sglang/pull/5128), [#5144](https://github.com/sgl-project/sglang/pull/5144), [#5159](https://github.com/sgl-project/sglang/pull/5159), [#5194](https://github.com/sgl-project/sglang/pull/5194), [#6752](https://github.com/sgl-project/sglang/pull/6752), [#7729](https://github.com/sgl-project/sglang/pull/7729), [#8512](https://github.com/sgl-project/sglang/pull/8512), [#8683](https://github.com/sgl-project/sglang/pull/8683), [#9101](https://github.com/sgl-project/sglang/pull/9101), [#10047](https://github.com/sgl-project/sglang/pull/10047), ... (17 total) |
 | `python/sglang/srt/models/mllama4.py` | [#5092](https://github.com/sgl-project/sglang/pull/5092), [#5144](https://github.com/sgl-project/sglang/pull/5144), [#5194](https://github.com/sgl-project/sglang/pull/5194), [#6985](https://github.com/sgl-project/sglang/pull/6985), [#7129](https://github.com/sgl-project/sglang/pull/7129), [#8272](https://github.com/sgl-project/sglang/pull/8272), [#8512](https://github.com/sgl-project/sglang/pull/8512), [#10042](https://github.com/sgl-project/sglang/pull/10042), [#10047](https://github.com/sgl-project/sglang/pull/10047), [#10611](https://github.com/sgl-project/sglang/pull/10611), [#11282](https://github.com/sgl-project/sglang/pull/11282) |
 | `python/sglang/srt/multimodal/processors/mllama4.py` | [#7840](https://github.com/sgl-project/sglang/pull/7840), [#8156](https://github.com/sgl-project/sglang/pull/8156) |
+| `test/manual/8-gpu-models/test_llama4.py` | 无直接 PR 号提交 |
 | `test/manual/lora/test_lora_llama4.py` | 无直接 PR 号提交 |
 | `test/manual/models/test_llama4_models.py` | 无直接 PR 号提交 |
-| `test/registered/8-gpu-models/test_llama4.py` | [#16599](https://github.com/sgl-project/sglang/pull/16599), [#16971](https://github.com/sgl-project/sglang/pull/16971) |
-| `test/registered/ascend/llm_models/test_npu_llama4_scount_17b_16e.py` | 无直接 PR 号提交 |
+| `test/registered/npu/llm_models/test_npu_llama4_scount_17b_16e.py` | 无直接 PR 号提交 |
 
 ## PR 覆盖总览
 
-- git 追溯 PR 数: 28
-- 原文档显式引用补充 PR 数: 1
-- 当前文档总 PR 数: 29
+- git 追溯 PR 数: 26
+- 原文档显式引用补充 PR 数: 0
+- 当前文档总 PR 数: 26
+- 自动归类说明: 无法安全锚定到单一模型家族的 PR 会进入 framework `shared/` 桶；同一 PR 若同时触及多个模型线，会保留在主模型桶并在正文里标注为 cross-model 证据。
 - 文件追溯命令: `git log --name-only -- <model-files>`
 - diff 审计来源: GitHub Pull Request files API
 
@@ -36,7 +36,6 @@
 | 2025-04-09 | [#5194](https://github.com/sgl-project/sglang/pull/5194) | merged | Support Llama4 fp8 inference | `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py` |
 | 2025-04-09 | [#5144](https://github.com/sgl-project/sglang/pull/5144) | merged | model: support mllama4 | `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/managers/multimodal_processors/mllama4.py`, `python/sglang/srt/models/llama4.py` |
 | 2025-04-11 | [#5127](https://github.com/sgl-project/sglang/pull/5127) | merged | Optimize attention in llama4 | `python/sglang/srt/models/llama4.py` |
-| 2025-05-09 | [#6162](https://github.com/sgl-project/sglang/pull/6162) | merged | [Bugfix] Fix Llama4 gibberish output with long context and CUDA graph | `python/sglang/srt/layers/attention/flashattention_backend.py` |
 | 2025-05-31 | [#6679](https://github.com/sgl-project/sglang/pull/6679) | merged | update llama4 chat template and pythonic parser | `examples/chat_template/tool_chat_template_llama4_pythonic.jinja` |
 | 2025-07-01 | [#6985](https://github.com/sgl-project/sglang/pull/6985) | merged | support llama4 eagle3 | `python/sglang/srt/models/mllama4.py` |
 | 2025-07-04 | [#7729](https://github.com/sgl-project/sglang/pull/7729) | merged | refactor llama4 dp attention logic | `python/sglang/srt/models/llama4.py` |
@@ -54,11 +53,9 @@
 | 2025-10-07 | [#11282](https://github.com/sgl-project/sglang/pull/11282) | merged | fix: correct scale parameter remapping logic in Llama4ForConditionalGeneration | `python/sglang/srt/models/mllama4.py` |
 | 2025-10-31 | [#12405](https://github.com/sgl-project/sglang/pull/12405) | merged | Fix the shared expert & routed expert overlap in Llama 4 | `python/sglang/srt/models/llama4.py` |
 | 2025-11-08 | [#12811](https://github.com/sgl-project/sglang/pull/12811) | merged | use fast stream instead of torch.cuda.current_stream in llama 4 shared experts overlap | `python/sglang/srt/models/llama4.py` |
-| 2025-11-25 | [#13421](https://github.com/sgl-project/sglang/pull/13421) | merged | Add Llama4 attention backend auto-selection | `docs/basic_usage/llama4.md` |
-| 2026-01-07 | [#16599](https://github.com/sgl-project/sglang/pull/16599) | merged | ci: adding llama4 placeholder test to nightly | `test/registered/8-gpu-models/test_llama4.py` |
-| 2026-01-14 | [#16971](https://github.com/sgl-project/sglang/pull/16971) | merged | fix: renaming test file and job names + skip blocking llama4 nightly | `test/registered/8-gpu-models/test_llama4.py` |
 | 2026-01-30 | [#12813](https://github.com/sgl-project/sglang/pull/12813) | merged | add weightless qk norm to RMSNorm interface for Llama 4 | `python/sglang/srt/models/llama4.py` |
 | 2026-02-27 | [#17123](https://github.com/sgl-project/sglang/pull/17123) | merged | llama4 npu adapt | `python/sglang/srt/models/llama4.py` |
+| 2026-05-15 | [#25089](https://github.com/sgl-project/sglang/pull/25089) | merged | [Llama4] Use strided in-place fused QK RMSNorm to drop a redundant copy | `python/sglang/srt/models/llama4.py` |
 
 ## 逐 PR diff 审计卡
 
@@ -66,7 +63,7 @@
 
 - 链接: https://github.com/sgl-project/sglang/pull/5092
 - 状态/时间: merged / 2025-04-07
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `f04c80dc42be`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `f04c80dc42be`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 27 个文件，+2213/-21，可读 patch 2640 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Add Llama4 support」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/models/llama4.py`, `python/sglang/srt/managers/multimodal_processors/mllama4.py`, `python/sglang/srt/models/mllama4.py`；技术摘要: 覆盖「Add Llama4 support」；主要实现面是 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/managers/multimodal_processors/mllama4.py`, `python/sglang/srt/models/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` added +420/-0 (420 lines); hunks: -0,0 +1,420; symbols: Llama4MoE, custom_routing_function, __init__, forward，涉及 `Llama4MoE, custom_routing_function, __init__`；`python/sglang/srt/managers/multimodal_processors/mllama4.py` added +161/-0 (161 lines); hunks: -0,0 +1,161; symbols: Mllama4ImageProcessor, __init__, process_mm_data_async, get_patch_per_chunk，涉及 `Mllama4ImageProcessor, __init__, process_mm_data_async`；`python/sglang/srt/models/mllama4.py` added +154/-0 (154 lines); hunks: -0,0 +1,154; symbols: Llama4ForConditionalGeneration, __init__, forward, permute_qk_weight_for_rotary，涉及 `Llama4ForConditionalGeneration, __init__, forward`。
@@ -105,9 +102,9 @@ diff -- python/sglang/srt/models/mllama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/5159
 - 状态/时间: merged / 2025-04-08
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `5039d547724c`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `5039d547724c`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+77/-19，可读 patch 178 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「Support 2x8xH100 for Llama 4」；模型线: Llama 4；类别: 文档/测试/CI；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「Support 2x8xH100 for Llama 4」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
+- 动机: 标题「Support 2x8xH100 for Llama 4」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「Support 2x8xH100 for Llama 4」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +77/-19 (96 lines); hunks: -27,6 +27,13; -38,6 +45,7; symbols: __init__, forward，涉及 `__init__, forward`。
 - 代码 diff 细节:
   - `python/sglang/srt/models/llama4.py` modified +77/-19 (96 lines); hunks: -27,6 +27,13; -38,6 +45,7; symbols: __init__, forward
@@ -132,7 +129,7 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/5128
 - 状态/时间: merged / 2025-04-09
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `86a876d883a7`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `86a876d883a7`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 4 个文件，+18/-15，可读 patch 75 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Optimize topk operation in llama4」；模型线: Llama 4；类别: 性能/后端优化；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「Optimize topk operation in llama4」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +2/-2 (4 lines); hunks: -48,7 +48,7; -63,7 +63,7 @@ def custom_routing_function(; symbols: custom_routing_function，涉及 `custom_routing_function`。
@@ -158,7 +155,7 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/5194
 - 状态/时间: merged / 2025-04-09
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `406524821457`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `406524821457`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 14 个文件，+537/-106，可读 patch 1026 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Support Llama4 fp8 inference」；模型线: Llama 4；类别: 性能/后端优化；主要 diff: `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「Support Llama4 fp8 inference」；主要实现面是 `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +52/-18 (70 lines); hunks: -7,6 +7,7; -16,6 +17,7; symbols: Llama4ForConditionalGeneration, __init__, load_weights，涉及 `Llama4ForConditionalGeneration, __init__, load_weights`；`python/sglang/srt/models/llama4.py` modified +1/-1 (2 lines); hunks: -414,7 +414,7 @@ def __init__(; symbols: __init__，涉及 `__init__`。
@@ -190,9 +187,9 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/5144
 - 状态/时间: merged / 2025-04-09
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `fbebcb7aa4aa`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `fbebcb7aa4aa`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 7 个文件，+145/-65，可读 patch 403 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「model: support mllama4」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/managers/multimodal_processors/mllama4.py`, `python/sglang/srt/models/llama4.py`；未提供可用技术摘要。
+- 动机: 标题「model: support mllama4」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/managers/multimodal_processors/mllama4.py`, `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「model: support mllama4」；主要实现面是 `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/managers/multimodal_processors/mllama4.py`, `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +50/-11 (61 lines); hunks: -1,14 +1,19; -30,6 +35,9 @@ def __init__(; symbols: __init__, pad_input_ids, get_image_feature, forward，涉及 `__init__, pad_input_ids, get_image_feature`；`python/sglang/srt/managers/multimodal_processors/mllama4.py` modified +21/-36 (57 lines); hunks: -1,10 +1,8; -15,7 +13,6; symbols: Mllama4ImageProcessor, __init__, process_mm_data_async，涉及 `Mllama4ImageProcessor, __init__, process_mm_data_async`；`python/sglang/srt/models/llama4.py` modified +3/-0 (3 lines); hunks: -466,6 +466,9 @@ def __init__(; symbols: __init__, get_input_embeddings, _init_model，涉及 `__init__, get_input_embeddings, _init_model`。
 - 代码 diff 细节:
   - `python/sglang/srt/models/mllama4.py` modified +50/-11 (61 lines); hunks: -1,14 +1,19; -30,6 +35,9 @@ def __init__(; symbols: __init__, pad_input_ids, get_image_feature, forward
@@ -229,7 +226,7 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/5127
 - 状态/时间: merged / 2025-04-11
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `cd7e32e2cb15`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `cd7e32e2cb15`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+18/-12，可读 patch 56 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Optimize attention in llama4」；模型线: Llama 4；类别: 性能/后端优化；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「Optimize attention in llama4」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +18/-12 (30 lines); hunks: -240,37 +240,43 @@ def __init__(; symbols: __init__, _get_attn_scale, _mul_attn_scale, forward，涉及 `__init__, _get_attn_scale, _mul_attn_scale`。
@@ -252,40 +249,13 @@ diff -- python/sglang/srt/models/llama4.py
   - runtime: `python/sglang/srt/models/llama4.py` modified +18/-12
 - 验证与风险: runtime 路径改动集中在 `python/sglang/srt/models/llama4.py`；风险点是权重加载、并行切分、attention/MoE 后端和 parser 输出，需要至少做一次真实 checkpoint 或等价 mock smoke。
 
-### PR #6162 - [Bugfix] Fix Llama4 gibberish output with long context and CUDA graph
-
-- 链接: https://github.com/sgl-project/sglang/pull/6162
-- 状态/时间: merged / 2025-05-09
-- 反查来源: 保留自原 history/skill 显式引用
-- 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+125/-8，可读 patch 203 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「[Bugfix] Fix Llama4 gibberish output with long context and CUDA graph」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `python/sglang/srt/layers/attention/flashattention_backend.py`；技术摘要: 覆盖「[Bugfix] Fix Llama4 gibberish output with long context and CUDA graph」；主要实现面是 `python/sglang/srt/layers/attention/flashattention_backend.py`。下方保留文件级证据、代码摘录和验证风险。
-- 实现要点: `python/sglang/srt/layers/attention/flashattention_backend.py` modified +125/-8 (133 lines); hunks: -913,8 +913,10 @@ def forward_decode(; -970,7 +972,7 @@ def forward_decode(; symbols: forward_decode, init_cuda_graph_state，涉及 `forward_decode, init_cuda_graph_state`。
-- 代码 diff 细节:
-  - `python/sglang/srt/layers/attention/flashattention_backend.py` modified +125/-8 (133 lines); hunks: -913,8 +913,10 @@ def forward_decode(; -970,7 +972,7 @@ def forward_decode(; symbols: forward_decode, init_cuda_graph_state
-- 关键代码摘录:
-
-```diff
-diff -- python/sglang/srt/layers/attention/flashattention_backend.py
-@@ -913,8 +913,10 @@ def forward_decode(
--        use_local_attention = (
--            self.attention_chunk_size is not None and local_attn_metadata is not None
-+        use_local_attn = (
-+            self.attention_chunk_size is not None
-+            and local_attn_metadata is not None
-+            and (hasattr(layer, "use_irope") and layer.use_irope)
-```
-
-- 已读文件:
-  - runtime: `python/sglang/srt/layers/attention/flashattention_backend.py` modified +125/-8
-- 验证与风险: runtime 路径改动集中在 `python/sglang/srt/layers/attention/flashattention_backend.py`；风险点是权重加载、并行切分、attention/MoE 后端和 parser 输出，需要至少做一次真实 checkpoint 或等价 mock smoke。
-
 ### PR #6679 - update llama4 chat template and pythonic parser
 
 - 链接: https://github.com/sgl-project/sglang/pull/6679
 - 状态/时间: merged / 2025-05-31
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `examples/chat_template/tool_chat_template_llama4_pythonic.jinja`；关联提交 `4fac524b14a0`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `examples/chat_template/tool_chat_template_llama4_pythonic.jinja`；关联提交 `4fac524b14a0`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 3 个文件，+165/-73，可读 patch 350 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「update llama4 chat template and pythonic parser」；模型线: Llama 4；类别: 文档/测试/CI；主要 diff: `examples/chat_template/tool_chat_template_llama4_pythonic.jinja`；技术摘要: 覆盖「update llama4 chat template and pythonic parser」；主要实现面是 `examples/chat_template/tool_chat_template_llama4_pythonic.jinja`。下方保留文件级证据、代码摘录和验证风险。
+- 动机: 标题「update llama4 chat template and pythonic parser」；模型线: Llama 4；类别: 模型实现调整；主要 diff: `examples/chat_template/tool_chat_template_llama4_pythonic.jinja`；技术摘要: 覆盖「update llama4 chat template and pythonic parser」；主要实现面是 `examples/chat_template/tool_chat_template_llama4_pythonic.jinja`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `examples/chat_template/tool_chat_template_llama4_pythonic.jinja` modified +35/-63 (98 lines); hunks: -1,86 +1,52; -92,10 +58,12。
 - 代码 diff 细节:
   - `examples/chat_template/tool_chat_template_llama4_pythonic.jinja` modified +35/-63 (98 lines); hunks: -1,86 +1,52; -92,10 +58,12
@@ -310,9 +280,9 @@ diff -- examples/chat_template/tool_chat_template_llama4_pythonic.jinja
 
 - 链接: https://github.com/sgl-project/sglang/pull/6985
 - 状态/时间: merged / 2025-07-01
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `886d34496475`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `886d34496475`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 7 个文件，+139/-19，可读 patch 237 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「support llama4 eagle3」；模型线: Llama 4；类别: 性能/后端优化；主要 diff: `python/sglang/srt/models/mllama4.py`；技术摘要: 覆盖「support llama4 eagle3」；主要实现面是 `python/sglang/srt/models/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
+- 动机: 标题「support llama4 eagle3」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/models/mllama4.py`；技术摘要: 覆盖「support llama4 eagle3」；主要实现面是 `python/sglang/srt/models/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +29/-0 (29 lines); hunks: -223,5 +223,34 @@ def load_weights(self, weights: Iterable[Tuple[str, torch.T...; symbols: load_weights, set_eagle3_layers_to_capture, get_embed_and_head, set_embed_and_head，涉及 `load_weights, set_eagle3_layers_to_capture, get_embed_and_head`。
 - 代码 diff 细节:
   - `python/sglang/srt/models/mllama4.py` modified +29/-0 (29 lines); hunks: -223,5 +223,34 @@ def load_weights(self, weights: Iterable[Tuple[str, torch.T...; symbols: load_weights, set_eagle3_layers_to_capture, get_embed_and_head, set_embed_and_head
@@ -337,7 +307,7 @@ diff -- python/sglang/srt/models/mllama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/7729
 - 状态/时间: merged / 2025-07-04
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `8c298031d57e`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `8c298031d57e`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+32/-45，可读 patch 115 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「refactor llama4 dp attention logic」；模型线: Llama 4；类别: 模型实现调整；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「refactor llama4 dp attention logic」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +32/-45 (77 lines); hunks: -27,9 +27,8; -367,7 +366,10 @@ def __init__(; symbols: __init__, _is_moe_layer, forward，涉及 `__init__, _is_moe_layer, forward`。
@@ -364,7 +334,7 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/7129
 - 状态/时间: merged / 2025-07-08
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `659907e32b95`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `659907e32b95`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 3 个文件，+643/-81，可读 patch 847 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Enable ModelOpt Llama4 fp8 checkpoint deployment in SGLang」；模型线: Llama 4；类别: 性能/后端优化；主要 diff: `python/sglang/srt/models/mllama4.py`；技术摘要: 覆盖「Enable ModelOpt Llama4 fp8 checkpoint deployment in SGLang」；主要实现面是 `python/sglang/srt/models/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +360/-79 (439 lines); hunks: -1,3 +1,6; -19,6 +22,13; symbols: Llama4ForConditionalGeneration, __init__, _has_vision_weights, _check_vision_weights_in_index，涉及 `Llama4ForConditionalGeneration, __init__, _has_vision_weights`。
@@ -391,7 +361,7 @@ diff -- python/sglang/srt/models/mllama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/7840
 - 状态/时间: merged / 2025-07-08
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/multimodal/processors/mllama4.py`；关联提交 `4bab50a6b580`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/multimodal/processors/mllama4.py`；关联提交 `4bab50a6b580`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 3 个文件，+82/-63，可读 patch 186 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Fix llama4 vision」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `python/sglang/srt/multimodal/processors/mllama4.py`；技术摘要: 覆盖「Fix llama4 vision」；主要实现面是 `python/sglang/srt/multimodal/processors/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/multimodal/processors/mllama4.py` modified +62/-60 (122 lines); hunks: -60,70 +60,72 @@ async def process_mm_data_async(; symbols: process_mm_data_async，涉及 `process_mm_data_async`。
@@ -418,7 +388,7 @@ diff -- python/sglang/srt/multimodal/processors/mllama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/8272
 - 状态/时间: merged / 2025-07-23
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `e2d66f60c8f8`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `e2d66f60c8f8`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 2 个文件，+11/-3，可读 patch 47 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Skip llama4 vision module loading when multimodal disabled」；模型线: Llama 4；类别: 模型实现调整；主要 diff: `python/sglang/srt/models/mllama4.py`；技术摘要: 覆盖「Skip llama4 vision module loading when multimodal disabled」；主要实现面是 `python/sglang/srt/models/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +10/-3 (13 lines); hunks: -23,6 +23,7; -55,13 +56,17 @@ def __init__(; symbols: __init__, load_weights, _should_skip_weight, _transform_weight_name，涉及 `__init__, load_weights, _should_skip_weight`。
@@ -445,7 +415,7 @@ diff -- python/sglang/srt/models/mllama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/8156
 - 状态/时间: merged / 2025-07-27
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/multimodal/processors/mllama4.py`；关联提交 `44d600cd675f`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/multimodal/processors/mllama4.py`；关联提交 `44d600cd675f`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 6 个文件，+449/-123，可读 patch 235 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Support precomputed_embeddings for Llama 4」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/multimodal/processors/mllama4.py`；技术摘要: 覆盖「Support precomputed_embeddings for Llama 4」；主要实现面是 `python/sglang/srt/multimodal/processors/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/multimodal/processors/mllama4.py` modified +16/-109 (125 lines); hunks: -22,12 +22,12 @@ def __init__(self, hf_config, server_args, _processor, *args...; -37,114 +37,21 @@ async def process_mm_data_async(; symbols: __init__, process_mm_data_async，涉及 `__init__, process_mm_data_async`。
@@ -472,9 +442,9 @@ diff -- python/sglang/srt/multimodal/processors/mllama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/8512
 - 状态/时间: merged / 2025-08-02
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `ea93079b3038`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `ea93079b3038`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 6 个文件，+518/-52，可读 patch 903 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「model: adapt mllama4 to VisionAttention」；模型线: Llama 4；类别: 文档/测试/CI；主要 diff: `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「model: adapt mllama4 to VisionAttention」；主要实现面是 `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
+- 动机: 标题「model: adapt mllama4 to VisionAttention」；模型线: Llama 4；类别: 模型实现调整；主要 diff: `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「model: adapt mllama4 to VisionAttention」；主要实现面是 `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +428/-19 (447 lines); hunks: -1,17 +1,24; -26,10 +33,10; symbols: Llama4VisionMLP, __init__, forward, pixel_shuffle，涉及 `Llama4VisionMLP, __init__, forward`；`python/sglang/srt/models/llama4.py` modified +11/-2 (13 lines); hunks: -241,13 +241,22 @@ def __init__(; -257,7 +266,7 @@ def __init__(; symbols: __init__，涉及 `__init__`。
 - 代码 diff 细节:
   - `python/sglang/srt/models/mllama4.py` modified +428/-19 (447 lines); hunks: -1,17 +1,24; -26,10 +33,10; symbols: Llama4VisionMLP, __init__, forward, pixel_shuffle
@@ -508,7 +478,7 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/8683
 - 状态/时间: merged / 2025-08-03
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `7ed8e51bc31e`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `7ed8e51bc31e`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+2/-0，可读 patch 9 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「[fix] Fix divide by zero error for llama4.」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「[fix] Fix divide by zero error for llama4.」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +2/-0 (2 lines); hunks: -406,6 +406,8 @@ def __init__(; symbols: __init__, _is_moe_layer, forward，涉及 `__init__, _is_moe_layer, forward`。
@@ -531,7 +501,7 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/6752
 - 状态/时间: merged / 2025-08-09
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `4a9f3eef90a5`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `4a9f3eef90a5`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+1/-1，可读 patch 9 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Tiny Llama4 type error in constructor」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「Tiny Llama4 type error in constructor」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +1/-1 (2 lines); hunks: -203,7 +203,7 @@ def __init__(; symbols: __init__，涉及 `__init__`。
@@ -554,7 +524,7 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/9101
 - 状态/时间: merged / 2025-08-14
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `4c22897a66ab`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `4c22897a66ab`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 5 个文件，+68/-16，可读 patch 210 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Feature: support qwen and llama4 reducescatter for dp attention padding」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「Feature: support qwen and llama4 reducescatter for dp attention padding」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +16/-3 (19 lines); hunks: -131,14 +131,19 @@ def __init__(; -412,6 +417,7 @@ def __init__(; symbols: __init__, forward, _is_moe_layer，涉及 `__init__, forward, _is_moe_layer`。
@@ -581,9 +551,9 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/10047
 - 状态/时间: merged / 2025-09-06
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `ab62b135c18a`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`, `python/sglang/srt/models/mllama4.py`；关联提交 `ab62b135c18a`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 7 个文件，+123/-13，可读 patch 220 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「support Llama4 with non uniformed intermediate size across layers for…」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`, `test/srt/lora/test_lora_llama4.py`；技术摘要: 覆盖「support Llama4 with non uniformed intermediate size across layers for…」；主要实现面是 `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`, `test/srt/lora/test_lora_llama4.py`。下方保留文件级证据、代码摘录和验证风险。
+- 动机: 标题「support Llama4 with non uniformed intermediate size across layers for…」；模型线: Llama 4；类别: 文档/测试/CI；主要 diff: `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`, `test/srt/lora/test_lora_llama4.py`；技术摘要: 覆盖「support Llama4 with non uniformed intermediate size across layers for…」；主要实现面是 `python/sglang/srt/models/mllama4.py`, `python/sglang/srt/models/llama4.py`, `test/srt/lora/test_lora_llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +25/-0 (25 lines); hunks: -961,5 +961,30 @@ def get_embed(self):; symbols: get_embed, set_embed, get_hidden_dim，涉及 `get_embed, set_embed, get_hidden_dim`；`python/sglang/srt/models/llama4.py` modified +9/-0 (9 lines); hunks: -423,6 +423,12 @@ def _is_moe_layer(self, layer_id: int) -> bool:; -540,6 +546,9 @@ def __init__(; symbols: _is_moe_layer, get_intermediate_size, forward, __init__，涉及 `_is_moe_layer, get_intermediate_size, forward`；`test/srt/lora/test_lora_llama4.py` added +61/-0 (61 lines); hunks: -0,0 +1,61; symbols: TestLlama4LoRA, setUpClass, test_bringup，涉及 `TestLlama4LoRA, setUpClass, test_bringup`。
 - 代码 diff 细节:
   - `python/sglang/srt/models/mllama4.py` modified +25/-0 (25 lines); hunks: -961,5 +961,30 @@ def get_embed(self):; symbols: get_embed, set_embed, get_hidden_dim
@@ -621,7 +591,7 @@ diff -- test/srt/lora/test_lora_llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/10611
 - 状态/时间: merged / 2025-09-29
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `9de1320b637c`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `9de1320b637c`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+14/-3，可读 patch 40 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「fix: fp8 mllama4 without vision modules being quantized」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `python/sglang/srt/models/mllama4.py`；技术摘要: 覆盖「fix: fp8 mllama4 without vision modules being quantized」；主要实现面是 `python/sglang/srt/models/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +14/-3 (17 lines); hunks: -291,7 +291,7 @@ def __init__(; -446,9 +446,20 @@ def __init__(; symbols: __init__, forward，涉及 `__init__, forward`。
@@ -648,7 +618,7 @@ diff -- python/sglang/srt/models/mllama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/10042
 - 状态/时间: merged / 2025-10-06
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `c7a104c12bda`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `c7a104c12bda`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+1/-1，可读 patch 9 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「[quantization] Fix scale remapping for mllama4」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `python/sglang/srt/models/mllama4.py`；技术摘要: 覆盖「[quantization] Fix scale remapping for mllama4」；主要实现面是 `python/sglang/srt/models/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +1/-1 (2 lines); hunks: -700,7 +700,7 @@ def _handle_scale_remapping(self, name: str, params_dict: di...; symbols: _handle_scale_remapping, _handle_stacked_params，涉及 `_handle_scale_remapping, _handle_stacked_params`。
@@ -671,7 +641,7 @@ diff -- python/sglang/srt/models/mllama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/11282
 - 状态/时间: merged / 2025-10-07
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `fd8a0b29c044`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/mllama4.py`；关联提交 `fd8a0b29c044`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+1/-1，可读 patch 9 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「fix: correct scale parameter remapping logic in Llama4ForConditionalGeneration」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `python/sglang/srt/models/mllama4.py`；技术摘要: 覆盖「fix: correct scale parameter remapping logic in Llama4ForConditionalGeneration」；主要实现面是 `python/sglang/srt/models/mllama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/mllama4.py` modified +1/-1 (2 lines); hunks: -700,7 +700,7 @@ def _handle_scale_remapping(self, name: str, params_dict: di...; symbols: _handle_scale_remapping, _handle_stacked_params，涉及 `_handle_scale_remapping, _handle_stacked_params`。
@@ -694,7 +664,7 @@ diff -- python/sglang/srt/models/mllama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/12405
 - 状态/时间: merged / 2025-10-31
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `34c286b8115e`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `34c286b8115e`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+1/-1，可读 patch 9 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「Fix the shared expert & routed expert overlap in Llama 4」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「Fix the shared expert & routed expert overlap in Llama 4」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +1/-1 (2 lines); hunks: -148,7 +148,7 @@ def forward(; symbols: forward, _forward_core，涉及 `forward, _forward_core`。
@@ -717,7 +687,7 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/12811
 - 状态/时间: merged / 2025-11-08
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `49653c88964f`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `49653c88964f`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+3/-2，可读 patch 26 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「use fast stream instead of torch.cuda.current_stream in llama 4 shared experts overlap」；模型线: Llama 4；类别: 性能/后端优化；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「use fast stream instead of torch.cuda.current_stream in llama 4 shared experts overlap」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +3/-2 (5 lines); hunks: -58,6 +58,7; -164,7 +165,7 @@ def _forward_core_normal(self, hidden_states):; symbols: _forward_core_normal, _forward_core_shared_routed_overlap，涉及 `_forward_core_normal, _forward_core_shared_routed_overlap`。
@@ -740,89 +710,11 @@ diff -- python/sglang/srt/models/llama4.py
   - runtime: `python/sglang/srt/models/llama4.py` modified +3/-2
 - 验证与风险: runtime 路径改动集中在 `python/sglang/srt/models/llama4.py`；风险点是权重加载、并行切分、attention/MoE 后端和 parser 输出，需要至少做一次真实 checkpoint 或等价 mock smoke。
 
-### PR #13421 - Add Llama4 attention backend auto-selection
-
-- 链接: https://github.com/sgl-project/sglang/pull/13421
-- 状态/时间: merged / 2025-11-25
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `docs/basic_usage/llama4.md`；关联提交 `fcccaf9001ab`；保留自原 history/skill 显式引用
-- 代码 diff 已读范围: GitHub Pull Request files API 返回 2 个文件，+24/-5，可读 patch 50 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「Add Llama4 attention backend auto-selection」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `docs/basic_usage/llama4.md`；技术摘要: 覆盖「Add Llama4 attention backend auto-selection」；主要实现面是 `docs/basic_usage/llama4.md`。下方保留文件级证据、代码摘录和验证风险。
-- 实现要点: `docs/basic_usage/llama4.md` modified +9/-0 (9 lines); hunks: -21,6 +21,15 @@ python3 -m sglang.launch_server \。
-- 代码 diff 细节:
-  - `docs/basic_usage/llama4.md` modified +9/-0 (9 lines); hunks: -21,6 +21,15 @@ python3 -m sglang.launch_server \
-- 关键代码摘录:
-
-```diff
-diff -- docs/basic_usage/llama4.md
-@@ -21,6 +21,15 @@ python3 -m sglang.launch_server \
-+- **Attention Backend Auto-Selection**: SGLang automatically selects the optimal attention backend for Llama 4 based on your hardware. You typically don't need to specify `--atten
-+  - **Blackwell GPUs (B200/GB200)**: `trtllm_mha`
-+  - **Hopper GPUs (H100/H200)**: `fa3`
-+  - **AMD GPUs**: `aiter`
-+  - **Intel XPU**: `intel_xpu`
-+  - **Other platforms**: `triton` (fallback)
-```
-
-- 已读文件:
-  - docs: `docs/basic_usage/llama4.md` modified +9/-0
-- 验证与风险: runtime 路径改动集中在 `python/sglang/srt/server_args.py`；风险点是权重加载、并行切分、attention/MoE 后端和 parser 输出，需要至少做一次真实 checkpoint 或等价 mock smoke。
-
-### PR #16599 - ci: adding llama4 placeholder test to nightly
-
-- 链接: https://github.com/sgl-project/sglang/pull/16599
-- 状态/时间: merged / 2026-01-07
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `test/registered/8-gpu-models/test_llama4.py`；关联提交 `2ff872311b4d`；保留自原 history/skill 显式引用
-- 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+55/-0，可读 patch 56 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「ci: adding llama4 placeholder test to nightly」；模型线: Llama 4；类别: 文档/测试/CI；主要 diff: `test/registered/8-gpu-models/test_llama4.py`；技术摘要: 覆盖「ci: adding llama4 placeholder test to nightly」；主要实现面是 `test/registered/8-gpu-models/test_llama4.py`。下方保留文件级证据、代码摘录和验证风险。
-- 实现要点: `test/registered/8-gpu-models/test_llama4.py` added +55/-0 (55 lines); hunks: -0,0 +1,55; symbols: TestLlama4Unified, for, test_llama4，涉及 `TestLlama4Unified, for, test_llama4`。
-- 代码 diff 细节:
-  - `test/registered/8-gpu-models/test_llama4.py` added +55/-0 (55 lines); hunks: -0,0 +1,55; symbols: TestLlama4Unified, for, test_llama4
-- 关键代码摘录:
-
-```diff
-diff -- test/registered/8-gpu-models/test_llama4.py
-@@ -0,0 +1,55 @@
-+import unittest
-+from sglang.test.accuracy_test_runner import AccuracyTestParams
-+from sglang.test.ci.ci_register import register_cuda_ci
-+from sglang.test.performance_test_runner import PerformanceTestParams
-+from sglang.test.run_combined_tests import run_combined_tests
-+from sglang.test.test_utils import ModelLaunchSettings
-```
-
-- 已读文件:
-  - tests: `test/registered/8-gpu-models/test_llama4.py` added +55/-0
-- 验证与风险: diff 自带测试面 `test/registered/8-gpu-models/test_llama4.py`；如果继续改同一模型，优先复跑这些测试并补一个最小 launch/accuracy smoke。
-
-### PR #16971 - fix: renaming test file and job names + skip blocking llama4 nightly
-
-- 链接: https://github.com/sgl-project/sglang/pull/16971
-- 状态/时间: merged / 2026-01-14
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `test/registered/8-gpu-models/test_llama4.py`；关联提交 `aa2b4f766179`；保留自原 history/skill 显式引用
-- 代码 diff 已读范围: GitHub Pull Request files API 返回 10 个文件，+22/-21，可读 patch 142 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「fix: renaming test file and job names + skip blocking llama4 nightly」；模型线: Llama 4；类别: 缺陷修复；主要 diff: `test/registered/8-gpu-models/test_llama4.py`；技术摘要: 覆盖「fix: renaming test file and job names + skip blocking llama4 nightly」；主要实现面是 `test/registered/8-gpu-models/test_llama4.py`。下方保留文件级证据、代码摘录和验证风险。
-- 实现要点: `test/registered/8-gpu-models/test_llama4.py` modified +2/-1 (3 lines); hunks: -12,7 +12,8; symbols: TestLlama4Unified, TestLlama4, for，涉及 `TestLlama4Unified, TestLlama4, for`。
-- 代码 diff 细节:
-  - `test/registered/8-gpu-models/test_llama4.py` modified +2/-1 (3 lines); hunks: -12,7 +12,8; symbols: TestLlama4Unified, TestLlama4, for
-- 关键代码摘录:
-
-```diff
-diff -- test/registered/8-gpu-models/test_llama4.py
-@@ -12,7 +12,8 @@
--class TestLlama4Unified(unittest.TestCase):
-+@unittest.skip("Blocked: Missing HF token permission for Llama 4 model")
-+class TestLlama4(unittest.TestCase):
-```
-
-- 已读文件:
-  - tests: `test/registered/8-gpu-models/test_llama4.py` modified +2/-1
-- 验证与风险: diff 自带测试面 `test/registered/8-gpu-models/test_deepseek_v31.py`, `test/registered/8-gpu-models/test_deepseek_v32.py`, `test/registered/8-gpu-models/test_glm_46.py`, `test/registered/8-gpu-models/test_glm_46_fp8.py`；如果继续改同一模型，优先复跑这些测试并补一个最小 launch/accuracy smoke。
-
 ### PR #12813 - add weightless qk norm to RMSNorm interface for Llama 4
 
 - 链接: https://github.com/sgl-project/sglang/pull/12813
 - 状态/时间: merged / 2026-01-30
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `22df62d5862b`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `22df62d5862b`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 2 个文件，+8/-2，可读 patch 38 行；本卡优先审计模型相关文件和高变更量文件。
 - 动机: 标题「add weightless qk norm to RMSNorm interface for Llama 4」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「add weightless qk norm to RMSNorm interface for Llama 4」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +1/-0 (1 lines); hunks: -242,6 +242,7 @@ def __init__(; symbols: __init__，涉及 `__init__`。
@@ -844,9 +736,9 @@ diff -- python/sglang/srt/models/llama4.py
 
 - 链接: https://github.com/sgl-project/sglang/pull/17123
 - 状态/时间: merged / 2026-02-27
-- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `bc9190435b3f`；保留自原 history/skill 显式引用
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `bc9190435b3f`
 - 代码 diff 已读范围: GitHub Pull Request files API 返回 3 个文件，+37/-1，可读 patch 67 行；本卡优先审计模型相关文件和高变更量文件。
-- 动机: 标题「llama4 npu adapt」；模型线: Llama 4；类别: 模型支持/运行时入口；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「llama4 npu adapt」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
+- 动机: 标题「llama4 npu adapt」；模型线: Llama 4；类别: 模型实现调整；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「llama4 npu adapt」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
 - 实现要点: `python/sglang/srt/models/llama4.py` modified +4/-0 (4 lines); hunks: -56,11 +56,13; -329,6 +331,8 @@ def forward(; symbols: forward，涉及 `forward`。
 - 代码 diff 细节:
   - `python/sglang/srt/models/llama4.py` modified +4/-0 (4 lines); hunks: -56,11 +56,13; -329,6 +331,8 @@ def forward(; symbols: forward
@@ -865,6 +757,33 @@ diff -- python/sglang/srt/models/llama4.py
 - 已读文件:
   - runtime: `python/sglang/srt/models/llama4.py` modified +4/-0
 - 验证与风险: diff 自带测试面 `test/registered/ascend/llm_models/test_ascend_llama4_scount_17b_16e.py`；如果继续改同一模型，优先复跑这些测试并补一个最小 launch/accuracy smoke。
+
+### PR #25089 - [Llama4] Use strided in-place fused QK RMSNorm to drop a redundant copy
+
+- 链接: https://github.com/sgl-project/sglang/pull/25089
+- 状态/时间: merged / 2026-05-15
+- 反查来源: `git log --name-only -- <model-files>` 反查到 `python/sglang/srt/models/llama4.py`；关联提交 `17c8a2fa5339`
+- 代码 diff 已读范围: GitHub Pull Request files API 返回 1 个文件，+22/-7，可读 patch 43 行；本卡优先审计模型相关文件和高变更量文件。
+- 动机: 标题「[Llama4] Use strided in-place fused QK RMSNorm to drop a redundant copy」；模型线: Llama 4；类别: 性能/后端优化；主要 diff: `python/sglang/srt/models/llama4.py`；技术摘要: 覆盖「[Llama4] Use strided in-place fused QK RMSNorm to drop a redundant copy」；主要实现面是 `python/sglang/srt/models/llama4.py`。下方保留文件级证据、代码摘录和验证风险。
+- 实现要点: `python/sglang/srt/models/llama4.py` modified +22/-7 (29 lines); hunks: -54,6 +54,7; -341,13 +342,27 @@ def forward(; symbols: forward，涉及 `forward`。
+- 代码 diff 细节:
+  - `python/sglang/srt/models/llama4.py` modified +22/-7 (29 lines); hunks: -54,6 +54,7; -341,13 +342,27 @@ def forward(; symbols: forward
+- 关键代码摘录:
+
+```diff
+diff -- python/sglang/srt/models/llama4.py
+@@ -54,6 +54,7 @@
++from sglang.srt.models.utils import apply_qk_norm
+@@ -341,13 +342,27 @@ def forward(
+-        if self.qk_norm is not None:
+-            # TODO there are still 2 redundant direct_copy_kernel_cuda for this `reshape` and (in attn backend) q.contiguous(), maybe we can fuse them later
+-            qk = qk.reshape(-1, self.head_dim).contiguous().bfloat16()
+-            qk = self.qk_norm(qk).to(torch.bfloat16)
+```
+
+- 已读文件:
+  - runtime: `python/sglang/srt/models/llama4.py` modified +22/-7
+- 验证与风险: runtime 路径改动集中在 `python/sglang/srt/models/llama4.py`；风险点是权重加载、并行切分、attention/MoE 后端和 parser 输出，需要至少做一次真实 checkpoint 或等价 mock smoke。
 
 ## 补漏结论
 
