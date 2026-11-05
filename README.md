@@ -11,6 +11,7 @@
 - 围绕一个模型持续做 SGLang SOTA 优化闭环
 - 为 LightOp / DCU / ROCm 场景查找 kernel 证据、profiling 证据和下一步优化方向
 - 为新模型、TP/EP 组合和 gfx 架构收集并调优 AITER ASM fused-MoE 配置
+- 抓取模型真实 GEMM，对 hipBLASLt 与 NMZ rocBLAS 做 token M 调优、最近兼容点配置补齐和单算子精度/性能验证
 
 ## 仓库内容
 
@@ -242,6 +243,29 @@ $hcu-aiter-moe-tuning
 未经确认不要占用 GPU、启动服务或修改已安装的 AITER 表。
 ```
 
+### 12. `hipblaslt-rocblas-tuning`
+
+作用：抓取模型真实 GEMM，对 hipBLASLt 和 NMZ rocBLAS 做 token M 调优、最近兼容点配置补齐，并验证单算子精度与性能，适用于 AMD/海光 GPU 上的 BLAS tuning 和配置交付。
+
+典型能力：
+
+- 以 32768 tokens 输入 / 1 token 输出抓取真实 GEMM，并核对 token 轴（TN 权重左乘时 token M 记作 BLAS `-n`）
+- 按真实本地 token M 上限调优 `1,2,4,8,…,cap`，cap 非幂次时补调 cap 本身
+- 同一 family 内按绝对距离复制最近调优点，补齐全部整数 M 并保留来源映射
+- 分别交付 hipBLASLt override 与 rocBLAS native library 目录，隔离运行副本，不覆盖系统库
+- 用 profile/log 的 kernel 命中证据确认实际加载，并校验单算子精度与前后耗时
+
+不覆盖：自定义 MoE / Marlin kernel 调优。
+
+推荐提示词：
+
+```text
+$hipblaslt-rocblas-tuning
+模型路径是 <模型路径>，目标 GPU 架构是 <gfx 架构>，调优目录是 <隔离目录>。
+请先确认 token 轴和 gemm family，再按真实本地 token M 上限调优，补齐全部整数 M，并给出单算子精度与前后耗时对比。
+未经确认不要覆盖系统库、占用 GPU 或启动服务。
+```
+
 ## 安装方式
 
 ### 方式一：使用一键安装脚本（推荐）
@@ -318,6 +342,7 @@ git submodule update --init --recursive
 - `model-pr-optimization-hg-history`
 - `lightop-kernel-knowledge`
 - `hcu-aiter-moe-tuning`
+- `hipblaslt-rocblas-tuning`
 - `ask-codex`
 - `ask-gemini`
 - `humanize`
@@ -340,6 +365,7 @@ cp -a /path/to/DCU-Infer-Pilot/skills/llm-serving-auto-benchmark ~/.codex/skills
 cp -a /path/to/DCU-Infer-Pilot/skills/llm-torch-profiler-analysis ~/.codex/skills/
 cp -a /path/to/DCU-Infer-Pilot/skills/model-architecture-diagram ~/.codex/skills/
 cp -a /path/to/DCU-Infer-Pilot/skills/hcu-aiter-moe-tuning ~/.codex/skills/
+cp -a /path/to/DCU-Infer-Pilot/skills/hipblaslt-rocblas-tuning ~/.codex/skills/
 ```
 
 对知识库型内容，也可以按需一并复制：
@@ -375,6 +401,7 @@ $llm-serving-auto-benchmark ...
 $llm-torch-profiler-analysis ...
 $sglang-prod-incident-triage ...
 $hcu-aiter-moe-tuning ...
+$hipblaslt-rocblas-tuning ...
 ```
 
 一般建议你一次只触发一个主 skill，再让它调用需要的历史知识库或辅助技能。比如：
@@ -384,6 +411,7 @@ $hcu-aiter-moe-tuning ...
 - 排查线上问题时，优先用 `sglang-prod-incident-triage`
 - 做 SGLang 持续优化时，优先用 `sglang-sota-humanize-loop`
 - 查历史证据时，优先用 `model-pr-optimization-history` 或 `model-pr-optimization-hg-history`
+- 调 GEMM 算子库时，优先用 `hipblaslt-rocblas-tuning`
 
 ## 测试与脚本
 
