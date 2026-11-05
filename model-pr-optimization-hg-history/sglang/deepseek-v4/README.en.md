@@ -1042,3 +1042,215 @@
 - Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
 <!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_END -->
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_START -->
+## Local-only branch update from release/20260825_v0.5.18 to release_v0.5.18_deepseekv4
+
+### Coverage Note
+
+- Source repository: `HYGON-AI/sglang-das`; branch tips: `release/20260825_v0.5.18`@`2c841655f`, `main`@`5343b311c`, `release/20261023_v0.5.18_welm`@`962617b2d`, `release_v0.5.18_deepseekv4`@`c66f34363`
+- Scope: only local fork commits that are not reachable from `sgl-project/sglang` GitHub refs; merge commits are kept.
+- Generated date: 2026-11-05
+- Commits in this section: 10 (merges: 0)
+- Branch segments: `release/20260825_v0.5.18..main`, `release/20260825_v0.5.18..release/20261023_v0.5.18_welm`, `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Classification note: commits matching a concrete model name or model file enter that model bucket (possibly several); other runtime, backend, CI and test commits enter `shared`; merge-only or no-relevant-path commits enter `unclassified`. Bulk sync/rename commits touching more than 150 files (e.g. squash syncs of official main) also enter only `unclassified`: they carry upstream code and are not local-only implementations. Auto-classified; diffs were not reviewed one by one.
+
+### Touched Files
+
+| File | Local commits |
+| --- | --- |
+| `python/sglang/srt/environ.py` | `15c7204b7`, `5343b311c`, `785529a7c`, `423934574`, `d8a04fcc1` |
+| `python/sglang/srt/disaggregation/mooncake/conn.py` | `15c7204b7`, `5343b311c`, `834293ee4` |
+| `python/sglang/srt/disaggregation/prefill.py` | `15c7204b7`, `5343b311c`, `834293ee4` |
+| `python/sglang/srt/layers/attention/deepseek_v4_backend.py` | `15c7204b7`, `5343b311c`, `d8a04fcc1` |
+| `python/sglang/srt/managers/schedule_batch.py` | `15c7204b7`, `5343b311c`, `785529a7c` |
+| `.github/workflows/pr-test-hcu.yml` | `88b0efdfe`, `15c7204b7` |
+| `.github/workflows/release-pr-hcu.yml` | `88b0efdfe`, `15c7204b7` |
+| `python/sglang/kernels/jit/csrc/deepseek_v4/c_plan.cuh` | `15c7204b7`, `dc8e09ba9` |
+| `python/sglang/kernels/ops/attention/dsv4/attn.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/kernels/ops/attention/dsv4/dequant_k_cache.py` | `15c7204b7`, `d8a04fcc1` |
+| `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/arg_groups/deepseek_v4_hook.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/disaggregation/decode.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/disaggregation/utils.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/attention/dsv4/indexer.py` | `15c7204b7`, `423934574` |
+| `python/sglang/srt/layers/attention/dsv4/sparse_prefill_utils.py` | `15c7204b7`, `d8a04fcc1` |
+| `python/sglang/srt/layers/cp/interleave.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/engram.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/logits_processor.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/moe/ep_moe/layer.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/moe/mega_moe.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/moe/topk.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/quantization/slimquant_w4a8.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/layers/utils/hcu_cp_utils.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/managers/scheduler.py` | `5343b311c`, `785529a7c` |
+| `python/sglang/srt/mem_cache/cp_cache_layer_split/deepseek_v4_helpers.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/mem_cache/cp_cache_layer_split/deepseek_v4_pool.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/mem_cache/cp_cache_layer_split/staging.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/mem_cache/cp_cache_layer_split/transfer.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/mem_cache/cp_cache_layer_split/validation.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/mem_cache/deepseek_v4_memory_pool.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py` | `15c7204b7`, `785529a7c` |
+| `python/sglang/srt/model_executor/forward_batch_info.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/model_executor/pool_configurator.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/model_executor/runner/eager_runner.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/models/deepseek_v2.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/models/deepseek_v4.py` | `15c7204b7`, `5343b311c` |
+| `python/sglang/srt/models/deepseek_v4_dspark.py` | `15c7204b7`, `5343b311c` |
+| ... | 175 more files omitted |
+
+### Timeline
+
+| Date | Commit | Branch update | Category | Title | Main files |
+| --- | --- | --- | --- | --- | --- |
+| 2026-09-23 | `9cd15042a` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | feat(citest): 更新镜像测试用例, 适配 0.5.18 (Qwen3.8 / DeepSeek-V4) (#433) | `docker/image-citest-conf-hcu.yaml` |
+| 2026-09-23 | `f2d49c2c0` | `release/20260825_v0.5.18..main` | 缺陷修复 | FIX(DSV4): 补全 system/reminder 结尾对话的 assistant 生成前缀并解析 markdown 伪工具调用 (#435) | `python/sglang/srt/entrypoints/openai/encoding_dsv4.py`, `python/sglang/srt/function_call/deepseekv4_detector.py`, `test/registered/unit/function_call/test_deepseekv4_detector.py` |
+| 2026-09-23 | `88b0efdfe` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | adapt ci to feat/20260920_deepseek-v4.1 (#442) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-10-26 | `15c7204b7` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [Feat] [HCU] dsv4.1: Sync feature branch updates into main (#594) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `python/sglang/kernels/aot/benchmark/bench_rope_fp4.py` and 139 files in total |
+| 2026-11-03 | `5343b311c` | `release/20260825_v0.5.18..main` | 性能/后端优化 | Feat/20261102 Sync latest deepseek-v4.1 optimizations to main (#640) | `python/sglang/kernels/ops/attention/dsv4/attn.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer_rope_hcu.py` and 93 files in total |
+| 2026-10-16 | `785529a7c` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 性能/后端优化 | perf(cache): add opt-in Mooncake lookup, layout read, and KV reclamation optimizations (#543) | `python/sglang/srt/environ.py`, `python/sglang/srt/managers/schedule_batch.py`, `python/sglang/srt/managers/schedule_policy.py` and 19 files in total |
+| 2026-10-16 | `423934574` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 性能/后端优化 | feat(dsv4): add opt-in paged MQA logits row chunking (#541) | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py` |
+| 2026-10-16 | `d8a04fcc1` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 性能/后端优化 | [Fix] Reduce DSV4 prefill KV workspace memory (#552) | `python/sglang/kernels/ops/attention/dsv4/dequant_k_cache.py`, `python/sglang/kernels/ops/attention/dsv4/sparse_prefill_kernels.py`, `python/sglang/srt/environ.py` and 5 files in total |
+| 2026-10-27 | `834293ee4` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 缺陷修复 | [Fix] disaggregation: 修复 DeepSeek V4 PD 清理同步与消息处理 (#600) | `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/layers/sampler.py` and 7 files in total |
+| 2026-10-29 | `dc8e09ba9` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 性能/后端优化 | [DSV4][HCU] Fix speculative compression state retention in c_plan (#609) | `python/sglang/kernels/jit/csrc/deepseek_v4/c_plan.cuh` |
+
+### Per-Commit Audit Cards
+
+#### Commit `9cd15042a` - feat(citest): 更新镜像测试用例, 适配 0.5.18 (Qwen3.8 / DeepSeek-V4) (#433)
+
+- Full hash: `9cd15042af60905ef088d409908e41e330fbf345`
+- Date/author: 2026-09-23 / Crowder13
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `docker/image-citest-conf-hcu.yaml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `docker/image-citest-conf-hcu.yaml`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+#### Commit `f2d49c2c0` - FIX(DSV4): 补全 system/reminder 结尾对话的 assistant 生成前缀并解析 markdown 伪工具调用 (#435)
+
+- Full hash: `f2d49c2c0e3cb3ca4dd89130cb5e2a408b0ac54b`
+- Date/author: 2026-09-23 / JackPeng
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/entrypoints/openai/encoding_dsv4.py`, `python/sglang/srt/function_call/deepseekv4_detector.py`, `test/registered/unit/function_call/test_deepseekv4_detector.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/function_call/deepseekv4_detector.py`
+  - runtime-model: `python/sglang/srt/entrypoints/openai/encoding_dsv4.py`
+  - tests: `test/registered/unit/function_call/test_deepseekv4_detector.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `88b0efdfe` - adapt ci to feat/20260920_deepseek-v4.1 (#442)
+
+- Full hash: `88b0efdfe9e0b690e820e47a929ccf971adf57ce`
+- Date/author: 2026-09-23 / 463975089
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `15c7204b7` - [Feat] [HCU] dsv4.1: Sync feature branch updates into main (#594)
+
+- Full hash: `15c7204b7a3b6edaa222cff80018d8e5f2b2ad0e`
+- Date/author: 2026-10-26 / YuanYuan
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `python/sglang/kernels/aot/benchmark/bench_rope_fp4.py`, `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`, `python/sglang/kernels/aot/csrc/elementwise/rope_fp4.hip`, `python/sglang/kernels/aot/include/sgl_kernel_ops.h`, `python/sglang/kernels/aot/python/sgl_kernel/__init__.py`, `python/sglang/kernels/aot/python/sgl_kernel/elementwise.py` 等 139 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/arg_groups/field_order.py`; `python/sglang/srt/arg_groups/fields/parallel.py`; `python/sglang/srt/arg_groups/model_hook.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py` 等 21 个文件
+  - runtime-model: `python/sglang/srt/configs/deepseek_v41.py`; `python/sglang/srt/entrypoints/http_server.py`; `python/sglang/srt/entrypoints/openai/serving_chat.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner_components/load_model_utils.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/model_executor/runner/eager_runner.py`; `python/sglang/srt/model_executor/runner_utils/deepep_adapter.py` 等 12 个文件
+  - runtime-perf: `python/sglang/kernels/aot/benchmark/bench_rope_fp4.py`; `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`; `python/sglang/kernels/aot/csrc/elementwise/rope_fp4.hip`; `python/sglang/kernels/aot/include/sgl_kernel_ops.h`; `python/sglang/kernels/aot/python/sgl_kernel/__init__.py`; `python/sglang/kernels/aot/python/sgl_kernel/elementwise.py`; `python/sglang/kernels/aot/setup_hip.py`; `python/sglang/kernels/aot/setup_rocm.py` 等 64 个文件
+  - tests: `python/sglang/kernels/aot/tests/test_rope_fp4.py`; `test/manual/dsv4/lightop_fp4_indexer.md`; `test/manual/dsv4/test_lightop_fp4_indexer.py`; `test/manual/dsv4/test_rebase_contracts.py`; `test/registered/attention/unittests/dsv4/test_hcu_store_dispatch.py`; `test/registered/attention/unittests/dsv4/test_layer_split_fused_store.py`; `test/registered/cp/test_cp_strategy_unit.py`; `test/registered/kernels/ops/attention/test_dsv41_candidate_blocks_lightop.py` 等 40 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `5343b311c` - Feat/20261102 Sync latest deepseek-v4.1 optimizations to main (#640)
+
+- Full hash: `5343b311c2951da5dcd3617e9a91b76cb9070e04`
+- Date/author: 2026-11-03 / YuanYuan
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/kernels/ops/attention/dsv4/attn.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py`, `python/sglang/kernels/ops/attention/dsv4/fp4_indexer_rope_hcu.py`, `python/sglang/kernels/ops/moe/fill_padded_rows.py`, `python/sglang/srt/arg_groups/deepseek_v4_hook.py`, `python/sglang/srt/arg_groups/fields/exec_.py`, `python/sglang/srt/arg_groups/pd_disaggregation_hook.py`, `python/sglang/srt/configs/model_config.py` 等 93 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/arg_groups/deepseek_v4_hook.py`; `python/sglang/srt/arg_groups/fields/exec_.py`; `python/sglang/srt/arg_groups/pd_disaggregation_hook.py`; `python/sglang/srt/disaggregation/base/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/encoder/preprocessor.py`; `python/sglang/srt/disaggregation/encoder/receiver.py`; `python/sglang/srt/disaggregation/mooncake/conn.py` 等 26 个文件
+  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/disaggregation/encoder/server.py`; `python/sglang/srt/model_executor/encoder_swa_replay.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/model_executor/runner/eager_runner.py`; `python/sglang/srt/models/deepseek_common/amd/deepseek_v4_fused_mhc.py`; `python/sglang/srt/models/deepseek_v2.py` 等 10 个文件
+  - runtime-perf: `python/sglang/kernels/ops/attention/dsv4/attn.py`; `python/sglang/kernels/ops/attention/dsv4/fp4_indexer.py`; `python/sglang/kernels/ops/attention/dsv4/fp4_indexer_rope_hcu.py`; `python/sglang/kernels/ops/moe/fill_padded_rows.py`; `python/sglang/srt/distributed/device_communicators/cuda_wrapper.py`; `python/sglang/srt/eplb/lplb_hip_waterfill.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/low_ratio_backend_hip.py` 等 31 个文件
+  - tests: `test/registered/kernels/ops/attention/test_fp4_indexer.py`; `test/registered/unit/disaggregation/test_encode_receiver.py`; `test/registered/unit/layers/attention/test_dsv41_rope_fq_store.py`; `test/registered/unit/layers/cp/test_interleave_cp_gather_memory.py`; `test/registered/unit/layers/dsv41_hcu_indexq_rounding.json`; `test/registered/unit/layers/moe/test_hcu_compressed_tensors_w4a8_deepep_ll.py`; `test/registered/unit/layers/moe/test_topk_padding_hcu_guard.py`; `test/registered/unit/layers/quantization/test_compressed_tensors_w8a8_int8_hcu_layout.py` 等 26 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `785529a7c` - perf(cache): add opt-in Mooncake lookup, layout read, and KV reclamation optimizations (#543)
+
+- Full hash: `785529a7c3e0ba47ac77fab90ee7909e6e2ab004`
+- Date/author: 2026-10-16 / 千纱都
+- Branch update: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/managers/schedule_batch.py`, `python/sglang/srt/managers/schedule_policy.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/allocator/paged.py`, `python/sglang/srt/mem_cache/allocator/swa.py`, `python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py`, `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py` 等 19 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/managers/schedule_batch.py`; `python/sglang/srt/managers/schedule_policy.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/mem_cache/allocator/paged.py`; `python/sglang/srt/mem_cache/allocator/swa.py`; `python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py`; `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py`; `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py`; `python/sglang/srt/mem_cache/unified_cache/unified_cache_linker.py`; `python/sglang/srt/mem_cache/unified_radix_cache.py`
+  - tests: `test/manual/dsv4/test_mooncake_exists_batch.py`; `test/manual/dsv4/test_page_table_allocator.py`; `test/manual/hicache/test_mooncake_async_lookup.py`; `test/manual/hicache/test_mooncake_async_scheduler_regressions.py`; `test/manual/hicache/test_mooncake_fused_load_agreement.py`; `test/manual/hicache/test_mooncake_read_layout_linker.py`; `test/registered/unit/mem_cache/test_mooncake_waiting_queue_no_prefetch_needed.py`; `test/registered/unit/mem_cache/test_unified_radix_cache_unittest.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `423934574` - feat(dsv4): add opt-in paged MQA logits row chunking (#541)
+
+- Full hash: `423934574f345bc26d84571836cef5ff406a1b58`
+- Date/author: 2026-10-16 / JingLee
+- Branch update: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `d8a04fcc1` - [Fix] Reduce DSV4 prefill KV workspace memory (#552)
+
+- Full hash: `d8a04fcc149dea782a32b0356c2640799f4b24a5`
+- Date/author: 2026-10-16 / JingLee
+- Branch update: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/kernels/ops/attention/dsv4/dequant_k_cache.py`, `python/sglang/kernels/ops/attention/dsv4/sparse_prefill_kernels.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/deepseek_v4_backend.py`, `python/sglang/srt/layers/attention/dsv4/sparse_prefill_utils.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/environ.py`
+  - runtime-perf: `python/sglang/kernels/ops/attention/dsv4/dequant_k_cache.py`; `python/sglang/kernels/ops/attention/dsv4/sparse_prefill_kernels.py`; `python/sglang/srt/layers/attention/deepseek_v4_backend.py`; `python/sglang/srt/layers/attention/dsv4/sparse_prefill_utils.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `834293ee4` - [Fix] disaggregation: 修复 DeepSeek V4 PD 清理同步与消息处理 (#600)
+
+- Full hash: `834293ee48047618f2de2eecf245d499c32154ff`
+- Date/author: 2026-10-27 / zhengzhi
+- Branch update: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/layers/sampler.py`, `test/registered/unit/disaggregation/test_bootstrap_failure_release.py`, `test/registered/unit/disaggregation/test_pp_pd_consensus.py`, `test/registered/unit/disaggregation/test_prefill_abort_cleanup.py`, `test/registered/unit/entrypoints/test_http_server_auth_config.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/prefill.py`
+  - runtime-perf: `python/sglang/srt/layers/sampler.py`
+  - tests: `test/registered/unit/disaggregation/test_bootstrap_failure_release.py`; `test/registered/unit/disaggregation/test_pp_pd_consensus.py`; `test/registered/unit/disaggregation/test_prefill_abort_cleanup.py`; `test/registered/unit/entrypoints/test_http_server_auth_config.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `dc8e09ba9` - [DSV4][HCU] Fix speculative compression state retention in c_plan (#609)
+
+- Full hash: `dc8e09ba9dc7d4dbc291a2c0d0f5129f14303f1d`
+- Date/author: 2026-10-29 / chaoyujiang
+- Branch update: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/kernels/jit/csrc/deepseek_v4/c_plan.cuh`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/kernels/jit/csrc/deepseek_v4/c_plan.cuh`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_END -->

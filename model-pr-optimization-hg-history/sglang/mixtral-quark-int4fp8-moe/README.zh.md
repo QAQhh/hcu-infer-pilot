@@ -170,3 +170,67 @@
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
 <!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_END -->
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_START -->
+## release/20260825_v0.5.18 到 release_v0.5.18_deepseekv4 本地独有提交补充
+
+### 覆盖说明
+
+- 来源仓库: `HYGON-AI/sglang-das`；分支端点: `release/20260825_v0.5.18`@`2c841655f`, `main`@`5343b311c`, `release/20261023_v0.5.18_welm`@`962617b2d`, `release_v0.5.18_deepseekv4`@`c66f34363`
+- 口径: 仅记录不可从 `sgl-project/sglang` GitHub refs 到达的本地 fork 独有提交；合并提交也保留。
+- 生成日期: 2026-11-05
+- 本章节提交数: 1（其中 merge 0）
+- 分支更新段: `release/20260825_v0.5.18..main`, `release/20260825_v0.5.18..release/20261023_v0.5.18_welm`, `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- 归类说明: 命中具体模型名、模型文件的提交进入对应模型桶（可同时进入多个）；其余运行时、后端、CI、测试提交进入 `shared`；仅有 merge 或无相关路径的提交进入 `unclassified`。改动文件数超过 150 的批量同步/重命名提交（如整合官方 main 的 squash 同步）也只进入 `unclassified`，其内容含上游代码，不能当作本地独有实现。自动归类，未逐条人工审阅 diff。
+
+### 涉及文件
+
+| 文件 | 本地提交 |
+| --- | --- |
+| `docs/internal/dcu-main-conflict-ledger.md` | `2c0d45485` |
+| `docs/internal/dcu-main-daily-20260721-conflict-review.md` | `2c0d45485` |
+| `docs/internal/dcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md` | `2c0d45485` |
+| `docs/internal/dcu-v0.5.15-post1-dev-plan.md` | `2c0d45485` |
+| `docs/internal/hcu-main-conflict-ledger.md` | `2c0d45485` |
+| `docs/internal/hcu-main-daily-20260721-conflict-review.md` | `2c0d45485` |
+| `docs/internal/hcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md` | `2c0d45485` |
+| `docs/internal/hcu-v0.5.15-post1-dev-plan.md` | `2c0d45485` |
+| `python/sglang/kernels/jit/include/sgl_kernel/utils.cuh` | `2c0d45485` |
+| `python/sglang/multimodal_gen/runtime/platforms/__init__.py` | `2c0d45485` |
+| `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py` | `2c0d45485` |
+| `python/sglang/srt/environ.py` | `2c0d45485` |
+| `python/sglang/srt/layers/attention/dsa_backend.py` | `2c0d45485` |
+| `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py` | `2c0d45485` |
+| `python/sglang/srt/layers/quantization/quark/schemes/quark_w4a4_mxfp4_moe.py` | `2c0d45485` |
+| `python/sglang/srt/managers/scheduler_components/dp_attn.py` | `2c0d45485` |
+| `python/sglang/srt/server_args.py` | `2c0d45485` |
+| `scripts/ci/hcu/check_hcu_runtime_text.py` | `2c0d45485` |
+| `scripts/ci/hcu/hcu_rename_allowlist.txt` | `2c0d45485` |
+| `test/registered/hicache/test_hicache_variants.py` | `2c0d45485` |
+| `test/run_suite.py` | `2c0d45485` |
+
+### 时间线
+
+| 日期 | Commit | 分支更新段 | 分类 | 标题 | 主要文件 |
+| --- | --- | --- | --- | --- | --- |
+| 2026-08-21 | `2c0d45485` | `release/20260825_v0.5.18..main` | 性能/后端优化 | Sanitize HCU platform naming and runtime messages | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-daily-20260721-conflict-review.md`, `docs/internal/dcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md` 等 21 个文件 |
+
+### 逐 Commit 审计卡
+
+#### Commit `2c0d45485` - Sanitize HCU platform naming and runtime messages
+
+- 完整 hash: `2c0d4548542c4aa98ff7b9144f7d597aca889211`
+- 时间/作者: 2026-08-21 / reverie-hub
+- 分支更新段: `release/20260825_v0.5.18..main`
+- 自动分类: 性能/后端优化
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-daily-20260721-conflict-review.md`, `docs/internal/dcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md`, `docs/internal/dcu-v0.5.15-post1-dev-plan.md`, `docs/internal/hcu-main-conflict-ledger.md`, `docs/internal/hcu-main-daily-20260721-conflict-review.md`, `docs/internal/hcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md`, `docs/internal/hcu-v0.5.15-post1-dev-plan.md` 等 21 个文件
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`; `docs/internal/dcu-main-daily-20260721-conflict-review.md`; `docs/internal/dcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md`; `docs/internal/dcu-v0.5.15-post1-dev-plan.md`; `docs/internal/hcu-main-conflict-ledger.md`; `docs/internal/hcu-main-daily-20260721-conflict-review.md`; `docs/internal/hcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md`; `docs/internal/hcu-v0.5.15-post1-dev-plan.md`
+  - other: `python/sglang/multimodal_gen/runtime/platforms/__init__.py`; `python/sglang/srt/environ.py`; `scripts/ci/hcu/check_hcu_runtime_text.py`; `scripts/ci/hcu/hcu_rename_allowlist.txt`
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/kernels/jit/include/sgl_kernel/utils.cuh`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`; `python/sglang/srt/layers/attention/dsa_backend.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/quark/schemes/quark_w4a4_mxfp4_moe.py`; `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+  - tests: `test/registered/hicache/test_hicache_variants.py`; `test/run_suite.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_END -->

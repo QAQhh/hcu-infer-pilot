@@ -170,3 +170,67 @@
 - Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
 <!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_END -->
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_START -->
+## Local-only branch update from release/20260825_v0.5.18 to release_v0.5.18_deepseekv4
+
+### Coverage Note
+
+- Source repository: `HYGON-AI/sglang-das`; branch tips: `release/20260825_v0.5.18`@`2c841655f`, `main`@`5343b311c`, `release/20261023_v0.5.18_welm`@`962617b2d`, `release_v0.5.18_deepseekv4`@`c66f34363`
+- Scope: only local fork commits that are not reachable from `sgl-project/sglang` GitHub refs; merge commits are kept.
+- Generated date: 2026-11-05
+- Commits in this section: 1 (merges: 0)
+- Branch segments: `release/20260825_v0.5.18..main`, `release/20260825_v0.5.18..release/20261023_v0.5.18_welm`, `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Classification note: commits matching a concrete model name or model file enter that model bucket (possibly several); other runtime, backend, CI and test commits enter `shared`; merge-only or no-relevant-path commits enter `unclassified`. Bulk sync/rename commits touching more than 150 files (e.g. squash syncs of official main) also enter only `unclassified`: they carry upstream code and are not local-only implementations. Auto-classified; diffs were not reviewed one by one.
+
+### Touched Files
+
+| File | Local commits |
+| --- | --- |
+| `docs/internal/dcu-main-conflict-ledger.md` | `2c0d45485` |
+| `docs/internal/dcu-main-daily-20260721-conflict-review.md` | `2c0d45485` |
+| `docs/internal/dcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md` | `2c0d45485` |
+| `docs/internal/dcu-v0.5.15-post1-dev-plan.md` | `2c0d45485` |
+| `docs/internal/hcu-main-conflict-ledger.md` | `2c0d45485` |
+| `docs/internal/hcu-main-daily-20260721-conflict-review.md` | `2c0d45485` |
+| `docs/internal/hcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md` | `2c0d45485` |
+| `docs/internal/hcu-v0.5.15-post1-dev-plan.md` | `2c0d45485` |
+| `python/sglang/kernels/jit/include/sgl_kernel/utils.cuh` | `2c0d45485` |
+| `python/sglang/multimodal_gen/runtime/platforms/__init__.py` | `2c0d45485` |
+| `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py` | `2c0d45485` |
+| `python/sglang/srt/environ.py` | `2c0d45485` |
+| `python/sglang/srt/layers/attention/dsa_backend.py` | `2c0d45485` |
+| `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py` | `2c0d45485` |
+| `python/sglang/srt/layers/quantization/quark/schemes/quark_w4a4_mxfp4_moe.py` | `2c0d45485` |
+| `python/sglang/srt/managers/scheduler_components/dp_attn.py` | `2c0d45485` |
+| `python/sglang/srt/server_args.py` | `2c0d45485` |
+| `scripts/ci/hcu/check_hcu_runtime_text.py` | `2c0d45485` |
+| `scripts/ci/hcu/hcu_rename_allowlist.txt` | `2c0d45485` |
+| `test/registered/hicache/test_hicache_variants.py` | `2c0d45485` |
+| `test/run_suite.py` | `2c0d45485` |
+
+### Timeline
+
+| Date | Commit | Branch update | Category | Title | Main files |
+| --- | --- | --- | --- | --- | --- |
+| 2026-08-21 | `2c0d45485` | `release/20260825_v0.5.18..main` | 性能/后端优化 | Sanitize HCU platform naming and runtime messages | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-daily-20260721-conflict-review.md`, `docs/internal/dcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md` and 21 files in total |
+
+### Per-Commit Audit Cards
+
+#### Commit `2c0d45485` - Sanitize HCU platform naming and runtime messages
+
+- Full hash: `2c0d4548542c4aa98ff7b9144f7d597aca889211`
+- Date/author: 2026-08-21 / reverie-hub
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-daily-20260721-conflict-review.md`, `docs/internal/dcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md`, `docs/internal/dcu-v0.5.15-post1-dev-plan.md`, `docs/internal/hcu-main-conflict-ledger.md`, `docs/internal/hcu-main-daily-20260721-conflict-review.md`, `docs/internal/hcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md`, `docs/internal/hcu-v0.5.15-post1-dev-plan.md` 等 21 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`; `docs/internal/dcu-main-daily-20260721-conflict-review.md`; `docs/internal/dcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md`; `docs/internal/dcu-v0.5.15-post1-dev-plan.md`; `docs/internal/hcu-main-conflict-ledger.md`; `docs/internal/hcu-main-daily-20260721-conflict-review.md`; `docs/internal/hcu-v0.5.15-post1-dev-forward-port-20260722-conflict-review.md`; `docs/internal/hcu-v0.5.15-post1-dev-plan.md`
+  - other: `python/sglang/multimodal_gen/runtime/platforms/__init__.py`; `python/sglang/srt/environ.py`; `scripts/ci/hcu/check_hcu_runtime_text.py`; `scripts/ci/hcu/hcu_rename_allowlist.txt`
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/kernels/jit/include/sgl_kernel/utils.cuh`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`; `python/sglang/srt/layers/attention/dsa_backend.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/quark/schemes/quark_w4a4_mxfp4_moe.py`; `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+  - tests: `test/registered/hicache/test_hicache_variants.py`; `test/run_suite.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_END -->

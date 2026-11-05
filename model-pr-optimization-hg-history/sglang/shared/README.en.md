@@ -2951,3 +2951,970 @@
 - Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
 
 <!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_END -->
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_START -->
+## Local-only branch update from release/20260825_v0.5.18 to release_v0.5.18_deepseekv4
+
+### Coverage Note
+
+- Source repository: `HYGON-AI/sglang-das`; branch tips: `release/20260825_v0.5.18`@`2c841655f`, `main`@`5343b311c`, `release/20261023_v0.5.18_welm`@`962617b2d`, `release_v0.5.18_deepseekv4`@`c66f34363`
+- Scope: only local fork commits that are not reachable from `sgl-project/sglang` GitHub refs; merge commits are kept.
+- Generated date: 2026-11-05
+- Commits in this section: 67 (merges: 0)
+- Branch segments: `release/20260825_v0.5.18..main`, `release/20260825_v0.5.18..release/20261023_v0.5.18_welm`, `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Classification note: commits matching a concrete model name or model file enter that model bucket (possibly several); other runtime, backend, CI and test commits enter `shared`; merge-only or no-relevant-path commits enter `unclassified`. Bulk sync/rename commits touching more than 150 files (e.g. squash syncs of official main) also enter only `unclassified`: they carry upstream code and are not local-only implementations. Auto-classified; diffs were not reviewed one by one.
+
+### Touched Files
+
+| File | Local commits |
+| --- | --- |
+| `.github/workflows/release-docker-hcu.yml` | `6b468d012`, `68dcd498a`, `8fa7122b3`, `7c8272a3a`, `5c03a8e22`, `2871c8fdd`, `5e8269d55`, `e05f146be`, `fb46d17ad`, `50b0d0051`, `87b9d5c85`, `6dac3481c`, ... (13 total) |
+| `.github/workflows/release-pr-hcu.yml` | `a2de3b8cf`, `2866df994`, `6b468d012`, `ae14a99e5`, `adc1d69b2`, `cb932f5fb`, `a981685e7`, `665b27d1f`, `e05f146be`, `098f31d69` |
+| `.github/workflows/cookbook-deployment-smoke.yml` | `50b0d0051`, `f9b972b37`, `b6dd37e66`, `78c700ee0`, `cc3758967`, `87b9d5c85`, `f89209aa8`, `a8543c813`, `029b6e641` |
+| `.github/workflows/pr-test-hcu.yml` | `f6d701c52`, `e864c3028`, `b5108cc7f`, `575cf4797`, `ae14a99e5`, `adc1d69b2`, `e05f146be`, `098f31d69`, `25aa13e98` |
+| `.github/workflows/nightly-test-hcu.yml` | `a2de3b8cf`, `2866df994`, `b5108cc7f`, `adc1d69b2`, `b5ca753bc`, `e05f146be`, `50b0d0051` |
+| `.github/workflows/nightly-test-operator-hcu.yml` | `fb46d17ad`, `4205397cb`, `e295faff5`, `6dac3481c`, `fd98647ed`, `db479b030`, `9fb319cc3` |
+| `.github/workflows/release-pypi-nightly-hcu.yml` | `a2de3b8cf`, `7609d9af6`, `6b468d012`, `68dcd498a`, `7be1324cf`, `e05f146be` |
+| `docker/hcu.Dockerfile` | `7609d9af6`, `6b468d012`, `68dcd498a`, `7c8272a3a`, `5c03a8e22`, `2871c8fdd` |
+| `.github/workflows/release-whl-manual-hcu.yml` | `d1adf7b50`, `94e9fa4b1`, `c94c3ca2c`, `bc990ebd5` |
+| `scripts/ci/hcu/hcu_ci_install_dependency.sh` | `2828bde71`, `0af71f61b`, `575cf4797`, `adc1d69b2` |
+| `.github/workflows/nightly-test-image-hcu.yml` | `8fa7122b3`, `0457572a1`, `e05f146be` |
+| `python/sglang/srt/managers/scheduler.py` | `962617b2d`, `4c5ac2ee0`, `f0a0530ce` |
+| `python/sglang/srt/server_args.py` | `fd4157047`, `8dd5daf2f`, `962617b2d` |
+| `scripts/ci/hcu/hcu_ci_exec.sh` | `9d261478d`, `2828bde71`, `0af71f61b` |
+| `.github/workflows/dashhub-recover-41338132822.yml` | `471ab8254`, `594e1ae94` |
+| `.github/workflows/pr-states.yml` | `3ca61517d`, `e05f146be` |
+| `python/sglang/multimodal_gen/runtime/platforms/__init__.py` | `d42ecf6fe`, `fd4157047` |
+| `python/sglang/srt/managers/tokenizer_manager.py` | `3b0e4a073`, `c66f34363` |
+| `test/run_suite.py` | `8dd5daf2f`, `6fe7ce909` |
+| `.github/workflows/hcu-feishu-notify-preview.yml` | `e05f146be` |
+| `.github/workflows/hcu-full-enabled.yml` | `e05f146be` |
+| `.github/workflows/hcu-manual-model-test.yml` | `e05f146be` |
+| `.github/workflows/labeler.yml` | `e05f146be` |
+| `.github/workflows/lint-hcu.yml` | `e05f146be` |
+| `.github/workflows/nightly-release-gateway.yml` | `990a1a798` |
+| `.github/workflows/quality-gate.yml` | `ae5c33991` |
+| `README_HCU.md` | `9d261478d` |
+| `docker/image-citest-conf-hcu.yaml` | `8fa7122b3` |
+| `docs/docs/references/environment_variables.mdx` | `3b0e4a073` |
+| `python/pyproject_hcu.toml` | `7609d9af6` |
+| `python/sglang/benchmark/datasets/common.py` | `fc095e059` |
+| `python/sglang/benchmark/datasets/generated_shared_prefix.py` | `fc095e059` |
+| `python/sglang/benchmark/serving.py` | `fc095e059` |
+| `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py` | `962617b2d` |
+| `python/sglang/srt/batch_invariant_ops/batch_invariant_ops.py` | `962617b2d` |
+| `python/sglang/srt/configs/model_config.py` | `962617b2d` |
+| `python/sglang/srt/constrained/grammar_manager.py` | `f0a0530ce` |
+| `python/sglang/srt/disaggregation/prefill.py` | `4c5ac2ee0` |
+| `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py` | `d42ecf6fe` |
+| `python/sglang/srt/entrypoints/http_server.py` | `eaa872862` |
+| ... | 81 more files omitted |
+
+### Timeline
+
+| Date | Commit | Branch update | Category | Title | Main files |
+| --- | --- | --- | --- | --- | --- |
+| 2026-08-21 | `a96aed11f` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [feat] 适配aiter性能优化后的 sglang_fused_sigmoid_gating_delta_rule_update 算子 | `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py` |
+| 2026-08-21 | `d42ecf6fe` | `release/20260825_v0.5.18..main` | 缺陷修复 | Fix HCU detection and sanitized topology diagnostics | `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`, `scripts/ci/hcu/hcu_rename_allowlist.txt` |
+| 2026-08-24 | `fd4157047` | `release/20260825_v0.5.18..main` | 通用实现调整 | Refine HCU platform diagnostics and CLI help | `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/server_args.py` |
+| 2026-08-25 | `d1adf7b50` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [feature] manual compile ci | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-25 | `94e9fa4b1` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci: align manual HCU wheel workflow with nightly (drop chown/devpi upload) | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-26 | `990a1a798` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci: disable scheduled gateway nightly release | `.github/workflows/nightly-release-gateway.yml` |
+| 2026-08-26 | `8dd5daf2f` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | Refine HCU and AMD CLI help text | `python/sglang/srt/server_args.py`, `test/run_suite.py` |
+| 2026-08-26 | `c94c3ca2c` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix: gateway wheel is at workspace root target/wheels | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-26 | `f6d701c52` | `release/20260825_v0.5.18..main` | 缺陷修复 | Fix stale HCU Stage B test paths | `.github/workflows/pr-test-hcu.yml` |
+| 2026-08-26 | `a2de3b8cf` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): use bash for wheel build jobs | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-08-27 | `2866df994` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): trust wheel build workspaces | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-27 | `7609d9af6` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | [feature]适配hcu发包 | `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`, `python/pyproject_hcu.toml` |
+| 2026-08-27 | `6b468d012` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [feature] hcu ci: docker 镜像加 daily 定时触发, router 编包改用 vendored openssl, 镜像补装 flash_kda | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` and 4 files in total |
+| 2026-08-28 | `68dcd498a` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [ci] hcu ci 文件与 release/20260825_v0.5.18 分支保持一致 | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-08-28 | `bc990ebd5` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [ci] 删除 release-whl-manual-hcu.yml (功能与 nightly/pr 编包重复) | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-31 | `3ca61517d` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci-remove-amd-status-from-pr-summaries | `.github/workflows/pr-states.yml` |
+| 2026-08-31 | `e864c3028` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci: enable HCU PR tests for release branches (#272) | `.github/workflows/pr-test-hcu.yml` |
+| 2026-09-01 | `8fa7122b3` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [FEATURE]构建镜像之后触发模型测试 (#277) | `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/release-docker-hcu.yml`, `docker/image-citest-conf-hcu.yaml` |
+| 2026-09-02 | `9d261478d` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [CI] Update HCU model asset paths on main (#285) | `README_HCU.md`, `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_exec.sh` and 10 files in total |
+| 2026-09-02 | `6fe7ce909` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): restore run suite file filters (#290) | `test/run_suite.py` |
+| 2026-09-03 | `2828bde71` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | ci(hcu): align llguidance and model asset paths (#299) | `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh` |
+| 2026-09-04 | `0457572a1` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [FEATURE]CInotificate发送飞书通知时，把镜像数据推送到数据库 (#308) | `.github/workflows/nightly-test-image-hcu.yml` |
+| 2026-09-08 | `0af71f61b` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(ci): update HCU evaluation dependencies and asset paths (#325) | `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/hcu_ci_start_container.sh` |
+| 2026-09-14 | `b5108cc7f` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): use v0.5.18 image and restore eval dependencies (#347) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh` and 4 files in total |
+| 2026-09-14 | `516261baf` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): register sampling test and adjust MMLU threshold (#359) | `test/registered/sampling/test_pytorch_sampling_backend.py` |
+| 2026-09-14 | `575cf4797` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): restore source mode for test-only PRs (#364) | `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `test/registered/hcu/openai_server/test_serving_chat_hcu.py` |
+| 2026-09-15 | `7c8272a3a` | `release/20260825_v0.5.18..main` | 缺陷修复 | [BUGFIX]更新AICC安装方式 (#367) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-09-15 | `ae14a99e5` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(ci): fix HCU wheel build target routing (#372) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-15 | `5c03a8e22` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [FEATURE]daily镜像将tag打入环境变量, dtk自动更新最新的blas (#376) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-09-16 | `adc1d69b2` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): align main wheel builds with 0.5.18 runtime (#379) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` and 6 files in total |
+| 2026-09-21 | `ae5c33991` | `release/20260825_v0.5.18..main` | 调度/缓存/PD | Update quality gate workflow to use stable version | `.github/workflows/quality-gate.yml` |
+| 2026-09-21 | `cb932f5fb` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | feat(ci) compaity sgl-kernal main to v0.5.12 (#421) | `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-21 | `a981685e7` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix release-pr-hcu.yml build sglang (#423) | `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-22 | `b5ca753bc` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): run nightly against v0.5.18 and report its results (#432) | `.github/workflows/nightly-test-hcu.yml` |
+| 2026-09-23 | `2871c8fdd` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): docker 镜像改从 dev 基础镜像内联安装 DTK 26.04.1-72cu-0911 (#438) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-09-23 | `7be1324cf` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci: report sglang nightly packages to DashHub (#424) | `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-09-24 | `665b27d1f` | `release/20260825_v0.5.18..main` | 缺陷修复 | feat(ci) fix main build whl failed (#449) | `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-28 | `5e8269d55` | `release/20260825_v0.5.18..main` | 缺陷修复 | [BUGFIX]镜像DTK版本号不对 (#447) | `.github/workflows/release-docker-hcu.yml` |
+| 2026-09-30 | `e05f146be` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | ci(hcu): migrate main workflows to organization runners (#463) | `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml` and 12 files in total |
+| 2026-10-09 | `fb46d17ad` | `release/20260825_v0.5.18..main` | 性能/后端优化 | add optest process (#481) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-09 | `f0ee2a505` | `release/20260825_v0.5.18..main` | 缺陷修复 | FIX(detokenizer): stream through genuine U+FFFD instead of holding until finish (#473) | `python/sglang/srt/managers/detokenizer_manager.py`, `test/registered/unit/managers/test_detokenizer_incremental.py` |
+| 2026-10-10 | `4205397cb` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | add password-free download code (#499) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-10 | `3b0e4a073` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [Fix] Bound crash diagnostics and fatal shutdown on main (#498) | `docs/docs/references/environment_variables.mdx`, `python/sglang/srt/managers/multi_tokenizer_mixin.py`, `python/sglang/srt/managers/tokenizer_manager.py` and 6 files in total |
+| 2026-10-12 | `50b0d0051` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | Delegate HCU model deployment smoke CI to external controller (#503) | `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-12 | `f9b972b37` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | Use a clean checkout directory for the model smoke controller (#510) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-12 | `b6dd37e66` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | Run cookbook smoke tests for all cases by default | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-12 | `e295faff5` | `release/20260825_v0.5.18..main` | 性能/后端优化 | update ci name&&add optest log (#515) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-14 | `78c700ee0` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | Add image input to cookbook deployment smoke workflow (#530) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-15 | `cc3758967` | `release/20260825_v0.5.18..main` | 通用实现调整 | Pass DashHub credential to deployment smoke controller (#534) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-15 | `fc095e059` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(bench): reuse --tokenize-prompt for generated shared-prefix token IDs (#533) | `python/sglang/benchmark/datasets/common.py`, `python/sglang/benchmark/datasets/generated_shared_prefix.py`, `python/sglang/benchmark/serving.py` and 4 files in total |
+| 2026-10-16 | `87b9d5c85` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | Run cookbook deployment checks after HCU image publishing (#548) | `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-19 | `f89209aa8` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | ci: pass package server to Cookbook model tests (#556) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-20 | `a8543c813` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | [CI] cookbook: Add BW1000 deployment smoke tests (#570) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-28 | `6dac3481c` | `release/20260825_v0.5.18..main` | 缺陷修复 | [Fix] ci: Preserve model cases in DashHub operator reporting (#604) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-28 | `098f31d69` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(ci) rebase pr-test-hcu.yml release-pr-hcu.yml (#612) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-10-28 | `029b6e641` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | [CI] model-ci: Pass history token for daily comparison report (#607) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-28 | `fd98647ed` | `release/20260825_v0.5.18..main` | 缺陷修复 | [Fix] ci: Restore previous DashHub operator reporting (#614) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-29 | `25aa13e98` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(ci) rebase pr-test-hcu.yml (#617) | `.github/workflows/pr-test-hcu.yml` |
+| 2026-10-29 | `db479b030` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [CI] optest: Report outcome to DashHub (#619) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-29 | `9fb319cc3` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [CI] optest: Require every enabled operator result (#622) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-11-02 | `471ab8254` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | Add one-time DashHub recovery for run 41338132822 (#633) | `.github/workflows/dashhub-recover-41338132822.yml` |
+| 2026-11-02 | `594e1ae94` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [Chore] ci: Remove completed DashHub recovery workflow (#634) | `.github/workflows/dashhub-recover-41338132822.yml` |
+| 2026-10-23 | `962617b2d` | `release/20260825_v0.5.18..release/20261023_v0.5.18_welm` | 性能/后端优化 | WeLM v4.5 support on HCU (squash of yaoyupings/sglang-das v0.5.18_welm) | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/batch_invariant_ops/batch_invariant_ops.py`, `python/sglang/srt/configs/model_config.py` and 55 files in total |
+| 2026-10-20 | `eaa872862` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 缺陷修复 | fix: support API key with multiple tokenizer workers (#559) | `python/sglang/srt/entrypoints/http_server.py`, `python/sglang/srt/utils/auth.py`, `test/registered/unit/entrypoints/test_http_server_auth_config.py` and 5 files in total |
+| 2026-10-20 | `4c5ac2ee0` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 缺陷修复 | fix(disagg): defer cached-prefix sends during cache loads (#562) | `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/managers/scheduler.py`, `test/manual/hicache/test_pd_cached_prefix_load_ordering.py` |
+| 2026-10-23 | `f0a0530ce` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 缺陷修复 | [Fix] grammar: 同步 Prefill CP 的 Grammar 请求准入与失败状态 (#589) | `python/sglang/srt/constrained/grammar_manager.py`, `python/sglang/srt/managers/scheduler.py`, `test/registered/unit/constrained/test_grammar_manager.py` |
+| 2026-10-30 | `c66f34363` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 缺陷修复 | [Fix] TokenizerManager: 修复客户端断开后已下发请求未被终止的问题 (#628) | `python/sglang/srt/managers/tokenizer_manager.py`, `test/registered/unit/managers/test_tokenizer_manager_rid_cleanup.py` |
+
+### Per-Commit Audit Cards
+
+#### Commit `a96aed11f` - [feat] 适配aiter性能优化后的 sglang_fused_sigmoid_gating_delta_rule_update 算子
+
+- Full hash: `a96aed11f05f65d18f5bd46446b4ca9b7ac82105`
+- Date/author: 2026-08-21 / zhuwenbopro
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-perf: `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `d42ecf6fe` - Fix HCU detection and sanitized topology diagnostics
+
+- Full hash: `d42ecf6fe9854d6127c167959fe7bec30439b73b`
+- Date/author: 2026-08-21 / reverie-hub
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`, `scripts/ci/hcu/hcu_rename_allowlist.txt`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/multimodal_gen/runtime/platforms/__init__.py`; `scripts/ci/hcu/hcu_rename_allowlist.txt`
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `fd4157047` - Refine HCU platform diagnostics and CLI help
+
+- Full hash: `fd415704795411fa8fcbc7d7571c41dcb3d1c431`
+- Date/author: 2026-08-24 / reverie-hub
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 通用实现调整
+- Main files: `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/server_args.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/multimodal_gen/runtime/platforms/__init__.py`
+  - runtime-model: `python/sglang/srt/server_args.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `d1adf7b50` - [feature] manual compile ci
+
+- Full hash: `d1adf7b503b20e64e07c38946a067ee90c428962`
+- Date/author: 2026-08-25 / zhangyh15
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/release-whl-manual-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-whl-manual-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `94e9fa4b1` - ci: align manual HCU wheel workflow with nightly (drop chown/devpi upload)
+
+- Full hash: `94e9fa4b1d10f14c6120bab4f5416caf6e318cd9`
+- Date/author: 2026-08-25 / zhangyh15
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/release-whl-manual-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-whl-manual-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `990a1a798` - ci: disable scheduled gateway nightly release
+
+- Full hash: `990a1a798d40ccea97ef91c16a9d8cd8f25957e2`
+- Date/author: 2026-08-26 / dddddddxl
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/nightly-release-gateway.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-release-gateway.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `8dd5daf2f` - Refine HCU and AMD CLI help text
+
+- Full hash: `8dd5daf2fa5555ab13751b159703124fd493a437`
+- Date/author: 2026-08-26 / reverie-hub
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `python/sglang/srt/server_args.py`, `test/run_suite.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - tests: `test/run_suite.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `c94c3ca2c` - fix: gateway wheel is at workspace root target/wheels
+
+- Full hash: `c94c3ca2c8341c501b46a32c750e32dfe8ce4e06`
+- Date/author: 2026-08-26 / zhangyh15
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/release-whl-manual-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-whl-manual-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `f6d701c52` - Fix stale HCU Stage B test paths
+
+- Full hash: `f6d701c520529490926e3c350682b7fe7ca6f9d0`
+- Date/author: 2026-08-26 / reverie-hub
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/pr-test-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `a2de3b8cf` - ci(hcu): use bash for wheel build jobs
+
+- Full hash: `a2de3b8cffc365e5f813d2ddd6c7226abe29db90`
+- Date/author: 2026-08-26 / dddddddxl
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `2866df994` - ci(hcu): trust wheel build workspaces
+
+- Full hash: `2866df9948b40e81405fcf5947ef74b8f744c9a3`
+- Date/author: 2026-08-27 / dddddddxl
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `7609d9af6` - [feature]适配hcu发包
+
+- Full hash: `7609d9af69ac40ed6730564cde4934d5b3e4a540`
+- Date/author: 2026-08-27 / zhangyh15
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`, `python/pyproject_hcu.toml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-pypi-nightly-hcu.yml`
+  - other: `docker/hcu.Dockerfile`; `python/pyproject_hcu.toml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `6b468d012` - [feature] hcu ci: docker 镜像加 daily 定时触发, router 编包改用 vendored openssl, 镜像补装 flash_kda
+
+- Full hash: `6b468d012bcf693157cee193493842185165b93b`
+- Date/author: 2026-08-27 / zhangyh15
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-docker-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `68dcd498a` - [ci] hcu ci 文件与 release/20260825_v0.5.18 分支保持一致
+
+- Full hash: `68dcd498aa7550a39e7f53b6588e19785efd5cae`
+- Date/author: 2026-08-28 / zhangyh15
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-docker-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `bc990ebd5` - [ci] 删除 release-whl-manual-hcu.yml (功能与 nightly/pr 编包重复)
+
+- Full hash: `bc990ebd52e0ae2500dc3c0ab4eeba187e84965b`
+- Date/author: 2026-08-28 / zhangyh15
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/release-whl-manual-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-whl-manual-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `3ca61517d` - ci-remove-amd-status-from-pr-summaries
+
+- Full hash: `3ca61517d037e82ba19c981dd66ddaf0245e85cd`
+- Date/author: 2026-08-31 / dddddddxl
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/pr-states.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-states.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `e864c3028` - ci: enable HCU PR tests for release branches (#272)
+
+- Full hash: `e864c302870000325162a5788883997cc850ade8`
+- Date/author: 2026-08-31 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/pr-test-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `8fa7122b3` - [FEATURE]构建镜像之后触发模型测试 (#277)
+
+- Full hash: `8fa7122b3ace4a4de48372ee3c4c3346871281d7`
+- Date/author: 2026-09-01 / Crowder13
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/release-docker-hcu.yml`, `docker/image-citest-conf-hcu.yaml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-image-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+  - other: `docker/image-citest-conf-hcu.yaml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `9d261478d` - [CI] Update HCU model asset paths on main (#285)
+
+- Full hash: `9d261478d6ace185f3e35a7211fc411b64d2057f`
+- Date/author: 2026-09-02 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `README_HCU.md`, `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_exec.sh`, `test/registered/hcu/accuracy/bw1100/test_gsm8k_eval_hcu.py`, `test/registered/hcu/accuracy/bw1100/test_mmlu_eval_hcu.py`, `test/registered/hcu/backends/bw1100/test_torch_compile_cuda_graph_hcu.py`, `test/registered/hcu/distributed/bw1100/test_hicache_pp_hcu.py`, `test/registered/hcu/distributed/bw1100/test_pp_consistency_hcu.py` 等 10 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `README_HCU.md`; `scripts/ci/hcu/hcu_ci_exec.sh`
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`; `test/registered/hcu/accuracy/bw1100/test_gsm8k_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_mmlu_eval_hcu.py`; `test/registered/hcu/backends/bw1100/test_torch_compile_cuda_graph_hcu.py`; `test/registered/hcu/distributed/bw1100/test_hicache_pp_hcu.py`; `test/registered/hcu/distributed/bw1100/test_pp_consistency_hcu.py`; `test/registered/hcu/distributed/bw1100/test_tp_dp_consistency_hcu.py`; `test/registered/hcu/spec/test_ngram_speculative_decoding_hcu.py`
+- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+
+#### Commit `6fe7ce909` - ci(hcu): restore run suite file filters (#290)
+
+- Full hash: `6fe7ce9097c8e9f1b7dccefbe4834a7f928a78c2`
+- Date/author: 2026-09-02 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `test/run_suite.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - tests: `test/run_suite.py`
+- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+
+#### Commit `2828bde71` - ci(hcu): align llguidance and model asset paths (#299)
+
+- Full hash: `2828bde71da3f5f6314aa4022ae7e163dfc33ada`
+- Date/author: 2026-09-03 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `scripts/ci/hcu/hcu_ci_exec.sh`; `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+#### Commit `0457572a1` - [FEATURE]CInotificate发送飞书通知时，把镜像数据推送到数据库 (#308)
+
+- Full hash: `0457572a14edd55e05220726ff4a8af8b1931771`
+- Date/author: 2026-09-04 / Crowder13
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/nightly-test-image-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-image-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `0af71f61b` - fix(ci): update HCU evaluation dependencies and asset paths (#325)
+
+- Full hash: `0af71f61b693c2bd2817a678e007660222db9bf3`
+- Date/author: 2026-09-08 / tianly
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/hcu_ci_start_container.sh`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `scripts/ci/hcu/hcu_ci_exec.sh`; `scripts/ci/hcu/hcu_ci_install_dependency.sh`; `scripts/ci/hcu/hcu_ci_start_container.sh`
+- Risk and verification: No explicit test surface is visible; reuse should add a minimal reproduction and target-model regression check.
+
+#### Commit `b5108cc7f` - ci(hcu): use v0.5.18 image and restore eval dependencies (#347)
+
+- Full hash: `b5108cc7fea82d75da174f8f6681a843d43c462b`
+- Date/author: 2026-09-14 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh`, `scripts/ci/utils/sgl_eval_ref.sh`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh`; `scripts/ci/utils/sgl_eval_ref.sh`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `516261baf` - ci(hcu): register sampling test and adjust MMLU threshold (#359)
+
+- Full hash: `516261baf108e56bcb4a03dc7294a936e9656a2d`
+- Date/author: 2026-09-14 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `test/registered/sampling/test_pytorch_sampling_backend.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - tests: `test/registered/sampling/test_pytorch_sampling_backend.py`
+- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+
+#### Commit `575cf4797` - ci(hcu): restore source mode for test-only PRs (#364)
+
+- Full hash: `575cf47976761be9916048cfe2ca244b56d63fab`
+- Date/author: 2026-09-14 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `test/registered/hcu/openai_server/test_serving_chat_hcu.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+  - tests: `test/registered/hcu/openai_server/test_serving_chat_hcu.py`
+- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+
+#### Commit `7c8272a3a` - [BUGFIX]更新AICC安装方式 (#367)
+
+- Full hash: `7c8272a3a32d25391c8bc20e0c0678d3c9ac895d`
+- Date/author: 2026-09-15 / Crowder13
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-docker-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `ae14a99e5` - fix(ci): fix HCU wheel build target routing (#372)
+
+- Full hash: `ae14a99e502d0e5dbed8abf42e3b35eb8807c3c5`
+- Date/author: 2026-09-15 / tianly
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `5c03a8e22` - [FEATURE]daily镜像将tag打入环境变量, dtk自动更新最新的blas (#376)
+
+- Full hash: `5c03a8e22f8cfeef0f10cd909231862bd446cc30`
+- Date/author: 2026-09-15 / Crowder13
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-docker-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `adc1d69b2` - ci(hcu): align main wheel builds with 0.5.18 runtime (#379)
+
+- Full hash: `adc1d69b2a610fc000ca27e4b92c72e9c1b85044`
+- Date/author: 2026-09-16 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/test_hcu_build_alignment.py`, `scripts/ci/hcu/test_hcu_wheel_version.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_install_dependency.sh`; `scripts/ci/hcu/test_hcu_build_alignment.py`; `scripts/ci/hcu/test_hcu_wheel_version.py`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `ae5c33991` - Update quality gate workflow to use stable version
+
+- Full hash: `ae5c33991be7f0e277f71c4e853c10fc11cbe627`
+- Date/author: 2026-09-21 / Lvjiajia
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 调度/缓存/PD
+- Main files: `.github/workflows/quality-gate.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/quality-gate.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `cb932f5fb` - feat(ci) compaity sgl-kernal main to v0.5.12 (#421)
+
+- Full hash: `cb932f5fbd904a577093a262c6a101834a1ef994`
+- Date/author: 2026-09-21 / 463975089
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/release-pr-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-pr-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `a981685e7` - fix release-pr-hcu.yml build sglang (#423)
+
+- Full hash: `a981685e7f137a9e0629cbdcad2ad7bdd42017b9`
+- Date/author: 2026-09-21 / 463975089
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/release-pr-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-pr-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `b5ca753bc` - ci(hcu): run nightly against v0.5.18 and report its results (#432)
+
+- Full hash: `b5ca753bc8e054ce99b4c01b0369eb89c6870dbb`
+- Date/author: 2026-09-22 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/nightly-test-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `2871c8fdd` - ci(hcu): docker 镜像改从 dev 基础镜像内联安装 DTK 26.04.1-72cu-0911 (#438)
+
+- Full hash: `2871c8fdd9594de894546b144d253c3dd88fd900`
+- Date/author: 2026-09-23 / Crowder13
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-docker-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `7be1324cf` - ci: report sglang nightly packages to DashHub (#424)
+
+- Full hash: `7be1324cf827dafe9f09ec3f86ade353801b5e1e`
+- Date/author: 2026-09-23 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/release-pypi-nightly-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-pypi-nightly-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `665b27d1f` - feat(ci) fix main build whl failed (#449)
+
+- Full hash: `665b27d1fa35017a437b0aa0099a5f8aa33e5d9b`
+- Date/author: 2026-09-24 / 463975089
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/release-pr-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-pr-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `5e8269d55` - [BUGFIX]镜像DTK版本号不对 (#447)
+
+- Full hash: `5e8269d55a8cf4629cc39a3171169f4aa8b4d14b`
+- Date/author: 2026-09-28 / Crowder13
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/release-docker-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/release-docker-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `e05f146be` - ci(hcu): migrate main workflows to organization runners (#463)
+
+- Full hash: `e05f146bed9ca80c72a18a4946fd6f838d8e7774`
+- Date/author: 2026-09-30 / dingxinlong
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/labeler.yml`, `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/pr-states.yml` 等 12 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`; `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/hcu-manual-model-test.yml`; `.github/workflows/labeler.yml`; `.github/workflows/lint-hcu.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/nightly-test-image-hcu.yml`; `.github/workflows/pr-states.yml` 等 12 个文件
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `fb46d17ad` - add optest process (#481)
+
+- Full hash: `fb46d17ad9f633aa7fee521484262b0c26de560d`
+- Date/author: 2026-10-09 / Lee156
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `f0ee2a505` - FIX(detokenizer): stream through genuine U+FFFD instead of holding until finish (#473)
+
+- Full hash: `f0ee2a5059c2d6a167bee3d996bca004276b3138`
+- Date/author: 2026-10-09 / JackPeng
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/managers/detokenizer_manager.py`, `test/registered/unit/managers/test_detokenizer_incremental.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/managers/detokenizer_manager.py`
+  - tests: `test/registered/unit/managers/test_detokenizer_incremental.py`
+- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+
+#### Commit `4205397cb` - add password-free download code (#499)
+
+- Full hash: `4205397cbcf8c60852fadd7306cea32f2541a19d`
+- Date/author: 2026-10-10 / Lee156
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/nightly-test-operator-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `3b0e4a073` - [Fix] Bound crash diagnostics and fatal shutdown on main (#498)
+
+- Full hash: `3b0e4a07393778001dcd518d2b11de225e1be8c8`
+- Date/author: 2026-10-10 / 王启宇
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `docs/docs/references/environment_variables.mdx`, `python/sglang/srt/managers/multi_tokenizer_mixin.py`, `python/sglang/srt/managers/tokenizer_manager.py`, `python/sglang/srt/utils/cudacore_pyspy_dump_utils.py`, `test/registered/unit/utils/test_bounded_fatal_shutdown.py`, `test/registered/unit/utils/test_bounded_pyspy.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `docs/docs/references/environment_variables.mdx`
+  - other: `python/sglang/srt/managers/multi_tokenizer_mixin.py`; `python/sglang/srt/managers/tokenizer_manager.py`
+  - runtime-perf: `python/sglang/srt/utils/cudacore_pyspy_dump_utils.py`
+  - tests: `test/registered/unit/utils/test_bounded_fatal_shutdown.py`; `test/registered/unit/utils/test_bounded_pyspy.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `50b0d0051` - Delegate HCU model deployment smoke CI to external controller (#503)
+
+- Full hash: `50b0d005189ee23cf3046b86dc44986c5e6b9345`
+- Date/author: 2026-10-12 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `f9b972b37` - Use a clean checkout directory for the model smoke controller (#510)
+
+- Full hash: `f9b972b372f8695154301e2d7cee24195a963250`
+- Date/author: 2026-10-12 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/cookbook-deployment-smoke.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `b6dd37e66` - Run cookbook smoke tests for all cases by default
+
+- Full hash: `b6dd37e66ad4f820a75614c8b0e6f54ffa67c796`
+- Date/author: 2026-10-12 / gcy
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/cookbook-deployment-smoke.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `e295faff5` - update ci name&&add optest log (#515)
+
+- Full hash: `e295faff5dc889c97626f7bd25f6a8ca0a0f100c`
+- Date/author: 2026-10-12 / Lee156
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/nightly-test-operator-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `78c700ee0` - Add image input to cookbook deployment smoke workflow (#530)
+
+- Full hash: `78c700ee0100f215268a3a802538881f281f29e2`
+- Date/author: 2026-10-14 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/cookbook-deployment-smoke.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `cc3758967` - Pass DashHub credential to deployment smoke controller (#534)
+
+- Full hash: `cc3758967d74748204015a050182e5ad176c8a08`
+- Date/author: 2026-10-15 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 通用实现调整
+- Main files: `.github/workflows/cookbook-deployment-smoke.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `fc095e059` - fix(bench): reuse --tokenize-prompt for generated shared-prefix token IDs (#533)
+
+- Full hash: `fc095e059889d2fae91e86a5b3e5fa19eb8d7a34`
+- Date/author: 2026-10-15 / chaoyujiang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/benchmark/datasets/common.py`, `python/sglang/benchmark/datasets/generated_shared_prefix.py`, `python/sglang/benchmark/serving.py`, `test/registered/bench_fn/test_benchmark_datasets_api.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/benchmark/datasets/common.py`; `python/sglang/benchmark/datasets/generated_shared_prefix.py`; `python/sglang/benchmark/serving.py`
+  - tests: `test/registered/bench_fn/test_benchmark_datasets_api.py`
+- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+
+#### Commit `87b9d5c85` - Run cookbook deployment checks after HCU image publishing (#548)
+
+- Full hash: `87b9d5c85eafab11fe18235718c1af37b348d784`
+- Date/author: 2026-10-16 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/release-docker-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`; `.github/workflows/release-docker-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `f89209aa8` - ci: pass package server to Cookbook model tests (#556)
+
+- Full hash: `f89209aa84a4fd0619d0662f6adf6980740efc78`
+- Date/author: 2026-10-19 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/cookbook-deployment-smoke.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `a8543c813` - [CI] cookbook: Add BW1000 deployment smoke tests (#570)
+
+- Full hash: `a8543c8131d429500411b8ba235b5411ddbabbd3`
+- Date/author: 2026-10-20 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/cookbook-deployment-smoke.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `6dac3481c` - [Fix] ci: Preserve model cases in DashHub operator reporting (#604)
+
+- Full hash: `6dac3481cd73b48641f481b14858187d1936ee81`
+- Date/author: 2026-10-28 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `098f31d69` - fix(ci) rebase pr-test-hcu.yml release-pr-hcu.yml (#612)
+
+- Full hash: `098f31d695ce94169e6adf9ce55109beb532b326`
+- Date/author: 2026-10-28 / 463975089
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `029b6e641` - [CI] model-ci: Pass history token for daily comparison report (#607)
+
+- Full hash: `029b6e6418828280e22086449dfa174433d2788b`
+- Date/author: 2026-10-28 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/cookbook-deployment-smoke.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `fd98647ed` - [Fix] ci: Restore previous DashHub operator reporting (#614)
+
+- Full hash: `fd98647ed1fc3d911926ea9d399b69934303c104`
+- Date/author: 2026-10-28 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `25aa13e98` - fix(ci) rebase pr-test-hcu.yml (#617)
+
+- Full hash: `25aa13e98fe76d262d87c0b798ec8a3215ffb703`
+- Date/author: 2026-10-29 / 463975089
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 缺陷修复
+- Main files: `.github/workflows/pr-test-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `db479b030` - [CI] optest: Report outcome to DashHub (#619)
+
+- Full hash: `db479b030f0975dbda241bf46fc4556a89a02365`
+- Date/author: 2026-10-29 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/nightly-test-operator-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `9fb319cc3` - [CI] optest: Require every enabled operator result (#622)
+
+- Full hash: `9fb319cc33a15b624970b0f5e45020e2a573dc07`
+- Date/author: 2026-10-29 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/nightly-test-operator-hcu.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `471ab8254` - Add one-time DashHub recovery for run 41338132822 (#633)
+
+- Full hash: `471ab8254520c958d3c614e768a29b10423f7cf2`
+- Date/author: 2026-11-02 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/dashhub-recover-41338132822.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/dashhub-recover-41338132822.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `594e1ae94` - [Chore] ci: Remove completed DashHub recovery workflow (#634)
+
+- Full hash: `594e1ae94c6103dabed4152a4ebbcca6fb049aeb`
+- Date/author: 2026-11-02 / guochenyang
+- Branch update: `release/20260825_v0.5.18..main`
+- Auto category: 测试/文档/基准
+- Main files: `.github/workflows/dashhub-recover-41338132822.yml`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/dashhub-recover-41338132822.yml`
+- Risk and verification: Mostly affects CI or engineering flow; use it as build, test, or dependency context for profiling work.
+
+#### Commit `962617b2d` - WeLM v4.5 support on HCU (squash of yaoyupings/sglang-das v0.5.18_welm)
+
+- Full hash: `962617b2d8f42175937aa79cfe36d14db4e02884`
+- Date/author: 2026-10-23 / sunjf
+- Branch update: `release/20260825_v0.5.18..release/20261023_v0.5.18_welm`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/batch_invariant_ops/batch_invariant_ops.py`, `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/attention/welm_dedup_decode.py`, `python/sglang/srt/layers/attention/welm_fa256_src/build.sh` 等 55 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/batch_invariant_ops/batch_invariant_ops.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/logits_processor.py`; `python/sglang/srt/layers/welm_oe_host.py`; `python/sglang/srt/layers/welm_oe_host_src/build.sh`; `python/sglang/srt/layers/welm_oe_host_src/export_oe.py`; `python/sglang/srt/layers/welm_oe_host_src/oe_host_gather.cpp`; `python/sglang/srt/layers/welmv4_fast_op.py` 等 14 个文件
+  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/runner_utils/buffers.py`; `python/sglang/srt/models/welmv4.py`; `python/sglang/srt/models/welmv4_nextn.py`; `python/sglang/srt/models/welmv4_vlm.py`; `python/sglang/srt/server_args.py`; `python/sglang/srt/speculative/eagle_worker_common.py` 等 10 个文件
+  - runtime-perf: `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`; `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/layers/attention/welm_dedup_decode.py`; `python/sglang/srt/layers/attention/welm_fa256_src/build.sh`; `python/sglang/srt/layers/attention/welm_fa256_src/flags.txt`; `python/sglang/srt/layers/attention/welm_fa256_src/lflags.txt`; `python/sglang/srt/layers/attention/welm_fa256_src/welm_fa256.cpp` 等 31 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `eaa872862` - fix: support API key with multiple tokenizer workers (#559)
+
+- Full hash: `eaa8728623fbab132f881e470e7715ff69ac9bff`
+- Date/author: 2026-10-20 / zhengzhi
+- Branch update: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/entrypoints/http_server.py`, `python/sglang/srt/utils/auth.py`, `test/registered/unit/entrypoints/test_http_server_auth_config.py`, `test/registered/unit/spec/test_ngram_corpus.py`, `test/registered/unit/utils/test_http_server_auth.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/utils/auth.py`
+  - runtime-model: `python/sglang/srt/entrypoints/http_server.py`
+  - tests: `test/registered/unit/entrypoints/test_http_server_auth_config.py`; `test/registered/unit/spec/test_ngram_corpus.py`; `test/registered/unit/utils/test_http_server_auth.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `4c5ac2ee0` - fix(disagg): defer cached-prefix sends during cache loads (#562)
+
+- Full hash: `4c5ac2ee05e286d7f5c05cb789c60fdea4db0f58`
+- Date/author: 2026-10-20 / 千纱都
+- Branch update: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/managers/scheduler.py`, `test/manual/hicache/test_pd_cached_prefix_load_ordering.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/disaggregation/prefill.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
+  - tests: `test/manual/hicache/test_pd_cached_prefix_load_ordering.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `f0a0530ce` - [Fix] grammar: 同步 Prefill CP 的 Grammar 请求准入与失败状态 (#589)
+
+- Full hash: `f0a0530ce34fa7986c05c010146acb8ea0c20464`
+- Date/author: 2026-10-23 / JingLee
+- Branch update: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/constrained/grammar_manager.py`, `python/sglang/srt/managers/scheduler.py`, `test/registered/unit/constrained/test_grammar_manager.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/constrained/grammar_manager.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
+  - tests: `test/registered/unit/constrained/test_grammar_manager.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `c66f34363` - [Fix] TokenizerManager: 修复客户端断开后已下发请求未被终止的问题 (#628)
+
+- Full hash: `c66f3436365416bf3bb14c6e1b3665b669608573`
+- Date/author: 2026-10-30 / zhengzhi
+- Branch update: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/managers/tokenizer_manager.py`, `test/registered/unit/managers/test_tokenizer_manager_rid_cleanup.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/managers/tokenizer_manager.py`
+  - tests: `test/registered/unit/managers/test_tokenizer_manager_rid_cleanup.py`
+- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_END -->

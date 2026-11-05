@@ -498,3 +498,43 @@
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
 <!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_END -->
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_START -->
+## release/20260825_v0.5.18 到 release_v0.5.18_deepseekv4 本地独有提交补充
+
+### 覆盖说明
+
+- 来源仓库: `HYGON-AI/sglang-das`；分支端点: `release/20260825_v0.5.18`@`2c841655f`, `main`@`5343b311c`, `release/20261023_v0.5.18_welm`@`962617b2d`, `release_v0.5.18_deepseekv4`@`c66f34363`
+- 口径: 仅记录不可从 `sgl-project/sglang` GitHub refs 到达的本地 fork 独有提交；合并提交也保留。
+- 生成日期: 2026-11-05
+- 本章节提交数: 1（其中 merge 0）
+- 分支更新段: `release/20260825_v0.5.18..main`, `release/20260825_v0.5.18..release/20261023_v0.5.18_welm`, `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- 归类说明: 命中具体模型名、模型文件的提交进入对应模型桶（可同时进入多个）；其余运行时、后端、CI、测试提交进入 `shared`；仅有 merge 或无相关路径的提交进入 `unclassified`。改动文件数超过 150 的批量同步/重命名提交（如整合官方 main 的 squash 同步）也只进入 `unclassified`，其内容含上游代码，不能当作本地独有实现。自动归类，未逐条人工审阅 diff。
+
+### 涉及文件
+
+| 文件 | 本地提交 |
+| --- | --- |
+| `docker/image-citest-conf-hcu.yaml` | `9cd15042a` |
+
+### 时间线
+
+| 日期 | Commit | 分支更新段 | 分类 | 标题 | 主要文件 |
+| --- | --- | --- | --- | --- | --- |
+| 2026-09-23 | `9cd15042a` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | feat(citest): 更新镜像测试用例, 适配 0.5.18 (Qwen3.8 / DeepSeek-V4) (#433) | `docker/image-citest-conf-hcu.yaml` |
+
+### 逐 Commit 审计卡
+
+#### Commit `9cd15042a` - feat(citest): 更新镜像测试用例, 适配 0.5.18 (Qwen3.8 / DeepSeek-V4) (#433)
+
+- 完整 hash: `9cd15042af60905ef088d409908e41e330fbf345`
+- 时间/作者: 2026-09-23 / Crowder13
+- 分支更新段: `release/20260825_v0.5.18..main`
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docker/image-citest-conf-hcu.yaml`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - other: `docker/image-citest-conf-hcu.yaml`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_END -->
