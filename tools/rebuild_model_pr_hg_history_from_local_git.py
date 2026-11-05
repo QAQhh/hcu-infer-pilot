@@ -49,6 +49,11 @@ HISTORY_ROOT = Path(
         str(ROOT / "model-pr-optimization-hg-history"),
     )
 )
+# Labels shown in generated docs; keep machine-specific paths out of the KB.
+WORKTREE_LABELS = {
+    "sglang": os.environ.get("SGLANG_HG_HISTORY_LABEL", "HYGON-AI/sglang-das"),
+    "vllm": os.environ.get("VLLM_HG_HISTORY_LABEL", "HYGON-AI/vllm-plugin-das"),
+}
 TODAY = date.today().isoformat()
 
 COMMIT_LIMIT = int(os.environ.get("MODEL_PR_HG_HISTORY_LIMIT", "3000"))
@@ -455,7 +460,7 @@ def render_zh(framework: str, model: str, files: list[str], commits: list[Commit
 
         ## 本地提交覆盖总览
 
-        - 来源工作树: `{FRAMEWORK_ROOTS[framework]}`
+        - 来源工作树: `{WORKTREE_LABELS[framework]}`
         - 生成日期: {TODAY}
         - 文档提交数: {len(commits)}
         - 自动归类说明: 直接命中模型文件或模型名的提交进入模型桶；无法安全锚定到单一模型家族的运行时、后端、调度、缓存、CI、测试提交进入 framework `shared/` 桶。
@@ -491,7 +496,7 @@ def render_en(framework: str, model: str, files: list[str], commits: list[Commit
 
         ## Local Commit Coverage Summary
 
-        - Source worktree: `{FRAMEWORK_ROOTS[framework]}`
+        - Source worktree: `{WORKTREE_LABELS[framework]}`
         - Generated date: {TODAY}
         - Commits in this document: {len(commits)}
         - Auto-classification note: commits matching model files or model names enter the model bucket; runtime, backend, scheduler, cache, CI, and test commits that cannot be pinned to one model family enter the framework `shared/` bucket.
@@ -530,16 +535,16 @@ def write_indexes() -> None:
         )
 
 
-def rebuild(dry_run: bool = False) -> None:
+def rebuild(dry_run: bool = False, frameworks: tuple[str, ...] = ("sglang", "vllm")) -> None:
     if not dry_run:
         HISTORY_ROOT.mkdir(parents=True, exist_ok=True)
     official_by_framework = {
-        "sglang": official_sglang_commits(),
+        "sglang": official_sglang_commits() if "sglang" in frameworks else set(),
         "vllm": set(),
     }
     if not dry_run:
         write_indexes()
-    for framework in ("sglang", "vllm"):
+    for framework in frameworks:
         all_files = git_files(framework)
         commits = filter_local_only_commits(
             framework,
@@ -580,6 +585,16 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument(
+        "--framework",
+        action="append",
+        choices=("sglang", "vllm"),
+        help=(
+            "Only rebuild the given framework; repeat for both. Defaults to all. "
+            "Use this when one local worktree is not a complete clone, so its "
+            "docs are not overwritten with partial history."
+        ),
+    )
+    parser.add_argument(
         "--sglang-official-ref-prefix",
         default=SGLANG_OFFICIAL_REF_PREFIX,
         help=(
@@ -607,10 +622,11 @@ def main() -> int:
     SGLANG_OFFICIAL_REF_PREFIX = args.sglang_official_ref_prefix
     SGLANG_REQUIRE_OFFICIAL_FILTER = not args.allow_missing_sglang_official_filter
     SGLANG_DISABLE_OFFICIAL_FILTER = args.disable_sglang_official_filter
-    missing = [str(path) for path in FRAMEWORK_ROOTS.values() if not path.exists()]
+    frameworks = tuple(args.framework) if args.framework else ("sglang", "vllm")
+    missing = [str(FRAMEWORK_ROOTS[name]) for name in frameworks if not FRAMEWORK_ROOTS[name].exists()]
     if missing:
         raise SystemExit(f"missing local framework worktrees: {', '.join(missing)}")
-    rebuild(dry_run=args.dry_run)
+    rebuild(dry_run=args.dry_run, frameworks=frameworks)
     return 0
 
 
