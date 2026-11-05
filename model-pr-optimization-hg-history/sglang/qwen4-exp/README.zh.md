@@ -239,3 +239,19 @@
 - 该分支更新段内没有归入本桶的本地独有提交。
 
 <!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_END -->
+
+<!-- LOCAL_ONLY_FULL_MAIN_TO_20261105_START -->
+## hg-full-base 到 main 本地独有提交补充
+
+### 覆盖说明
+
+- 来源仓库: `HYGON-AI/sglang-das`；分支端点: `hg-full-base`@`92b1d382c`, `main`@`5343b311c`
+- 口径: 仅记录不可从 `sgl-project/sglang` GitHub refs 到达的本地 fork 独有提交；合并提交也保留。
+- 生成日期: 2026-11-05
+- 本章节提交数: 0（其中 merge 0）
+- 分支更新段: `hg-full-base..main`
+- 归类说明: 命中具体模型名、模型文件的提交进入对应模型桶（可同时进入多个）；其余运行时、后端、CI、测试提交进入 `shared`；仅有 merge 或无相关路径的提交进入 `unclassified`。改动文件数超过 150 的批量同步/重命名提交（如整合官方 main 的 squash 同步）也只进入 `unclassified`，其内容含上游代码，不能当作本地独有实现。自动归类，未逐条人工审阅 diff。
+
+- 该分支更新段内没有归入本桶的本地独有提交。
+
+<!-- LOCAL_ONLY_FULL_MAIN_TO_20261105_END -->

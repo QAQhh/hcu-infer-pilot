@@ -4,15 +4,93 @@
 
 | 文件 | 本地提交 |
 | --- | --- |
-| ... | 2951 more files omitted from table; all were used for git tracing. |
-
-| - | 无本地独有提交 |
+| `.codespellrc` | `35456bae31` |
+| `.coveragerc` | 无直接提交 |
+| `.dockerignore` | 无直接提交 |
+| `.git-blame-ignore-revs` | 无直接提交 |
+| `.github/CI_PERMISSIONS.json` | 无直接提交 |
+| `.github/CODEOWNERS` | 无直接提交 |
+| `.github/FOLDER_README.md` | 无直接提交 |
+| `.github/ISSUE_TEMPLATE/1-bug-report.yml` | 无直接提交 |
+| `.github/ISSUE_TEMPLATE/2-feature-request.yml` | 无直接提交 |
+| `.github/ISSUE_TEMPLATE/3-playground-verified-cell.yml` | 无直接提交 |
+| `.github/MAINTAINER.md` | 无直接提交 |
+| `.github/actions/check-maintenance/action.yml` | 无直接提交 |
+| `.github/actions/check-pr-test-health/action.test.cjs` | 无直接提交 |
+| `.github/actions/check-pr-test-health/action.yml` | 无直接提交 |
+| `.github/actions/download-rust-ext/action.yml` | 无直接提交 |
+| `.github/actions/upload-cuda-coredumps/action.yml` | 无直接提交 |
+| `.github/actions/wait-for-jobs/action.yml` | 无直接提交 |
+| `.github/audit_permission.py` | 无直接提交 |
+| `.github/labeler.yml` | 无直接提交 |
+| `.github/linters/lychee-ci.toml` | 无直接提交 |
+| `.github/linters/lychee.toml` | 无直接提交 |
+| `.github/open-source-compliance.json` | `e3fee4310d`, `758a0a9890` |
+| `.github/pull_request_template.md` | 无直接提交 |
+| `.github/scripts/ci-labels.cjs` | 无直接提交 |
+| `.github/scripts/pr-check-comment.cjs` | 无直接提交 |
+| `.github/scripts/pr-title.test.cjs` | 无直接提交 |
+| `.github/update_ci_permission.py` | 无直接提交 |
+| `.github/workflows/_docker-build-and-publish.yml` | 无直接提交 |
+| `.github/workflows/_docker-cleanup-nightly.yml` | 无直接提交 |
+| `.github/workflows/_npu-analyze-failure.yml` | 无直接提交 |
+| `.github/workflows/_npu-pr-test-stage.yml` | `c40703e6b4` |
+| `.github/workflows/_npu-single-node-test-stage.yml` | `c40703e6b4` |
+| `.github/workflows/_pr-test-check-changes.yml` | 无直接提交 |
+| `.github/workflows/_pr-test-rust-ext-build.yml` | 无直接提交 |
+| `.github/workflows/_pr-test-sgl-kernel-build.yml` | 无直接提交 |
+| `.github/workflows/_pr-test-simulator-cpu.yml` | 无直接提交 |
+| `.github/workflows/_pr-test-stage-cpu.yml` | 无直接提交 |
+| `.github/workflows/_pr-test-stage.yml` | 无直接提交 |
+| `.github/workflows/amd-aiter-scout.yml` | `111fea82f3`, `b2f0b830c2`, `b38f25513e` |
+| `.github/workflows/amd-ci-job-monitor.yml` | `111fea82f3`, `b2f0b830c2`, `b38f25513e` |
+| `.github/workflows/auto-tune.yml` | 无直接提交 |
+| `.github/workflows/bot-bump-docs-version.yml` | `92ce544fac` |
+| `.github/workflows/bot-bump-flashinfer-version.yml` | 无直接提交 |
+| `.github/workflows/bot-bump-kernel-version-to-sglang.yml` | 无直接提交 |
+| `.github/workflows/bot-bump-kernel-version.yml` | 无直接提交 |
+| `.github/workflows/bot-bump-sglang-version.yml` | 无直接提交 |
+| `.github/workflows/bot-cherry-pick.yml` | 无直接提交 |
+| `.github/workflows/cancel-pr-workflows-on-close.yml` | 无直接提交 |
+| `.github/workflows/cancel-unfinished-pr-tests.yml` | 无直接提交 |
+| `.github/workflows/ci-auto-bisect.yml` | `dc5cd70892` |
+| `.github/workflows/ci-coverage-overview.yml` | `111fea82f3`, `b2f0b830c2`, `b38f25513e` |
+| `.github/workflows/ci-failure-monitor.yml` | 无直接提交 |
+| `.github/workflows/ci-lark-notify.yml` | 无直接提交 |
+| `.github/workflows/ci-model-inventory.yml` | `111fea82f3`, `b2f0b830c2` |
+| `.github/workflows/close-inactive-issues.yml` | 无直接提交 |
+| `.github/workflows/close-stale-prs.yml` | 无直接提交 |
+| `.github/workflows/cookbook-deployment-smoke.yml` | `029b6e6418`, `a8543c8131`, `f89209aa84`, `87b9d5c85e`, `cc3758967d`, `78c700ee01`, `b6dd37e66a`, `f9b972b372`, `50b0d00518` |
+| `.github/workflows/coverage-collection-npu.yml` | 无直接提交 |
+| `.github/workflows/full-test-npu.yml` | 无直接提交 |
+| `.github/workflows/hcu-feishu-notify-preview.yml` | `e05f146bed`, `9c69436eed`, `0ff7a014fe`, `65b7c42689`, `6ac12c2e50`, `2c21b95e60` |
+| `.github/workflows/hcu-full-enabled.yml` | `e05f146bed`, `4c7a264e5c`, `dabae6b13a`, `71de6dd93d`, `02968a96de`, `bfa4011ad0`, `e3fee4310d` |
+| `.github/workflows/hcu-manual-model-test.yml` | `e05f146bed`, `4c7a264e5c`, `e3fee4310d` |
+| `.github/workflows/hcu-pd-1p1d.yml` | 无直接提交 |
+| `.github/workflows/labeler.yml` | `e05f146bed`, `e3fee4310d`, `9ed791e147` |
+| `.github/workflows/lint-hcu.yml` | `e05f146bed`, `3e6aaf09d8`, `69c73a1787`, `997e64560f`, `77939d9a53`, `8f848be4e7`, `358a337143`, `e3fee4310d` |
+| `.github/workflows/lint.yml` | `111fea82f3`, `b2f0b830c2` |
+| `.github/workflows/list-active-pr-runs.yml` | 无直接提交 |
+| `.github/workflows/mlu-ci-reliability-report.yml` | 无直接提交 |
+| `.github/workflows/nightly-72-gpu-gb200.yml` | 无直接提交 |
+| `.github/workflows/nightly-amd-mi355x-disagg.yml` | `111fea82f3`, `b2f0b830c2` |
+| `.github/workflows/nightly-experimental-sgl-router-docker.yml` | `111fea82f3`, `b2f0b830c2` |
+| `.github/workflows/nightly-link-check.yml` | 无直接提交 |
+| `.github/workflows/nightly-release-gateway.yml` | `990a1a798d` |
+| `.github/workflows/nightly-test-amd-miles-rocm10-mi30x.yml` | 无直接提交 |
+| `.github/workflows/nightly-test-amd-miles-rocm10.yml` | 无直接提交 |
+| `.github/workflows/nightly-test-amd.yml` | `111fea82f3`, `b2f0b830c2`, `b38f25513e` |
+| `.github/workflows/nightly-test-hcu.yml` | `50b0d00518`, `e05f146bed`, `b5ca753bc8`, `adc1d69b2a`, `b5108cc7fe`, `2866df9948`, `a2de3b8cff`, `6a4a61efba`, `fb7f119564`, `1a5ce1750d`, `b0f2bb3a84`, `02968a96de`, ... (20 total) |
+| `.github/workflows/nightly-test-image-hcu.yml` | `e05f146bed`, `0457572a14`, `8fa7122b3a` |
+| `.github/workflows/nightly-test-intel-wheel.yml` | 无直接提交 |
+| `.github/workflows/nightly-test-intel.yml` | `111fea82f3`, `b2f0b830c2`, `b38f25513e` |
+| ... | 8314 more files omitted from table; all were used for git tracing. |
 
 ## 本地提交覆盖总览
 
-- 来源工作树: `/public/home/yangyn1/work_space/2026/minmax/skills/sglang`
-- 生成日期: 2026-05-20
-- 文档提交数: 53
+- 来源工作树: `HYGON-AI/sglang-das`
+- 生成日期: 2026-11-05
+- 文档提交数: 460
 - 自动归类说明: 直接命中模型文件或模型名的提交进入模型桶；无法安全锚定到单一模型家族的运行时、后端、调度、缓存、CI、测试提交进入 framework `shared/` 桶。
 - 追溯命令: `git log --name-only`
 - 过滤说明: 已剔除可从 `sgl-project/sglang` GitHub refs 到达的官方提交；本文件仅保留本地 fork 独有提交。
@@ -21,245 +99,1278 @@
 
 | 日期 | Commit | 分类 | 标题 | 主要文件 |
 | --- | --- | --- | --- | --- |
-| 2026-05-18 | `5a00fbb22` | 性能/后端优化 | 删除多余代码 | `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/scheduler_profiler_mixin.py` |
-| 2026-05-18 | `dea82e2bc` | 调度/缓存/PD | 去掉无关的代码及注释 | `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/tp_worker.py` |
-| 2026-05-18 | `ce4be7d18` | 性能/后端优化 | hicache功能适配 | `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/mem_cache/hiradix_cache.py`, `python/sglang/srt/mem_cache/memory_pool_host.py` |
-| 2026-05-09 | `55a72732c` | 性能/后端优化 | fix(dcu): 修复HiCache kernel路径访问host pointer导致的VMFault | `sgl-kernel/csrc/kvcacheio/transfer.cu` |
-| 2026-05-06 | `5a811d1de` | 调度/缓存/PD | 修改transfer_kv_all_direct_pf_lf_H2D_dcu参数 | `python/sglang/srt/mem_cache/memory_pool_host.py` |
-| 2026-04-18 | `ec7e2e859` | 性能/后端优化 | 提交本地修改的hicache | `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py` |
-| 2026-05-18 | `9555bc282` | 性能/后端优化 | 修改launch_chunk_fwd_kernel_o算子传参 | `python/sglang/srt/layers/attention/fla/chunk_o.py` |
-| 2026-05-18 | `162699fac` | 性能/后端优化 | [opt]fused_mamba_state_scatter_with_mask算子优化 | `python/sglang/srt/layers/attention/mamba/mamba_state_scatter_triton.py` |
-| 2026-05-18 | `d32a79c65` | 性能/后端优化 | 修改aiter prefill阶段的fla算子传参 | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`, `python/sglang/srt/layers/attention/fla/chunk_o.py` |
-| 2026-05-16 | `4816b3f21` | 性能/后端优化 | [BUG FIX] add missing argument in aiter block fp8 moe | `python/sglang/srt/layers/quantization/fp8.py` |
-| 2026-05-15 | `5daf25b16` | 性能/后端优化 | [feat]适配aiter moe fp8_w8a8 | `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
-| 2026-05-14 | `0474160f8` | 性能/后端优化 | [BUG FIX] RadixAttention should not be skipped regardless of ignore list | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py` |
-| 2026-05-13 | `bd06359df` | 性能/后端优化 | [fix]: SlimQuantW4A8Int8MarlinMoEMethod增加必要的形参 | `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-05-14 | `7b06a6e59` | 缺陷修复 | 修复seq_lens前后不一致，导致开mtp时block_table索引计算有问题，进而导致临界状态传参错误造成vmfault的问题 | `python/sglang/srt/layers/attention/dcu_mla_backend.py` |
-| 2026-05-14 | `87d24d36b` | 性能/后端优化 | [bugfix]fix aiter_chunk_gated_delta_rule_fwd_kernel_h_blockdim64函数传参错误，解决qw3.5-35b,qw3.6-35b的精度问题 | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py` |
-| 2026-05-13 | `06751b190` | 性能/后端优化 | [feat]lightop不支持的moe size转到aiter进行支持 | `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py` |
-| 2026-05-14 | `5d71e7e7a` | 性能/后端优化 | fix some error in initial version | `python/sglang/srt/layers/attention/flashattention_interface.py` |
-| 2026-05-13 | `1b7bdda04` | 性能/后端优化 | [feat]修改chunk_gated_delta_rule_fwd_kernel_h_blockdim64算子的import 路径从而适配新版本aiter | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py` |
-| 2026-05-12 | `423d7d102` | 缺陷修复 | [BUG FIX] eliminate trace bubbles in MTP graph reply stage by avoiding implicit conversion | `python/sglang/srt/layers/attention/triton_backend.py` |
-| 2026-05-08 | `8401bfecf` | 通用实现调整 | 接入causal_conv1d_fn_dcu算子实现 | `python/sglang/srt/layers/attention/linear/gdn_backend.py` |
-| 2026-05-08 | `2e6a7a94d` | 性能/后端优化 | 增加aiter的fused_sigmoid_gating_delta_rule_update算子实现 | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`, `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py` |
-| 2026-05-07 | `3c1dba355` | 性能/后端优化 | 修复slimquant_w4a8中blaslt路径的量化算子调用与权重布局 | `python/sglang/srt/layers/quantization/slimquant_w4a8.py` |
-| 2026-05-06 | `dfb359973` | 性能/后端优化 | 修改调用aiter的chunk_gated_delta_rule_fwd算子方法 | `python/sglang/srt/layers/attention/fla/chunk.py`, `python/sglang/srt/layers/attention/fla/chunk_delta_h.py` |
-| 2026-04-29 | `b80efea17` | 性能/后端优化 | 修改w4a8重排逻辑，适配deepgemm新包 | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`, `python/sglang/srt/layers/quantization/w4a8_utils.py` |
-| 2026-04-28 | `16df9541d` | 性能/后端优化 | fix(量化): 规范 W8A8 与 Marlin MoE 处理逻辑 | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py` |
-| 2026-04-24 | `f34ecd7de` | 性能/后端优化 | [BUG FIX] fix CUDA graph grid undercoverage in multi-layer EAGLE MTP draft extend | `python/sglang/srt/layers/attention/triton_backend.py` |
-| 2026-04-22 | `c4c4c2148` | 性能/后端优化 | 修复fused_recurrent_gated_delta_rule_packed_decode报错问题 | `python/sglang/srt/layers/attention/fla/fused_recurrent.py` |
-| 2026-04-22 | `39474e90b` | 性能/后端优化 | [feature] linear attn fused_recurrent_gated_delta_rule_packed_decode use aiter | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/fla/chunk.py`, `python/sglang/srt/layers/attention/fla/fused_recurrent.py` |
-| 2026-04-22 | `c840dd8e7` | 性能/后端优化 | [FEAT] update triton extend fwd via aiter | `python/sglang/srt/layers/attention/triton_backend.py` |
-| 2026-04-21 | `fe965ea9e` | 性能/后端优化 | [feature] linear attn chunk_gated_delta_rule_fwd_h use aiter | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/fla/chunk.py` |
-| 2026-04-17 | `1221130a1` | 性能/后端优化 | add aiter moe w4a8 support | `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-04-16 | `cd511513d` | 性能/后端优化 | [FEAT] enable fp8 shuffle weight for asm moe | `python/sglang/srt/layers/quantization/fp8.py` |
-| 2026-04-16 | `a9965e61f` | 性能/后端优化 | adjust aiter_moe para order and w1_zp&w2_zp opt | `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py` |
-| 2026-04-16 | `e2ae2a431` | 通用实现调整 | 修改 pyproject.toml 中的huggingface_hub版本 | `python/pyproject.toml` |
-| 2026-04-16 | `82a13cc79` | 缺陷修复 | fix: 修改 pyproject.toml 中的依赖版本 | `python/pyproject.toml` |
-| 2026-04-15 | `41d14b7c6` | 性能/后端优化 | [FEAT] support FP8 MoE via aiter ASM kernel | `python/sglang/srt/layers/quantization/fp8.py` |
-| 2026-04-15 | `fdf368589` | 性能/后端优化 | fix: 修复bmz上flash_mla不支持fp8 | `python/sglang/srt/layers/attention/dcu_mla_backend.py` |
-| 2026-04-15 | `07469199b` | 性能/后端优化 | dpsk fp8适配fuse_moe_fp8_w8a8 | `python/sglang/srt/layers/quantization/w8a8_fp8.py` |
-| 2026-04-14 | `3a8cd31f5` | 性能/后端优化 | add aiter moe w4f16 support | `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py` |
-| 2026-04-14 | `7859b2885` | 性能/后端优化 | [BUG FIX] fix nn transpose error for fp8 blockwise linear | `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/layers/quantization/fp8_utils.py` |
-| 2026-04-09 | `aa77e2522` | 缺陷修复 | Bugfix:fix mm model attention interface | `python/sglang/srt/layers/attention/vision.py` |
-| 2026-04-07 | `e91aa8029` | 性能/后端优化 | 接入causal_conv1d_update优化算子 | `python/sglang/srt/layers/attention/linear/gdn_backend.py` |
-| 2026-04-07 | `518582021` | 性能/后端优化 | fix deepseek log cudagraph init meta data copy error in bmz when capture cudagraph. | `python/sglang/srt/layers/attention/dcu_mla_backend.py` |
-| 2026-04-02 | `95a02a38d` | 调度/缓存/PD | Update README_DCU.md | `README_DCU.md` |
-| 2026-04-02 | `80cbcce8e` | 调度/缓存/PD | Update README_DCU.md | `README_DCU.md` |
-| 2026-04-02 | `71cd1e550` | 调度/缓存/PD | Update README_DCU.md | `README_DCU.md` |
-| 2026-04-02 | `a510541b9` | 调度/缓存/PD | Update README_DCU.md | `README_DCU.md` |
-| 2026-04-01 | `e32b8b387` | 性能/后端优化 | optimized code of layernorm | `python/sglang/srt/layers/layernorm.py` |
-| 2026-04-01 | `c87293f3a` | 性能/后端优化 | 修复融合算子并验证精度. | `python/sglang/srt/layers/attention/dcu_mla_backend.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py` |
-| 2026-04-01 | `4418f4abb` | 性能/后端优化 | 适配lightop的gemma_fused_add_rmsnorm算子,并保留社区实现 | `python/sglang/srt/layers/layernorm.py` |
-| 2026-04-01 | `790dbca3a` | 性能/后端优化 | Revert "适配lightop的gemma_fused_add_rmsnorm算子,并保留社区实现" | `python/sglang/srt/layers/layernorm.py` |
-| 2026-04-01 | `ec19cdf61` | 性能/后端优化 | 适配lightop的gemma_fused_add_rmsnorm算子,并保留社区实现 | `python/sglang/srt/layers/layernorm.py` |
-| 2026-04-01 | `23329122c` | 性能/后端优化 | 适配lightop的gemma_fused_add_rmsnorm算子 | `python/sglang/srt/layers/layernorm.py` |
+| 2026-11-02 | `594e1ae94c` | 测试/文档/基准 | [Chore] ci: Remove completed DashHub recovery workflow (#634) | `.github/workflows/dashhub-recover-41338132822.yml` |
+| 2026-11-02 | `471ab82545` | 模型支持/运行时入口 | Add one-time DashHub recovery for run 41338132822 (#633) | `.github/workflows/dashhub-recover-41338132822.yml` |
+| 2026-10-29 | `9fb319cc33` | 性能/后端优化 | [CI] optest: Require every enabled operator result (#622) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-29 | `db479b030f` | 性能/后端优化 | [CI] optest: Report outcome to DashHub (#619) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-29 | `25aa13e98f` | 缺陷修复 | fix(ci) rebase pr-test-hcu.yml (#617) | `.github/workflows/pr-test-hcu.yml` |
+| 2026-10-28 | `fd98647ed1` | 缺陷修复 | [Fix] ci: Restore previous DashHub operator reporting (#614) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-28 | `029b6e6418` | 模型支持/运行时入口 | [CI] model-ci: Pass history token for daily comparison report (#607) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-28 | `098f31d695` | 缺陷修复 | fix(ci) rebase pr-test-hcu.yml release-pr-hcu.yml (#612) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-10-28 | `6dac3481cd` | 缺陷修复 | [Fix] ci: Preserve model cases in DashHub operator reporting (#604) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-20 | `a8543c8131` | 模型支持/运行时入口 | [CI] cookbook: Add BW1000 deployment smoke tests (#570) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-19 | `f89209aa84` | 模型支持/运行时入口 | ci: pass package server to Cookbook model tests (#556) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-16 | `87b9d5c85e` | 测试/文档/基准 | Run cookbook deployment checks after HCU image publishing (#548) | `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-15 | `fc095e0598` | 缺陷修复 | fix(bench): reuse --tokenize-prompt for generated shared-prefix token IDs (#533) | `python/sglang/benchmark/datasets/common.py`, `python/sglang/benchmark/datasets/generated_shared_prefix.py`, `python/sglang/benchmark/serving.py` |
+| 2026-10-15 | `cc3758967d` | 通用实现调整 | Pass DashHub credential to deployment smoke controller (#534) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-14 | `78c700ee01` | 模型支持/运行时入口 | Add image input to cookbook deployment smoke workflow (#530) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-12 | `e295faff5d` | 性能/后端优化 | update ci name&&add optest log (#515) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-12 | `b6dd37e66a` | 测试/文档/基准 | Run cookbook smoke tests for all cases by default | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-12 | `f9b972b372` | 模型支持/运行时入口 | Use a clean checkout directory for the model smoke controller (#510) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-12 | `50b0d00518` | 模型支持/运行时入口 | Delegate HCU model deployment smoke CI to external controller (#503) | `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-10 | `3b0e4a0739` | 性能/后端优化 | [Fix] Bound crash diagnostics and fatal shutdown on main (#498) | `docs/docs/references/environment_variables.mdx`, `python/sglang/srt/managers/multi_tokenizer_mixin.py`, `python/sglang/srt/managers/tokenizer_manager.py` |
+| 2026-10-10 | `4205397cbc` | 模型支持/运行时入口 | add password-free download code (#499) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-09 | `f0ee2a5059` | 缺陷修复 | FIX(detokenizer): stream through genuine U+FFFD instead of holding until finish (#473) | `python/sglang/srt/managers/detokenizer_manager.py`, `test/registered/unit/managers/test_detokenizer_incremental.py` |
+| 2026-10-09 | `fb46d17ad9` | 性能/后端优化 | add optest process (#481) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-09-30 | `e05f146bed` | 模型支持/运行时入口 | ci(hcu): migrate main workflows to organization runners (#463) | `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml` |
+| 2026-09-28 | `5e8269d55a` | 缺陷修复 | [BUGFIX]镜像DTK版本号不对 (#447) | `.github/workflows/release-docker-hcu.yml` |
+| 2026-09-24 | `665b27d1fa` | 缺陷修复 | feat(ci) fix main build whl failed (#449) | `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-23 | `f2d49c2c0e` | 缺陷修复 | FIX(DSV4): 补全 system/reminder 结尾对话的 assistant 生成前缀并解析 markdown 伪工具调用 (#435) | `python/sglang/srt/entrypoints/openai/encoding_dsv4.py`, `python/sglang/srt/function_call/deepseekv4_detector.py`, `test/registered/unit/function_call/test_deepseekv4_detector.py` |
+| 2026-09-23 | `7be1324cf8` | 测试/文档/基准 | ci: report sglang nightly packages to DashHub (#424) | `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-09-23 | `2871c8fdd9` | 测试/文档/基准 | ci(hcu): docker 镜像改从 dev 基础镜像内联安装 DTK 26.04.1-72cu-0911 (#438) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-09-22 | `b5ca753bc8` | 测试/文档/基准 | ci(hcu): run nightly against v0.5.18 and report its results (#432) | `.github/workflows/nightly-test-hcu.yml` |
+| 2026-09-21 | `a981685e7f` | 缺陷修复 | fix release-pr-hcu.yml build sglang (#423) | `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-21 | `cb932f5fbd` | 测试/文档/基准 | feat(ci) compaity sgl-kernal main to v0.5.12 (#421) | `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-21 | `ae5c33991b` | 调度/缓存/PD | Update quality gate workflow to use stable version | `.github/workflows/quality-gate.yml` |
+| 2026-09-16 | `adc1d69b2a` | 测试/文档/基准 | ci(hcu): align main wheel builds with 0.5.18 runtime (#379) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-15 | `5c03a8e22f` | 测试/文档/基准 | [FEATURE]daily镜像将tag打入环境变量, dtk自动更新最新的blas (#376) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-09-15 | `ae14a99e50` | 缺陷修复 | fix(ci): fix HCU wheel build target routing (#372) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-15 | `7c8272a3a3` | 缺陷修复 | [BUGFIX]更新AICC安装方式 (#367) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-09-14 | `575cf47976` | 测试/文档/基准 | ci(hcu): restore source mode for test-only PRs (#364) | `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `test/registered/hcu/openai_server/test_serving_chat_hcu.py` |
+| 2026-09-14 | `516261baf1` | 测试/文档/基准 | ci(hcu): register sampling test and adjust MMLU threshold (#359) | `test/registered/sampling/test_pytorch_sampling_backend.py` |
+| 2026-09-14 | `b5108cc7fe` | 测试/文档/基准 | ci(hcu): use v0.5.18 image and restore eval dependencies (#347) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh` |
+| 2026-09-08 | `0af71f61b6` | 缺陷修复 | fix(ci): update HCU evaluation dependencies and asset paths (#325) | `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/hcu_ci_start_container.sh` |
+| 2026-09-04 | `0457572a14` | 测试/文档/基准 | [FEATURE]CInotificate发送飞书通知时，把镜像数据推送到数据库 (#308) | `.github/workflows/nightly-test-image-hcu.yml` |
+| 2026-09-03 | `2828bde71d` | 模型支持/运行时入口 | ci(hcu): align llguidance and model asset paths (#299) | `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh` |
+| 2026-09-02 | `6fe7ce9097` | 测试/文档/基准 | ci(hcu): restore run suite file filters (#290) | `test/run_suite.py` |
+| 2026-09-02 | `9d261478d6` | 性能/后端优化 | [CI] Update HCU model asset paths on main (#285) | `README_HCU.md`, `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_exec.sh` |
+| 2026-09-01 | `8fa7122b3a` | 测试/文档/基准 | [FEATURE]构建镜像之后触发模型测试 (#277) | `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/release-docker-hcu.yml`, `docker/image-citest-conf-hcu.yaml` |
+| 2026-08-31 | `e864c30287` | 测试/文档/基准 | ci: enable HCU PR tests for release branches (#272) | `.github/workflows/pr-test-hcu.yml` |
+| 2026-08-31 | `3ca61517d0` | 测试/文档/基准 | ci-remove-amd-status-from-pr-summaries | `.github/workflows/pr-states.yml` |
+| 2026-08-28 | `bc990ebd52` | 测试/文档/基准 | [ci] 删除 release-whl-manual-hcu.yml (功能与 nightly/pr 编包重复) | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-28 | `68dcd498aa` | 测试/文档/基准 | [ci] hcu ci 文件与 release/20260825_v0.5.18 分支保持一致 | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-08-27 | `6b468d012b` | 性能/后端优化 | [feature] hcu ci: docker 镜像加 daily 定时触发, router 编包改用 vendored openssl, 镜像补装 flash_kda | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-08-27 | `7609d9af69` | 模型支持/运行时入口 | [feature]适配hcu发包 | `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`, `python/pyproject_hcu.toml` |
+| 2026-08-27 | `2866df9948` | 测试/文档/基准 | ci(hcu): trust wheel build workspaces | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-26 | `a2de3b8cff` | 测试/文档/基准 | ci(hcu): use bash for wheel build jobs | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-08-26 | `f6d701c520` | 缺陷修复 | Fix stale HCU Stage B test paths | `.github/workflows/pr-test-hcu.yml` |
+| 2026-08-26 | `c94c3ca2c8` | 缺陷修复 | fix: gateway wheel is at workspace root target/wheels | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-26 | `8dd5daf2fa` | 测试/文档/基准 | Refine HCU and AMD CLI help text | `python/sglang/srt/server_args.py`, `test/run_suite.py` |
+| 2026-08-26 | `990a1a798d` | 测试/文档/基准 | ci: disable scheduled gateway nightly release | `.github/workflows/nightly-release-gateway.yml` |
+| 2026-08-24 | `fd41570479` | 通用实现调整 | Refine HCU platform diagnostics and CLI help | `python/sglang/srt/server_args.py` |
+| 2026-08-21 | `d42ecf6fe9` | 缺陷修复 | Fix HCU detection and sanitized topology diagnostics | `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`, `scripts/ci/hcu/hcu_rename_allowlist.txt` |
+| 2026-08-25 | `6a4a61efba` | 性能/后端优化 | ci(hcu): detect runner workspace ownership | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-25 | `3e6aaf09d8` | 测试/文档/基准 | ci(hcu): allow fork checkout in target workflows | `.github/workflows/lint-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-25 | `f2fc4e166b` | 调度/缓存/PD | Update quality gate workflow to version 2.0.3 | `.github/workflows/quality-gate.yml` |
+| 2026-08-25 | `69c73a1787` | 模型支持/运行时入口 | ci(hcu): support fork pull requests | `.github/workflows/lint-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-25 | `94e9fa4b1d` | 测试/文档/基准 | ci: align manual HCU wheel workflow with nightly (drop chown/devpi upload) | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-25 | `59213c7e48` | 性能/后端优化 | Revert the hcu_rename_allowlist entry for -DCUDA_ENABLED | `scripts/ci/hcu/hcu_rename_allowlist.txt` |
+| 2026-08-25 | `d1adf7b503` | 测试/文档/基准 | [feature] manual compile ci | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-25 | `c40703e6b4` | 缺陷修复 | fix(ci): clear the three Quality Gate blockers from the 20260824 sync | `.github/workflows/_npu-pr-test-stage.yml`, `.github/workflows/_npu-single-node-test-stage.yml`, `.github/workflows/nightly-test-npu.yml` |
+| 2026-08-24 | `261b8627f1` | 缺陷修复 | fix(hcu): restore 29 environ declarations the sync auto-merge dropped | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/sync-official-main-20260824-summary.md`, `python/sglang/srt/environ.py` |
+| 2026-08-20 | `37c5b30bb9` | 缺陷修复 | fix: extract full DTK version for three-part versions | `.github/workflows/nightly-test-dcu.yml`, `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-08-21 | `a96aed11f0` | 性能/后端优化 | [feat] 适配aiter性能优化后的 sglang_fused_sigmoid_gating_delta_rule_update 算子 | `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py` |
+| 2026-08-20 | `27ce43c71d` | 性能/后端优化 | [fix]solved CI Test errors | `python/sglang/srt/layers/attention/flashattention_interface.py` |
+| 2026-08-20 | `72d1d2a73a` | 性能/后端优化 | [fix]solved other CI Test errors | `python/sglang/srt/layers/attention/flashattention_interface.py` |
+| 2026-08-20 | `f6b66222a0` | 通用实现调整 | revert: 恢复 release-pr-hcu.yml 默认 torch 版本为 2.10.0 | `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-20 | `11d08002bf` | 性能/后端优化 | [fix]solved CI Test errors | `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py` |
+| 2026-08-20 | `b628d29e1c` | 测试/文档/基准 | [feature] 增加打镜像的ci, 0.5.15版本更新torch到2.11版本 | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-08-20 | `fb7369fec0` | 缺陷修复 | [bugfix]删除无关文件 | `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942` |
+| 2026-08-20 | `62a07586d9` | 性能/后端优化 | [feat] 适配HCU FA3 | `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py` |
+| 2026-08-17 | `9bbf3799d8` | 模型支持/运行时入口 | docs(hcu): add the 20260817 official backport validation report | `docs/internal/backport-official-20260817-validation-report.md` |
+| 2026-08-14 | `fa309a1e19` | 性能/后端优化 | fix(hcu): drop the stale 0.5.12-era expert-count override in FusedMoE | `python/sglang/srt/layers/moe/fused_moe_triton/layer.py` |
+| 2026-08-13 | `5e2ba659ea` | 性能/后端优化 | fix lint: apply pre-commit fixes to the dspark bugfixes | `python/sglang/srt/speculative/dflash_utils.py` |
+| 2026-08-13 | `18e167b730` | 性能/后端优化 | [BugFix] fix the client inference None errors in temperature>0 with a torch implementation | `python/sglang/srt/speculative/dflash_utils.py` |
+| 2026-08-13 | `54e3ed50f6` | 缺陷修复 | [BugFix] fix the runtime errors in ep+dspark mode | `python/sglang/srt/speculative/dspark_components/dspark_draft.py` |
+| 2026-08-12 | `fb7f119564` | 测试/文档/基准 | ci(hcu): adapt wheel jobs to CIUpload 0.3 | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-08-12 | `2083c069f7` | 性能/后端优化 | fix lint: apply pre-commit fixes to the EP MoE fallback change | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-08-11 | `ccbb65acb2` | 性能/后端优化 | [HCU][DSpark] Fix DP EP MoE fallback routing | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-08-10 | `b36730b417` | 性能/后端优化 | fix lint: apply pre-commit fixes to the mHC EAGLE changes | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/speculative/eagle_worker_common.py` |
+| 2026-08-10 | `5fd89c7288` | 缺陷修复 | [BugFix] fix the inference tensor graph replay issues in MTP mode | `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/speculative/eagle_worker_common.py`, `python/sglang/srt/speculative/eagle_worker_v2.py` |
+| 2026-08-10 | `4a6fbed985` | 性能/后端优化 | [HCU][DSpark] Add standalone Triton fallback for missing AITER MoE config | `python/sglang/srt/layers/moe/hcu_dspark_aiter_moe_fallback.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-08-10 | `e3a9d595c9` | 缺陷修复 | [HCU][DSpark] Fix sampling parameter updates after graph capture | `python/sglang/srt/speculative/dspark_components/dspark_draft_sampler.py` |
+| 2026-08-07 | `3de1323a9b` | 调度/缓存/PD | ci(hcu): normalize rebased PD suite names | `test/registered/hcu/README.md`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`, `test/registered/hcu/disaggregation/test_pd_hcu_utils.py` |
+| 2026-08-07 | `3fbc8ae9ef` | 性能/后端优化 | test(hcu): align numerical references with v0.5.15 | `test/registered/hcu/kernels/test_attention_reference_hcu.py`, `test/registered/hcu/kernels/test_int8_w8a8_reference_hcu.py` |
+| 2026-08-07 | `76ced479ea` | 性能/后端优化 | test(hcu): use v0.5.15 FP8 kernel path | `test/registered/hcu/kernels/test_fp8_quant_reference_hcu.py` |
+| 2026-08-07 | `ecf4756cea` | 测试/文档/基准 | test(hcu): isolate server guard unit test | `scripts/ci/hcu/test_hcu_server_guard.py` |
+| 2026-08-07 | `dc5cd70892` | 测试/文档/基准 | ci: finalize v0.5.15 workflow policy | `.github/workflows/ci-auto-bisect.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/slash-command-handler.yml` |
+| 2026-08-07 | `50736ebe71` | 测试/文档/基准 | ci(hcu): keep migration changes scoped | `README_HCU.md` |
+| 2026-08-07 | `1a5ce1750d` | 测试/文档/基准 | ci(hcu): publish reasoning results to shared storage | `.github/workflows/nightly-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_publish_reasoning_code.py`, `scripts/ci/hcu/test_hcu_ci_publish_reasoning_code.py` |
+| 2026-08-07 | `4c7a264e5c` | 性能/后端优化 | ci(hcu): align model assets and selected-ref kernel | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `python/sglang/test/hcu_cookbook_utils.py` |
+| 2026-08-07 | `92ce544fac` | 测试/文档/基准 | ci: align v0.5.15 workflow triggers | `.github/workflows/bot-bump-docs-version.yml`, `.github/workflows/release-docker-amd.yml`, `.github/workflows/release-docker-npu.yml` |
+| 2026-08-07 | `b59995e42d` | 缺陷修复 | fix(hcu): point PD smoke tests at a declared HCU suite | `test/registered/hcu/README.md`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`, `test/registered/hcu/disaggregation/test_pd_hcu_utils.py` |
+| 2026-08-07 | `154a88c7b7` | 性能/后端优化 | fix lint: apply isort/black to the lmslim->lightop migration | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/layers/quantization/fp8_utils.py` |
+| 2026-08-06 | `b0f2bb3a84` | 缺陷修复 | fix(hcu): restore network_mode matrix keys dropped by the forward-port | `.github/workflows/nightly-test-hcu.yml` |
+| 2026-08-06 | `f17440f19f` | 缺陷修复 | fix(hcu): restore original license headers dropped by the forward-port | `scripts/ci/hcu/hcu_ci_start_container.sh`, `test/run_suite.py` |
+| 2026-08-06 | `8e2aba4bfa` | 性能/后端优化 | fix lint: apply isort/black to forward-port diff | `python/sglang/kernels/ops/attention/decode_attention.py`, `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8.py` |
+| 2026-08-06 | `f1c6f56315` | 性能/后端优化 | fix(hcu): drop leftover source hunks that renaming and partial takes left behind | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`, `python/sglang/srt/managers/scheduler_components/dp_attn.py` |
+| 2026-08-05 | `dabae6b13a` | 缺陷修复 | fix(ci): use PR files API for HCU wheel detection | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-05 | `44bb481cf9` | 性能/后端优化 | fix(eplb): apply expert ID remapping for HCU fused TopK | `python/sglang/srt/layers/moe/topk.py` |
+| 2026-08-05 | `2fb37eaace` | 缺陷修复 | fix(ci): align HCU Python wheel paths | `.github/workflows/pr-test-hcu.yml` |
+| 2026-08-05 | `71de6dd93d` | 缺陷修复 | fix(ci): align HCU gateway wheel detection | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-05 | `2a342cdf1d` | 缺陷修复 | fix fp8 bug of triton | `python/sglang/srt/layers/attention/triton_ops/decode_attention.py` |
+| 2026-08-04 | `8160ebe53c` | 缺陷修复 | fix(hcu): retain PD decode adapter callbacks | `python/sglang/srt/managers/scheduler_components/dp_attn.py` |
+| 2026-08-04 | `43d8d9ac1b` | 性能/后端优化 | style(hcu): fix lint for KME W8A8 lightop path | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py` |
+| 2026-08-04 | `e8298ba909` | 缺陷修复 | fix(hcu): restore DP decode protocol constants | `python/sglang/srt/managers/scheduler_components/dp_attn.py` |
+| 2026-08-04 | `083d1d8b99` | 性能/后端优化 | fix(hcu): restore DeepGEMM PD helper and current cache API | `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-08-04 | `cd60b74339` | 调度/缓存/PD | 修改hicache+pp并行 stage不一致问题commit提交格式 | `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/mem_cache/hiradix_cache.py` |
+| 2026-08-03 | `143ee92872` | 性能/后端优化 | refactor(hcu): route KME W8A8 hipBLASLt through lightop | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py` |
+| 2026-07-29 | `84bfd45c44` | 缺陷修复 | 修复hicache+pp并行 stage不一致问题 | `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/cache_init_params.py` |
+| 2026-08-03 | `015f6d49a0` | 性能/后端优化 | fix lint: drop redundant module-scope sgl_kernel import in forward_batch_info | `python/sglang/srt/model_executor/forward_batch_info.py` |
+| 2026-08-03 | `de696eab9c` | 调度/缓存/PD | Update quality gate workflow to version 2.0.1 | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `e6c4102592` | 调度/缓存/PD | Update quality gate workflow to version 2.0.1 | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `3358846e55` | 调度/缓存/PD | Update quality-gate.yml | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `4d3aaf6aff` | 调度/缓存/PD | Update quality gate workflow for versioning and concurrency | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `286612da40` | 调度/缓存/PD | Update quality gate workflow to use version v2.0.0 | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `ff7f44b8ed` | 调度/缓存/PD | Update quality gate workflow to use version v2.0.0 | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `67ecec8dd1` | 缺陷修复 | fix(hcu): scope Feishu status to accuracy results | `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-31 | `85dcec9474` | 缺陷修复 | fix(hcu): support Python 3.8 in Feishu notifier | `scripts/ci/hcu/hcu_ci_notify_feishu.py` |
+| 2026-07-31 | `9c69436eed` | 缺陷修复 | fix(hcu): remove resend tool dependencies | `.github/workflows/hcu-feishu-notify-preview.yml` |
+| 2026-07-31 | `0ff7a014fe` | 模型支持/运行时入口 | ci(hcu): support resending Feishu accuracy results | `.github/workflows/hcu-feishu-notify-preview.yml` |
+| 2026-07-31 | `f556d3896e` | 性能/后端优化 | [FIX] 修复lmslim和lightop接口冲突问题 (#154) | `python/sglang/srt/layers/quantization/slimquant_w4a8.py` |
+| 2026-07-31 | `b489942109` | 测试/文档/基准 | ci: install PyYAML for slash command handler (#156) | `.github/workflows/slash-command-handler.yml` |
+| 2026-07-31 | `497c35457c` | 缺陷修复 | fix(scheduler): abort too-large requests instead of dead-looping | `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/tokenizer_manager.py` |
+| 2026-07-31 | `dc015a0bc5` | 缺陷修复 | [PD] When PP is greater than 1, fix the request rollback when the KV cache is exhausted | `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` |
+| 2026-07-31 | `83f43b3f4d` | 性能/后端优化 | [CI] Fix some CI errors | `python/sglang/srt/layers/moe/moe_runner/aiter.py` |
+| 2026-07-31 | `39d6912202` | 缺陷修复 | fix(hcu): restore NETWORK_MODE default lost in forward-port | `scripts/ci/hcu/hcu_ci_start_container.sh` |
+| 2026-07-31 | `02968a96de` | 缺陷修复 | fix(hcu): restore shared wheel staging root lost in forward-port | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml` |
+| 2026-07-30 | `17cf690afc` | 性能/后端优化 | style: fix HCU lint checks | `python/sglang/srt/layers/moe/moe_runner/lightop.py`, `python/sglang/srt/layers/quantization/__init__.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8.py` |
+| 2026-07-30 | `489170e5c4` | 性能/后端优化 | [FIX] 修复moe_w8a8重排函数删除问题 | `python/sglang/srt/layers/moe/moe_runner/lightop.py` |
+| 2026-07-30 | `6ea38ee522` | 调度/缓存/PD | style(hcu): format PD helper registration | `test/registered/hcu/disaggregation/pd_hcu_utils.py` |
+| 2026-07-30 | `b8389e5c5d` | 调度/缓存/PD | test(hcu): register PD helper for nightly collection | `test/registered/hcu/disaggregation/pd_hcu_utils.py` |
+| 2026-07-29 | `111fea82f3` | 性能/后端优化 | ci: disable unused workflow triggers | `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml` |
+| 2026-07-29 | `b2f0b830c2` | 性能/后端优化 | ci: disable unused workflow triggers | `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml` |
+| 2026-07-29 | `be81ab4196` | 缺陷修复 | fix(dp): demote DP Decode StepInfo log to debug | `python/sglang/srt/managers/scheduler_dp_attn_mixin.py` |
+| 2026-07-29 | `6a031254f5` | 测试/文档/基准 | ci(hcu): isolate nightly services and shared results | `.github/workflows/nightly-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_publish_accuracy.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-29 | `e18e6b94bc` | 测试/文档/基准 | docs(hcu): record daily forward-port 20260729 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-29 | `3b4327cd7b` | 性能/后端优化 | fix(hcu): support current LightOp fp8 quant API | `python/sglang/srt/layers/linear.py` |
+| 2026-07-29 | `58d475775e` | 缺陷修复 | fix(hcu): allow single-node context parallel tp16 | `python/sglang/srt/server_args.py` |
+| 2026-07-29 | `d39d628ef3` | 性能/后端优化 | fix(hcu): enable NSA draft-extend cuda graph | `python/sglang/srt/layers/attention/nsa_backend.py`, `python/sglang/srt/speculative/eagle_info.py`, `python/sglang/srt/speculative/eagle_worker_v2.py` |
+| 2026-07-29 | `4e5a95fcb5` | 缺陷修复 | fix(pd): transfer MTP NSA topk seed metadata over Mooncake | `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/decode_schedule_batch_mixin.py` |
+| 2026-07-29 | `6e7a53e865` | 性能/后端优化 | fix(hcu): select hipblaslt w8a8 layout by gfx arch | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py` |
+| 2026-07-28 | `035ca766ff` | 缺陷修复 | fix(cache): forward Mamba indices in NSA offload | `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-07-29 | `049f5e15ee` | 性能/后端优化 | [bugfix] 透传apply_routed_scaling_factor_on_output，防止moe_sum多乘routed_scaling_factor | `python/sglang/srt/layers/moe/topk.py` |
+| 2026-07-29 | `92e95e3f51` | 性能/后端优化 | perf(mamba): flatten fused state scatter launch grid | `python/sglang/srt/layers/attention/mamba/mamba_state_scatter_triton.py` |
+| 2026-07-29 | `bfa4011ad0` | 测试/文档/基准 | ci(hcu): share wheel staging across runners | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml` |
+| 2026-07-28 | `fc59c96c54` | 缺陷修复 | fix lint: format line breaks and remove trailing whitespace | `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/speculative/eagle_worker_v2.py` |
+| 2026-07-28 | `7b89bf6617` | 性能/后端优化 | fix: propagate return_hidden_states_before_norm flag for mHC target-verify | `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/model_executor/cuda_graph_runner.py`, `python/sglang/srt/speculative/eagle_worker_v2.py` |
+| 2026-07-28 | `d0c4729899` | 调度/缓存/PD | ci: add HCU PD disaggregation smoke tests | `test/registered/hcu/disaggregation/pd_hcu_utils.py`, `test/registered/hcu/disaggregation/test_pd_basic_hcu.py`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py` |
+| 2026-07-28 | `cd4802bbab` | 性能/后端优化 | fix lint | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py` |
+| 2026-07-28 | `0305c5a3b9` | 性能/后端优化 | fix lint | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-07-28 | `9a4f82911e` | 性能/后端优化 | fix lint | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-07-28 | `997e64560f` | 测试/文档/基准 | ci: use configured HCU release image | `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-07-28 | `77939d9a53` | 测试/文档/基准 | ci: use configured HCU release image | `.github/workflows/lint-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-07-28 | `8f848be4e7` | 测试/文档/基准 | ci: use configured HCU release image | `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-07-27 | `0710e82a02` | 调度/缓存/PD | Update quality gate workflow for new branch version | `.github/workflows/quality-gate.yml` |
+| 2026-07-27 | `93c56ce71a` | 通用实现调整 | Refactor quality gate workflow and job configurations | `.github/workflows/quality-gate.yml` |
+| 2026-07-27 | `163a92c142` | 缺陷修复 | fix(hcu):修改lightop的算子接口. | `python/sglang/srt/layers/activation.py`, `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-07-27 | `87e3831800` | 性能/后端优化 | fix: 移除旧的lmslim导入方式. | `python/sglang/srt/layers/quantization/fp8_utils.py` |
+| 2026-07-27 | `afac89e0e4` | 性能/后端优化 | feat(hcu): add KME W8A8 hipBLASLt path via METHODS=3 | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py` |
+| 2026-07-24 | `a3efe5e533` | 性能/后端优化 | [bugfix]:修复lightop_per_token_quant_fp8调用前tensor准备. | `python/sglang/srt/layers/quantization/fp8_kernel.py`, `python/sglang/srt/mem_cache/allocator.py` |
+| 2026-07-24 | `88d4501a3b` | 调度/缓存/PD | Update quality gate workflow reference | `.github/workflows/quality-gate.yml` |
+| 2026-07-24 | `9e13c77cee` | 缺陷修复 | fix(ci): use card v2 link button | `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-24 | `4af8102057` | 缺陷修复 | fix(ci): use card v2 metadata component | `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-24 | `65b7c42689` | 测试/文档/基准 | ci: use shared runner for Feishu preview | `.github/workflows/hcu-feishu-notify-preview.yml` |
+| 2026-07-24 | `6ac12c2e50` | 测试/文档/基准 | ci: decouple Feishu preview from HCU runners | `.github/workflows/hcu-feishu-notify-preview.yml` |
+| 2026-07-24 | `2c21b95e60` | 缺陷修复 | fix(ci): align Feishu accuracy table | `.github/workflows/hcu-feishu-notify-preview.yml`, `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-24 | `9a8b1bd08e` | 调度/缓存/PD | Update quality gate workflow reference to new commit | `.github/workflows/quality-gate.yml` |
+| 2026-07-24 | `eb6a340936` | 调度/缓存/PD | Update workflow reference to latest commit | `.github/workflows/quality-gate.yml` |
+| 2026-07-24 | `f76d2cea38` | 通用实现调整 | Delete .github/workflows/quality-baseline-scan.yml | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-07-23 | `c3755b4d46` | 性能/后端优化 | fix: make DP local control broadcast opt-in via env | `python/sglang/srt/environ.py`, `python/sglang/srt/managers/data_parallel_controller.py`, `python/sglang/srt/managers/scheduler.py` |
+| 2026-07-23 | `e338cca156` | 缺陷修复 | ci(hcu): improve accuracy card and fix VLM model path | `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-23 | `83d2a2b4b1` | 缺陷修复 | fix(hcu): rename stale DCU HiCache identifiers | `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py` |
+| 2026-07-22 | `8b38b9a258` | 调度/缓存/PD | Update comment for all_gather usage in scheduler | `python/sglang/srt/managers/scheduler_dp_attn_mixin.py` |
+| 2026-07-22 | `421a13a808` | 测试/文档/基准 | ci(hcu): enable accuracy notification on default branch | `.github/workflows/nightly-test-hcu.yml` |
+| 2026-07-22 | `b1606885e0` | 缺陷修复 | Fix help text for custom all-reduce backend | `python/sglang/srt/server_args.py` |
+| 2026-07-22 | `0b46ed36da` | 性能/后端优化 | fix: apply bias after HCU DeepGEMM FP8 linear | `python/sglang/srt/layers/quantization/fp8_utils.py` |
+| 2026-07-22 | `f391712f7f` | 缺陷修复 | fix(hcu): use HCU guard for MLA KV cache storage | `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-07-22 | `7941e04191` | 缺陷修复 | fix: enable HiCache layout_dcu for hybrid Mamba and EAGLE draft | `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py` |
+| 2026-07-22 | `1c40e365c8` | 调度/缓存/PD | support mla lightop | `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-07-22 | `9fc04a7a2c` | 性能/后端优化 | [BugFix] Disable the standalone-DCU MegaMoE ASM tail-reduce path by default to avoid vmfault | `python/sglang/srt/layers/moe/mega_moe.py` |
+| 2026-07-21 | `7b6a9dd891` | 性能/后端优化 | 修复DeepseekV4精度问题 | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-07-21 | `ac56ca009f` | 测试/文档/基准 | ci: follow main sensitive diff workflow | `.github/workflows/quality-gate.yml` |
+| 2026-07-21 | `9864c84513` | 测试/文档/基准 | ci: use shared sensitive diff gate for HCU port | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_sensitive_diff_text.py` |
+| 2026-07-21 | `c1f3f08c8a` | 调度/缓存/PD | Update workflow reference to a new commit | `.github/workflows/quality-gate.yml` |
+| 2026-07-21 | `e7ab054110` | 通用实现调整 | Delete .github/workflows/pr-quality-gate.yml | `.github/workflows/pr-quality-gate.yml` |
+| 2026-07-21 | `14da9b10e4` | 调度/缓存/PD | Update workflow reference in quality-gate.yml | `.github/workflows/quality-gate.yml` |
+| 2026-07-20 | `15a656ea69` | 测试/文档/基准 | test(hcu): align v0.5.15 compatibility tests | `test/registered/hcu/openai_server/test_serving_chat_hcu.py`, `test/registered/hcu/unit/test_profile_merger_hcu.py`, `test/registered/unit/server_args/test_server_args.py` |
+| 2026-07-20 | `e19d341ab8` | 调度/缓存/PD | Refactor quality gate workflow and update triggers | `.github/workflows/quality-gate.yml` |
+| 2026-07-20 | `5543eb3df2` | 调度/缓存/PD | Rename quality-gate workflow and update triggers | `.github/workflows/quality-gate.yml` |
+| 2026-07-20 | `5ac1f2418a` | 模型支持/运行时入口 | Add GitHub Actions workflow for quality gate | `.github/workflows/pr-quality-gate.yml` |
+| 2026-07-20 | `811aa027d6` | 测试/文档/基准 | ci: replace HCU runtime text check with sensitive diff gate | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_hcu_runtime_text.py`, `scripts/ci/hcu/check_sensitive_diff_text.py` |
+| 2026-07-20 | `e47445d2fa` | 调度/缓存/PD | chore: clean leftover patch labels in PD Decode DP sync | `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` |
+| 2026-07-20 | `81e3561aeb` | 测试/文档/基准 | ci(hcu): exclude two unstable PR tests | `.github/workflows/pr-test-hcu.yml` |
+| 2026-07-20 | `358a337143` | 缺陷修复 | fix(hcu): keep Harbor build image path | `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-07-20 | `079275b811` | 模型支持/运行时入口 | ci: add local sensitive diff text gate | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_sensitive_diff_text.py` |
+| 2026-07-20 | `fe9f24924f` | 缺陷修复 | fix: prevent PD Decode DP hang under enable-dp-attention | `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` |
+| 2026-07-16 | `37074c9af6` | 缺陷修复 | Fix dsv4 full token pool | `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/environ.py` |
+| 2026-07-16 | `09d7a1d4ca` | 性能/后端优化 | support fabric aiter custom allreduce | `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/model_executor/model_runner.py` |
+| 2026-07-16 | `d280691576` | 缺陷修复 | [bugfix]适配新的causal_conv1d接口 | `python/sglang/srt/layers/attention/linear/gdn_backend.py` |
+| 2026-07-16 | `e5a2dd0419` | 缺陷修复 | [bugfix]适配新的causal_conv1d接口 | `python/sglang/srt/layers/attention/linear/gdn_backend.py` |
+| 2026-07-16 | `339dfe4336` | 测试/文档/基准 | docs(dcu): define v0.5.15.post1 release workflow | `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`, `docs/internal/dcu-main-migration-plan.md`, `docs/internal/dcu-v0.5.15-post1-dev-plan.md` |
+| 2026-07-16 | `dc1323ba4c` | 测试/文档/基准 | docs(dcu): finalize v0.5.12_dev forward-port | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`, `docs/internal/dcu-main-migration-plan.md` |
+| 2026-07-15 | `49a10aec8c` | 测试/文档/基准 | docs(dcu): record 20260714 owner validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `f67cdf69bd` | 测试/文档/基准 | docs(dcu): record 20260714 runtime blocker | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `20633db576` | 模型支持/运行时入口 | docs(dcu): add 20260714 conflict review | `docs/internal/dcu-main-catchup-20260714-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `324181561d` | 模型支持/运行时入口 | docs(dcu): add 20260713 conflict review | `docs/internal/dcu-main-catchup-20260713-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `0b30b7c9d2` | 测试/文档/基准 | docs(dcu): record 20260712 runtime validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `44f81e8f7a` | 测试/文档/基准 | docs(dcu): record 20260712 runtime gate status | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `baa08af595` | 模型支持/运行时入口 | docs(dcu): add 20260712 conflict review | `docs/internal/dcu-main-catchup-20260712-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `1109d462d5` | 调度/缓存/PD | [Feature] Support PD different-TP transfer for hybrid SWA/NSA and unequal K/V item lens. | `python/sglang/srt/disaggregation/mooncake/conn.py` |
+| 2026-07-14 | `3e335fce8e` | 测试/文档/基准 | docs: correct 20260710 endpoint subject | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `3d77308ea3` | 测试/文档/基准 | docs: mark 20260710 catch-up validated | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `6630db3cfa` | 测试/文档/基准 | docs: record 20260710 pure-TP validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `24894692ea` | 缺陷修复 | fix: use runtime attention TP size in model warmup | `python/sglang/srt/model_executor/model_runner.py` |
+| 2026-07-14 | `9d7fbb0174` | 模型支持/运行时入口 | docs: add 20260710 conflict review | `docs/internal/dcu-main-catchup-20260710-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `48c3c0997e` | 测试/文档/基准 | ci: run HCU text check in Python 3.10 container | `.github/workflows/quality-gate.yml` |
+| 2026-07-14 | `f1c5eda31e` | 测试/文档/基准 | ci: require HCU runtime text check | `.github/workflows/quality-gate.yml` |
+| 2026-07-14 | `c0e8edd741` | 性能/后端优化 | fix(dcu): initialize DeepEP dispatch dtype state | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` |
+| 2026-07-14 | `412d0ef9fa` | 模型支持/运行时入口 | docs(dcu): add 20260709 conflict review | `docs/internal/dcu-main-catchup-20260709-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `e3aa204a05` | 测试/文档/基准 | docs(dcu): require catch-up conflict reviews | `docs/internal/dcu-main-catchup-20260706-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md` |
+| 2026-07-14 | `b9ca7c2adb` | 通用实现调整 | Refine copyright/license warning messages | `.github/workflows/quality-gate.yml` |
+| 2026-07-14 | `d53953dbe7` | 测试/文档/基准 | ci: clean up HCU validation checks | `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/tests/test_check_hcu_runtime_text.py` |
+| 2026-07-14 | `2981595c7f` | 性能/后端优化 | [FIX] 修复走非dcu_fa下的报错 | `python/sglang/srt/layers/attention/flashattention_backend.py` |
+| 2026-07-13 | `516a35c40e` | 测试/文档/基准 | docs(dcu): record 20260703 runtime blocker | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-13 | `c078943aa3` | 性能/后端优化 | chore: fix fused_moe lint issues | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` |
+| 2026-07-13 | `d8ed552da8` | 模型支持/运行时入口 | docs(dcu): add 20260629 conflict review | `docs/internal/dcu-main-catchup-20260629-conflict-review.md` |
+| 2026-07-13 | `bf59e99fde` | 测试/文档/基准 | ci: harden HCU runtime text quality gate | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_hcu_runtime_text.py` |
+| 2026-07-13 | `24bcdba3b7` | 性能/后端优化 | feat: support AITER W4A16 MOE_C prefill | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` |
+| 2026-07-13 | `427726d609` | 缺陷修复 | fix: complete HCU runtime text cleanup | `python/sglang/srt/distributed/device_communicators/pynccl_wrapper.py`, `python/sglang/srt/server_args.py`, `python/sglang/test/hcu_cookbook_utils.py` |
+| 2026-07-13 | `8c797abd6f` | 测试/文档/基准 | Record 20260629 DCU runtime validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-13 | `bd60c02238` | 通用实现调整 | Enhance quality gate workflow with new checks and branches | `.github/workflows/quality-gate.yml` |
+| 2026-07-13 | `40c658e8ab` | 测试/文档/基准 | ci: harden HCU runtime text checker | `.github/workflows/quality-gate.yml`, `scripts/ci/dcu/check_hcu_runtime_text.py`, `scripts/ci/dcu/tests/test_check_hcu_runtime_text.py` |
+| 2026-07-13 | `48489724d5` | 测试/文档/基准 | docs(dcu): record 20260623 catch-up runtime status | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-13 | `cba9e72cc0` | 性能/后端优化 | [BugFix] skip some uncompatibal env setup in hip for DCU | `python/sglang/srt/server_args.py` |
+| 2026-07-13 | `1123fc0382` | 测试/文档/基准 | ci: enforce HCU rename safety checks | `scripts/ci/hcu/hcu_rename_allowlist.txt`, `scripts/ci/hcu/test_verify_hcu_rename.py`, `scripts/ci/hcu/verify_hcu_registration.py` |
+| 2026-07-13 | `9353ecb963` | 测试/文档/基准 | docs: complete HCU naming migration | `NOTICE`, `README.md`, `README_DCU.md` |
+| 2026-07-13 | `de7170db00` | 性能/后端优化 | kernel: migrate DCU ops and wrappers to HCU | `sgl-kernel/csrc/common_extension_rocm.cc`, `sgl-kernel/csrc/kvcacheio/transfer.cu`, `sgl-kernel/include/sgl_kernel_ops.h` |
+| 2026-07-13 | `e3fee4310d` | 模型支持/运行时入口 | ci: sync HCU workflows and scripts with current main | `.github/open-source-compliance.json`, `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-07-11 | `0395a2bd25` | 性能/后端优化 | fix: use lightop int8 deepep moe on dcu | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py` |
+| 2026-07-11 | `390ad18e71` | 性能/后端优化 | ci: 修复 packed KV 测试注册导致的 DCU CI 收集失败 (#87) | `benchmark/kernels/pack_paged_kv_to_varlen/bench_pack_paged_kv_to_varlen.py`, `benchmark/kernels/pack_paged_kv_to_varlen/pack_paged_kv_to_varlen_benchmark_results.md`, `test/registered/attention/bench_pack_paged_kv_to_varlen.py` |
+| 2026-07-09 | `b38f25513e` | 性能/后端优化 | ci: add manual HCU nightly workflow controls | `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml` |
+| 2026-07-09 | `dccf1782b2` | 测试/文档/基准 | ci: disable HCU runtime text check job | `.github/workflows/quality-gate.yml` |
+| 2026-07-09 | `d445921fe7` | 性能/后端优化 | 新增对RadixAttention层的判断 | `python/sglang/srt/layers/quantization/w8a8_int8.py` |
+| 2026-07-09 | `616ba7b6d6` | 测试/文档/基准 | ci: reduce HCU runtime text check duplicate output | `scripts/ci/dcu/check_hcu_runtime_text.py` |
+| 2026-07-09 | `d7af9508db` | 调度/缓存/PD | style: apply CI hook formatting | `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/managers/cache_controller.py` |
+| 2026-07-09 | `fda6d44a45` | 测试/文档/基准 | ci: simplify HCU runtime text check failure message | `scripts/ci/dcu/check_hcu_runtime_text.py` |
+| 2026-07-09 | `8b4a7bdeb5` | 测试/文档/基准 | ci: refine HCU runtime text check message | `scripts/ci/dcu/check_hcu_runtime_text.py` |
+| 2026-07-09 | `4b0fcbd07e` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C17~C19 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-09 | `3e254b0413` | 通用实现调整 | style(distributed): apply pre-commit formatting to parallel_state.py | `python/sglang/srt/distributed/parallel_state.py` |
+| 2026-07-09 | `cee45bc550` | 测试/文档/基准 | docs(dcu): record C17-C19 validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-09 | `01a6f1b945` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C14~C16 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-08 | `b452d6bd67` | 测试/文档/基准 | docs(dcu): record C14-C16 functional validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-08 | `1cea713a71` | 测试/文档/基准 | docs(dcu): record C14-C16 validation block | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-08 | `b6db54a9a1` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C11~C13 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-08 | `5d2c6854a9` | 性能/后端优化 | 0.5.12 MHA、GQA类hicache适配 | `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/mem_cache/hiradix_cache.py` |
+| 2026-07-08 | `bfaf180d14` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C10 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-07 | `fe4e1fea3d` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-07-07 | `ef36df96f6` | 模型支持/运行时入口 | chore: add header for DCU runtime text checker | `scripts/ci/dcu/check_no_amd_runtime_text.py` |
+| 2026-07-07 | `9188d711e5` | 测试/文档/基准 | ci: rename HCU runtime text check script | `.github/workflows/quality-gate.yml`, `scripts/ci/dcu/check_hcu_runtime_text.py`, `scripts/ci/dcu/check_no_amd_runtime_text.py` |
+| 2026-07-07 | `d5f4d1c14f` | 性能/后端优化 | fix: skip expert distribution recording during CUDA graph capture | `python/sglang/srt/eplb/expert_distribution.py` |
+| 2026-07-07 | `9bde26e7c7` | 通用实现调整 | 解耦vllm rms_norm | `python/sglang/srt/layers/layernorm.py` |
+| 2026-07-07 | `3f920d4e06` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-07-07 | `0507e60908` | 缺陷修复 | fix: avoid amdsmi runtime logs on HCU | `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py` |
+| 2026-07-07 | `4d198708c3` | 性能/后端优化 | 解决sp下对padding的处理 | `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py` |
+| 2026-07-06 | `cf59f46950` | 缺陷修复 | [bugfix]: avoid HYV3 PD KV compact remap | `python/sglang/srt/disaggregation/common/conn.py` |
+| 2026-07-06 | `ec48fa7802` | 缺陷修复 | [bugfix]: 解决hy3开mtp下的精度问题. | `python/sglang/srt/disaggregation/base/conn.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py` |
+| 2026-07-06 | `23cbd00e31` | 缺陷修复 | [bugfix]: 解决hy3非mtp下的精度问题 | `python/sglang/srt/disaggregation/prefill.py` |
+| 2026-07-06 | `a1ed918ae7` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C09 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-06 | `fa6b75971f` | 性能/后端优化 | [BugFix] Deliver the remaining _is_dcu branch when flashattention_backend has changed | `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/triton_ops/metadata.py` |
+| 2026-07-06 | `88bb5176c8` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C08 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-05 | `36f3237527` | 性能/后端优化 | fix: refine HCU runtime log wording | `python/sglang/check_env.py`, `python/sglang/srt/layers/attention/vision.py`, `python/sglang/srt/layers/quantization/mxfp4.py` |
+| 2026-07-04 | `cd2e73a67c` | 性能/后端优化 | 优化lint扫描规则 | `.github/workflows/quality-gate.yml` |
+| 2026-07-03 | `8efd2ad46e` | 性能/后端优化 | update w4a16 deepgemm interface | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-07-03 | `00063277c1` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C07 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-03 | `c3dc2e8eb2` | 通用实现调整 | feat: validate DCU attention backend compatibility | `python/sglang/srt/server_args.py` |
+| 2026-07-03 | `ce2521017f` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-07-02 | `84bd983bad` | 模型支持/运行时入口 | ci: use local DCU reranker model | `.github/workflows/pr-test-dcu.yml` |
+| 2026-07-02 | `dd26854396` | 性能/后端优化 | support w4a16 moe ep | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py` |
+| 2026-07-02 | `fc2af93314` | 模型支持/运行时入口 | Add open-source compliance baseline workflow | `.github/workflows/open-source-compliance-baseline.yml` |
+| 2026-07-02 | `758a0a9890` | 模型支持/运行时入口 | Add open-source compliance configuration file | `.github/open-source-compliance.json` |
+| 2026-07-02 | `6332704295` | 测试/文档/基准 | ci: extend DCU stage-b per-file timeout | `.github/workflows/pr-test-dcu.yml` |
+| 2026-07-01 | `ef3571f7b0` | 性能/后端优化 | 解决CI报错问题 | `python/sglang/srt/utils/cuda_ipc_transport_utils.py` |
+| 2026-07-01 | `e6d4b3378c` | 模型支持/运行时入口 | [Addition] deliver one validation doc | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-01 | `998ffb809b` | 缺陷修复 | fix(fst): reclaim reserved memory after fastsafetensors weight load | `python/sglang/srt/model_loader/loader.py` |
+| 2026-07-01 | `696cae936d` | 缺陷修复 | fix(fst): use local device in fastsafetensors iterator for multi-node loading | `python/sglang/srt/model_loader/weight_utils.py` |
+| 2026-07-01 | `2b1fbe1e6c` | 性能/后端优化 | [CI] fix pre-commit lint errors surfaced after merging v0.5.12_dev | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-07-01 | `35456bae31` | 性能/后端优化 | [CI] fix pre-commit lint errors on megamoe w8a8 changed files | `.codespellrc`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/mega_moe.py` |
+| 2026-07-01 | `af015c4ce4` | 调度/缓存/PD | Update Trivy cache volume permissions | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-07-01 | `72f0237175` | 通用实现调整 | Remove credential keyword pattern from scan config | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-07-01 | `20f106c6b4` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-07-01 | `41db24a843` | 通用实现调整 | Enhance quality baseline scan with new checks | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-06-30 | `445eaafe5d` | 性能/后端优化 | [Perf] optimize aiter asm moe via shuffle weight | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-30 | `ff440b8971` | 测试/文档/基准 | docs(dcu): record C04 runtime validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-06-30 | `3910b3f9db` | 缺陷修复 | fix(scheduler): restore DCU empty-prefix location | `python/sglang/srt/managers/schedule_batch.py` |
+| 2026-06-30 | `f2d0e86d71` | 性能/后端优化 | fix(dsv4): repair DCU sgl-kernel and JIT build | `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `sgl-kernel/setup_hip.py` |
+| 2026-06-30 | `bd10f999c3` | 缺陷修复 | Fix formatting and improve quality gate script | `.github/workflows/quality-gate.yml` |
+| 2026-06-30 | `412236292d` | 调度/缓存/PD | Modify ruff command to use --no-cache | `.github/workflows/quality-gate.yml` |
+| 2026-06-30 | `ea182d81e3` | 调度/缓存/PD | Update quality gate workflow with environment variables | `.github/workflows/quality-gate.yml` |
+| 2026-06-09 | `c4d3532db8` | 性能/后端优化 | fix:dcu bypass triton normal_decode_set_metadata use normal_decode_set_metadata_lightop | `python/sglang/srt/layers/attention/flashattention_backend.py` |
+| 2026-06-03 | `5245654dc1` | 缺陷修复 | Fix: DCU bypass Triton get_last_loc and use native dcu_get_last_loc | `python/sglang/srt/mem_cache/common.py` |
+| 2026-06-03 | `4e3fd3a350` | 性能/后端优化 | HY3修改 | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-30 | `bda910adb6` | 性能/后端优化 | feat(dcu): integrate LightOp alloc-extend kernel | `python/sglang/srt/mem_cache/allocator.py` |
+| 2026-06-30 | `f8b2eefcff` | 通用实现调整 | feat(dsv4): generalize top-k index transformation | `python/sglang/srt/layers/attention/dsv4/indexer.py` |
+| 2026-06-30 | `f2e257f7ab` | 性能/后端优化 | feat(dcu): route sqrtsoftplus gating through LightOp | `python/sglang/srt/layers/moe/topk.py` |
+| 2026-06-30 | `b76f31cce4` | 通用实现调整 | Refactor quality-gate.yml with enhanced checks | `.github/workflows/quality-gate.yml` |
+| 2026-06-30 | `93cf8edc41` | 模型支持/运行时入口 | [Addition] deliver one validation doc | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-06-30 | `d22548eb14` | 性能/后端优化 | feat(sgl-kernel): port l2norm kernel with tiled optimization for DCU | `python/sglang/srt/layers/attention/fla/l2norm.py`, `sgl-kernel/CMakeLists.txt`, `sgl-kernel/csrc/common_extension.cc` |
+| 2026-06-30 | `c4cc0a73b6` | 性能/后端优化 | fix(dsv4): preserve DCU elementwise and topk paths | `python/sglang/jit_kernel/dsv4/elementwise.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py` |
+| 2026-06-29 | `fa2430f455` | 测试/文档/基准 | Organize DCU nightly workflow modules | `.github/workflows/nightly-test-dcu.yml` |
+| 2026-06-29 | `01216a18f2` | 测试/文档/基准 | Disable DCU remote weight loading nightly test | `test/registered/distributed/test_load_weights_from_remote_instance.py` |
+| 2026-06-29 | `06889adc04` | 调度/缓存/PD | Disable DCU update weights from disk nightly test | `test/registered/rl/test_update_weights_from_disk.py` |
+| 2026-06-29 | `0553e12d0a` | 性能/后端优化 | 修复合并分支产生的bug | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-06-29 | `83294cba6e` | 模型支持/运行时入口 | Add DCU nightly wheel release workflow with vendored-openssl support | `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-29 | `395171de08` | 缺陷修复 | test: fix DCU MMMU local dataset selection | `test/registered/dcu/accuracy/bw1100/test_mmmu_eval_dcu.py` |
+| 2026-06-28 | `f40a12fb51` | 性能/后端优化 | 修改IPC逻辑，每个rank下都开辟内存池，解决rank0偶发变慢的问题 | `python/sglang/srt/multimodal/processors/base_processor.py`, `python/sglang/srt/utils/cuda_ipc_transport_utils.py` |
+| 2026-06-26 | `a2076d9aa7` | 测试/文档/基准 | test: use local DCU eval datasets | `python/sglang/test/dcu_cookbook_utils.py`, `python/sglang/test/run_eval.py`, `python/sglang/test/simple_eval_mmlu.py` |
+| 2026-06-26 | `00febcba4a` | 测试/文档/基准 | ci: reuse PR-staged DCU nightly wheels | `.github/workflows/nightly-test-dcu.yml` |
+| 2026-06-26 | `21dfaaa4c2` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `8aa4b6eb52` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `7d807cb225` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `0c4fe5ebe9` | 测试/文档/基准 | ci: align DCU full wheel wait with PR staging | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-26 | `20eb46a704` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `db4759e78c` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `2f2abec114` | 测试/文档/基准 | ci: cover new DCU nightly suites in full enabled | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-26 | `ca7c7c54fc` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-25 | `c7a4903ad8` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-25 | `9abb848dba` | 性能/后端优化 | [Feat] support megamoe in the path of SGLANG_DCU_MEGA_MOE_RUNTIME=megamoe, and temporarily deepgeem path is still remained as backup | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-25 | `3dd1376ff3` | 缺陷修复 | docs: fix DCU README trailing whitespace | `README_DCU.md` |
+| 2026-06-25 | `d1ea0b3aa2` | 模型支持/运行时入口 | ci: support configurable manual DCU model validation | `.github/workflows/dcu-manual-model-test.yml`, `README_DCU.md` |
+| 2026-06-23 | `be7d10f53c` | 模型支持/运行时入口 | ci: add manual DCU unattended model test workflow | `.github/workflows/dcu-manual-model-test.yml`, `README_DCU.md` |
+| 2026-06-18 | `cae6c44969` | 性能/后端优化 | [FEAT] implement the initial changes about w8a8 megamoe for DCU | `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py` |
+| 2026-06-25 | `4a08e1934a` | 性能/后端优化 | test: add DCU nightly 1 and 2 GPU suites | `test/registered/core/test_mm_process_config.py`, `test/registered/distributed/test_data_parallelism.py`, `test/registered/distributed/test_load_weights_from_remote_instance.py` |
+| 2026-06-25 | `85cd7901c6` | 性能/后端优化 | test: keep verified DCU smoke and accuracy cases only | `test/registered/dcu/backends/test_torch_compile_smoke_dcu.py`, `test/registered/dcu/core/test_deterministic_fa3_dcu.py`, `test/registered/dcu/hicache/test_hicache_storage_file_backend_dcu.py` |
+| 2026-06-24 | `523756bde5` | 调度/缓存/PD | [docs(dcu)] log C01/C02 conflict ledger update | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-06-24 | `88ba08ad2b` | 性能/后端优化 | fix expert_location_dispatch_info is not define | `python/sglang/srt/layers/moe/topk.py` |
+| 2026-06-24 | `595f87c93e` | 测试/文档/基准 | Restore push trigger and CIUpload devpi upload | `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-24 | `f4716f8ec5` | 模型支持/运行时入口 | Add DCU nightly wheel release workflow | `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-24 | `00ce3e6d95` | 测试/文档/基准 | ci: stage DCU PR wheels locally | `.github/workflows/pr-test-dcu.yml`, `.github/workflows/release-pr-dcu.yml`, `scripts/ci/dcu/dcu_ci_install_dependency.sh` |
+| 2026-06-23 | `599b7490f1` | 缺陷修复 | bugfix: fix topk vmfault issue | `python/sglang/srt/layers/attention/dsv4/indexer.py` |
+| 2026-06-23 | `9304b9e1da` | 测试/文档/基准 | ci: build DCU gateway wheel by default | `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-23 | `de24697cb8` | 测试/文档/基准 | ci: disable PR trigger for DCU nightly workflow | `.github/workflows/nightly-test-dcu.yml` |
+| 2026-06-23 | `9ed791e147` | 测试/文档/基准 | ci: run PR helper workflows on private runner | `.github/workflows/labeler.yml`, `.github/workflows/pr-states.yml` |
+| 2026-06-23 | `ca95a26da7` | 模型支持/运行时入口 | ci: add DCU nightly workflow with wheel build | `.github/workflows/nightly-test-dcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-23 | `4b8a743d31` | 模型支持/运行时入口 | ci: add wheel mode to DCU full enabled | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-22 | `fdd9f8ecf3` | 缺陷修复 | [BUG FIX] fix SWA mem pool issue causing accept length decrease | `python/sglang/srt/mem_cache/swa_memory_pool.py` |
+| 2026-06-22 | `0536e102c2` | 测试/文档/基准 | [SGlang Open] Created an internal main branch from v0.5.12_dev-d4c6831a107a and some docs | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md`, `scripts/code_sync/dcu_main_migration.py` |
+| 2026-06-22 | `5d83cfe857` | 测试/文档/基准 | [SGlang Open] Created an internal main branch from v0.5.12_dev-d4c6831a107a and some docs | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md`, `scripts/code_sync/dcu_main_migration.py` |
+| 2026-06-22 | `0fc338999b` | 性能/后端优化 | 修复dpsk r1 fp8启动时的报错问题 | `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/moe/topk.py` |
+| 2026-06-18 | `87aa66f4fb` | 性能/后端优化 | [BugFix] workaround fix of aiter custom allreduce in cuda-graph, would revert it after driver fix it | `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py` |
+| 2026-06-18 | `37a67648ff` | 调度/缓存/PD | Update Trivy scan configuration in workflow | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-06-18 | `e80c0644ac` | 调度/缓存/PD | Update Trivy and Semgrep commands in workflow | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-06-18 | `fa22ad5aeb` | 性能/后端优化 | Add options for encoding, dependencies, and SAST scans | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-06-17 | `983e644d4c` | 性能/后端优化 | fix: avoid redundant calls to forward_aiter and fp8 groupgemm kernels | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-06-12 | `82a5c469c6` | 性能/后端优化 | fix issues of w13_weight using | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-11 | `c0206c7c4a` | 性能/后端优化 | Release original layer.weight after deepgemm_weights conversion to avoid OOM | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-11 | `b3a4160a32` | 性能/后端优化 | 修复dpskv4-flash在pd分离下mtp精度问题 | `python/sglang/srt/managers/overlap_utils.py`, `python/sglang/srt/managers/scheduler.py` |
+| 2026-06-18 | `64fe76840f` | 通用实现调整 | [FEAT] remove vllm allreduce and dead import related | `README_DCU.md`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce_ops.py` |
+| 2026-06-18 | `38299f5fbc` | 性能/后端优化 | 修复崩溃bug | `python/sglang/srt/layers/moe/ep_moe/kernels.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-06-18 | `914d50fab3` | 通用实现调整 | Create quality-baseline-scan.yml | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-06-16 | `de2840d1d6` | 性能/后端优化 | 更新get_scheme函数为get_linear_scheme | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py` |
+| 2026-06-16 | `bb70a2268f` | 性能/后端优化 | [Perf] Add packed paged KV varlen attention path | `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/pack_paged_kv_to_varlen.py`, `python/sglang/srt/server_args.py` |
+| 2026-06-16 | `224e5449fb` | 缺陷修复 | [Bug Fix] fix swa mem pool duoble release | `python/sglang/srt/mem_cache/swa_memory_pool.py` |
+| 2026-06-16 | `bd52e179c6` | 性能/后端优化 | fix: 修复EP bug | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py` |
+| 2026-06-15 | `fb0a689006` | 通用实现调整 | Rename lint job to lint-dcu to avoid name collision with lint.yml | `.github/workflows/lint-dcu.yml` |
+| 2026-06-15 | `bb5f2fc8af` | 测试/文档/基准 | ci: wait for DCU wheels on release workflow changes | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-15 | `548f9aa203` | 测试/文档/基准 | ci: skip GitHub artifact upload for DCU PR wheels | `.github/workflows/release-pr-dcu.yml` |
+| 2026-06-15 | `63747e66f9` | 性能/后端优化 | [BugFix] sync to support the more args 'topk_weights' in deep_ep dispatch | `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` |
+| 2026-06-15 | `bc649e255e` | 性能/后端优化 | [BUG FIX] fix swa fa accuracy because of page_table error | `python/sglang/srt/layers/attention/flashattention_backend.py` |
+| 2026-06-15 | `9da8b1176d` | 性能/后端优化 | [Feat] support unified fa without layout trans | `python/sglang/srt/layers/attention/flashattention_backend.py` |
+| 2026-06-15 | `0cdbfd7b06` | 模型支持/运行时入口 | Add lint-dcu.yml for DCU self-hosted runner, restore original lint.yml | `.github/workflows/lint-dcu.yml`, `.github/workflows/release-pypi-nightky-dcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-14 | `06331bc257` | 通用实现调整 | Refactor quality gate workflow for changed files check | `.github/workflows/quality-gate.yml` |
+| 2026-06-14 | `84cc64ecda` | 通用实现调整 | Create quality-gate.yml | `.github/workflows/quality-gate.yml` |
+| 2026-06-14 | `083e22033e` | 测试/文档/基准 | ci: auto-run DCU gate for impact paths | `.github/workflows/pr-test-dcu.yml`, `python/sglang/srt/server_args.py` |
+| 2026-06-13 | `f9f0cb23d1` | 测试/文档/基准 | ci: auto-run DCU gate for DCU-owned changes | `.github/workflows/pr-test-dcu.yml`, `python/sglang/test/dcu_utils.py` |
+| 2026-06-13 | `12a30ab42f` | 测试/文档/基准 | ci: stabilize DCU PR test workflow | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`, `.github/workflows/release-pr-dcu.yml` |
+| 2026-06-11 | `637377248a` | 测试/文档/基准 | ci: install DCU wheel artifacts without dependencies | `scripts/ci/dcu/dcu_ci_install_dependency.sh` |
+| 2026-06-11 | `eda451b27c` | 测试/文档/基准 | ci: pin DCU Engine tests to fa3 backend | `test/registered/dcu/core/bw1100/test_hidden_states_dcu.py`, `test/registered/dcu/sampling/bw1100/test_original_logprobs_dcu.py` |
+| 2026-06-11 | `033bc6b92e` | 性能/后端优化 | 重构aiter的重排逻辑 添加aiter log打印信息 | `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/moe/moe_runner/runner.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-11 | `52b5b9623c` | 测试/文档/基准 | ci: isolate DCU wheel wait checkout workspace | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-11 | `92a8ba840a` | 性能/后端优化 | [FEAT] cherry-pick and refactor from a0bcfe90, support moe triton backend and fix the acc issue in moe aiter backend | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/__init__.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8_moe.py` |
+| 2026-06-08 | `f71c2ef804` | 缺陷修复 | [BugFix] fix the buffer shape unalgined issues of draft model warmup and decode forward in PD phase | `python/sglang/srt/managers/overlap_utils.py` |
+| 2026-06-10 | `c066cf42f7` | 模型支持/运行时入口 | ci: add pull-requests:read permission to release-whl-dcu for PR file listing | `.github/workflows/release-whl-dcu.yml` |
+| 2026-06-10 | `6b0e35b3fe` | 测试/文档/基准 | ci: prefer python3.9 for verify_dcu_registration on self-hosted runner | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-10 | `cbf9c1ce4d` | 测试/文档/基准 | ci: use self-hosted runner for pr-gate to avoid billing block | `.github/workflows/pr-gate.yml` |
+| 2026-06-10 | `adaf77ef92` | 测试/文档/基准 | ci: always prefer self-hosted runner for pre-jobs to avoid billing block | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-10 | `e6e05f3229` | 测试/文档/基准 | ci: test auto-trigger push flow (no-op comment) | `test/registered/dcu/interface/test_dcu_smoke.py` |
+| 2026-06-09 | `a6c6527cd9` | 缺陷修复 | fix: pass DCU_CI_USE_INSTALLED_WHEELS into docker container for wheel mode skip | `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-09 | `e03bc0cf83` | 缺陷修复 | fix: skip PYTHONPATH assertion in wheel mode for stage-b test | `test/registered/dcu/interface/test_dcu_stage_b_flow_0.py` |
+| 2026-06-09 | `6d25108aca` | 性能/后端优化 | aiter适配moe_w8a8_fp8 | `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py` |
+| 2026-06-09 | `0f1ea33035` | 模型支持/运行时入口 | ci: add DCU wheel sync path for PR tests | `.github/workflows/pr-test-dcu.yml`, `.github/workflows/release-whl-dcu.yml`, `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-08 | `1e1d77a76c` | 性能/后端优化 | 解决aiter显存溢出问题 | `.gitignore`, `python/sglang/srt/layers/moe/moe_runner/aiter.py` |
+| 2026-06-05 | `51abece956` | 测试/文档/基准 | ci: remove DCU CSV coverage analyzer | `scripts/ci/dcu/analyze_dcu_csv_coverage.py` |
+| 2026-06-05 | `d6a2b719af` | 模型支持/运行时入口 | ci: map DCU priority metrics model path | `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-05 | `823bd922ff` | 测试/文档/基准 | ci: isolate DCU dispatch checkout workspace | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-05 | `d8f350eedf` | 测试/文档/基准 | ci: avoid dispatch checkout permission issues | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-05 | `b95046afa0` | 测试/文档/基准 | ci: guard DCU dispatch checkout workspace | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-05 | `7694afa394` | 性能/后端优化 | ci: refine DCU suite classification | `test/registered/dcu/kernels/test_sgl_kernel_smoke_dcu.py`, `test/registered/dcu/kernels/test_sgl_kernel_supported_dcu.py`, `test/registered/language/test_srt_backend.py` |
+| 2026-06-04 | `cf7567773a` | 模型支持/运行时入口 | ci: map DCU Qwen2.5 0.5B model path | `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-04 | `42ffb433b0` | 测试/文档/基准 | ci: avoid ROCR device remap in DCU runner | `scripts/ci/dcu/dcu_ci_exec.sh`, `scripts/ci/dcu/dcu_ci_start_container.sh` |
+| 2026-06-04 | `cad9d0c351` | 模型支持/运行时入口 | docs: add Apache license notices for DCU SGLang | `README.md`, `README_DCU.md`, `THIRD_PARTY_NOTICES.md` |
+| 2026-06-04 | `22e57a7b30` | 测试/文档/基准 | ci: verify DCU full registration in container | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-04 | `598f2d61f0` | 模型支持/运行时入口 | ci: use local DCU model env defaults | `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-04 | `099123603b` | 测试/文档/基准 | ci: run DCU full workflow on self-hosted runner | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-04 | `46efb284a6` | 调度/缓存/PD | ci: update dcu-full-enanled.yml | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-04 | `29b6895740` | 调度/缓存/PD | ci: update DCU test registration state | `.github/workflows/pr-test-dcu.yml`, `test/registered/metrics/test_metrics.py` |
+| 2026-06-04 | `113d67786f` | 调度/缓存/PD | Update chunk_delta_h.py | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py` |
+| 2026-06-04 | `27ea559793` | 通用实现调整 | 更新tilelang版本到0.1.9 | `python/pyproject.toml` |
+| 2026-06-03 | `9022f2c340` | 缺陷修复 | [FIX] Initialize swa_v_head_dim in TritonAttnBackend and cleanup unused import | `python/sglang/srt/layers/attention/triton_backend.py`, `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py` |
+| 2026-06-03 | `48d234263c` | 测试/文档/基准 | ci: pin DCU CI compatibility packages | `scripts/ci/dcu/dcu_ci_install_dependency.sh` |
+| 2026-06-03 | `c190162be1` | 测试/文档/基准 | ci: clean DCU dispatch validation workspace | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-03 | `494b4246f0` | 测试/文档/基准 | ci: allow DCU dispatch control jobs on runner | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-03 | `43375feaf7` | 测试/文档/基准 | ci: stabilize DCU PR required tests | `.github/workflows/pr-test-dcu.yml`, `python/sglang/__init__.py`, `python/sglang/lang/api.py` |
+| 2026-06-03 | `fba9d715f2` | 性能/后端优化 | 修复decode_metadata算子，import不起来的问题 | `sgl-kernel/python/sgl_kernel/__init__.py` |
+| 2026-06-03 | `d6baa08091` | 模型支持/运行时入口 | Add DCU wheel release workflow with CIUpload repair and devpi upload | `.github/workflows/release-pypi-nightky-dcu.yml` |
+| 2026-06-03 | `f13630b2e2` | 缺陷修复 | fix 修复chunk_delta_h调用报错问题 | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py` |
+| 2026-06-03 | `7b86e4afd8` | 性能/后端优化 | 修改aiter prefill阶段的fla算子传参 | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`, `python/sglang/srt/layers/attention/fla/chunk_o.py` |
+| 2026-06-02 | `a04b5628ec` | 性能/后端优化 | 支持triton版本flash_attn算子，方便排查PA精度问题 | `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/attention/triton_vllm_flash_attn.py` |
+| 2026-06-01 | `32d9bb7ae2` | 性能/后端优化 | 修复fused_sigmoid_gating_delta_rule_update冲突问题 | `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py` |
+| 2026-05-30 | `f7022899e5` | 性能/后端优化 | 增加decode_metadata sgl-kernel实现 | `python/sglang/srt/layers/attention/flashattention_backend.py`, `sgl-kernel/CMakeLists.txt`, `sgl-kernel/csrc/attention/decode_metadata.cu` |
+| 2026-05-26 | `5e3749568e` | 性能/后端优化 | 接入lightop layer_norm_fwd_1pass_opt算子实现 | `python/sglang/srt/layers/attention/fla/layernorm_gated.py` |
+| 2026-06-02 | `fb2b0297e8` | 测试/文档/基准 | ci: use dcu-ci-pr runner label directly | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `6809e20836` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-06-01 | `cf08ece20a` | 测试/文档/基准 | ci: avoid forcing DCU page size in tests | `python/sglang/lang/api.py`, `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-01 | `40fbcab062` | 测试/文档/基准 | ci: run DCU required include-file set on PR | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `695956fc18` | 测试/文档/基准 | ci: apply DCU runtime defaults in CI | `python/sglang/lang/api.py` |
+| 2026-06-01 | `e923247205` | 测试/文档/基准 | ci: route DCU validation to nmz4 runner | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `987a2c813d` | 测试/文档/基准 | ci: default DCU CI server backend to fa3 | `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-01 | `ad7aece93b` | 测试/文档/基准 | ci: expand DCU PR validation matrix | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `ada40fccfd` | 测试/文档/基准 | ci: allow full DCU validation from run-ci label | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-01 | `69dd9eb0e2` | 测试/文档/基准 | test: align enabled DCU cases | `python/sglang/test/dcu_utils.py`, `test/registered/metrics/test_metrics.py` |
+| 2026-05-25 | `3334b3c5e2` | 性能/后端优化 | [feature support] enable cp+ep by deegemm, ensure deepgemm ver>=da4b9c1 | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-06-01 | `584a9d2457` | 测试/文档/基准 | ci: allow DCU PR workflow on dcu-ci-pr | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `f0cfe1740f` | 模型支持/运行时入口 | ci: support DCU visible device selection | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`, `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-01 | `91b09c4464` | 模型支持/运行时入口 | test: allow DCU CI to override test models | `python/sglang/test/test_utils.py` |
+| 2026-06-01 | `8f4d1af5c2` | 测试/文档/基准 | ci: use explicit DCU checkout | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `53a10162c8` | 测试/文档/基准 | ci: clear DCU checkout proxy config | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `e362080200` | 测试/文档/基准 | ci: use static DCU git config path | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `6ba549a61c` | 测试/文档/基准 | ci: isolate DCU runner git config | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `f7789462f0` | 模型支持/运行时入口 | ci: add DCU full enabled workflow | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-01 | `f981141bef` | 性能/后端优化 | moe_runner适配aiter_w8a8_int8 | `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/w8a8_int8.py`, `python/sglang/srt/server_args.py` |
+| 2026-05-29 | `4b76f0ef57` | 测试/文档/基准 | ci: stabilize DCU PR runner workspace cleanup | `.github/workflows/pr-test-dcu.yml`, `scripts/ci/dcu/dcu_ci_install_dependency.sh` |
+| 2026-05-29 | `35522f4910` | 通用实现调整 | 添加lightop提示信息 | `python/sglang/srt/server_args.py` |
+| 2026-05-29 | `6a705f146b` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-05-28 | `93dac7dafa` | 性能/后端优化 | moe-runner-backend支持lightop_moe_w8a8 | `python/sglang/srt/layers/moe/moe_runner/lightop.py`, `python/sglang/srt/layers/moe/moe_runner/runner.py`, `python/sglang/srt/layers/moe/utils.py` |
+| 2026-05-28 | `02b73b2d38` | 缺陷修复 | ci: fix DCU local run suite execution | `test/registered/dcu/interface/test_dcu_stage_b_flow_0.py`, `test/run_suite.py` |
+| 2026-05-27 | `74ab583258` | 模型支持/运行时入口 | ci: add DCU PR CI validation flow | `.github/workflows/pr-test-dcu.yml`, `docs/dcu-pr-ci-visual-guide.html`, `python/sglang/test/ci/ci_register.py` |
+| 2026-05-22 | `5cff5f5e7f` | 性能/后端优化 | [feat]增加aiter w16a16 moe的支持，使能方式为export SGLANG_ROCM_USE_AITER_MOE=1 && export SGLANG_USE_MARLIN_W16A16_MOE=0 | `python/sglang/srt/layers/quantization/unquant.py` |
+| 2026-05-14 | `5d756f9826` | 缺陷修复 | fix the mtp issues of metadata loc size | `python/sglang/srt/speculative/eagle_worker_v2.py`, `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py` |
+| 2026-04-29 | `9c1c299194` | 缺陷修复 | fix mhc with tile 0.1.9 | `python/sglang/srt/layers/mhc.py` |
+| 2026-04-29 | `2e1710ded6` | 性能/后端优化 | fix jit for moe_fused_gate | `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh` |
+| 2026-04-29 | `6236ca8f5d` | 性能/后端优化 | [Feature] support rocm moe_fused_gate | `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh` |
+| 2026-04-28 | `22d8caf080` | 性能/后端优化 | [Feature] support rocm moe_fused_gate | `python/sglang/jit_kernel/csrc/add_constant.cuh`, `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh` |
 
 ## 逐 Commit 审计卡
 
-### Commit `5a00fbb22` - 删除多余代码
+### Commit `594e1ae94c` - [Chore] ci: Remove completed DashHub recovery workflow (#634)
 
-- 完整 hash: `5a00fbb22ffdc69b5b13abecabd5a5f111fe328f`
-- 时间/作者: 2026-05-18 / shangxl
+- 完整 hash: `594e1ae94c6103dabed4152a4ebbcca6fb049aeb`
+- 时间/作者: 2026-11-02 / guochenyang
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dashhub-recover-41338132822.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dashhub-recover-41338132822.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `471ab82545` - Add one-time DashHub recovery for run 41338132822 (#633)
+
+- 完整 hash: `471ab8254520c958d3c614e768a29b10423f7cf2`
+- 时间/作者: 2026-11-02 / guochenyang
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/dashhub-recover-41338132822.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dashhub-recover-41338132822.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `9fb319cc33` - [CI] optest: Require every enabled operator result (#622)
+
+- 完整 hash: `9fb319cc33a15b624970b0f5e45020e2a573dc07`
+- 时间/作者: 2026-10-29 / guochenyang
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/scheduler_profiler_mixin.py`, `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/mem_cache/base_prefix_cache.py`, `python/sglang/srt/mem_cache/hiradix_cache.py`, `python/sglang/srt/mem_cache/memory_pool_host.py`, `python/sglang/srt/mem_cache/session_aware_cache.py` 等 12 个文件
+- 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 已读文件:
-  - runtime-model: `python/sglang/srt/managers/tp_worker.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/srt/managers/cache_controller.py`; `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/managers/scheduler_profiler_mixin.py`; `python/sglang/srt/mem_cache/base_prefix_cache.py`; `python/sglang/srt/mem_cache/hiradix_cache.py`; `python/sglang/srt/mem_cache/memory_pool_host.py`; `python/sglang/srt/mem_cache/session_aware_cache.py`; `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py` 等 9 个文件
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-### Commit `dea82e2bc` - 去掉无关的代码及注释
+### Commit `db479b030f` - [CI] optest: Report outcome to DashHub (#619)
 
-- 完整 hash: `dea82e2bc5991147fae3eec4c5b1589e88a00ae4`
-- 时间/作者: 2026-05-18 / shangxl
-- 自动分类: 调度/缓存/PD
-- 主要文件: `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/mem_cache/memory_pool_host.py`, `python/sglang/srt/mem_cache/radix_cache.py`, `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py`, `python/sglang/srt/server_args.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/managers/tp_worker.py`; `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/srt/managers/cache_controller.py`; `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/mem_cache/memory_pool_host.py`; `python/sglang/srt/mem_cache/radix_cache.py`; `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `ce4be7d18` - hicache功能适配
-
-- 完整 hash: `ce4be7d186e131497c0586a32ed18345a79f4a93`
-- 时间/作者: 2026-05-18 / shangxl
+- 完整 hash: `db479b030f0975dbda241bf46fc4556a89a02365`
+- 时间/作者: 2026-10-29 / guochenyang
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/mem_cache/hiradix_cache.py`, `python/sglang/srt/mem_cache/memory_pool_host.py`, `sgl-kernel/csrc/common_extension_rocm.cc`, `sgl-kernel/csrc/kvcacheio/transfer.cu`, `sgl-kernel/include/sgl_kernel_ops.h`, `sgl-kernel/python/sgl_kernel/kvcacheio.py`
+- 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 已读文件:
-  - runtime-perf: `python/sglang/srt/managers/cache_controller.py`; `python/sglang/srt/mem_cache/hiradix_cache.py`; `python/sglang/srt/mem_cache/memory_pool_host.py`; `sgl-kernel/csrc/common_extension_rocm.cc`; `sgl-kernel/csrc/kvcacheio/transfer.cu`; `sgl-kernel/include/sgl_kernel_ops.h`; `sgl-kernel/python/sgl_kernel/kvcacheio.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-### Commit `55a72732c` - fix(dcu): 修复HiCache kernel路径访问host pointer导致的VMFault
+### Commit `25aa13e98f` - fix(ci) rebase pr-test-hcu.yml (#617)
 
-- 完整 hash: `55a72732c41836b8e672ce02a6af9ffcee0b5817`
-- 时间/作者: 2026-05-09 / maxiao1
-- 自动分类: 性能/后端优化
-- 主要文件: `sgl-kernel/csrc/kvcacheio/transfer.cu`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `sgl-kernel/csrc/kvcacheio/transfer.cu`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `5a811d1de` - 修改transfer_kv_all_direct_pf_lf_H2D_dcu参数
-
-- 完整 hash: `5a811d1ded746b54d5b8877d307d83aa0f5dc1f5`
-- 时间/作者: 2026-05-06 / shangxl
-- 自动分类: 调度/缓存/PD
-- 主要文件: `python/sglang/srt/mem_cache/memory_pool_host.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/mem_cache/memory_pool_host.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `ec7e2e859` - 提交本地修改的hicache
-
-- 完整 hash: `ec7e2e8595a8bd4df2cc191ec3fcca11a9610bc0`
-- 时间/作者: 2026-04-18 / niuhb
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/scheduler_profiler_mixin.py`, `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/mem_cache/base_prefix_cache.py`, `python/sglang/srt/mem_cache/hiradix_cache.py`, `python/sglang/srt/mem_cache/memory_pool_host.py` 等 17 个文件
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/managers/tp_worker.py`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`; `python/sglang/srt/managers/cache_controller.py`; `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/managers/scheduler_profiler_mixin.py`; `python/sglang/srt/mem_cache/base_prefix_cache.py`; `python/sglang/srt/mem_cache/hiradix_cache.py`; `python/sglang/srt/mem_cache/memory_pool_host.py`; `python/sglang/srt/mem_cache/radix_cache.py` 等 14 个文件
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `9555bc282` - 修改launch_chunk_fwd_kernel_o算子传参
-
-- 完整 hash: `9555bc28286e08db74dce900900b5ccf86ca0715`
-- 时间/作者: 2026-05-18 / liucong8560
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/fla/chunk_o.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk_o.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `162699fac` - [opt]fused_mamba_state_scatter_with_mask算子优化
-
-- 完整 hash: `162699fac22b3bb750671b4d537c63c3a8e95a56`
-- 时间/作者: 2026-05-18 / liucong8560
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/mamba/mamba_state_scatter_triton.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/mamba/mamba_state_scatter_triton.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `d32a79c65` - 修改aiter prefill阶段的fla算子传参
-
-- 完整 hash: `d32a79c65c752b8432983b083a82bf20c8ae7796`
-- 时间/作者: 2026-05-18 / liucong8560
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`, `python/sglang/srt/layers/attention/fla/chunk_o.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`; `python/sglang/srt/layers/attention/fla/chunk_o.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `4816b3f21` - [BUG FIX] add missing argument in aiter block fp8 moe
-
-- 完整 hash: `4816b3f21e57d9804bf01c25db48c28760976508`
-- 时间/作者: 2026-05-16 / shiqiang
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/fp8.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/fp8.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `5daf25b16` - [feat]适配aiter moe fp8_w8a8
-
-- 完整 hash: `5daf25b168a9182e660225f68d45f1d2b481d3b6`
-- 时间/作者: 2026-05-15 / chenyue3
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `0474160f8` - [BUG FIX] RadixAttention should not be skipped regardless of ignore list
-
-- 完整 hash: `0474160f8eaeab06e5e1d8affe352685d4ce8cdd`
-- 时间/作者: 2026-05-14 / shiqiang
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `bd06359df` - [fix]: SlimQuantW4A8Int8MarlinMoEMethod增加必要的形参
-
-- 完整 hash: `bd06359df6a612e029eb8c0f28dcf861d8e2b22f`
-- 时间/作者: 2026-05-13 / wujl5
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `7b06a6e59` - 修复seq_lens前后不一致，导致开mtp时block_table索引计算有问题，进而导致临界状态传参错误造成vmfault的问题
-
-- 完整 hash: `7b06a6e593db9cead379d6d9542e4c29f6830a73`
-- 时间/作者: 2026-05-14 / lipenghui
+- 完整 hash: `25aa13e98fe76d262d87c0b798ec8a3215ffb703`
+- 时间/作者: 2026-10-29 / 463975089
 - 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/dcu_mla_backend.py`
+- 主要文件: `.github/workflows/pr-test-hcu.yml`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/dcu_mla_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+  - ci: `.github/workflows/pr-test-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-### Commit `87d24d36b` - [bugfix]fix aiter_chunk_gated_delta_rule_fwd_kernel_h_blockdim64函数传参错误，解决qw3.5-35b,qw3.6-35b的精度问题
+### Commit `fd98647ed1` - [Fix] ci: Restore previous DashHub operator reporting (#614)
 
-- 完整 hash: `87d24d36b9271ee6fd27fe640b203cff4bb0d8c3`
-- 时间/作者: 2026-05-14 / chenyue3
+- 完整 hash: `fd98647ed1fc3d911926ea9d399b69934303c104`
+- 时间/作者: 2026-10-28 / guochenyang
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `029b6e6418` - [CI] model-ci: Pass history token for daily comparison report (#607)
+
+- 完整 hash: `029b6e6418828280e22086449dfa174433d2788b`
+- 时间/作者: 2026-10-28 / guochenyang
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `098f31d695` - fix(ci) rebase pr-test-hcu.yml release-pr-hcu.yml (#612)
+
+- 完整 hash: `098f31d695ce94169e6adf9ce55109beb532b326`
+- 时间/作者: 2026-10-28 / 463975089
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `6dac3481cd` - [Fix] ci: Preserve model cases in DashHub operator reporting (#604)
+
+- 完整 hash: `6dac3481cd73b48641f481b14858187d1936ee81`
+- 时间/作者: 2026-10-28 / guochenyang
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `a8543c8131` - [CI] cookbook: Add BW1000 deployment smoke tests (#570)
+
+- 完整 hash: `a8543c8131d429500411b8ba235b5411ddbabbd3`
+- 时间/作者: 2026-10-20 / guochenyang
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f89209aa84` - ci: pass package server to Cookbook model tests (#556)
+
+- 完整 hash: `f89209aa84a4fd0619d0662f6adf6980740efc78`
+- 时间/作者: 2026-10-19 / guochenyang
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `87b9d5c85e` - Run cookbook deployment checks after HCU image publishing (#548)
+
+- 完整 hash: `87b9d5c85eafab11fe18235718c1af37b348d784`
+- 时间/作者: 2026-10-16 / guochenyang
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/release-docker-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`; `.github/workflows/release-docker-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `fc095e0598` - fix(bench): reuse --tokenize-prompt for generated shared-prefix token IDs (#533)
+
+- 完整 hash: `fc095e059889d2fae91e86a5b3e5fa19eb8d7a34`
+- 时间/作者: 2026-10-15 / chaoyujiang
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/benchmark/datasets/common.py`, `python/sglang/benchmark/datasets/generated_shared_prefix.py`, `python/sglang/benchmark/serving.py`, `test/registered/bench_fn/test_benchmark_datasets_api.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/benchmark/datasets/common.py`; `python/sglang/benchmark/datasets/generated_shared_prefix.py`; `python/sglang/benchmark/serving.py`
+  - tests: `test/registered/bench_fn/test_benchmark_datasets_api.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `cc3758967d` - Pass DashHub credential to deployment smoke controller (#534)
+
+- 完整 hash: `cc3758967d74748204015a050182e5ad176c8a08`
+- 时间/作者: 2026-10-15 / guochenyang
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `78c700ee01` - Add image input to cookbook deployment smoke workflow (#530)
+
+- 完整 hash: `78c700ee0100f215268a3a802538881f281f29e2`
+- 时间/作者: 2026-10-14 / guochenyang
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e295faff5d` - update ci name&&add optest log (#515)
+
+- 完整 hash: `e295faff5dc889c97626f7bd25f6a8ca0a0f100c`
+- 时间/作者: 2026-10-12 / Lee156
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
+- 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-### Commit `06751b190` - [feat]lightop不支持的moe  size转到aiter进行支持
+### Commit `b6dd37e66a` - Run cookbook smoke tests for all cases by default
 
-- 完整 hash: `06751b1909d13c17500c59f5ae3621915e8704b5`
-- 时间/作者: 2026-05-13 / chenyue3
+- 完整 hash: `b6dd37e66ad4f820a75614c8b0e6f54ffa67c796`
+- 时间/作者: 2026-10-12 / gcy
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f9b972b372` - Use a clean checkout directory for the model smoke controller (#510)
+
+- 完整 hash: `f9b972b372f8695154301e2d7cee24195a963250`
+- 时间/作者: 2026-10-12 / guochenyang
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `50b0d00518` - Delegate HCU model deployment smoke CI to external controller (#503)
+
+- 完整 hash: `50b0d005189ee23cf3046b86dc44986c5e6b9345`
+- 时间/作者: 2026-10-12 / guochenyang
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/cookbook-deployment-smoke.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `3b0e4a0739` - [Fix] Bound crash diagnostics and fatal shutdown on main (#498)
+
+- 完整 hash: `3b0e4a07393778001dcd518d2b11de225e1be8c8`
+- 时间/作者: 2026-10-10 / 王启宇
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`
+- 主要文件: `docs/docs/references/environment_variables.mdx`, `python/sglang/srt/managers/multi_tokenizer_mixin.py`, `python/sglang/srt/managers/tokenizer_manager.py`, `python/sglang/srt/utils/cudacore_pyspy_dump_utils.py`, `test/registered/unit/utils/test_bounded_fatal_shutdown.py`, `test/registered/unit/utils/test_bounded_pyspy.py`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`
+  - docs-bench: `docs/docs/references/environment_variables.mdx`
+  - other: `python/sglang/srt/managers/multi_tokenizer_mixin.py`; `python/sglang/srt/managers/tokenizer_manager.py`
+  - runtime-perf: `python/sglang/srt/utils/cudacore_pyspy_dump_utils.py`
+  - tests: `test/registered/unit/utils/test_bounded_fatal_shutdown.py`; `test/registered/unit/utils/test_bounded_pyspy.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-### Commit `5d71e7e7a` - fix some error in initial version
+### Commit `4205397cbc` - add password-free download code (#499)
 
-- 完整 hash: `5d71e7e7ab11e7b760fba5e33f1dbeff30b35ba8`
-- 时间/作者: 2026-05-14 / maxiao1
+- 完整 hash: `4205397cbcf8c60852fadd7306cea32f2541a19d`
+- 时间/作者: 2026-10-10 / Lee156
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f0ee2a5059` - FIX(detokenizer): stream through genuine U+FFFD instead of holding until finish (#473)
+
+- 完整 hash: `f0ee2a5059c2d6a167bee3d996bca004276b3138`
+- 时间/作者: 2026-10-09 / JackPeng
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/managers/detokenizer_manager.py`, `test/registered/unit/managers/test_detokenizer_incremental.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/managers/detokenizer_manager.py`
+  - tests: `test/registered/unit/managers/test_detokenizer_incremental.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `fb46d17ad9` - add optest process (#481)
+
+- 完整 hash: `fb46d17ad9f633aa7fee521484262b0c26de560d`
+- 时间/作者: 2026-10-09 / Lee156
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-operator-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e05f146bed` - ci(hcu): migrate main workflows to organization runners (#463)
+
+- 完整 hash: `e05f146bed9ca80c72a18a4946fd6f838d8e7774`
+- 时间/作者: 2026-09-30 / dingxinlong
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/labeler.yml`, `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/pr-states.yml` 等 12 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`; `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/hcu-manual-model-test.yml`; `.github/workflows/labeler.yml`; `.github/workflows/lint-hcu.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/nightly-test-image-hcu.yml`; `.github/workflows/pr-states.yml` 等 12 个文件
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `5e8269d55a` - [BUGFIX]镜像DTK版本号不对 (#447)
+
+- 完整 hash: `5e8269d55a8cf4629cc39a3171169f4aa8b4d14b`
+- 时间/作者: 2026-09-28 / Crowder13
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/release-docker-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-docker-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `665b27d1fa` - feat(ci) fix main build whl failed (#449)
+
+- 完整 hash: `665b27d1fa35017a437b0aa0099a5f8aa33e5d9b`
+- 时间/作者: 2026-09-24 / 463975089
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f2d49c2c0e` - FIX(DSV4): 补全 system/reminder 结尾对话的 assistant 生成前缀并解析 markdown 伪工具调用 (#435)
+
+- 完整 hash: `f2d49c2c0e3cb3ca4dd89130cb5e2a408b0ac54b`
+- 时间/作者: 2026-09-23 / JackPeng
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/entrypoints/openai/encoding_dsv4.py`, `python/sglang/srt/function_call/deepseekv4_detector.py`, `test/registered/unit/function_call/test_deepseekv4_detector.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/function_call/deepseekv4_detector.py`
+  - runtime-model: `python/sglang/srt/entrypoints/openai/encoding_dsv4.py`
+  - tests: `test/registered/unit/function_call/test_deepseekv4_detector.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `7be1324cf8` - ci: report sglang nightly packages to DashHub (#424)
+
+- 完整 hash: `7be1324cf827dafe9f09ec3f86ade353801b5e1e`
+- 时间/作者: 2026-09-23 / guochenyang
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-pypi-nightly-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pypi-nightly-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `2871c8fdd9` - ci(hcu): docker 镜像改从 dev 基础镜像内联安装 DTK 26.04.1-72cu-0911 (#438)
+
+- 完整 hash: `2871c8fdd9594de894546b144d253c3dd88fd900`
+- 时间/作者: 2026-09-23 / Crowder13
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-docker-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `b5ca753bc8` - ci(hcu): run nightly against v0.5.18 and report its results (#432)
+
+- 完整 hash: `b5ca753bc8e054ce99b4c01b0369eb89c6870dbb`
+- 时间/作者: 2026-09-22 / dingxinlong
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `a981685e7f` - fix release-pr-hcu.yml build sglang (#423)
+
+- 完整 hash: `a981685e7f137a9e0629cbdcad2ad7bdd42017b9`
+- 时间/作者: 2026-09-21 / 463975089
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `cb932f5fbd` - feat(ci) compaity sgl-kernal main to v0.5.12 (#421)
+
+- 完整 hash: `cb932f5fbd904a577093a262c6a101834a1ef994`
+- 时间/作者: 2026-09-21 / 463975089
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `ae5c33991b` - Update quality gate workflow to use stable version
+
+- 完整 hash: `ae5c33991be7f0e277f71c4e853c10fc11cbe627`
+- 时间/作者: 2026-09-21 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `adc1d69b2a` - ci(hcu): align main wheel builds with 0.5.18 runtime (#379)
+
+- 完整 hash: `adc1d69b2a610fc000ca27e4b92c72e9c1b85044`
+- 时间/作者: 2026-09-16 / dingxinlong
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/test_hcu_build_alignment.py`, `scripts/ci/hcu/test_hcu_wheel_version.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_install_dependency.sh`; `scripts/ci/hcu/test_hcu_build_alignment.py`; `scripts/ci/hcu/test_hcu_wheel_version.py`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `5c03a8e22f` - [FEATURE]daily镜像将tag打入环境变量, dtk自动更新最新的blas (#376)
+
+- 完整 hash: `5c03a8e22f8cfeef0f10cd909231862bd446cc30`
+- 时间/作者: 2026-09-15 / Crowder13
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-docker-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `ae14a99e50` - fix(ci): fix HCU wheel build target routing (#372)
+
+- 完整 hash: `ae14a99e502d0e5dbed8abf42e3b35eb8807c3c5`
+- 时间/作者: 2026-09-15 / tianly
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `7c8272a3a3` - [BUGFIX]更新AICC安装方式 (#367)
+
+- 完整 hash: `7c8272a3a32d25391c8bc20e0c0678d3c9ac895d`
+- 时间/作者: 2026-09-15 / Crowder13
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-docker-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `575cf47976` - ci(hcu): restore source mode for test-only PRs (#364)
+
+- 完整 hash: `575cf47976761be9916048cfe2ca244b56d63fab`
+- 时间/作者: 2026-09-14 / dingxinlong
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `test/registered/hcu/openai_server/test_serving_chat_hcu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+  - tests: `test/registered/hcu/openai_server/test_serving_chat_hcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `516261baf1` - ci(hcu): register sampling test and adjust MMLU threshold (#359)
+
+- 完整 hash: `516261baf108e56bcb4a03dc7294a936e9656a2d`
+- 时间/作者: 2026-09-14 / dingxinlong
+- 自动分类: 测试/文档/基准
+- 主要文件: `test/registered/sampling/test_pytorch_sampling_backend.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/sampling/test_pytorch_sampling_backend.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `b5108cc7fe` - ci(hcu): use v0.5.18 image and restore eval dependencies (#347)
+
+- 完整 hash: `b5108cc7fea82d75da174f8f6681a843d43c462b`
+- 时间/作者: 2026-09-14 / dingxinlong
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh`, `scripts/ci/utils/sgl_eval_ref.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh`; `scripts/ci/utils/sgl_eval_ref.sh`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `0af71f61b6` - fix(ci): update HCU evaluation dependencies and asset paths (#325)
+
+- 完整 hash: `0af71f61b693c2bd2817a678e007660222db9bf3`
+- 时间/作者: 2026-09-08 / tianly
+- 自动分类: 缺陷修复
+- 主要文件: `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/hcu_ci_start_container.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_exec.sh`; `scripts/ci/hcu/hcu_ci_install_dependency.sh`; `scripts/ci/hcu/hcu_ci_start_container.sh`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `0457572a14` - [FEATURE]CInotificate发送飞书通知时，把镜像数据推送到数据库 (#308)
+
+- 完整 hash: `0457572a14edd55e05220726ff4a8af8b1931771`
+- 时间/作者: 2026-09-04 / Crowder13
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-image-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-image-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `2828bde71d` - ci(hcu): align llguidance and model asset paths (#299)
+
+- 完整 hash: `2828bde71da3f5f6314aa4022ae7e163dfc33ada`
+- 时间/作者: 2026-09-03 / dingxinlong
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_exec.sh`; `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `6fe7ce9097` - ci(hcu): restore run suite file filters (#290)
+
+- 完整 hash: `6fe7ce9097c8e9f1b7dccefbe4834a7f928a78c2`
+- 时间/作者: 2026-09-02 / dingxinlong
+- 自动分类: 测试/文档/基准
+- 主要文件: `test/run_suite.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/run_suite.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `9d261478d6` - [CI] Update HCU model asset paths on main (#285)
+
+- 完整 hash: `9d261478d6ace185f3e35a7211fc411b64d2057f`
+- 时间/作者: 2026-09-02 / dingxinlong
+- 自动分类: 性能/后端优化
+- 主要文件: `README_HCU.md`, `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_exec.sh`, `test/registered/hcu/accuracy/bw1100/test_gsm8k_eval_hcu.py`, `test/registered/hcu/accuracy/bw1100/test_mmlu_eval_hcu.py`, `test/registered/hcu/backends/bw1100/test_torch_compile_cuda_graph_hcu.py`, `test/registered/hcu/distributed/bw1100/test_hicache_pp_hcu.py`, `test/registered/hcu/distributed/bw1100/test_pp_consistency_hcu.py` 等 10 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `README_HCU.md`; `scripts/ci/hcu/hcu_ci_exec.sh`
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`; `test/registered/hcu/accuracy/bw1100/test_gsm8k_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_mmlu_eval_hcu.py`; `test/registered/hcu/backends/bw1100/test_torch_compile_cuda_graph_hcu.py`; `test/registered/hcu/distributed/bw1100/test_hicache_pp_hcu.py`; `test/registered/hcu/distributed/bw1100/test_pp_consistency_hcu.py`; `test/registered/hcu/distributed/bw1100/test_tp_dp_consistency_hcu.py`; `test/registered/hcu/spec/test_ngram_speculative_decoding_hcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `8fa7122b3a` - [FEATURE]构建镜像之后触发模型测试 (#277)
+
+- 完整 hash: `8fa7122b3ace4a4de48372ee3c4c3346871281d7`
+- 时间/作者: 2026-09-01 / Crowder13
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/release-docker-hcu.yml`, `docker/image-citest-conf-hcu.yaml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-image-hcu.yml`; `.github/workflows/release-docker-hcu.yml`
+  - other: `docker/image-citest-conf-hcu.yaml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e864c30287` - ci: enable HCU PR tests for release branches (#272)
+
+- 完整 hash: `e864c302870000325162a5788883997cc850ade8`
+- 时间/作者: 2026-08-31 / dingxinlong
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `3ca61517d0` - ci-remove-amd-status-from-pr-summaries
+
+- 完整 hash: `3ca61517d037e82ba19c981dd66ddaf0245e85cd`
+- 时间/作者: 2026-08-31 / dddddddxl
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-states.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-states.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `bc990ebd52` - [ci] 删除 release-whl-manual-hcu.yml (功能与 nightly/pr 编包重复)
+
+- 完整 hash: `bc990ebd52e0ae2500dc3c0ab4eeba187e84965b`
+- 时间/作者: 2026-08-28 / zhangyh15
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-whl-manual-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-whl-manual-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `68dcd498aa` - [ci] hcu ci 文件与 release/20260825_v0.5.18 分支保持一致
+
+- 完整 hash: `68dcd498aa7550a39e7f53b6588e19785efd5cae`
+- 时间/作者: 2026-08-28 / zhangyh15
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-docker-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `6b468d012b` - [feature] hcu ci: docker 镜像加 daily 定时触发, router 编包改用 vendored openssl, 镜像补装 flash_kda
+
+- 完整 hash: `6b468d012bcf693157cee193493842185165b93b`
+- 时间/作者: 2026-08-27 / zhangyh15
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-docker-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `7609d9af69` - [feature]适配hcu发包
+
+- 完整 hash: `7609d9af69ac40ed6730564cde4934d5b3e4a540`
+- 时间/作者: 2026-08-27 / zhangyh15
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`, `python/pyproject_hcu.toml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pypi-nightly-hcu.yml`
+  - other: `docker/hcu.Dockerfile`; `python/pyproject_hcu.toml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `2866df9948` - ci(hcu): trust wheel build workspaces
+
+- 完整 hash: `2866df9948b40e81405fcf5947ef74b8f744c9a3`
+- 时间/作者: 2026-08-27 / dddddddxl
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `a2de3b8cff` - ci(hcu): use bash for wheel build jobs
+
+- 完整 hash: `a2de3b8cffc365e5f813d2ddd6c7226abe29db90`
+- 时间/作者: 2026-08-26 / dddddddxl
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f6d701c520` - Fix stale HCU Stage B test paths
+
+- 完整 hash: `f6d701c520529490926e3c350682b7fe7ca6f9d0`
+- 时间/作者: 2026-08-26 / reverie-hub
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/pr-test-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `c94c3ca2c8` - fix: gateway wheel is at workspace root target/wheels
+
+- 完整 hash: `c94c3ca2c8341c501b46a32c750e32dfe8ce4e06`
+- 时间/作者: 2026-08-26 / zhangyh15
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/release-whl-manual-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-whl-manual-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `8dd5daf2fa` - Refine HCU and AMD CLI help text
+
+- 完整 hash: `8dd5daf2fa5555ab13751b159703124fd493a437`
+- 时间/作者: 2026-08-26 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `python/sglang/srt/server_args.py`, `test/run_suite.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - tests: `test/run_suite.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `990a1a798d` - ci: disable scheduled gateway nightly release
+
+- 完整 hash: `990a1a798d40ccea97ef91c16a9d8cd8f25957e2`
+- 时间/作者: 2026-08-26 / dddddddxl
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-release-gateway.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-release-gateway.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `fd41570479` - Refine HCU platform diagnostics and CLI help
+
+- 完整 hash: `fd415704795411fa8fcbc7d7571c41dcb3d1c431`
+- 时间/作者: 2026-08-24 / reverie-hub
+- 自动分类: 通用实现调整
+- 主要文件: `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `d42ecf6fe9` - Fix HCU detection and sanitized topology diagnostics
+
+- 完整 hash: `d42ecf6fe9854d6127c167959fe7bec30439b73b`
+- 时间/作者: 2026-08-21 / reverie-hub
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`, `scripts/ci/hcu/hcu_rename_allowlist.txt`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_rename_allowlist.txt`
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `6a4a61efba` - ci(hcu): detect runner workspace ownership
+
+- 完整 hash: `6a4a61efba7f1a2d75bfe132d6589a459a0f2c1c`
+- 时间/作者: 2026-08-25 / dddddddxl
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `3e6aaf09d8` - ci(hcu): allow fork checkout in target workflows
+
+- 完整 hash: `3e6aaf09d878c40268294082de2abf032911bf1a`
+- 时间/作者: 2026-08-25 / dddddddxl
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/lint-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/lint-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f2fc4e166b` - Update quality gate workflow to version 2.0.3
+
+- 完整 hash: `f2fc4e166b64086a0ef22e99a96046bd5acf4cc1`
+- 时间/作者: 2026-08-25 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `69c73a1787` - ci(hcu): support fork pull requests
+
+- 完整 hash: `69c73a1787bdd189d88ba7cb3240dc34c46663a7`
+- 时间/作者: 2026-08-25 / dddddddxl
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/lint-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/lint-hcu.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `94e9fa4b1d` - ci: align manual HCU wheel workflow with nightly (drop chown/devpi upload)
+
+- 完整 hash: `94e9fa4b1d10f14c6120bab4f5416caf6e318cd9`
+- 时间/作者: 2026-08-25 / zhangyh15
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-whl-manual-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-whl-manual-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `59213c7e48` - Revert the hcu_rename_allowlist entry for -DCUDA_ENABLED
+
+- 完整 hash: `59213c7e48c978859b7086524aab5b0ccb500fc4`
+- 时间/作者: 2026-08-25 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `scripts/ci/hcu/hcu_rename_allowlist.txt`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_rename_allowlist.txt`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `d1adf7b503` - [feature] manual compile ci
+
+- 完整 hash: `d1adf7b503b20e64e07c38946a067ee90c428962`
+- 时间/作者: 2026-08-25 / zhangyh15
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-whl-manual-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-whl-manual-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `c40703e6b4` - fix(ci): clear the three Quality Gate blockers from the 20260824 sync
+
+- 完整 hash: `c40703e6b494756f882f1e052d2d574350e5591a`
+- 时间/作者: 2026-08-25 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/_npu-pr-test-stage.yml`, `.github/workflows/_npu-single-node-test-stage.yml`, `.github/workflows/nightly-test-npu.yml`, `python/sglang/srt/server_args.py`, `scripts/ci/hcu/hcu_rename_allowlist.txt`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/_npu-pr-test-stage.yml`; `.github/workflows/_npu-single-node-test-stage.yml`; `.github/workflows/nightly-test-npu.yml`
+  - other: `scripts/ci/hcu/hcu_rename_allowlist.txt`
+  - runtime-model: `python/sglang/srt/server_args.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `261b8627f1` - fix(hcu): restore 29 environ declarations the sync auto-merge dropped
+
+- 完整 hash: `261b8627f107f553e26ce43b74d052c28a676bfd`
+- 时间/作者: 2026-08-24 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/sync-official-main-20260824-summary.md`, `python/sglang/srt/environ.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`; `docs/internal/sync-official-main-20260824-summary.md`
+  - other: `python/sglang/srt/environ.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `37c5b30bb9` - fix: extract full DTK version for three-part versions
+
+- 完整 hash: `37c5b30bb9f24bbac284e5598a9219f71b6c06bf`
+- 时间/作者: 2026-08-20 / zhangyh15
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/nightly-test-dcu.yml`, `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-dcu.yml`; `.github/workflows/release-docker-hcu.yml`; `.github/workflows/release-pypi-nightly-dcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `a96aed11f0` - [feat] 适配aiter性能优化后的 sglang_fused_sigmoid_gating_delta_rule_update 算子
+
+- 完整 hash: `a96aed11f05f65d18f5bd46446b4ca9b7ac82105`
+- 时间/作者: 2026-08-21 / zhuwenbopro
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `27ce43c71d` - [fix]solved CI Test errors
+
+- 完整 hash: `27ce43c71d9194fd473370a19f354e755b5ade86`
+- 时间/作者: 2026-08-20 / chenyuege
 - 自动分类: 性能/后端优化
 - 主要文件: `python/sglang/srt/layers/attention/flashattention_interface.py`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -267,54 +1378,637 @@
   - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-### Commit `1b7bdda04` - [feat]修改chunk_gated_delta_rule_fwd_kernel_h_blockdim64算子的import 路径从而适配新版本aiter
+### Commit `72d1d2a73a` - [fix]solved other CI Test errors
 
-- 完整 hash: `1b7bdda04720df5a0ecd25964939f90e7417137d`
-- 时间/作者: 2026-05-13 / chenyue3
+- 完整 hash: `72d1d2a73af94d8cdef717fd46cacf331665b32e`
+- 时间/作者: 2026-08-20 / chenyuege
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_interface.py`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-### Commit `423d7d102` - [BUG FIX] eliminate trace bubbles in MTP graph reply stage by avoiding implicit conversion
+### Commit `f6b66222a0` - revert: 恢复 release-pr-hcu.yml 默认 torch 版本为 2.10.0
 
-- 完整 hash: `423d7d102b5cc7490cd0919a419ab111b02f8bf5`
-- 时间/作者: 2026-05-12 / shiqiang
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/triton_backend.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/triton_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `8401bfecf` - 接入causal_conv1d_fn_dcu算子实现
-
-- 完整 hash: `8401bfecf28117841d8798e4bdc57c294b1434fe`
-- 时间/作者: 2026-05-08 / liucong
+- 完整 hash: `f6b66222a00a63851345729b7acd8d9855c2e184`
+- 时间/作者: 2026-08-20 / zhangyh15
 - 自动分类: 通用实现调整
-- 主要文件: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
+- 主要文件: `.github/workflows/release-pr-hcu.yml`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+  - ci: `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-### Commit `2e6a7a94d` - 增加aiter的fused_sigmoid_gating_delta_rule_update算子实现
+### Commit `11d08002bf` - [fix]solved CI Test errors
 
-- 完整 hash: `2e6a7a94d930dbcfa46bc3941cc8343ff8e66be6`
-- 时间/作者: 2026-05-08 / liucong
+- 完整 hash: `11d08002bfd60e96b4ff4d1210a69678a70de801`
+- 时间/作者: 2026-08-20 / chenyuege
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`, `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py`
+- 主要文件: `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/mem_cache/kv_cache_dtype.py`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`; `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py`
+  - other: `python/sglang/srt/arg_groups/overrides.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/mem_cache/kv_cache_dtype.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-### Commit `3c1dba355` - 修复slimquant_w4a8中blaslt路径的量化算子调用与权重布局
+### Commit `b628d29e1c` - [feature] 增加打镜像的ci, 0.5.15版本更新torch到2.11版本
 
-- 完整 hash: `3c1dba35570e7261a6bf39a26837c7b8907c7b5f`
-- 时间/作者: 2026-05-07 / maxiao1
+- 完整 hash: `b628d29e1c2e33e291e647991eab213bc9c5dcc8`
+- 时间/作者: 2026-08-20 / zhangyh15
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `docker/hcu.Dockerfile`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-docker-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `fb7369fec0` - [bugfix]删除无关文件
+
+- 完整 hash: `fb7369fec0d5fd3a6bbb45515c95fba0ffc4efbf`
+- 时间/作者: 2026-08-20 / chenyuege
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `62a07586d9` - [feat] 适配HCU FA3
+
+- 完整 hash: `62a07586d98059ba83cf0b1a2e1d6496a8de2bed`
+- 时间/作者: 2026-08-20 / chenyuege
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942`, `python/sglang/srt/mem_cache/kv_cache_dtype.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942`
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/mem_cache/kv_cache_dtype.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `9bbf3799d8` - docs(hcu): add the 20260817 official backport validation report
+
+- 完整 hash: `9bbf3799d827a26d6768d569fc652b9837a31425`
+- 时间/作者: 2026-08-17 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/backport-official-20260817-validation-report.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/backport-official-20260817-validation-report.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `fa309a1e19` - fix(hcu): drop the stale 0.5.12-era expert-count override in FusedMoE
+
+- 完整 hash: `fa309a1e19c40cd15a9f5cf6a14e8f0b701211f9`
+- 时间/作者: 2026-08-14 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `5e2ba659ea` - fix lint: apply pre-commit fixes to the dspark bugfixes
+
+- 完整 hash: `5e2ba659ea4a3780b4c175940bd2537f5d34f56b`
+- 时间/作者: 2026-08-13 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/speculative/dflash_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/speculative/dflash_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `18e167b730` - [BugFix] fix the client inference None errors in temperature>0 with a torch implementation
+
+- 完整 hash: `18e167b7304e0cb9cc11094cc7f012ce630fd9fe`
+- 时间/作者: 2026-08-13 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/speculative/dflash_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/speculative/dflash_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `54e3ed50f6` - [BugFix] fix the runtime errors in ep+dspark mode
+
+- 完整 hash: `54e3ed50f6c00f8d1905841b9ab394efbebe213b`
+- 时间/作者: 2026-08-13 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/speculative/dspark_components/dspark_draft.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/speculative/dspark_components/dspark_draft.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `fb7f119564` - ci(hcu): adapt wheel jobs to CIUpload 0.3
+
+- 完整 hash: `fb7f119564646fcafbf36ae11361998223e3fa2b`
+- 时间/作者: 2026-08-12 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `scripts/ci/hcu/hcu_ci_build_shared_wheels.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_build_shared_wheels.sh`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `2083c069f7` - fix lint: apply pre-commit fixes to the EP MoE fallback change
+
+- 完整 hash: `2083c069f76aaa38db41ea78ea17157ef9532f02`
+- 时间/作者: 2026-08-12 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `ccbb65acb2` - [HCU][DSpark] Fix DP EP MoE fallback routing
+
+- 完整 hash: `ccbb65acb26c1d42fbc729767c6b5d87caddb827`
+- 时间/作者: 2026-08-11 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `b36730b417` - fix lint: apply pre-commit fixes to the mHC EAGLE changes
+
+- 完整 hash: `b36730b41733f8ddd3a4754210230067b1587ffb`
+- 时间/作者: 2026-08-10 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/speculative/eagle_worker_common.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/speculative/eagle_worker_common.py`
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `5fd89c7288` - [BugFix] fix the inference tensor graph replay issues in MTP mode
+
+- 完整 hash: `5fd89c72883270f2f931f07daee28a78fde2dbcb`
+- 时间/作者: 2026-08-10 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/speculative/eagle_worker_common.py`, `python/sglang/srt/speculative/eagle_worker_v2.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/managers/tp_worker.py`; `python/sglang/srt/speculative/eagle_worker_common.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `4a6fbed985` - [HCU][DSpark] Add standalone Triton fallback for missing AITER MoE config
+
+- 完整 hash: `4a6fbed98571481aae473799555ed3b3fd46d493`
+- 时间/作者: 2026-08-10 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/hcu_dspark_aiter_moe_fallback.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/hcu_dspark_aiter_moe_fallback.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `e3a9d595c9` - [HCU][DSpark] Fix sampling parameter updates after graph capture
+
+- 完整 hash: `e3a9d595c9e048425141f6f384bd8cfd87ec5f85`
+- 时间/作者: 2026-08-10 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/speculative/dspark_components/dspark_draft_sampler.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/speculative/dspark_components/dspark_draft_sampler.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `3de1323a9b` - ci(hcu): normalize rebased PD suite names
+
+- 完整 hash: `3de1323a9b955c7395391660c8efd531fccc733b`
+- 时间/作者: 2026-08-07 / LvJIA-RG
+- 自动分类: 调度/缓存/PD
+- 主要文件: `test/registered/hcu/README.md`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`, `test/registered/hcu/disaggregation/test_pd_hcu_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/hcu/README.md`; `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`; `test/registered/hcu/disaggregation/test_pd_hcu_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `3fbc8ae9ef` - test(hcu): align numerical references with v0.5.15
+
+- 完整 hash: `3fbc8ae9efa869b6a4229021cae7af09419658a4`
+- 时间/作者: 2026-08-07 / LvJIA-RG
+- 自动分类: 性能/后端优化
+- 主要文件: `test/registered/hcu/kernels/test_attention_reference_hcu.py`, `test/registered/hcu/kernels/test_int8_w8a8_reference_hcu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/hcu/kernels/test_attention_reference_hcu.py`; `test/registered/hcu/kernels/test_int8_w8a8_reference_hcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `76ced479ea` - test(hcu): use v0.5.15 FP8 kernel path
+
+- 完整 hash: `76ced479ea28a5d4f34c47e225bc7d416efa350c`
+- 时间/作者: 2026-08-07 / LvJIA-RG
+- 自动分类: 性能/后端优化
+- 主要文件: `test/registered/hcu/kernels/test_fp8_quant_reference_hcu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/hcu/kernels/test_fp8_quant_reference_hcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `ecf4756cea` - test(hcu): isolate server guard unit test
+
+- 完整 hash: `ecf4756cea2d3d9a08a50dfc1fb0b4342a3fe3cc`
+- 时间/作者: 2026-08-07 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `scripts/ci/hcu/test_hcu_server_guard.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `scripts/ci/hcu/test_hcu_server_guard.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `dc5cd70892` - ci: finalize v0.5.15 workflow policy
+
+- 完整 hash: `dc5cd708920beaa8c6b76be7ddc72cb1b4e6a2ce`
+- 时间/作者: 2026-08-07 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/ci-auto-bisect.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/slash-command-handler.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/ci-auto-bisect.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/slash-command-handler.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `50736ebe71` - ci(hcu): keep migration changes scoped
+
+- 完整 hash: `50736ebe711fa247f945d601cfb9de438ee711a0`
+- 时间/作者: 2026-08-07 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `README_HCU.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `README_HCU.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `1a5ce1750d` - ci(hcu): publish reasoning results to shared storage
+
+- 完整 hash: `1a5ce1750db03d590d791dbf4544c2109a46aeaa`
+- 时间/作者: 2026-08-07 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_publish_reasoning_code.py`, `scripts/ci/hcu/test_hcu_ci_publish_reasoning_code.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_publish_reasoning_code.py`; `scripts/ci/hcu/test_hcu_ci_publish_reasoning_code.py`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `4c7a264e5c` - ci(hcu): align model assets and selected-ref kernel
+
+- 完整 hash: `4c7a264e5ce84e1d09a9c84158b0f104fb22cac1`
+- 时间/作者: 2026-08-07 / LvJIA-RG
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `python/sglang/test/hcu_cookbook_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/hcu-manual-model-test.yml`
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `92ce544fac` - ci: align v0.5.15 workflow triggers
+
+- 完整 hash: `92ce544fac3ddcde09fe4bc8524adb32c7722aed`
+- 时间/作者: 2026-08-07 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/bot-bump-docs-version.yml`, `.github/workflows/release-docker-amd.yml`, `.github/workflows/release-docker-npu.yml`, `.github/workflows/release-docker-runtime.yml`, `.github/workflows/release-docker-xeon.yml`, `.github/workflows/release-docker.yml`, `.github/workflows/release-pypi.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/bot-bump-docs-version.yml`; `.github/workflows/release-docker-amd.yml`; `.github/workflows/release-docker-npu.yml`; `.github/workflows/release-docker-runtime.yml`; `.github/workflows/release-docker-xeon.yml`; `.github/workflows/release-docker.yml`; `.github/workflows/release-pypi.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `b59995e42d` - fix(hcu): point PD smoke tests at a declared HCU suite
+
+- 完整 hash: `b59995e42dc3fb5d985b435a81ae97e16bbe0163`
+- 时间/作者: 2026-08-07 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `test/registered/hcu/README.md`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`, `test/registered/hcu/disaggregation/test_pd_hcu_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/hcu/README.md`; `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`; `test/registered/hcu/disaggregation/test_pd_hcu_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `154a88c7b7` - fix lint: apply isort/black to the lmslim->lightop migration
+
+- 完整 hash: `154a88c7b748bd7ce4520194cdc94ced19e53439`
+- 时间/作者: 2026-08-07 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/layers/quantization/fp8_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`; `python/sglang/srt/layers/quantization/fp8_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `b0f2bb3a84` - fix(hcu): restore network_mode matrix keys dropped by the forward-port
+
+- 完整 hash: `b0f2bb3a84643e29eda30adb48c3aaa6e3b8bf6c`
+- 时间/作者: 2026-08-06 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f17440f19f` - fix(hcu): restore original license headers dropped by the forward-port
+
+- 完整 hash: `f17440f19f7168bbcf12e8bd5e1015b684360b88`
+- 时间/作者: 2026-08-06 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `scripts/ci/hcu/hcu_ci_start_container.sh`, `test/run_suite.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_start_container.sh`
+  - tests: `test/run_suite.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `8e2aba4bfa` - fix lint: apply isort/black to forward-port diff
+
+- 完整 hash: `8e2aba4bfa849b33963017aa074ddeb4d9710e98`
+- 时间/作者: 2026-08-06 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/kernels/ops/attention/decode_attention.py`, `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8.py`, `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_pd.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_notify_feishu.py`; `scripts/ci/hcu/test_hcu_ci_pd.py`
+  - runtime-perf: `python/sglang/kernels/ops/attention/decode_attention.py`; `python/sglang/srt/layers/moe/moe_runner/aiter.py`; `python/sglang/srt/layers/quantization/slimquant_w4a8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `f1c6f56315` - fix(hcu): drop leftover source hunks that renaming and partial takes left behind
+
+- 完整 hash: `f1c6f56315d32e9184e1584be65a41f9f2efe221`
+- 时间/作者: 2026-08-06 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`, `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`; `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `dabae6b13a` - fix(ci): use PR files API for HCU wheel detection
+
+- 完整 hash: `dabae6b13a2b6be718650ecbf51887ca0b70245b`
+- 时间/作者: 2026-08-05 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `44bb481cf9` - fix(eplb): apply expert ID remapping for HCU fused TopK
+
+- 完整 hash: `44bb481cf9550fb79ebc8302290b1ce224cb2f76`
+- 时间/作者: 2026-08-05 / liucong
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/topk.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/topk.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `2fb37eaace` - fix(ci): align HCU Python wheel paths
+
+- 完整 hash: `2fb37eaacebb19abafa369cc3d2de779b064bb3b`
+- 时间/作者: 2026-08-05 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/pr-test-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `71de6dd93d` - fix(ci): align HCU gateway wheel detection
+
+- 完整 hash: `71de6dd93d32de13cdf3f91f0a1ea2c5bf507084`
+- 时间/作者: 2026-08-05 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_install_dependency.sh`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `2a342cdf1d` - fix fp8 bug of triton
+
+- 完整 hash: `2a342cdf1d656a8620a6a1657f471f6ee0e20aa7`
+- 时间/作者: 2026-08-05 / sunjf
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/attention/triton_ops/decode_attention.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/triton_ops/decode_attention.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `8160ebe53c` - fix(hcu): retain PD decode adapter callbacks
+
+- 完整 hash: `8160ebe53c68d03beacbd1f29c269566f4309246`
+- 时间/作者: 2026-08-04 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `43d8d9ac1b` - style(hcu): fix lint for KME W8A8 lightop path
+
+- 完整 hash: `43d8d9ac1b8501ad32ab508f39af689ceb23a742`
+- 时间/作者: 2026-08-04 / lizhigong
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `e8298ba909` - fix(hcu): restore DP decode protocol constants
+
+- 完整 hash: `e8298ba909f62fb2d3511b9d1e9544bee60aaca2`
+- 时间/作者: 2026-08-04 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/managers/scheduler_components/dp_attn.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `083d1d8b99` - fix(hcu): restore DeepGEMM PD helper and current cache API
+
+- 完整 hash: `083d1d8b992fe769814bff832efdafc53f758028`
+- 时间/作者: 2026-08-04 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/mem_cache/memory_pool.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/utils.py`; `python/sglang/srt/mem_cache/memory_pool.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `cd60b74339` - 修改hicache+pp并行 stage不一致问题commit提交格式
+
+- 完整 hash: `cd60b7433981dba9d7a90662e846ca29191fa4ee`
+- 时间/作者: 2026-08-04 / xinleishang
+- 自动分类: 调度/缓存/PD
+- 主要文件: `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/mem_cache/hiradix_cache.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/managers/cache_controller.py`; `python/sglang/srt/mem_cache/hiradix_cache.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `143ee92872` - refactor(hcu): route KME W8A8 hipBLASLt through lightop
+
+- 完整 hash: `143ee92872293cbe7d7224a58e0c2d6c5233f444`
+- 时间/作者: 2026-08-03 / yht183
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `84bfd45c44` - 修复hicache+pp并行 stage不一致问题
+
+- 完整 hash: `84bfd45c449c950b91a38740e48bab4a25fa1da8`
+- 时间/作者: 2026-07-29 / shangxl
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/cache_init_params.py`, `python/sglang/srt/mem_cache/hiradix_cache.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/managers/cache_controller.py`; `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/mem_cache/cache_init_params.py`; `python/sglang/srt/mem_cache/hiradix_cache.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `015f6d49a0` - fix lint: drop redundant module-scope sgl_kernel import in forward_batch_info
+
+- 完整 hash: `015f6d49a06bfc7caffecf3dfb77b3c0a46f5ffe`
+- 时间/作者: 2026-08-03 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/model_executor/forward_batch_info.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `de696eab9c` - Update quality gate workflow to version 2.0.1
+
+- 完整 hash: `de696eab9cacc8b2f9c8473e5f5ca7f782a36a66`
+- 时间/作者: 2026-08-03 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e6c4102592` - Update quality gate workflow to version 2.0.1
+
+- 完整 hash: `e6c41025927c2e15120f7ee8911005f5890adef5`
+- 时间/作者: 2026-08-03 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `3358846e55` - Update quality-gate.yml
+
+- 完整 hash: `3358846e556ef4229eb098e45a99098be1b1b8ad`
+- 时间/作者: 2026-08-03 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `4d3aaf6aff` - Update quality gate workflow for versioning and concurrency
+
+- 完整 hash: `4d3aaf6affc573b265df1c77a4620178d8c7f1a8`
+- 时间/作者: 2026-08-03 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `286612da40` - Update quality gate workflow to use version v2.0.0
+
+- 完整 hash: `286612da40c357f62499b1b177636a3d2451ff14`
+- 时间/作者: 2026-08-03 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `ff7f44b8ed` - Update quality gate workflow to use version v2.0.0
+
+- 完整 hash: `ff7f44b8edf3acf125c9f73d8189997281766d83`
+- 时间/作者: 2026-08-03 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `67ecec8dd1` - fix(hcu): scope Feishu status to accuracy results
+
+- 完整 hash: `67ecec8dd142bd6da48507abe89a927649e094c2`
+- 时间/作者: 2026-08-03 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_notify_feishu.py`; `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `85dcec9474` - fix(hcu): support Python 3.8 in Feishu notifier
+
+- 完整 hash: `85dcec9474c249b7e27f7c8fc87e8b485ae09155`
+- 时间/作者: 2026-07-31 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `scripts/ci/hcu/hcu_ci_notify_feishu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_notify_feishu.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `9c69436eed` - fix(hcu): remove resend tool dependencies
+
+- 完整 hash: `9c69436eed95e4c78f8a0707ff90094c6464eb1a`
+- 时间/作者: 2026-07-31 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/hcu-feishu-notify-preview.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `0ff7a014fe` - ci(hcu): support resending Feishu accuracy results
+
+- 完整 hash: `0ff7a014fe80fd0aa1a16173e3b874d11e288dae`
+- 时间/作者: 2026-07-31 / LvJIA-RG
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/hcu-feishu-notify-preview.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f556d3896e` - [FIX] 修复lmslim和lightop接口冲突问题 (#154)
+
+- 完整 hash: `f556d3896e67a4e4476fff375166621e2710f177`
+- 时间/作者: 2026-07-31 / yangyn
 - 自动分类: 性能/后端优化
 - 主要文件: `python/sglang/srt/layers/quantization/slimquant_w4a8.py`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -322,2773 +2016,4410 @@
   - runtime-perf: `python/sglang/srt/layers/quantization/slimquant_w4a8.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-### Commit `dfb359973` - 修改调用aiter的chunk_gated_delta_rule_fwd算子方法
+### Commit `b489942109` - ci: install PyYAML for slash command handler (#156)
 
-- 完整 hash: `dfb359973e5195d09817137c2a1b4740195f8d7e`
-- 时间/作者: 2026-05-06 / liucong
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/fla/chunk.py`, `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
+- 完整 hash: `b489942109fbe97885ce38e1abf362d2e867aa0e`
+- 时间/作者: 2026-07-31 / dingxinlong
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/slash-command-handler.yml`
 - 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk.py`; `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `b80efea17` - 修改w4a8重排逻辑，适配deepgemm新包
-
-- 完整 hash: `b80efea17de96dc59b81b5ebf9f8d1fa1ad55501`
-- 时间/作者: 2026-04-29 / maxiao1
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`, `python/sglang/srt/layers/quantization/w4a8_utils.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`; `python/sglang/srt/layers/quantization/w4a8_utils.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `16df9541d` - fix(量化): 规范 W8A8 与 Marlin MoE 处理逻辑
-
-- 完整 hash: `16df9541d2c0d36afb21179d106f26462d495c0f`
-- 时间/作者: 2026-04-28 / maxiao1
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`; `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `f34ecd7de` - [BUG FIX] fix CUDA graph grid undercoverage in multi-layer EAGLE MTP draft extend
-
-- 完整 hash: `f34ecd7def554d51e627783eb8f5bc12ff100bf7`
-- 时间/作者: 2026-04-24 / ShiQiang Dai
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/triton_backend.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/triton_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `c4c4c2148` - 修复fused_recurrent_gated_delta_rule_packed_decode报错问题
-
-- 完整 hash: `c4c4c21480969b39ffb91f96371fd02221e97e5d`
-- 时间/作者: 2026-04-22 / liucong
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/fla/fused_recurrent.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/fla/fused_recurrent.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `39474e90b` - [feature] linear attn  fused_recurrent_gated_delta_rule_packed_decode use aiter
-
-- 完整 hash: `39474e90b867ded403cbbe45ededa91c777768a1`
-- 时间/作者: 2026-04-22 / liucong
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/fla/chunk.py`, `python/sglang/srt/layers/attention/fla/fused_recurrent.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/environ.py`
-  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk.py`; `python/sglang/srt/layers/attention/fla/fused_recurrent.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `c840dd8e7` - [FEAT] update triton extend fwd via aiter
-
-- 完整 hash: `c840dd8e7d57896eb3f0ecdb000896ed46337e5a`
-- 时间/作者: 2026-04-22 / ShiQiang Dai
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/triton_backend.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/triton_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `fe965ea9e` - [feature] linear attn chunk_gated_delta_rule_fwd_h  use aiter
-
-- 完整 hash: `fe965ea9e4269aa499a63da2a7ce18d7e0bd6e74`
-- 时间/作者: 2026-04-21 / fanwl
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/fla/chunk.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/environ.py`
-  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `1221130a1` - add aiter moe w4a8 support
-
-- 完整 hash: `1221130a1d2e4a556e69f4a3253548f267c91488`
-- 时间/作者: 2026-04-17 / niuhb
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `cd511513d` - [FEAT] enable fp8 shuffle weight for asm moe
-
-- 完整 hash: `cd511513d07880685d26dae94074300e8e2fa614`
-- 时间/作者: 2026-04-16 / ShiQiang Dai
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/fp8.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/fp8.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `a9965e61f` - adjust aiter_moe para order and w1_zp&w2_zp opt
-
-- 完整 hash: `a9965e61f23b6e0ecd1c0eae7e9af714493e087d`
-- 时间/作者: 2026-04-16 / Jiafei Sun
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `e2ae2a431` - 修改 pyproject.toml 中的huggingface_hub版本
-
-- 完整 hash: `e2ae2a431eaf957158e09bd015820520c6075035`
-- 时间/作者: 2026-04-16 / chenjunhu
-- 自动分类: 通用实现调整
-- 主要文件: `python/pyproject.toml`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/pyproject.toml`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `82a13cc79` - fix: 修改 pyproject.toml 中的依赖版本
-
-- 完整 hash: `82a13cc794379a49951777284f91d9c9fc2113df`
-- 时间/作者: 2026-04-16 / chenjunhu
-- 自动分类: 缺陷修复
-- 主要文件: `python/pyproject.toml`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/pyproject.toml`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `41d14b7c6` - [FEAT] support FP8 MoE via aiter ASM kernel
-
-- 完整 hash: `41d14b7c6dcbc42f239ed7df51fea3892a6721ed`
-- 时间/作者: 2026-04-15 / ShiQiang Dai
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/fp8.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/fp8.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `fdf368589` - fix: 修复bmz上flash_mla不支持fp8
-
-- 完整 hash: `fdf368589c914b7e936ec23daa07dc0ef39bc45b`
-- 时间/作者: 2026-04-15 / niuhb
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/dcu_mla_backend.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/dcu_mla_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `07469199b` - dpsk fp8适配fuse_moe_fp8_w8a8
-
-- 完整 hash: `07469199b6c8b461505b99d7342ebfc1507ceed2`
-- 时间/作者: 2026-04-15 / lipenghui
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/w8a8_fp8.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/w8a8_fp8.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `3a8cd31f5` - add aiter moe w4f16 support
-
-- 完整 hash: `3a8cd31f5738e12beeda73023f9c621aa659aecb`
-- 时间/作者: 2026-04-14 / Jiafei Sun
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `7859b2885` - [BUG FIX] fix nn transpose error for fp8 blockwise linear
-
-- 完整 hash: `7859b2885fa219e71138b17cdec1dc7830f072f6`
-- 时间/作者: 2026-04-14 / ShiQiang Dai
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/layers/quantization/fp8_utils.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/fp8.py`; `python/sglang/srt/layers/quantization/fp8_utils.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `aa77e2522` - Bugfix:fix mm model attention interface
-
-- 完整 hash: `aa77e25228c0a04b41b6c3b0dc9fa01f9ebba4f2`
-- 时间/作者: 2026-04-09 / liuchy5
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/vision.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/vision.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `e91aa8029` - 接入causal_conv1d_update优化算子
-
-- 完整 hash: `e91aa8029e5cbffb7c2fdd4c685bdc7cac1f3760`
-- 时间/作者: 2026-04-07 / liucong
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `518582021` - fix deepseek log cudagraph init meta data copy error in bmz when capture cudagraph.
-
-- 完整 hash: `5185820211a43e8383652d726bb61ecbfce7f6bb`
-- 时间/作者: 2026-04-07 / lizhigong
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/dcu_mla_backend.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/dcu_mla_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `95a02a38d` - Update README_DCU.md
-
-- 完整 hash: `95a02a38db01435ac2cb0d060ca70e8e05ac1337`
-- 时间/作者: 2026-04-02 / guobj
-- 自动分类: 调度/缓存/PD
-- 主要文件: `README_DCU.md`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `README_DCU.md`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `80cbcce8e` - Update README_DCU.md
-
-- 完整 hash: `80cbcce8e796bc909fbec586c238f0f60dba5f13`
-- 时间/作者: 2026-04-02 / guobj
-- 自动分类: 调度/缓存/PD
-- 主要文件: `README_DCU.md`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `README_DCU.md`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `71cd1e550` - Update README_DCU.md
-
-- 完整 hash: `71cd1e550bb0622d8def4214bb9c19bc3738d742`
-- 时间/作者: 2026-04-02 / guobj
-- 自动分类: 调度/缓存/PD
-- 主要文件: `README_DCU.md`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `README_DCU.md`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `a510541b9` - Update README_DCU.md
-
-- 完整 hash: `a510541b99527e69358b2d407368227fa7156bd7`
-- 时间/作者: 2026-04-02 / guobj
-- 自动分类: 调度/缓存/PD
-- 主要文件: `README_DCU.md`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `README_DCU.md`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `e32b8b387` - optimized code of layernorm
-
-- 完整 hash: `e32b8b38726e52fee4876c66f99d216396d7a9b3`
-- 时间/作者: 2026-04-01 / chenyue3
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/layernorm.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/layers/layernorm.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `c87293f3a` - 修复融合算子并验证精度.
-
-- 完整 hash: `c87293f3a9d04f1472a3f2c46c58cd5daa8ebf61`
-- 时间/作者: 2026-04-01 / linhai1
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/dcu_mla_backend.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/dcu_mla_backend.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-### Commit `4418f4abb` - 适配lightop的gemma_fused_add_rmsnorm算子,并保留社区实现
-
-- 完整 hash: `4418f4abbbe437f4f9cb4e17c4969b8de85c6008`
-- 时间/作者: 2026-04-01 / chenyue3
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/layernorm.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/layers/layernorm.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `790dbca3a` - Revert "适配lightop的gemma_fused_add_rmsnorm算子,并保留社区实现"
-
-- 完整 hash: `790dbca3a21961c89de4dda2e51686760edb46d2`
-- 时间/作者: 2026-04-01 / chenyue3
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/layernorm.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/layers/layernorm.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `ec19cdf61` - 适配lightop的gemma_fused_add_rmsnorm算子,并保留社区实现
-
-- 完整 hash: `ec19cdf617a1ab433e28a56a90dafa3d41778976`
-- 时间/作者: 2026-04-01 / chenyue3
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/layernorm.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/layers/layernorm.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-### Commit `23329122c` - 适配lightop的gemma_fused_add_rmsnorm算子
-
-- 完整 hash: `23329122cee029aee84517aca9f64f59dae7c8bb`
-- 时间/作者: 2026-04-01 / chenyue3
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/layernorm.py`
-- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/layers/layernorm.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-<!-- LOCAL_ONLY_DEV_BRANCH_UPDATE_START -->
-## v0.5.8_dev 到 v0.5.12_dev 本地独有提交补充
-
-### 覆盖说明
-
-- 来源索引: `LOCAL_ONLY_COMMITS_v0.5.8_dev_to_v0.5.12_dev_by_branch.md`
-- 来源工作树: `/public/home/yangyn1/work_space/2026/sglang/sglang`
-- 口径: 仅记录不可从 `sgl-project/sglang` GitHub refs 到达的本地 fork 独有提交。
-- 本章节提交数: 68
-- 归类说明: 命中具体模型名、模型文件或已有模型族语义的提交进入对应模型桶；无法稳定锚定单一模型的运行时、后端、CI、merge/base、PD/缓存、量化通用提交进入 `shared`。
-
-### 时间线
-
-| 日期 | Commit | 分支更新段 | 分类 | 标题 | 主要文件 |
-| --- | --- | --- | --- | --- | --- |
-| 2026-02-27 | `155c1f634` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | sglang dcu 0.5.9base patch->hash(5dd49e07) | `python/sglang/bench_serving.py`, `python/sglang/srt/batch_overlap/single_batch_overlap.py`, `python/sglang/srt/batch_overlap/two_batch_overlap.py` 等 104 个文件 |
-| 2026-02-27 | `1dd77c2e6` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.8_dev_niuhb' into 'v0.5.8_dev' | `README_DCU.md`, `requirements_dcu.txt` |
-| 2026-02-27 | `356694d6b` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'cherry-pick-1dfc3015' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-02-27 | `403027fd8` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.9_dev_lzg' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-02-27 | `8a6520cd8` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'cherry-pick-3b73900b' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-02-27 | `c77a90449` | `v0.5.8_dev..v0.5.9_dev` | 缺陷修复 | Debugging through TP parallel | `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `sgl-kernel/setup_hip.py` |
-| 2026-02-27 | `d62ea43c1` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.8_dev_niuhb' into 'v0.5.8_dev' | `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` |
-| 2026-03-06 | `a5c071e36` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'cherry-pick-fc0f9e89' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-06 | `b3f4b0861` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.8_dev_sxl' into 'v0.5.8_dev' | `python/sglang/srt/layers/attention/base_attn_backend.py`, `python/sglang/srt/layers/attention/dcu_mla_backend.py`, `python/sglang/srt/layers/attention/flashmla_backend.py` 等 12 个文件 |
-| 2026-03-06 | `b930b5645` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.9_dev_liucong' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-07 | `5d7c6b671` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.8_dev_mx' into 'v0.5.8_dev' | `python/sglang/srt/batch_overlap/single_batch_overlap.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/fused_moe_triton/fused_marlin_moe.py` 等 5 个文件 |
-| 2026-03-07 | `686124d90` | `v0.5.8_dev..v0.5.9_dev` | 模型支持/运行时入口 | 适配fuse_moe_fp8_w8a8 | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
-| 2026-03-07 | `76c737ac7` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.9_dev_liucong' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-07 | `8ba520fcc` | `v0.5.8_dev..v0.5.9_dev` | 缺陷修复 | fix error when set dtype float16 | `python/sglang/srt/layers/quantization/unquant.py` |
-| 2026-03-07 | `c5a76ad9e` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'cherry-pick-a16f19db' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-07 | `e687d64ce` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.9_dev_lzg' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-11 | `37689613c` | `v0.5.8_dev..v0.5.9_dev` | 缺陷修复 | 修复pd分离开启ttft优化首字偶发精度问题 & 修复pd分离decode卡住、精度问题 | `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` |
-| 2026-03-11 | `3e822f7ad` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.9_dev_pd' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-13 | `5db31f4b4` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'cherry-pick-214917d1' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-13 | `8f3e9df94` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'cherry-pick-4d97fa3d-to-059' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-13 | `c64ac4481` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'cherry-pick-0955197e' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-13 | `e850c8d2c` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.8_dev_yiqa' into 'v0.5.8_dev' | `python/sglang/srt/layers/quantization/fp8_kernel.py` |
-| 2026-03-13 | `ee5b7ebb6` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'cherry-pick-e18f065f' into 'v0.5.8_dev' | `python/sglang/srt/layers/attention/flashattention_interface.py` |
-| 2026-03-16 | `23fd42261` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.9_dev_mx' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-16 | `c2f921462` | `v0.5.8_dev..v0.5.9_dev` | 缺陷修复 | 修复bailing模型大ep无法启动 | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` 等 4 个文件 |
-| 2026-03-20 | `b54acd50f` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.9_dev_liucong' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-20 | `fc5981e07` | `v0.5.8_dev..v0.5.9_dev` | 模型支持/运行时入口 | bailing模型支持EP模式下开启rms+quant算子融合 | `python/sglang/srt/layers/communicator.py`, `python/sglang/srt/models/bailing_moe.py` |
-| 2026-03-22 | `d34753123` | `v0.5.8_dev..v0.5.9_dev` | 调度/缓存/PD | pd分离p端加上日志 | `python/sglang/srt/disaggregation/prefill.py` |
-| 2026-03-23 | `3f30edf9a` | `v0.5.8_dev..v0.5.9_dev` | 缺陷修复 | 修复059版本函数名字修改导致的报错 | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py` |
-| 2026-03-23 | `79a11f9bb` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.9_dev_mx' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-23 | `886fbccec` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge branch 'v0.5.9_dev_mx' into 'v0.5.9_dev' | 无直接文件变更/merge |
-| 2026-03-26 | `e845e0ead` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge remote-tracking branch 'origin/v0.5.9_dev' into v0.5.9_dev_niuhb | `python/sglang/srt/layers/attention/flashmla_backend.py`, `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py` 等 7 个文件 |
-| 2026-03-27 | `2b4435fa5` | `v0.5.8_dev..v0.5.9_dev` | 缺陷修复 | fis bug | `python/sglang/srt/layers/attention/nsa/nsa_indexer.py` |
-| 2026-03-30 | `48739c3ac` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | Merge remote-tracking branch 'origin/v0.5.9_dev' into v0.5.9_dev_niuhb | 无直接文件变更/merge |
-| 2026-03-30 | `b15505653` | `v0.5.8_dev..v0.5.9_dev` | 测试/文档/基线合入 | update readme about dcu | `README_DCU.md` |
-| 2026-03-30 | `f9ea5254d` | `v0.5.8_dev..v0.5.9_dev` | 性能/后端优化 | add torch version hadamard_transform_optimized() | `python/sglang/srt/layers/attention/nsa/nsa_indexer.py` |
-| 2026-03-31 | `70c416ca9` | `v0.5.8_dev..v0.5.9_dev` | 模型支持/运行时入口 | fuse rotary_embedding of QwQ-32B by setting export SGLANG_USE_FUSED_QWEN_RMS_ROTARY_EMBEDDING=1 | `python/sglang/srt/models/qwen2.py` |
-| 2026-04-01 | `c2ffad7df` | `v0.5.8_dev..v0.5.9_dev` | 缺陷修复 | 修复开融合算子后传参逻辑 | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py` |
-| 2026-03-30 | `c5eb17125` | `v0.5.9_dev..v0.5.10_dev` | 测试/文档/基线合入 | sglang dcu 0.5.10rc0 base bash(48739c3a) | `README_DCU.md`, `python/sglang/bench_serving.py`, `python/sglang/srt/batch_overlap/single_batch_overlap.py` 等 114 个文件 |
-| 2026-03-30 | `f9d9b0204` | `v0.5.9_dev..v0.5.10_dev` | 缺陷修复 | 解决PD分离报错问题 | `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/managers/overlap_utils.py` 等 7 个文件 |
-| 2026-03-31 | `77a4da53b` | `v0.5.9_dev..v0.5.10_dev` | 模型支持/运行时入口 | fuse rotary_embedding of QwQ-32B by setting export SGLANG_USE_FUSED_QWEN_RMS_ROTARY_EMBEDDING=1 | `python/sglang/srt/models/qwen2.py` |
-| 2026-04-01 | `236c37f41` | `v0.5.9_dev..v0.5.10_dev` | 模型支持/运行时入口 | 修改环境变量SGLANG_USE_FUSED_QWEN_RMS_ROTARY_EMBEDDING名称为SGLANG_USE_FUSED_RMS_ROTARY | `python/sglang/srt/models/qwen2.py` |
-| 2026-04-01 | `8edb7c965` | `v0.5.9_dev..v0.5.10_dev` | 缺陷修复 | 修复融合算子并验证精度. | `python/sglang/srt/layers/attention/dcu_mla_backend.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py` |
-| 2026-04-01 | `962c74637` | `v0.5.9_dev..v0.5.10_dev` | 性能/后端优化 | optimized code of layernorm | `python/sglang/srt/layers/layernorm.py` |
-| 2026-04-01 | `f2dfc2ec8` | `v0.5.9_dev..v0.5.10_dev` | 缺陷修复 | fix split_qkv_rms_rotary_embedding_fuse_with_kv_store_quant算子的使用bug，此bug影响QwQ-32B模型的性能优化 | `python/sglang/srt/models/qwen2.py` |
-| 2026-04-02 | `5bb6dff38` | `v0.5.9_dev..v0.5.10_dev` | 测试/文档/基线合入 | Update README_DCU.md | `README_DCU.md` |
-| 2026-04-02 | `70c9a1a6d` | `v0.5.9_dev..v0.5.10_dev` | 测试/文档/基线合入 | Update README_DCU.md | `README_DCU.md` |
-| 2026-04-02 | `865ca25a7` | `v0.5.9_dev..v0.5.10_dev` | 测试/文档/基线合入 | Update README_DCU.md | `README_DCU.md` |
-| 2026-04-02 | `8d278721f` | `v0.5.9_dev..v0.5.10_dev` | 测试/文档/基线合入 | Update README_DCU.md | `README_DCU.md` |
-| 2026-04-03 | `4dd71954e` | `v0.5.9_dev..v0.5.10_dev` | 缺陷修复 | [bugfix]将使能QWQ-32B性能优化的环境变量SGLANG_USE_FUSED_RMS_ROTARY名称修改为SGLANG_USE_FUSED_SPLIT_QKV_RMS_ROTARY_EMBEDDING，解决因此引起的精度问题 | `python/sglang/srt/models/qwen2.py` |
-| 2026-04-07 | `50a63c96d` | `v0.5.9_dev..v0.5.10_dev` | 缺陷修复 | fix deepseek log cudagraph init meta data copy error in bmz when capture cudagraph. | `python/sglang/srt/layers/attention/dcu_mla_backend.py` |
-| 2026-04-07 | `b4059342f` | `v0.5.9_dev..v0.5.10_dev` | 调度/缓存/PD | 接入causal_conv1d_update优化算子 | `python/sglang/srt/layers/attention/linear/gdn_backend.py` |
-| 2026-04-08 | `7104fdb72` | `v0.5.9_dev..v0.5.10_dev` | 缺陷修复 | 解决FA报错问题 | `python/sglang/srt/layers/attention/flashattention_backend.py` |
-| 2026-04-09 | `22e5ac5b1` | `v0.5.9_dev..v0.5.10_dev` | 缺陷修复 | Bugfix:fix mm model attention interface | `python/sglang/srt/layers/attention/vision.py` |
-| 2026-05-06 | `c200c7845` | `v0.5.10_dev..v0.5.11_dev` | 测试/文档/基线合入 | sglang dcu 0.5.11 base hash(dfb35997) | `README_DCU.md`, `python/pyproject.toml`, `python/sglang/bench_serving.py` 等 131 个文件 |
-| 2026-05-07 | `4d897133e` | `v0.5.10_dev..v0.5.11_dev` | 通用实现调整 | Supplement merge | `python/pyproject.toml`, `python/sglang/srt/model_executor/model_runner.py` |
-| 2026-05-07 | `96a5c116a` | `v0.5.10_dev..v0.5.11_dev` | 缺陷修复 | fix some error in initial version | `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/quantization/fp8_kernel.py` |
-| 2026-04-25 | `a28aa5f97` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | fix some errors when init server | `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/fp8.py` 等 8 个文件 |
-| 2026-04-27 | `eec3b3ff8` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | fix for load model | 无直接文件变更/merge |
-| 2026-04-28 | `6ad2adb52` | `v0.5.11_dev..v0.5.12_dev` | 模型支持/运行时入口 | [Feature] support rocm moe_fused_gate | `python/sglang/jit_kernel/csrc/add_constant.cuh`, `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh` 等 6 个文件 |
-| 2026-04-29 | `50b898285` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | fix mhc with tile 0.1.9 | `python/sglang/srt/layers/mhc.py` |
-| 2026-04-29 | `a44cec29b` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | fix jit for moe_fused_gate | `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh` |
-| 2026-04-29 | `bb24fa6e1` | `v0.5.11_dev..v0.5.12_dev` | 模型支持/运行时入口 | [Feature] support rocm moe_fused_gate | `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh` |
-| 2026-05-14 | `fd077165a` | `v0.5.11_dev..v0.5.12_dev` | 缺陷修复 | fix the mtp issues of metadata loc size | `python/sglang/srt/speculative/eagle_worker_v2.py`, `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py` |
-| 2026-05-18 | `c5dd815b3` | `v0.5.11_dev..v0.5.12_dev` | 测试/文档/基线合入 | dcu 0.5.12 base merge (5daf25b168a9182e660225f68d45f1d2b481d3b6) | `README_DCU.md`, `python/pyproject.toml`, `python/sglang/bench_serving.py` 等 141 个文件 |
-| 2026-05-21 | `411660d35` | `v0.5.11_dev..v0.5.12_dev` | 模型支持/运行时入口 | feat(diffusion): add ROCm SLA attention backend | `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/runtime/layers/attention/turbo_layer.py`, `python/sglang/multimodal_gen/runtime/loader/fsdp_load.py` 等 6 个文件 |
-| 2026-05-22 | `f378b1a20` | `v0.5.11_dev..v0.5.12_dev` | 性能/后端优化 | [feat]增加aiter w16a16 moe的支持，使能方式为export SGLANG_ROCM_USE_AITER_MOE=1 && export SGLANG_USE_MARLIN_W16A16_MOE=0 | `python/sglang/srt/layers/quantization/unquant.py` |
-| 2026-05-28 | `18b48e742` | `v0.5.11_dev..v0.5.12_dev` | 性能/后端优化 | moe-runner-backend支持lightop_moe_w8a8 | `python/sglang/srt/layers/moe/moe_runner/lightop.py`, `python/sglang/srt/layers/moe/moe_runner/runner.py`, `python/sglang/srt/layers/moe/utils.py` 等 5 个文件 |
-
-### 逐 Commit 审计卡
-
-#### Commit `155c1f634` - sglang dcu 0.5.9base patch->hash(5dd49e07)
-
-- 完整 hash: `155c1f6345bab53c8b26616172893defdc051761`
-- 时间/作者: 2026-02-27 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `python/sglang/bench_serving.py`, `python/sglang/srt/batch_overlap/single_batch_overlap.py`, `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py` 等 104 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/layers/moe/fused_moe_triton/configs/triton_3_0_0/E=128,N=192,device_name=BW200.json`; `python/sglang/srt/layers/moe/fused_moe_triton/configs/triton_3_0_0/E=160,N=320,device_name=BW200.json`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/bailing_moe.py`; `python/sglang/srt/models/deepseek_nextn.py`; `python/sglang/srt/models/deepseek_v2.py`; `python/sglang/srt/models/qwen3_moe.py` 等 9 个文件
-  - runtime-perf: `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/dcu_mla_backend.py`; `python/sglang/srt/layers/attention/dual_chunk_flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/layers/attention/flashmla_backend.py`; `python/sglang/srt/layers/attention/lightop_concat.py`; `python/sglang/srt/layers/attention/nsa_backend.py` 等 64 个文件
-  - tests: `test/manual/test_two_batch_overlap.py`
-  - other: `python/sglang/bench_serving.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce_ops.py` 等 30 个文件
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `1dd77c2e6` - Merge branch 'v0.5.8_dev_niuhb' into 'v0.5.8_dev'
-
-- 完整 hash: `1dd77c2e6e865c3bef8bd225a65938a02c2d1f42`
-- 时间/作者: 2026-02-27 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `README_DCU.md`, `requirements_dcu.txt`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - docs-bench: `README_DCU.md`
-  - other: `requirements_dcu.txt`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `356694d6b` - Merge branch 'cherry-pick-1dfc3015' into 'v0.5.9_dev'
-
-- 完整 hash: `356694d6b92ad51a3306c8ac589425490a6f72c1`
-- 时间/作者: 2026-02-27 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `403027fd8` - Merge branch 'v0.5.9_dev_lzg' into 'v0.5.9_dev'
-
-- 完整 hash: `403027fd8458cae4cab8c18358f06b948955325b`
-- 时间/作者: 2026-02-27 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `8a6520cd8` - Merge branch 'cherry-pick-3b73900b' into 'v0.5.9_dev'
-
-- 完整 hash: `8a6520cd86730570c6f2ff26dc7a5bce4b527ac2`
-- 时间/作者: 2026-02-27 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `c77a90449` - Debugging through TP parallel
-
-- 完整 hash: `c77a904497e951351de67c53cb52ec7dad2ed6a1`
-- 时间/作者: 2026-02-27 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `sgl-kernel/setup_hip.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `sgl-kernel/setup_hip.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `d62ea43c1` - Merge branch 'v0.5.8_dev_niuhb' into 'v0.5.8_dev'
-
-- 完整 hash: `d62ea43c13d89e9a3b372c6d54dac8ed8353a740`
-- 时间/作者: 2026-02-27 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `a5c071e36` - Merge branch 'cherry-pick-fc0f9e89' into 'v0.5.9_dev'
-
-- 完整 hash: `a5c071e366454178b06e6f18955d3c64966fd75b`
-- 时间/作者: 2026-03-06 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `b3f4b0861` - Merge branch 'v0.5.8_dev_sxl' into 'v0.5.8_dev'
-
-- 完整 hash: `b3f4b086156d31e528ac3720765535f687782127`
-- 时间/作者: 2026-03-06 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `python/sglang/srt/layers/attention/base_attn_backend.py`, `python/sglang/srt/layers/attention/dcu_mla_backend.py`, `python/sglang/srt/layers/attention/flashmla_backend.py`, `python/sglang/srt/layers/communicator.py`, `python/sglang/srt/mem_cache/allocator.py`, `python/sglang/srt/mem_cache/common.py`, `python/sglang/srt/mem_cache/memory_pool.py`, `python/sglang/srt/model_executor/forward_batch_info.py` 等 12 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`
-  - runtime-perf: `python/sglang/srt/layers/attention/base_attn_backend.py`; `python/sglang/srt/layers/attention/dcu_mla_backend.py`; `python/sglang/srt/layers/attention/flashmla_backend.py`; `python/sglang/srt/layers/communicator.py`
-  - other: `python/sglang/srt/mem_cache/allocator.py`; `python/sglang/srt/mem_cache/common.py`; `python/sglang/srt/mem_cache/memory_pool.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/speculative/eagle_info.py`; `python/sglang/srt/speculative/eagle_info_v2.py`; `python/sglang/srt/speculative/spec_utils.py`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `b930b5645` - Merge branch 'v0.5.9_dev_liucong' into 'v0.5.9_dev'
-
-- 完整 hash: `b930b5645eb1978f8867c6f0594138e6cedc09c2`
-- 时间/作者: 2026-03-06 / liucong8560
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `5d7c6b671` - Merge branch 'v0.5.8_dev_mx' into 'v0.5.8_dev'
-
-- 完整 hash: `5d7c6b67152f6c381210e9f3e0f62fba4db4ea7f`
-- 时间/作者: 2026-03-07 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `python/sglang/srt/batch_overlap/single_batch_overlap.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/fused_moe_triton/fused_marlin_moe.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/layers/quantization/unquant.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/moe/fused_moe_triton/fused_marlin_moe.py`; `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`; `python/sglang/srt/layers/quantization/unquant.py`
-  - other: `python/sglang/srt/batch_overlap/single_batch_overlap.py`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `686124d90` - 适配fuse_moe_fp8_w8a8
-
-- 完整 hash: `686124d90a495d9337f99869cf20fdd7fdd556ba`
-- 时间/作者: 2026-03-07 / liucong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 验证与风险: 涉及模型入口或运行时适配；风险点是权重加载、并行切分、量化配置和短文本生成正确性。
-
-#### Commit `76c737ac7` - Merge branch 'v0.5.9_dev_liucong' into 'v0.5.9_dev'
-
-- 完整 hash: `76c737ac7b7b3167d3c57f1ec08c88267f5c4961`
-- 时间/作者: 2026-03-07 / liucong8560
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `8ba520fcc` - fix error when set dtype float16
-
-- 完整 hash: `8ba520fcc8ce231449229252d52a83f2baede139`
-- 时间/作者: 2026-03-07 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/quantization/unquant.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/unquant.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `c5a76ad9e` - Merge branch 'cherry-pick-a16f19db' into 'v0.5.9_dev'
-
-- 完整 hash: `c5a76ad9ecdd9894da92d4751f2b596d339e3cd0`
-- 时间/作者: 2026-03-07 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `e687d64ce` - Merge branch 'v0.5.9_dev_lzg' into 'v0.5.9_dev'
-
-- 完整 hash: `e687d64ce991449877c284d1ddcedc7cb645c159`
-- 时间/作者: 2026-03-07 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `37689613c` - 修复pd分离开启ttft优化首字偶发精度问题 & 修复pd分离decode卡住、精度问题
-
-- 完整 hash: `37689613cf1056185ef795308cc6cb792c1b10ab`
-- 时间/作者: 2026-03-11 / maxiao1
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `3e822f7ad` - Merge branch 'v0.5.9_dev_pd' into 'v0.5.9_dev'
-
-- 完整 hash: `3e822f7ad0003772608e0b7529e7d347d46d0704`
-- 时间/作者: 2026-03-11 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `5db31f4b4` - Merge branch 'cherry-pick-214917d1' into 'v0.5.9_dev'
-
-- 完整 hash: `5db31f4b4642449fdaf6d35a43db94ad24747f66`
-- 时间/作者: 2026-03-13 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `8f3e9df94` - Merge branch 'cherry-pick-4d97fa3d-to-059' into 'v0.5.9_dev'
-
-- 完整 hash: `8f3e9df94c6ec255a7e42f55a9b4e85957dc880b`
-- 时间/作者: 2026-03-13 / maxiao1
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `c64ac4481` - Merge branch 'cherry-pick-0955197e' into 'v0.5.9_dev'
-
-- 完整 hash: `c64ac44818bc201872073f9b581daf3052a754ef`
-- 时间/作者: 2026-03-13 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `e850c8d2c` - Merge branch 'v0.5.8_dev_yiqa' into 'v0.5.8_dev'
-
-- 完整 hash: `e850c8d2c590ace3a477b2d4631684e55dc48ebe`
-- 时间/作者: 2026-03-13 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `python/sglang/srt/layers/quantization/fp8_kernel.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/fp8_kernel.py`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `ee5b7ebb6` - Merge branch 'cherry-pick-e18f065f' into 'v0.5.8_dev'
-
-- 完整 hash: `ee5b7ebb692396eab6b2be1360f0d56fe49c577f`
-- 时间/作者: 2026-03-13 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `python/sglang/srt/layers/attention/flashattention_interface.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `23fd42261` - Merge branch 'v0.5.9_dev_mx' into 'v0.5.9_dev'
-
-- 完整 hash: `23fd42261b8a7f5620becaa4bfe80abd651d812b`
-- 时间/作者: 2026-03-16 / maxiao1
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `c2f921462` - 修复bailing模型大ep无法启动
-
-- 完整 hash: `c2f921462faaf92baecf22d1a23021472fe770b2`
-- 时间/作者: 2026-03-16 / niuhb
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/utils.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/utils.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `b54acd50f` - Merge branch 'v0.5.9_dev_liucong' into 'v0.5.9_dev'
-
-- 完整 hash: `b54acd50f88ff3dcb0c23f396c83fda0b1f5a462`
-- 时间/作者: 2026-03-20 / liucong8560
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `fc5981e07` - bailing模型支持EP模式下开启rms+quant算子融合
-
-- 完整 hash: `fc5981e071f99c0069ac3e6ede6e78b711aa0728`
-- 时间/作者: 2026-03-20 / liucong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/srt/layers/communicator.py`, `python/sglang/srt/models/bailing_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/models/bailing_moe.py`
-  - runtime-perf: `python/sglang/srt/layers/communicator.py`
-- 验证与风险: 涉及模型入口或运行时适配；风险点是权重加载、并行切分、量化配置和短文本生成正确性。
-
-#### Commit `d34753123` - pd分离p端加上日志
-
-- 完整 hash: `d347531234de2009c6e747b628aea6a4ce469a57`
-- 时间/作者: 2026-03-22 / niuhb
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 调度/缓存/PD
-- 主要文件: `python/sglang/srt/disaggregation/prefill.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/disaggregation/prefill.py`
-- 验证与风险: 涉及调度、缓存、PD 或 MTP 路径；需要验证 prefill/decode 时序、首 token 正确性、并发与长上下文稳定性。
-
-#### Commit `3f30edf9a` - 修复059版本函数名字修改导致的报错
-
-- 完整 hash: `3f30edf9aa05c86075746873066fd50f1e97877c`
-- 时间/作者: 2026-03-23 / maxiao1
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `79a11f9bb` - Merge branch 'v0.5.9_dev_mx' into 'v0.5.9_dev'
-
-- 完整 hash: `79a11f9bb063714ebeeeac7f20da617a7cdb26c6`
-- 时间/作者: 2026-03-23 / maxiao1
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `886fbccec` - Merge branch 'v0.5.9_dev_mx' into 'v0.5.9_dev'
-
-- 完整 hash: `886fbccec07147749c241985caf3f52ec4acb2fc`
-- 时间/作者: 2026-03-23 / maxiao1
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `e845e0ead` - Merge remote-tracking branch 'origin/v0.5.9_dev' into v0.5.9_dev_niuhb
-
-- 完整 hash: `e845e0eadd2d5f636be783ac5a99d1d95d66f29a`
-- 时间/作者: 2026-03-26 / niuhb
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `python/sglang/srt/layers/attention/flashmla_backend.py`, `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/fp8_utils.py`, `python/sglang/srt/mem_cache/memory_pool.py`, `python/sglang/srt/server_args.py`, `python/sglang/srt/speculative/eagle_info_v2.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/srt/layers/attention/flashmla_backend.py`; `python/sglang/srt/layers/moe/fused_moe_triton/fused_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/fp8_utils.py`
-  - other: `python/sglang/srt/mem_cache/memory_pool.py`; `python/sglang/srt/speculative/eagle_info_v2.py`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `2b4435fa5` - fis bug
-
-- 完整 hash: `2b4435fa5a79ae5d0c19e51094018860bd98e786`
-- 时间/作者: 2026-03-27 / niuhb
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `48739c3ac` - Merge remote-tracking branch 'origin/v0.5.9_dev' into v0.5.9_dev_niuhb
-
-- 完整 hash: `48739c3ac64be80745e51a8742523504bc8ef990`
-- 时间/作者: 2026-03-30 / niuhb
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `b15505653` - update readme about dcu
-
-- 完整 hash: `b15505653f0a936301786b2570a48209ff21dcd9`
-- 时间/作者: 2026-03-30 / lizhigong
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `README_DCU.md`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - docs-bench: `README_DCU.md`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `f9ea5254d` - add torch version hadamard_transform_optimized()
-
-- 完整 hash: `f9ea5254d79e28a0583e39e01f64f4b546d37310`
-- 时间/作者: 2026-03-30 / niuhb
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/nsa/nsa_indexer.py`
-- 验证与风险: 涉及性能或后端路径；复用前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `70c416ca9` - fuse rotary_embedding of QwQ-32B by setting export SGLANG_USE_FUSED_QWEN_RMS_ROTARY_EMBEDDING=1
-
-- 完整 hash: `70c416ca947cc7ede81a25e216aed255f017ce93`
-- 时间/作者: 2026-03-31 / chenyue3
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/srt/models/qwen2.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/models/qwen2.py`
-- 验证与风险: 涉及模型入口或运行时适配；风险点是权重加载、并行切分、量化配置和短文本生成正确性。
-
-#### Commit `c2ffad7df` - 修复开融合算子后传参逻辑
-
-- 完整 hash: `c2ffad7df56d0befafbd449799ab156cbbbfcbcd`
-- 时间/作者: 2026-04-01 / niuhb
-- 分支更新段: `v0.5.8_dev..v0.5.9_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `c5eb17125` - sglang dcu 0.5.10rc0 base bash(48739c3a)
-
-- 完整 hash: `c5eb171255d709e18146bdd027308aa71ca71c8c`
-- 时间/作者: 2026-03-30 / lizhigong
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `README_DCU.md`, `python/sglang/bench_serving.py`, `python/sglang/srt/batch_overlap/single_batch_overlap.py`, `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` 等 114 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/layers/moe/fused_moe_triton/configs/triton_3_0_0/E=128,N=192,device_name=BW200.json`; `python/sglang/srt/layers/moe/fused_moe_triton/configs/triton_3_0_0/E=160,N=320,device_name=BW200.json`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/models/bailing_moe.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_nextn.py`; `python/sglang/srt/models/deepseek_v2.py` 等 11 个文件
-  - runtime-perf: `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/base_attn_backend.py`; `python/sglang/srt/layers/attention/dcu_mla_backend.py`; `python/sglang/srt/layers/attention/dual_chunk_flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/layers/attention/flashmla_backend.py` 等 69 个文件
-  - tests: `test/manual/test_two_batch_overlap.py`
-  - docs-bench: `README_DCU.md`
-  - other: `python/sglang/bench_serving.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py` 等 32 个文件
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `f9d9b0204` - 解决PD分离报错问题
-
-- 完整 hash: `f9d9b0204997baa59ff4e4af58ad29610109e81f`
-- 时间/作者: 2026-03-30 / liucong
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/managers/overlap_utils.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py`, `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/models/bailing_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/models/bailing_moe.py`
-  - other: `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/managers/overlap_utils.py`; `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/managers/scheduler_pp_mixin.py`; `python/sglang/srt/model_executor/forward_batch_info.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `77a4da53b` - fuse rotary_embedding of QwQ-32B by setting export SGLANG_USE_FUSED_QWEN_RMS_ROTARY_EMBEDDING=1
-
-- 完整 hash: `77a4da53b195948f368d09aca59eeff7a84445b0`
-- 时间/作者: 2026-03-31 / chenyue3
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/srt/models/qwen2.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/models/qwen2.py`
-- 验证与风险: 涉及模型入口或运行时适配；风险点是权重加载、并行切分、量化配置和短文本生成正确性。
-
-#### Commit `236c37f41` - 修改环境变量SGLANG_USE_FUSED_QWEN_RMS_ROTARY_EMBEDDING名称为SGLANG_USE_FUSED_RMS_ROTARY
-
-- 完整 hash: `236c37f410e190d19d32aa6e85f312509ac87ea0`
-- 时间/作者: 2026-04-01 / chenyue3
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/srt/models/qwen2.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/models/qwen2.py`
-- 验证与风险: 涉及模型入口或运行时适配；风险点是权重加载、并行切分、量化配置和短文本生成正确性。
-
-#### Commit `8edb7c965` - 修复融合算子并验证精度.
-
-- 完整 hash: `8edb7c9650db08be27033956472ebb9247d2eb46`
-- 时间/作者: 2026-04-01 / linhai1
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/dcu_mla_backend.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/dcu_mla_backend.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `962c74637` - optimized code of layernorm
-
-- 完整 hash: `962c746378e9db0345c1094fdc83c0610bb0fdbe`
-- 时间/作者: 2026-04-01 / chenyue3
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/layernorm.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/layernorm.py`
-- 验证与风险: 涉及性能或后端路径；复用前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `f2dfc2ec8` - fix split_qkv_rms_rotary_embedding_fuse_with_kv_store_quant算子的使用bug，此bug影响QwQ-32B模型的性能优化
-
-- 完整 hash: `f2dfc2ec8bf1efd51c494afa69dcf2261f47b0d8`
-- 时间/作者: 2026-04-01 / chenyue3
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/models/qwen2.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/models/qwen2.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `5bb6dff38` - Update README_DCU.md
-
-- 完整 hash: `5bb6dff38e0a5a5c40362517df95bdbdf53580b3`
-- 时间/作者: 2026-04-02 / guobj
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `README_DCU.md`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - docs-bench: `README_DCU.md`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `70c9a1a6d` - Update README_DCU.md
-
-- 完整 hash: `70c9a1a6dbc01df5faca6eb7775be75e7c43ca2e`
-- 时间/作者: 2026-04-02 / guobj
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `README_DCU.md`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - docs-bench: `README_DCU.md`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `865ca25a7` - Update README_DCU.md
-
-- 完整 hash: `865ca25a7b0b6b5ef7930828bdb57af7b8220ba5`
-- 时间/作者: 2026-04-02 / guobj
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `README_DCU.md`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - docs-bench: `README_DCU.md`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `8d278721f` - Update README_DCU.md
-
-- 完整 hash: `8d278721f069861662a3a08d3a723fb6746152d1`
-- 时间/作者: 2026-04-02 / guobj
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `README_DCU.md`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - docs-bench: `README_DCU.md`
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `4dd71954e` - [bugfix]将使能QWQ-32B性能优化的环境变量SGLANG_USE_FUSED_RMS_ROTARY名称修改为SGLANG_USE_FUSED_SPLIT_QKV_RMS_ROTARY_EMBEDDING，解决因此引起的精度问题
-
-- 完整 hash: `4dd71954e4540e047696b9b3d0d744e86611e654`
-- 时间/作者: 2026-04-03 / chenyue3
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/models/qwen2.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/models/qwen2.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `50a63c96d` - fix deepseek log cudagraph init meta data copy error in bmz when capture cudagraph.
-
-- 完整 hash: `50a63c96d8304e6f2ec23819b93680a70a4851ff`
-- 时间/作者: 2026-04-07 / lizhigong
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/dcu_mla_backend.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/dcu_mla_backend.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `b4059342f` - 接入causal_conv1d_update优化算子
-
-- 完整 hash: `b4059342f9fc93943d4ef95b81ebfb4ffb73c02c`
-- 时间/作者: 2026-04-07 / liucong
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 调度/缓存/PD
-- 主要文件: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
-- 验证与风险: 涉及调度、缓存、PD 或 MTP 路径；需要验证 prefill/decode 时序、首 token 正确性、并发与长上下文稳定性。
-
-#### Commit `7104fdb72` - 解决FA报错问题
-
-- 完整 hash: `7104fdb72e187f1a30ab158c32d7f4d0518afb10`
-- 时间/作者: 2026-04-08 / liucong
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `22e5ac5b1` - Bugfix:fix mm model attention interface
-
-- 完整 hash: `22e5ac5b196dddddbe227be61aa4cb0e75726a0e`
-- 时间/作者: 2026-04-09 / liuchy5
-- 分支更新段: `v0.5.9_dev..v0.5.10_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/vision.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/vision.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `c200c7845` - sglang dcu 0.5.11 base hash(dfb35997)
-
-- 完整 hash: `c200c78458e45487f5b7615d68c0fe4f15fc2b22`
-- 时间/作者: 2026-05-06 / lizhigong
-- 分支更新段: `v0.5.10_dev..v0.5.11_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `README_DCU.md`, `python/pyproject.toml`, `python/sglang/bench_serving.py`, `python/sglang/multimodal_gen/runtime/layers/attention/backends/flash_attn.py`, `python/sglang/srt/batch_overlap/single_batch_overlap.py`, `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/disaggregation/common/conn.py` 等 131 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/layers/moe/fused_moe_triton/configs/triton_3_0_0/E=128,N=192,device_name=BW200.json`; `python/sglang/srt/layers/moe/fused_moe_triton/configs/triton_3_0_0/E=160,N=320,device_name=BW200.json`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/model_executor/model_runner_kv_cache_mixin.py`; `python/sglang/srt/models/bailing_moe.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`; `python/sglang/srt/models/deepseek_common/utils.py` 等 17 个文件
-  - runtime-perf: `python/sglang/multimodal_gen/runtime/layers/attention/backends/flash_attn.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/base_attn_backend.py`; `python/sglang/srt/layers/attention/dcu_mla_backend.py`; `python/sglang/srt/layers/attention/fla/chunk.py`; `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`; `python/sglang/srt/layers/attention/fla/fused_recurrent.py` 等 79 个文件
-  - tests: `test/manual/test_two_batch_overlap.py`
-  - docs-bench: `README_DCU.md`
-  - other: `python/pyproject.toml`; `python/sglang/bench_serving.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce_ops.py` 等 33 个文件
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `4d897133e` - Supplement merge
-
-- 完整 hash: `4d897133e08212eaa77243fe8b9f4693bb75e0cf`
-- 时间/作者: 2026-05-07 / lizhigong
-- 分支更新段: `v0.5.10_dev..v0.5.11_dev`
-- 自动分类: 通用实现调整
-- 主要文件: `python/pyproject.toml`, `python/sglang/srt/model_executor/model_runner.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`
-  - other: `python/pyproject.toml`
-- 验证与风险: 通用实现调整；需要结合命中文件判断是否影响目标模型的启动、加载或服务行为。
-
-#### Commit `96a5c116a` - fix some error in initial version
-
-- 完整 hash: `96a5c116a377cdafe911274f1eb87e154879557c`
-- 时间/作者: 2026-05-07 / lizhigong
-- 分支更新段: `v0.5.10_dev..v0.5.11_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/quantization/fp8_kernel.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/layers/quantization/fp8_kernel.py`
-  - other: `python/sglang/srt/distributed/parallel_state.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `a28aa5f97` - fix some errors when init server
-
-- 完整 hash: `a28aa5f97c936c20bc4e5d77f0d993c606a1b5f0`
-- 时间/作者: 2026-04-25 / lizhigong
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/layers/quantization/mxfp4.py`, `python/sglang/srt/managers/overlap_utils.py`, `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/models/deepseek_common/utils.py`, `python/sglang/srt/models/qwen2.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/models/deepseek_common/utils.py`; `python/sglang/srt/models/qwen2.py`
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/fp8.py`; `python/sglang/srt/layers/quantization/mxfp4.py`
-  - other: `python/sglang/srt/managers/overlap_utils.py`; `python/sglang/srt/model_executor/forward_batch_info.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `eec3b3ff8` - fix for load model
-
-- 完整 hash: `eec3b3ff89bba04cfd7eab0551a85b931b06fa51`
-- 时间/作者: 2026-04-27 / wangaq
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 缺陷修复
-- 主要文件: 无直接文件变更/merge
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: 无直接文件变更/merge
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `6ad2adb52` - [Feature] support rocm moe_fused_gate
-
-- 完整 hash: `6ad2adb5276fb722d8cdfc1092fcdf40746d945e`
-- 时间/作者: 2026-04-28 / Zhangzbb
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/jit_kernel/csrc/add_constant.cuh`, `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`, `python/sglang/jit_kernel/utils.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/jit_kernel/csrc/add_constant.cuh`; `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`; `python/sglang/jit_kernel/utils.py`
-- 验证与风险: 涉及模型入口或运行时适配；风险点是权重加载、并行切分、量化配置和短文本生成正确性。
-
-#### Commit `50b898285` - fix mhc with tile 0.1.9
-
-- 完整 hash: `50b89828562e31f35fbb3e2a2083256b7dc044b6`
-- 时间/作者: 2026-04-29 / wangaq
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/mhc.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/mhc.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `a44cec29b` - fix jit for moe_fused_gate
-
-- 完整 hash: `a44cec29bc25886036fa3c237da7c7283beb78ff`
-- 时间/作者: 2026-04-29 / wangaq
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `bb24fa6e1` - [Feature] support rocm moe_fused_gate
-
-- 完整 hash: `bb24fa6e1c303972bfb5455d15f0a46591110552`
-- 时间/作者: 2026-04-29 / Zhangzbb
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
-- 验证与风险: 涉及模型入口或运行时适配；风险点是权重加载、并行切分、量化配置和短文本生成正确性。
-
-#### Commit `fd077165a` - fix the mtp issues of metadata loc size
-
-- 完整 hash: `fd077165adfa5c1f81f6c77e5f290be1cbaea958`
-- 时间/作者: 2026-05-14 / YuanYuan
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/speculative/eagle_worker_v2.py`, `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - other: `python/sglang/srt/speculative/eagle_worker_v2.py`; `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`
-- 验证与风险: 缺陷修复类提交；复用时优先验证触发条件、精度回归和异常路径。
-
-#### Commit `c5dd815b3` - dcu 0.5.12 base merge (5daf25b168a9182e660225f68d45f1d2b481d3b6)
-
-- 完整 hash: `c5dd815b3c631b45afa6450eb74f16fee6902428`
-- 时间/作者: 2026-05-18 / lizhigong
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 测试/文档/基线合入
-- 主要文件: `README_DCU.md`, `python/pyproject.toml`, `python/sglang/bench_serving.py`, `python/sglang/multimodal_gen/configs/sample/sampling_params.py`, `python/sglang/multimodal_gen/envs.py`, `python/sglang/multimodal_gen/runtime/layers/attention/backends/flash_attn.py`, `python/sglang/multimodal_gen/runtime/layers/attention/layer.py`, `python/sglang/multimodal_gen/runtime/layers/ring_attention.py` 等 141 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/multimodal_gen/configs/sample/sampling_params.py`; `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/layers/moe/fused_moe_triton/configs/triton_3_0_0/E=128,N=192,device_name=BW200.json`; `python/sglang/srt/layers/moe/fused_moe_triton/configs/triton_3_0_0/E=160,N=320,device_name=BW200.json`; `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/model_executor/model_runner_kv_cache_mixin.py`; `python/sglang/srt/models/bailing_moe.py`; `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py` 等 18 个文件
-  - runtime-perf: `python/sglang/multimodal_gen/runtime/layers/attention/backends/flash_attn.py`; `python/sglang/multimodal_gen/runtime/layers/attention/layer.py`; `python/sglang/multimodal_gen/runtime/layers/ring_attention.py`; `python/sglang/multimodal_gen/runtime/layers/usp.py`; `python/sglang/srt/layers/activation.py`; `python/sglang/srt/layers/attention/attention_registry.py`; `python/sglang/srt/layers/attention/base_attn_backend.py`; `python/sglang/srt/layers/attention/dcu_mla_backend.py` 等 85 个文件
-  - tests: `test/manual/test_two_batch_overlap.py`
-  - docs-bench: `README_DCU.md`
-  - other: `python/pyproject.toml`; `python/sglang/bench_serving.py`; `python/sglang/multimodal_gen/envs.py`; `python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py`; `python/sglang/multimodal_gen/runtime/utils/profiler.py`; `python/sglang/srt/batch_overlap/single_batch_overlap.py`; `python/sglang/srt/batch_overlap/two_batch_overlap.py`; `python/sglang/srt/disaggregation/common/conn.py` 等 36 个文件
-- 验证与风险: 基线、合并、测试或文档类提交；主要用于定位分支来源和验证入口，通常不直接作为性能 patch 依据。
-
-#### Commit `411660d35` - feat(diffusion): add ROCm SLA attention backend
-
-- 完整 hash: `411660d351f37b6a859dad55729a457078892e82`
-- 时间/作者: 2026-05-21 / zhenggf
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/runtime/layers/attention/turbo_layer.py`, `python/sglang/multimodal_gen/runtime/loader/fsdp_load.py`, `python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py`, `python/sglang/multimodal_gen/runtime/platforms/rocm.py`, `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py`
-  - runtime-perf: `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`; `python/sglang/multimodal_gen/runtime/layers/attention/turbo_layer.py`
-  - tests: `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`
-  - other: `python/sglang/multimodal_gen/runtime/loader/fsdp_load.py`; `python/sglang/multimodal_gen/runtime/platforms/rocm.py`
-- 验证与风险: 涉及模型入口或运行时适配；风险点是权重加载、并行切分、量化配置和短文本生成正确性。
-
-#### Commit `f378b1a20` - [feat]增加aiter w16a16 moe的支持，使能方式为export SGLANG_ROCM_USE_AITER_MOE=1 && export SGLANG_USE_MARLIN_W16A16_MOE=0
-
-- 完整 hash: `f378b1a208dbcd79520abdb38e075ad11d2f09d8`
-- 时间/作者: 2026-05-22 / chenyue3
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/unquant.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-perf: `python/sglang/srt/layers/quantization/unquant.py`
-- 验证与风险: 涉及性能或后端路径；复用前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `18b48e742` - moe-runner-backend支持lightop_moe_w8a8
-
-- 完整 hash: `18b48e742b700bb2c06586c742a4abd480aaf317`
-- 时间/作者: 2026-05-28 / yangyn1
-- 分支更新段: `v0.5.11_dev..v0.5.12_dev`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/moe_runner/lightop.py`, `python/sglang/srt/layers/moe/moe_runner/runner.py`, `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/layers/quantization/w8a8_int8.py`, `python/sglang/srt/server_args.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 已读文件:
-  - runtime-model: `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/lightop.py`; `python/sglang/srt/layers/moe/moe_runner/runner.py`; `python/sglang/srt/layers/moe/utils.py`; `python/sglang/srt/layers/quantization/w8a8_int8.py`
-- 验证与风险: 涉及性能或后端路径；复用前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-<!-- LOCAL_ONLY_DEV_BRANCH_UPDATE_END -->
-
-<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_START -->
-## v0.5.12_dev 到 release/20260825_v0.5.18 本地独有提交补充
-
-### 覆盖说明
-
-- 来源仓库: `HYGON-AI/sglang-das`；分支端点: `v0.5.12_dev`@`6c946e92f`, `v0.5.15.post1_dev`@`c8ba30447`, `release/20260825_v0.5.18`@`2c841655f`
-- 口径: 仅记录不可从 `sgl-project/sglang` GitHub refs 到达的本地 fork 独有提交；合并提交也保留。
-- 生成日期: 2026-11-03
-- 本章节提交数: 281（其中 merge 0）
-- 分支更新段: `v0.5.12_dev..v0.5.15.post1_dev`, `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 归类说明: 命中具体模型名、模型文件的提交进入对应模型桶（可同时进入多个）；其余运行时、后端、CI、测试提交进入 `shared`；仅有 merge 或无相关路径的提交进入 `unclassified`。改动文件数超过 150 的批量同步/重命名提交（如整合官方 main 的 squash 同步）也只进入 `unclassified`，其内容含上游代码，不能当作本地独有实现。自动归类，未逐条人工审阅 diff。
-
-### 涉及文件
-
-| 文件 | 本地提交 |
-| --- | --- |
-| `docs/internal/dcu-main-conflict-ledger.md` | `5d83cfe85`, `0536e102c`, `523756bde`, `93cf8edc4`, `ff440b897`, `e6d4b3378`, `00063277c`, `88bb5176c`, `a1ed918ae`, `bfaf180d1`, `b6db54a9a`, `1cea713a7`, ... (36 total) |
-| `.github/workflows/release-pypi-nightly-hcu.yml` | `358a33714`, `997e64560`, `fb7f11956`, `77939d9a5`, `b0dc28040`, `37c5b30bb`, `8b50a269f`, `d5882c133`, `6ba4328e9`, `5efbf9c3b`, `d39c77a23`, `1db0108f3`, ... (19 total) |
-| `.github/workflows/release-pr-hcu.yml` | `358a33714`, `997e64560`, `02968a96d`, `fb7f11956`, `77939d9a5`, `b0dc28040`, `b628d29e1`, `f6b66222a`, `69c73a178`, `3e6aaf09d`, `6a4a61efb`, `d39c77a23`, ... (17 total) |
-| `python/sglang/srt/server_args.py` | `cba9e72cc`, `a7931170f`, `6e2576a74`, `832ed3b14`, `18b106418`, `a306b8023`, `f41bb0f58`, `873465654`, `6a51f2a38`, `c40703e6b`, `1679428e0`, `57beb6b4a`, ... (17 total) |
-| `.github/workflows/nightly-test-hcu.yml` | `358a33714`, `997e64560`, `02968a96d`, `b0f2bb3a8`, `1a5ce1750`, `fb7f11956`, `b0dc28040`, `6a4a61efb`, `d39c77a23`, `f292fa0e3`, `0ce4bc716`, `647229c6e`, ... (14 total) |
-| `.github/workflows/quality-gate.yml` | `811aa027d`, `9864c8451`, `ac56ca009`, `0710e82a0`, `286612da4`, `de696eab9`, `93b801826`, `c8ba30447`, `93c56ce71`, `4d3aaf6af`, `e6c410259`, `f2fc4e166`, ... (14 total) |
-| `python/sglang/srt/environ.py` | `45d26d754`, `1653683bd`, `a306b8023`, `261b8627f`, `1679428e0`, `f35668e41`, `a494caa1e`, `0f88700ac`, `7df099eb6`, `7db5ec177`, `c4ef6d3a4`, `90f80c6bd`, ... (14 total) |
-| `python/sglang/srt/layers/moe/ep_moe/layer.py` | `b921d697a`, `038467e8b`, `b57ecddf2`, `dc1b54b42`, `962ab75e4`, `42185e316`, `056b21d82`, `45b20a85c`, `b80d0d1bb`, `6c0330d8d`, `066a95af7`, `cfa865d33`, ... (14 total) |
-| `.github/workflows/pr-test-hcu.yml` | `81e3561ae`, `02968a96d`, `dc5cd7089`, `b0dc28040`, `69c73a178`, `63610c2ff`, `0ce4bc716`, `647229c6e`, `74ee9054e`, `7c7da44a7`, `6086af28d`, `a06c34ef7` |
-| `python/sglang/srt/layers/attention/dsa/dsa_indexer.py` | `ccfc91c5d`, `18b106418`, `0dd9ab211`, `1653683bd`, `a306b8023`, `873465654`, `ed017ea38`, `5aedbbcc9`, `6e2f11552`, `c3846f222`, `c4ef6d3a4` |
-| `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` | `0d55c3dcc`, `c11fc7982`, `3190629e7`, `ef56737fc`, `b921d697a`, `93c930c6f`, `0669c1842`, `b065e598a`, `b10bb8c6e`, `eb4f0ad89`, `6c0330d8d` |
-| `python/sglang/srt/layers/attention/dsa_backend.py` | `143df0a3e`, `ccfc91c5d`, `75cc77fa2`, `902de5d3d`, `3d12a3ce1`, `51e53affe`, `b001a8d21`, `35d915ef2`, `c4ef6d3a4`, `05c58e82f` |
-| `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` | `ccbb65acb`, `2083c069f`, `4a6fbed98`, `b36730b41`, `cfa865d33`, `2cc1bcc28`, `966f6da1b`, `018e5799a`, `a031c979a`, `1343bb07e` |
-| `python/sglang/srt/mem_cache/memory_pool.py` | `083d1d8b9`, `f475e6569`, `a306b8023`, `f41bb0f58`, `873465654`, `ed017ea38`, `d8db8bb3e`, `6614bebc7`, `b7e4eae12` |
-| `python/sglang/srt/layers/attention/flashattention_interface.py` | `62a07586d`, `11d08002b`, `72d1d2a73`, `27ce43c71`, `6614bebc7`, `2a1b589b3`, `4a7532fef`, `16e9b3867` |
-| `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py` | `154a88c7b`, `a0cc11498`, `9287931ed`, `39dc297c2`, `c11fc7982`, `1535858ca`, `7164456e7` |
-| `python/sglang/srt/disaggregation/mooncake/conn.py` | `f41bb0f58`, `873465654`, `d8db8bb3e`, `253e326c3`, `8ae13700d`, `6614bebc7`, `7fa7729c1` |
-| `python/sglang/srt/disaggregation/prefill.py` | `d8db8bb3e`, `1679428e0`, `8ae13700d`, `6614bebc7`, `20c5f927f`, `0f88700ac`, `7fa7729c1` |
-| `python/sglang/srt/layers/moe/topk.py` | `0d243f4f1`, `650a58304`, `b001a8d21`, `dcbfd4230`, `9e3dd4834`, `7df099eb6`, `7db5ec177` |
-| `python/sglang/srt/managers/scheduler.py` | `afe5219d0`, `bf037e528`, `8ae13700d`, `77ba00139`, `0f88700ac`, `7fa7729c1`, `40c9ec29b` |
-| `python/sglang/srt/mem_cache/dsa_cache_layer_split.py` | `f475e6569`, `a306b8023`, `873465654`, `ed017ea38`, `5aedbbcc9`, `d8db8bb3e`, `2df70449a` |
-| `.github/workflows/lint-hcu.yml` | `358a33714`, `997e64560`, `77939d9a5`, `69c73a178`, `3e6aaf09d`, `6086af28d` |
-| `python/sglang/srt/disaggregation/decode.py` | `d8db8bb3e`, `1679428e0`, `8ae13700d`, `6614bebc7`, `ab91a15c8`, `77ba00139` |
-| `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` | `c0e8edd74`, `b921d697a`, `31a159567`, `31262cd68`, `1882acd8c`, `aebf1a9f4` |
-| `.github/workflows/hcu-full-enabled.yml` | `02968a96d`, `132b630bc`, `4c7a264e5`, `b0dc28040`, `6086af28d` |
-| `.github/workflows/release-docker-hcu.yml` | `b628d29e1`, `37c5b30bb`, `1db0108f3`, `e769cde2e`, `6086af28d` |
-| `docker/hcu.Dockerfile` | `b628d29e1`, `1db0108f3`, `6721affc2`, `e769cde2e`, `6614bebc7` |
-| `docs/internal/dcu-main-migration-plan.md` | `5d83cfe85`, `0536e102c`, `e3aa204a0`, `dc1323ba4`, `339dfe433` |
-| `python/sglang/srt/disaggregation/common/conn.py` | `f475e6569`, `f41bb0f58`, `873465654`, `6614bebc7`, `20c5f927f` |
-| `python/sglang/srt/layers/attention/dsa/hcu_int8_index_k_cache.py` | `a306b8023`, `f41bb0f58`, `873465654`, `d8db8bb3e`, `c3846f222` |
-| `python/sglang/srt/layers/attention/flashattention_backend.py` | `fa6b75971`, `62a07586d`, `11d08002b`, `6614bebc7`, `9153913d6` |
-| `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` | `ccbb65acb`, `4a6fbed98`, `1535858ca`, `bfbff7f68`, `0bb71f0c7` |
-| `python/sglang/srt/managers/schedule_batch.py` | `3910b3f9d`, `1679428e0`, `20c5f927f`, `0f88700ac`, `7fa7729c1` |
-| `python/sglang/srt/mem_cache/unified_radix_cache.py` | `1679428e0`, `bf037e528`, `20c5f927f`, `0f88700ac`, `7fa7729c1` |
-| `.github/workflows/hcu-manual-model-test.yml` | `132b630bc`, `4c7a264e5`, `b0dc28040`, `6086af28d` |
-| `README_HCU.md` | `50736ebe7`, `0ce4bc716`, `57beb6b4a`, `19175a690` |
-| `python/sglang/srt/disaggregation/utils.py` | `f475e6569`, `f41bb0f58`, `d8db8bb3e`, `0f88700ac` |
-| `python/sglang/srt/layers/moe/mega_moe.py` | `9fc04a7a2`, `44b7bc846`, `b10bb8c6e`, `eb4f0ad89` |
-| `python/sglang/srt/layers/moe/moe_runner/aiter.py` | `8e2aba4bf`, `98ba405a2`, `90f80c6bd`, `bfbff7f68` |
-| `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py` | `f1c6f5631`, `f106c5360`, `b9e0052e9`, `9f7bfb351` |
-| ... | 另有 305 个文件未列出 |
-
-### 时间线
-
-| 日期 | Commit | 分支更新段 | 分类 | 标题 | 主要文件 |
-| --- | --- | --- | --- | --- | --- |
-| 2026-06-22 | `5d83cfe85` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | [SGlang Open] Created an internal main branch from v0.5.12_dev-d4c6831a107a and some docs | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md`, `scripts/code_sync/dcu_main_migration.py` |
-| 2026-06-22 | `0536e102c` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | [SGlang Open] Created an internal main branch from v0.5.12_dev-d4c6831a107a and some docs | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md`, `scripts/code_sync/dcu_main_migration.py` |
-| 2026-06-24 | `523756bde` | `v0.5.12_dev..v0.5.15.post1_dev` | 调度/缓存/PD | [docs(dcu)] log C01/C02 conflict ledger update | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-06-30 | `93cf8edc4` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | [Addition] deliver one validation doc | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-06-30 | `3910b3f9d` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | fix(scheduler): restore DCU empty-prefix location | `python/sglang/srt/managers/schedule_batch.py` |
-| 2026-06-30 | `ff440b897` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record C04 runtime validation | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-01 | `e6d4b3378` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | [Addition] deliver one validation doc | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-03 | `00063277c` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C07 | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-06 | `88bb5176c` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C08 | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-06 | `fa6b75971` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | [BugFix] Deliver the remaining _is_dcu branch when flashattention_backend has changed | `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/triton_ops/metadata.py` |
-| 2026-07-06 | `a1ed918ae` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C09 | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-08 | `bfaf180d1` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C10 | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-08 | `b6db54a9a` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C11~C13 | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-08 | `1cea713a7` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record C14-C16 validation block | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-08 | `b452d6bd6` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record C14-C16 functional validation | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-09 | `01a6f1b94` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C14~C16 | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-09 | `cee45bc55` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record C17-C19 validation | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-09 | `4b0fcbd07` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C17~C19 | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-13 | `cba9e72cc` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | [BugFix] skip some uncompatibal env setup in hip for DCU | `python/sglang/srt/server_args.py` |
-| 2026-07-13 | `48489724d` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record 20260623 catch-up runtime status | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-13 | `8c797abd6` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | Record 20260629 DCU runtime validation | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-13 | `d8ed552da` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | docs(dcu): add 20260629 conflict review | `docs/internal/dcu-main-catchup-20260629-conflict-review.md` |
-| 2026-07-13 | `516a35c40` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record 20260703 runtime blocker | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-14 | `e3aa204a0` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): require catch-up conflict reviews | `docs/internal/dcu-main-catchup-20260706-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md` |
-| 2026-07-14 | `412d0ef9f` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | docs(dcu): add 20260709 conflict review | `docs/internal/dcu-main-catchup-20260709-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-14 | `c0e8edd74` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | fix(dcu): initialize DeepEP dispatch dtype state | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` |
-| 2026-07-14 | `9d7fbb017` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | docs: add 20260710 conflict review | `docs/internal/dcu-main-catchup-20260710-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-14 | `24894692e` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | fix: use runtime attention TP size in model warmup | `python/sglang/srt/model_executor/model_runner.py` |
-| 2026-07-14 | `6630db3cf` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs: record 20260710 pure-TP validation | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-14 | `3d77308ea` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs: mark 20260710 catch-up validated | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-14 | `3e335fce8` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs: correct 20260710 endpoint subject | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-15 | `baa08af59` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | docs(dcu): add 20260712 conflict review | `docs/internal/dcu-main-catchup-20260712-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-15 | `44f81e8f7` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record 20260712 runtime gate status | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-15 | `0b30b7c9d` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record 20260712 runtime validation | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-15 | `324181561` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | docs(dcu): add 20260713 conflict review | `docs/internal/dcu-main-catchup-20260713-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-15 | `20633db57` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | docs(dcu): add 20260714 conflict review | `docs/internal/dcu-main-catchup-20260714-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-15 | `f67cdf69b` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record 20260714 runtime blocker | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-15 | `49a10aec8` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): record 20260714 owner validation | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-16 | `dc1323ba4` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): finalize v0.5.12_dev forward-port | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`, `docs/internal/dcu-main-migration-plan.md` |
-| 2026-07-16 | `339dfe433` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(dcu): define v0.5.15.post1 release workflow | `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`, `docs/internal/dcu-main-migration-plan.md`, `docs/internal/dcu-v0.5.15-post1-dev-plan.md` |
-| 2026-07-20 | `358a33714` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | fix(hcu): keep Harbor build image path | `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` 等 4 个文件 |
-| 2026-07-20 | `81e3561ae` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci(hcu): exclude two unstable PR tests | `.github/workflows/pr-test-hcu.yml` |
-| 2026-07-20 | `811aa027d` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci: replace HCU runtime text check with sensitive diff gate | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_hcu_runtime_text.py`, `scripts/ci/hcu/check_sensitive_diff_text.py` |
-| 2026-07-20 | `15a656ea6` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | test(hcu): align v0.5.15 compatibility tests | `test/registered/hcu/openai_server/test_serving_chat_hcu.py`, `test/registered/hcu/unit/test_profile_merger_hcu.py`, `test/registered/unit/server_args/test_server_args.py` |
-| 2026-07-21 | `9864c8451` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci: use shared sensitive diff gate for HCU port | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_sensitive_diff_text.py` |
-| 2026-07-21 | `ac56ca009` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci: follow main sensitive diff workflow | `.github/workflows/quality-gate.yml` |
-| 2026-07-22 | `9fc04a7a2` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | [BugFix] Disable the standalone-DCU MegaMoE ASM tail-reduce path by default to avoid vmfault | `python/sglang/srt/layers/moe/mega_moe.py` |
-| 2026-07-24 | `7482123c3` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | fix(hcu): prefer hcusmi for platform detection | `python/sglang/multimodal_gen/runtime/platforms/__init__.py` |
-| 2026-07-27 | `0710e82a0` | `v0.5.12_dev..v0.5.15.post1_dev` | 调度/缓存/PD | Update quality gate workflow for new branch version | `.github/workflows/quality-gate.yml` |
-| 2026-07-28 | `997e64560` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci: use configured HCU release image | `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` 等 4 个文件 |
-| 2026-07-29 | `3b4327cd7` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | fix(hcu): support current LightOp fp8 quant API | `python/sglang/srt/layers/linear.py` |
-| 2026-07-29 | `e18e6b94b` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | docs(hcu): record daily forward-port 20260729 | `docs/internal/dcu-main-conflict-ledger.md` |
-| 2026-07-29 | `111fea82f` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | ci: disable unused workflow triggers | `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml` 等 36 个文件 |
-| 2026-07-31 | `02968a96d` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | fix(hcu): restore shared wheel staging root lost in forward-port | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml` 等 4 个文件 |
-| 2026-07-31 | `39d691220` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | fix(hcu): restore NETWORK_MODE default lost in forward-port | `scripts/ci/hcu/hcu_ci_start_container.sh` |
-| 2026-08-03 | `286612da4` | `v0.5.12_dev..v0.5.15.post1_dev` | 调度/缓存/PD | Update quality gate workflow to use version v2.0.0 | `.github/workflows/quality-gate.yml` |
-| 2026-08-03 | `de696eab9` | `v0.5.12_dev..v0.5.15.post1_dev` | 调度/缓存/PD | Update quality gate workflow to version 2.0.1 | `.github/workflows/quality-gate.yml` |
-| 2026-08-03 | `015f6d49a` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | fix lint: drop redundant module-scope sgl_kernel import in forward_batch_info | `python/sglang/srt/model_executor/forward_batch_info.py` |
-| 2026-08-06 | `f1c6f5631` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | fix(hcu): drop leftover source hunks that renaming and partial takes left behind | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`, `python/sglang/srt/managers/scheduler_components/dp_attn.py` |
-| 2026-08-06 | `8e2aba4bf` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | fix lint: apply isort/black to forward-port diff | `python/sglang/kernels/ops/attention/decode_attention.py`, `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8.py` 等 5 个文件 |
-| 2026-08-06 | `f17440f19` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | fix(hcu): restore original license headers dropped by the forward-port | `scripts/ci/hcu/hcu_ci_start_container.sh`, `test/run_suite.py` |
-| 2026-08-06 | `b0f2bb3a8` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | fix(hcu): restore network_mode matrix keys dropped by the forward-port | `.github/workflows/nightly-test-hcu.yml` |
-| 2026-08-07 | `154a88c7b` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | fix lint: apply isort/black to the lmslim->lightop migration | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/layers/quantization/fp8_utils.py` |
-| 2026-08-07 | `b59995e42` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | fix(hcu): point PD smoke tests at a declared HCU suite | `test/registered/hcu/README.md`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`, `test/registered/hcu/disaggregation/test_pd_hcu_utils.py` |
-| 2026-08-07 | `92ce544fa` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci: align v0.5.15 workflow triggers | `.github/workflows/bot-bump-docs-version.yml`, `.github/workflows/release-docker-amd.yml`, `.github/workflows/release-docker-npu.yml` 等 7 个文件 |
-| 2026-08-07 | `132b630bc` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | ci(hcu): harden server lifecycle and model mounts | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `python/sglang/test/hcu_cookbook_utils.py` 等 5 个文件 |
-| 2026-08-07 | `4c7a264e5` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | ci(hcu): align model assets and selected-ref kernel | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `python/sglang/test/hcu_cookbook_utils.py` |
-| 2026-08-07 | `1a5ce1750` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci(hcu): publish reasoning results to shared storage | `.github/workflows/nightly-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_publish_reasoning_code.py`, `scripts/ci/hcu/test_hcu_ci_publish_reasoning_code.py` |
-| 2026-08-07 | `50736ebe7` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci(hcu): keep migration changes scoped | `README_HCU.md` |
-| 2026-08-07 | `dc5cd7089` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci: finalize v0.5.15 workflow policy | `.github/workflows/ci-auto-bisect.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/slash-command-handler.yml` |
-| 2026-08-07 | `ecf4756ce` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | test(hcu): isolate server guard unit test | `scripts/ci/hcu/test_hcu_server_guard.py` |
-| 2026-08-07 | `76ced479e` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | test(hcu): use v0.5.15 FP8 kernel path | `test/registered/hcu/kernels/test_fp8_quant_reference_hcu.py` |
-| 2026-08-07 | `3fbc8ae9e` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | test(hcu): align numerical references with v0.5.15 | `test/registered/hcu/kernels/test_attention_reference_hcu.py`, `test/registered/hcu/kernels/test_int8_w8a8_reference_hcu.py` |
-| 2026-08-07 | `3de1323a9` | `v0.5.12_dev..v0.5.15.post1_dev` | 调度/缓存/PD | ci(hcu): normalize rebased PD suite names | `test/registered/hcu/README.md`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`, `test/registered/hcu/disaggregation/test_pd_hcu_utils.py` |
-| 2026-08-11 | `ccbb65acb` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | [HCU][DSpark] Fix DP EP MoE fallback routing | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
-| 2026-08-12 | `2083c069f` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | fix lint: apply pre-commit fixes to the EP MoE fallback change | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
-| 2026-08-12 | `fb7f11956` | `v0.5.12_dev..v0.5.15.post1_dev` | 测试/文档/基准 | ci(hcu): adapt wheel jobs to CIUpload 0.3 | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` 等 4 个文件 |
-| 2026-08-13 | `54e3ed50f` | `v0.5.12_dev..v0.5.15.post1_dev` | 缺陷修复 | [BugFix] fix the runtime errors in ep+dspark mode | `python/sglang/srt/speculative/dspark_components/dspark_draft.py` |
-| 2026-08-13 | `18e167b73` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | [BugFix] fix the client inference None errors in temperature>0 with a torch implementation | `python/sglang/srt/speculative/dflash_utils.py` |
-| 2026-08-13 | `5e2ba659e` | `v0.5.12_dev..v0.5.15.post1_dev` | 性能/后端优化 | fix lint: apply pre-commit fixes to the dspark bugfixes | `python/sglang/srt/speculative/dflash_utils.py` |
-| 2026-08-31 | `93b801826` | `v0.5.12_dev..v0.5.15.post1_dev` | 调度/缓存/PD | Update quality gate workflow to version 2.0.3 | `.github/workflows/quality-gate.yml` |
-| 2026-09-21 | `c8ba30447` | `v0.5.12_dev..v0.5.15.post1_dev` | 调度/缓存/PD | Update quality gate workflow to use stable version | `.github/workflows/quality-gate.yml` |
-| 2026-07-24 | `6c1786bc4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(hcu): prefer hcusmi for platform detection | `python/sglang/multimodal_gen/runtime/platforms/__init__.py` |
-| 2026-07-27 | `93c56ce71` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Refactor quality gate workflow and job configurations | `.github/workflows/quality-gate.yml` |
-| 2026-07-28 | `77939d9a5` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci: use configured HCU release image | `.github/workflows/lint-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-07-29 | `b2f0b830c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | ci: disable unused workflow triggers | `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml` 等 39 个文件 |
-| 2026-07-31 | `a0cc11498` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [BugFix] fix the mxfp4 triton accuracy issues | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py` |
-| 2026-08-03 | `4d3aaf6af` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 调度/缓存/PD | Update quality gate workflow for versioning and concurrency | `.github/workflows/quality-gate.yml` |
-| 2026-08-03 | `e6c410259` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 调度/缓存/PD | Update quality gate workflow to version 2.0.1 | `.github/workflows/quality-gate.yml` |
-| 2026-08-04 | `083d1d8b9` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): restore DeepGEMM PD helper and current cache API | `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/mem_cache/memory_pool.py` |
-| 2026-08-04 | `e8298ba90` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(hcu): restore DP decode protocol constants | `python/sglang/srt/managers/scheduler_components/dp_attn.py` |
-| 2026-08-04 | `8160ebe53` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(hcu): retain PD decode adapter callbacks | `python/sglang/srt/managers/scheduler_components/dp_attn.py` |
-| 2026-08-04 | `a7931170f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | sytnx fix | `python/sglang/srt/server_args.py` |
-| 2026-08-07 | `6e2576a74` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix: route hcu_mla prefill through the chunked prefix cache path | `python/sglang/srt/server_args.py` |
-| 2026-08-10 | `e3a9d595c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [HCU][DSpark] Fix sampling parameter updates after graph capture | `python/sglang/srt/speculative/dspark_components/dspark_draft_sampler.py` |
-| 2026-08-10 | `4a6fbed98` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [HCU][DSpark] Add standalone Triton fallback for missing AITER MoE config | `python/sglang/srt/layers/moe/hcu_dspark_aiter_moe_fallback.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
-| 2026-08-10 | `5fd89c728` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [BugFix] fix the inference tensor graph replay issues in MTP mode | `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/speculative/eagle_worker_common.py`, `python/sglang/srt/speculative/eagle_worker_v2.py` |
-| 2026-08-10 | `b36730b41` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix lint: apply pre-commit fixes to the mHC EAGLE changes | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/speculative/eagle_worker_common.py` |
-| 2026-08-11 | `4a004a87b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: route KDA packed decode to the HCU operator kernel | `python/sglang/kernels/ops/attention/fla/fused_recurrent.py`, `python/sglang/srt/layers/attention/linear/kernels/kda_triton.py` |
-| 2026-08-12 | `7d3e54a20` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat: support aiter gdn fwd op | `python/sglang/kernels/ops/attention/fla/chunk_delta_h.py`, `python/sglang/kernels/ops/attention/fla/kda_hcu.py` |
-| 2026-08-12 | `9287931ed` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat: support triton moe wfp4 afp8 tc | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py` |
-| 2026-08-13 | `39dc297c2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat: optimize Triton MXFP4 W4A8 scaling | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py` |
-| 2026-08-13 | `0d55c3dcc` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: remove debug info | `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-08-13 | `c11fc7982` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat: add INT4 MoE W4A8 int8 tensor-core path for slimquant HCU | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-08-13 | `83ab58f2e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(quant): 修复 HCU W8A8 hipBLASLt 权重布局 | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`, `test/registered/unit/layers/quantization/test_compressed_tensors_w8a8_int8_hcu_layout.py` |
-| 2026-08-13 | `832ed3b14` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat(moe): 增加 locality-fair static dispatch 策略 | `python/sglang/srt/eplb/expert_location.py`, `python/sglang/srt/server_args.py`, `test/registered/unit/eplb/test_compute_logical_to_rank_dispatch_physical_map.py` |
-| 2026-08-13 | `143df0a3e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(attention): 恢复 HCU DSA FlashMLA backend 路由 | `python/sglang/srt/layers/attention/dsa/flashmla_backend.py`, `python/sglang/srt/layers/attention/dsa_backend.py`, `test/registered/unit/layers/attention/test_dsa_flashmla_backend.py` |
-| 2026-08-13 | `ccfc91c5d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(attention): 保留 IFB/MTP 的 DSA effective forward mode | `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `python/sglang/srt/layers/attention/dsa/forward_batch_utils.py`, `python/sglang/srt/layers/attention/dsa/utils.py` 等 5 个文件 |
-| 2026-08-13 | `75cc77fa2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(attention): 修复 IFB/MTP FlashMLA padded rows | `python/sglang/srt/layers/attention/dsa/forward_batch_utils.py`, `python/sglang/srt/layers/attention/dsa_backend.py`, `test/registered/unit/layers/attention/test_dsa_forward_batch_utils.py` |
-| 2026-08-13 | `902de5d3d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(attention): 修复 HCU DSA FlashMLA metadata replay | `python/sglang/srt/layers/attention/dsa/flashmla_backend.py`, `python/sglang/srt/layers/attention/dsa_backend.py`, `test/registered/unit/layers/attention/test_dsa_flashmla_backend.py` |
-| 2026-08-13 | `18b106418` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | feat(attention): 恢复 HCU LightOp DSA indexer 路径 | `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `python/sglang/srt/layers/attention/dsa/paged_mqa_logits_backend.py`, `python/sglang/srt/server_args.py` 等 4 个文件 |
-| 2026-08-13 | `0dd9ab211` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(attention): 按 head_dim 归一化 DSA indexer | `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `test/registered/unit/layers/attention/dsa/test_hcu_indexer.py` |
-| 2026-08-13 | `43f1a8b2a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(attention): 启用 HCU DSA MTP draft-extend CUDA graph | `python/sglang/srt/speculative/eagle_worker_v2.py`, `test/registered/unit/spec/test_eagle_worker_v2_graph_support.py` |
-| 2026-08-14 | `fa309a1e1` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): drop the stale 0.5.12-era expert-count override in FusedMoE | `python/sglang/srt/layers/moe/fused_moe_triton/layer.py` |
-| 2026-08-14 | `288ab2445` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix: fix submit_nogds_read failed when use fastsafetensors load | `python/sglang/srt/model_loader/weight_utils.py` |
-| 2026-08-14 | `1535858ca` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: refactor mxfp4 moe for activate 8 or 16 bit | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/layers/moe/moe_runner/triton.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` 等 4 个文件 |
-| 2026-08-15 | `3190629e7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: correct blockshape is none when use aiter moe for channel w4a8 model | `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-08-17 | `9bbf3799d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 模型支持/运行时入口 | docs(hcu): add the 20260817 official backport validation report | `docs/internal/backport-official-20260817-validation-report.md` |
-| 2026-08-18 | `b0dc28040` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Hcu/fix main kernel build path (#207) | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/nightly-test-hcu.yml` 等 9 个文件 |
-| 2026-08-18 | `e3a192d66` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat: update kda default value and support boltops chunk delta rule | `python/sglang/kernels/ops/attention/fla/chunk_delta_h.py`, `python/sglang/srt/layers/attention/linear/kda_backend.py`, `python/sglang/srt/layers/attention/linear/kernels/kda_flashkda.py` 等 4 个文件 |
-| 2026-08-19 | `ef56737fc` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: update w4a8 moe default backend | `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-08-19 | `45d26d754` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(kernel): add HCU MLA query concat kernel | `benchmark/kernels/elementwise/benchmark_concat_mla_absorb_q_hcu.py`, `python/sglang/kernels/aot/csrc/common_extension_rocm.cc`, `python/sglang/kernels/aot/csrc/elementwise/concat_mla_absorb_q_hcu.cu` 等 7 个文件 |
-| 2026-08-19 | `1653683bd` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(hcu): port sparse page MQA with mask TopK to DSA | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `python/sglang/srt/layers/attention/dsa/dsa_indexer_metadata.py` 等 5 个文件 |
-| 2026-08-19 | `f475e6569` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(dsa): compact shared index-K cache | `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/utils.py` 等 8 个文件 |
-| 2026-08-19 | `a306b8023` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 调度/缓存/PD | feat(hcu): port gfx936 INT8 DSA index cache | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `python/sglang/srt/layers/attention/dsa/hcu_int8_index_k_cache.py` 等 7 个文件 |
-| 2026-08-19 | `f41bb0f58` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 调度/缓存/PD | feat(hcu): support INT8 DSA cache in Mooncake PD | `python/sglang/srt/disaggregation/base/conn.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/common/utils.py` 等 8 个文件 |
-| 2026-08-19 | `3d12a3ce1` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): stabilize DSA MTP metadata replay | `python/sglang/kernels/jit/csrc/elementwise/fused_metadata_copy.cuh`, `python/sglang/kernels/ops/attention/fused_metadata_copy.py`, `python/sglang/srt/layers/attention/dsa/dsa_backend_mtp_precompute.py` 等 4 个文件 |
-| 2026-08-19 | `51e53affe` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(hcu): reuse DSA target verify graph metadata | `python/sglang/srt/layers/attention/dsa/dsa_backend_mtp_precompute.py`, `python/sglang/srt/layers/attention/dsa_backend.py` |
-| 2026-08-19 | `873465654` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(dsa): correct compact index cache handling | `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/layers/attention/dsa/dsa_indexer.py` 等 10 个文件 |
-| 2026-08-19 | `6a51f2a38` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): register SlimQuant W4A8 Marlin quantization | `python/sglang/srt/server_args.py` |
-| 2026-08-19 | `afe5219d0` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(scheduler): use parallel state for PD decode sync | `python/sglang/srt/managers/scheduler.py` |
-| 2026-08-19 | `0d243f4f1` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): restore async metadata copies and padded dispatch | `python/sglang/srt/layers/moe/topk.py`, `python/sglang/srt/model_executor/forward_batch_info.py`, `test/registered/moe/test_topk_padded_region.py` |
-| 2026-08-19 | `ed017ea38` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): use LayerSplit scratch for fused index writes | `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `python/sglang/srt/mem_cache/dsa_cache_layer_split.py`, `python/sglang/srt/mem_cache/index_key_cache.py` 等 4 个文件 |
-| 2026-08-20 | `62a07586d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [feat] 适配HCU FA3 | `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py` 等 5 个文件 |
-| 2026-08-20 | `fb7369fec` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [bugfix]删除无关文件 | `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942` |
-| 2026-08-20 | `b628d29e1` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | [feature] 增加打镜像的ci, 0.5.15版本更新torch到2.11版本 | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `docker/hcu.Dockerfile` |
-| 2026-08-20 | `11d08002b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [fix]solved CI Test errors | `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py` 等 4 个文件 |
-| 2026-08-20 | `f6b66222a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | revert: 恢复 release-pr-hcu.yml 默认 torch 版本为 2.10.0 | `.github/workflows/release-pr-hcu.yml` |
-| 2026-08-20 | `72d1d2a73` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [fix]solved other CI Test errors | `python/sglang/srt/layers/attention/flashattention_interface.py` |
-| 2026-08-20 | `27ce43c71` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [fix]solved CI Test errors | `python/sglang/srt/layers/attention/flashattention_interface.py` |
-| 2026-08-20 | `37c5b30bb` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix: extract full DTK version for three-part versions | `.github/workflows/nightly-test-dcu.yml`, `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml` 等 4 个文件 |
-| 2026-08-20 | `a6a8e0d5d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: read MXFP4 group_size from model config instead of hardcoding 32 | `python/sglang/srt/layers/quantization/mxfp4.py` |
-| 2026-08-20 | `650a58304` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): skip padded tokens for legacy DeepGEMM MoE | `python/sglang/srt/layers/moe/topk.py` |
-| 2026-08-20 | `b001a8d21` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(hcu): reduce TopK and DSA replay overhead | `python/sglang/srt/layers/attention/dsa_backend.py`, `python/sglang/srt/layers/moe/topk.py`, `python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py` |
-| 2026-08-20 | `dcbfd4230` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(hcu): avoid redundant padded weight mask | `python/sglang/srt/layers/moe/topk.py` |
-| 2026-08-20 | `9e3dd4834` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(hcu): fuse DeepEP topk id cast | `python/sglang/srt/layers/moe/topk.py` |
-| 2026-08-20 | `5aedbbcc9` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(hcu): overlap LayerSplit index cache broadcast | `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `python/sglang/srt/layers/communicator_dsa_cp.py`, `python/sglang/srt/mem_cache/dsa_cache_layer_split.py` 等 5 个文件 |
-| 2026-08-24 | `261b8627f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(hcu): restore 29 environ declarations the sync auto-merge dropped | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/sync-official-main-20260824-summary.md`, `python/sglang/srt/environ.py` |
-| 2026-08-24 | `238c81b4c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | 优化因数据拷贝导致的性能问题 | `python/sglang/kernels/npu_kernels/npu_grouped_matmul_triton.py`, `python/sglang/kernels/npu_kernels/npu_moe_init_routing_v2_triton.py`, `python/sglang/srt/hardware_backend/npu/moe/matmul.py` |
-| 2026-08-24 | `6e2f11552` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(hcu): align speculative index cache lengths | `python/sglang/srt/layers/attention/dsa/dsa_indexer.py` |
-| 2026-08-25 | `c40703e6b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(ci): clear the three Quality Gate blockers from the 20260824 sync | `.github/workflows/_npu-pr-test-stage.yml`, `.github/workflows/_npu-single-node-test-stage.yml`, `.github/workflows/nightly-test-npu.yml` 等 5 个文件 |
-| 2026-08-25 | `59213c7e4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Revert the hcu_rename_allowlist entry for -DCUDA_ENABLED | `scripts/ci/hcu/hcu_rename_allowlist.txt` |
-| 2026-08-25 | `69c73a178` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 模型支持/运行时入口 | ci(hcu): support fork pull requests | `.github/workflows/lint-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
-| 2026-08-25 | `f2fc4e166` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 调度/缓存/PD | Update quality gate workflow to version 2.0.3 | `.github/workflows/quality-gate.yml` |
-| 2026-08-25 | `3e6aaf09d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci(hcu): allow fork checkout in target workflows | `.github/workflows/lint-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
-| 2026-08-25 | `6a4a61efb` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | ci(hcu): detect runner workspace ownership | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
-| 2026-08-25 | `b921d697a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat: support contiguous and masked hipc kernel for deepep normal and low_latency mode | `python/sglang/kernels/ops/moe/ep_moe_kernels.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` 等 4 个文件 |
-| 2026-08-25 | `7164456e7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: preserve target lightop int8 quantization | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py` |
-| 2026-08-26 | `8b50a269f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | bugfix router路径不对 | `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-08-26 | `d5882c133` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | [feature] 发包流水支持手动触发,手动触发不上传pypi | `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-08-26 | `038467e8b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: fix lightop moe align vimfault | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-08-26 | `6ba4328e9` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci(hcu): release 发包流水触发方式改为 push | `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-08-26 | `93c930c6f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: fix aiter shuffle func not found | `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-08-26 | `d8db8bb3e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(dsa): complete LayerSplit HiCache paths | `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py` 等 11 个文件 |
-| 2026-08-26 | `5efbf9c3b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | debug: gateway 构建加日志排查 wheel 路径，临时只编 router | `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-08-26 | `0669c1842` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(quantization): defer SlimQuant MoE backend resolution | `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-08-26 | `63610c2ff` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci(hcu): enable checks for release branches | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/quality-gate.yml` |
-| 2026-08-26 | `d39c77a23` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci(hcu): use bash for wheel build jobs | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-08-26 | `1db0108f3` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [CI bugfix]工作目录没有清理导致权限变root (#240) | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile` |
-| 2026-08-26 | `b57ecddf2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(moe): fix W4A8 DeepEP accuracy with SwiGLU clamp | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-08-27 | `f292fa0e3` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci(hcu): trust wheel build workspaces | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
-| 2026-08-27 | `779f1bea2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [bugfix] CI打包版本更新为0.5.18 (#244) | `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-08-27 | `1679428e0` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [FEAT][DSpark] 1. Support the p/d radix cache w/ DSpark by PR:https://github.com/sgl-project/sglang/pull/31097; 2. SGLANG_ENABLE_UNIFIED_RADIX_TREE=1 & SGLANG_ENABLE_UNIFIED_RADIX_TREE=1 & --disaggregation-decode-enable-radix-cache should be enable in D | `python/sglang/srt/arg_groups/pd_disaggregation_hook.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/prefill.py` 等 14 个文件 |
-| 2026-08-27 | `6721affc2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 模型支持/运行时入口 | [feature]适配hcu发包 | `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`, `python/pyproject_hcu.toml` |
-| 2026-08-27 | `dc1b54b42` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): tolerate deepgemm without contiguous HIPC kernel | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-08-27 | `b065e598a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): restore slimquant backend logger | `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-08-27 | `962ab75e4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): default to compatible masked W4A8 kernel | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-08-27 | `253e326c3` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(disagg): avoid duplicate KV transfer in worker | `python/sglang/srt/disaggregation/mooncake/conn.py` |
-| 2026-08-27 | `42185e316` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(moe): apply SwiGLU clamp in contiguous W4A8 path | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-08-27 | `e769cde2e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | hcu ci: docker 镜像 daily 定时构建, router 改用 vendored openssl, 补装 flash_kda (#252) | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` 等 4 个文件 |
-| 2026-08-28 | `5f314b004` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(dspark): transfer draft KV from PD prefill | `python/sglang/srt/speculative/dspark_components/dspark_disaggregation.py`, `python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py` |
-| 2026-08-28 | `31a159567` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: use the model's MoE topk for DeepEP RDMA buffer sizing | `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` |
-| 2026-08-28 | `845f99085` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(spec): handle zero-token verify results | `python/sglang/srt/managers/scheduler_components/batch_result_processor.py`, `test/registered/unit/managers/test_batch_result_processor_spec_grammar.py` |
-| 2026-08-28 | `c3846f222` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(hcu): consume INT8 DSA index cache directly | `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `python/sglang/srt/layers/attention/dsa/hcu_int8_index_k_cache.py` |
-| 2026-08-29 | `bf037e528` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(hicache): synchronize L3 prefetch across PP ranks | `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/hicache_storage.py` 等 11 个文件 |
-| 2026-08-31 | `bf9245607` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci-remove-amd-status-from-pr-summaries | `.github/workflows/pr-states.yml` |
-| 2026-09-01 | `685051c47` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [bugfix] removed the http warning info in the skip-warmup mode (#276) | `python/sglang/srt/entrypoints/http_server.py` |
-| 2026-09-01 | `867eeada1` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: gracefully handle unsupported KV cache schemes (#268) | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py` |
-| 2026-09-01 | `8ae13700d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(hcu): port PD disaggregation accuracy fix to v0.5.18 release (#266) | `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py` 等 5 个文件 |
-| 2026-09-02 | `6614bebc7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat(hcu): add BHSD KV-cache support while preserving legacy HCU FA (#282) | `docker/hcu.Dockerfile`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py` 等 11 个文件 |
-| 2026-09-02 | `4fea017b1` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(hcu): sample linear MTP target verification (#280) | `python/sglang/srt/speculative/eagle_utils.py` |
-| 2026-09-02 | `0e2a6e743` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Feat/bolt recompute w u (#278) | `python/sglang/kernels/ops/attention/fla/wy_fast.py` |
-| 2026-09-02 | `556337109` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [feat]:用lightop的gemm_w8a8_smooth代替triton实现，提升性能 (#279) | `python/sglang/kernels/npu_kernels/__init__.py`, `python/sglang/kernels/npu_kernels/npu_quant_matmul_triton.py`, `python/sglang/kernels/npu_kernels/npu_quant_matmul_w8a8.py` 等 4 个文件 |
-| 2026-09-02 | `0ce4bc716` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [CI] Use v0.5.18 HCU image and update model paths (#287) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `README_HCU.md` 等 12 个文件 |
-| 2026-09-02 | `3b678f293` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [BUGFIX] HCU环境不需要依赖flashinfer (#289) | `python/pyproject_hcu.toml` |
-| 2026-09-03 | `ab91a15c8` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [bugfix] 1.fix the accuracy issue in Decode radix-cache enable due to… (#291) | `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/managers/scheduler_components/batch_result_processor.py`, `python/sglang/srt/mem_cache/common.py` |
-| 2026-09-03 | `2a1b589b3` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): support BSHD multi-batch varlen attention and PD disaggregation (#288) | `python/sglang/srt/layers/attention/flashattention_interface.py`, `test/registered/hcu/openai_server/test_serving_chat_hcu.py` |
-| 2026-09-03 | `b0f501598` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [BugFix] fix the bug that certain chat/completion in DSpark goes to C… (#294) | `python/sglang/kernels/ops/speculative/dspark/dspark_accept.py` |
-| 2026-09-03 | `f656a2ed2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [BugFix] fix the bug by removing old monkey patch of mhc (#296) | `python/sglang/kernels/ops/layernorm/mhc.py` |
-| 2026-09-03 | `2b855b5be` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 模型支持/运行时入口 | ci(hcu): align llguidance and model asset paths (#300) | `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh` |
-| 2026-09-03 | `20c5f927f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [BugFix] Remove the dependency of prefill radix-cache with decode-pre… (#302) | `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/managers/schedule_batch.py` 等 5 个文件 |
-| 2026-09-04 | `9153913d6` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(speculative): remove unsupported server args (#304) | `python/sglang/srt/layers/attention/flashattention_backend.py` |
-| 2026-09-04 | `f35668e41` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [perf] add opt-in LightOp KV allocation kernel (#307) | `python/sglang/srt/environ.py`, `python/sglang/srt/mem_cache/allocator/paged.py` |
-| 2026-09-04 | `4c9d666cd` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix: fix deepep and dspark conflict (#306) | `python/sglang/srt/arg_groups/speculative_hook.py` |
-| 2026-09-04 | `44b7bc846` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [BugFix] support the MegaMoE func in DSpark model (#309) | `python/sglang/srt/layers/moe/mega_moe.py` |
-| 2026-09-07 | `3bc09034b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | feat(bench): add --gsp-input-ids to skip server tokenization (#315) | `python/sglang/benchmark/datasets/generated_shared_prefix.py`, `python/sglang/benchmark/serving.py` |
-| 2026-09-07 | `cdea7a5db` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): use available RMSNorm kernel op (#321) | `python/sglang/srt/layers/layernorm.py` |
-| 2026-09-07 | `ba2dec637` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(fst): reclaim device cache after each weight batch (#322) | `python/sglang/srt/model_loader/weight_utils.py` |
-| 2026-09-08 | `056b21d82` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | opt: optimize situ_quant op form lightop lib (#324) | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-09-08 | `47b97c0f7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(hcu): avoid gfx936 QSA LDS overflow (#326) | `python/sglang/srt/layers/attention/qsa/sparse_attn.py` |
-| 2026-09-08 | `57beb6b4a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | ci(hcu): align PR wheel version with release 0.5.18 (#295) | `.github/workflows/release-pr-hcu.yml`, `README_HCU.md`, `python/sglang/kernels/ops/quantization/fp8_kernel.py` 等 9 个文件 |
-| 2026-09-09 | `e6540308c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix bug: Refactor is_fp8_fnuz function for clarity | `python/sglang/kernels/ops/quantization/fp8_kernel.py` |
-| 2026-09-09 | `b10bb8c6e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [FEAT] support the dspark megamoe-int4 by packing signed-int4 to int8 (#333) | `python/sglang/srt/layers/moe/hcu_int4_megamoe.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton.py` 等 5 个文件 |
-| 2026-09-10 | `6d5931922` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | test(hcu): derive FP8 quant reference bounds from the output dtype (#337) | `test/registered/hcu/kernels/test_fp8_quant_reference_hcu.py` |
-| 2026-09-10 | `ebe9c77f2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | [FEATURE]同步编译python3.10和python3.12, 上传whl包后记录信息至dashub (#338) | `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-09-10 | `a494caa1e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(hcu): use AITER IPC collectives for DP TP-MoE (#340) | `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/dp_attention.py` |
-| 2026-09-10 | `4cdd9d36e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Release/20260825 v0.5.18 (#339) | `python/sglang/kernels/npu_kernels/npu_quant_matmul_w8a8.py` |
-| 2026-09-11 | `77ba00139` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix: fix pd fake prefill mode and attn_tp_size bug (#345) | `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/managers/scheduler.py` |
-| 2026-09-12 | `fa95ae084` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix and opt: fix dspark eagle error and optimize attn tp comm from ai… (#342) | `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/dp_attention.py` |
-| 2026-09-12 | `647229c6e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci(hcu): pin v0.5.18 image fallback and shared eval wheels (#348) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh` |
-| 2026-09-14 | `4a7532fef` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): keep DFLASH FP8 sliding attention on native FlashAttention (#356) | `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/attention/hcu_native_swa.py`, `test/manual/test_hcu_native_swa.py` |
-| 2026-09-14 | `74ee9054e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | ci(hcu): fix v0.5.18 PR runtime consistency (#363) | `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `test/registered/sampling/test_pytorch_sampling_backend.py` |
-| 2026-09-14 | `5077850b7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | support fabric aiter custom allreduce (#361) | `python/sglang/srt/distributed/bootstrap.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/parallel_state.py` 等 5 个文件 |
-| 2026-09-14 | `72df69c80` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [BUGFIX]缺少token声明导致打包信息无法推送至Dashub (#366) | `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-09-15 | `86cdce034` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci(hcu): align v0.5.18 wheel builds with torch 2.11 (#368) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
-| 2026-09-15 | `45b20a85c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Fix ValueError: Add type annotations to fuse_situ_mul_quant_ep (#369) | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-09-15 | `7c7da44a7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | ci(hcu): fix stale v0.5.18 PR test paths (#370) | `.github/workflows/pr-test-hcu.yml` |
-| 2026-09-15 | `35d915ef2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 模型支持/运行时入口 | feat: support hy4 cp (#358) | `python/sglang/srt/layers/attention/dsa_backend.py`, `python/sglang/srt/models/hunyuan_v4.py` |
-| 2026-09-15 | `0f88700ac` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | feat(mem-cache): support direct L3 external linker cache without test file (#373) | `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/disaggregation/utils.py`, `python/sglang/srt/environ.py` 等 31 个文件 |
-| 2026-09-16 | `b80d0d1bb` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [fix] 修复w8a8-fp8-v4pro精度问题 (#380) | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-09-16 | `7df099eb6` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat(moe): 增加 EP 绝对均衡性能测试开关 (#383) | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/ep_balance.py`, `python/sglang/srt/layers/moe/hash_topk.py` 等 4 个文件 |
-| 2026-09-16 | `2bb5e81e5` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 模型支持/运行时入口 | feat(spec): 支持节点内 Draft LM-head 词表并行 (#385) | `python/sglang/srt/arg_groups/speculative_hook.py`, `python/sglang/srt/layers/logits_processor.py`, `python/sglang/srt/model_executor/forward_batch_info.py` 等 6 个文件 |
-| 2026-09-17 | `07214443b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat(qsa): use FA sparse GQA for HIP chunk-prefill extend (#392) | `python/sglang/srt/layers/attention/qwen_sparse_attn_backend.py` |
-| 2026-09-17 | `2df70449a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 调度/缓存/PD | feat(layersplit): 支持单层 MTP Draft KV 分片与缓存复用 (#387) | `python/sglang/srt/layers/cp/utils.py`, `python/sglang/srt/mem_cache/dsa_cache_layer_split.py`, `python/sglang/srt/mem_cache/kv_cache_configurator.py` 等 10 个文件 |
-| 2026-09-17 | `7db5ec177` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat(lplb): 支持 HIP 静态 LP 副本概率分发 (#386) | `benchmark/eplb/README.md`, `benchmark/eplb/prepare_static_lp.py`, `python/sglang/kernels/jit/csrc/lplb/dispatch_probability.cuh` 等 10 个文件 |
-| 2026-09-17 | `c4ef6d3a4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(dsa): 修复 MQA 显存预算与 CP/MTP 索引补齐 (#382) | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `python/sglang/srt/layers/attention/dsa_backend.py` |
-| 2026-09-17 | `eb4f0ad89` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [feat]适配 w4a8-int8-megamoe (#394) | `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` |
-| 2026-09-20 | `16e9b3867` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat(hcu): support BF16 KV for Qwen DFLASH2 attention (#405) | `python/sglang/srt/layers/attention/flashattention_interface.py`, `test/manual/test_hcu_dflash_native_block16.py` |
-| 2026-09-20 | `ccc15a6f3` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat(cache): integrate Mooncake ReadPlan and optimize page-wise loading for direct linker (#404) | `python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py`, `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py`, `python/sglang/srt/mem_cache/unified_cache/unified_cache_linker.py` 等 6 个文件 |
-| 2026-09-20 | `98ba405a2` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(aiter): w13 权重 shuffle 改回 gemm2 布局，修复 w8a8 变体乱码 (#401) | `python/sglang/srt/layers/moe/moe_runner/aiter.py` |
-| 2026-09-20 | `05c58e82f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(dsa): 修复 gfx938 72CU sparse MQA 路由与 HCU 判断 (#409) | `python/sglang/srt/layers/attention/dsa/hcu_sparse_mqa.py`, `python/sglang/srt/layers/attention/dsa_backend.py` |
-| 2026-09-22 | `50beda6a9` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 调度/缓存/PD | Update quality gate workflow to use stable version | `.github/workflows/quality-gate.yml` |
-| 2026-09-23 | `31262cd68` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: fix deepep num_rdma_bytes count correct (#437) | `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` |
-| 2026-09-23 | `90f80c6bd` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | feat(moe): 增加 aiter moe_c 后端选定环境变量 (#415) | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/moe_runner/aiter.py` |
-| 2026-09-23 | `6c0330d8d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(w4a8): 修复 HIPC MoE scale 重复乘 16 与 HCU RoPE 启动越界 (#439) | `python/sglang/kernels/aot/csrc/elementwise/pos_enc.cu`, `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` 等 4 个文件 |
-| 2026-09-23 | `2f93be6c5` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(kvcache): handle zero full iterations for asymmetric KV cache (#425) | `python/sglang/kernels/jit/csrc/elementwise/kvcache.cuh` |
-| 2026-09-23 | `066a95af7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: fix lightop situ import regression bug and deepgemm w4a8 op interface change (#428) | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-| 2026-09-30 | `6086af28d` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 模型支持/运行时入口 | ci(hcu): migrate v0.5.18 workflows to organization runners (#465) | `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml` 等 11 个文件 |
-| 2026-09-30 | `1828115e0` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix w4a16 moe asm error (#462) | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py` |
-| 2026-09-30 | `3854f7754` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | opt(kda): update kda verify decode op from boltops (#458) | `python/sglang/srt/layers/attention/linear/kda_backend.py`, `python/sglang/srt/layers/attention/linear/kernels/kda_triton.py` |
-| 2026-09-30 | `e885e7223` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): restore ForwardBatch RMS quantization flag (#469) | `python/sglang/srt/model_executor/forward_batch_info.py`, `test/registered/unit/model_executor/test_forward_batch_hcu_state.py` |
-| 2026-10-08 | `cfa865d33` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix deepgemm masked fp8 api upstream (#472) | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
-| 2026-10-08 | `b7e4eae12` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix: remove alt_stream overlap copy when writing KV cache (#478) | `python/sglang/srt/mem_cache/memory_pool.py` |
-| 2026-10-08 | `7fa7729c1` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(cache): harden Mooncake ReadPlan and PP direct-L3 cache loading (#482) | `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/environ.py` 等 27 个文件 |
-| 2026-10-09 | `2cc1bcc28` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(deepgemm): 统一 INT8/FP8 权重重排与 FP8 masked GEMM 接口 (#484) | `python/sglang/srt/layers/deep_gemm_wrapper/entrypoint.py`, `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py` 等 6 个文件 |
-| 2026-10-09 | `a06c34ef7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(ci): stage-b include 列表容忍分支差异的测试文件 (#485) | `.github/workflows/pr-test-hcu.yml` |
-| 2026-10-09 | `6ca7a1bd6` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(test): 修复 unified attention 单测 KV 索引构造 (#489) | `test/registered/attention/test_triton_attention_kernels.py` |
-| 2026-10-09 | `1882acd8c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(moe): restore DeepEP normal combine for HCU groupgemm (#491) | `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` |
-| 2026-10-09 | `bfbff7f68` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): preserve INT8 MoE fallback and restore AITER W8A8 compatibility (#487) | `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` 等 7 个文件 |
-| 2026-10-10 | `966f6da1b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): avoid double packing channel FP8 DeepGEMM weights (#497) | `python/sglang/srt/layers/moe/moe_runner/deep_gemm.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
-| 2026-10-10 | `e1eaf0829` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(moe): guard SBO setup for flat DeepEP dispatch (#501) | `python/sglang/srt/batch_overlap/single_batch_overlap.py` |
-| 2026-10-10 | `f106c5360` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(hcu): 优化小 batch W8A8 INT8 GEMM 的 Tiling 选择 (#502) | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py` |
-| 2026-10-12 | `49bb75c79` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(diffusion): upload all video outputs to cloud storage | `python/sglang/multimodal_gen/runtime/entrypoints/openai/protocol.py`, `python/sglang/multimodal_gen/runtime/entrypoints/openai/video_api.py`, `python/sglang/multimodal_gen/test/unit/test_video_job_lifecycle.py` |
-| 2026-10-12 | `aebf1a9f4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): fix SlimQuant INT8 DeepEP routing and DeepGEMM weight packing (#514) | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py` |
-| 2026-10-13 | `018e5799a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | Fix/hcu aiter moe inplace (#517) | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/models/qwen2_moe.py` |
-| 2026-10-13 | `71b2ee4ea` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf: add opt-in asynchronous prebuilt token H2D (#516) | `python/sglang/kernels/ops/attention/verify_mla.py`, `python/sglang/srt/disaggregation/decode_schedule_batch_mixin.py`, `python/sglang/srt/environ.py` 等 4 个文件 |
-| 2026-10-13 | `9dd4e2e80` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [diffusion] attention: fix HCU Wan SLA and FA family admission (#519) | `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/runtime/layers/attention/selector.py`, `python/sglang/multimodal_gen/runtime/layers/attention/turbo_layer.py` 等 7 个文件 |
-| 2026-10-14 | `40c9ec29b` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(scheduler): keep DP health probes on the generation path (#528) | `python/sglang/srt/managers/scheduler.py` |
-| 2026-10-15 | `c2666f4b5` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [fix] 修复cp 逻辑：解决实际 token 不被整除时不走 cp 的问题 (#538) | `python/sglang/srt/layers/attention/dsa/utils.py` |
-| 2026-10-16 | `6fe59ce1a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 测试/文档/基准 | ci: release-pypi-nightly-hcu 多版本编译 (dtk26.04/py3.10+3.12, dtk26.10/py3.12) [rel/20260825_v0.5.18] (#544) | `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-10-16 | `0bb71f0c7` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [fix] 解决 w4a8 aiter moe 不支持 swiglu_limit 功能 (#550) | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` |
-| 2026-10-19 | `b9e0052e9` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): keep the w8a8 smooth asm fast path off on gfx928 (#555) | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py` |
-| 2026-10-20 | `a031c979a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [fix] 修复非 AITER 路径下 compressed-tensors W8A8 FP8 MoE 权重被错误补齐导致输出乱码 (#564) | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
-| 2026-10-20 | `030f6254f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | perf(attention): add paged split-KV support and opt-in DSpark V2 (#553) | `python/sglang/kernels/ops/attention/verify_mla.py`, `python/sglang/srt/layers/attention/triton_backend.py`, `test/registered/kernels/ops/attention/test_verify_mla_layout.py` |
-| 2026-10-20 | `19175a690` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 模型支持/运行时入口 | [Feat] build: Add build wheel scripts (#569) | `README_HCU.md`, `scripts/build_hcu_wheels.sh` |
-| 2026-10-21 | `9f7bfb351` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(hcu): skip the w8a8 smooth asm fast path when M=0 (#573) | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py` |
-| 2026-10-22 | `464bebd64` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [Fix][v0.5.18] Backport reasoning token accounting fix from upstream #41460 (#579) | `python/sglang/srt/managers/scheduler_components/batch_result_processor.py`, `test/registered/unit/managers/test_batch_result_processor_spec_grammar.py` |
-| 2026-10-26 | `cbaf42c07` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | Fix auxiliary HiCache load-back pending collisions (#591) | `python/sglang/srt/mem_cache/unified_cache/unified_tree_core.py`, `test/registered/unit/mem_cache/test_unified_radix_cache_unittest.py` |
-| 2026-10-28 | `1343bb07e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [Fix] deepgemm: 修复 w8a8-fp8 旧版重排逻辑 (#608) | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
-| 2026-11-03 | `448c57ad4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | [fix] 修复 w8a8_int8 量化时视觉层 qkv_proj 未命中忽略名单导致被错误量化 (#632) | `python/sglang/srt/layers/quantization/w8a8_int8.py` |
-| 2026-11-03 | `c760e11b4` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix: fix w4a8 int4 deepgemm hipc kernel interface mismatch (#638) | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
-
-### 逐 Commit 审计卡
-
-- 时间线列出全部 281 个提交；审计卡只保留最近的 80 个。
-
-#### Commit `9153913d6` - fix(speculative): remove unsupported server args (#304)
-
-- 完整 hash: `9153913d619d31597b77c205453eadb5d2f355f1`
-- 时间/作者: 2026-09-04 / Wenbo Zhu
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `f35668e41` - [perf] add opt-in LightOp KV allocation kernel (#307)
-
-- 完整 hash: `f35668e41c964583e7b0e0761f311c2893d31b9d`
-- 时间/作者: 2026-09-04 / JingLee
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/environ.py`, `python/sglang/srt/mem_cache/allocator/paged.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/environ.py`
-  - runtime-perf: `python/sglang/srt/mem_cache/allocator/paged.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `4c9d666cd` - fix: fix deepep and dspark conflict (#306)
-
-- 完整 hash: `4c9d666cd36e3aafa5c584f7ff0188877460bb1d`
-- 时间/作者: 2026-09-04 / daishiqiang123
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/arg_groups/speculative_hook.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/arg_groups/speculative_hook.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-#### Commit `44b7bc846` - [BugFix] support the MegaMoE func in DSpark model (#309)
-
-- 完整 hash: `44b7bc84619f5a87c239a586ef7fe10cdab0abf4`
-- 时间/作者: 2026-09-04 / YuanYuan
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/mega_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `3bc09034b` - feat(bench): add --gsp-input-ids to skip server tokenization (#315)
-
-- 完整 hash: `3bc09034bad8c7679d3eaaa3772669c6126ebcc5`
-- 时间/作者: 2026-09-07 / chaoyujiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/benchmark/datasets/generated_shared_prefix.py`, `python/sglang/benchmark/serving.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/benchmark/datasets/generated_shared_prefix.py`; `python/sglang/benchmark/serving.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-#### Commit `cdea7a5db` - fix(hcu): use available RMSNorm kernel op (#321)
-
-- 完整 hash: `cdea7a5dbb96b24f80d6330e53c06000ace56e65`
-- 时间/作者: 2026-09-07 / Wenbo Zhu
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/layernorm.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/layers/layernorm.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-#### Commit `ba2dec637` - fix(fst): reclaim device cache after each weight batch (#322)
-
-- 完整 hash: `ba2dec637cc60db20a61f27f5ea04daa61db8e51`
-- 时间/作者: 2026-09-07 / lzb16
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/model_loader/weight_utils.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/model_loader/weight_utils.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-#### Commit `056b21d82` - opt: optimize situ_quant op form lightop lib (#324)
-
-- 完整 hash: `056b21d829f1408d184fc411e1155c7be9d5fa10`
-- 时间/作者: 2026-09-08 / daishiqiang123
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `47b97c0f7` - fix(hcu): avoid gfx936 QSA LDS overflow (#326)
-
-- 完整 hash: `47b97c0f77e08a5b2287a5f6d0330dec5ccab090`
-- 时间/作者: 2026-09-08 / GarrySnail
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/qsa/sparse_attn.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/attention/qsa/sparse_attn.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `57beb6b4a` - ci(hcu): align PR wheel version with release 0.5.18 (#295)
-
-- 完整 hash: `57beb6b4ae453725e0c02b58bb5b3d93d737aa4a`
-- 时间/作者: 2026-09-08 / lizhigong
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `.github/workflows/release-pr-hcu.yml`, `README_HCU.md`, `python/sglang/kernels/ops/quantization/fp8_kernel.py`, `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/server_args.py`, `requirements_hcu.txt`, `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh` 等 9 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/release-pr-hcu.yml`
-  - other: `README_HCU.md`; `python/sglang/srt/arg_groups/overrides.py`; `requirements_hcu.txt`; `scripts/ci/hcu/hcu_ci_exec.sh`; `scripts/ci/hcu/hcu_ci_install_dependency.sh`; `scripts/ci/hcu/hcu_ci_start_container.sh`
-  - runtime-model: `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/kernels/ops/quantization/fp8_kernel.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `e6540308c` - fix bug: Refactor is_fp8_fnuz function for clarity
-
-- 完整 hash: `e6540308c53b7099feb893050d56c1793a3962f1`
-- 时间/作者: 2026-09-09 / lizhigong
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/kernels/ops/quantization/fp8_kernel.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/kernels/ops/quantization/fp8_kernel.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `b10bb8c6e` - [FEAT] support the dspark megamoe-int4 by packing signed-int4 to int8 (#333)
-
-- 完整 hash: `b10bb8c6eb52cceb55647620d7e0e9e4e711dc3d`
-- 时间/作者: 2026-09-09 / YuanYuan
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/hcu_int4_megamoe.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`, `python/sglang/srt/mem_cache/common.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/hcu_int4_megamoe.py`; `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/layers/moe/moe_runner/triton.py`; `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`; `python/sglang/srt/mem_cache/common.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `6d5931922` - test(hcu): derive FP8 quant reference bounds from the output dtype (#337)
-
-- 完整 hash: `6d59319229dbc44db4ed7a13a1af8ffda67d14f2`
-- 时间/作者: 2026-09-10 / lizhigong
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `test/registered/hcu/kernels/test_fp8_quant_reference_hcu.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - tests: `test/registered/hcu/kernels/test_fp8_quant_reference_hcu.py`
-- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
-
-#### Commit `ebe9c77f2` - [FEATURE]同步编译python3.10和python3.12, 上传whl包后记录信息至dashub (#338)
-
-- 完整 hash: `ebe9c77f2189d2e0982deb37a88a1f323dda191c`
-- 时间/作者: 2026-09-10 / Crowder13
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 通用实现调整
-- 主要文件: `.github/workflows/release-pypi-nightly-hcu.yml`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/release-pypi-nightly-hcu.yml`
+  - ci: `.github/workflows/slash-command-handler.yml`
 - 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-#### Commit `a494caa1e` - perf(hcu): use AITER IPC collectives for DP TP-MoE (#340)
+### Commit `497c35457c` - fix(scheduler): abort too-large requests instead of dead-looping
 
-- 完整 hash: `a494caa1e7974a8ec960c526838f476fd93312c8`
-- 时间/作者: 2026-09-10 / Yongqiang Duan
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/dp_attention.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/environ.py`
-  - runtime-perf: `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/dp_attention.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `4cdd9d36e` - Release/20260825 v0.5.18 (#339)
-
-- 完整 hash: `4cdd9d36e79a61e736bc6712916a23617919fbfa`
-- 时间/作者: 2026-09-10 / wufan
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/kernels/npu_kernels/npu_quant_matmul_w8a8.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/kernels/npu_kernels/npu_quant_matmul_w8a8.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `77ba00139` - fix: fix pd fake prefill mode and attn_tp_size bug (#345)
-
-- 完整 hash: `77ba00139ac13b8a6bdb9ee15554cd9c18537fbc`
-- 时间/作者: 2026-09-11 / daishiqiang123
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `497c35457c32dde206f04796930e3e03ad1f80e1`
+- 时间/作者: 2026-07-31 / chaoyujiang
 - 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/managers/scheduler.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/disaggregation/decode.py`
+- 主要文件: `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/tokenizer_manager.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/managers/tokenizer_manager.py`
   - runtime-perf: `python/sglang/srt/managers/scheduler.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `fa95ae084` - fix and opt: fix dspark eagle error and optimize attn tp comm from ai… (#342)
+### Commit `dc015a0bc5` - [PD] When PP is greater than 1, fix the request rollback when the KV cache is exhausted
 
-- 完整 hash: `fa95ae0846a943f9a740c56a3dee4d42279d4728`
-- 时间/作者: 2026-09-12 / daishiqiang123
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/layers/dp_attention.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/distributed/parallel_state.py`; `python/sglang/srt/layers/dp_attention.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `647229c6e` - ci(hcu): pin v0.5.18 image fallback and shared eval wheels (#348)
-
-- 完整 hash: `647229c6e5adaf3f2dda3515671a48c45f58f825`
-- 时间/作者: 2026-09-12 / dingxinlong
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 测试/文档/基准
-- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`
-  - other: `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh`
-- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
-
-#### Commit `4a7532fef` - fix(hcu): keep DFLASH FP8 sliding attention on native FlashAttention (#356)
-
-- 完整 hash: `4a7532fefd86c6a5f0089a3b6b40eeb1f3ed2119`
-- 时间/作者: 2026-09-14 / chenyuege
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/attention/hcu_native_swa.py`, `test/manual/test_hcu_native_swa.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/layers/attention/hcu_native_swa.py`
-  - tests: `test/manual/test_hcu_native_swa.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `74ee9054e` - ci(hcu): fix v0.5.18 PR runtime consistency (#363)
-
-- 完整 hash: `74ee9054e84ccb9c33007e5726a93d16b248ea37`
-- 时间/作者: 2026-09-14 / dingxinlong
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `dc015a0bc5595bdd2e4e77d3d4f7953399a4cc64`
+- 时间/作者: 2026-07-31 / liucong521
 - 自动分类: 缺陷修复
-- 主要文件: `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `test/registered/sampling/test_pytorch_sampling_backend.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/pr-test-hcu.yml`
-  - other: `scripts/ci/hcu/hcu_ci_install_dependency.sh`
-  - tests: `test/registered/sampling/test_pytorch_sampling_backend.py`
-- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
-
-#### Commit `5077850b7` - support fabric aiter custom allreduce (#361)
-
-- 完整 hash: `5077850b7b646483abe7bd2856ff79d5062ff335`
-- 时间/作者: 2026-09-14 / jiafei96
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/distributed/bootstrap.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/server_args.py`, `python/sglang/test/hcu_cookbook_utils.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-model: `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/srt/distributed/bootstrap.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/distributed/parallel_state.py`
-  - tests: `python/sglang/test/hcu_cookbook_utils.py`
+- 主要文件: `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/disaggregation/utils.py`, `python/sglang/srt/managers/schedule_batch.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py` 等 11 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/disaggregation/utils.py`; `python/sglang/srt/managers/schedule_batch.py`; `python/sglang/srt/utils/common.py`
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/model_runner.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/managers/scheduler_pp_mixin.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `72df69c80` - [BUGFIX]缺少token声明导致打包信息无法推送至Dashub (#366)
+### Commit `83f43b3f4d` - [CI] Fix some CI errors
 
-- 完整 hash: `72df69c8087c51d4ed237c219836a1d0df4d274e`
-- 时间/作者: 2026-09-14 / Crowder13
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `.github/workflows/release-pypi-nightly-hcu.yml`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/release-pypi-nightly-hcu.yml`
-- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
-
-#### Commit `86cdce034` - ci(hcu): align v0.5.18 wheel builds with torch 2.11 (#368)
-
-- 完整 hash: `86cdce034cbf09a90b7a2a3328174d09634a660e`
-- 时间/作者: 2026-09-15 / dingxinlong
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 测试/文档/基准
-- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
-- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
-
-#### Commit `45b20a85c` - Fix ValueError: Add type annotations to fuse_situ_mul_quant_ep (#369)
-
-- 完整 hash: `45b20a85cb28b0f3cbdb71c3d5ca233c8cb63901`
-- 时间/作者: 2026-09-15 / Wenbo Zhu
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `7c7da44a7` - ci(hcu): fix stale v0.5.18 PR test paths (#370)
-
-- 完整 hash: `7c7da44a797df5bb370a1789ab7f0aeef55b5530`
-- 时间/作者: 2026-09-15 / dingxinlong
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `.github/workflows/pr-test-hcu.yml`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/pr-test-hcu.yml`
-- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
-
-#### Commit `35d915ef2` - feat: support hy4 cp (#358)
-
-- 完整 hash: `35d915ef222de3b2839bb55c1afa9c99e3a24941`
-- 时间/作者: 2026-09-15 / Fafap131
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/srt/layers/attention/dsa_backend.py`, `python/sglang/srt/models/hunyuan_v4.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-model: `python/sglang/srt/models/hunyuan_v4.py`
-  - runtime-perf: `python/sglang/srt/layers/attention/dsa_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `0f88700ac` - feat(mem-cache): support direct L3 external linker cache without test file (#373)
-
-- 完整 hash: `0f88700ac87668fe19d35f214773ea827a049a8c`
-- 时间/作者: 2026-09-15 / xinleishang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/disaggregation/utils.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/managers/io_struct.py`, `python/sglang/srt/managers/schedule_batch.py`, `python/sglang/srt/managers/schedule_policy.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/base_prefix_cache.py` 等 31 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/disaggregation/utils.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/managers/io_struct.py`; `python/sglang/srt/managers/schedule_batch.py`; `python/sglang/srt/managers/schedule_policy.py`
-  - runtime-model: `python/sglang/srt/server_args.py`; `python/sglang/srt/speculative/base_spec_worker.py`
-  - runtime-perf: `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/mem_cache/base_prefix_cache.py`; `python/sglang/srt/mem_cache/hicache_storage.py`; `python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py`; `python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py`; `python/sglang/srt/mem_cache/kv_cache_builder.py`; `python/sglang/srt/mem_cache/kv_cache_configurator.py`; `python/sglang/srt/mem_cache/registry.py` 等 23 个文件
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `b80d0d1bb` - [fix] 修复w8a8-fp8-v4pro精度问题 (#380)
-
-- 完整 hash: `b80d0d1bb6a942853b242ecc38ef3be3db2575d2`
-- 时间/作者: 2026-09-16 / yangyn
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `7df099eb6` - feat(moe): 增加 EP 绝对均衡性能测试开关 (#383)
-
-- 完整 hash: `7df099eb6085eddb781531719bc2af24ff3cf204`
-- 时间/作者: 2026-09-16 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/ep_balance.py`, `python/sglang/srt/layers/moe/hash_topk.py`, `python/sglang/srt/layers/moe/topk.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/environ.py`
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_balance.py`; `python/sglang/srt/layers/moe/hash_topk.py`; `python/sglang/srt/layers/moe/topk.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `2bb5e81e5` - feat(spec): 支持节点内 Draft LM-head 词表并行 (#385)
-
-- 完整 hash: `2bb5e81e5353c5bc40594d42bd80366b91af15bb`
-- 时间/作者: 2026-09-16 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `python/sglang/srt/arg_groups/speculative_hook.py`, `python/sglang/srt/layers/logits_processor.py`, `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/server_args.py`, `python/sglang/srt/speculative/draft_lm_head_vp.py`, `python/sglang/srt/speculative/eagle_worker_v2.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/arg_groups/speculative_hook.py`; `python/sglang/srt/layers/logits_processor.py`; `python/sglang/srt/speculative/draft_lm_head_vp.py`
-  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/server_args.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`
-- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
-
-#### Commit `07214443b` - feat(qsa): use FA sparse GQA for HIP chunk-prefill extend (#392)
-
-- 完整 hash: `07214443be3c398eab3f874df214cbadf256ae03`
-- 时间/作者: 2026-09-17 / GarrySnail
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/qwen_sparse_attn_backend.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/attention/qwen_sparse_attn_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `2df70449a` - feat(layersplit): 支持单层 MTP Draft KV 分片与缓存复用 (#387)
-
-- 完整 hash: `2df70449a7a99196cb2a9497c5f59e57dd556aca`
-- 时间/作者: 2026-09-17 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 调度/缓存/PD
-- 主要文件: `python/sglang/srt/layers/cp/utils.py`, `python/sglang/srt/mem_cache/dsa_cache_layer_split.py`, `python/sglang/srt/mem_cache/kv_cache_configurator.py`, `python/sglang/srt/mem_cache/pool_host/dsa.py`, `python/sglang/srt/mem_cache/pool_host/mla.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/model_executor/pool_configurator.py`, `python/sglang/srt/models/deepseek_nextn.py` 等 10 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/layers/cp/utils.py`
-  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/models/deepseek_nextn.py`; `python/sglang/srt/speculative/base_spec_worker.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`
-  - runtime-perf: `python/sglang/srt/mem_cache/dsa_cache_layer_split.py`; `python/sglang/srt/mem_cache/kv_cache_configurator.py`; `python/sglang/srt/mem_cache/pool_host/dsa.py`; `python/sglang/srt/mem_cache/pool_host/mla.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `7db5ec177` - feat(lplb): 支持 HIP 静态 LP 副本概率分发 (#386)
-
-- 完整 hash: `7db5ec1771b90e54071f21394cb3df502af98880`
-- 时间/作者: 2026-09-17 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `benchmark/eplb/README.md`, `benchmark/eplb/prepare_static_lp.py`, `python/sglang/kernels/jit/csrc/lplb/dispatch_probability.cuh`, `python/sglang/kernels/jit/csrc/lplb/platform.cuh`, `python/sglang/kernels/ops/lplb/cuda_solver.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/eplb/expert_location.py`, `python/sglang/srt/eplb/lplb_solver.py` 等 10 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - docs-bench: `benchmark/eplb/README.md`; `benchmark/eplb/prepare_static_lp.py`
-  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/eplb/expert_location.py`; `python/sglang/srt/eplb/lplb_solver.py`
-  - runtime-perf: `python/sglang/kernels/jit/csrc/lplb/dispatch_probability.cuh`; `python/sglang/kernels/jit/csrc/lplb/platform.cuh`; `python/sglang/kernels/ops/lplb/cuda_solver.py`; `python/sglang/srt/layers/moe/topk.py`; `python/sglang/srt/model_executor/model_runner_components/moe_ep_setup.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `c4ef6d3a4` - fix(dsa): 修复 MQA 显存预算与 CP/MTP 索引补齐 (#382)
-
-- 完整 hash: `c4ef6d3a48dfc0f79bf13871f3c4b028199a7c95`
-- 时间/作者: 2026-09-17 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`, `python/sglang/srt/layers/attention/dsa_backend.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/environ.py`
-  - runtime-perf: `python/sglang/srt/layers/attention/dsa/dsa_indexer.py`; `python/sglang/srt/layers/attention/dsa_backend.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `eb4f0ad89` - [feat]适配 w4a8-int8-megamoe (#394)
-
-- 完整 hash: `eb4f0ad89390fc039a5943f241a5a7421bad2a1c`
-- 时间/作者: 2026-09-17 / yangyn
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `16e9b3867` - feat(hcu): support BF16 KV for Qwen DFLASH2 attention (#405)
-
-- 完整 hash: `16e9b386740e30e4879c696db587db58a2eeeabf`
-- 时间/作者: 2026-09-20 / chenyuege
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/flashattention_interface.py`, `test/manual/test_hcu_dflash_native_block16.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`
-  - tests: `test/manual/test_hcu_dflash_native_block16.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `ccc15a6f3` - feat(cache): integrate Mooncake ReadPlan and optimize page-wise loading for direct linker (#404)
-
-- 完整 hash: `ccc15a6f3ff01d34f7b40441cbb7d29246e39003`
-- 时间/作者: 2026-09-20 / leichuan
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py`, `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py`, `python/sglang/srt/mem_cache/unified_cache/unified_cache_linker.py`, `python/sglang/srt/server_args.py`, `test/registered/unit/mem_cache/test_hybrid_pool_assembler.py`, `test/registered/unit/mem_cache/test_mooncake_direct_linker_read_plan.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-model: `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py`; `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py`; `python/sglang/srt/mem_cache/unified_cache/unified_cache_linker.py`
-  - tests: `test/registered/unit/mem_cache/test_hybrid_pool_assembler.py`; `test/registered/unit/mem_cache/test_mooncake_direct_linker_read_plan.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `98ba405a2` - fix(aiter): w13 权重 shuffle 改回 gemm2 布局，修复 w8a8 变体乱码 (#401)
-
-- 完整 hash: `98ba405a238305be3bd2a483216aa5fb0bb2d47b`
-- 时间/作者: 2026-09-20 / Wenbo Zhu
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `83f43b3f4dd0c183c4226942384b9bda85a3c8ab`
+- 时间/作者: 2026-07-31 / chenyuege
 - 自动分类: 性能/后端优化
 - 主要文件: `python/sglang/srt/layers/moe/moe_runner/aiter.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
   - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/aiter.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `05c58e82f` - fix(dsa): 修复 gfx938 72CU sparse MQA 路由与 HCU 判断 (#409)
+### Commit `39d6912202` - fix(hcu): restore NETWORK_MODE default lost in forward-port
 
-- 完整 hash: `05c58e82faab83b6bf906cfd70f2845eaee1df6c`
-- 时间/作者: 2026-09-20 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `39d6912202326be716e7f6a179addfd308b6d45c`
+- 时间/作者: 2026-07-31 / RyeYuan
 - 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/dsa/hcu_sparse_mqa.py`, `python/sglang/srt/layers/attention/dsa_backend.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/attention/dsa/hcu_sparse_mqa.py`; `python/sglang/srt/layers/attention/dsa_backend.py`
+- 主要文件: `scripts/ci/hcu/hcu_ci_start_container.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_start_container.sh`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `02968a96de` - fix(hcu): restore shared wheel staging root lost in forward-port
+
+- 完整 hash: `02968a96de98145237578ec039464f6c85554c23`
+- 时间/作者: 2026-07-31 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `17cf690afc` - style: fix HCU lint checks
+
+- 完整 hash: `17cf690afc87f262966f51e2495eff98f731b6fd`
+- 时间/作者: 2026-07-30 / lizhigong
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/lightop.py`, `python/sglang/srt/layers/quantization/__init__.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8.py`, `python/sglang/srt/speculative/eagle_info.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/speculative/eagle_info.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/lightop.py`; `python/sglang/srt/layers/quantization/__init__.py`; `python/sglang/srt/layers/quantization/slimquant_w4a8.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `50beda6a9` - Update quality gate workflow to use stable version
+### Commit `489170e5c4` - [FIX] 修复moe_w8a8重排函数删除问题
 
-- 完整 hash: `50beda6a90ba4dd7c85d667530c2614b13122fbf`
-- 时间/作者: 2026-09-22 / Lvjiajia
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `489170e5c4bec22fb94ea9e7c2b902ac42165db4`
+- 时间/作者: 2026-07-30 / yangyinan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/lightop.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/lightop.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `6ea38ee522` - style(hcu): format PD helper registration
+
+- 完整 hash: `6ea38ee522bd17db34111d6a1a784fc22c0008e4`
+- 时间/作者: 2026-07-30 / LvJIA-RG
 - 自动分类: 调度/缓存/PD
-- 主要文件: `.github/workflows/quality-gate.yml`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/quality-gate.yml`
+- 主要文件: `test/registered/hcu/disaggregation/pd_hcu_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/hcu/disaggregation/pd_hcu_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `b8389e5c5d` - test(hcu): register PD helper for nightly collection
+
+- 完整 hash: `b8389e5c5da4629791f8d56e2a216dd91c5516ab`
+- 时间/作者: 2026-07-30 / LvJIA-RG
+- 自动分类: 调度/缓存/PD
+- 主要文件: `test/registered/hcu/disaggregation/pd_hcu_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/hcu/disaggregation/pd_hcu_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `111fea82f3` - ci: disable unused workflow triggers
+
+- 完整 hash: `111fea82f3bf103b2f369bb75191364b144e5623`
+- 时间/作者: 2026-07-29 / LvJIA-RG
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml`, `.github/workflows/ci-model-inventory.yml`, `.github/workflows/lint.yml`, `.github/workflows/nightly-amd-mi355x-disagg.yml`, `.github/workflows/nightly-experimental-sgl-router-docker.yml`, `.github/workflows/nightly-test-amd-miles-rocm700.yml` 等 36 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/amd-aiter-scout.yml`; `.github/workflows/amd-ci-job-monitor.yml`; `.github/workflows/ci-coverage-overview.yml`; `.github/workflows/ci-model-inventory.yml`; `.github/workflows/lint.yml`; `.github/workflows/nightly-amd-mi355x-disagg.yml`; `.github/workflows/nightly-experimental-sgl-router-docker.yml`; `.github/workflows/nightly-test-amd-miles-rocm700.yml` 等 36 个文件
 - 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-#### Commit `31262cd68` - fix: fix deepep num_rdma_bytes count correct (#437)
+### Commit `b2f0b830c2` - ci: disable unused workflow triggers
 
-- 完整 hash: `31262cd68826a1f3bf8ef186dd692d2b3500b036`
-- 时间/作者: 2026-09-23 / daishiqiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `b2f0b830c298611c1e11ef9438f8abfd83f7fbe1`
+- 时间/作者: 2026-07-29 / LvJIA-RG
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `90f80c6bd` - feat(moe): 增加 aiter moe_c 后端选定环境变量 (#415)
-
-- 完整 hash: `90f80c6bd5a831f40c29ec8a32200174e749de9f`
-- 时间/作者: 2026-09-23 / Wenbo Zhu
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/moe_runner/aiter.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/environ.py`
-  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/aiter.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `6c0330d8d` - fix(w4a8): 修复 HIPC MoE scale 重复乘 16 与 HCU RoPE 启动越界 (#439)
-
-- 完整 hash: `6c0330d8d877d146412e65e5cf6bf717a3004dae`
-- 时间/作者: 2026-09-23 / lipenghui
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/kernels/aot/csrc/elementwise/pos_enc.cu`, `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`, `python/sglang/srt/layers/rotary_embedding/base.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/layers/rotary_embedding/base.py`
-  - runtime-perf: `python/sglang/kernels/aot/csrc/elementwise/pos_enc.cu`; `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `2f93be6c5` - fix(kvcache): handle zero full iterations for asymmetric KV cache (#425)
-
-- 完整 hash: `2f93be6c5e0db8a54fa76d10eab1887e7fcfd145`
-- 时间/作者: 2026-09-23 / daishiqiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/kernels/jit/csrc/elementwise/kvcache.cuh`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/kernels/jit/csrc/elementwise/kvcache.cuh`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `066a95af7` - fix: fix lightop situ import regression bug and deepgemm w4a8 op interface change (#428)
-
-- 完整 hash: `066a95af77c479b644e4477afc42b39246f7f58a`
-- 时间/作者: 2026-09-23 / daishiqiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `6086af28d` - ci(hcu): migrate v0.5.18 workflows to organization runners (#465)
-
-- 完整 hash: `6086af28ddb97c1cc4c9cf22fadd2940a1100105`
-- 时间/作者: 2026-09-30 / dingxinlong
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/labeler.yml`, `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-states.yml`, `.github/workflows/pr-test-hcu.yml` 等 11 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`; `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/hcu-manual-model-test.yml`; `.github/workflows/labeler.yml`; `.github/workflows/lint-hcu.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-states.yml`; `.github/workflows/pr-test-hcu.yml` 等 11 个文件
+- 主要文件: `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml`, `.github/workflows/ci-model-inventory.yml`, `.github/workflows/lint.yml`, `.github/workflows/nightly-amd-mi355x-disagg.yml`, `.github/workflows/nightly-experimental-sgl-router-docker.yml`, `.github/workflows/nightly-test-amd-miles-rocm720.yml` 等 39 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/amd-aiter-scout.yml`; `.github/workflows/amd-ci-job-monitor.yml`; `.github/workflows/ci-coverage-overview.yml`; `.github/workflows/ci-model-inventory.yml`; `.github/workflows/lint.yml`; `.github/workflows/nightly-amd-mi355x-disagg.yml`; `.github/workflows/nightly-experimental-sgl-router-docker.yml`; `.github/workflows/nightly-test-amd-miles-rocm720.yml` 等 39 个文件
 - 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-#### Commit `1828115e0` - fix w4a16 moe asm error (#462)
+### Commit `be81ab4196` - fix(dp): demote DP Decode StepInfo log to debug
 
-- 完整 hash: `1828115e08aba1659f71c5da67f761343e3553f4`
-- 时间/作者: 2026-09-30 / jiafei96
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py`
+- 完整 hash: `be81ab41964147b7a61aba65f26d2d33a689a5ea`
+- 时间/作者: 2026-07-29 / yht183
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/managers/scheduler_dp_attn_mixin.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/managers/scheduler_dp_attn_mixin.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `3854f7754` - opt(kda): update kda verify decode op from boltops (#458)
+### Commit `6a031254f5` - ci(hcu): isolate nightly services and shared results
 
-- 完整 hash: `3854f77546c1a65ebc26d86ab84f2ebd96740cc5`
-- 时间/作者: 2026-09-30 / daishiqiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `6a031254f52863cdd573365e3ad48dbcd78c4be8`
+- 时间/作者: 2026-07-29 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_publish_accuracy.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_publish_accuracy.py`; `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e18e6b94bc` - docs(hcu): record daily forward-port 20260729
+
+- 完整 hash: `e18e6b94bcf8c69103f286699960278ee4804b87`
+- 时间/作者: 2026-07-29 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `3b4327cd7b` - fix(hcu): support current LightOp fp8 quant API
+
+- 完整 hash: `3b4327cd7bb428ab98828f0cdc31106d51cd86b2`
+- 时间/作者: 2026-07-29 / RyeYuan
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/attention/linear/kda_backend.py`, `python/sglang/srt/layers/attention/linear/kernels/kda_triton.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/attention/linear/kda_backend.py`; `python/sglang/srt/layers/attention/linear/kernels/kda_triton.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+- 主要文件: `python/sglang/srt/layers/linear.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/layers/linear.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
 
-#### Commit `e885e7223` - fix(hcu): restore ForwardBatch RMS quantization flag (#469)
+### Commit `58d475775e` - fix(hcu): allow single-node context parallel tp16
 
-- 完整 hash: `e885e7223180a8ddc2c9aa753a4c884cfc9ba72c`
-- 时间/作者: 2026-09-30 / wu ju
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/model_executor/forward_batch_info.py`, `test/registered/unit/model_executor/test_forward_batch_hcu_state.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`
-  - tests: `test/registered/unit/model_executor/test_forward_batch_hcu_state.py`
+- 完整 hash: `58d475775e6e87052ebe90aa302ccf7326b85385`
+- 时间/作者: 2026-07-29 / maxiaobetter
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
 - 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
 
-#### Commit `cfa865d33` - fix deepgemm masked fp8 api upstream (#472)
+### Commit `d39d628ef3` - fix(hcu): enable NSA draft-extend cuda graph
 
-- 完整 hash: `cfa865d339c0d7191dd044e6980006be799a570a`
-- 时间/作者: 2026-10-08 / chaoyujiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `d39d628ef31bd4d189624224ecd44e1bcf98ed36`
+- 时间/作者: 2026-07-29 / maxiaobetter
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 主要文件: `python/sglang/srt/layers/attention/nsa_backend.py`, `python/sglang/srt/speculative/eagle_info.py`, `python/sglang/srt/speculative/eagle_worker_v2.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/speculative/eagle_info.py`
+  - runtime-model: `python/sglang/srt/speculative/eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/nsa_backend.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `b7e4eae12` - fix: remove alt_stream overlap copy when writing KV cache (#478)
+### Commit `4e5a95fcb5` - fix(pd): transfer MTP NSA topk seed metadata over Mooncake
 
-- 完整 hash: `b7e4eae1243fb6de06507484afaddbc1715ee054`
-- 时间/作者: 2026-10-08 / Wenbo Zhu
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `4e5a95fcb50cb1872b03340b214c20aa55b0ce4d`
+- 时间/作者: 2026-07-29 / maxiaobetter
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/decode_schedule_batch_mixin.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/disaggregation/utils.py`, `python/sglang/srt/managers/schedule_batch.py`, `python/sglang/srt/managers/scheduler.py` 等 9 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/decode_schedule_batch_mixin.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/disaggregation/utils.py`; `python/sglang/srt/managers/schedule_batch.py`; `python/sglang/srt/speculative/eagle_info.py`
+  - runtime-model: `python/sglang/srt/configs/model_config.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `6e7a53e865` - fix(hcu): select hipblaslt w8a8 layout by gfx arch
+
+- 完整 hash: `6e7a53e865615d9376c4db7b6b16eeffec68a479`
+- 时间/作者: 2026-07-29 / maxiaobetter
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `035ca766ff` - fix(cache): forward Mamba indices in NSA offload
+
+- 完整 hash: `035ca766ff24dc88ee6486957d6c8235e63c3706`
+- 时间/作者: 2026-07-28 / maxiaobetter
 - 自动分类: 缺陷修复
 - 主要文件: `python/sglang/srt/mem_cache/memory_pool.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
   - runtime-perf: `python/sglang/srt/mem_cache/memory_pool.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `7fa7729c1` - fix(cache): harden Mooncake ReadPlan and PP direct-L3 cache loading (#482)
+### Commit `049f5e15ee` - [bugfix] 透传apply_routed_scaling_factor_on_output，防止moe_sum多乘routed_scaling_factor
 
-- 完整 hash: `7fa7729c1d9a3007baf471184ca709aece7fdbed`
-- 时间/作者: 2026-10-08 / leichuan
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/managers/schedule_batch.py`, `python/sglang/srt/managers/schedule_policy.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/scheduler_components/request_receiver.py`, `python/sglang/srt/managers/scheduler_pp_mixin.py` 等 27 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/managers/schedule_batch.py`; `python/sglang/srt/managers/schedule_policy.py`; `python/sglang/srt/managers/tokenizer_manager.py`; `python/sglang/srt/observability/req_time_stats.py`
-  - runtime-model: `python/sglang/srt/server_args.py`
-  - runtime-perf: `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/managers/scheduler_components/request_receiver.py`; `python/sglang/srt/managers/scheduler_pp_mixin.py`; `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py`; `python/sglang/srt/mem_cache/unified_cache/components/full_component.py`; `python/sglang/srt/mem_cache/unified_cache/components/swa_component.py`; `python/sglang/srt/mem_cache/unified_cache/unified_cache_linker.py`; `python/sglang/srt/mem_cache/unified_radix_cache.py`
-  - tests: `test/registered/unit/disaggregation/test_bootstrap_failure_release.py`; `test/registered/unit/disaggregation/test_mooncake_final_chunk_poll.py`; `test/registered/unit/managers/test_scheduler_bg_prefetch_collectives.py`; `test/registered/unit/managers/test_scheduler_deferred_reqs.py`; `test/registered/unit/managers/test_scheduler_forward_ingress_fixes.py`; `test/registered/unit/managers/test_scheduler_prefetch_startup_consensus.py`; `test/registered/unit/mem_cache/test_load_back_construction_consensus.py`; `test/registered/unit/mem_cache/test_mooncake_direct_linker_prefetch_capability.py` 等 11 个文件
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `2cc1bcc28` - fix(deepgemm): 统一 INT8/FP8 权重重排与 FP8 masked GEMM 接口 (#484)
-
-- 完整 hash: `2cc1bcc28c5c4b6e129ae4ce3dadbe3fbc2796cf`
-- 时间/作者: 2026-10-09 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `049f5e15eef71c041918f850a5fecf0ce04f789c`
+- 时间/作者: 2026-07-29 / whlwhlwhl
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/deep_gemm_wrapper/entrypoint.py`, `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `test/registered/openai_server/validation/test_request_length_validation.py`, `test/registered/unit/layers/moe/test_hcu_deepgemm_runner.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/layers/deep_gemm_wrapper/entrypoint.py`
-  - runtime-perf: `python/sglang/srt/layers/moe/utils.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-  - tests: `test/registered/openai_server/validation/test_request_length_validation.py`; `test/registered/unit/layers/moe/test_hcu_deepgemm_runner.py`
+- 主要文件: `python/sglang/srt/layers/moe/topk.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/topk.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `a06c34ef7` - fix(ci): stage-b include 列表容忍分支差异的测试文件 (#485)
+### Commit `92e95e3f51` - perf(mamba): flatten fused state scatter launch grid
 
-- 完整 hash: `a06c34ef7511fbf767d1e8f8314546492d5efb0e`
-- 时间/作者: 2026-10-09 / lizhigong
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `.github/workflows/pr-test-hcu.yml`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/pr-test-hcu.yml`
+- 完整 hash: `92e95e3f5154a717d811c3df99c72a451f661e10`
+- 时间/作者: 2026-07-29 / liucong
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/mamba/mamba_state_scatter_triton.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/mamba/mamba_state_scatter_triton.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `bfa4011ad0` - ci(hcu): share wheel staging across runners
+
+- 完整 hash: `bfa4011ad04d14c26a6af6b90ea2d82b84c874c9`
+- 时间/作者: 2026-07-29 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
 - 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-#### Commit `6ca7a1bd6` - fix(test): 修复 unified attention 单测 KV 索引构造 (#489)
+### Commit `fc59c96c54` - fix lint: format line breaks and remove trailing whitespace
 
-- 完整 hash: `6ca7a1bd6a1e7f4719171e4afeb257e4507d3061`
-- 时间/作者: 2026-10-09 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `test/registered/attention/test_triton_attention_kernels.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - tests: `test/registered/attention/test_triton_attention_kernels.py`
-- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
-
-#### Commit `1882acd8c` - fix(moe): restore DeepEP normal combine for HCU groupgemm (#491)
-
-- 完整 hash: `1882acd8c659b9071ad341741e7b5beef1c40ab0`
-- 时间/作者: 2026-10-09 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `bfbff7f68` - fix(hcu): preserve INT8 MoE fallback and restore AITER W8A8 compatibility (#487)
-
-- 完整 hash: `bfbff7f68e024ed71aaec1054c1bdf8ad6df7adf`
-- 时间/作者: 2026-10-09 / WenQ7
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/utils/triton_load_watch.py`, `test/registered/unit/distributed/test_aiter_custom_all_reduce_config.py`, `test/registered/unit/layers/moe/test_aiter_w8a8_compat.py`, `test/registered/unit/utils/test_triton_load_watch.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/utils/triton_load_watch.py`
-  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/layers/moe/moe_runner/aiter.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`
-  - tests: `test/registered/unit/distributed/test_aiter_custom_all_reduce_config.py`; `test/registered/unit/layers/moe/test_aiter_w8a8_compat.py`; `test/registered/unit/utils/test_triton_load_watch.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `966f6da1b` - fix(hcu): avoid double packing channel FP8 DeepGEMM weights (#497)
-
-- 完整 hash: `966f6da1bcf76359bbbd3f6919f9da6f83ae905a`
-- 时间/作者: 2026-10-10 / chaoyujiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/moe_runner/deep_gemm.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/deep_gemm.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `e1eaf0829` - fix(moe): guard SBO setup for flat DeepEP dispatch (#501)
-
-- 完整 hash: `e1eaf08298435a45133f48366cd75d2ccfd03ecb`
-- 时间/作者: 2026-10-10 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/batch_overlap/single_batch_overlap.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/batch_overlap/single_batch_overlap.py`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-#### Commit `f106c5360` - perf(hcu): 优化小 batch W8A8 INT8 GEMM 的 Tiling 选择 (#502)
-
-- 完整 hash: `f106c53608df6269af7296265f9097e9a80abbd2`
-- 时间/作者: 2026-10-10 / Yongqiang Duan
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `49bb75c79` - fix(diffusion): upload all video outputs to cloud storage
-
-- 完整 hash: `49bb75c791c10b2114c52c58c8d0433bd03e0856`
-- 时间/作者: 2026-10-12 / zhangpc3
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `fc59c96c548711bef75180568c1575cb4dd891db`
+- 时间/作者: 2026-07-28 / chaoyujiang
 - 自动分类: 缺陷修复
-- 主要文件: `python/sglang/multimodal_gen/runtime/entrypoints/openai/protocol.py`, `python/sglang/multimodal_gen/runtime/entrypoints/openai/video_api.py`, `python/sglang/multimodal_gen/test/unit/test_video_job_lifecycle.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-model: `python/sglang/multimodal_gen/runtime/entrypoints/openai/protocol.py`; `python/sglang/multimodal_gen/runtime/entrypoints/openai/video_api.py`
-  - tests: `python/sglang/multimodal_gen/test/unit/test_video_job_lifecycle.py`
+- 主要文件: `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/speculative/eagle_worker_v2.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/batch_overlap/two_batch_overlap.py`
+  - runtime-model: `python/sglang/srt/speculative/eagle_worker_v2.py`
 - 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
 
-#### Commit `aebf1a9f4` - fix(hcu): fix SlimQuant INT8 DeepEP routing and DeepGEMM weight packing (#514)
+### Commit `7b89bf6617` - fix: propagate return_hidden_states_before_norm flag for mHC target-verify
 
-- 完整 hash: `aebf1a9f41ad5fd1e00ac1570e6b9e6a8128b237`
-- 时间/作者: 2026-10-12 / chaoyujiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `7b89bf661791997607231bf19e8f9e633a4e6526`
+- 时间/作者: 2026-07-28 / chaoyujiang
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
+- 主要文件: `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/model_executor/cuda_graph_runner.py`, `python/sglang/srt/speculative/eagle_worker_v2.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/batch_overlap/two_batch_overlap.py`
+  - runtime-model: `python/sglang/srt/speculative/eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/srt/model_executor/cuda_graph_runner.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `018e5799a` - Fix/hcu aiter moe inplace (#517)
+### Commit `d0c4729899` - ci: add HCU PD disaggregation smoke tests
 
-- 完整 hash: `018e5799abb14aa90d05af042db8b273bebc5df9`
-- 时间/作者: 2026-10-13 / Wenbo Zhu
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `d0c47298995a2bff260743f3f877f84d5b23462f`
+- 时间/作者: 2026-07-28 / tianlinyang77
+- 自动分类: 调度/缓存/PD
+- 主要文件: `test/registered/hcu/disaggregation/pd_hcu_utils.py`, `test/registered/hcu/disaggregation/test_pd_basic_hcu.py`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`, `test/registered/hcu/disaggregation/test_pd_hcu_utils.py`, `test/registered/hcu/disaggregation/test_pd_pp_hcu.py`, `test/registered/hcu/disaggregation/test_pd_transfer_backends_hcu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/hcu/disaggregation/pd_hcu_utils.py`; `test/registered/hcu/disaggregation/test_pd_basic_hcu.py`; `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`; `test/registered/hcu/disaggregation/test_pd_hcu_utils.py`; `test/registered/hcu/disaggregation/test_pd_pp_hcu.py`; `test/registered/hcu/disaggregation/test_pd_transfer_backends_hcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `cd4802bbab` - fix lint
+
+- 完整 hash: `cd4802bbabdbfe22966cedac25f34e74df510b21`
+- 时间/作者: 2026-07-28 / chaoyujiang
 - 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/models/qwen2_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`; `python/sglang/srt/models/qwen2_moe.py`
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-#### Commit `71b2ee4ea` - perf: add opt-in asynchronous prebuilt token H2D (#516)
+### Commit `0305c5a3b9` - fix lint
 
-- 完整 hash: `71b2ee4ea67b6be712a5575ed1dd0950607fc6b5`
-- 时间/作者: 2026-10-13 / daishiqiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/kernels/ops/attention/verify_mla.py`, `python/sglang/srt/disaggregation/decode_schedule_batch_mixin.py`, `python/sglang/srt/environ.py`, `test/registered/kernels/ops/attention/test_verify_mla_layout.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/disaggregation/decode_schedule_batch_mixin.py`; `python/sglang/srt/environ.py`
-  - runtime-perf: `python/sglang/kernels/ops/attention/verify_mla.py`
-  - tests: `test/registered/kernels/ops/attention/test_verify_mla_layout.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `9dd4e2e80` - [diffusion] attention: fix HCU Wan SLA and FA family admission (#519)
-
-- 完整 hash: `9dd4e2e80065ba556c1beb1ffd8b1f2e29bdb085`
-- 时间/作者: 2026-10-13 / FrankXu0908
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/runtime/layers/attention/selector.py`, `python/sglang/multimodal_gen/runtime/layers/attention/turbo_layer.py`, `python/sglang/multimodal_gen/runtime/platforms/rocm.py`, `python/sglang/multimodal_gen/test/unit/test_attention_backend_selector.py`, `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/test/unit/test_wan_sla_layout.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`; `python/sglang/multimodal_gen/runtime/layers/attention/selector.py`; `python/sglang/multimodal_gen/runtime/layers/attention/turbo_layer.py`; `python/sglang/multimodal_gen/runtime/platforms/rocm.py`
-  - tests: `python/sglang/multimodal_gen/test/unit/test_attention_backend_selector.py`; `python/sglang/multimodal_gen/test/unit/test_rocm_sparse_linear_attn.py`; `python/sglang/multimodal_gen/test/unit/test_wan_sla_layout.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `40c9ec29b` - fix(scheduler): keep DP health probes on the generation path (#528)
-
-- 完整 hash: `40c9ec29b31d5a160c8d83d56949c58e76cc6c26`
-- 时间/作者: 2026-10-14 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/managers/scheduler.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `c2666f4b5` - [fix] 修复cp 逻辑：解决实际 token 不被整除时不走 cp 的问题 (#538)
-
-- 完整 hash: `c2666f4b5c07e017ad9195c7435236517cda5f08`
-- 时间/作者: 2026-10-15 / yangyn
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/layers/attention/dsa/utils.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/attention/dsa/utils.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `6fe59ce1a` - ci: release-pypi-nightly-hcu 多版本编译 (dtk26.04/py3.10+3.12, dtk26.10/py3.12) [rel/20260825_v0.5.18] (#544)
-
-- 完整 hash: `6fe59ce1ab68fb4ae69951502b621daa5cde0c95`
-- 时间/作者: 2026-10-16 / Crowder13
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 测试/文档/基准
-- 主要文件: `.github/workflows/release-pypi-nightly-hcu.yml`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - ci: `.github/workflows/release-pypi-nightly-hcu.yml`
-- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
-
-#### Commit `0bb71f0c7` - [fix] 解决 w4a8 aiter moe 不支持 swiglu_limit 功能 (#550)
-
-- 完整 hash: `0bb71f0c7fd7faeab15402d9a2d5f6759f623120`
-- 时间/作者: 2026-10-16 / yangyn
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `b9e0052e9` - fix(hcu): keep the w8a8 smooth asm fast path off on gfx928 (#555)
-
-- 完整 hash: `b9e0052e9e35ae3aa58d73ed685ae6191d64fc24`
-- 时间/作者: 2026-10-19 / GarrySnail
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `a031c979a` - [fix] 修复非 AITER 路径下 compressed-tensors W8A8 FP8 MoE 权重被错误补齐导致输出乱码 (#564)
-
-- 完整 hash: `a031c979a4a848bb6905386808d771b5782125e1`
-- 时间/作者: 2026-10-20 / liuzj512
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `030f6254f` - perf(attention): add paged split-KV support and opt-in DSpark V2 (#553)
-
-- 完整 hash: `030f6254f2d9d4abe9e57543e3f38757d12ec4ba`
-- 时间/作者: 2026-10-20 / daishiqiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/kernels/ops/attention/verify_mla.py`, `python/sglang/srt/layers/attention/triton_backend.py`, `test/registered/kernels/ops/attention/test_verify_mla_layout.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/kernels/ops/attention/verify_mla.py`; `python/sglang/srt/layers/attention/triton_backend.py`
-  - tests: `test/registered/kernels/ops/attention/test_verify_mla_layout.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `19175a690` - [Feat] build: Add build wheel scripts (#569)
-
-- 完整 hash: `19175a69044f2407fa371677a0a7d9be4e226bf2`
-- 时间/作者: 2026-10-20 / XiaokunDing
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 模型支持/运行时入口
-- 主要文件: `README_HCU.md`, `scripts/build_hcu_wheels.sh`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `README_HCU.md`; `scripts/build_hcu_wheels.sh`
-- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
-
-#### Commit `9f7bfb351` - fix(hcu): skip the w8a8 smooth asm fast path when M=0 (#573)
-
-- 完整 hash: `9f7bfb351d8b2680399994cbade9e83d10972c93`
-- 时间/作者: 2026-10-21 / Jane
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `464bebd64` - [Fix][v0.5.18] Backport reasoning token accounting fix from upstream #41460 (#579)
-
-- 完整 hash: `464bebd6407de97376f3d00c682036b0494b7ab7`
-- 时间/作者: 2026-10-22 / maxiaobetter
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/managers/scheduler_components/batch_result_processor.py`, `test/registered/unit/managers/test_batch_result_processor_spec_grammar.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/managers/scheduler_components/batch_result_processor.py`
-  - tests: `test/registered/unit/managers/test_batch_result_processor_spec_grammar.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `cbaf42c07` - Fix auxiliary HiCache load-back pending collisions (#591)
-
-- 完整 hash: `cbaf42c071ebacf512215d320eae9c155b29e0e3`
-- 时间/作者: 2026-10-26 / chaoyujiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/mem_cache/unified_cache/unified_tree_core.py`, `test/registered/unit/mem_cache/test_unified_radix_cache_unittest.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/mem_cache/unified_cache/unified_tree_core.py`
-  - tests: `test/registered/unit/mem_cache/test_unified_radix_cache_unittest.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `1343bb07e` - [Fix] deepgemm: 修复 w8a8-fp8 旧版重排逻辑 (#608)
-
-- 完整 hash: `1343bb07ef5f41dcea4dca531b794735203310eb`
-- 时间/作者: 2026-10-28 / yangyn
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `448c57ad4` - [fix] 修复 w8a8_int8 量化时视觉层 qkv_proj 未命中忽略名单导致被错误量化 (#632)
-
-- 完整 hash: `448c57ad4d4650d1a0a8ae43fdd416e254f1d4a8`
-- 时间/作者: 2026-11-03 / liuzj512
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/srt/layers/quantization/w8a8_int8.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - runtime-perf: `python/sglang/srt/layers/quantization/w8a8_int8.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `c760e11b4` - fix: fix w4a8 int4 deepgemm hipc kernel interface mismatch (#638)
-
-- 完整 hash: `c760e11b4e67898d95038c9ea87e5b83620df7ea`
-- 时间/作者: 2026-11-03 / daishiqiang
-- 分支更新段: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- 完整 hash: `0305c5a3b958a0a20d9cc02832df99834f142ff4`
+- 时间/作者: 2026-07-28 / chaoyujiang
 - 自动分类: 性能/后端优化
 - 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
   - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
-<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_END -->
+### Commit `9a4f82911e` - fix lint
 
-<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_START -->
-## release/20260825_v0.5.18 到 release_v0.5.18_deepseekv4 本地独有提交补充
+- 完整 hash: `9a4f82911e68906182eedab2530368b511d91553`
+- 时间/作者: 2026-07-28 / chaoyujiang
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `997e64560f` - ci: use configured HCU release image
+
+- 完整 hash: `997e64560f65d6dffa96b191ca3eb3961903620a`
+- 时间/作者: 2026-07-28 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/lint-hcu.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `77939d9a53` - ci: use configured HCU release image
+
+- 完整 hash: `77939d9a53074f6890a90f8376ce9dcc3ba5b3dc`
+- 时间/作者: 2026-07-28 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/lint-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/lint-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `8f848be4e7` - ci: use configured HCU release image
+
+- 完整 hash: `8f848be4e78c66bdd58aef38eaa433267c6725db`
+- 时间/作者: 2026-07-28 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/lint-hcu.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `0710e82a02` - Update quality gate workflow for new branch version
+
+- 完整 hash: `0710e82a02c66a8add5fee45fab8355a92457d26`
+- 时间/作者: 2026-07-27 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `93c56ce71a` - Refactor quality gate workflow and job configurations
+
+- 完整 hash: `93c56ce71a2f7fc883316c0bb115c0c435b439b4`
+- 时间/作者: 2026-07-27 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `163a92c142` - fix(hcu):修改lightop的算子接口.
+
+- 完整 hash: `163a92c142ec5a1a6dae787228e0311bb864a61e`
+- 时间/作者: 2026-07-27 / luoyao
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/activation.py`, `python/sglang/srt/mem_cache/memory_pool.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/layers/activation.py`
+  - runtime-perf: `python/sglang/srt/mem_cache/memory_pool.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `87e3831800` - fix: 移除旧的lmslim导入方式.
+
+- 完整 hash: `87e3831800b3a93a3021c6830cc0241a8ca82327`
+- 时间/作者: 2026-07-27 / luoyao
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/fp8_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/fp8_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `afac89e0e4` - feat(hcu): add KME W8A8 hipBLASLt path via METHODS=3
+
+- 完整 hash: `afac89e0e4e9582992824f48ba9c87f034a9c7dc`
+- 时间/作者: 2026-07-27 / yht183
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `a3efe5e533` - [bugfix]:修复lightop_per_token_quant_fp8调用前tensor准备.
+
+- 完整 hash: `a3efe5e5335622c1526c09049e1b23d93a705f53`
+- 时间/作者: 2026-07-24 / luoyao
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/fp8_kernel.py`, `python/sglang/srt/mem_cache/allocator.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/fp8_kernel.py`; `python/sglang/srt/mem_cache/allocator.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `88d4501a3b` - Update quality gate workflow reference
+
+- 完整 hash: `88d4501a3b3af0c82a54dbb47573eab5481639ba`
+- 时间/作者: 2026-07-24 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `9e13c77cee` - fix(ci): use card v2 link button
+
+- 完整 hash: `9e13c77cee439e6c6d1a7949f03330b9347ae380`
+- 时间/作者: 2026-07-24 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_notify_feishu.py`; `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `4af8102057` - fix(ci): use card v2 metadata component
+
+- 完整 hash: `4af8102057c065ef77492c9fae37bd789a4d291e`
+- 时间/作者: 2026-07-24 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_notify_feishu.py`; `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `65b7c42689` - ci: use shared runner for Feishu preview
+
+- 完整 hash: `65b7c426897363242a2851369ec4eb3348395f6f`
+- 时间/作者: 2026-07-24 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/hcu-feishu-notify-preview.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `6ac12c2e50` - ci: decouple Feishu preview from HCU runners
+
+- 完整 hash: `6ac12c2e503e26099d57d29dff7948c0fa51c6d4`
+- 时间/作者: 2026-07-24 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/hcu-feishu-notify-preview.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `2c21b95e60` - fix(ci): align Feishu accuracy table
+
+- 完整 hash: `2c21b95e604e6ae065f5455459e4cfb8096885ac`
+- 时间/作者: 2026-07-24 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/hcu-feishu-notify-preview.yml`, `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/hcu-feishu-notify-preview.yml`
+  - other: `scripts/ci/hcu/hcu_ci_notify_feishu.py`; `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `9a8b1bd08e` - Update quality gate workflow reference to new commit
+
+- 完整 hash: `9a8b1bd08e7638debad3d0f5ae14162677cf26ff`
+- 时间/作者: 2026-07-24 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `eb6a340936` - Update workflow reference to latest commit
+
+- 完整 hash: `eb6a34093612ed2f6b2fe17bd9567c529ba6b6f7`
+- 时间/作者: 2026-07-24 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f76d2cea38` - Delete .github/workflows/quality-baseline-scan.yml
+
+- 完整 hash: `f76d2cea388b5bbdf2ae5b4c49b00ea7955d6c59`
+- 时间/作者: 2026-07-24 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-baseline-scan.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-baseline-scan.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `c3755b4d46` - fix: make DP local control broadcast opt-in via env
+
+- 完整 hash: `c3755b4d4605a042a0fa1b090649ede27606c481`
+- 时间/作者: 2026-07-23 / yht183
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/environ.py`, `python/sglang/srt/managers/data_parallel_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/managers/data_parallel_controller.py`
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `e338cca156` - ci(hcu): improve accuracy card and fix VLM model path
+
+- 完整 hash: `e338cca1561d38d0f8e8d3b7805f6eef6b1c85d2`
+- 时间/作者: 2026-07-23 / tianlinyang77
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_ci_notify_feishu.py`; `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `83d2a2b4b1` - fix(hcu): rename stale DCU HiCache identifiers
+
+- 完整 hash: `83d2a2b4b1913b56a14af1d978c7bed1abbae2a3`
+- 时间/作者: 2026-07-23 / lizhigong
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py`, `python/sglang/test/hcu_cookbook_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py`
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `8b38b9a258` - Update comment for all_gather usage in scheduler
+
+- 完整 hash: `8b38b9a258b2caae64dc9b7789b38aa74b56f524`
+- 时间/作者: 2026-07-22 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `python/sglang/srt/managers/scheduler_dp_attn_mixin.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/managers/scheduler_dp_attn_mixin.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `421a13a808` - ci(hcu): enable accuracy notification on default branch
+
+- 完整 hash: `421a13a808ccb95dc8ea94ae55f170edf7324ffd`
+- 时间/作者: 2026-07-22 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `b1606885e0` - Fix help text for custom all-reduce backend
+
+- 完整 hash: `b1606885e0a16b1c97322239aaf62ce3f1ddcdbb`
+- 时间/作者: 2026-07-22 / Lvjiajia
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `0b46ed36da` - fix: apply bias after HCU DeepGEMM FP8 linear
+
+- 完整 hash: `0b46ed36dacfea86ef6a01dcc099af31af264de1`
+- 时间/作者: 2026-07-22 / maxiaobetter
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/fp8_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/fp8_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `f391712f7f` - fix(hcu): use HCU guard for MLA KV cache storage
+
+- 完整 hash: `f391712f7fe803797b678c6c9cb8e3d001279bdd`
+- 时间/作者: 2026-07-22 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/mem_cache/memory_pool.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/mem_cache/memory_pool.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `7941e04191` - fix: enable HiCache layout_dcu for hybrid Mamba and EAGLE draft
+
+- 完整 hash: `7941e04191ba6671f0aa4cddd7eab63241d80155`
+- 时间/作者: 2026-07-22 / yaoht
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `1c40e365c8` - support mla lightop
+
+- 完整 hash: `1c40e365c892188032a4571dc0a902101f2b2c31`
+- 时间/作者: 2026-07-22 / sunjf
+- 自动分类: 调度/缓存/PD
+- 主要文件: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/mem_cache/memory_pool.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/mem_cache/memory_pool.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `9fc04a7a2c` - [BugFix] Disable the standalone-DCU MegaMoE ASM tail-reduce path by default to avoid vmfault
+
+- 完整 hash: `9fc04a7a2cebc525a96301d3e8e9515bb0a5b4b6`
+- 时间/作者: 2026-07-22 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/mega_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `7b6a9dd891` - 修复DeepseekV4精度问题
+
+- 完整 hash: `7b6a9dd891870840e3c5793737b995c4d3bf0062`
+- 时间/作者: 2026-07-21 / lijing
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `ac56ca009f` - ci: follow main sensitive diff workflow
+
+- 完整 hash: `ac56ca009f9acfd41248ff7c016bebaaea80b21d`
+- 时间/作者: 2026-07-21 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `9864c84513` - ci: use shared sensitive diff gate for HCU port
+
+- 完整 hash: `9864c84513db1a9d774733f021d5c46931d71eaa`
+- 时间/作者: 2026-07-21 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_sensitive_diff_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+  - other: `scripts/ci/hcu/check_sensitive_diff_text.py`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `c1f3f08c8a` - Update workflow reference to a new commit
+
+- 完整 hash: `c1f3f08c8a1f4aa48ddabe7a88997aac4e80b45d`
+- 时间/作者: 2026-07-21 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e7ab054110` - Delete .github/workflows/pr-quality-gate.yml
+
+- 完整 hash: `e7ab054110fbca1987b072597f32581ba795afcd`
+- 时间/作者: 2026-07-21 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/pr-quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `14da9b10e4` - Update workflow reference in quality-gate.yml
+
+- 完整 hash: `14da9b10e4e0e15ab993173d938019fc2ffde489`
+- 时间/作者: 2026-07-21 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `15a656ea69` - test(hcu): align v0.5.15 compatibility tests
+
+- 完整 hash: `15a656ea69e89095c927e214ff56703bb203d7b3`
+- 时间/作者: 2026-07-20 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `test/registered/hcu/openai_server/test_serving_chat_hcu.py`, `test/registered/hcu/unit/test_profile_merger_hcu.py`, `test/registered/unit/server_args/test_server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/hcu/openai_server/test_serving_chat_hcu.py`; `test/registered/hcu/unit/test_profile_merger_hcu.py`; `test/registered/unit/server_args/test_server_args.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `e19d341ab8` - Refactor quality gate workflow and update triggers
+
+- 完整 hash: `e19d341ab8af7d50646008ff6711f9022a8b066d`
+- 时间/作者: 2026-07-20 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `5543eb3df2` - Rename quality-gate workflow and update triggers
+
+- 完整 hash: `5543eb3df2cb3156bfdc63a9cd5fbf0a7cdcd88b`
+- 时间/作者: 2026-07-20 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `5ac1f2418a` - Add GitHub Actions workflow for quality gate
+
+- 完整 hash: `5ac1f2418a595f502ace96a3cc3e9c19cb22f40f`
+- 时间/作者: 2026-07-20 / Lvjiajia
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/pr-quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `811aa027d6` - ci: replace HCU runtime text check with sensitive diff gate
+
+- 完整 hash: `811aa027d6a05c94166ab8bc0879efce3e1ff977`
+- 时间/作者: 2026-07-20 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_hcu_runtime_text.py`, `scripts/ci/hcu/check_sensitive_diff_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+  - other: `scripts/ci/hcu/check_hcu_runtime_text.py`; `scripts/ci/hcu/check_sensitive_diff_text.py`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e47445d2fa` - chore: clean leftover patch labels in PD Decode DP sync
+
+- 完整 hash: `e47445d2fa28d2ddde2e261a73c15a83b8b702b0`
+- 时间/作者: 2026-07-20 / yaoht
+- 自动分类: 调度/缓存/PD
+- 主要文件: `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/scheduler_dp_attn_mixin.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/managers/scheduler_dp_attn_mixin.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `81e3561aeb` - ci(hcu): exclude two unstable PR tests
+
+- 完整 hash: `81e3561aeb01ad52674d07a9304e521de5c1ef82`
+- 时间/作者: 2026-07-20 / LvJIA-RG
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `358a337143` - fix(hcu): keep Harbor build image path
+
+- 完整 hash: `358a337143a37bc177dd40bcbb60169ad33a53bd`
+- 时间/作者: 2026-07-20 / tianlinyang77
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/lint-hcu.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `079275b811` - ci: add local sensitive diff text gate
+
+- 完整 hash: `079275b811254795400b9cd08e62f3b9e729ac09`
+- 时间/作者: 2026-07-20 / reverie-hub
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_sensitive_diff_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+  - other: `scripts/ci/hcu/check_sensitive_diff_text.py`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `fe9f24924f` - fix: prevent PD Decode DP hang under enable-dp-attention
+
+- 完整 hash: `fe9f24924f2ba30247e9354fc60cb8dc8183f35c`
+- 时间/作者: 2026-07-20 / yaoht
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/scheduler_dp_attn_mixin.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/mooncake/conn.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/managers/scheduler_dp_attn_mixin.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `37074c9af6` - Fix dsv4 full token pool
+
+- 完整 hash: `37074c9af6a735966d576d42dd98bfcc65bb5dd1`
+- 时间/作者: 2026-07-16 / lijing
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/environ.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/environ.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `09d7a1d4ca` - support fabric aiter custom allreduce
+
+- 完整 hash: `09d7a1d4ca14b017a68754ae270f481250bee368`
+- 时间/作者: 2026-07-16 / sunjf
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/model_executor/model_runner.py`, `python/sglang/srt/server_args.py`, `python/sglang/test/dcu_cookbook_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`; `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/distributed/parallel_state.py`
+  - tests: `python/sglang/test/dcu_cookbook_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `d280691576` - [bugfix]适配新的causal_conv1d接口
+
+- 完整 hash: `d280691576a7639ec768c7f48b57d06d82187676`
+- 时间/作者: 2026-07-16 / chenyuege
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `e5a2dd0419` - [bugfix]适配新的causal_conv1d接口
+
+- 完整 hash: `e5a2dd0419b07348ece0911d036c7dbbae0e2926`
+- 时间/作者: 2026-07-16 / chenyuege
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/linear/gdn_backend.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `339dfe4336` - docs(dcu): define v0.5.15.post1 release workflow
+
+- 完整 hash: `339dfe4336eea2ab37e6194a8c045f90223494f0`
+- 时间/作者: 2026-07-16 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`, `docs/internal/dcu-main-migration-plan.md`, `docs/internal/dcu-v0.5.15-post1-dev-plan.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`; `docs/internal/dcu-main-migration-plan.md`; `docs/internal/dcu-v0.5.15-post1-dev-plan.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `dc1323ba4c` - docs(dcu): finalize v0.5.12_dev forward-port
+
+- 完整 hash: `dc1323ba4cae06c266d3da57bf3012b32a2af1f9`
+- 时间/作者: 2026-07-16 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`, `docs/internal/dcu-main-migration-plan.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`; `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`; `docs/internal/dcu-main-migration-plan.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `49a10aec8c` - docs(dcu): record 20260714 owner validation
+
+- 完整 hash: `49a10aec8c2e5b84aca930f78795adf6651651be`
+- 时间/作者: 2026-07-15 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `f67cdf69bd` - docs(dcu): record 20260714 runtime blocker
+
+- 完整 hash: `f67cdf69bd89c1feea0cb6cbe3abb20892097420`
+- 时间/作者: 2026-07-15 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `20633db576` - docs(dcu): add 20260714 conflict review
+
+- 完整 hash: `20633db5760b026ad7393b5ac9ea3f05c90b86e5`
+- 时间/作者: 2026-07-15 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-catchup-20260714-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-catchup-20260714-conflict-review.md`; `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `324181561d` - docs(dcu): add 20260713 conflict review
+
+- 完整 hash: `324181561d48cdc0ce51ab0e864ec19832b7267a`
+- 时间/作者: 2026-07-15 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-catchup-20260713-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-catchup-20260713-conflict-review.md`; `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `0b30b7c9d2` - docs(dcu): record 20260712 runtime validation
+
+- 完整 hash: `0b30b7c9d231c24660d7b6135a0d5eb6f59da8c0`
+- 时间/作者: 2026-07-15 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `44f81e8f7a` - docs(dcu): record 20260712 runtime gate status
+
+- 完整 hash: `44f81e8f7af876a48bfc0eac5e15553a1b317858`
+- 时间/作者: 2026-07-15 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `baa08af595` - docs(dcu): add 20260712 conflict review
+
+- 完整 hash: `baa08af5950aa514d26503ffda00db57121ee462`
+- 时间/作者: 2026-07-15 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-catchup-20260712-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-catchup-20260712-conflict-review.md`; `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `1109d462d5` - [Feature] Support PD different-TP transfer for hybrid SWA/NSA and unequal K/V item lens.
+
+- 完整 hash: `1109d462d57e084b3a3c5f7f03aacd709ff0ef0d`
+- 时间/作者: 2026-07-15 / huojianqiang
+- 自动分类: 调度/缓存/PD
+- 主要文件: `python/sglang/srt/disaggregation/mooncake/conn.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/disaggregation/mooncake/conn.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `3e335fce8e` - docs: correct 20260710 endpoint subject
+
+- 完整 hash: `3e335fce8e11eaa2d712d62889283a520dbc4898`
+- 时间/作者: 2026-07-14 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `3d77308ea3` - docs: mark 20260710 catch-up validated
+
+- 完整 hash: `3d77308ea3261e8c941bec187c9cd96ce6ac8c77`
+- 时间/作者: 2026-07-14 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `6630db3cfa` - docs: record 20260710 pure-TP validation
+
+- 完整 hash: `6630db3cfa3f5db180d62b69c19be1b9c7e72966`
+- 时间/作者: 2026-07-14 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `24894692ea` - fix: use runtime attention TP size in model warmup
+
+- 完整 hash: `24894692eab30e9c7b8f1062fc727728ae54a99b`
+- 时间/作者: 2026-07-14 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/model_executor/model_runner.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/model_executor/model_runner.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `9d7fbb0174` - docs: add 20260710 conflict review
+
+- 完整 hash: `9d7fbb0174ad0974fe37b1cf028dd25e60ab580c`
+- 时间/作者: 2026-07-14 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-catchup-20260710-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-catchup-20260710-conflict-review.md`; `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `48c3c0997e` - ci: run HCU text check in Python 3.10 container
+
+- 完整 hash: `48c3c0997ef17daa34a6e482afdeb0620c1abcbc`
+- 时间/作者: 2026-07-14 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f1c5eda31e` - ci: require HCU runtime text check
+
+- 完整 hash: `f1c5eda31e795131f0e77d0c4b873b91793d32b4`
+- 时间/作者: 2026-07-14 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `c0e8edd741` - fix(dcu): initialize DeepEP dispatch dtype state
+
+- 完整 hash: `c0e8edd7418a1da9803ff1e5ac7d0f8753ec8c1a`
+- 时间/作者: 2026-07-14 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+  - runtime-perf: `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `412d0ef9fa` - docs(dcu): add 20260709 conflict review
+
+- 完整 hash: `412d0ef9fa0e99337936b32164e7d6cdb4bd5af4`
+- 时间/作者: 2026-07-14 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-catchup-20260709-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-catchup-20260709-conflict-review.md`; `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `e3aa204a05` - docs(dcu): require catch-up conflict reviews
+
+- 完整 hash: `e3aa204a05933dc6233a7be83395869012c1b179`
+- 时间/作者: 2026-07-14 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-catchup-20260706-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-catchup-20260706-conflict-review.md`; `docs/internal/dcu-main-conflict-ledger.md`; `docs/internal/dcu-main-migration-plan.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `b9ca7c2adb` - Refine copyright/license warning messages
+
+- 完整 hash: `b9ca7c2adb3a8fd30f57ae9cdd7e05c4a72a2d2a`
+- 时间/作者: 2026-07-14 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `d53953dbe7` - ci: clean up HCU validation checks
+
+- 完整 hash: `d53953dbe7bdc6f4bf32c7acd7a92ab61eabafb5`
+- 时间/作者: 2026-07-14 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/tests/test_check_hcu_runtime_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-hcu.yml`
+  - tests: `scripts/ci/hcu/tests/test_check_hcu_runtime_text.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `2981595c7f` - [FIX] 修复走非dcu_fa下的报错
+
+- 完整 hash: `2981595c7f67279e2b7b1795d2c3f90c23d8cd5b`
+- 时间/作者: 2026-07-14 / yangyn
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `516a35c40e` - docs(dcu): record 20260703 runtime blocker
+
+- 完整 hash: `516a35c40e89c109686ac8f6f9c08fc80c3d3178`
+- 时间/作者: 2026-07-13 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `c078943aa3` - chore: fix fused_moe lint issues
+
+- 完整 hash: `c078943aa3573b3e20b03bf92709b8557ea03131`
+- 时间/作者: 2026-07-13 / whlwhlwhl
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `d8ed552da8` - docs(dcu): add 20260629 conflict review
+
+- 完整 hash: `d8ed552da8e5c56d3a87f6bcf01a2d7add8bc568`
+- 时间/作者: 2026-07-13 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-catchup-20260629-conflict-review.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-catchup-20260629-conflict-review.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `bf59e99fde` - ci: harden HCU runtime text quality gate
+
+- 完整 hash: `bf59e99fde6f9d5b0d0f13f5bfcccc3233b3f439`
+- 时间/作者: 2026-07-13 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_hcu_runtime_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+  - other: `scripts/ci/hcu/check_hcu_runtime_text.py`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `24bcdba3b7` - feat: support AITER W4A16 MOE_C prefill
+
+- 完整 hash: `24bcdba3b722eb0543e6cae6c6f7215ff65db9f0`
+- 时间/作者: 2026-07-13 / whlwhlwhl
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `427726d609` - fix: complete HCU runtime text cleanup
+
+- 完整 hash: `427726d60935cdc55d2b3c325b6d7f6eb280140e`
+- 时间/作者: 2026-07-13 / reverie-hub
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/distributed/device_communicators/pynccl_wrapper.py`, `python/sglang/srt/server_args.py`, `python/sglang/test/hcu_cookbook_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/pynccl_wrapper.py`
+  - tests: `python/sglang/test/hcu_cookbook_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `8c797abd6f` - Record 20260629 DCU runtime validation
+
+- 完整 hash: `8c797abd6fc6e29ebc7cfbcc93ceffcc4bc9414e`
+- 时间/作者: 2026-07-13 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `bd60c02238` - Enhance quality gate workflow with new checks and branches
+
+- 完整 hash: `bd60c022380f37034d2f68a30ef840fa9221a4c1`
+- 时间/作者: 2026-07-13 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `40c658e8ab` - ci: harden HCU runtime text checker
+
+- 完整 hash: `40c658e8ab151271e6c01fe7f359acbfe862080d`
+- 时间/作者: 2026-07-13 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/quality-gate.yml`, `scripts/ci/dcu/check_hcu_runtime_text.py`, `scripts/ci/dcu/tests/test_check_hcu_runtime_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+  - other: `scripts/ci/dcu/check_hcu_runtime_text.py`
+  - tests: `scripts/ci/dcu/tests/test_check_hcu_runtime_text.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `48489724d5` - docs(dcu): record 20260623 catch-up runtime status
+
+- 完整 hash: `48489724d57f2ff6648e0a8859643458ad8a3ac7`
+- 时间/作者: 2026-07-13 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `cba9e72cc0` - [BugFix] skip some uncompatibal env setup in hip for DCU
+
+- 完整 hash: `cba9e72cc037e2966983f61b95006c588fb3c76f`
+- 时间/作者: 2026-07-13 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `1123fc0382` - ci: enforce HCU rename safety checks
+
+- 完整 hash: `1123fc038237a1d7e3a0cbbd09b189fa9f260da8`
+- 时间/作者: 2026-07-13 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `scripts/ci/hcu/hcu_rename_allowlist.txt`, `scripts/ci/hcu/test_verify_hcu_rename.py`, `scripts/ci/hcu/verify_hcu_registration.py`, `scripts/ci/hcu/verify_hcu_rename.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/hcu/hcu_rename_allowlist.txt`; `scripts/ci/hcu/test_verify_hcu_rename.py`; `scripts/ci/hcu/verify_hcu_registration.py`; `scripts/ci/hcu/verify_hcu_rename.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `9353ecb963` - docs: complete HCU naming migration
+
+- 完整 hash: `9353ecb96312ed52fd5752af133437ea0abd001b`
+- 时间/作者: 2026-07-13 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `NOTICE`, `README.md`, `README_DCU.md`, `README_HCU.md`, `THIRD_PARTY_NOTICES.md`, `docs/dcu-pr-ci-visual-guide.html`, `docs/hcu-pr-ci-visual-guide.html`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/dcu-pr-ci-visual-guide.html`; `docs/hcu-pr-ci-visual-guide.html`
+  - other: `NOTICE`; `README.md`; `README_DCU.md`; `README_HCU.md`; `THIRD_PARTY_NOTICES.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `de7170db00` - kernel: migrate DCU ops and wrappers to HCU
+
+- 完整 hash: `de7170db00755e66293b01020eaa805d246a971d`
+- 时间/作者: 2026-07-13 / DCU CI Bot
+- 自动分类: 性能/后端优化
+- 主要文件: `sgl-kernel/csrc/common_extension_rocm.cc`, `sgl-kernel/csrc/kvcacheio/transfer.cu`, `sgl-kernel/include/sgl_kernel_ops.h`, `sgl-kernel/python/sgl_kernel/flash_mla.py`, `sgl-kernel/python/sgl_kernel/kvcacheio.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `sgl-kernel/csrc/common_extension_rocm.cc`; `sgl-kernel/csrc/kvcacheio/transfer.cu`; `sgl-kernel/include/sgl_kernel_ops.h`; `sgl-kernel/python/sgl_kernel/flash_mla.py`; `sgl-kernel/python/sgl_kernel/kvcacheio.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `e3fee4310d` - ci: sync HCU workflows and scripts with current main
+
+- 完整 hash: `e3fee4310dc196c44e29e6cc919377f9829b744f`
+- 时间/作者: 2026-07-13 / DCU CI Bot
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/open-source-compliance.json`, `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/dcu-manual-model-test.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/labeler.yml`, `.github/workflows/lint-dcu.yml`, `.github/workflows/lint-hcu.yml` 等 33 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/open-source-compliance.json`; `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/dcu-manual-model-test.yml`; `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/hcu-manual-model-test.yml`; `.github/workflows/labeler.yml`; `.github/workflows/lint-dcu.yml`; `.github/workflows/lint-hcu.yml` 等 18 个文件
+  - other: `requirements_dcu.txt`; `requirements_hcu.txt`; `scripts/ci/dcu/check_hcu_runtime_text.py`; `scripts/ci/dcu/dcu_ci_cleanup_container.sh`; `scripts/ci/dcu/dcu_ci_exec.sh`; `scripts/ci/dcu/dcu_ci_install_dependency.sh`; `scripts/ci/dcu/dcu_ci_start_container.sh`; `scripts/ci/dcu/verify_dcu_registration.py` 等 15 个文件
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `0395a2bd25` - fix: use lightop int8 deepep moe on dcu
+
+- 完整 hash: `0395a2bd25a195561dc5e8758f735cbcfb3d365d`
+- 时间/作者: 2026-07-11 / yangql
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `390ad18e71` - ci: 修复 packed KV 测试注册导致的 DCU CI 收集失败 (#87)
+
+- 完整 hash: `390ad18e713394cd02b55b354b3259a58cc34cfd`
+- 时间/作者: 2026-07-11 / tianly
+- 自动分类: 性能/后端优化
+- 主要文件: `benchmark/kernels/pack_paged_kv_to_varlen/bench_pack_paged_kv_to_varlen.py`, `benchmark/kernels/pack_paged_kv_to_varlen/pack_paged_kv_to_varlen_benchmark_results.md`, `test/registered/attention/bench_pack_paged_kv_to_varlen.py`, `test/registered/attention/pack_paged_kv_to_varlen_benchmark_results.md`, `test/registered/attention/test_pack_paged_kv_to_varlen.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `benchmark/kernels/pack_paged_kv_to_varlen/bench_pack_paged_kv_to_varlen.py`; `benchmark/kernels/pack_paged_kv_to_varlen/pack_paged_kv_to_varlen_benchmark_results.md`
+  - tests: `test/registered/attention/bench_pack_paged_kv_to_varlen.py`; `test/registered/attention/pack_paged_kv_to_varlen_benchmark_results.md`; `test/registered/attention/test_pack_paged_kv_to_varlen.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `b38f25513e` - ci: add manual HCU nightly workflow controls
+
+- 完整 hash: `b38f25513eaf9fb0aab6e8422c681f6752bba147`
+- 时间/作者: 2026-07-09 / DCU CI Bot
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml`, `.github/workflows/nightly-test-amd-rocm720.yml`, `.github/workflows/nightly-test-amd.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/nightly-test-intel.yml`, `.github/workflows/nightly-test-npu.yml` 等 17 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/amd-aiter-scout.yml`; `.github/workflows/amd-ci-job-monitor.yml`; `.github/workflows/ci-coverage-overview.yml`; `.github/workflows/nightly-test-amd-rocm720.yml`; `.github/workflows/nightly-test-amd.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/nightly-test-intel.yml`; `.github/workflows/nightly-test-npu.yml` 等 17 个文件
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `dccf1782b2` - ci: disable HCU runtime text check job
+
+- 完整 hash: `dccf1782b25f91c48ceef33e8287f74aa22af707`
+- 时间/作者: 2026-07-09 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `d445921fe7` - 新增对RadixAttention层的判断
+
+- 完整 hash: `d445921fe7cf5095eb1248c4e091ebb5bd197bdb`
+- 时间/作者: 2026-07-09 / WuFan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/w8a8_int8.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/w8a8_int8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `616ba7b6d6` - ci: reduce HCU runtime text check duplicate output
+
+- 完整 hash: `616ba7b6d6e4ed0ea08aafeb178f92d230253f4f`
+- 时间/作者: 2026-07-09 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `scripts/ci/dcu/check_hcu_runtime_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/check_hcu_runtime_text.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `d7af9508db` - style: apply CI hook formatting
+
+- 完整 hash: `d7af9508db9fce319582c6f691bb0c2ac8765a97`
+- 时间/作者: 2026-07-09 / lizhigong
+- 自动分类: 调度/缓存/PD
+- 主要文件: `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/managers/cache_controller.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`; `python/sglang/srt/managers/cache_controller.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `fda6d44a45` - ci: simplify HCU runtime text check failure message
+
+- 完整 hash: `fda6d44a45781ec85484864af4c171b5a6723d2d`
+- 时间/作者: 2026-07-09 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `scripts/ci/dcu/check_hcu_runtime_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/check_hcu_runtime_text.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `8b4a7bdeb5` - ci: refine HCU runtime text check message
+
+- 完整 hash: `8b4a7bdeb5ec8acd075d0f22582f813834526330`
+- 时间/作者: 2026-07-09 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `scripts/ci/dcu/check_hcu_runtime_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/check_hcu_runtime_text.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `4b0fcbd07e` - [Addition] deliver one validation doc of C17~C19
+
+- 完整 hash: `4b0fcbd07e34d25862da32bf7f12362871093205`
+- 时间/作者: 2026-07-09 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `3e254b0413` - style(distributed): apply pre-commit formatting to parallel_state.py
+
+- 完整 hash: `3e254b0413372d24abfd468f91c501567f753325`
+- 时间/作者: 2026-07-09 / shiqiang
+- 自动分类: 通用实现调整
+- 主要文件: `python/sglang/srt/distributed/parallel_state.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/distributed/parallel_state.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `cee45bc550` - docs(dcu): record C17-C19 validation
+
+- 完整 hash: `cee45bc55003cc3fde2ea05c7d3405e4ea94282e`
+- 时间/作者: 2026-07-09 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `01a6f1b945` - [Addition] deliver one validation doc of C14~C16
+
+- 完整 hash: `01a6f1b945628daff0d067d75ddf103757996967`
+- 时间/作者: 2026-07-09 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `b452d6bd67` - docs(dcu): record C14-C16 functional validation
+
+- 完整 hash: `b452d6bd674d5b8b293814ebb3a640758c4ce8cf`
+- 时间/作者: 2026-07-08 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `1cea713a71` - docs(dcu): record C14-C16 validation block
+
+- 完整 hash: `1cea713a71d1da6959ffcfc37ae271c3490ba74f`
+- 时间/作者: 2026-07-08 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `b6db54a9a1` - [Addition] deliver one validation doc of C11~C13
+
+- 完整 hash: `b6db54a9a12fcbbfeb44330ab35c765b3e50f97c`
+- 时间/作者: 2026-07-08 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `5d2c6854a9` - 0.5.12 MHA、GQA类hicache适配
+
+- 完整 hash: `5d2c6854a95a5a22da3d696a871e7dbceb99bca7`
+- 时间/作者: 2026-07-08 / shangxl
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/mem_cache/hiradix_cache.py`, `python/sglang/srt/mem_cache/memory_pool_host.py`, `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py`, `python/sglang/srt/server_args.py`, `sgl-kernel/csrc/common_extension_rocm.cc`, `sgl-kernel/csrc/kvcacheio/transfer.cu` 等 10 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`; `python/sglang/srt/managers/cache_controller.py`; `python/sglang/srt/mem_cache/hiradix_cache.py`; `python/sglang/srt/mem_cache/memory_pool_host.py`; `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py`; `sgl-kernel/csrc/common_extension_rocm.cc`; `sgl-kernel/csrc/kvcacheio/transfer.cu`; `sgl-kernel/include/sgl_kernel_ops.h` 等 9 个文件
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `bfaf180d14` - [Addition] deliver one validation doc of C10
+
+- 完整 hash: `bfaf180d14cee58f87789a2a7345a52919933d12`
+- 时间/作者: 2026-07-08 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `fe4e1fea3d` - docs: sync LMSYS SGLang blog cards
+
+- 完整 hash: `fe4e1fea3d9a7e309342f284368d1b5c19cc39a6`
+- 时间/作者: 2026-07-07 / github-actions[bot]
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs_new/index.mdx`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs_new/index.mdx`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `ef36df96f6` - chore: add header for DCU runtime text checker
+
+- 完整 hash: `ef36df96f68e0137dd791e21575d64d2b18c401d`
+- 时间/作者: 2026-07-07 / Lv Jiajia
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `scripts/ci/dcu/check_no_amd_runtime_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/check_no_amd_runtime_text.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `9188d711e5` - ci: rename HCU runtime text check script
+
+- 完整 hash: `9188d711e5347c5b78b78d750bfc4019c87293b1`
+- 时间/作者: 2026-07-07 / reverie-hub
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/quality-gate.yml`, `scripts/ci/dcu/check_hcu_runtime_text.py`, `scripts/ci/dcu/check_no_amd_runtime_text.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+  - other: `scripts/ci/dcu/check_hcu_runtime_text.py`; `scripts/ci/dcu/check_no_amd_runtime_text.py`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `d5f4d1c14f` - fix: skip expert distribution recording during CUDA graph capture
+
+- 完整 hash: `d5f4d1c14f7136dbddad203100dd039fafc87324`
+- 时间/作者: 2026-07-07 / liuchy5
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/eplb/expert_distribution.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/eplb/expert_distribution.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `9bde26e7c7` - 解耦vllm rms_norm
+
+- 完整 hash: `9bde26e7c7a6fe0af4e1cb2ae41334e508e7492d`
+- 时间/作者: 2026-07-07 / liucong
+- 自动分类: 通用实现调整
+- 主要文件: `python/sglang/srt/layers/layernorm.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/layers/layernorm.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `3f920d4e06` - docs: sync LMSYS SGLang blog cards
+
+- 完整 hash: `3f920d4e06dad35236037abaff404b679de85440`
+- 时间/作者: 2026-07-07 / github-actions[bot]
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs_new/index.mdx`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs_new/index.mdx`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `0507e60908` - fix: avoid amdsmi runtime logs on HCU
+
+- 完整 hash: `0507e60908a4781d2481583725297ec159927c83`
+- 时间/作者: 2026-07-07 / reverie-hub
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `4d198708c3` - 解决sp下对padding的处理
+
+- 完整 hash: `4d198708c3cc32876aa990f5f36f2cb50bfba95a`
+- 时间/作者: 2026-07-07 / yangyn1
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`; `python/sglang/srt/layers/quantization/w8a8_fp8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `cf59f46950` - [bugfix]: avoid HYV3 PD KV compact remap
+
+- 完整 hash: `cf59f46950cffea5d97d1b9e43dfdeaf18611824`
+- 时间/作者: 2026-07-06 / luoyao
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/disaggregation/common/conn.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/disaggregation/common/conn.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `ec48fa7802` - [bugfix]: 解决hy3开mtp下的精度问题.
+
+- 完整 hash: `ec48fa780219f3fbe8c32777d7171eec988ea4e4`
+- 时间/作者: 2026-07-06 / luoyao
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/disaggregation/base/conn.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/prefill.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/disaggregation/base/conn.py`; `python/sglang/srt/disaggregation/common/conn.py`; `python/sglang/srt/disaggregation/decode.py`; `python/sglang/srt/disaggregation/prefill.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `23cbd00e31` - [bugfix]: 解决hy3非mtp下的精度问题
+
+- 完整 hash: `23cbd00e3154ff8e58e2c780d08e1110889bf02c`
+- 时间/作者: 2026-07-06 / luoyao
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/disaggregation/prefill.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/disaggregation/prefill.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `a1ed918ae7` - [Addition] deliver one validation doc of C09
+
+- 完整 hash: `a1ed918ae77c8156fbe6aeaebad465995e0b5384`
+- 时间/作者: 2026-07-06 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `fa6b75971f` - [BugFix] Deliver the remaining _is_dcu branch when flashattention_backend has changed
+
+- 完整 hash: `fa6b75971f6c219b8644cb335777da0876186427`
+- 时间/作者: 2026-07-06 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/triton_ops/metadata.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/triton_ops/metadata.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `88bb5176c8` - [Addition] deliver one validation doc of C08
+
+- 完整 hash: `88bb5176c801f871d1c16d3c9d7568074ca7bad1`
+- 时间/作者: 2026-07-06 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `36f3237527` - fix: refine HCU runtime log wording
+
+- 完整 hash: `36f3237527fc0e07f196959ab9f76e1b460d2efb`
+- 时间/作者: 2026-07-05 / reverie-hub
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/check_env.py`, `python/sglang/srt/layers/attention/vision.py`, `python/sglang/srt/layers/quantization/mxfp4.py`, `python/sglang/srt/model_executor/cuda_graph_runner.py`, `python/sglang/srt/server_args.py`, `python/sglang/srt/utils/common.py`, `sgl-kernel/csrc/mamba/causal_conv1d.cu`, `test/registered/dcu/kernels/test_sgl_kernel_smoke_dcu.py` 等 9 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/check_env.py`; `python/sglang/srt/utils/common.py`
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/vision.py`; `python/sglang/srt/layers/quantization/mxfp4.py`; `python/sglang/srt/model_executor/cuda_graph_runner.py`; `sgl-kernel/csrc/mamba/causal_conv1d.cu`
+  - tests: `test/registered/dcu/kernels/test_sgl_kernel_smoke_dcu.py`; `test/registered/dcu/kernels/test_sgl_kernel_supported_dcu.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `cd2e73a67c` - 优化lint扫描规则
+
+- 完整 hash: `cd2e73a67c9607079672f90c4011ac8b264cb9c4`
+- 时间/作者: 2026-07-04 / Lvjiajia
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `8efd2ad46e` - update w4a16 deepgemm interface
+
+- 完整 hash: `8efd2ad46e4e635b228e788c5251fa24a8a97cf8`
+- 时间/作者: 2026-07-03 / sunjf
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `00063277c1` - [Addition] deliver one validation doc of C07
+
+- 完整 hash: `00063277c1c73582d32b7348463d3e9200baa012`
+- 时间/作者: 2026-07-03 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `c3dc2e8eb2` - feat: validate DCU attention backend compatibility
+
+- 完整 hash: `c3dc2e8eb2b23234f49b3b69e362273da7025672`
+- 时间/作者: 2026-07-03 / maxiao1
+- 自动分类: 通用实现调整
+- 主要文件: `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `ce2521017f` - docs: sync LMSYS SGLang blog cards
+
+- 完整 hash: `ce2521017fde170cc71e603f27d38048839114ba`
+- 时间/作者: 2026-07-03 / github-actions[bot]
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs_new/index.mdx`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs_new/index.mdx`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `84bd983bad` - ci: use local DCU reranker model
+
+- 完整 hash: `84bd983badb43fc5897565e49d0654c6382d55a8`
+- 时间/作者: 2026-07-02 / dingxl
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `dd26854396` - support w4a16 moe ep
+
+- 完整 hash: `dd268543965093016f4a4a1f75bf580ab8d21a66`
+- 时间/作者: 2026-07-02 / sunjf
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `fc2af93314` - Add open-source compliance baseline workflow
+
+- 完整 hash: `fc2af93314f2cadc8b017f13d0f078444004570a`
+- 时间/作者: 2026-07-02 / Lvjiajia
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/open-source-compliance-baseline.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/open-source-compliance-baseline.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `758a0a9890` - Add open-source compliance configuration file
+
+- 完整 hash: `758a0a989008dbebafa366c47c94d6d627118001`
+- 时间/作者: 2026-07-02 / Lvjiajia
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/open-source-compliance.json`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/open-source-compliance.json`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `6332704295` - ci: extend DCU stage-b per-file timeout
+
+- 完整 hash: `6332704295c7ed712a9bc0e32fb745976320d2dd`
+- 时间/作者: 2026-07-02 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `ef3571f7b0` - 解决CI报错问题
+
+- 完整 hash: `ef3571f7b02a65daa0e312c8bf7e28ce426ab451`
+- 时间/作者: 2026-07-01 / liucong8560
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/utils/cuda_ipc_transport_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/utils/cuda_ipc_transport_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `e6d4b3378c` - [Addition] deliver one validation doc
+
+- 完整 hash: `e6d4b3378c17c04174757e4610480a6eea892bec`
+- 时间/作者: 2026-07-01 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `998ffb809b` - fix(fst): reclaim reserved memory after fastsafetensors weight load
+
+- 完整 hash: `998ffb809bcd2bd04314710976f81ec3c78732dd`
+- 时间/作者: 2026-07-01 / lzb16
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/model_loader/loader.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/model_loader/loader.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `696cae936d` - fix(fst): use local device in fastsafetensors iterator for multi-node loading
+
+- 完整 hash: `696cae936d1d1b48af8ef798385abe2490f0f9cf`
+- 时间/作者: 2026-07-01 / lzb16
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/model_loader/weight_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/model_loader/weight_utils.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `2b1fbe1e6c` - [CI] fix pre-commit lint errors surfaced after merging v0.5.12_dev
+
+- 完整 hash: `2b1fbe1e6c3729a158bddedcc979c93060e5fc2d`
+- 时间/作者: 2026-07-01 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/environ.py`
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `35456bae31` - [CI] fix pre-commit lint errors on megamoe w8a8 changed files
+
+- 完整 hash: `35456bae3139361eebd66bd4ae2f66715be8c3ff`
+- 时间/作者: 2026-07-01 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `.codespellrc`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py`, `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `.codespellrc`; `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`; `python/sglang/srt/layers/quantization/fp8.py`; `python/sglang/srt/layers/quantization/w8a8_fp8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `af015c4ce4` - Update Trivy cache volume permissions
+
+- 完整 hash: `af015c4ce4c61eb2380fd61186e82e320317fe3a`
+- 时间/作者: 2026-07-01 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-baseline-scan.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-baseline-scan.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `72f0237175` - Remove credential keyword pattern from scan config
+
+- 完整 hash: `72f0237175ac03de56a9321f474eaf18a33b8426`
+- 时间/作者: 2026-07-01 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-baseline-scan.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-baseline-scan.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `20f106c6b4` - docs: sync LMSYS SGLang blog cards
+
+- 完整 hash: `20f106c6b4a5cd5a3099802f0c59efc97b80d6d8`
+- 时间/作者: 2026-07-01 / github-actions[bot]
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs_new/index.mdx`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs_new/index.mdx`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `41db24a843` - Enhance quality baseline scan with new checks
+
+- 完整 hash: `41db24a8438fd8d9c2bc9badc67c114015530adb`
+- 时间/作者: 2026-07-01 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-baseline-scan.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-baseline-scan.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `445eaafe5d` - [Perf] optimize aiter asm moe via shuffle weight
+
+- 完整 hash: `445eaafe5d4802491ad124c29afd02c3e8193102`
+- 时间/作者: 2026-06-30 / shiqiang
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `ff440b8971` - docs(dcu): record C04 runtime validation
+
+- 完整 hash: `ff440b8971fa8642e2221455e33796ec5a6a277e`
+- 时间/作者: 2026-06-30 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `3910b3f9db` - fix(scheduler): restore DCU empty-prefix location
+
+- 完整 hash: `3910b3f9dbf43298328d0b83d5d63006675a3f0c`
+- 时间/作者: 2026-06-30 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/managers/schedule_batch.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/managers/schedule_batch.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `f2d0e86d71` - fix(dsv4): repair DCU sgl-kernel and JIT build
+
+- 完整 hash: `f2d0e86d71b3242666d72f22fce42bea42b1667f`
+- 时间/作者: 2026-06-30 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`, `sgl-kernel/setup_hip.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/jit_kernel/include/sgl_kernel/tensor.h`; `sgl-kernel/setup_hip.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `bd10f999c3` - Fix formatting and improve quality gate script
+
+- 完整 hash: `bd10f999c3ef41fe7dbbbfa0b68ae014503da172`
+- 时间/作者: 2026-06-30 / Lvjiajia
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `412236292d` - Modify ruff command to use --no-cache
+
+- 完整 hash: `412236292d4da4ab0288d24491b2230d512294c8`
+- 时间/作者: 2026-06-30 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `ea182d81e3` - Update quality gate workflow with environment variables
+
+- 完整 hash: `ea182d81e3c554451fbb9ecbcfb5dc633dd6d0bf`
+- 时间/作者: 2026-06-30 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `c4d3532db8` - fix:dcu bypass triton normal_decode_set_metadata use normal_decode_set_metadata_lightop
+
+- 完整 hash: `c4d3532db8815368557797e091c53da7c9888359`
+- 时间/作者: 2026-06-09 / liuchy5
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `5245654dc1` - Fix: DCU bypass Triton get_last_loc and use native dcu_get_last_loc
+
+- 完整 hash: `5245654dc139406bd1105190a18cdc93ed001563`
+- 时间/作者: 2026-06-03 / liuchy5
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/mem_cache/common.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/mem_cache/common.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `4e3fd3a350` - HY3修改
+
+- 完整 hash: `4e3fd3a35032366580b1246b4e458fcc120adf70`
+- 时间/作者: 2026-06-03 / wujl5
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `bda910adb6` - feat(dcu): integrate LightOp alloc-extend kernel
+
+- 完整 hash: `bda910adb6cfb6b985cdc214c842afd859953cd7`
+- 时间/作者: 2026-06-30 / whlwhlwhl
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/mem_cache/allocator.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/mem_cache/allocator.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `f8b2eefcff` - feat(dsv4): generalize top-k index transformation
+
+- 完整 hash: `f8b2eefcff4f4cd163c16768ec2dca1f6aafce35`
+- 时间/作者: 2026-06-30 / whlwhlwhl
+- 自动分类: 通用实现调整
+- 主要文件: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `f2e257f7ab` - feat(dcu): route sqrtsoftplus gating through LightOp
+
+- 完整 hash: `f2e257f7abfa5bd37e261029f955eb7120c7c6f9`
+- 时间/作者: 2026-06-30 / whlwhlwhl
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/topk.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/topk.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `b76f31cce4` - Refactor quality-gate.yml with enhanced checks
+
+- 完整 hash: `b76f31cce40284ca8c448d387299cf2c6fc99cbc`
+- 时间/作者: 2026-06-30 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `93cf8edc41` - [Addition] deliver one validation doc
+
+- 完整 hash: `93cf8edc419d8235856302c0cff1dcca890cac13`
+- 时间/作者: 2026-06-30 / RyeYuan
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `d22548eb14` - feat(sgl-kernel): port l2norm kernel with tiled optimization for DCU
+
+- 完整 hash: `d22548eb140c3540dee73f7bd00e75e857e6d9b6`
+- 时间/作者: 2026-06-30 / yaoht
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/fla/l2norm.py`, `sgl-kernel/CMakeLists.txt`, `sgl-kernel/csrc/common_extension.cc`, `sgl-kernel/csrc/common_extension_rocm.cc`, `sgl-kernel/csrc/elementwise/l2norm_kernel.cu`, `sgl-kernel/include/sgl_kernel_ops.h`, `sgl-kernel/python/sgl_kernel/__init__.py`, `sgl-kernel/python/sgl_kernel/elementwise.py` 等 11 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/fla/l2norm.py`; `sgl-kernel/CMakeLists.txt`; `sgl-kernel/csrc/common_extension.cc`; `sgl-kernel/csrc/common_extension_rocm.cc`; `sgl-kernel/csrc/elementwise/l2norm_kernel.cu`; `sgl-kernel/include/sgl_kernel_ops.h`; `sgl-kernel/python/sgl_kernel/__init__.py`; `sgl-kernel/python/sgl_kernel/elementwise.py` 等 10 个文件
+  - tests: `sgl-kernel/tests/test_norm.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `c4cc0a73b6` - fix(dsv4): preserve DCU elementwise and topk paths
+
+- 完整 hash: `c4cc0a73b69ec48614c91ca8e586a29152fc171a`
+- 时间/作者: 2026-06-30 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/jit_kernel/dsv4/elementwise.py`, `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/jit_kernel/dsv4/elementwise.py`; `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `fa2430f455` - Organize DCU nightly workflow modules
+
+- 完整 hash: `fa2430f4554d65701a41200cba81ab29368b1604`
+- 时间/作者: 2026-06-29 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `01216a18f2` - Disable DCU remote weight loading nightly test
+
+- 完整 hash: `01216a18f2bf50b9f42d78f5661b3c0c79044e25`
+- 时间/作者: 2026-06-29 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `test/registered/distributed/test_load_weights_from_remote_instance.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/distributed/test_load_weights_from_remote_instance.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `06889adc04` - Disable DCU update weights from disk nightly test
+
+- 完整 hash: `06889adc0413bb9e15f0fcd28f83b650a9b6c7e1`
+- 时间/作者: 2026-06-29 / DCU CI Bot
+- 自动分类: 调度/缓存/PD
+- 主要文件: `test/registered/rl/test_update_weights_from_disk.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/rl/test_update_weights_from_disk.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `0553e12d0a` - 修复合并分支产生的bug
+
+- 完整 hash: `0553e12d0a592459eb81db9f4f2f6b5425aa0248`
+- 时间/作者: 2026-06-29 / yangyn
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `83294cba6e` - Add DCU nightly wheel release workflow with vendored-openssl support
+
+- 完整 hash: `83294cba6ebe071951ef82c4abb02d7ebc01b18b`
+- 时间/作者: 2026-06-29 / zhangyh15
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/release-pypi-nightly-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pypi-nightly-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `395171de08` - test: fix DCU MMMU local dataset selection
+
+- 完整 hash: `395171de0880feabf43d13534e12dec97effe9c3`
+- 时间/作者: 2026-06-29 / LvJIA-RG
+- 自动分类: 缺陷修复
+- 主要文件: `test/registered/dcu/accuracy/bw1100/test_mmmu_eval_dcu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/dcu/accuracy/bw1100/test_mmmu_eval_dcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `f40a12fb51` - 修改IPC逻辑，每个rank下都开辟内存池，解决rank0偶发变慢的问题
+
+- 完整 hash: `f40a12fb51df3af315e771bb1fa325a55a32c5f6`
+- 时间/作者: 2026-06-28 / liucong
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/multimodal/processors/base_processor.py`, `python/sglang/srt/utils/cuda_ipc_transport_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/multimodal/processors/base_processor.py`
+  - runtime-perf: `python/sglang/srt/utils/cuda_ipc_transport_utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `a2076d9aa7` - test: use local DCU eval datasets
+
+- 完整 hash: `a2076d9aa7d8a2d3bbee58abe3a5384019f19431`
+- 时间/作者: 2026-06-26 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `python/sglang/test/dcu_cookbook_utils.py`, `python/sglang/test/run_eval.py`, `python/sglang/test/simple_eval_mmlu.py`, `python/sglang/test/simple_eval_mmmu_vlm.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `python/sglang/test/dcu_cookbook_utils.py`; `python/sglang/test/run_eval.py`; `python/sglang/test/simple_eval_mmlu.py`; `python/sglang/test/simple_eval_mmmu_vlm.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `00febcba4a` - ci: reuse PR-staged DCU nightly wheels
+
+- 完整 hash: `00febcba4a6ca14ac932e04bf69c731361678ef4`
+- 时间/作者: 2026-06-26 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `21dfaaa4c2` - Update dcu-manual-model-test.yml
+
+- 完整 hash: `21dfaaa4c2cd4502f61947eb7e7034d8405eae3b`
+- 时间/作者: 2026-06-26 / Lyt
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/dcu-manual-model-test.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-manual-model-test.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `8aa4b6eb52` - Update dcu-manual-model-test.yml
+
+- 完整 hash: `8aa4b6eb52d57e32cfbc87654e1a9eb0d9bb2439`
+- 时间/作者: 2026-06-26 / Lyt
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/dcu-manual-model-test.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-manual-model-test.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `7d807cb225` - Update dcu-manual-model-test.yml
+
+- 完整 hash: `7d807cb225ce6aa1c2ef03e9c2f8b781472bb1fc`
+- 时间/作者: 2026-06-26 / Lyt
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/dcu-manual-model-test.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-manual-model-test.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `0c4fe5ebe9` - ci: align DCU full wheel wait with PR staging
+
+- 完整 hash: `0c4fe5ebe956e24bf4efc519d69d771aef56d1a2`
+- 时间/作者: 2026-06-26 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `20eb46a704` - Update dcu-manual-model-test.yml
+
+- 完整 hash: `20eb46a70447944065b1b0fe2e307c1fcee8e87a`
+- 时间/作者: 2026-06-26 / Lyt
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/dcu-manual-model-test.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-manual-model-test.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `db4759e78c` - Update dcu-manual-model-test.yml
+
+- 完整 hash: `db4759e78c9a88fd823218263e167446797216b1`
+- 时间/作者: 2026-06-26 / Lyt
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/dcu-manual-model-test.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-manual-model-test.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `2f2abec114` - ci: cover new DCU nightly suites in full enabled
+
+- 完整 hash: `2f2abec1140d55d9dd0dbe8235dff01789093dc5`
+- 时间/作者: 2026-06-26 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `ca7c7c54fc` - Update dcu-manual-model-test.yml
+
+- 完整 hash: `ca7c7c54fc42df8e3660ad135ce91b203d2a57d3`
+- 时间/作者: 2026-06-26 / Lyt
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/dcu-manual-model-test.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-manual-model-test.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `c7a4903ad8` - Update dcu-manual-model-test.yml
+
+- 完整 hash: `c7a4903ad808f942549ca8c6ab9d11cf6554ef40`
+- 时间/作者: 2026-06-25 / Lyt
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/dcu-manual-model-test.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-manual-model-test.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `9abb848dba` - [Feat] support megamoe in the path of SGLANG_DCU_MEGA_MOE_RUNTIME=megamoe, and temporarily deepgeem path is still remained as backup
+
+- 完整 hash: `9abb848dba3e86f2ee9867dc5b3f5601d61b00a3`
+- 时间/作者: 2026-06-25 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py`, `python/sglang/srt/model_executor/cuda_graph_runner.py`, `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/environ.py`
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`; `python/sglang/srt/layers/quantization/fp8.py`; `python/sglang/srt/layers/quantization/w8a8_fp8.py`; `python/sglang/srt/model_executor/cuda_graph_runner.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `3dd1376ff3` - docs: fix DCU README trailing whitespace
+
+- 完整 hash: `3dd1376ff350e22b2b65e13bc4fc4a1f557c5db4`
+- 时间/作者: 2026-06-25 / liyt6
+- 自动分类: 缺陷修复
+- 主要文件: `README_DCU.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `README_DCU.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `d1ea0b3aa2` - ci: support configurable manual DCU model validation
+
+- 完整 hash: `d1ea0b3aa24931f21ec8d9c13d08bf97b229c120`
+- 时间/作者: 2026-06-25 / liyt6
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/dcu-manual-model-test.yml`, `README_DCU.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-manual-model-test.yml`
+  - other: `README_DCU.md`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `be7d10f53c` - ci: add manual DCU unattended model test workflow
+
+- 完整 hash: `be7d10f53c6aa621b9835e1e4787e37e87573e5d`
+- 时间/作者: 2026-06-23 / liyt6
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/dcu-manual-model-test.yml`, `README_DCU.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-manual-model-test.yml`
+  - other: `README_DCU.md`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `cae6c44969` - [FEAT] implement the initial changes about w8a8 megamoe for DCU
+
+- 完整 hash: `cae6c449697d4416ca24c08abfaa14984ad589c1`
+- 时间/作者: 2026-06-18 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py`, `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/mega_moe.py`; `python/sglang/srt/layers/quantization/fp8.py`; `python/sglang/srt/layers/quantization/w8a8_fp8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `4a08e1934a` - test: add DCU nightly 1 and 2 GPU suites
+
+- 完整 hash: `4a08e1934a12cf3ae6147b8db069517e68e641d5`
+- 时间/作者: 2026-06-25 / tianlinyang77
+- 自动分类: 性能/后端优化
+- 主要文件: `test/registered/core/test_mm_process_config.py`, `test/registered/distributed/test_data_parallelism.py`, `test/registered/distributed/test_load_weights_from_remote_instance.py`, `test/registered/distributed/test_parallel_state.py`, `test/registered/perf/test_bench_one_batch_2gpu.py`, `test/registered/perf/test_bench_serving_2gpu.py`, `test/registered/rl/test_update_weights_from_disk.py`, `test/registered/rl/test_update_weights_from_distributed.py` 等 19 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/core/test_mm_process_config.py`; `test/registered/distributed/test_data_parallelism.py`; `test/registered/distributed/test_load_weights_from_remote_instance.py`; `test/registered/distributed/test_parallel_state.py`; `test/registered/perf/test_bench_one_batch_2gpu.py`; `test/registered/perf/test_bench_serving_2gpu.py`; `test/registered/rl/test_update_weights_from_disk.py`; `test/registered/rl/test_update_weights_from_distributed.py` 等 19 个文件
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `85cd7901c6` - test: keep verified DCU smoke and accuracy cases only
+
+- 完整 hash: `85cd7901c6998f48a8133ba5ab541df6765947a0`
+- 时间/作者: 2026-06-25 / LvJIA-RG
+- 自动分类: 性能/后端优化
+- 主要文件: `test/registered/dcu/backends/test_torch_compile_smoke_dcu.py`, `test/registered/dcu/core/test_deterministic_fa3_dcu.py`, `test/registered/dcu/hicache/test_hicache_storage_file_backend_dcu.py`, `test/registered/dcu/quant/test_torchao_smoke_dcu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/dcu/backends/test_torch_compile_smoke_dcu.py`; `test/registered/dcu/core/test_deterministic_fa3_dcu.py`; `test/registered/dcu/hicache/test_hicache_storage_file_backend_dcu.py`; `test/registered/dcu/quant/test_torchao_smoke_dcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `523756bde5` - [docs(dcu)] log C01/C02 conflict ledger update
+
+- 完整 hash: `523756bde5ea9d48e02c5b80378f4432416deda5`
+- 时间/作者: 2026-06-24 / RyeYuan
+- 自动分类: 调度/缓存/PD
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `88ba08ad2b` - fix expert_location_dispatch_info is not define
+
+- 完整 hash: `88ba08ad2be1ff654a8a7b66e81328c84ae881f4`
+- 时间/作者: 2026-06-24 / shiqiang
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/topk.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/topk.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `595f87c93e` - Restore push trigger and CIUpload devpi upload
+
+- 完整 hash: `595f87c93e27e80331efe7cec869fd4a0fabe3d1`
+- 时间/作者: 2026-06-24 / zhangyh15
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-pypi-nightly-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pypi-nightly-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f4716f8ec5` - Add DCU nightly wheel release workflow
+
+- 完整 hash: `f4716f8ec58d9f8176d240206c859c13544ed8db`
+- 时间/作者: 2026-06-24 / zhangyh15
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/release-pypi-nightly-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pypi-nightly-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `00ce3e6d95` - ci: stage DCU PR wheels locally
+
+- 完整 hash: `00ce3e6d9540042a5eda9614cb9a1878562eed96`
+- 时间/作者: 2026-06-24 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`, `.github/workflows/release-pr-dcu.yml`, `scripts/ci/dcu/dcu_ci_install_dependency.sh`, `scripts/ci/dcu/dcu_ci_start_container.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`; `.github/workflows/release-pr-dcu.yml`
+  - other: `scripts/ci/dcu/dcu_ci_install_dependency.sh`; `scripts/ci/dcu/dcu_ci_start_container.sh`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `599b7490f1` - bugfix: fix topk vmfault issue
+
+- 完整 hash: `599b7490f1cbbee50a235a7eba71a553c32c39bb`
+- 时间/作者: 2026-06-23 / Alone-wl
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/dsv4/indexer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `9304b9e1da` - ci: build DCU gateway wheel by default
+
+- 完整 hash: `9304b9e1dae08a36f9955068d91f44edc23af790`
+- 时间/作者: 2026-06-23 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-pypi-nightly-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pypi-nightly-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `de24697cb8` - ci: disable PR trigger for DCU nightly workflow
+
+- 完整 hash: `de24697cb863a43d1e67f34881f1f2612140b99d`
+- 时间/作者: 2026-06-23 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/nightly-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `9ed791e147` - ci: run PR helper workflows on private runner
+
+- 完整 hash: `9ed791e1479bfc5e2ad863377d7fecd323aa2cee`
+- 时间/作者: 2026-06-23 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/labeler.yml`, `.github/workflows/pr-states.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/labeler.yml`; `.github/workflows/pr-states.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `ca95a26da7` - ci: add DCU nightly workflow with wheel build
+
+- 完整 hash: `ca95a26da7647d8fbdd9bd8e4bfd4d2142a38058`
+- 时间/作者: 2026-06-23 / DCU CI Bot
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/nightly-test-dcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/nightly-test-dcu.yml`; `.github/workflows/release-pypi-nightly-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `4b8a743d31` - ci: add wheel mode to DCU full enabled
+
+- 完整 hash: `4b8a743d31671ca082c135564b670dffe23f2283`
+- 时间/作者: 2026-06-23 / DCU CI Bot
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `fdd9f8ecf3` - [BUG FIX] fix SWA mem pool issue causing accept length decrease
+
+- 完整 hash: `fdd9f8ecf39798d242670205ff0a3f5d4952958d`
+- 时间/作者: 2026-06-22 / shiqiang
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/mem_cache/swa_memory_pool.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/mem_cache/swa_memory_pool.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `0536e102c2` - [SGlang Open] Created an internal main branch from v0.5.12_dev-d4c6831a107a and some docs
+
+- 完整 hash: `0536e102c270bd3658566dfa3a070d0a0af3f55c`
+- 时间/作者: 2026-06-22 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md`, `scripts/code_sync/dcu_main_migration.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`; `docs/internal/dcu-main-migration-plan.md`
+  - other: `scripts/code_sync/dcu_main_migration.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `5d83cfe857` - [SGlang Open] Created an internal main branch from v0.5.12_dev-d4c6831a107a and some docs
+
+- 完整 hash: `5d83cfe85774d2fd941e68dd6c3f98680e872704`
+- 时间/作者: 2026-06-22 / RyeYuan
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md`, `scripts/code_sync/dcu_main_migration.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`; `docs/internal/dcu-main-migration-plan.md`
+  - other: `scripts/code_sync/dcu_main_migration.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `0fc338999b` - 修复dpsk r1 fp8启动时的报错问题
+
+- 完整 hash: `0fc338999b429229900b78d29d0ac75f094d2b2a`
+- 时间/作者: 2026-06-22 / lipenghui
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/moe/topk.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/layers/moe/topk.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `87aa66f4fb` - [BugFix] workaround fix of aiter custom allreduce in cuda-graph, would revert it after driver fix it
+
+- 完整 hash: `87aa66f4fbec076b1ef56ed3b948fe27c805903a`
+- 时间/作者: 2026-06-18 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `37a67648ff` - Update Trivy scan configuration in workflow
+
+- 完整 hash: `37a67648ff1d045ba5a35f911c2ae839515587d0`
+- 时间/作者: 2026-06-18 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-baseline-scan.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-baseline-scan.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e80c0644ac` - Update Trivy and Semgrep commands in workflow
+
+- 完整 hash: `e80c0644ac197210ce4b582d64f1cdcb747505de`
+- 时间/作者: 2026-06-18 / Lvjiajia
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-baseline-scan.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-baseline-scan.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `fa22ad5aeb` - Add options for encoding, dependencies, and SAST scans
+
+- 完整 hash: `fa22ad5aebdfb803f5152f14dd756ceb0c726f0c`
+- 时间/作者: 2026-06-18 / Lvjiajia
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/quality-baseline-scan.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-baseline-scan.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `983e644d4c` - fix: avoid redundant calls to forward_aiter and fp8 groupgemm kernels
+
+- 完整 hash: `983e644d4cc13ad3d4e91d65983109155a88ea23`
+- 时间/作者: 2026-06-17 / caihl
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `82a5c469c6` - fix issues of w13_weight using
+
+- 完整 hash: `82a5c469c6658de6f5822bb7548f2bd2d2866f39`
+- 时间/作者: 2026-06-12 / caihl
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `c0206c7c4a` - Release original layer.weight after deepgemm_weights conversion to avoid OOM
+
+- 完整 hash: `c0206c7c4aa232af5fa6e47708a5656836ecab85`
+- 时间/作者: 2026-06-11 / caihl
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `b3a4160a32` - 修复dpskv4-flash在pd分离下mtp精度问题
+
+- 完整 hash: `b3a4160a32f126885e5ab88969aa4ee08efe9db1`
+- 时间/作者: 2026-06-11 / maxiao1
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/managers/overlap_utils.py`, `python/sglang/srt/managers/scheduler.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/managers/overlap_utils.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `64fe76840f` - [FEAT] remove vllm allreduce and dead import related
+
+- 完整 hash: `64fe76840fa923875389027ae0515c86735def57`
+- 时间/作者: 2026-06-18 / RyeYuan
+- 自动分类: 通用实现调整
+- 主要文件: `README_DCU.md`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce_ops.py`, `python/sglang/srt/distributed/parallel_state.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `README_DCU.md`
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/distributed/device_communicators/custom_all_reduce_ops.py`; `python/sglang/srt/distributed/parallel_state.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `38299f5fbc` - 修复崩溃bug
+
+- 完整 hash: `38299f5fbcfa4bdc194ca577fd85f1b17c9967b0`
+- 时间/作者: 2026-06-18 / yangyn1
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/kernels.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/kernels.py`; `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `914d50fab3` - Create quality-baseline-scan.yml
+
+- 完整 hash: `914d50fab3bc92138384b42b9f37bec5513a9c7d`
+- 时间/作者: 2026-06-18 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-baseline-scan.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-baseline-scan.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `de2840d1d6` - 更新get_scheme函数为get_linear_scheme
+
+- 完整 hash: `de2840d1d65bffd1d5f8297692d3b7cbf075c9ce`
+- 时间/作者: 2026-06-16 / lipenghui
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `bb70a2268f` - [Perf] Add packed paged KV varlen attention path
+
+- 完整 hash: `bb70a2268faa88b431ac5ec613573ab4c14e1bec`
+- 时间/作者: 2026-06-16 / yangyn1
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/pack_paged_kv_to_varlen.py`, `python/sglang/srt/server_args.py`, `test/registered/attention/bench_pack_paged_kv_to_varlen.py`, `test/registered/attention/pack_paged_kv_to_varlen_benchmark_results.md`, `test/registered/attention/test_pack_paged_kv_to_varlen.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/pack_paged_kv_to_varlen.py`
+  - tests: `test/registered/attention/bench_pack_paged_kv_to_varlen.py`; `test/registered/attention/pack_paged_kv_to_varlen_benchmark_results.md`; `test/registered/attention/test_pack_paged_kv_to_varlen.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `224e5449fb` - [Bug Fix] fix swa mem pool duoble release
+
+- 完整 hash: `224e5449fb20200f67b0744e16bce76ca0743f5d`
+- 时间/作者: 2026-06-16 / shiqiang
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/mem_cache/swa_memory_pool.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/mem_cache/swa_memory_pool.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `bd52e179c6` - fix: 修复EP bug
+
+- 完整 hash: `bd52e179c66e1184418d2b6e53fca3034139b273`
+- 时间/作者: 2026-06-16 / yangyn1
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`; `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `fb0a689006` - Rename lint job to lint-dcu to avoid name collision with lint.yml
+
+- 完整 hash: `fb0a689006cd2bf2a51a499688e8a6cb65b78726`
+- 时间/作者: 2026-06-15 / zhangyh15
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/lint-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/lint-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `bb5f2fc8af` - ci: wait for DCU wheels on release workflow changes
+
+- 完整 hash: `bb5f2fc8af48dafb2ef8370abe69da5ed4b60f1d`
+- 时间/作者: 2026-06-15 / tianly
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `548f9aa203` - ci: skip GitHub artifact upload for DCU PR wheels
+
+- 完整 hash: `548f9aa203029f946a26249061bde5ab258fb3d5`
+- 时间/作者: 2026-06-15 / tianly
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-pr-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pr-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `63747e66f9` - [BugFix] sync to support the more args 'topk_weights' in deep_ep dispatch
+
+- 完整 hash: `63747e66f945d0d7dbd6df26213b79b40d35d0d2`
+- 时间/作者: 2026-06-15 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `bc649e255e` - [BUG FIX] fix swa fa accuracy because of page_table error
+
+- 完整 hash: `bc649e255ebbe9428969d8174f86d1c3e7d9aac9`
+- 时间/作者: 2026-06-15 / shiqiang
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `9da8b1176d` - [Feat] support unified fa without layout trans
+
+- 完整 hash: `9da8b1176dcdad34ef5b1d2754fa011d29197861`
+- 时间/作者: 2026-06-15 / shiqiang
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `0cdbfd7b06` - Add lint-dcu.yml for DCU self-hosted runner, restore original lint.yml
+
+- 完整 hash: `0cdbfd7b06acaecc593ee811f09e05b97e100edf`
+- 时间/作者: 2026-06-15 / zhangyh15
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/lint-dcu.yml`, `.github/workflows/release-pypi-nightky-dcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/lint-dcu.yml`; `.github/workflows/release-pypi-nightky-dcu.yml`; `.github/workflows/release-pypi-nightly-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `06331bc257` - Refactor quality gate workflow for changed files check
+
+- 完整 hash: `06331bc2577f3b7123d7da208ad4c2a7a78b352b`
+- 时间/作者: 2026-06-14 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `84cc64ecda` - Create quality-gate.yml
+
+- 完整 hash: `84cc64ecda472cb1b7b245c467373c08cef3fa0f`
+- 时间/作者: 2026-06-14 / Lvjiajia
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `083e22033e` - ci: auto-run DCU gate for impact paths
+
+- 完整 hash: `083e22033e97a069394a80958807e3822e2d1fe0`
+- 时间/作者: 2026-06-14 / tianly
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`, `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+  - runtime-model: `python/sglang/srt/server_args.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `f9f0cb23d1` - ci: auto-run DCU gate for DCU-owned changes
+
+- 完整 hash: `f9f0cb23d12197b17362b909629ef60ac4d95e7a`
+- 时间/作者: 2026-06-13 / tianly
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`, `python/sglang/test/dcu_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+  - tests: `python/sglang/test/dcu_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `12a30ab42f` - ci: stabilize DCU PR test workflow
+
+- 完整 hash: `12a30ab42f56cd8ccffc60c41b671c821d4478d6`
+- 时间/作者: 2026-06-13 / dddddddxl
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`, `.github/workflows/release-pr-dcu.yml`, `.github/workflows/release-pypi-nightky-dcu.yml`, `.github/workflows/release-whl-dcu.yml`, `scripts/ci/dcu/dcu_ci_cleanup_container.sh`, `test/registered/dcu/core/bw1100/test_hidden_states_dcu.py`, `test/registered/dcu/srt/bw1100/test_qwen25_0p5b_server_dcu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/pr-test-dcu.yml`; `.github/workflows/release-pr-dcu.yml`; `.github/workflows/release-pypi-nightky-dcu.yml`; `.github/workflows/release-whl-dcu.yml`
+  - other: `scripts/ci/dcu/dcu_ci_cleanup_container.sh`
+  - tests: `test/registered/dcu/core/bw1100/test_hidden_states_dcu.py`; `test/registered/dcu/srt/bw1100/test_qwen25_0p5b_server_dcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `637377248a` - ci: install DCU wheel artifacts without dependencies
+
+- 完整 hash: `637377248afc115a8db0aa52353d0ab3abdb0ed3`
+- 时间/作者: 2026-06-11 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `scripts/ci/dcu/dcu_ci_install_dependency.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/dcu_ci_install_dependency.sh`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `eda451b27c` - ci: pin DCU Engine tests to fa3 backend
+
+- 完整 hash: `eda451b27ca90501217cdb21f9fa6e66198e888c`
+- 时间/作者: 2026-06-11 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `test/registered/dcu/core/bw1100/test_hidden_states_dcu.py`, `test/registered/dcu/sampling/bw1100/test_original_logprobs_dcu.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/dcu/core/bw1100/test_hidden_states_dcu.py`; `test/registered/dcu/sampling/bw1100/test_original_logprobs_dcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `033bc6b92e` - 重构aiter的重排逻辑 添加aiter log打印信息
+
+- 完整 hash: `033bc6b92e7a115ca429bfc5fcfaed11b3d4288b`
+- 时间/作者: 2026-06-11 / yangyn1
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/moe/moe_runner/runner.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py`, `python/sglang/srt/layers/quantization/w8a8_int8.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/aiter.py`; `python/sglang/srt/layers/moe/moe_runner/runner.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`; `python/sglang/srt/layers/quantization/w8a8_fp8.py`; `python/sglang/srt/layers/quantization/w8a8_int8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `52b5b9623c` - ci: isolate DCU wheel wait checkout workspace
+
+- 完整 hash: `52b5b9623ced8949d028cd0d89a8cf2c7f68dd1a`
+- 时间/作者: 2026-06-11 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `92a8ba840a` - [FEAT] cherry-pick and refactor from a0bcfe90, support moe triton backend and fix the acc issue in moe aiter backend
+
+- 完整 hash: `92a8ba840a3f3dee451b8d0a9317843fcb5415c3`
+- 时间/作者: 2026-06-11 / RyeYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/__init__.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8_moe.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/__init__.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8_moe.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `f71c2ef804` - [BugFix] fix the buffer shape unalgined issues of draft model warmup and decode forward in PD phase
+
+- 完整 hash: `f71c2ef804e794660732cc4a8c93a2f0aac71172`
+- 时间/作者: 2026-06-08 / RyeYuan
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/managers/overlap_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/managers/overlap_utils.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `c066cf42f7` - ci: add pull-requests:read permission to release-whl-dcu for PR file listing
+
+- 完整 hash: `c066cf42f70f922491713725c5b693890cc74f5d`
+- 时间/作者: 2026-06-10 / tianlinyang77
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/release-whl-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-whl-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `6b0e35b3fe` - ci: prefer python3.9 for verify_dcu_registration on self-hosted runner
+
+- 完整 hash: `6b0e35b3fe5b9bb3b6f88bd133185487b70ec51c`
+- 时间/作者: 2026-06-10 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `cbf9c1ce4d` - ci: use self-hosted runner for pr-gate to avoid billing block
+
+- 完整 hash: `cbf9c1ce4ddac5c2f52d22437dc7c8eae211f06c`
+- 时间/作者: 2026-06-10 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-gate.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `adaf77ef92` - ci: always prefer self-hosted runner for pre-jobs to avoid billing block
+
+- 完整 hash: `adaf77ef92bf4d5dd8b86e3c7cae6443985a2b37`
+- 时间/作者: 2026-06-10 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e6e05f3229` - ci: test auto-trigger push flow (no-op comment)
+
+- 完整 hash: `e6e05f32295f43a3ad0c4954cd9372cbec059176`
+- 时间/作者: 2026-06-10 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `test/registered/dcu/interface/test_dcu_smoke.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/dcu/interface/test_dcu_smoke.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `a6c6527cd9` - fix: pass DCU_CI_USE_INSTALLED_WHEELS into docker container for wheel mode skip
+
+- 完整 hash: `a6c6527cd92e6a15ca8d762d8697b48f7c4dd731`
+- 时间/作者: 2026-06-09 / tianlinyang77
+- 自动分类: 缺陷修复
+- 主要文件: `scripts/ci/dcu/dcu_ci_exec.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/dcu_ci_exec.sh`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `e03bc0cf83` - fix: skip PYTHONPATH assertion in wheel mode for stage-b test
+
+- 完整 hash: `e03bc0cf83ca3f20b88e0d73bf431f4cee49e3b3`
+- 时间/作者: 2026-06-09 / tianlinyang77
+- 自动分类: 缺陷修复
+- 主要文件: `test/registered/dcu/interface/test_dcu_stage_b_flow_0.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/dcu/interface/test_dcu_stage_b_flow_0.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `6d25108aca` - aiter适配moe_w8a8_fp8
+
+- 完整 hash: `6d25108aca7225340084336f500ae19bd787dcfb`
+- 时间/作者: 2026-06-09 / yangyn1
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/aiter.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`; `python/sglang/srt/layers/quantization/w8a8_fp8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `0f1ea33035` - ci: add DCU wheel sync path for PR tests
+
+- 完整 hash: `0f1ea330354b8b113e7a7c6d81cbb3553a3ad7f0`
+- 时间/作者: 2026-06-09 / dddddddxl
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/pr-test-dcu.yml`, `.github/workflows/release-whl-dcu.yml`, `scripts/ci/dcu/dcu_ci_exec.sh`, `scripts/ci/dcu/dcu_ci_install_dependency.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`; `.github/workflows/release-whl-dcu.yml`
+  - other: `scripts/ci/dcu/dcu_ci_exec.sh`; `scripts/ci/dcu/dcu_ci_install_dependency.sh`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `1e1d77a76c` - 解决aiter显存溢出问题
+
+- 完整 hash: `1e1d77a76cdaf1b3cb3ed1a3d7cb9f39b8e2d14d`
+- 时间/作者: 2026-06-08 / yangyn1
+- 自动分类: 性能/后端优化
+- 主要文件: `.gitignore`, `python/sglang/srt/layers/moe/moe_runner/aiter.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `.gitignore`
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/aiter.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `51abece956` - ci: remove DCU CSV coverage analyzer
+
+- 完整 hash: `51abece95689f934afa3b03791dd39e43c8b0c3d`
+- 时间/作者: 2026-06-05 / dddddddxl
+- 自动分类: 测试/文档/基准
+- 主要文件: `scripts/ci/dcu/analyze_dcu_csv_coverage.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/analyze_dcu_csv_coverage.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `d6a2b719af` - ci: map DCU priority metrics model path
+
+- 完整 hash: `d6a2b719af5d05d0a740e2fa37d855bd9955883b`
+- 时间/作者: 2026-06-05 / tly123
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `scripts/ci/dcu/dcu_ci_exec.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/dcu_ci_exec.sh`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `823bd922ff` - ci: isolate DCU dispatch checkout workspace
+
+- 完整 hash: `823bd922ffcc1f23c0e6bbf6cacec88ea7016f9f`
+- 时间/作者: 2026-06-05 / tly123
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `d8f350eedf` - ci: avoid dispatch checkout permission issues
+
+- 完整 hash: `d8f350eedf5fa9080cb1a6c37595c2bf2952693c`
+- 时间/作者: 2026-06-05 / tly123
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `b95046afa0` - ci: guard DCU dispatch checkout workspace
+
+- 完整 hash: `b95046afa07119ee257b0250d462021e08b43c10`
+- 时间/作者: 2026-06-05 / tly123
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `7694afa394` - ci: refine DCU suite classification
+
+- 完整 hash: `7694afa394b008be12bdea06ba376b28c9b3a500`
+- 时间/作者: 2026-06-05 / tly123
+- 自动分类: 性能/后端优化
+- 主要文件: `test/registered/dcu/kernels/test_sgl_kernel_smoke_dcu.py`, `test/registered/dcu/kernels/test_sgl_kernel_supported_dcu.py`, `test/registered/language/test_srt_backend.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/dcu/kernels/test_sgl_kernel_smoke_dcu.py`; `test/registered/dcu/kernels/test_sgl_kernel_supported_dcu.py`; `test/registered/language/test_srt_backend.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `cf7567773a` - ci: map DCU Qwen2.5 0.5B model path
+
+- 完整 hash: `cf7567773afa61a9c0c78503f0642ff4a56e690e`
+- 时间/作者: 2026-06-04 / tly123
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `scripts/ci/dcu/dcu_ci_exec.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/dcu_ci_exec.sh`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `42ffb433b0` - ci: avoid ROCR device remap in DCU runner
+
+- 完整 hash: `42ffb433b03bb5b59c19aab8c53ff6b132b8ac44`
+- 时间/作者: 2026-06-04 / tly123
+- 自动分类: 测试/文档/基准
+- 主要文件: `scripts/ci/dcu/dcu_ci_exec.sh`, `scripts/ci/dcu/dcu_ci_start_container.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/dcu_ci_exec.sh`; `scripts/ci/dcu/dcu_ci_start_container.sh`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `cad9d0c351` - docs: add Apache license notices for DCU SGLang
+
+- 完整 hash: `cad9d0c3519440015ecbc8df277e7cfa569eb608`
+- 时间/作者: 2026-06-04 / Lv Jiajia
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `README.md`, `README_DCU.md`, `THIRD_PARTY_NOTICES.md`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `README.md`; `README_DCU.md`; `THIRD_PARTY_NOTICES.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `22e57a7b30` - ci: verify DCU full registration in container
+
+- 完整 hash: `22e57a7b30d61d7d8686d3320629586fa47f013d`
+- 时间/作者: 2026-06-04 / dddddddxl
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `598f2d61f0` - ci: use local DCU model env defaults
+
+- 完整 hash: `598f2d61f0dc9278269ebd86c4bbb053acbe2a2e`
+- 时间/作者: 2026-06-04 / tianlinyang77
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/dcu_ci_exec.sh`
+  - tests: `python/sglang/test/test_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `099123603b` - ci: run DCU full workflow on self-hosted runner
+
+- 完整 hash: `099123603bbfe879aa7bbef73bf856759ed5c350`
+- 时间/作者: 2026-06-04 / dddddddxl
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `46efb284a6` - ci: update dcu-full-enanled.yml
+
+- 完整 hash: `46efb284a65ce0b22f26595df567ca2a44ce3083`
+- 时间/作者: 2026-06-04 / dddddddxl
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `29b6895740` - ci: update DCU test registration state
+
+- 完整 hash: `29b6895740a23ffad119c99f435264a37be5cdcd`
+- 时间/作者: 2026-06-04 / dddddddxl
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/pr-test-dcu.yml`, `test/registered/metrics/test_metrics.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+  - tests: `test/registered/metrics/test_metrics.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `113d67786f` - Update chunk_delta_h.py
+
+- 完整 hash: `113d67786f3306a5f51446e95706eab930657b65`
+- 时间/作者: 2026-06-04 / yangyn
+- 自动分类: 调度/缓存/PD
+- 主要文件: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `27ea559793` - 更新tilelang版本到0.1.9
+
+- 完整 hash: `27ea5597933d24761e93d2933ecb7c0a9bda5c41`
+- 时间/作者: 2026-06-04 / zhangyh15
+- 自动分类: 通用实现调整
+- 主要文件: `python/pyproject.toml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/pyproject.toml`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `9022f2c340` - [FIX] Initialize swa_v_head_dim in TritonAttnBackend and cleanup unused import
+
+- 完整 hash: `9022f2c340512cd3849de45e6e2a8b239091c2ac`
+- 时间/作者: 2026-06-03 / shiqiang
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/attention/triton_backend.py`, `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/triton_backend.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `48d234263c` - ci: pin DCU CI compatibility packages
+
+- 完整 hash: `48d234263cb57f7cdea6320d66da363927a54414`
+- 时间/作者: 2026-06-03 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `scripts/ci/dcu/dcu_ci_install_dependency.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/dcu_ci_install_dependency.sh`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `c190162be1` - ci: clean DCU dispatch validation workspace
+
+- 完整 hash: `c190162be18ef542d8c94f68604313b8b56764f9`
+- 时间/作者: 2026-06-03 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `494b4246f0` - ci: allow DCU dispatch control jobs on runner
+
+- 完整 hash: `494b4246f0f65f05e03586477d45dffd715c437a`
+- 时间/作者: 2026-06-03 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `43375feaf7` - ci: stabilize DCU PR required tests
+
+- 完整 hash: `43375feaf7699d3338e23ec0dff1eaabdf112c5c`
+- 时间/作者: 2026-06-03 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`, `python/sglang/__init__.py`, `python/sglang/lang/api.py`, `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+  - other: `python/sglang/__init__.py`; `python/sglang/lang/api.py`; `scripts/ci/dcu/dcu_ci_exec.sh`
+  - tests: `python/sglang/test/test_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `fba9d715f2` - 修复decode_metadata算子，import不起来的问题
+
+- 完整 hash: `fba9d715f2f8699f55061331c690bc6a4beed4fb`
+- 时间/作者: 2026-06-03 / liucong8560
+- 自动分类: 性能/后端优化
+- 主要文件: `sgl-kernel/python/sgl_kernel/__init__.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `sgl-kernel/python/sgl_kernel/__init__.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `d6baa08091` - Add DCU wheel release workflow with CIUpload repair and devpi upload
+
+- 完整 hash: `d6baa08091544a0cb968f4df9b4be568adcdd6db`
+- 时间/作者: 2026-06-03 / zhangyh15
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/release-pypi-nightky-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/release-pypi-nightky-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f13630b2e2` - fix 修复chunk_delta_h调用报错问题
+
+- 完整 hash: `f13630b2e29c289e228995a6b3ad1a9be6b5e00d`
+- 时间/作者: 2026-06-03 / yangyn1
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `7b86e4afd8` - 修改aiter prefill阶段的fla算子传参
+
+- 完整 hash: `7b86e4afd8645e2df9212db8564c84a9d5e70032`
+- 时间/作者: 2026-06-03 / liucong
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`, `python/sglang/srt/layers/attention/fla/chunk_o.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`; `python/sglang/srt/layers/attention/fla/chunk_o.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `a04b5628ec` - 支持triton版本flash_attn算子，方便排查PA精度问题
+
+- 完整 hash: `a04b5628ec2b6126c9e89b1f6a30fa07409b5919`
+- 时间/作者: 2026-06-02 / liucong8560
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/attention/triton_vllm_flash_attn.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/layers/attention/triton_vllm_flash_attn.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `32d9bb7ae2` - 修复fused_sigmoid_gating_delta_rule_update冲突问题
+
+- 完整 hash: `32d9bb7ae2686cfadc700e30ee6f8f3daad831c1`
+- 时间/作者: 2026-06-01 / liucong8560
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `f7022899e5` - 增加decode_metadata sgl-kernel实现
+
+- 完整 hash: `f7022899e5f048530be313a173b870f00b9fc73b`
+- 时间/作者: 2026-05-30 / liucong8560
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_backend.py`, `sgl-kernel/CMakeLists.txt`, `sgl-kernel/csrc/attention/decode_metadata.cu`, `sgl-kernel/csrc/common_extension.cc`, `sgl-kernel/csrc/common_extension_rocm.cc`, `sgl-kernel/include/sgl_kernel_ops.h`, `sgl-kernel/python/sgl_kernel/attention.py`, `sgl-kernel/setup_hip.py` 等 9 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`; `sgl-kernel/CMakeLists.txt`; `sgl-kernel/csrc/attention/decode_metadata.cu`; `sgl-kernel/csrc/common_extension.cc`; `sgl-kernel/csrc/common_extension_rocm.cc`; `sgl-kernel/include/sgl_kernel_ops.h`; `sgl-kernel/python/sgl_kernel/attention.py`; `sgl-kernel/setup_hip.py` 等 9 个文件
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `5e3749568e` - 接入lightop layer_norm_fwd_1pass_opt算子实现
+
+- 完整 hash: `5e3749568e0153dcecb951e402bc0c6454d4e3cb`
+- 时间/作者: 2026-05-26 / liucong8560
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/fla/layernorm_gated.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/attention/fla/layernorm_gated.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `fb2b0297e8` - ci: use dcu-ci-pr runner label directly
+
+- 完整 hash: `fb2b0297e85293544a3a2caebda00f3551d6d543`
+- 时间/作者: 2026-06-02 / tianly-ci
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `6809e20836` - docs: sync LMSYS SGLang blog cards
+
+- 完整 hash: `6809e208365dcf6c881dfbfd08186759f4235f41`
+- 时间/作者: 2026-06-01 / github-actions[bot]
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs_new/index.mdx`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs_new/index.mdx`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `cf08ece20a` - ci: avoid forcing DCU page size in tests
+
+- 完整 hash: `cf08ece20ae2136890da76e052a2e7bf15634e8e`
+- 时间/作者: 2026-06-01 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `python/sglang/lang/api.py`, `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/lang/api.py`; `scripts/ci/dcu/dcu_ci_exec.sh`
+  - tests: `python/sglang/test/test_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `40fbcab062` - ci: run DCU required include-file set on PR
+
+- 完整 hash: `40fbcab062cfcf1391cc62e6d06533fed33d516d`
+- 时间/作者: 2026-06-01 / tianly-ci
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `695956fc18` - ci: apply DCU runtime defaults in CI
+
+- 完整 hash: `695956fc18b4233438e41d220394984922569f04`
+- 时间/作者: 2026-06-01 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `python/sglang/lang/api.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/lang/api.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `e923247205` - ci: route DCU validation to nmz4 runner
+
+- 完整 hash: `e923247205bfc50ec4200058122ae7d731528844`
+- 时间/作者: 2026-06-01 / DCU CI Bot
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `987a2c813d` - ci: default DCU CI server backend to fa3
+
+- 完整 hash: `987a2c813d9286decaffb4ac1701ed80175e20ca`
+- 时间/作者: 2026-06-01 / tianly
+- 自动分类: 测试/文档/基准
+- 主要文件: `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `scripts/ci/dcu/dcu_ci_exec.sh`
+  - tests: `python/sglang/test/test_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `ad7aece93b` - ci: expand DCU PR validation matrix
+
+- 完整 hash: `ad7aece93b5d77b35bca895554086cff134ccdaf`
+- 时间/作者: 2026-06-01 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `ada40fccfd` - ci: allow full DCU validation from run-ci label
+
+- 完整 hash: `ada40fccfd198bb7ac2b88202aeb0a8cc03805b3`
+- 时间/作者: 2026-06-01 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `69dd9eb0e2` - test: align enabled DCU cases
+
+- 完整 hash: `69dd9eb0e2a2dd1b2f415e86eb6b7222bd139328`
+- 时间/作者: 2026-06-01 / tianlinyang77
+- 自动分类: 测试/文档/基准
+- 主要文件: `python/sglang/test/dcu_utils.py`, `test/registered/metrics/test_metrics.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `python/sglang/test/dcu_utils.py`; `test/registered/metrics/test_metrics.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `3334b3c5e2` - [feature support] enable cp+ep by deegemm, ensure deepgemm ver>=da4b9c1
+
+- 完整 hash: `3334b3c5e2163e1768916b375e1f14c3e6dd388f`
+- 时间/作者: 2026-05-25 / YuanYuan
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/moe/ep_moe/layer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `584a9d2457` - ci: allow DCU PR workflow on dcu-ci-pr
+
+- 完整 hash: `584a9d245791e8cd6fc927b878141d557a7f3120`
+- 时间/作者: 2026-06-01 / tianly-ci
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f0cfe1740f` - ci: support DCU visible device selection
+
+- 完整 hash: `f0cfe1740fdd6f79e71831e88e8b40082f954420`
+- 时间/作者: 2026-06-01 / tly123
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`, `scripts/ci/dcu/dcu_ci_exec.sh`, `scripts/ci/dcu/dcu_ci_start_container.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/pr-test-dcu.yml`
+  - other: `scripts/ci/dcu/dcu_ci_exec.sh`; `scripts/ci/dcu/dcu_ci_start_container.sh`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `91b09c4464` - test: allow DCU CI to override test models
+
+- 完整 hash: `91b09c446460abc13489ec7c59747e2a0174bc89`
+- 时间/作者: 2026-06-01 / tly123
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `python/sglang/test/test_utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `python/sglang/test/test_utils.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `8f4d1af5c2` - ci: use explicit DCU checkout
+
+- 完整 hash: `8f4d1af5c2abe2f1db50aaf89face3f21a81945b`
+- 时间/作者: 2026-06-01 / tly123
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `53a10162c8` - ci: clear DCU checkout proxy config
+
+- 完整 hash: `53a10162c8b99958c0ae907544b712222251c6b7`
+- 时间/作者: 2026-06-01 / tly123
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `e362080200` - ci: use static DCU git config path
+
+- 完整 hash: `e3620802004c7e97fbc4eea90f70d7596a58f57c`
+- 时间/作者: 2026-06-01 / tly123
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `6ba549a61c` - ci: isolate DCU runner git config
+
+- 完整 hash: `6ba549a61c596e4d6d1e07b1636f198bf6389c35`
+- 时间/作者: 2026-06-01 / tly123
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`; `.github/workflows/pr-test-dcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f7789462f0` - ci: add DCU full enabled workflow
+
+- 完整 hash: `f7789462f01158615f61a7c7d013f120a5ad3f4e`
+- 时间/作者: 2026-06-01 / tly123
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/dcu-full-enabled.yml`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/dcu-full-enabled.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `f981141bef` - moe_runner适配aiter_w8a8_int8
+
+- 完整 hash: `f981141befb3c0394d0da3d7e1f54253d2020263`
+- 时间/作者: 2026-06-01 / yangyn1
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/w8a8_int8.py`, `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/aiter.py`; `python/sglang/srt/layers/quantization/w8a8_int8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `4b76f0ef57` - ci: stabilize DCU PR runner workspace cleanup
+
+- 完整 hash: `4b76f0ef57add43767596cb8e1960b794a6ac14a`
+- 时间/作者: 2026-05-29 / tly123
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/pr-test-dcu.yml`, `scripts/ci/dcu/dcu_ci_install_dependency.sh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+  - other: `scripts/ci/dcu/dcu_ci_install_dependency.sh`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+### Commit `35522f4910` - 添加lightop提示信息
+
+- 完整 hash: `35522f49101e26a1a3770df5053eacbc4420d65d`
+- 时间/作者: 2026-05-29 / yangyn1
+- 自动分类: 通用实现调整
+- 主要文件: `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `6a705f146b` - docs: sync LMSYS SGLang blog cards
+
+- 完整 hash: `6a705f146b94da9d28b1ecc47f284349b78bc1ef`
+- 时间/作者: 2026-05-29 / github-actions[bot]
+- 自动分类: 测试/文档/基准
+- 主要文件: `docs_new/index.mdx`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - docs-bench: `docs_new/index.mdx`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `93dac7dafa` - moe-runner-backend支持lightop_moe_w8a8
+
+- 完整 hash: `93dac7dafa458535698e81dbd5375f97929519b7`
+- 时间/作者: 2026-05-28 / yangyn1
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/moe_runner/lightop.py`, `python/sglang/srt/layers/moe/moe_runner/runner.py`, `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/layers/quantization/w8a8_int8.py`, `python/sglang/srt/server_args.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/server_args.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/moe_runner/lightop.py`; `python/sglang/srt/layers/moe/moe_runner/runner.py`; `python/sglang/srt/layers/moe/utils.py`; `python/sglang/srt/layers/quantization/w8a8_int8.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `02b73b2d38` - ci: fix DCU local run suite execution
+
+- 完整 hash: `02b73b2d38b2eb10e0fe25605a3b134018b2502b`
+- 时间/作者: 2026-05-28 / tly123
+- 自动分类: 缺陷修复
+- 主要文件: `test/registered/dcu/interface/test_dcu_stage_b_flow_0.py`, `test/run_suite.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - tests: `test/registered/dcu/interface/test_dcu_stage_b_flow_0.py`; `test/run_suite.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `74ab583258` - ci: add DCU PR CI validation flow
+
+- 完整 hash: `74ab58325885a0242806c767946526d3ee87cde4`
+- 时间/作者: 2026-05-27 / tly123
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/pr-test-dcu.yml`, `docs/dcu-pr-ci-visual-guide.html`, `python/sglang/test/ci/ci_register.py`, `scripts/ci/dcu/analyze_dcu_csv_coverage.py`, `scripts/ci/dcu/dcu_ci_exec.sh`, `scripts/ci/dcu/dcu_ci_install_dependency.sh`, `scripts/ci/dcu/dcu_ci_start_container.sh`, `scripts/ci/dcu/verify_dcu_registration.py` 等 12 个文件
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - ci: `.github/workflows/pr-test-dcu.yml`
+  - docs-bench: `docs/dcu-pr-ci-visual-guide.html`
+  - other: `scripts/ci/dcu/analyze_dcu_csv_coverage.py`; `scripts/ci/dcu/dcu_ci_exec.sh`; `scripts/ci/dcu/dcu_ci_install_dependency.sh`; `scripts/ci/dcu/dcu_ci_start_container.sh`; `scripts/ci/dcu/verify_dcu_registration.py`
+  - tests: `python/sglang/test/ci/ci_register.py`; `test/registered/dcu/interface/test_dcu_smoke.py`; `test/registered/dcu/interface/test_dcu_stage_b_flow_0.py`; `test/registered/dcu/interface/test_dcu_stage_b_flow_1.py`; `test/run_suite.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+### Commit `5cff5f5e7f` - [feat]增加aiter w16a16 moe的支持，使能方式为export SGLANG_ROCM_USE_AITER_MOE=1 && export SGLANG_USE_MARLIN_W16A16_MOE=0
+
+- 完整 hash: `5cff5f5e7fb10b7b0922a21630a9d79a941b600f`
+- 时间/作者: 2026-05-22 / chenyue3
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/quantization/unquant.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/srt/layers/quantization/unquant.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `5d756f9826` - fix the mtp issues of metadata loc size
+
+- 完整 hash: `5d756f9826c74b70fb30c8fd351e6eb8ceb7dbd9`
+- 时间/作者: 2026-05-14 / YuanYuan
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/speculative/eagle_worker_v2.py`, `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-model: `python/sglang/srt/speculative/eagle_worker_v2.py`; `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
+### Commit `9c1c299194` - fix mhc with tile 0.1.9
+
+- 完整 hash: `9c1c29919468f8a4e8075f42eeb281ba14b1842f`
+- 时间/作者: 2026-04-29 / wangaq
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/mhc.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - other: `python/sglang/srt/layers/mhc.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+### Commit `2e1710ded6` - fix jit for moe_fused_gate
+
+- 完整 hash: `2e1710ded62858f58cd46104cf5aa01701a0b358`
+- 时间/作者: 2026-04-29 / wangaq
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `6236ca8f5d` - [Feature] support rocm moe_fused_gate
+
+- 完整 hash: `6236ca8f5d72fc06996085d6069e24bacdface22`
+- 时间/作者: 2026-04-29 / Zhangzbb
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+### Commit `22d8caf080` - [Feature] support rocm moe_fused_gate
+
+- 完整 hash: `22d8caf080301574b967755ec4dee50eb4906933`
+- 时间/作者: 2026-04-28 / Zhangzbb
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/jit_kernel/csrc/add_constant.cuh`, `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`, `python/sglang/jit_kernel/utils.py`
+- 实现线索: 该提交来自本地框架工作树 `git log --name-only`；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 已读文件:
+  - runtime-perf: `python/sglang/jit_kernel/csrc/add_constant.cuh`; `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/utils.cuh`; `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh`; `python/sglang/jit_kernel/utils.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+<!-- LOCAL_ONLY_FULL_MAIN_TO_20261105_START -->
+## hg-full-base 到 main 本地独有提交补充
 
 ### 覆盖说明
 
-- 来源仓库: `HYGON-AI/sglang-das`；分支端点: `release/20260825_v0.5.18`@`2c841655f`, `main`@`5343b311c`, `release/20261023_v0.5.18_welm`@`962617b2d`, `release_v0.5.18_deepseekv4`@`c66f34363`
+- 来源仓库: `HYGON-AI/sglang-das`；分支端点: `hg-full-base`@`92b1d382c`, `main`@`5343b311c`
 - 口径: 仅记录不可从 `sgl-project/sglang` GitHub refs 到达的本地 fork 独有提交；合并提交也保留。
 - 生成日期: 2026-11-05
-- 本章节提交数: 67（其中 merge 0）
-- 分支更新段: `release/20260825_v0.5.18..main`, `release/20260825_v0.5.18..release/20261023_v0.5.18_welm`, `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
+- 本章节提交数: 477（其中 merge 0）
+- 分支更新段: `hg-full-base..main`
 - 归类说明: 命中具体模型名、模型文件的提交进入对应模型桶（可同时进入多个）；其余运行时、后端、CI、测试提交进入 `shared`；仅有 merge 或无相关路径的提交进入 `unclassified`。改动文件数超过 150 的批量同步/重命名提交（如整合官方 main 的 squash 同步）也只进入 `unclassified`，其内容含上游代码，不能当作本地独有实现。自动归类，未逐条人工审阅 diff。
 
 ### 涉及文件
 
 | 文件 | 本地提交 |
 | --- | --- |
-| `.github/workflows/release-docker-hcu.yml` | `6b468d012`, `68dcd498a`, `8fa7122b3`, `7c8272a3a`, `5c03a8e22`, `2871c8fdd`, `5e8269d55`, `e05f146be`, `fb46d17ad`, `50b0d0051`, `87b9d5c85`, `6dac3481c`, ... (13 total) |
-| `.github/workflows/release-pr-hcu.yml` | `a2de3b8cf`, `2866df994`, `6b468d012`, `ae14a99e5`, `adc1d69b2`, `cb932f5fb`, `a981685e7`, `665b27d1f`, `e05f146be`, `098f31d69` |
+| `.github/workflows/quality-gate.yml` | `84cc64ecd`, `06331bc25`, `b76f31cce`, `ea182d81e`, `412236292`, `bd10f999c`, `cd2e73a67`, `9188d711e`, `dccf1782b`, `e3fee4310`, `40c658e8a`, `bd60c0223`, ... (37 total) |
+| `docs/internal/dcu-main-conflict-ledger.md` | `5d83cfe85`, `0536e102c`, `523756bde`, `93cf8edc4`, `ff440b897`, `e6d4b3378`, `00063277c`, `88bb5176c`, `a1ed918ae`, `bfaf180d1`, `b6db54a9a`, `1cea713a7`, ... (36 total) |
+| `.github/workflows/pr-test-dcu.yml` | `74ab58325`, `4b76f0ef5`, `6ba549a61`, `e36208020`, `53a10162c`, `8f4d1af5c`, `f0cfe1740`, `584a9d245`, `ad7aece93`, `e92324720`, `40fbcab06`, `fb2b0297e`, ... (33 total) |
+| `.github/workflows/release-pr-hcu.yml` | `e3fee4310`, `358a33714`, `8f848be4e`, `77939d9a5`, `997e64560`, `bfa4011ad`, `02968a96d`, `71de6dd93`, `dabae6b13`, `fb7f11956`, `b0dc28040`, `b628d29e1`, ... (26 total) |
+| `.github/workflows/nightly-test-hcu.yml` | `b38f25513`, `e3fee4310`, `358a33714`, `5673a3972`, `421a13a80`, `8f848be4e`, `997e64560`, `bfa4011ad`, `6a031254f`, `02968a96d`, `b0f2bb3a8`, `1a5ce1750`, ... (22 total) |
+| `.github/workflows/pr-test-hcu.yml` | `e3fee4310`, `d53953dbe`, `81e3561ae`, `5673a3972`, `bfa4011ad`, `02968a96d`, `71de6dd93`, `2fb37eaac`, `dabae6b13`, `dc5cd7089`, `b0dc28040`, `69c73a178`, ... (21 total) |
+| `python/sglang/srt/server_args.py` | `93dac7daf`, `35522f491`, `f981141be`, `083e22033`, `bb70a2268`, `cae6c4496`, `9abb848db`, `35456bae3`, `c3dc2e8eb`, `36f323752`, `5d2c6854a`, `cba9e72cc`, ... (20 total) |
+| `.github/workflows/dcu-full-enabled.yml` | `f7789462f`, `6ba549a61`, `e36208020`, `53a10162c`, `8f4d1af5c`, `f0cfe1740`, `ada40fccf`, `e92324720`, `46efb284a`, `099123603`, `22e57a7b3`, `12a30ab42`, ... (16 total) |
+| `.github/workflows/release-docker-hcu.yml` | `b628d29e1`, `37c5b30bb`, `6b468d012`, `68dcd498a`, `8fa7122b3`, `7c8272a3a`, `5c03a8e22`, `2871c8fdd`, `5e8269d55`, `e05f146be`, `fb46d17ad`, `50b0d0051`, ... (15 total) |
+| `.github/workflows/release-pypi-nightly-hcu.yml` | `b38f25513`, `e3fee4310`, `358a33714`, `8f848be4e`, `77939d9a5`, `997e64560`, `fb7f11956`, `b0dc28040`, `37c5b30bb`, `a2de3b8cf`, `7609d9af6`, `6b468d012`, ... (15 total) |
+| `python/sglang/srt/layers/moe/ep_moe/layer.py` | `3334b3c5e`, `82a5c469c`, `bd52e179c`, `983e644d4`, `38299f5fb`, `0553e12d0`, `dd2685439`, `8efd2ad46`, `0395a2bd2`, `7b6a9dd89`, `9a4f82911`, `0305c5a3b`, ... (13 total) |
+| `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` | `4e3fd3a35`, `6d25108ac`, `033bc6b92`, `c0206c7c4`, `82a5c469c`, `9abb848db`, `445eaafe5`, `35456bae3`, `2b1fbe1e6`, `4a6fbed98`, `b36730b41`, `ccbb65acb`, ... (13 total) |
+| `scripts/ci/dcu/dcu_ci_exec.sh` | `74ab58325`, `f0cfe1740`, `987a2c813`, `cf08ece20`, `43375feaf`, `598f2d61f`, `f57339642`, `42ffb433b`, `cf7567773`, `d6a2b719a`, `0f1ea3303`, `a6c6527cd`, ... (13 total) |
+| `.github/workflows/dcu-manual-model-test.yml` | `be7d10f53`, `d1ea0b3aa`, `c7a4903ad`, `ca7c7c54f`, `db4759e78`, `20eb46a70`, `7d807cb22`, `8aa4b6eb5`, `21dfaaa4c`, `e3fee4310` |
+| `python/sglang/srt/layers/attention/flashattention_backend.py` | `f7022899e`, `c4d3532db`, `9da8b1176`, `bc649e255`, `bb70a2268`, `fa6b75971`, `4d198708c`, `2981595c7`, `62a07586d`, `11d08002b` |
+| `python/sglang/srt/managers/scheduler.py` | `b3a4160a3`, `fe9f24924`, `e47445d2f`, `7941e0419`, `83d2a2b4b`, `c3755b4d4`, `4e5a95fcb`, `84bfd45c4`, `dc015a0bc`, `497c35457` |
 | `.github/workflows/cookbook-deployment-smoke.yml` | `50b0d0051`, `f9b972b37`, `b6dd37e66`, `78c700ee0`, `cc3758967`, `87b9d5c85`, `f89209aa8`, `a8543c813`, `029b6e641` |
-| `.github/workflows/pr-test-hcu.yml` | `f6d701c52`, `e864c3028`, `b5108cc7f`, `575cf4797`, `ae14a99e5`, `adc1d69b2`, `e05f146be`, `098f31d69`, `25aa13e98` |
-| `.github/workflows/nightly-test-hcu.yml` | `a2de3b8cf`, `2866df994`, `b5108cc7f`, `adc1d69b2`, `b5ca753bc`, `e05f146be`, `50b0d0051` |
+| `.github/workflows/hcu-full-enabled.yml` | `e3fee4310`, `bfa4011ad`, `02968a96d`, `71de6dd93`, `dabae6b13`, `132b630bc`, `4c7a264e5`, `b0dc28040`, `e05f146be` |
+| `.github/workflows/release-pypi-nightly-dcu.yml` | `0cdbfd7b0`, `ca95a26da`, `9304b9e1d`, `f4716f8ec`, `595f87c93`, `83294cba6`, `e3fee4310`, `b2f0b830c`, `37c5b30bb` |
+| `.github/workflows/lint-hcu.yml` | `e3fee4310`, `358a33714`, `8f848be4e`, `77939d9a5`, `997e64560`, `69c73a178`, `3e6aaf09d`, `e05f146be` |
+| `.github/workflows/quality-baseline-scan.yml` | `914d50fab`, `fa22ad5ae`, `e80c0644a`, `37a67648f`, `41db24a84`, `72f023717`, `af015c4ce`, `f76d2cea3` |
+| `scripts/ci/hcu/hcu_ci_notify_feishu.py` | `5673a3972`, `e338cca15`, `2c21b95e6`, `4af810205`, `9e13c77ce`, `85dcec947`, `67ecec8dd`, `8e2aba4bf` |
+| `.github/workflows/nightly-test-dcu.yml` | `ca95a26da`, `de24697cb`, `00febcba4`, `fa2430f45`, `e3fee4310`, `b2f0b830c`, `37c5b30bb` |
 | `.github/workflows/nightly-test-operator-hcu.yml` | `fb46d17ad`, `4205397cb`, `e295faff5`, `6dac3481c`, `fd98647ed`, `db479b030`, `9fb319cc3` |
-| `.github/workflows/release-pypi-nightly-hcu.yml` | `a2de3b8cf`, `7609d9af6`, `6b468d012`, `68dcd498a`, `7be1324cf`, `e05f146be` |
-| `docker/hcu.Dockerfile` | `7609d9af6`, `6b468d012`, `68dcd498a`, `7c8272a3a`, `5c03a8e22`, `2871c8fdd` |
-| `.github/workflows/release-whl-manual-hcu.yml` | `d1adf7b50`, `94e9fa4b1`, `c94c3ca2c`, `bc990ebd5` |
-| `scripts/ci/hcu/hcu_ci_install_dependency.sh` | `2828bde71`, `0af71f61b`, `575cf4797`, `adc1d69b2` |
-| `.github/workflows/nightly-test-image-hcu.yml` | `8fa7122b3`, `0457572a1`, `e05f146be` |
-| `python/sglang/srt/managers/scheduler.py` | `962617b2d`, `4c5ac2ee0`, `f0a0530ce` |
-| `python/sglang/srt/server_args.py` | `fd4157047`, `8dd5daf2f`, `962617b2d` |
-| `scripts/ci/hcu/hcu_ci_exec.sh` | `9d261478d`, `2828bde71`, `0af71f61b` |
-| `.github/workflows/dashhub-recover-41338132822.yml` | `471ab8254`, `594e1ae94` |
-| `.github/workflows/pr-states.yml` | `3ca61517d`, `e05f146be` |
-| `python/sglang/multimodal_gen/runtime/platforms/__init__.py` | `d42ecf6fe`, `fd4157047` |
-| `python/sglang/srt/managers/tokenizer_manager.py` | `3b0e4a073`, `c66f34363` |
-| `test/run_suite.py` | `8dd5daf2f`, `6fe7ce909` |
-| `.github/workflows/hcu-feishu-notify-preview.yml` | `e05f146be` |
-| `.github/workflows/hcu-full-enabled.yml` | `e05f146be` |
-| `.github/workflows/hcu-manual-model-test.yml` | `e05f146be` |
-| `.github/workflows/labeler.yml` | `e05f146be` |
-| `.github/workflows/lint-hcu.yml` | `e05f146be` |
-| `.github/workflows/nightly-release-gateway.yml` | `990a1a798` |
-| `.github/workflows/quality-gate.yml` | `ae5c33991` |
-| `README_HCU.md` | `9d261478d` |
-| `docker/image-citest-conf-hcu.yaml` | `8fa7122b3` |
-| `docs/docs/references/environment_variables.mdx` | `3b0e4a073` |
-| `python/pyproject_hcu.toml` | `7609d9af6` |
-| `python/sglang/benchmark/datasets/common.py` | `fc095e059` |
-| `python/sglang/benchmark/datasets/generated_shared_prefix.py` | `fc095e059` |
-| `python/sglang/benchmark/serving.py` | `fc095e059` |
-| `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py` | `962617b2d` |
-| `python/sglang/srt/batch_invariant_ops/batch_invariant_ops.py` | `962617b2d` |
-| `python/sglang/srt/configs/model_config.py` | `962617b2d` |
-| `python/sglang/srt/constrained/grammar_manager.py` | `f0a0530ce` |
-| `python/sglang/srt/disaggregation/prefill.py` | `4c5ac2ee0` |
-| `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py` | `d42ecf6fe` |
-| `python/sglang/srt/entrypoints/http_server.py` | `eaa872862` |
-| ... | 另有 81 个文件未列出 |
+| `docker/hcu.Dockerfile` | `b628d29e1`, `7609d9af6`, `6b468d012`, `68dcd498a`, `7c8272a3a`, `5c03a8e22`, `2871c8fdd` |
+| `scripts/ci/dcu/dcu_ci_install_dependency.sh` | `74ab58325`, `4b76f0ef5`, `48d234263`, `0f1ea3303`, `637377248`, `00ce3e6d9`, `e3fee4310` |
+| `scripts/ci/hcu/hcu_ci_install_dependency.sh` | `e3fee4310`, `71de6dd93`, `dabae6b13`, `2828bde71`, `0af71f61b`, `575cf4797`, `adc1d69b2` |
+| `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` | `5673a3972`, `e338cca15`, `2c21b95e6`, `4af810205`, `9e13c77ce`, `6a031254f`, `67ecec8dd` |
+| `.github/workflows/hcu-feishu-notify-preview.yml` | `2c21b95e6`, `6ac12c2e5`, `65b7c4268`, `0ff7a014f`, `9c69436ee`, `e05f146be` |
+| `README_DCU.md` | `cad9d0c35`, `64fe76840`, `be7d10f53`, `d1ea0b3aa`, `3dd1376ff`, `9353ecb96` |
+| `docs_new/index.mdx` | `6a705f146`, `6809e2083`, `20f106c6b`, `ce2521017`, `3f920d4e0`, `fe4e1fea3` |
+| `python/sglang/multimodal_gen/runtime/platforms/__init__.py` | `64d1765b4`, `6c1786bc4`, `ca9b264a2`, `7482123c3`, `d42ecf6fe`, `fd4157047` |
+| `python/sglang/srt/layers/attention/flashattention_interface.py` | `a04b5628e`, `0fc338999`, `62a07586d`, `11d08002b`, `72d1d2a73`, `27ce43c71` |
+| `python/sglang/srt/layers/moe/moe_runner/aiter.py` | `f981141be`, `1e1d77a76`, `6d25108ac`, `033bc6b92`, `83f43b3f4`, `8e2aba4bf` |
+| `python/sglang/srt/layers/quantization/w8a8_fp8.py` | `6d25108ac`, `033bc6b92`, `cae6c4496`, `9abb848db`, `35456bae3`, `4d198708c` |
+| `python/sglang/test/hcu_cookbook_utils.py` | `427726d60`, `83d2a2b4b`, `e338cca15`, `132b630bc`, `4c7a264e5`, `9d261478d` |
+| `python/sglang/test/test_utils.py` | `91b09c446`, `987a2c813`, `cf08ece20`, `43375feaf`, `598f2d61f`, `f57339642` |
+| `scripts/ci/dcu/check_hcu_runtime_text.py` | `9188d711e`, `8b4a7bdeb`, `fda6d44a4`, `616ba7b6d`, `e3fee4310`, `40c658e8a` |
+| `scripts/ci/dcu/dcu_ci_start_container.sh` | `74ab58325`, `f0cfe1740`, `f57339642`, `42ffb433b`, `00ce3e6d9`, `e3fee4310` |
+| `test/run_suite.py` | `74ab58325`, `02b73b2d3`, `4a08e1934`, `f17440f19`, `8dd5daf2f`, `6fe7ce909` |
+| ... | 另有 403 个文件未列出 |
 
 ### 时间线
 
 | 日期 | Commit | 分支更新段 | 分类 | 标题 | 主要文件 |
 | --- | --- | --- | --- | --- | --- |
-| 2026-08-21 | `a96aed11f` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [feat] 适配aiter性能优化后的 sglang_fused_sigmoid_gating_delta_rule_update 算子 | `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py` |
-| 2026-08-21 | `d42ecf6fe` | `release/20260825_v0.5.18..main` | 缺陷修复 | Fix HCU detection and sanitized topology diagnostics | `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`, `scripts/ci/hcu/hcu_rename_allowlist.txt` |
-| 2026-08-24 | `fd4157047` | `release/20260825_v0.5.18..main` | 通用实现调整 | Refine HCU platform diagnostics and CLI help | `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/server_args.py` |
-| 2026-08-25 | `d1adf7b50` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [feature] manual compile ci | `.github/workflows/release-whl-manual-hcu.yml` |
-| 2026-08-25 | `94e9fa4b1` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci: align manual HCU wheel workflow with nightly (drop chown/devpi upload) | `.github/workflows/release-whl-manual-hcu.yml` |
-| 2026-08-26 | `990a1a798` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci: disable scheduled gateway nightly release | `.github/workflows/nightly-release-gateway.yml` |
-| 2026-08-26 | `8dd5daf2f` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | Refine HCU and AMD CLI help text | `python/sglang/srt/server_args.py`, `test/run_suite.py` |
-| 2026-08-26 | `c94c3ca2c` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix: gateway wheel is at workspace root target/wheels | `.github/workflows/release-whl-manual-hcu.yml` |
-| 2026-08-26 | `f6d701c52` | `release/20260825_v0.5.18..main` | 缺陷修复 | Fix stale HCU Stage B test paths | `.github/workflows/pr-test-hcu.yml` |
-| 2026-08-26 | `a2de3b8cf` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): use bash for wheel build jobs | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-08-27 | `2866df994` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): trust wheel build workspaces | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
-| 2026-08-27 | `7609d9af6` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | [feature]适配hcu发包 | `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`, `python/pyproject_hcu.toml` |
-| 2026-08-27 | `6b468d012` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [feature] hcu ci: docker 镜像加 daily 定时触发, router 编包改用 vendored openssl, 镜像补装 flash_kda | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` 等 4 个文件 |
-| 2026-08-28 | `68dcd498a` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [ci] hcu ci 文件与 release/20260825_v0.5.18 分支保持一致 | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile` |
-| 2026-08-28 | `bc990ebd5` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [ci] 删除 release-whl-manual-hcu.yml (功能与 nightly/pr 编包重复) | `.github/workflows/release-whl-manual-hcu.yml` |
-| 2026-08-31 | `3ca61517d` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci-remove-amd-status-from-pr-summaries | `.github/workflows/pr-states.yml` |
-| 2026-08-31 | `e864c3028` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci: enable HCU PR tests for release branches (#272) | `.github/workflows/pr-test-hcu.yml` |
-| 2026-09-01 | `8fa7122b3` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [FEATURE]构建镜像之后触发模型测试 (#277) | `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/release-docker-hcu.yml`, `docker/image-citest-conf-hcu.yaml` |
-| 2026-09-02 | `9d261478d` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [CI] Update HCU model asset paths on main (#285) | `README_HCU.md`, `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_exec.sh` 等 10 个文件 |
-| 2026-09-02 | `6fe7ce909` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): restore run suite file filters (#290) | `test/run_suite.py` |
-| 2026-09-03 | `2828bde71` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | ci(hcu): align llguidance and model asset paths (#299) | `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh` |
-| 2026-09-04 | `0457572a1` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [FEATURE]CInotificate发送飞书通知时，把镜像数据推送到数据库 (#308) | `.github/workflows/nightly-test-image-hcu.yml` |
-| 2026-09-08 | `0af71f61b` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(ci): update HCU evaluation dependencies and asset paths (#325) | `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/hcu_ci_start_container.sh` |
-| 2026-09-14 | `b5108cc7f` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): use v0.5.18 image and restore eval dependencies (#347) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh` 等 4 个文件 |
-| 2026-09-14 | `516261baf` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): register sampling test and adjust MMLU threshold (#359) | `test/registered/sampling/test_pytorch_sampling_backend.py` |
-| 2026-09-14 | `575cf4797` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): restore source mode for test-only PRs (#364) | `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `test/registered/hcu/openai_server/test_serving_chat_hcu.py` |
-| 2026-09-15 | `7c8272a3a` | `release/20260825_v0.5.18..main` | 缺陷修复 | [BUGFIX]更新AICC安装方式 (#367) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
-| 2026-09-15 | `ae14a99e5` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(ci): fix HCU wheel build target routing (#372) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
-| 2026-09-15 | `5c03a8e22` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [FEATURE]daily镜像将tag打入环境变量, dtk自动更新最新的blas (#376) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
-| 2026-09-16 | `adc1d69b2` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): align main wheel builds with 0.5.18 runtime (#379) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` 等 6 个文件 |
-| 2026-09-21 | `ae5c33991` | `release/20260825_v0.5.18..main` | 调度/缓存/PD | Update quality gate workflow to use stable version | `.github/workflows/quality-gate.yml` |
-| 2026-09-21 | `cb932f5fb` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | feat(ci) compaity sgl-kernal main to v0.5.12 (#421) | `.github/workflows/release-pr-hcu.yml` |
-| 2026-09-21 | `a981685e7` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix release-pr-hcu.yml build sglang (#423) | `.github/workflows/release-pr-hcu.yml` |
-| 2026-09-22 | `b5ca753bc` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): run nightly against v0.5.18 and report its results (#432) | `.github/workflows/nightly-test-hcu.yml` |
-| 2026-09-23 | `2871c8fdd` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci(hcu): docker 镜像改从 dev 基础镜像内联安装 DTK 26.04.1-72cu-0911 (#438) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
-| 2026-09-23 | `7be1324cf` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | ci: report sglang nightly packages to DashHub (#424) | `.github/workflows/release-pypi-nightly-hcu.yml` |
-| 2026-09-24 | `665b27d1f` | `release/20260825_v0.5.18..main` | 缺陷修复 | feat(ci) fix main build whl failed (#449) | `.github/workflows/release-pr-hcu.yml` |
-| 2026-09-28 | `5e8269d55` | `release/20260825_v0.5.18..main` | 缺陷修复 | [BUGFIX]镜像DTK版本号不对 (#447) | `.github/workflows/release-docker-hcu.yml` |
-| 2026-09-30 | `e05f146be` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | ci(hcu): migrate main workflows to organization runners (#463) | `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml` 等 12 个文件 |
-| 2026-10-09 | `fb46d17ad` | `release/20260825_v0.5.18..main` | 性能/后端优化 | add optest process (#481) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
-| 2026-10-09 | `f0ee2a505` | `release/20260825_v0.5.18..main` | 缺陷修复 | FIX(detokenizer): stream through genuine U+FFFD instead of holding until finish (#473) | `python/sglang/srt/managers/detokenizer_manager.py`, `test/registered/unit/managers/test_detokenizer_incremental.py` |
-| 2026-10-10 | `4205397cb` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | add password-free download code (#499) | `.github/workflows/nightly-test-operator-hcu.yml` |
-| 2026-10-10 | `3b0e4a073` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [Fix] Bound crash diagnostics and fatal shutdown on main (#498) | `docs/docs/references/environment_variables.mdx`, `python/sglang/srt/managers/multi_tokenizer_mixin.py`, `python/sglang/srt/managers/tokenizer_manager.py` 等 6 个文件 |
-| 2026-10-12 | `50b0d0051` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | Delegate HCU model deployment smoke CI to external controller (#503) | `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
-| 2026-10-12 | `f9b972b37` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | Use a clean checkout directory for the model smoke controller (#510) | `.github/workflows/cookbook-deployment-smoke.yml` |
-| 2026-10-12 | `b6dd37e66` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | Run cookbook smoke tests for all cases by default | `.github/workflows/cookbook-deployment-smoke.yml` |
-| 2026-10-12 | `e295faff5` | `release/20260825_v0.5.18..main` | 性能/后端优化 | update ci name&&add optest log (#515) | `.github/workflows/nightly-test-operator-hcu.yml` |
-| 2026-10-14 | `78c700ee0` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | Add image input to cookbook deployment smoke workflow (#530) | `.github/workflows/cookbook-deployment-smoke.yml` |
-| 2026-10-15 | `cc3758967` | `release/20260825_v0.5.18..main` | 通用实现调整 | Pass DashHub credential to deployment smoke controller (#534) | `.github/workflows/cookbook-deployment-smoke.yml` |
-| 2026-10-15 | `fc095e059` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(bench): reuse --tokenize-prompt for generated shared-prefix token IDs (#533) | `python/sglang/benchmark/datasets/common.py`, `python/sglang/benchmark/datasets/generated_shared_prefix.py`, `python/sglang/benchmark/serving.py` 等 4 个文件 |
-| 2026-10-16 | `87b9d5c85` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | Run cookbook deployment checks after HCU image publishing (#548) | `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/release-docker-hcu.yml` |
-| 2026-10-19 | `f89209aa8` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | ci: pass package server to Cookbook model tests (#556) | `.github/workflows/cookbook-deployment-smoke.yml` |
-| 2026-10-20 | `a8543c813` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | [CI] cookbook: Add BW1000 deployment smoke tests (#570) | `.github/workflows/cookbook-deployment-smoke.yml` |
-| 2026-10-28 | `6dac3481c` | `release/20260825_v0.5.18..main` | 缺陷修复 | [Fix] ci: Preserve model cases in DashHub operator reporting (#604) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
-| 2026-10-28 | `098f31d69` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(ci) rebase pr-test-hcu.yml release-pr-hcu.yml (#612) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
-| 2026-10-28 | `029b6e641` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | [CI] model-ci: Pass history token for daily comparison report (#607) | `.github/workflows/cookbook-deployment-smoke.yml` |
-| 2026-10-28 | `fd98647ed` | `release/20260825_v0.5.18..main` | 缺陷修复 | [Fix] ci: Restore previous DashHub operator reporting (#614) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
-| 2026-10-29 | `25aa13e98` | `release/20260825_v0.5.18..main` | 缺陷修复 | fix(ci) rebase pr-test-hcu.yml (#617) | `.github/workflows/pr-test-hcu.yml` |
-| 2026-10-29 | `db479b030` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [CI] optest: Report outcome to DashHub (#619) | `.github/workflows/nightly-test-operator-hcu.yml` |
-| 2026-10-29 | `9fb319cc3` | `release/20260825_v0.5.18..main` | 性能/后端优化 | [CI] optest: Require every enabled operator result (#622) | `.github/workflows/nightly-test-operator-hcu.yml` |
-| 2026-11-02 | `471ab8254` | `release/20260825_v0.5.18..main` | 模型支持/运行时入口 | Add one-time DashHub recovery for run 41338132822 (#633) | `.github/workflows/dashhub-recover-41338132822.yml` |
-| 2026-11-02 | `594e1ae94` | `release/20260825_v0.5.18..main` | 测试/文档/基准 | [Chore] ci: Remove completed DashHub recovery workflow (#634) | `.github/workflows/dashhub-recover-41338132822.yml` |
-| 2026-10-23 | `962617b2d` | `release/20260825_v0.5.18..release/20261023_v0.5.18_welm` | 性能/后端优化 | WeLM v4.5 support on HCU (squash of yaoyupings/sglang-das v0.5.18_welm) | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/batch_invariant_ops/batch_invariant_ops.py`, `python/sglang/srt/configs/model_config.py` 等 55 个文件 |
-| 2026-10-20 | `eaa872862` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 缺陷修复 | fix: support API key with multiple tokenizer workers (#559) | `python/sglang/srt/entrypoints/http_server.py`, `python/sglang/srt/utils/auth.py`, `test/registered/unit/entrypoints/test_http_server_auth_config.py` 等 5 个文件 |
-| 2026-10-20 | `4c5ac2ee0` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 缺陷修复 | fix(disagg): defer cached-prefix sends during cache loads (#562) | `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/managers/scheduler.py`, `test/manual/hicache/test_pd_cached_prefix_load_ordering.py` |
-| 2026-10-23 | `f0a0530ce` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 缺陷修复 | [Fix] grammar: 同步 Prefill CP 的 Grammar 请求准入与失败状态 (#589) | `python/sglang/srt/constrained/grammar_manager.py`, `python/sglang/srt/managers/scheduler.py`, `test/registered/unit/constrained/test_grammar_manager.py` |
-| 2026-10-30 | `c66f34363` | `release/20260825_v0.5.18..release_v0.5.18_deepseekv4` | 缺陷修复 | [Fix] TokenizerManager: 修复客户端断开后已下发请求未被终止的问题 (#628) | `python/sglang/srt/managers/tokenizer_manager.py`, `test/registered/unit/managers/test_tokenizer_manager_rid_cleanup.py` |
+| 2026-04-28 | `22d8caf08` | `hg-full-base..main` | 性能/后端优化 | [Feature] support rocm moe_fused_gate | `python/sglang/jit_kernel/csrc/add_constant.cuh`, `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/runtime.cuh` 等 6 个文件 |
+| 2026-04-29 | `6236ca8f5` | `hg-full-base..main` | 性能/后端优化 | [Feature] support rocm moe_fused_gate | `python/sglang/jit_kernel/csrc/moe/moe_fused_gate.cuh`, `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh` |
+| 2026-04-29 | `2e1710ded` | `hg-full-base..main` | 性能/后端优化 | fix jit for moe_fused_gate | `python/sglang/jit_kernel/include/sgl_kernel/warp.cuh` |
+| 2026-04-29 | `9c1c29919` | `hg-full-base..main` | 缺陷修复 | fix mhc with tile 0.1.9 | `python/sglang/srt/layers/mhc.py` |
+| 2026-05-14 | `5d756f982` | `hg-full-base..main` | 缺陷修复 | fix the mtp issues of metadata loc size | `python/sglang/srt/speculative/eagle_worker_v2.py`, `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py` |
+| 2026-05-21 | `aee2b606f` | `hg-full-base..main` | 性能/后端优化 | feat(diffusion): add ROCm SLA attention backend | `python/sglang/multimodal_gen/runtime/layers/attention/backends/rocm_sparse_linear_attn.py`, `python/sglang/multimodal_gen/runtime/layers/attention/turbo_layer.py`, `python/sglang/multimodal_gen/runtime/loader/fsdp_load.py` 等 6 个文件 |
+| 2026-05-22 | `5cff5f5e7` | `hg-full-base..main` | 性能/后端优化 | [feat]增加aiter w16a16 moe的支持，使能方式为export SGLANG_ROCM_USE_AITER_MOE=1 && export SGLANG_USE_MARLIN_W16A16_MOE=0 | `python/sglang/srt/layers/quantization/unquant.py` |
+| 2026-05-25 | `3334b3c5e` | `hg-full-base..main` | 性能/后端优化 | [feature support] enable cp+ep by deegemm, ensure deepgemm ver>=da4b9c1 | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-05-26 | `5e3749568` | `hg-full-base..main` | 性能/后端优化 | 接入lightop layer_norm_fwd_1pass_opt算子实现 | `python/sglang/srt/layers/attention/fla/layernorm_gated.py` |
+| 2026-05-27 | `74ab58325` | `hg-full-base..main` | 模型支持/运行时入口 | ci: add DCU PR CI validation flow | `.github/workflows/pr-test-dcu.yml`, `docs/dcu-pr-ci-visual-guide.html`, `python/sglang/test/ci/ci_register.py` 等 12 个文件 |
+| 2026-05-28 | `02b73b2d3` | `hg-full-base..main` | 缺陷修复 | ci: fix DCU local run suite execution | `test/registered/dcu/interface/test_dcu_stage_b_flow_0.py`, `test/run_suite.py` |
+| 2026-05-28 | `93dac7daf` | `hg-full-base..main` | 性能/后端优化 | moe-runner-backend支持lightop_moe_w8a8 | `python/sglang/srt/layers/moe/moe_runner/lightop.py`, `python/sglang/srt/layers/moe/moe_runner/runner.py`, `python/sglang/srt/layers/moe/utils.py` 等 5 个文件 |
+| 2026-05-29 | `6a705f146` | `hg-full-base..main` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-05-29 | `35522f491` | `hg-full-base..main` | 通用实现调整 | 添加lightop提示信息 | `python/sglang/srt/server_args.py` |
+| 2026-05-29 | `4b76f0ef5` | `hg-full-base..main` | 测试/文档/基准 | ci: stabilize DCU PR runner workspace cleanup | `.github/workflows/pr-test-dcu.yml`, `scripts/ci/dcu/dcu_ci_install_dependency.sh` |
+| 2026-05-30 | `f7022899e` | `hg-full-base..main` | 性能/后端优化 | 增加decode_metadata sgl-kernel实现 | `python/sglang/srt/layers/attention/flashattention_backend.py`, `sgl-kernel/CMakeLists.txt`, `sgl-kernel/csrc/attention/decode_metadata.cu` 等 9 个文件 |
+| 2026-06-01 | `f981141be` | `hg-full-base..main` | 性能/后端优化 | moe_runner适配aiter_w8a8_int8 | `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/w8a8_int8.py`, `python/sglang/srt/server_args.py` |
+| 2026-06-01 | `f7789462f` | `hg-full-base..main` | 模型支持/运行时入口 | ci: add DCU full enabled workflow | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-01 | `6ba549a61` | `hg-full-base..main` | 测试/文档/基准 | ci: isolate DCU runner git config | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `e36208020` | `hg-full-base..main` | 测试/文档/基准 | ci: use static DCU git config path | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `53a10162c` | `hg-full-base..main` | 测试/文档/基准 | ci: clear DCU checkout proxy config | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `8f4d1af5c` | `hg-full-base..main` | 测试/文档/基准 | ci: use explicit DCU checkout | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `91b09c446` | `hg-full-base..main` | 模型支持/运行时入口 | test: allow DCU CI to override test models | `python/sglang/test/test_utils.py` |
+| 2026-06-01 | `faff8208c` | `hg-full-base..main` | 缺陷修复 | fix: restore qwen2 rope config import | `python/sglang/srt/models/qwen2.py` |
+| 2026-06-01 | `f0cfe1740` | `hg-full-base..main` | 模型支持/运行时入口 | ci: support DCU visible device selection | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`, `scripts/ci/dcu/dcu_ci_exec.sh` 等 4 个文件 |
+| 2026-06-01 | `584a9d245` | `hg-full-base..main` | 测试/文档/基准 | ci: allow DCU PR workflow on dcu-ci-pr | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `69dd9eb0e` | `hg-full-base..main` | 测试/文档/基准 | test: align enabled DCU cases | `python/sglang/test/dcu_utils.py`, `test/registered/metrics/test_metrics.py` |
+| 2026-06-01 | `ada40fccf` | `hg-full-base..main` | 测试/文档/基准 | ci: allow full DCU validation from run-ci label | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-01 | `ad7aece93` | `hg-full-base..main` | 测试/文档/基准 | ci: expand DCU PR validation matrix | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `987a2c813` | `hg-full-base..main` | 测试/文档/基准 | ci: default DCU CI server backend to fa3 | `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-01 | `e92324720` | `hg-full-base..main` | 测试/文档/基准 | ci: route DCU validation to nmz4 runner | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `695956fc1` | `hg-full-base..main` | 测试/文档/基准 | ci: apply DCU runtime defaults in CI | `python/sglang/lang/api.py` |
+| 2026-06-01 | `40fbcab06` | `hg-full-base..main` | 测试/文档/基准 | ci: run DCU required include-file set on PR | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-01 | `cf08ece20` | `hg-full-base..main` | 测试/文档/基准 | ci: avoid forcing DCU page size in tests | `python/sglang/lang/api.py`, `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-01 | `6809e2083` | `hg-full-base..main` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-06-01 | `32d9bb7ae` | `hg-full-base..main` | 性能/后端优化 | 修复fused_sigmoid_gating_delta_rule_update冲突问题 | `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py` |
+| 2026-06-02 | `fb2b0297e` | `hg-full-base..main` | 测试/文档/基准 | ci: use dcu-ci-pr runner label directly | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-02 | `a04b5628e` | `hg-full-base..main` | 性能/后端优化 | 支持triton版本flash_attn算子，方便排查PA精度问题 | `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/attention/triton_vllm_flash_attn.py` |
+| 2026-06-03 | `7b86e4afd` | `hg-full-base..main` | 性能/后端优化 | 修改aiter prefill阶段的fla算子传参 | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py`, `python/sglang/srt/layers/attention/fla/chunk_o.py` |
+| 2026-06-03 | `f13630b2e` | `hg-full-base..main` | 缺陷修复 | fix 修复chunk_delta_h调用报错问题 | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py` |
+| 2026-06-03 | `d6baa0809` | `hg-full-base..main` | 模型支持/运行时入口 | Add DCU wheel release workflow with CIUpload repair and devpi upload | `.github/workflows/release-pypi-nightky-dcu.yml` |
+| 2026-06-03 | `fba9d715f` | `hg-full-base..main` | 性能/后端优化 | 修复decode_metadata算子，import不起来的问题 | `sgl-kernel/python/sgl_kernel/__init__.py` |
+| 2026-06-03 | `43375feaf` | `hg-full-base..main` | 测试/文档/基准 | ci: stabilize DCU PR required tests | `.github/workflows/pr-test-dcu.yml`, `python/sglang/__init__.py`, `python/sglang/lang/api.py` 等 5 个文件 |
+| 2026-06-03 | `494b4246f` | `hg-full-base..main` | 测试/文档/基准 | ci: allow DCU dispatch control jobs on runner | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-03 | `c190162be` | `hg-full-base..main` | 测试/文档/基准 | ci: clean DCU dispatch validation workspace | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-03 | `48d234263` | `hg-full-base..main` | 测试/文档/基准 | ci: pin DCU CI compatibility packages | `scripts/ci/dcu/dcu_ci_install_dependency.sh` |
+| 2026-06-03 | `9022f2c34` | `hg-full-base..main` | 缺陷修复 | [FIX] Initialize swa_v_head_dim in TritonAttnBackend and cleanup unused import | `python/sglang/srt/layers/attention/triton_backend.py`, `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py` |
+| 2026-06-03 | `4e3fd3a35` | `hg-full-base..main` | 性能/后端优化 | HY3修改 | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-03 | `5245654dc` | `hg-full-base..main` | 缺陷修复 | Fix: DCU bypass Triton get_last_loc and use native dcu_get_last_loc | `python/sglang/srt/mem_cache/common.py` |
+| 2026-06-04 | `27ea55979` | `hg-full-base..main` | 通用实现调整 | 更新tilelang版本到0.1.9 | `python/pyproject.toml` |
+| 2026-06-04 | `113d67786` | `hg-full-base..main` | 调度/缓存/PD | Update chunk_delta_h.py | `python/sglang/srt/layers/attention/fla/chunk_delta_h.py` |
+| 2026-06-04 | `29b689574` | `hg-full-base..main` | 调度/缓存/PD | ci: update DCU test registration state | `.github/workflows/pr-test-dcu.yml`, `test/registered/metrics/test_metrics.py` |
+| 2026-06-04 | `46efb284a` | `hg-full-base..main` | 调度/缓存/PD | ci: update dcu-full-enanled.yml | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-04 | `099123603` | `hg-full-base..main` | 测试/文档/基准 | ci: run DCU full workflow on self-hosted runner | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-04 | `598f2d61f` | `hg-full-base..main` | 模型支持/运行时入口 | ci: use local DCU model env defaults | `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-04 | `22e57a7b3` | `hg-full-base..main` | 测试/文档/基准 | ci: verify DCU full registration in container | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-04 | `f57339642` | `hg-full-base..main` | 性能/后端优化 | ci: keep DCU test defaults official-friendly | `python/sglang/test/test_utils.py`, `scripts/ci/dcu/dcu_ci_exec.sh`, `scripts/ci/dcu/dcu_ci_start_container.sh` 等 17 个文件 |
+| 2026-06-04 | `cad9d0c35` | `hg-full-base..main` | 模型支持/运行时入口 | docs: add Apache license notices for DCU SGLang | `README.md`, `README_DCU.md`, `THIRD_PARTY_NOTICES.md` |
+| 2026-06-04 | `42ffb433b` | `hg-full-base..main` | 测试/文档/基准 | ci: avoid ROCR device remap in DCU runner | `scripts/ci/dcu/dcu_ci_exec.sh`, `scripts/ci/dcu/dcu_ci_start_container.sh` |
+| 2026-06-04 | `cf7567773` | `hg-full-base..main` | 模型支持/运行时入口 | ci: map DCU Qwen2.5 0.5B model path | `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-05 | `7694afa39` | `hg-full-base..main` | 性能/后端优化 | ci: refine DCU suite classification | `test/registered/dcu/kernels/test_sgl_kernel_smoke_dcu.py`, `test/registered/dcu/kernels/test_sgl_kernel_supported_dcu.py`, `test/registered/language/test_srt_backend.py` |
+| 2026-06-05 | `b95046afa` | `hg-full-base..main` | 测试/文档/基准 | ci: guard DCU dispatch checkout workspace | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-05 | `d8f350eed` | `hg-full-base..main` | 测试/文档/基准 | ci: avoid dispatch checkout permission issues | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-05 | `823bd922f` | `hg-full-base..main` | 测试/文档/基准 | ci: isolate DCU dispatch checkout workspace | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-05 | `d6a2b719a` | `hg-full-base..main` | 模型支持/运行时入口 | ci: map DCU priority metrics model path | `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-05 | `51abece95` | `hg-full-base..main` | 测试/文档/基准 | ci: remove DCU CSV coverage analyzer | `scripts/ci/dcu/analyze_dcu_csv_coverage.py` |
+| 2026-06-08 | `1e1d77a76` | `hg-full-base..main` | 性能/后端优化 | 解决aiter显存溢出问题 | `.gitignore`, `python/sglang/srt/layers/moe/moe_runner/aiter.py` |
+| 2026-06-08 | `f71c2ef80` | `hg-full-base..main` | 缺陷修复 | [BugFix] fix the buffer shape unalgined issues of draft model warmup and decode forward in PD phase | `python/sglang/srt/managers/overlap_utils.py` |
+| 2026-06-09 | `0f1ea3303` | `hg-full-base..main` | 模型支持/运行时入口 | ci: add DCU wheel sync path for PR tests | `.github/workflows/pr-test-dcu.yml`, `.github/workflows/release-whl-dcu.yml`, `scripts/ci/dcu/dcu_ci_exec.sh` 等 4 个文件 |
+| 2026-06-09 | `6d25108ac` | `hg-full-base..main` | 性能/后端优化 | aiter适配moe_w8a8_fp8 | `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py` |
+| 2026-06-09 | `e03bc0cf8` | `hg-full-base..main` | 缺陷修复 | fix: skip PYTHONPATH assertion in wheel mode for stage-b test | `test/registered/dcu/interface/test_dcu_stage_b_flow_0.py` |
+| 2026-06-09 | `a6c6527cd` | `hg-full-base..main` | 缺陷修复 | fix: pass DCU_CI_USE_INSTALLED_WHEELS into docker container for wheel mode skip | `scripts/ci/dcu/dcu_ci_exec.sh` |
+| 2026-06-09 | `c4d3532db` | `hg-full-base..main` | 性能/后端优化 | fix:dcu bypass triton normal_decode_set_metadata use normal_decode_set_metadata_lightop | `python/sglang/srt/layers/attention/flashattention_backend.py` |
+| 2026-06-10 | `e6e05f322` | `hg-full-base..main` | 测试/文档/基准 | ci: test auto-trigger push flow (no-op comment) | `test/registered/dcu/interface/test_dcu_smoke.py` |
+| 2026-06-10 | `adaf77ef9` | `hg-full-base..main` | 测试/文档/基准 | ci: always prefer self-hosted runner for pre-jobs to avoid billing block | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-10 | `cbf9c1ce4` | `hg-full-base..main` | 测试/文档/基准 | ci: use self-hosted runner for pr-gate to avoid billing block | `.github/workflows/pr-gate.yml` |
+| 2026-06-10 | `6b0e35b3f` | `hg-full-base..main` | 测试/文档/基准 | ci: prefer python3.9 for verify_dcu_registration on self-hosted runner | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-10 | `c066cf42f` | `hg-full-base..main` | 模型支持/运行时入口 | ci: add pull-requests:read permission to release-whl-dcu for PR file listing | `.github/workflows/release-whl-dcu.yml` |
+| 2026-06-11 | `92a8ba840` | `hg-full-base..main` | 性能/后端优化 | [FEAT] cherry-pick and refactor from a0bcfe90, support moe triton backend and fix the acc issue in moe aiter backend | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/__init__.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8_moe.py` |
+| 2026-06-11 | `52b5b9623` | `hg-full-base..main` | 测试/文档/基准 | ci: isolate DCU wheel wait checkout workspace | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-11 | `033bc6b92` | `hg-full-base..main` | 性能/后端优化 | 重构aiter的重排逻辑 添加aiter log打印信息 | `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/moe/moe_runner/runner.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` 等 5 个文件 |
+| 2026-06-11 | `da04ee008` | `hg-full-base..main` | 缺陷修复 | ci: fix DCU PR required regressions | `.github/workflows/pr-test-dcu.yml`, `python/sglang/srt/models/qwen2.py`, `test/registered/core/test_hidden_states.py` 等 6 个文件 |
+| 2026-06-11 | `eda451b27` | `hg-full-base..main` | 测试/文档/基准 | ci: pin DCU Engine tests to fa3 backend | `test/registered/dcu/core/bw1100/test_hidden_states_dcu.py`, `test/registered/dcu/sampling/bw1100/test_original_logprobs_dcu.py` |
+| 2026-06-11 | `637377248` | `hg-full-base..main` | 测试/文档/基准 | ci: install DCU wheel artifacts without dependencies | `scripts/ci/dcu/dcu_ci_install_dependency.sh` |
+| 2026-06-11 | `b3a4160a3` | `hg-full-base..main` | 性能/后端优化 | 修复dpskv4-flash在pd分离下mtp精度问题 | `python/sglang/srt/managers/overlap_utils.py`, `python/sglang/srt/managers/scheduler.py` |
+| 2026-06-11 | `c0206c7c4` | `hg-full-base..main` | 性能/后端优化 | Release original layer.weight after deepgemm_weights conversion to avoid OOM | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-12 | `82a5c469c` | `hg-full-base..main` | 性能/后端优化 | fix issues of w13_weight using | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-06-13 | `12a30ab42` | `hg-full-base..main` | 测试/文档/基准 | ci: stabilize DCU PR test workflow | `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/pr-test-dcu.yml`, `.github/workflows/release-pr-dcu.yml` 等 8 个文件 |
+| 2026-06-13 | `f9f0cb23d` | `hg-full-base..main` | 测试/文档/基准 | ci: auto-run DCU gate for DCU-owned changes | `.github/workflows/pr-test-dcu.yml`, `python/sglang/test/dcu_utils.py` |
+| 2026-06-14 | `083e22033` | `hg-full-base..main` | 测试/文档/基准 | ci: auto-run DCU gate for impact paths | `.github/workflows/pr-test-dcu.yml`, `python/sglang/srt/server_args.py` |
+| 2026-06-14 | `84cc64ecd` | `hg-full-base..main` | 通用实现调整 | Create quality-gate.yml | `.github/workflows/quality-gate.yml` |
+| 2026-06-14 | `06331bc25` | `hg-full-base..main` | 通用实现调整 | Refactor quality gate workflow for changed files check | `.github/workflows/quality-gate.yml` |
+| 2026-06-15 | `0cdbfd7b0` | `hg-full-base..main` | 模型支持/运行时入口 | Add lint-dcu.yml for DCU self-hosted runner, restore original lint.yml | `.github/workflows/lint-dcu.yml`, `.github/workflows/release-pypi-nightky-dcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-15 | `9da8b1176` | `hg-full-base..main` | 性能/后端优化 | [Feat] support unified fa without layout trans | `python/sglang/srt/layers/attention/flashattention_backend.py` |
+| 2026-06-15 | `bc649e255` | `hg-full-base..main` | 性能/后端优化 | [BUG FIX] fix swa fa accuracy because of page_table error | `python/sglang/srt/layers/attention/flashattention_backend.py` |
+| 2026-06-15 | `63747e66f` | `hg-full-base..main` | 性能/后端优化 | [BugFix] sync to support the more args 'topk_weights' in deep_ep dispatch | `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` |
+| 2026-06-15 | `548f9aa20` | `hg-full-base..main` | 测试/文档/基准 | ci: skip GitHub artifact upload for DCU PR wheels | `.github/workflows/release-pr-dcu.yml` |
+| 2026-06-15 | `bb5f2fc8a` | `hg-full-base..main` | 测试/文档/基准 | ci: wait for DCU wheels on release workflow changes | `.github/workflows/pr-test-dcu.yml` |
+| 2026-06-15 | `fb0a68900` | `hg-full-base..main` | 通用实现调整 | Rename lint job to lint-dcu to avoid name collision with lint.yml | `.github/workflows/lint-dcu.yml` |
+| 2026-06-16 | `bd52e179c` | `hg-full-base..main` | 性能/后端优化 | fix: 修复EP bug | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py` |
+| 2026-06-16 | `224e5449f` | `hg-full-base..main` | 缺陷修复 | [Bug Fix] fix swa mem pool duoble release | `python/sglang/srt/mem_cache/swa_memory_pool.py` |
+| 2026-06-16 | `bb70a2268` | `hg-full-base..main` | 性能/后端优化 | [Perf] Add packed paged KV varlen attention path | `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/pack_paged_kv_to_varlen.py`, `python/sglang/srt/server_args.py` 等 6 个文件 |
+| 2026-06-16 | `189d8c87e` | `hg-full-base..main` | 缺陷修复 | [bugfix]修复md文件中的格式问题 | `.claude/skills/sglang-profile-analyse/SKILL.md`, `python/sglang/srt/models/utils.py` |
+| 2026-06-16 | `de2840d1d` | `hg-full-base..main` | 性能/后端优化 | 更新get_scheme函数为get_linear_scheme | `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_marlin.py` |
+| 2026-06-17 | `983e644d4` | `hg-full-base..main` | 性能/后端优化 | fix: avoid redundant calls to forward_aiter and fp8 groupgemm kernels | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-06-18 | `914d50fab` | `hg-full-base..main` | 通用实现调整 | Create quality-baseline-scan.yml | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-06-18 | `38299f5fb` | `hg-full-base..main` | 性能/后端优化 | 修复崩溃bug | `python/sglang/srt/layers/moe/ep_moe/kernels.py`, `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-06-18 | `64fe76840` | `hg-full-base..main` | 通用实现调整 | [FEAT] remove vllm allreduce and dead import related | `README_DCU.md`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce_ops.py` 等 4 个文件 |
+| 2026-06-18 | `fa22ad5ae` | `hg-full-base..main` | 性能/后端优化 | Add options for encoding, dependencies, and SAST scans | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-06-18 | `e80c0644a` | `hg-full-base..main` | 调度/缓存/PD | Update Trivy and Semgrep commands in workflow | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-06-18 | `37a67648f` | `hg-full-base..main` | 调度/缓存/PD | Update Trivy scan configuration in workflow | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-06-18 | `87aa66f4f` | `hg-full-base..main` | 性能/后端优化 | [BugFix] workaround fix of aiter custom allreduce in cuda-graph, would revert it after driver fix it | `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py` |
+| 2026-06-18 | `cae6c4496` | `hg-full-base..main` | 性能/后端优化 | [FEAT] implement the initial changes about w8a8 megamoe for DCU | `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/fp8.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py` 等 4 个文件 |
+| 2026-06-22 | `0fc338999` | `hg-full-base..main` | 性能/后端优化 | 修复dpsk r1 fp8启动时的报错问题 | `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/moe/topk.py` |
+| 2026-06-22 | `5d83cfe85` | `hg-full-base..main` | 测试/文档/基准 | [SGlang Open] Created an internal main branch from v0.5.12_dev-d4c6831a107a and some docs | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md`, `scripts/code_sync/dcu_main_migration.py` |
+| 2026-06-22 | `0536e102c` | `hg-full-base..main` | 测试/文档/基准 | [SGlang Open] Created an internal main branch from v0.5.12_dev-d4c6831a107a and some docs | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md`, `scripts/code_sync/dcu_main_migration.py` |
+| 2026-06-22 | `fdd9f8ecf` | `hg-full-base..main` | 缺陷修复 | [BUG FIX] fix SWA mem pool issue causing accept length decrease | `python/sglang/srt/mem_cache/swa_memory_pool.py` |
+| 2026-06-23 | `51abf3148` | `hg-full-base..main` | 模型支持/运行时入口 | test: add DCU AI smoke cases to PR required | `.github/workflows/pr-test-dcu.yml`, `test/registered/dcu/openai_server/test_function_calling_dcu.py`, `test/registered/dcu/openai_server/test_hidden_states_base_dcu.py` 等 13 个文件 |
+| 2026-06-23 | `4b8a743d3` | `hg-full-base..main` | 模型支持/运行时入口 | ci: add wheel mode to DCU full enabled | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-23 | `ca95a26da` | `hg-full-base..main` | 模型支持/运行时入口 | ci: add DCU nightly workflow with wheel build | `.github/workflows/nightly-test-dcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-23 | `9ed791e14` | `hg-full-base..main` | 测试/文档/基准 | ci: run PR helper workflows on private runner | `.github/workflows/labeler.yml`, `.github/workflows/pr-states.yml` |
+| 2026-06-23 | `de24697cb` | `hg-full-base..main` | 测试/文档/基准 | ci: disable PR trigger for DCU nightly workflow | `.github/workflows/nightly-test-dcu.yml` |
+| 2026-06-23 | `9304b9e1d` | `hg-full-base..main` | 测试/文档/基准 | ci: build DCU gateway wheel by default | `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-23 | `be7d10f53` | `hg-full-base..main` | 模型支持/运行时入口 | ci: add manual DCU unattended model test workflow | `.github/workflows/dcu-manual-model-test.yml`, `README_DCU.md` |
+| 2026-06-24 | `00ce3e6d9` | `hg-full-base..main` | 测试/文档/基准 | ci: stage DCU PR wheels locally | `.github/workflows/pr-test-dcu.yml`, `.github/workflows/release-pr-dcu.yml`, `scripts/ci/dcu/dcu_ci_install_dependency.sh` 等 4 个文件 |
+| 2026-06-24 | `f4716f8ec` | `hg-full-base..main` | 模型支持/运行时入口 | Add DCU nightly wheel release workflow | `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-24 | `595f87c93` | `hg-full-base..main` | 测试/文档/基准 | Restore push trigger and CIUpload devpi upload | `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-24 | `88ba08ad2` | `hg-full-base..main` | 性能/后端优化 | fix expert_location_dispatch_info is not define | `python/sglang/srt/layers/moe/topk.py` |
+| 2026-06-24 | `523756bde` | `hg-full-base..main` | 调度/缓存/PD | [docs(dcu)] log C01/C02 conflict ledger update | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-06-25 | `85cd7901c` | `hg-full-base..main` | 性能/后端优化 | test: keep verified DCU smoke and accuracy cases only | `test/registered/dcu/backends/test_torch_compile_smoke_dcu.py`, `test/registered/dcu/core/test_deterministic_fa3_dcu.py`, `test/registered/dcu/hicache/test_hicache_storage_file_backend_dcu.py` 等 4 个文件 |
+| 2026-06-25 | `4a08e1934` | `hg-full-base..main` | 性能/后端优化 | test: add DCU nightly 1 and 2 GPU suites | `test/registered/core/test_mm_process_config.py`, `test/registered/distributed/test_data_parallelism.py`, `test/registered/distributed/test_load_weights_from_remote_instance.py` 等 19 个文件 |
+| 2026-06-25 | `d1ea0b3aa` | `hg-full-base..main` | 模型支持/运行时入口 | ci: support configurable manual DCU model validation | `.github/workflows/dcu-manual-model-test.yml`, `README_DCU.md` |
+| 2026-06-25 | `3dd1376ff` | `hg-full-base..main` | 缺陷修复 | docs: fix DCU README trailing whitespace | `README_DCU.md` |
+| 2026-06-25 | `9abb848db` | `hg-full-base..main` | 性能/后端优化 | [Feat] support megamoe in the path of SGLANG_DCU_MEGA_MOE_RUNTIME=megamoe, and temporarily deepgeem path is still remained as backup | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/mega_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` 等 7 个文件 |
+| 2026-06-25 | `c7a4903ad` | `hg-full-base..main` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `ca7c7c54f` | `hg-full-base..main` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `2f2abec11` | `hg-full-base..main` | 测试/文档/基准 | ci: cover new DCU nightly suites in full enabled | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-26 | `db4759e78` | `hg-full-base..main` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `20eb46a70` | `hg-full-base..main` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `0c4fe5ebe` | `hg-full-base..main` | 测试/文档/基准 | ci: align DCU full wheel wait with PR staging | `.github/workflows/dcu-full-enabled.yml` |
+| 2026-06-26 | `7d807cb22` | `hg-full-base..main` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `8aa4b6eb5` | `hg-full-base..main` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `21dfaaa4c` | `hg-full-base..main` | 调度/缓存/PD | Update dcu-manual-model-test.yml | `.github/workflows/dcu-manual-model-test.yml` |
+| 2026-06-26 | `00febcba4` | `hg-full-base..main` | 测试/文档/基准 | ci: reuse PR-staged DCU nightly wheels | `.github/workflows/nightly-test-dcu.yml` |
+| 2026-06-26 | `a2076d9aa` | `hg-full-base..main` | 测试/文档/基准 | test: use local DCU eval datasets | `python/sglang/test/dcu_cookbook_utils.py`, `python/sglang/test/run_eval.py`, `python/sglang/test/simple_eval_mmlu.py` 等 4 个文件 |
+| 2026-06-28 | `f40a12fb5` | `hg-full-base..main` | 性能/后端优化 | 修改IPC逻辑，每个rank下都开辟内存池，解决rank0偶发变慢的问题 | `python/sglang/srt/multimodal/processors/base_processor.py`, `python/sglang/srt/utils/cuda_ipc_transport_utils.py` |
+| 2026-06-29 | `395171de0` | `hg-full-base..main` | 缺陷修复 | test: fix DCU MMMU local dataset selection | `test/registered/dcu/accuracy/bw1100/test_mmmu_eval_dcu.py` |
+| 2026-06-29 | `83294cba6` | `hg-full-base..main` | 模型支持/运行时入口 | Add DCU nightly wheel release workflow with vendored-openssl support | `.github/workflows/release-pypi-nightly-dcu.yml` |
+| 2026-06-29 | `0553e12d0` | `hg-full-base..main` | 性能/后端优化 | 修复合并分支产生的bug | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-06-29 | `06889adc0` | `hg-full-base..main` | 调度/缓存/PD | Disable DCU update weights from disk nightly test | `test/registered/rl/test_update_weights_from_disk.py` |
+| 2026-06-29 | `01216a18f` | `hg-full-base..main` | 测试/文档/基准 | Disable DCU remote weight loading nightly test | `test/registered/distributed/test_load_weights_from_remote_instance.py` |
+| 2026-06-29 | `75e928284` | `hg-full-base..main` | 性能/后端优化 | Register DCU tests in categorized nightly suites | `test/registered/constrained_decoding/test_constrained_decoding.py`, `test/registered/dcu/core/bw1100/test_hidden_states_dcu.py`, `test/registered/dcu/embedding/bw1100/test_gte_qwen2_embedding_dcu.py` 等 28 个文件 |
+| 2026-06-29 | `fa2430f45` | `hg-full-base..main` | 测试/文档/基准 | Organize DCU nightly workflow modules | `.github/workflows/nightly-test-dcu.yml` |
+| 2026-06-30 | `d22548eb1` | `hg-full-base..main` | 性能/后端优化 | feat(sgl-kernel): port l2norm kernel with tiled optimization for DCU | `python/sglang/srt/layers/attention/fla/l2norm.py`, `sgl-kernel/CMakeLists.txt`, `sgl-kernel/csrc/common_extension.cc` 等 11 个文件 |
+| 2026-06-30 | `93cf8edc4` | `hg-full-base..main` | 模型支持/运行时入口 | [Addition] deliver one validation doc | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-06-30 | `b76f31cce` | `hg-full-base..main` | 通用实现调整 | Refactor quality-gate.yml with enhanced checks | `.github/workflows/quality-gate.yml` |
+| 2026-06-30 | `f2e257f7a` | `hg-full-base..main` | 性能/后端优化 | feat(dcu): route sqrtsoftplus gating through LightOp | `python/sglang/srt/layers/moe/topk.py` |
+| 2026-06-30 | `bda910adb` | `hg-full-base..main` | 性能/后端优化 | feat(dcu): integrate LightOp alloc-extend kernel | `python/sglang/srt/mem_cache/allocator.py` |
+| 2026-06-30 | `ea182d81e` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow with environment variables | `.github/workflows/quality-gate.yml` |
+| 2026-06-30 | `412236292` | `hg-full-base..main` | 调度/缓存/PD | Modify ruff command to use --no-cache | `.github/workflows/quality-gate.yml` |
+| 2026-06-30 | `bd10f999c` | `hg-full-base..main` | 缺陷修复 | Fix formatting and improve quality gate script | `.github/workflows/quality-gate.yml` |
+| 2026-06-30 | `3910b3f9d` | `hg-full-base..main` | 缺陷修复 | fix(scheduler): restore DCU empty-prefix location | `python/sglang/srt/managers/schedule_batch.py` |
+| 2026-06-30 | `ff440b897` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record C04 runtime validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-06-30 | `445eaafe5` | `hg-full-base..main` | 性能/后端优化 | [Perf] optimize aiter asm moe via shuffle weight | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-07-01 | `41db24a84` | `hg-full-base..main` | 通用实现调整 | Enhance quality baseline scan with new checks | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-07-01 | `20f106c6b` | `hg-full-base..main` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-07-01 | `72f023717` | `hg-full-base..main` | 通用实现调整 | Remove credential keyword pattern from scan config | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-07-01 | `af015c4ce` | `hg-full-base..main` | 调度/缓存/PD | Update Trivy cache volume permissions | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-07-01 | `35456bae3` | `hg-full-base..main` | 性能/后端优化 | [CI] fix pre-commit lint errors on megamoe w8a8 changed files | `.codespellrc`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/moe/mega_moe.py` 等 7 个文件 |
+| 2026-07-01 | `2b1fbe1e6` | `hg-full-base..main` | 性能/后端优化 | [CI] fix pre-commit lint errors surfaced after merging v0.5.12_dev | `python/sglang/srt/environ.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-07-01 | `696cae936` | `hg-full-base..main` | 缺陷修复 | fix(fst): use local device in fastsafetensors iterator for multi-node loading | `python/sglang/srt/model_loader/weight_utils.py` |
+| 2026-07-01 | `998ffb809` | `hg-full-base..main` | 缺陷修复 | fix(fst): reclaim reserved memory after fastsafetensors weight load | `python/sglang/srt/model_loader/loader.py` |
+| 2026-07-01 | `e6d4b3378` | `hg-full-base..main` | 模型支持/运行时入口 | [Addition] deliver one validation doc | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-01 | `ef3571f7b` | `hg-full-base..main` | 性能/后端优化 | 解决CI报错问题 | `python/sglang/srt/utils/cuda_ipc_transport_utils.py` |
+| 2026-07-02 | `633270429` | `hg-full-base..main` | 测试/文档/基准 | ci: extend DCU stage-b per-file timeout | `.github/workflows/pr-test-dcu.yml` |
+| 2026-07-02 | `758a0a989` | `hg-full-base..main` | 模型支持/运行时入口 | Add open-source compliance configuration file | `.github/open-source-compliance.json` |
+| 2026-07-02 | `fc2af9331` | `hg-full-base..main` | 模型支持/运行时入口 | Add open-source compliance baseline workflow | `.github/workflows/open-source-compliance-baseline.yml` |
+| 2026-07-02 | `dd2685439` | `hg-full-base..main` | 性能/后端优化 | support w4a16 moe ep | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_wNa16_moe.py` |
+| 2026-07-02 | `84bd983ba` | `hg-full-base..main` | 模型支持/运行时入口 | ci: use local DCU reranker model | `.github/workflows/pr-test-dcu.yml` |
+| 2026-07-03 | `ce2521017` | `hg-full-base..main` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-07-03 | `c3dc2e8eb` | `hg-full-base..main` | 通用实现调整 | feat: validate DCU attention backend compatibility | `python/sglang/srt/server_args.py` |
+| 2026-07-03 | `00063277c` | `hg-full-base..main` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C07 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-03 | `8efd2ad46` | `hg-full-base..main` | 性能/后端优化 | update w4a16 deepgemm interface | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-07-04 | `cd2e73a67` | `hg-full-base..main` | 性能/后端优化 | 优化lint扫描规则 | `.github/workflows/quality-gate.yml` |
+| 2026-07-05 | `36f323752` | `hg-full-base..main` | 性能/后端优化 | fix: refine HCU runtime log wording | `python/sglang/check_env.py`, `python/sglang/srt/layers/attention/vision.py`, `python/sglang/srt/layers/quantization/mxfp4.py` 等 9 个文件 |
+| 2026-07-05 | `107be429b` | `hg-full-base..main` | 性能/后端优化 | chore: fix encoding baseline issues | `3rdparty/amd/profiling/torch_profiler.patch`, `docs/supported_models/specialized/reward_models.md`, `docs_new/docs/developer_guide/development_guide_using_docker.mdx` 等 13 个文件 |
+| 2026-07-06 | `88bb5176c` | `hg-full-base..main` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C08 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-06 | `10e17ae89` | `hg-full-base..main` | 通用实现调整 | loader: stream FSDP state dicts for Ulysses SP | `python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py`, `python/sglang/multimodal_gen/runtime/loader/fsdp_load.py`, `python/sglang/multimodal_gen/runtime/loader/utils.py` |
+| 2026-07-06 | `fd2163b9f` | `hg-full-base..main` | 通用实现调整 | wan: use full VAE path for I2V and TI2V | `python/sglang/multimodal_gen/configs/pipeline_configs/wan.py` |
+| 2026-07-06 | `cbb50e347` | `hg-full-base..main` | 模型支持/运行时入口 | profiler: add profile start step parameter | `python/sglang/multimodal_gen/configs/sample/sampling_params.py` |
+| 2026-07-06 | `9a3c7dbb4` | `hg-full-base..main` | 性能/后端优化 | rocm: allow flash attention backend selection | `python/sglang/multimodal_gen/runtime/platforms/rocm.py` |
+| 2026-07-06 | `fa6b75971` | `hg-full-base..main` | 性能/后端优化 | [BugFix] Deliver the remaining _is_dcu branch when flashattention_backend has changed | `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/triton_ops/metadata.py` |
+| 2026-07-06 | `bc13c0a98` | `hg-full-base..main` | 缺陷修复 | [sgl-diffusion] Fix Wan T2V VAE decode path | `python/sglang/multimodal_gen/configs/pipeline_configs/wan.py` |
+| 2026-07-06 | `a1ed918ae` | `hg-full-base..main` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C09 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-06 | `23cbd00e3` | `hg-full-base..main` | 缺陷修复 | [bugfix]: 解决hy3非mtp下的精度问题 | `python/sglang/srt/disaggregation/prefill.py` |
+| 2026-07-06 | `ec48fa780` | `hg-full-base..main` | 缺陷修复 | [bugfix]: 解决hy3开mtp下的精度问题. | `python/sglang/srt/disaggregation/base/conn.py`, `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py` 等 4 个文件 |
+| 2026-07-06 | `cf59f4695` | `hg-full-base..main` | 缺陷修复 | [bugfix]: avoid HYV3 PD KV compact remap | `python/sglang/srt/disaggregation/common/conn.py` |
+| 2026-07-07 | `4d198708c` | `hg-full-base..main` | 性能/后端优化 | 解决sp下对padding的处理 | `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/layers/quantization/w8a8_fp8.py` |
+| 2026-07-07 | `0507e6090` | `hg-full-base..main` | 缺陷修复 | fix: avoid amdsmi runtime logs on HCU | `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py` |
+| 2026-07-07 | `3f920d4e0` | `hg-full-base..main` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-07-07 | `9bde26e7c` | `hg-full-base..main` | 通用实现调整 | 解耦vllm rms_norm | `python/sglang/srt/layers/layernorm.py` |
+| 2026-07-07 | `d5f4d1c14` | `hg-full-base..main` | 性能/后端优化 | fix: skip expert distribution recording during CUDA graph capture | `python/sglang/srt/eplb/expert_distribution.py` |
+| 2026-07-07 | `9188d711e` | `hg-full-base..main` | 测试/文档/基准 | ci: rename HCU runtime text check script | `.github/workflows/quality-gate.yml`, `scripts/ci/dcu/check_hcu_runtime_text.py`, `scripts/ci/dcu/check_no_amd_runtime_text.py` |
+| 2026-07-07 | `ef36df96f` | `hg-full-base..main` | 模型支持/运行时入口 | chore: add header for DCU runtime text checker | `scripts/ci/dcu/check_no_amd_runtime_text.py` |
+| 2026-07-07 | `fe4e1fea3` | `hg-full-base..main` | 测试/文档/基准 | docs: sync LMSYS SGLang blog cards | `docs_new/index.mdx` |
+| 2026-07-08 | `bfaf180d1` | `hg-full-base..main` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C10 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-08 | `5d2c6854a` | `hg-full-base..main` | 性能/后端优化 | 0.5.12 MHA、GQA类hicache适配 | `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/mem_cache/hiradix_cache.py` 等 10 个文件 |
+| 2026-07-08 | `b6db54a9a` | `hg-full-base..main` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C11~C13 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-08 | `1cea713a7` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record C14-C16 validation block | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-08 | `b452d6bd6` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record C14-C16 functional validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-09 | `01a6f1b94` | `hg-full-base..main` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C14~C16 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-09 | `cee45bc55` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record C17-C19 validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-09 | `3e254b041` | `hg-full-base..main` | 通用实现调整 | style(distributed): apply pre-commit formatting to parallel_state.py | `python/sglang/srt/distributed/parallel_state.py` |
+| 2026-07-09 | `4b0fcbd07` | `hg-full-base..main` | 模型支持/运行时入口 | [Addition] deliver one validation doc of C17~C19 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-09 | `8b4a7bdeb` | `hg-full-base..main` | 测试/文档/基准 | ci: refine HCU runtime text check message | `scripts/ci/dcu/check_hcu_runtime_text.py` |
+| 2026-07-09 | `fda6d44a4` | `hg-full-base..main` | 测试/文档/基准 | ci: simplify HCU runtime text check failure message | `scripts/ci/dcu/check_hcu_runtime_text.py` |
+| 2026-07-09 | `d7af9508d` | `hg-full-base..main` | 调度/缓存/PD | style: apply CI hook formatting | `python/sglang/srt/disaggregation/decode_kvcache_offload_manager.py`, `python/sglang/srt/managers/cache_controller.py` |
+| 2026-07-09 | `616ba7b6d` | `hg-full-base..main` | 测试/文档/基准 | ci: reduce HCU runtime text check duplicate output | `scripts/ci/dcu/check_hcu_runtime_text.py` |
+| 2026-07-09 | `d445921fe` | `hg-full-base..main` | 性能/后端优化 | 新增对RadixAttention层的判断 | `python/sglang/srt/layers/quantization/w8a8_int8.py` |
+| 2026-07-09 | `dccf1782b` | `hg-full-base..main` | 测试/文档/基准 | ci: disable HCU runtime text check job | `.github/workflows/quality-gate.yml` |
+| 2026-07-09 | `b38f25513` | `hg-full-base..main` | 性能/后端优化 | ci: add manual HCU nightly workflow controls | `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml` 等 17 个文件 |
+| 2026-07-11 | `390ad18e7` | `hg-full-base..main` | 性能/后端优化 | ci: 修复 packed KV 测试注册导致的 DCU CI 收集失败 (#87) | `benchmark/kernels/pack_paged_kv_to_varlen/bench_pack_paged_kv_to_varlen.py`, `benchmark/kernels/pack_paged_kv_to_varlen/pack_paged_kv_to_varlen_benchmark_results.md`, `test/registered/attention/bench_pack_paged_kv_to_varlen.py` 等 5 个文件 |
+| 2026-07-11 | `0395a2bd2` | `hg-full-base..main` | 性能/后端优化 | fix: use lightop int8 deepep moe on dcu | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py` |
+| 2026-07-13 | `e3fee4310` | `hg-full-base..main` | 模型支持/运行时入口 | ci: sync HCU workflows and scripts with current main | `.github/open-source-compliance.json`, `.github/workflows/dcu-full-enabled.yml`, `.github/workflows/dcu-manual-model-test.yml` 等 33 个文件 |
+| 2026-07-13 | `de7170db0` | `hg-full-base..main` | 性能/后端优化 | kernel: migrate DCU ops and wrappers to HCU | `sgl-kernel/csrc/common_extension_rocm.cc`, `sgl-kernel/csrc/kvcacheio/transfer.cu`, `sgl-kernel/include/sgl_kernel_ops.h` 等 5 个文件 |
+| 2026-07-13 | `9353ecb96` | `hg-full-base..main` | 测试/文档/基准 | docs: complete HCU naming migration | `NOTICE`, `README.md`, `README_DCU.md` 等 7 个文件 |
+| 2026-07-13 | `1123fc038` | `hg-full-base..main` | 测试/文档/基准 | ci: enforce HCU rename safety checks | `scripts/ci/hcu/hcu_rename_allowlist.txt`, `scripts/ci/hcu/test_verify_hcu_rename.py`, `scripts/ci/hcu/verify_hcu_registration.py` 等 4 个文件 |
+| 2026-07-13 | `cba9e72cc` | `hg-full-base..main` | 性能/后端优化 | [BugFix] skip some uncompatibal env setup in hip for DCU | `python/sglang/srt/server_args.py` |
+| 2026-07-13 | `48489724d` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record 20260623 catch-up runtime status | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-13 | `40c658e8a` | `hg-full-base..main` | 测试/文档/基准 | ci: harden HCU runtime text checker | `.github/workflows/quality-gate.yml`, `scripts/ci/dcu/check_hcu_runtime_text.py`, `scripts/ci/dcu/tests/test_check_hcu_runtime_text.py` |
+| 2026-07-13 | `bd60c0223` | `hg-full-base..main` | 通用实现调整 | Enhance quality gate workflow with new checks and branches | `.github/workflows/quality-gate.yml` |
+| 2026-07-13 | `1c70e76d5` | `hg-full-base..main` | 性能/后端优化 | test: use verified local HCU model paths | `test/registered/hcu/embedding/bw1100/test_gte_qwen2_embedding_hcu.py`, `test/registered/hcu/lora/bw1100/test_qwen3_lora_server_hcu.py`, `test/registered/hcu/moe/bw1100/test_qwen3_30b_moe_instruct_hcu.py` 等 8 个文件 |
+| 2026-07-13 | `8c797abd6` | `hg-full-base..main` | 测试/文档/基准 | Record 20260629 DCU runtime validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-13 | `427726d60` | `hg-full-base..main` | 缺陷修复 | fix: complete HCU runtime text cleanup | `python/sglang/multimodal_gen/runtime/distributed/device_communicators/pynccl_wrapper.py`, `python/sglang/multimodal_gen/test/server/test_server_common.py`, `python/sglang/multimodal_gen/test/server/test_server_utils.py` 等 6 个文件 |
+| 2026-07-13 | `24bcdba3b` | `hg-full-base..main` | 性能/后端优化 | feat: support AITER W4A16 MOE_C prefill | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` |
+| 2026-07-13 | `bf59e99fd` | `hg-full-base..main` | 测试/文档/基准 | ci: harden HCU runtime text quality gate | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_hcu_runtime_text.py` |
+| 2026-07-13 | `d8ed552da` | `hg-full-base..main` | 模型支持/运行时入口 | docs(dcu): add 20260629 conflict review | `docs/internal/dcu-main-catchup-20260629-conflict-review.md` |
+| 2026-07-13 | `c078943aa` | `hg-full-base..main` | 性能/后端优化 | chore: fix fused_moe lint issues | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py` |
+| 2026-07-13 | `516a35c40` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record 20260703 runtime blocker | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `2981595c7` | `hg-full-base..main` | 性能/后端优化 | [FIX] 修复走非dcu_fa下的报错 | `python/sglang/srt/layers/attention/flashattention_backend.py` |
+| 2026-07-14 | `d53953dbe` | `hg-full-base..main` | 测试/文档/基准 | ci: clean up HCU validation checks | `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/tests/test_check_hcu_runtime_text.py` |
+| 2026-07-14 | `b9ca7c2ad` | `hg-full-base..main` | 通用实现调整 | Refine copyright/license warning messages | `.github/workflows/quality-gate.yml` |
+| 2026-07-14 | `e3aa204a0` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): require catch-up conflict reviews | `docs/internal/dcu-main-catchup-20260706-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-migration-plan.md` |
+| 2026-07-14 | `412d0ef9f` | `hg-full-base..main` | 模型支持/运行时入口 | docs(dcu): add 20260709 conflict review | `docs/internal/dcu-main-catchup-20260709-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `c0e8edd74` | `hg-full-base..main` | 性能/后端优化 | fix(dcu): initialize DeepEP dispatch dtype state | `docs/internal/dcu-main-conflict-ledger.md`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` |
+| 2026-07-14 | `f1c5eda31` | `hg-full-base..main` | 测试/文档/基准 | ci: require HCU runtime text check | `.github/workflows/quality-gate.yml` |
+| 2026-07-14 | `48c3c0997` | `hg-full-base..main` | 测试/文档/基准 | ci: run HCU text check in Python 3.10 container | `.github/workflows/quality-gate.yml` |
+| 2026-07-14 | `9d7fbb017` | `hg-full-base..main` | 模型支持/运行时入口 | docs: add 20260710 conflict review | `docs/internal/dcu-main-catchup-20260710-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `24894692e` | `hg-full-base..main` | 缺陷修复 | fix: use runtime attention TP size in model warmup | `python/sglang/srt/model_executor/model_runner.py` |
+| 2026-07-14 | `6630db3cf` | `hg-full-base..main` | 测试/文档/基准 | docs: record 20260710 pure-TP validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `3d77308ea` | `hg-full-base..main` | 测试/文档/基准 | docs: mark 20260710 catch-up validated | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-14 | `3e335fce8` | `hg-full-base..main` | 测试/文档/基准 | docs: correct 20260710 endpoint subject | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `1109d462d` | `hg-full-base..main` | 调度/缓存/PD | [Feature] Support PD different-TP transfer for hybrid SWA/NSA and unequal K/V item lens. | `python/sglang/srt/disaggregation/mooncake/conn.py` |
+| 2026-07-15 | `baa08af59` | `hg-full-base..main` | 模型支持/运行时入口 | docs(dcu): add 20260712 conflict review | `docs/internal/dcu-main-catchup-20260712-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `44f81e8f7` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record 20260712 runtime gate status | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `0b30b7c9d` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record 20260712 runtime validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `324181561` | `hg-full-base..main` | 模型支持/运行时入口 | docs(dcu): add 20260713 conflict review | `docs/internal/dcu-main-catchup-20260713-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `20633db57` | `hg-full-base..main` | 模型支持/运行时入口 | docs(dcu): add 20260714 conflict review | `docs/internal/dcu-main-catchup-20260714-conflict-review.md`, `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `f67cdf69b` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record 20260714 runtime blocker | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-15 | `49a10aec8` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): record 20260714 owner validation | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-16 | `dc1323ba4` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): finalize v0.5.12_dev forward-port | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`, `docs/internal/dcu-main-migration-plan.md` |
+| 2026-07-16 | `339dfe433` | `hg-full-base..main` | 测试/文档/基准 | docs(dcu): define v0.5.15.post1 release workflow | `docs/internal/dcu-main-forward-port-v0.5.12-dev-plan-20260715.md`, `docs/internal/dcu-main-migration-plan.md`, `docs/internal/dcu-v0.5.15-post1-dev-plan.md` |
+| 2026-07-16 | `e5a2dd041` | `hg-full-base..main` | 缺陷修复 | [bugfix]适配新的causal_conv1d接口 | `python/sglang/srt/layers/attention/linear/gdn_backend.py` |
+| 2026-07-16 | `d28069157` | `hg-full-base..main` | 缺陷修复 | [bugfix]适配新的causal_conv1d接口 | `python/sglang/srt/layers/attention/linear/gdn_backend.py` |
+| 2026-07-16 | `09d7a1d4c` | `hg-full-base..main` | 性能/后端优化 | support fabric aiter custom allreduce | `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/parallel_state.py`, `python/sglang/srt/model_executor/model_runner.py` 等 5 个文件 |
+| 2026-07-20 | `fe9f24924` | `hg-full-base..main` | 缺陷修复 | fix: prevent PD Decode DP hang under enable-dp-attention | `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` 等 5 个文件 |
+| 2026-07-20 | `079275b81` | `hg-full-base..main` | 模型支持/运行时入口 | ci: add local sensitive diff text gate | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_sensitive_diff_text.py` |
+| 2026-07-20 | `358a33714` | `hg-full-base..main` | 缺陷修复 | fix(hcu): keep Harbor build image path | `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` 等 4 个文件 |
+| 2026-07-20 | `0c44c350b` | `hg-full-base..main` | 通用实现调整 | feat: enable dynamic batching for LTX-2 T2V | `python/sglang/multimodal_gen/configs/pipeline_configs/ltx_2.py`, `python/sglang/multimodal_gen/configs/sample/ltx_2.py` |
+| 2026-07-20 | `86575d776` | `hg-full-base..main` | 缺陷修复 | fix: support tensor-parallel transformer loading | `python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py`, `python/sglang/multimodal_gen/runtime/server_args.py` |
+| 2026-07-20 | `6182c3e35` | `hg-full-base..main` | 缺陷修复 | fix: handle non-contiguous LTX attention outputs | `python/sglang/multimodal_gen/runtime/models/dits/ltx_2.py` |
+| 2026-07-20 | `81e3561ae` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): exclude two unstable PR tests | `.github/workflows/pr-test-hcu.yml` |
+| 2026-07-20 | `e47445d2f` | `hg-full-base..main` | 调度/缓存/PD | chore: clean leftover patch labels in PD Decode DP sync | `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` 等 5 个文件 |
+| 2026-07-20 | `811aa027d` | `hg-full-base..main` | 测试/文档/基准 | ci: replace HCU runtime text check with sensitive diff gate | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_hcu_runtime_text.py`, `scripts/ci/hcu/check_sensitive_diff_text.py` |
+| 2026-07-20 | `5ac1f2418` | `hg-full-base..main` | 模型支持/运行时入口 | Add GitHub Actions workflow for quality gate | `.github/workflows/pr-quality-gate.yml` |
+| 2026-07-20 | `5543eb3df` | `hg-full-base..main` | 调度/缓存/PD | Rename quality-gate workflow and update triggers | `.github/workflows/quality-gate.yml` |
+| 2026-07-20 | `e19d341ab` | `hg-full-base..main` | 调度/缓存/PD | Refactor quality gate workflow and update triggers | `.github/workflows/quality-gate.yml` |
+| 2026-07-20 | `15a656ea6` | `hg-full-base..main` | 测试/文档/基准 | test(hcu): align v0.5.15 compatibility tests | `test/registered/hcu/openai_server/test_serving_chat_hcu.py`, `test/registered/hcu/unit/test_profile_merger_hcu.py`, `test/registered/unit/server_args/test_server_args.py` |
+| 2026-07-21 | `14da9b10e` | `hg-full-base..main` | 调度/缓存/PD | Update workflow reference in quality-gate.yml | `.github/workflows/quality-gate.yml` |
+| 2026-07-21 | `e7ab05411` | `hg-full-base..main` | 通用实现调整 | Delete .github/workflows/pr-quality-gate.yml | `.github/workflows/pr-quality-gate.yml` |
+| 2026-07-21 | `c1f3f08c8` | `hg-full-base..main` | 调度/缓存/PD | Update workflow reference to a new commit | `.github/workflows/quality-gate.yml` |
+| 2026-07-21 | `9864c8451` | `hg-full-base..main` | 测试/文档/基准 | ci: use shared sensitive diff gate for HCU port | `.github/workflows/quality-gate.yml`, `scripts/ci/hcu/check_sensitive_diff_text.py` |
+| 2026-07-21 | `ac56ca009` | `hg-full-base..main` | 测试/文档/基准 | ci: follow main sensitive diff workflow | `.github/workflows/quality-gate.yml` |
+| 2026-07-21 | `7b6a9dd89` | `hg-full-base..main` | 性能/后端优化 | 修复DeepseekV4精度问题 | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-07-22 | `9fc04a7a2` | `hg-full-base..main` | 性能/后端优化 | [BugFix] Disable the standalone-DCU MegaMoE ASM tail-reduce path by default to avoid vmfault | `python/sglang/srt/layers/moe/mega_moe.py` |
+| 2026-07-22 | `1c40e365c` | `hg-full-base..main` | 调度/缓存/PD | support mla lightop | `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-07-22 | `5673a3972` | `hg-full-base..main` | 性能/后端优化 | ci(hcu): finalize nightly pre-merge safeguards | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_notify_feishu.py` 等 6 个文件 |
+| 2026-07-22 | `7941e0419` | `hg-full-base..main` | 缺陷修复 | fix: enable HiCache layout_dcu for hybrid Mamba and EAGLE draft | `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py` |
+| 2026-07-22 | `f391712f7` | `hg-full-base..main` | 缺陷修复 | fix(hcu): use HCU guard for MLA KV cache storage | `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-07-22 | `0b46ed36d` | `hg-full-base..main` | 性能/后端优化 | fix: apply bias after HCU DeepGEMM FP8 linear | `python/sglang/srt/layers/quantization/fp8_utils.py` |
+| 2026-07-22 | `b1606885e` | `hg-full-base..main` | 缺陷修复 | Fix help text for custom all-reduce backend | `python/sglang/srt/server_args.py` |
+| 2026-07-22 | `421a13a80` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): enable accuracy notification on default branch | `.github/workflows/nightly-test-hcu.yml` |
+| 2026-07-22 | `8b38b9a25` | `hg-full-base..main` | 调度/缓存/PD | Update comment for all_gather usage in scheduler | `python/sglang/srt/managers/scheduler_dp_attn_mixin.py` |
+| 2026-07-23 | `83d2a2b4b` | `hg-full-base..main` | 缺陷修复 | fix(hcu): rename stale DCU HiCache identifiers | `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py` 等 4 个文件 |
+| 2026-07-23 | `e338cca15` | `hg-full-base..main` | 缺陷修复 | ci(hcu): improve accuracy card and fix VLM model path | `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-23 | `c3755b4d4` | `hg-full-base..main` | 性能/后端优化 | fix: make DP local control broadcast opt-in via env | `python/sglang/srt/environ.py`, `python/sglang/srt/managers/data_parallel_controller.py`, `python/sglang/srt/managers/scheduler.py` 等 4 个文件 |
+| 2026-07-24 | `64d1765b4` | `hg-full-base..main` | 缺陷修复 | fix(hcu): prefer hcusmi for platform detection | `python/sglang/multimodal_gen/runtime/platforms/__init__.py` |
+| 2026-07-24 | `6c1786bc4` | `hg-full-base..main` | 缺陷修复 | fix(hcu): prefer hcusmi for platform detection | `python/sglang/multimodal_gen/runtime/platforms/__init__.py` |
+| 2026-07-24 | `ca9b264a2` | `hg-full-base..main` | 缺陷修复 | fix(hcu): prefer hcusmi for platform detection | `python/sglang/multimodal_gen/runtime/platforms/__init__.py` |
+| 2026-07-24 | `7482123c3` | `hg-full-base..main` | 缺陷修复 | fix(hcu): prefer hcusmi for platform detection | `python/sglang/multimodal_gen/runtime/platforms/__init__.py` |
+| 2026-07-24 | `f76d2cea3` | `hg-full-base..main` | 通用实现调整 | Delete .github/workflows/quality-baseline-scan.yml | `.github/workflows/quality-baseline-scan.yml` |
+| 2026-07-24 | `eb6a34093` | `hg-full-base..main` | 调度/缓存/PD | Update workflow reference to latest commit | `.github/workflows/quality-gate.yml` |
+| 2026-07-24 | `9a8b1bd08` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow reference to new commit | `.github/workflows/quality-gate.yml` |
+| 2026-07-24 | `2c21b95e6` | `hg-full-base..main` | 缺陷修复 | fix(ci): align Feishu accuracy table | `.github/workflows/hcu-feishu-notify-preview.yml`, `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-24 | `6ac12c2e5` | `hg-full-base..main` | 测试/文档/基准 | ci: decouple Feishu preview from HCU runners | `.github/workflows/hcu-feishu-notify-preview.yml` |
+| 2026-07-24 | `65b7c4268` | `hg-full-base..main` | 测试/文档/基准 | ci: use shared runner for Feishu preview | `.github/workflows/hcu-feishu-notify-preview.yml` |
+| 2026-07-24 | `4af810205` | `hg-full-base..main` | 缺陷修复 | fix(ci): use card v2 metadata component | `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-24 | `9e13c77ce` | `hg-full-base..main` | 缺陷修复 | fix(ci): use card v2 link button | `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-24 | `88d4501a3` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow reference | `.github/workflows/quality-gate.yml` |
+| 2026-07-24 | `a3efe5e53` | `hg-full-base..main` | 性能/后端优化 | [bugfix]:修复lightop_per_token_quant_fp8调用前tensor准备. | `python/sglang/srt/layers/quantization/fp8_kernel.py`, `python/sglang/srt/mem_cache/allocator.py` |
+| 2026-07-27 | `afac89e0e` | `hg-full-base..main` | 性能/后端优化 | feat(hcu): add KME W8A8 hipBLASLt path via METHODS=3 | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py` |
+| 2026-07-27 | `87e383180` | `hg-full-base..main` | 性能/后端优化 | fix: 移除旧的lmslim导入方式. | `python/sglang/srt/layers/quantization/fp8_utils.py` |
+| 2026-07-27 | `163a92c14` | `hg-full-base..main` | 缺陷修复 | fix(hcu):修改lightop的算子接口. | `python/sglang/srt/layers/activation.py`, `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-07-27 | `93c56ce71` | `hg-full-base..main` | 通用实现调整 | Refactor quality gate workflow and job configurations | `.github/workflows/quality-gate.yml` |
+| 2026-07-27 | `0710e82a0` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow for new branch version | `.github/workflows/quality-gate.yml` |
+| 2026-07-28 | `8f848be4e` | `hg-full-base..main` | 测试/文档/基准 | ci: use configured HCU release image | `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` 等 4 个文件 |
+| 2026-07-28 | `77939d9a5` | `hg-full-base..main` | 测试/文档/基准 | ci: use configured HCU release image | `.github/workflows/lint-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-07-28 | `997e64560` | `hg-full-base..main` | 测试/文档/基准 | ci: use configured HCU release image | `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` 等 4 个文件 |
+| 2026-07-28 | `9a4f82911` | `hg-full-base..main` | 性能/后端优化 | fix lint | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-07-28 | `0305c5a3b` | `hg-full-base..main` | 性能/后端优化 | fix lint | `python/sglang/srt/layers/moe/ep_moe/layer.py` |
+| 2026-07-28 | `cd4802bba` | `hg-full-base..main` | 性能/后端优化 | fix lint | `python/sglang/srt/layers/moe/ep_moe/layer.py`, `python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors_moe_marlin.py` |
+| 2026-07-28 | `d0c472989` | `hg-full-base..main` | 调度/缓存/PD | ci: add HCU PD disaggregation smoke tests | `test/registered/hcu/disaggregation/pd_hcu_utils.py`, `test/registered/hcu/disaggregation/test_pd_basic_hcu.py`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py` 等 6 个文件 |
+| 2026-07-28 | `7b89bf661` | `hg-full-base..main` | 性能/后端优化 | fix: propagate return_hidden_states_before_norm flag for mHC target-verify | `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/model_executor/cuda_graph_runner.py`, `python/sglang/srt/speculative/eagle_worker_v2.py` |
+| 2026-07-28 | `fc59c96c5` | `hg-full-base..main` | 缺陷修复 | fix lint: format line breaks and remove trailing whitespace | `python/sglang/srt/batch_overlap/two_batch_overlap.py`, `python/sglang/srt/speculative/eagle_worker_v2.py` |
+| 2026-07-28 | `035ca766f` | `hg-full-base..main` | 缺陷修复 | fix(cache): forward Mamba indices in NSA offload | `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-07-29 | `bfa4011ad` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): share wheel staging across runners | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml` 等 4 个文件 |
+| 2026-07-29 | `92e95e3f5` | `hg-full-base..main` | 性能/后端优化 | perf(mamba): flatten fused state scatter launch grid | `python/sglang/srt/layers/attention/mamba/mamba_state_scatter_triton.py` |
+| 2026-07-29 | `049f5e15e` | `hg-full-base..main` | 性能/后端优化 | [bugfix] 透传apply_routed_scaling_factor_on_output，防止moe_sum多乘routed_scaling_factor | `python/sglang/srt/layers/moe/topk.py` |
+| 2026-07-29 | `6e7a53e86` | `hg-full-base..main` | 性能/后端优化 | fix(hcu): select hipblaslt w8a8 layout by gfx arch | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py` |
+| 2026-07-29 | `4e5a95fcb` | `hg-full-base..main` | 缺陷修复 | fix(pd): transfer MTP NSA topk seed metadata over Mooncake | `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/decode_schedule_batch_mixin.py` 等 9 个文件 |
+| 2026-07-29 | `58d475775` | `hg-full-base..main` | 缺陷修复 | fix(hcu): allow single-node context parallel tp16 | `python/sglang/srt/server_args.py` |
+| 2026-07-29 | `3b4327cd7` | `hg-full-base..main` | 性能/后端优化 | fix(hcu): support current LightOp fp8 quant API | `python/sglang/srt/layers/linear.py` |
+| 2026-07-29 | `e18e6b94b` | `hg-full-base..main` | 测试/文档/基准 | docs(hcu): record daily forward-port 20260729 | `docs/internal/dcu-main-conflict-ledger.md` |
+| 2026-07-29 | `6a031254f` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): isolate nightly services and shared results | `.github/workflows/nightly-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_publish_accuracy.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-07-29 | `be81ab419` | `hg-full-base..main` | 缺陷修复 | fix(dp): demote DP Decode StepInfo log to debug | `python/sglang/srt/managers/scheduler_dp_attn_mixin.py` |
+| 2026-07-29 | `b2f0b830c` | `hg-full-base..main` | 性能/后端优化 | ci: disable unused workflow triggers | `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml` 等 39 个文件 |
+| 2026-07-29 | `111fea82f` | `hg-full-base..main` | 性能/后端优化 | ci: disable unused workflow triggers | `.github/workflows/amd-aiter-scout.yml`, `.github/workflows/amd-ci-job-monitor.yml`, `.github/workflows/ci-coverage-overview.yml` 等 36 个文件 |
+| 2026-07-29 | `84bfd45c4` | `hg-full-base..main` | 缺陷修复 | 修复hicache+pp并行 stage不一致问题 | `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/cache_init_params.py` 等 4 个文件 |
+| 2026-07-30 | `b8389e5c5` | `hg-full-base..main` | 调度/缓存/PD | test(hcu): register PD helper for nightly collection | `test/registered/hcu/disaggregation/pd_hcu_utils.py` |
+| 2026-07-30 | `6ea38ee52` | `hg-full-base..main` | 调度/缓存/PD | style(hcu): format PD helper registration | `test/registered/hcu/disaggregation/pd_hcu_utils.py` |
+| 2026-07-30 | `489170e5c` | `hg-full-base..main` | 性能/后端优化 | [FIX] 修复moe_w8a8重排函数删除问题 | `python/sglang/srt/layers/moe/moe_runner/lightop.py` |
+| 2026-07-30 | `17cf690af` | `hg-full-base..main` | 性能/后端优化 | style: fix HCU lint checks | `python/sglang/srt/layers/moe/moe_runner/lightop.py`, `python/sglang/srt/layers/quantization/__init__.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8.py` 等 4 个文件 |
+| 2026-07-31 | `02968a96d` | `hg-full-base..main` | 缺陷修复 | fix(hcu): restore shared wheel staging root lost in forward-port | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml` 等 4 个文件 |
+| 2026-07-31 | `39d691220` | `hg-full-base..main` | 缺陷修复 | fix(hcu): restore NETWORK_MODE default lost in forward-port | `scripts/ci/hcu/hcu_ci_start_container.sh` |
+| 2026-07-31 | `83f43b3f4` | `hg-full-base..main` | 性能/后端优化 | [CI] Fix some CI errors | `python/sglang/srt/layers/moe/moe_runner/aiter.py` |
+| 2026-07-31 | `dc015a0bc` | `hg-full-base..main` | 缺陷修复 | [PD] When PP is greater than 1, fix the request rollback when the KV cache is exhausted | `python/sglang/srt/disaggregation/common/conn.py`, `python/sglang/srt/disaggregation/decode.py`, `python/sglang/srt/disaggregation/mooncake/conn.py` 等 11 个文件 |
+| 2026-07-31 | `497c35457` | `hg-full-base..main` | 缺陷修复 | fix(scheduler): abort too-large requests instead of dead-looping | `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/managers/tokenizer_manager.py` |
+| 2026-07-31 | `b48994210` | `hg-full-base..main` | 测试/文档/基准 | ci: install PyYAML for slash command handler (#156) | `.github/workflows/slash-command-handler.yml` |
+| 2026-07-31 | `f556d3896` | `hg-full-base..main` | 性能/后端优化 | [FIX] 修复lmslim和lightop接口冲突问题 (#154) | `python/sglang/srt/layers/quantization/slimquant_w4a8.py` |
+| 2026-07-31 | `0ff7a014f` | `hg-full-base..main` | 模型支持/运行时入口 | ci(hcu): support resending Feishu accuracy results | `.github/workflows/hcu-feishu-notify-preview.yml` |
+| 2026-07-31 | `9c69436ee` | `hg-full-base..main` | 缺陷修复 | fix(hcu): remove resend tool dependencies | `.github/workflows/hcu-feishu-notify-preview.yml` |
+| 2026-07-31 | `85dcec947` | `hg-full-base..main` | 缺陷修复 | fix(hcu): support Python 3.8 in Feishu notifier | `scripts/ci/hcu/hcu_ci_notify_feishu.py` |
+| 2026-08-03 | `67ecec8dd` | `hg-full-base..main` | 缺陷修复 | fix(hcu): scope Feishu status to accuracy results | `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` |
+| 2026-08-03 | `ff7f44b8e` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow to use version v2.0.0 | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `286612da4` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow to use version v2.0.0 | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `4d3aaf6af` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow for versioning and concurrency | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `3358846e5` | `hg-full-base..main` | 调度/缓存/PD | Update quality-gate.yml | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `e6c410259` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow to version 2.0.1 | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `de696eab9` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow to version 2.0.1 | `.github/workflows/quality-gate.yml` |
+| 2026-08-03 | `015f6d49a` | `hg-full-base..main` | 性能/后端优化 | fix lint: drop redundant module-scope sgl_kernel import in forward_batch_info | `python/sglang/srt/model_executor/forward_batch_info.py` |
+| 2026-08-03 | `143ee9287` | `hg-full-base..main` | 性能/后端优化 | refactor(hcu): route KME W8A8 hipBLASLt through lightop | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py` |
+| 2026-08-04 | `cd60b7433` | `hg-full-base..main` | 调度/缓存/PD | 修改hicache+pp并行 stage不一致问题commit提交格式 | `python/sglang/srt/managers/cache_controller.py`, `python/sglang/srt/mem_cache/hiradix_cache.py` |
+| 2026-08-04 | `083d1d8b9` | `hg-full-base..main` | 性能/后端优化 | fix(hcu): restore DeepGEMM PD helper and current cache API | `python/sglang/srt/layers/moe/utils.py`, `python/sglang/srt/mem_cache/memory_pool.py` |
+| 2026-08-04 | `e8298ba90` | `hg-full-base..main` | 缺陷修复 | fix(hcu): restore DP decode protocol constants | `python/sglang/srt/managers/scheduler_components/dp_attn.py` |
+| 2026-08-04 | `43d8d9ac1` | `hg-full-base..main` | 性能/后端优化 | style(hcu): fix lint for KME W8A8 lightop path | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py` |
+| 2026-08-04 | `8160ebe53` | `hg-full-base..main` | 缺陷修复 | fix(hcu): retain PD decode adapter callbacks | `python/sglang/srt/managers/scheduler_components/dp_attn.py` |
+| 2026-08-05 | `2a342cdf1` | `hg-full-base..main` | 缺陷修复 | fix fp8 bug of triton | `python/sglang/srt/layers/attention/triton_ops/decode_attention.py` |
+| 2026-08-05 | `71de6dd93` | `hg-full-base..main` | 缺陷修复 | fix(ci): align HCU gateway wheel detection | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` 等 4 个文件 |
+| 2026-08-05 | `2fb37eaac` | `hg-full-base..main` | 缺陷修复 | fix(ci): align HCU Python wheel paths | `.github/workflows/pr-test-hcu.yml` |
+| 2026-08-05 | `44bb481cf` | `hg-full-base..main` | 性能/后端优化 | fix(eplb): apply expert ID remapping for HCU fused TopK | `python/sglang/srt/layers/moe/topk.py` |
+| 2026-08-05 | `dabae6b13` | `hg-full-base..main` | 缺陷修复 | fix(ci): use PR files API for HCU wheel detection | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` 等 4 个文件 |
+| 2026-08-06 | `f1c6f5631` | `hg-full-base..main` | 性能/后端优化 | fix(hcu): drop leftover source hunks that renaming and partial takes left behind | `python/sglang/srt/layers/quantization/compressed_tensors/quant_ops.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py`, `python/sglang/srt/managers/scheduler_components/dp_attn.py` |
+| 2026-08-06 | `8e2aba4bf` | `hg-full-base..main` | 性能/后端优化 | fix lint: apply isort/black to forward-port diff | `python/sglang/kernels/ops/attention/decode_attention.py`, `python/sglang/srt/layers/moe/moe_runner/aiter.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8.py` 等 5 个文件 |
+| 2026-08-06 | `f17440f19` | `hg-full-base..main` | 缺陷修复 | fix(hcu): restore original license headers dropped by the forward-port | `scripts/ci/hcu/hcu_ci_start_container.sh`, `test/run_suite.py` |
+| 2026-08-06 | `b0f2bb3a8` | `hg-full-base..main` | 缺陷修复 | fix(hcu): restore network_mode matrix keys dropped by the forward-port | `.github/workflows/nightly-test-hcu.yml` |
+| 2026-08-07 | `154a88c7b` | `hg-full-base..main` | 性能/后端优化 | fix lint: apply isort/black to the lmslim->lightop migration | `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/layers/quantization/fp8_utils.py` |
+| 2026-08-07 | `b59995e42` | `hg-full-base..main` | 缺陷修复 | fix(hcu): point PD smoke tests at a declared HCU suite | `test/registered/hcu/README.md`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`, `test/registered/hcu/disaggregation/test_pd_hcu_utils.py` |
+| 2026-08-07 | `92ce544fa` | `hg-full-base..main` | 测试/文档/基准 | ci: align v0.5.15 workflow triggers | `.github/workflows/bot-bump-docs-version.yml`, `.github/workflows/release-docker-amd.yml`, `.github/workflows/release-docker-npu.yml` 等 7 个文件 |
+| 2026-08-07 | `132b630bc` | `hg-full-base..main` | 性能/后端优化 | ci(hcu): harden server lifecycle and model mounts | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `python/sglang/test/hcu_cookbook_utils.py` 等 5 个文件 |
+| 2026-08-07 | `4c7a264e5` | `hg-full-base..main` | 性能/后端优化 | ci(hcu): align model assets and selected-ref kernel | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `python/sglang/test/hcu_cookbook_utils.py` |
+| 2026-08-07 | `1a5ce1750` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): publish reasoning results to shared storage | `.github/workflows/nightly-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_publish_reasoning_code.py`, `scripts/ci/hcu/test_hcu_ci_publish_reasoning_code.py` |
+| 2026-08-07 | `50736ebe7` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): keep migration changes scoped | `README_HCU.md` |
+| 2026-08-07 | `dc5cd7089` | `hg-full-base..main` | 测试/文档/基准 | ci: finalize v0.5.15 workflow policy | `.github/workflows/ci-auto-bisect.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/slash-command-handler.yml` |
+| 2026-08-07 | `ecf4756ce` | `hg-full-base..main` | 测试/文档/基准 | test(hcu): isolate server guard unit test | `scripts/ci/hcu/test_hcu_server_guard.py` |
+| 2026-08-07 | `76ced479e` | `hg-full-base..main` | 性能/后端优化 | test(hcu): use v0.5.15 FP8 kernel path | `test/registered/hcu/kernels/test_fp8_quant_reference_hcu.py` |
+| 2026-08-07 | `3fbc8ae9e` | `hg-full-base..main` | 性能/后端优化 | test(hcu): align numerical references with v0.5.15 | `test/registered/hcu/kernels/test_attention_reference_hcu.py`, `test/registered/hcu/kernels/test_int8_w8a8_reference_hcu.py` |
+| 2026-08-07 | `3de1323a9` | `hg-full-base..main` | 调度/缓存/PD | ci(hcu): normalize rebased PD suite names | `test/registered/hcu/README.md`, `test/registered/hcu/disaggregation/test_pd_environment_hcu.py`, `test/registered/hcu/disaggregation/test_pd_hcu_utils.py` |
+| 2026-08-10 | `e3a9d595c` | `hg-full-base..main` | 缺陷修复 | [HCU][DSpark] Fix sampling parameter updates after graph capture | `python/sglang/srt/speculative/dspark_components/dspark_draft_sampler.py` |
+| 2026-08-10 | `4a6fbed98` | `hg-full-base..main` | 性能/后端优化 | [HCU][DSpark] Add standalone Triton fallback for missing AITER MoE config | `python/sglang/srt/layers/moe/hcu_dspark_aiter_moe_fallback.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-08-10 | `5fd89c728` | `hg-full-base..main` | 缺陷修复 | [BugFix] fix the inference tensor graph replay issues in MTP mode | `python/sglang/srt/managers/tp_worker.py`, `python/sglang/srt/speculative/eagle_worker_common.py`, `python/sglang/srt/speculative/eagle_worker_v2.py` |
+| 2026-08-10 | `b36730b41` | `hg-full-base..main` | 性能/后端优化 | fix lint: apply pre-commit fixes to the mHC EAGLE changes | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`, `python/sglang/srt/speculative/eagle_worker_common.py` |
+| 2026-08-11 | `ccbb65acb` | `hg-full-base..main` | 性能/后端优化 | [HCU][DSpark] Fix DP EP MoE fallback routing | `python/sglang/srt/layers/moe/moe_runner/triton_utils/fused_moe.py`, `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py`, `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-08-12 | `2083c069f` | `hg-full-base..main` | 性能/后端优化 | fix lint: apply pre-commit fixes to the EP MoE fallback change | `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` |
+| 2026-08-12 | `fb7f11956` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): adapt wheel jobs to CIUpload 0.3 | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` 等 4 个文件 |
+| 2026-08-13 | `54e3ed50f` | `hg-full-base..main` | 缺陷修复 | [BugFix] fix the runtime errors in ep+dspark mode | `python/sglang/srt/speculative/dspark_components/dspark_draft.py` |
+| 2026-08-13 | `18e167b73` | `hg-full-base..main` | 性能/后端优化 | [BugFix] fix the client inference None errors in temperature>0 with a torch implementation | `python/sglang/srt/speculative/dflash_utils.py` |
+| 2026-08-13 | `5e2ba659e` | `hg-full-base..main` | 性能/后端优化 | fix lint: apply pre-commit fixes to the dspark bugfixes | `python/sglang/srt/speculative/dflash_utils.py` |
+| 2026-08-14 | `fa309a1e1` | `hg-full-base..main` | 性能/后端优化 | fix(hcu): drop the stale 0.5.12-era expert-count override in FusedMoE | `python/sglang/srt/layers/moe/fused_moe_triton/layer.py` |
+| 2026-08-17 | `9bbf3799d` | `hg-full-base..main` | 模型支持/运行时入口 | docs(hcu): add the 20260817 official backport validation report | `docs/internal/backport-official-20260817-validation-report.md` |
+| 2026-08-18 | `b0dc28040` | `hg-full-base..main` | 性能/后端优化 | Hcu/fix main kernel build path (#207) | `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/nightly-test-hcu.yml` 等 9 个文件 |
+| 2026-08-20 | `62a07586d` | `hg-full-base..main` | 性能/后端优化 | [feat] 适配HCU FA3 | `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py` 等 5 个文件 |
+| 2026-08-20 | `fb7369fec` | `hg-full-base..main` | 缺陷修复 | [bugfix]删除无关文件 | `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942` |
+| 2026-08-20 | `b628d29e1` | `hg-full-base..main` | 测试/文档/基准 | [feature] 增加打镜像的ci, 0.5.15版本更新torch到2.11版本 | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-08-20 | `11d08002b` | `hg-full-base..main` | 性能/后端优化 | [fix]solved CI Test errors | `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py` 等 4 个文件 |
+| 2026-08-20 | `f6b66222a` | `hg-full-base..main` | 通用实现调整 | revert: 恢复 release-pr-hcu.yml 默认 torch 版本为 2.10.0 | `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-20 | `72d1d2a73` | `hg-full-base..main` | 性能/后端优化 | [fix]solved other CI Test errors | `python/sglang/srt/layers/attention/flashattention_interface.py` |
+| 2026-08-20 | `27ce43c71` | `hg-full-base..main` | 性能/后端优化 | [fix]solved CI Test errors | `python/sglang/srt/layers/attention/flashattention_interface.py` |
+| 2026-08-20 | `37c5b30bb` | `hg-full-base..main` | 缺陷修复 | fix: extract full DTK version for three-part versions | `.github/workflows/nightly-test-dcu.yml`, `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml` 等 4 个文件 |
+| 2026-08-21 | `a96aed11f` | `hg-full-base..main` | 性能/后端优化 | [feat] 适配aiter性能优化后的 sglang_fused_sigmoid_gating_delta_rule_update 算子 | `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py` |
+| 2026-08-21 | `d42ecf6fe` | `hg-full-base..main` | 缺陷修复 | Fix HCU detection and sanitized topology diagnostics | `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`, `scripts/ci/hcu/hcu_rename_allowlist.txt` |
+| 2026-08-24 | `261b8627f` | `hg-full-base..main` | 缺陷修复 | fix(hcu): restore 29 environ declarations the sync auto-merge dropped | `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/sync-official-main-20260824-summary.md`, `python/sglang/srt/environ.py` |
+| 2026-08-24 | `fd4157047` | `hg-full-base..main` | 通用实现调整 | Refine HCU platform diagnostics and CLI help | `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/server_args.py` |
+| 2026-08-25 | `c40703e6b` | `hg-full-base..main` | 缺陷修复 | fix(ci): clear the three Quality Gate blockers from the 20260824 sync | `.github/workflows/_npu-pr-test-stage.yml`, `.github/workflows/_npu-single-node-test-stage.yml`, `.github/workflows/nightly-test-npu.yml` 等 5 个文件 |
+| 2026-08-25 | `d1adf7b50` | `hg-full-base..main` | 测试/文档/基准 | [feature] manual compile ci | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-25 | `59213c7e4` | `hg-full-base..main` | 性能/后端优化 | Revert the hcu_rename_allowlist entry for -DCUDA_ENABLED | `scripts/ci/hcu/hcu_rename_allowlist.txt` |
+| 2026-08-25 | `94e9fa4b1` | `hg-full-base..main` | 测试/文档/基准 | ci: align manual HCU wheel workflow with nightly (drop chown/devpi upload) | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-25 | `69c73a178` | `hg-full-base..main` | 模型支持/运行时入口 | ci(hcu): support fork pull requests | `.github/workflows/lint-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-25 | `f2fc4e166` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow to version 2.0.3 | `.github/workflows/quality-gate.yml` |
+| 2026-08-25 | `3e6aaf09d` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): allow fork checkout in target workflows | `.github/workflows/lint-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-25 | `6a4a61efb` | `hg-full-base..main` | 性能/后端优化 | ci(hcu): detect runner workspace ownership | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-26 | `990a1a798` | `hg-full-base..main` | 测试/文档/基准 | ci: disable scheduled gateway nightly release | `.github/workflows/nightly-release-gateway.yml` |
+| 2026-08-26 | `8dd5daf2f` | `hg-full-base..main` | 测试/文档/基准 | Refine HCU and AMD CLI help text | `python/sglang/srt/server_args.py`, `test/run_suite.py` |
+| 2026-08-26 | `c94c3ca2c` | `hg-full-base..main` | 缺陷修复 | fix: gateway wheel is at workspace root target/wheels | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-26 | `f6d701c52` | `hg-full-base..main` | 缺陷修复 | Fix stale HCU Stage B test paths | `.github/workflows/pr-test-hcu.yml` |
+| 2026-08-26 | `a2de3b8cf` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): use bash for wheel build jobs | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-08-27 | `2866df994` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): trust wheel build workspaces | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-08-27 | `7609d9af6` | `hg-full-base..main` | 模型支持/运行时入口 | [feature]适配hcu发包 | `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`, `python/pyproject_hcu.toml` |
+| 2026-08-27 | `6b468d012` | `hg-full-base..main` | 性能/后端优化 | [feature] hcu ci: docker 镜像加 daily 定时触发, router 编包改用 vendored openssl, 镜像补装 flash_kda | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml` 等 4 个文件 |
+| 2026-08-28 | `68dcd498a` | `hg-full-base..main` | 测试/文档/基准 | [ci] hcu ci 文件与 release/20260825_v0.5.18 分支保持一致 | `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-08-28 | `bc990ebd5` | `hg-full-base..main` | 测试/文档/基准 | [ci] 删除 release-whl-manual-hcu.yml (功能与 nightly/pr 编包重复) | `.github/workflows/release-whl-manual-hcu.yml` |
+| 2026-08-31 | `3ca61517d` | `hg-full-base..main` | 测试/文档/基准 | ci-remove-amd-status-from-pr-summaries | `.github/workflows/pr-states.yml` |
+| 2026-08-31 | `e864c3028` | `hg-full-base..main` | 测试/文档/基准 | ci: enable HCU PR tests for release branches (#272) | `.github/workflows/pr-test-hcu.yml` |
+| 2026-09-01 | `8fa7122b3` | `hg-full-base..main` | 测试/文档/基准 | [FEATURE]构建镜像之后触发模型测试 (#277) | `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/release-docker-hcu.yml`, `docker/image-citest-conf-hcu.yaml` |
+| 2026-09-02 | `9d261478d` | `hg-full-base..main` | 性能/后端优化 | [CI] Update HCU model asset paths on main (#285) | `README_HCU.md`, `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_exec.sh` 等 10 个文件 |
+| 2026-09-02 | `6fe7ce909` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): restore run suite file filters (#290) | `test/run_suite.py` |
+| 2026-09-03 | `2828bde71` | `hg-full-base..main` | 模型支持/运行时入口 | ci(hcu): align llguidance and model asset paths (#299) | `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh` |
+| 2026-09-04 | `0457572a1` | `hg-full-base..main` | 测试/文档/基准 | [FEATURE]CInotificate发送飞书通知时，把镜像数据推送到数据库 (#308) | `.github/workflows/nightly-test-image-hcu.yml` |
+| 2026-09-08 | `0af71f61b` | `hg-full-base..main` | 缺陷修复 | fix(ci): update HCU evaluation dependencies and asset paths (#325) | `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/hcu_ci_start_container.sh` |
+| 2026-09-14 | `b5108cc7f` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): use v0.5.18 image and restore eval dependencies (#347) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh` 等 4 个文件 |
+| 2026-09-14 | `516261baf` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): register sampling test and adjust MMLU threshold (#359) | `test/registered/sampling/test_pytorch_sampling_backend.py` |
+| 2026-09-14 | `575cf4797` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): restore source mode for test-only PRs (#364) | `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `test/registered/hcu/openai_server/test_serving_chat_hcu.py` |
+| 2026-09-15 | `7c8272a3a` | `hg-full-base..main` | 缺陷修复 | [BUGFIX]更新AICC安装方式 (#367) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-09-15 | `ae14a99e5` | `hg-full-base..main` | 缺陷修复 | fix(ci): fix HCU wheel build target routing (#372) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-15 | `5c03a8e22` | `hg-full-base..main` | 测试/文档/基准 | [FEATURE]daily镜像将tag打入环境变量, dtk自动更新最新的blas (#376) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-09-16 | `adc1d69b2` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): align main wheel builds with 0.5.18 runtime (#379) | `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` 等 6 个文件 |
+| 2026-09-21 | `ae5c33991` | `hg-full-base..main` | 调度/缓存/PD | Update quality gate workflow to use stable version | `.github/workflows/quality-gate.yml` |
+| 2026-09-21 | `cb932f5fb` | `hg-full-base..main` | 测试/文档/基准 | feat(ci) compaity sgl-kernal main to v0.5.12 (#421) | `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-21 | `a981685e7` | `hg-full-base..main` | 缺陷修复 | fix release-pr-hcu.yml build sglang (#423) | `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-22 | `b5ca753bc` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): run nightly against v0.5.18 and report its results (#432) | `.github/workflows/nightly-test-hcu.yml` |
+| 2026-09-23 | `2871c8fdd` | `hg-full-base..main` | 测试/文档/基准 | ci(hcu): docker 镜像改从 dev 基础镜像内联安装 DTK 26.04.1-72cu-0911 (#438) | `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile` |
+| 2026-09-23 | `7be1324cf` | `hg-full-base..main` | 测试/文档/基准 | ci: report sglang nightly packages to DashHub (#424) | `.github/workflows/release-pypi-nightly-hcu.yml` |
+| 2026-09-24 | `665b27d1f` | `hg-full-base..main` | 缺陷修复 | feat(ci) fix main build whl failed (#449) | `.github/workflows/release-pr-hcu.yml` |
+| 2026-09-28 | `5e8269d55` | `hg-full-base..main` | 缺陷修复 | [BUGFIX]镜像DTK版本号不对 (#447) | `.github/workflows/release-docker-hcu.yml` |
+| 2026-09-30 | `e05f146be` | `hg-full-base..main` | 模型支持/运行时入口 | ci(hcu): migrate main workflows to organization runners (#463) | `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml` 等 12 个文件 |
+| 2026-10-09 | `fb46d17ad` | `hg-full-base..main` | 性能/后端优化 | add optest process (#481) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-09 | `f0ee2a505` | `hg-full-base..main` | 缺陷修复 | FIX(detokenizer): stream through genuine U+FFFD instead of holding until finish (#473) | `python/sglang/srt/managers/detokenizer_manager.py`, `test/registered/unit/managers/test_detokenizer_incremental.py` |
+| 2026-10-10 | `4205397cb` | `hg-full-base..main` | 模型支持/运行时入口 | add password-free download code (#499) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-10 | `3b0e4a073` | `hg-full-base..main` | 性能/后端优化 | [Fix] Bound crash diagnostics and fatal shutdown on main (#498) | `docs/docs/references/environment_variables.mdx`, `python/sglang/srt/managers/multi_tokenizer_mixin.py`, `python/sglang/srt/managers/tokenizer_manager.py` 等 6 个文件 |
+| 2026-10-12 | `50b0d0051` | `hg-full-base..main` | 模型支持/运行时入口 | Delegate HCU model deployment smoke CI to external controller (#503) | `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-12 | `f9b972b37` | `hg-full-base..main` | 模型支持/运行时入口 | Use a clean checkout directory for the model smoke controller (#510) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-12 | `b6dd37e66` | `hg-full-base..main` | 测试/文档/基准 | Run cookbook smoke tests for all cases by default | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-12 | `e295faff5` | `hg-full-base..main` | 性能/后端优化 | update ci name&&add optest log (#515) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-14 | `78c700ee0` | `hg-full-base..main` | 模型支持/运行时入口 | Add image input to cookbook deployment smoke workflow (#530) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-15 | `cc3758967` | `hg-full-base..main` | 通用实现调整 | Pass DashHub credential to deployment smoke controller (#534) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-15 | `fc095e059` | `hg-full-base..main` | 缺陷修复 | fix(bench): reuse --tokenize-prompt for generated shared-prefix token IDs (#533) | `python/sglang/benchmark/datasets/common.py`, `python/sglang/benchmark/datasets/generated_shared_prefix.py`, `python/sglang/benchmark/serving.py` 等 4 个文件 |
+| 2026-10-16 | `87b9d5c85` | `hg-full-base..main` | 测试/文档/基准 | Run cookbook deployment checks after HCU image publishing (#548) | `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-19 | `f89209aa8` | `hg-full-base..main` | 模型支持/运行时入口 | ci: pass package server to Cookbook model tests (#556) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-20 | `a8543c813` | `hg-full-base..main` | 模型支持/运行时入口 | [CI] cookbook: Add BW1000 deployment smoke tests (#570) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-28 | `6dac3481c` | `hg-full-base..main` | 缺陷修复 | [Fix] ci: Preserve model cases in DashHub operator reporting (#604) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-28 | `098f31d69` | `hg-full-base..main` | 缺陷修复 | fix(ci) rebase pr-test-hcu.yml release-pr-hcu.yml (#612) | `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml` |
+| 2026-10-28 | `029b6e641` | `hg-full-base..main` | 模型支持/运行时入口 | [CI] model-ci: Pass history token for daily comparison report (#607) | `.github/workflows/cookbook-deployment-smoke.yml` |
+| 2026-10-28 | `fd98647ed` | `hg-full-base..main` | 缺陷修复 | [Fix] ci: Restore previous DashHub operator reporting (#614) | `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml` |
+| 2026-10-29 | `25aa13e98` | `hg-full-base..main` | 缺陷修复 | fix(ci) rebase pr-test-hcu.yml (#617) | `.github/workflows/pr-test-hcu.yml` |
+| 2026-10-29 | `db479b030` | `hg-full-base..main` | 性能/后端优化 | [CI] optest: Report outcome to DashHub (#619) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-10-29 | `9fb319cc3` | `hg-full-base..main` | 性能/后端优化 | [CI] optest: Require every enabled operator result (#622) | `.github/workflows/nightly-test-operator-hcu.yml` |
+| 2026-11-02 | `471ab8254` | `hg-full-base..main` | 模型支持/运行时入口 | Add one-time DashHub recovery for run 41338132822 (#633) | `.github/workflows/dashhub-recover-41338132822.yml` |
+| 2026-11-02 | `594e1ae94` | `hg-full-base..main` | 测试/文档/基准 | [Chore] ci: Remove completed DashHub recovery workflow (#634) | `.github/workflows/dashhub-recover-41338132822.yml` |
 
 ### 逐 Commit 审计卡
+
+- 时间线列出全部 477 个提交；审计卡只保留最近的 80 个。
+
+#### Commit `fa309a1e1` - fix(hcu): drop the stale 0.5.12-era expert-count override in FusedMoE
+
+- 完整 hash: `fa309a1e19c40cd15a9f5cf6a14e8f0b701211f9`
+- 时间/作者: 2026-08-14 / RyeYuan
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - runtime-perf: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+#### Commit `9bbf3799d` - docs(hcu): add the 20260817 official backport validation report
+
+- 完整 hash: `9bbf3799d827a26d6768d569fc652b9837a31425`
+- 时间/作者: 2026-08-17 / RyeYuan
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `docs/internal/backport-official-20260817-validation-report.md`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - docs-bench: `docs/internal/backport-official-20260817-validation-report.md`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+#### Commit `b0dc28040` - Hcu/fix main kernel build path (#207)
+
+- 完整 hash: `b0dc28040e611a27ea29979496c301395e3c10ed`
+- 时间/作者: 2026-08-18 / dingxinlong
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `scripts/ci/hcu/hcu_ci_build_shared_wheels.sh`, `test/registered/hcu/embedding/bw1100/test_gte_qwen2_embedding_hcu.py` 等 9 个文件
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - ci: `.github/workflows/hcu-full-enabled.yml`; `.github/workflows/hcu-manual-model-test.yml`; `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_build_shared_wheels.sh`
+  - tests: `test/registered/hcu/embedding/bw1100/test_gte_qwen2_embedding_hcu.py`; `test/registered/hcu/reranker/bw1100/test_qwen3_reranker_hcu.py`
+- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
+
+#### Commit `62a07586d` - [feat] 适配HCU FA3
+
+- 完整 hash: `62a07586d98059ba83cf0b1a2e1d6496a8de2bed`
+- 时间/作者: 2026-08-20 / chenyuege
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942`, `python/sglang/srt/mem_cache/kv_cache_dtype.py`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - other: `python/sglang/srt/arg_groups/overrides.py`; `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942`
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/mem_cache/kv_cache_dtype.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+#### Commit `fb7369fec` - [bugfix]删除无关文件
+
+- 完整 hash: `fb7369fec0d5fd3a6bbb45515c95fba0ffc4efbf`
+- 时间/作者: 2026-08-20 / chenyuege
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 缺陷修复
+- 主要文件: `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - other: `python/sglang/srt/layers/rotary_embedding/base.py.bak-20260806-145942`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
+#### Commit `b628d29e1` - [feature] 增加打镜像的ci, 0.5.15版本更新torch到2.11版本
+
+- 完整 hash: `b628d29e1c2e33e291e647991eab213bc9c5dcc8`
+- 时间/作者: 2026-08-20 / zhangyh15
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `docker/hcu.Dockerfile`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - ci: `.github/workflows/release-docker-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+  - other: `docker/hcu.Dockerfile`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+#### Commit `11d08002b` - [fix]solved CI Test errors
+
+- 完整 hash: `11d08002bfd60e96b4ff4d1210a69678a70de801`
+- 时间/作者: 2026-08-20 / chenyuege
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/arg_groups/overrides.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/mem_cache/kv_cache_dtype.py`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - other: `python/sglang/srt/arg_groups/overrides.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/mem_cache/kv_cache_dtype.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+#### Commit `f6b66222a` - revert: 恢复 release-pr-hcu.yml 默认 torch 版本为 2.10.0
+
+- 完整 hash: `f6b66222a00a63851345729b7acd8d9855c2e184`
+- 时间/作者: 2026-08-20 / zhangyh15
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 通用实现调整
+- 主要文件: `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - ci: `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+#### Commit `72d1d2a73` - [fix]solved other CI Test errors
+
+- 完整 hash: `72d1d2a73af94d8cdef717fd46cacf331665b32e`
+- 时间/作者: 2026-08-20 / chenyuege
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_interface.py`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+#### Commit `27ce43c71` - [fix]solved CI Test errors
+
+- 完整 hash: `27ce43c71d9194fd473370a19f354e755b5ade86`
+- 时间/作者: 2026-08-20 / chenyuege
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 性能/后端优化
+- 主要文件: `python/sglang/srt/layers/attention/flashattention_interface.py`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - runtime-perf: `python/sglang/srt/layers/attention/flashattention_interface.py`
+- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
+
+#### Commit `37c5b30bb` - fix: extract full DTK version for three-part versions
+
+- 完整 hash: `37c5b30bb9f24bbac284e5598a9219f71b6c06bf`
+- 时间/作者: 2026-08-20 / zhangyh15
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/nightly-test-dcu.yml`, `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-dcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - ci: `.github/workflows/nightly-test-dcu.yml`; `.github/workflows/release-docker-hcu.yml`; `.github/workflows/release-pypi-nightly-dcu.yml`; `.github/workflows/release-pypi-nightly-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
 #### Commit `a96aed11f` - [feat] 适配aiter性能优化后的 sglang_fused_sigmoid_gating_delta_rule_update 算子
 
 - 完整 hash: `a96aed11f05f65d18f5bd46446b4ca9b7ac82105`
 - 时间/作者: 2026-08-21 / zhuwenbopro
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 性能/后端优化
 - 主要文件: `python/sglang/srt/layers/attention/linear/kernels/gdn_triton.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3100,7 +6431,7 @@
 
 - 完整 hash: `d42ecf6fe9854d6127c167959fe7bec30439b73b`
 - 时间/作者: 2026-08-21 / reverie-hub
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`, `scripts/ci/hcu/hcu_rename_allowlist.txt`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3109,11 +6440,24 @@
   - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce_utils.py`
 - 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
 
+#### Commit `261b8627f` - fix(hcu): restore 29 environ declarations the sync auto-merge dropped
+
+- 完整 hash: `261b8627f107f553e26ce43b74d052c28a676bfd`
+- 时间/作者: 2026-08-24 / RyeYuan
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 缺陷修复
+- 主要文件: `docs/internal/dcu-main-conflict-ledger.md`, `docs/internal/sync-official-main-20260824-summary.md`, `python/sglang/srt/environ.py`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - docs-bench: `docs/internal/dcu-main-conflict-ledger.md`; `docs/internal/sync-official-main-20260824-summary.md`
+  - other: `python/sglang/srt/environ.py`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
 #### Commit `fd4157047` - Refine HCU platform diagnostics and CLI help
 
 - 完整 hash: `fd415704795411fa8fcbc7d7571c41dcb3d1c431`
 - 时间/作者: 2026-08-24 / reverie-hub
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 通用实现调整
 - 主要文件: `python/sglang/multimodal_gen/runtime/platforms/__init__.py`, `python/sglang/srt/server_args.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3122,11 +6466,25 @@
   - runtime-model: `python/sglang/srt/server_args.py`
 - 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
 
+#### Commit `c40703e6b` - fix(ci): clear the three Quality Gate blockers from the 20260824 sync
+
+- 完整 hash: `c40703e6b494756f882f1e052d2d574350e5591a`
+- 时间/作者: 2026-08-25 / RyeYuan
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 缺陷修复
+- 主要文件: `.github/workflows/_npu-pr-test-stage.yml`, `.github/workflows/_npu-single-node-test-stage.yml`, `.github/workflows/nightly-test-npu.yml`, `python/sglang/srt/server_args.py`, `scripts/ci/hcu/hcu_rename_allowlist.txt`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - ci: `.github/workflows/_npu-pr-test-stage.yml`; `.github/workflows/_npu-single-node-test-stage.yml`; `.github/workflows/nightly-test-npu.yml`
+  - other: `scripts/ci/hcu/hcu_rename_allowlist.txt`
+  - runtime-model: `python/sglang/srt/server_args.py`
+- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
+
 #### Commit `d1adf7b50` - [feature] manual compile ci
 
 - 完整 hash: `d1adf7b503b20e64e07c38946a067ee90c428962`
 - 时间/作者: 2026-08-25 / zhangyh15
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/release-whl-manual-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3134,23 +6492,83 @@
   - ci: `.github/workflows/release-whl-manual-hcu.yml`
 - 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
+#### Commit `59213c7e4` - Revert the hcu_rename_allowlist entry for -DCUDA_ENABLED
+
+- 完整 hash: `59213c7e48c978859b7086524aab5b0ccb500fc4`
+- 时间/作者: 2026-08-25 / RyeYuan
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 性能/后端优化
+- 主要文件: `scripts/ci/hcu/hcu_rename_allowlist.txt`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - other: `scripts/ci/hcu/hcu_rename_allowlist.txt`
+- 验证与风险: 未看到明确测试面；如借鉴此提交，需要补充最小复现实验和目标模型回归验证。
+
 #### Commit `94e9fa4b1` - ci: align manual HCU wheel workflow with nightly (drop chown/devpi upload)
 
 - 完整 hash: `94e9fa4b1d10f14c6120bab4f5416caf6e318cd9`
 - 时间/作者: 2026-08-25 / zhangyh15
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/release-whl-manual-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
 - 涉及文件（按路径分组，未逐文件阅读）:
   - ci: `.github/workflows/release-whl-manual-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+#### Commit `69c73a178` - ci(hcu): support fork pull requests
+
+- 完整 hash: `69c73a1787bdd189d88ba7cb3240dc34c46663a7`
+- 时间/作者: 2026-08-25 / dddddddxl
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 模型支持/运行时入口
+- 主要文件: `.github/workflows/lint-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - ci: `.github/workflows/lint-hcu.yml`; `.github/workflows/pr-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+#### Commit `f2fc4e166` - Update quality gate workflow to version 2.0.3
+
+- 完整 hash: `f2fc4e166b64086a0ef22e99a96046bd5acf4cc1`
+- 时间/作者: 2026-08-25 / Lvjiajia
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 调度/缓存/PD
+- 主要文件: `.github/workflows/quality-gate.yml`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - ci: `.github/workflows/quality-gate.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+#### Commit `3e6aaf09d` - ci(hcu): allow fork checkout in target workflows
+
+- 完整 hash: `3e6aaf09d878c40268294082de2abf032911bf1a`
+- 时间/作者: 2026-08-25 / dddddddxl
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 测试/文档/基准
+- 主要文件: `.github/workflows/lint-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - ci: `.github/workflows/lint-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
+- 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
+
+#### Commit `6a4a61efb` - ci(hcu): detect runner workspace ownership
+
+- 完整 hash: `6a4a61efba7f1a2d75bfe132d6589a459a0f2c1c`
+- 时间/作者: 2026-08-25 / dddddddxl
+- 分支更新段: `hg-full-base..main`
+- 自动分类: 性能/后端优化
+- 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
+- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
+- 涉及文件（按路径分组，未逐文件阅读）:
+  - ci: `.github/workflows/nightly-test-hcu.yml`; `.github/workflows/release-pr-hcu.yml`
 - 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
 #### Commit `990a1a798` - ci: disable scheduled gateway nightly release
 
 - 完整 hash: `990a1a798d40ccea97ef91c16a9d8cd8f25957e2`
 - 时间/作者: 2026-08-26 / dddddddxl
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/nightly-release-gateway.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3162,7 +6580,7 @@
 
 - 完整 hash: `8dd5daf2fa5555ab13751b159703124fd493a437`
 - 时间/作者: 2026-08-26 / reverie-hub
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `python/sglang/srt/server_args.py`, `test/run_suite.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3175,7 +6593,7 @@
 
 - 完整 hash: `c94c3ca2c8341c501b46a32c750e32dfe8ce4e06`
 - 时间/作者: 2026-08-26 / zhangyh15
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/release-whl-manual-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3187,7 +6605,7 @@
 
 - 完整 hash: `f6d701c520529490926e3c350682b7fe7ca6f9d0`
 - 时间/作者: 2026-08-26 / reverie-hub
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/pr-test-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3199,7 +6617,7 @@
 
 - 完整 hash: `a2de3b8cffc365e5f813d2ddd6c7226abe29db90`
 - 时间/作者: 2026-08-26 / dddddddxl
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3211,7 +6629,7 @@
 
 - 完整 hash: `2866df9948b40e81405fcf5947ef74b8f744c9a3`
 - 时间/作者: 2026-08-27 / dddddddxl
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3223,7 +6641,7 @@
 
 - 完整 hash: `7609d9af69ac40ed6730564cde4934d5b3e4a540`
 - 时间/作者: 2026-08-27 / zhangyh15
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`, `python/pyproject_hcu.toml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3236,7 +6654,7 @@
 
 - 完整 hash: `6b468d012bcf693157cee193493842185165b93b`
 - 时间/作者: 2026-08-27 / zhangyh15
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 性能/后端优化
 - 主要文件: `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3249,7 +6667,7 @@
 
 - 完整 hash: `68dcd498aa7550a39e7f53b6588e19785efd5cae`
 - 时间/作者: 2026-08-28 / zhangyh15
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/release-docker-hcu.yml`, `.github/workflows/release-pypi-nightly-hcu.yml`, `docker/hcu.Dockerfile`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3262,7 +6680,7 @@
 
 - 完整 hash: `bc990ebd52e0ae2500dc3c0ab4eeba187e84965b`
 - 时间/作者: 2026-08-28 / zhangyh15
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/release-whl-manual-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3274,7 +6692,7 @@
 
 - 完整 hash: `3ca61517d037e82ba19c981dd66ddaf0245e85cd`
 - 时间/作者: 2026-08-31 / dddddddxl
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/pr-states.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3286,7 +6704,7 @@
 
 - 完整 hash: `e864c302870000325162a5788883997cc850ade8`
 - 时间/作者: 2026-08-31 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/pr-test-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3298,7 +6716,7 @@
 
 - 完整 hash: `8fa7122b3ace4a4de48372ee3c4c3346871281d7`
 - 时间/作者: 2026-09-01 / Crowder13
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/release-docker-hcu.yml`, `docker/image-citest-conf-hcu.yaml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3311,7 +6729,7 @@
 
 - 完整 hash: `9d261478d6ace185f3e35a7211fc411b64d2057f`
 - 时间/作者: 2026-09-02 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 性能/后端优化
 - 主要文件: `README_HCU.md`, `python/sglang/test/hcu_cookbook_utils.py`, `scripts/ci/hcu/hcu_ci_exec.sh`, `test/registered/hcu/accuracy/bw1100/test_gsm8k_eval_hcu.py`, `test/registered/hcu/accuracy/bw1100/test_mmlu_eval_hcu.py`, `test/registered/hcu/backends/bw1100/test_torch_compile_cuda_graph_hcu.py`, `test/registered/hcu/distributed/bw1100/test_hicache_pp_hcu.py`, `test/registered/hcu/distributed/bw1100/test_pp_consistency_hcu.py` 等 10 个文件
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3324,7 +6742,7 @@
 
 - 完整 hash: `6fe7ce9097c8e9f1b7dccefbe4834a7f928a78c2`
 - 时间/作者: 2026-09-02 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `test/run_suite.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3336,7 +6754,7 @@
 
 - 完整 hash: `2828bde71da3f5f6314aa4022ae7e163dfc33ada`
 - 时间/作者: 2026-09-03 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3348,7 +6766,7 @@
 
 - 完整 hash: `0457572a14edd55e05220726ff4a8af8b1931771`
 - 时间/作者: 2026-09-04 / Crowder13
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/nightly-test-image-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3360,7 +6778,7 @@
 
 - 完整 hash: `0af71f61b693c2bd2817a678e007660222db9bf3`
 - 时间/作者: 2026-09-08 / tianly
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `scripts/ci/hcu/hcu_ci_exec.sh`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/hcu_ci_start_container.sh`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3372,7 +6790,7 @@
 
 - 完整 hash: `b5108cc7fea82d75da174f8f6681a843d43c462b`
 - 时间/作者: 2026-09-14 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_reasoning_code_deps.sh`, `scripts/ci/utils/sgl_eval_ref.sh`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3385,7 +6803,7 @@
 
 - 完整 hash: `516261baf108e56bcb4a03dc7294a936e9656a2d`
 - 时间/作者: 2026-09-14 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `test/registered/sampling/test_pytorch_sampling_backend.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3397,7 +6815,7 @@
 
 - 完整 hash: `575cf47976761be9916048cfe2ca244b56d63fab`
 - 时间/作者: 2026-09-14 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/pr-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `test/registered/hcu/openai_server/test_serving_chat_hcu.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3411,7 +6829,7 @@
 
 - 完整 hash: `7c8272a3a32d25391c8bc20e0c0678d3c9ac895d`
 - 时间/作者: 2026-09-15 / Crowder13
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3424,7 +6842,7 @@
 
 - 完整 hash: `ae14a99e502d0e5dbed8abf42e3b35eb8807c3c5`
 - 时间/作者: 2026-09-15 / tianly
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3436,7 +6854,7 @@
 
 - 完整 hash: `5c03a8e22f8cfeef0f10cd909231862bd446cc30`
 - 时间/作者: 2026-09-15 / Crowder13
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3449,7 +6867,7 @@
 
 - 完整 hash: `adc1d69b2a610fc000ca27e4b92c72e9c1b85044`
 - 时间/作者: 2026-09-16 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`, `scripts/ci/hcu/hcu_ci_install_dependency.sh`, `scripts/ci/hcu/test_hcu_build_alignment.py`, `scripts/ci/hcu/test_hcu_wheel_version.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3462,7 +6880,7 @@
 
 - 完整 hash: `ae5c33991be7f0e277f71c4e853c10fc11cbe627`
 - 时间/作者: 2026-09-21 / Lvjiajia
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 调度/缓存/PD
 - 主要文件: `.github/workflows/quality-gate.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3474,7 +6892,7 @@
 
 - 完整 hash: `cb932f5fbd904a577093a262c6a101834a1ef994`
 - 时间/作者: 2026-09-21 / 463975089
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/release-pr-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3486,7 +6904,7 @@
 
 - 完整 hash: `a981685e7f137a9e0629cbdcad2ad7bdd42017b9`
 - 时间/作者: 2026-09-21 / 463975089
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/release-pr-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3498,7 +6916,7 @@
 
 - 完整 hash: `b5ca753bc8e054ce99b4c01b0369eb89c6870dbb`
 - 时间/作者: 2026-09-22 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/nightly-test-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3510,7 +6928,7 @@
 
 - 完整 hash: `2871c8fdd9594de894546b144d253c3dd88fd900`
 - 时间/作者: 2026-09-23 / Crowder13
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/release-docker-hcu.yml`, `docker/hcu.Dockerfile`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3523,7 +6941,7 @@
 
 - 完整 hash: `7be1324cf827dafe9f09ec3f86ade353801b5e1e`
 - 时间/作者: 2026-09-23 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/release-pypi-nightly-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3535,7 +6953,7 @@
 
 - 完整 hash: `665b27d1fa35017a437b0aa0099a5f8aa33e5d9b`
 - 时间/作者: 2026-09-24 / 463975089
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/release-pr-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3547,7 +6965,7 @@
 
 - 完整 hash: `5e8269d55a8cf4629cc39a3171169f4aa8b4d14b`
 - 时间/作者: 2026-09-28 / Crowder13
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/release-docker-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3559,7 +6977,7 @@
 
 - 完整 hash: `e05f146bed9ca80c72a18a4946fd6f838d8e7774`
 - 时间/作者: 2026-09-30 / dingxinlong
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/hcu-feishu-notify-preview.yml`, `.github/workflows/hcu-full-enabled.yml`, `.github/workflows/hcu-manual-model-test.yml`, `.github/workflows/labeler.yml`, `.github/workflows/lint-hcu.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/nightly-test-image-hcu.yml`, `.github/workflows/pr-states.yml` 等 12 个文件
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3571,7 +6989,7 @@
 
 - 完整 hash: `fb46d17ad9f633aa7fee521484262b0c26de560d`
 - 时间/作者: 2026-10-09 / Lee156
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 性能/后端优化
 - 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3583,7 +7001,7 @@
 
 - 完整 hash: `f0ee2a5059c2d6a167bee3d996bca004276b3138`
 - 时间/作者: 2026-10-09 / JackPeng
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `python/sglang/srt/managers/detokenizer_manager.py`, `test/registered/unit/managers/test_detokenizer_incremental.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3596,7 +7014,7 @@
 
 - 完整 hash: `4205397cbcf8c60852fadd7306cea32f2541a19d`
 - 时间/作者: 2026-10-10 / Lee156
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3608,7 +7026,7 @@
 
 - 完整 hash: `3b0e4a07393778001dcd518d2b11de225e1be8c8`
 - 时间/作者: 2026-10-10 / 王启宇
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 性能/后端优化
 - 主要文件: `docs/docs/references/environment_variables.mdx`, `python/sglang/srt/managers/multi_tokenizer_mixin.py`, `python/sglang/srt/managers/tokenizer_manager.py`, `python/sglang/srt/utils/cudacore_pyspy_dump_utils.py`, `test/registered/unit/utils/test_bounded_fatal_shutdown.py`, `test/registered/unit/utils/test_bounded_pyspy.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3623,7 +7041,7 @@
 
 - 完整 hash: `50b0d005189ee23cf3046b86dc44986c5e6b9345`
 - 时间/作者: 2026-10-12 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/nightly-test-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3635,7 +7053,7 @@
 
 - 完整 hash: `f9b972b372f8695154301e2d7cee24195a963250`
 - 时间/作者: 2026-10-12 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3647,7 +7065,7 @@
 
 - 完整 hash: `b6dd37e66ad4f820a75614c8b0e6f54ffa67c796`
 - 时间/作者: 2026-10-12 / gcy
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3659,7 +7077,7 @@
 
 - 完整 hash: `e295faff5dc889c97626f7bd25f6a8ca0a0f100c`
 - 时间/作者: 2026-10-12 / Lee156
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 性能/后端优化
 - 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3671,7 +7089,7 @@
 
 - 完整 hash: `78c700ee0100f215268a3a802538881f281f29e2`
 - 时间/作者: 2026-10-14 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3683,7 +7101,7 @@
 
 - 完整 hash: `cc3758967d74748204015a050182e5ad176c8a08`
 - 时间/作者: 2026-10-15 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 通用实现调整
 - 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3695,7 +7113,7 @@
 
 - 完整 hash: `fc095e059889d2fae91e86a5b3e5fa19eb8d7a34`
 - 时间/作者: 2026-10-15 / chaoyujiang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `python/sglang/benchmark/datasets/common.py`, `python/sglang/benchmark/datasets/generated_shared_prefix.py`, `python/sglang/benchmark/serving.py`, `test/registered/bench_fn/test_benchmark_datasets_api.py`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3708,7 +7126,7 @@
 
 - 完整 hash: `87b9d5c85eafab11fe18235718c1af37b348d784`
 - 时间/作者: 2026-10-16 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`, `.github/workflows/release-docker-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3720,7 +7138,7 @@
 
 - 完整 hash: `f89209aa84a4fd0619d0662f6adf6980740efc78`
 - 时间/作者: 2026-10-19 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3732,7 +7150,7 @@
 
 - 完整 hash: `a8543c8131d429500411b8ba235b5411ddbabbd3`
 - 时间/作者: 2026-10-20 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3744,7 +7162,7 @@
 
 - 完整 hash: `6dac3481cd73b48641f481b14858187d1936ee81`
 - 时间/作者: 2026-10-28 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3756,7 +7174,7 @@
 
 - 完整 hash: `098f31d695ce94169e6adf9ce55109beb532b326`
 - 时间/作者: 2026-10-28 / 463975089
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/pr-test-hcu.yml`, `.github/workflows/release-pr-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3768,7 +7186,7 @@
 
 - 完整 hash: `029b6e6418828280e22086449dfa174433d2788b`
 - 时间/作者: 2026-10-28 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/cookbook-deployment-smoke.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3780,7 +7198,7 @@
 
 - 完整 hash: `fd98647ed1fc3d911926ea9d399b69934303c104`
 - 时间/作者: 2026-10-28 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`, `.github/workflows/release-docker-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3792,7 +7210,7 @@
 
 - 完整 hash: `25aa13e98fe76d262d87c0b798ec8a3215ffb703`
 - 时间/作者: 2026-10-29 / 463975089
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 缺陷修复
 - 主要文件: `.github/workflows/pr-test-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3804,7 +7222,7 @@
 
 - 完整 hash: `db479b030f0975dbda241bf46fc4556a89a02365`
 - 时间/作者: 2026-10-29 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 性能/后端优化
 - 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3816,7 +7234,7 @@
 
 - 完整 hash: `9fb319cc33a15b624970b0f5e45020e2a573dc07`
 - 时间/作者: 2026-10-29 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 性能/后端优化
 - 主要文件: `.github/workflows/nightly-test-operator-hcu.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3828,7 +7246,7 @@
 
 - 完整 hash: `471ab8254520c958d3c614e768a29b10423f7cf2`
 - 时间/作者: 2026-11-02 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 模型支持/运行时入口
 - 主要文件: `.github/workflows/dashhub-recover-41338132822.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3840,7 +7258,7 @@
 
 - 完整 hash: `594e1ae94c6103dabed4152a4ebbcca6fb049aeb`
 - 时间/作者: 2026-11-02 / guochenyang
-- 分支更新段: `release/20260825_v0.5.18..main`
+- 分支更新段: `hg-full-base..main`
 - 自动分类: 测试/文档/基准
 - 主要文件: `.github/workflows/dashhub-recover-41338132822.yml`
 - 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
@@ -3848,73 +7266,4 @@
   - ci: `.github/workflows/dashhub-recover-41338132822.yml`
 - 验证与风险: 主要影响 CI 或工程流程；性能分析中只作为构建、测试或依赖环境线索。
 
-#### Commit `962617b2d` - WeLM v4.5 support on HCU (squash of yaoyupings/sglang-das v0.5.18_welm)
-
-- 完整 hash: `962617b2d8f42175937aa79cfe36d14db4e02884`
-- 时间/作者: 2026-10-23 / sunjf
-- 分支更新段: `release/20260825_v0.5.18..release/20261023_v0.5.18_welm`
-- 自动分类: 性能/后端优化
-- 主要文件: `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`, `python/sglang/srt/batch_invariant_ops/batch_invariant_ops.py`, `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/flashattention_backend.py`, `python/sglang/srt/layers/attention/flashattention_interface.py`, `python/sglang/srt/layers/attention/welm_dedup_decode.py`, `python/sglang/srt/layers/attention/welm_fa256_src/build.sh` 等 55 个文件
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/batch_invariant_ops/batch_invariant_ops.py`; `python/sglang/srt/environ.py`; `python/sglang/srt/layers/logits_processor.py`; `python/sglang/srt/layers/welm_oe_host.py`; `python/sglang/srt/layers/welm_oe_host_src/build.sh`; `python/sglang/srt/layers/welm_oe_host_src/export_oe.py`; `python/sglang/srt/layers/welm_oe_host_src/oe_host_gather.cpp`; `python/sglang/srt/layers/welmv4_fast_op.py` 等 14 个文件
-  - runtime-model: `python/sglang/srt/configs/model_config.py`; `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/runner_utils/buffers.py`; `python/sglang/srt/models/welmv4.py`; `python/sglang/srt/models/welmv4_nextn.py`; `python/sglang/srt/models/welmv4_vlm.py`; `python/sglang/srt/server_args.py`; `python/sglang/srt/speculative/eagle_worker_common.py` 等 10 个文件
-  - runtime-perf: `python/sglang/kernels/ops/moe/fused_moe_triton_kernels.py`; `python/sglang/srt/layers/attention/flashattention_backend.py`; `python/sglang/srt/layers/attention/flashattention_interface.py`; `python/sglang/srt/layers/attention/welm_dedup_decode.py`; `python/sglang/srt/layers/attention/welm_fa256_src/build.sh`; `python/sglang/srt/layers/attention/welm_fa256_src/flags.txt`; `python/sglang/srt/layers/attention/welm_fa256_src/lflags.txt`; `python/sglang/srt/layers/attention/welm_fa256_src/welm_fa256.cpp` 等 31 个文件
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `eaa872862` - fix: support API key with multiple tokenizer workers (#559)
-
-- 完整 hash: `eaa8728623fbab132f881e470e7715ff69ac9bff`
-- 时间/作者: 2026-10-20 / zhengzhi
-- 分支更新段: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/entrypoints/http_server.py`, `python/sglang/srt/utils/auth.py`, `test/registered/unit/entrypoints/test_http_server_auth_config.py`, `test/registered/unit/spec/test_ngram_corpus.py`, `test/registered/unit/utils/test_http_server_auth.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/utils/auth.py`
-  - runtime-model: `python/sglang/srt/entrypoints/http_server.py`
-  - tests: `test/registered/unit/entrypoints/test_http_server_auth_config.py`; `test/registered/unit/spec/test_ngram_corpus.py`; `test/registered/unit/utils/test_http_server_auth.py`
-- 验证与风险: 涉及模型运行时入口；风险点是权重加载、并行切分、parser/tokenizer 行为和短文本生成正确性。
-
-#### Commit `4c5ac2ee0` - fix(disagg): defer cached-prefix sends during cache loads (#562)
-
-- 完整 hash: `4c5ac2ee05e286d7f5c05cb789c60fdea4db0f58`
-- 时间/作者: 2026-10-20 / 千纱都
-- 分支更新段: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/managers/scheduler.py`, `test/manual/hicache/test_pd_cached_prefix_load_ordering.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/disaggregation/prefill.py`
-  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
-  - tests: `test/manual/hicache/test_pd_cached_prefix_load_ordering.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `f0a0530ce` - [Fix] grammar: 同步 Prefill CP 的 Grammar 请求准入与失败状态 (#589)
-
-- 完整 hash: `f0a0530ce34fa7986c05c010146acb8ea0c20464`
-- 时间/作者: 2026-10-23 / JingLee
-- 分支更新段: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/constrained/grammar_manager.py`, `python/sglang/srt/managers/scheduler.py`, `test/registered/unit/constrained/test_grammar_manager.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/constrained/grammar_manager.py`
-  - runtime-perf: `python/sglang/srt/managers/scheduler.py`
-  - tests: `test/registered/unit/constrained/test_grammar_manager.py`
-- 验证与风险: 涉及性能或后端路径；复用该思路前需要结合 trace 验证 prefill/decode 热点、端到端吞吐和正确性 smoke。
-
-#### Commit `c66f34363` - [Fix] TokenizerManager: 修复客户端断开后已下发请求未被终止的问题 (#628)
-
-- 完整 hash: `c66f3436365416bf3bb14c6e1b3665b669608573`
-- 时间/作者: 2026-10-30 / zhengzhi
-- 分支更新段: `release/20260825_v0.5.18..release_v0.5.18_deepseekv4`
-- 自动分类: 缺陷修复
-- 主要文件: `python/sglang/srt/managers/tokenizer_manager.py`, `test/registered/unit/managers/test_tokenizer_manager_rid_cleanup.py`
-- 实现线索: 该提交来自本地 dev 分支更新，且未进入 `sgl-project/sglang` GitHub refs；优先关注命中的模型文件、性能后端、调度/缓存、parser/tokenizer 和测试覆盖。
-- 涉及文件（按路径分组，未逐文件阅读）:
-  - other: `python/sglang/srt/managers/tokenizer_manager.py`
-  - tests: `test/registered/unit/managers/test_tokenizer_manager_rid_cleanup.py`
-- 验证与风险: 提交包含测试相关改动；优先复跑对应测试，并补充目标模型的最小启动或生成 smoke。
-
-<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_18_TO_20261105_END -->
+<!-- LOCAL_ONLY_FULL_MAIN_TO_20261105_END -->
