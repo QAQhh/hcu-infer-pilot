@@ -4,14 +4,16 @@
 
 | File | Git-traced PRs |
 | --- | --- |
-| `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx` | [#23486](https://github.com/sgl-project/sglang/pull/23486) |
-| `docs_new/src/snippets/autoregressive/qwen36-deployment.jsx` | [#23486](https://github.com/sgl-project/sglang/pull/23486) |
+| `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx` | [#38678](https://github.com/sgl-project/sglang/pull/38678), [#44707](https://github.com/sgl-project/sglang/pull/44707) |
+| `docs/src/snippets/autoregressive/qwen36-deployment.jsx` | [#38678](https://github.com/sgl-project/sglang/pull/38678), [#44707](https://github.com/sgl-project/sglang/pull/44707) |
+| `test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py` | [#46212](https://github.com/sgl-project/sglang/pull/46212) |
 
 ## PR Coverage Summary
 
-- Git-traced PRs: 1
-- Extra PRs preserved from existing docs: 3
-- Total PRs in this document: 4
+- Git-traced PRs: 3
+- Extra PRs preserved from existing docs: 0
+- Total PRs in this document: 3
+- Auto-classification note: PRs that cannot be safely pinned to one model family go into the framework `shared/` bucket; cross-model PRs stay under the primary model bucket and are labeled as cross-model evidence in the body.
 - File trace command: `git log --name-only -- <model-files>`
 - Diff audit source: GitHub Pull Request files API
 
@@ -19,153 +21,110 @@
 
 | Date | PR | State | Title | Main files |
 | --- | --- | --- | --- | --- |
-| 2026-04-17 | [#23034](https://github.com/sgl-project/sglang/pull/23034) | merged | docs: fix links, add Qwen3.6, update Qwen3.5/GLM-5 docs | `docs_new/docs/advanced_features/separate_reasoning.mdx`, `docs_new/docs/advanced_features/tool_parser.mdx`, `docs_new/docs/advanced_features/dp_dpa_smg_guide.mdx` |
-| 2026-04-22 | [#23474](https://github.com/sgl-project/sglang/pull/23474) | open | [Bugfix] Try to fix --cpu-offload-gb on hybrid linear-attn models | `test/registered/unit/utils/test_offloader_tied_params.py`, `python/sglang/srt/utils/offloader.py` |
-| 2026-04-22 | [#23467](https://github.com/sgl-project/sglang/pull/23467) | merged | fix: dot-boundary match in is_layer_skipped for FP8 modules_to_not_convert | `python/sglang/srt/layers/quantization/utils.py` |
-| 2026-04-22 | [#23486](https://github.com/sgl-project/sglang/pull/23486) | merged | docs(cookbook): add Qwen3.6-27B dense variant | `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs_new/src/snippets/autoregressive/qwen36-deployment.jsx` |
+| 2026-10-16 | [#44707](https://github.com/sgl-project/sglang/pull/44707) | merged | [Doc] cookbook: Add RTX Spark Qwen3.6 NVFP4 recipe | `docs/src/snippets/autoregressive/qwen36-deployment.jsx`, `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx` |
+| 2026-10-21 | [#38678](https://github.com/sgl-project/sglang/pull/38678) | merged | [Doc] [NPU] cookbook: add NPU (A3 series) deployment scenarios for Qwen3.6 | `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs/src/snippets/autoregressive/qwen36-deployment.jsx` |
+| 2026-10-29 | [#46212](https://github.com/sgl-project/sglang/pull/46212) | merged | [Feat] [NPU] Quant: support Qwen3.6-35B-A3B-FP8 which is block FP8 MOE. | `test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py` |
 
 ## Per-PR Diff Audit Cards
 
-### PR #23034 - docs: fix links, add Qwen3.6, update Qwen3.5/GLM-5 docs
+### PR #44707 - [Doc] cookbook: Add RTX Spark Qwen3.6 NVFP4 recipe
 
-- Link: https://github.com/sgl-project/sglang/pull/23034
-- Status/date: merged / 2026-04-17
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 73 files, +2214/-215, 3198 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "docs: fix links, add Qwen3.6, update Qwen3.5/GLM-5 docs"; model line: Qwen3.6; category: bug fix; main diff: `docs_new/docs/advanced_features/separate_reasoning.mdx`, `docs_new/docs/advanced_features/tool_parser.mdx`, `docs_new/docs/advanced_features/dp_dpa_smg_guide.mdx`; technical summary: Covers "docs: fix links, add Qwen3.6, update Qwen3.5/GLM-5 docs"; the main implementation surface is `docs_new/docs/advanced_features/separate_reasoning.mdx`, `docs_new/docs/advanced_features/tool_parser.mdx`, `docs_new/docs/advanced_features/dp_dpa_smg_guide.mdx`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `docs_new/docs/advanced_features/separate_reasoning.mdx` modified +2/-3 (5 lines); hunks: -207,7 +207,7 @@ print_highlight("==== Text ===="); -226,7 +226,7 @@ print_highlight("==== Original Output ===="); `docs_new/docs/advanced_features/tool_parser.mdx` modified +1/-2 (3 lines); hunks: -718,7 +718,7 @@ for tool_call in tool_calls:; -738,4 +738,3 @@ terminate_process(server_process); symbols: NewModelDetector, that, touching `NewModelDetector, that`; `docs_new/docs/advanced_features/dp_dpa_smg_guide.mdx` added +509/-0 (509 lines); hunks: -0,0 +1,509; `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx` added +471/-0 (471 lines); hunks: -0,0 +1,471.
+- Link: https://github.com/sgl-project/sglang/pull/44707
+- Status/date: merged / 2026-10-16
+- Trace source: `git log --name-only -- <model-files>` found it through `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs/src/snippets/autoregressive/qwen36-deployment.jsx`; associated commits `56a3c4fa1676`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +56/-7, 130 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Doc] cookbook: Add RTX Spark Qwen3.6 NVFP4 recipe"; model line: Qwen3.6; category: performance/backend optimization; main diff: `docs/src/snippets/autoregressive/qwen36-deployment.jsx`, `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx`; technical summary: Covers "[Doc] cookbook: Add RTX Spark Qwen3.6 NVFP4 recipe"; the main implementation surface is `docs/src/snippets/autoregressive/qwen36-deployment.jsx`, `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `docs/src/snippets/autoregressive/qwen36-deployment.jsx` modified +36/-5 (41 lines); hunks: -10,21 +10,28 @@ export const Qwen36Deployment = () => {; -59,10 +66,12 @@ export const Qwen36Deployment = () => {; `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx` modified +20/-2 (22 lines); hunks: -101,6 +101,24 @@ This section provides deployment configurations optimized f...; -115,12 +133,12 @@ This section provides deployment configurations optimized....
 - Code diff details:
-  - `docs_new/docs/advanced_features/separate_reasoning.mdx` modified +2/-3 (5 lines); hunks: -207,7 +207,7 @@ print_highlight("==== Text ===="); -226,7 +226,7 @@ print_highlight("==== Original Output ====")
-  - `docs_new/docs/advanced_features/tool_parser.mdx` modified +1/-2 (3 lines); hunks: -718,7 +718,7 @@ for tool_call in tool_calls:; -738,4 +738,3 @@ terminate_process(server_process); symbols: NewModelDetector, that
-  - `docs_new/docs/advanced_features/dp_dpa_smg_guide.mdx` added +509/-0 (509 lines); hunks: -0,0 +1,509
-  - `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx` added +471/-0 (471 lines); hunks: -0,0 +1,471
-  - `docs_new/docs/advanced_features/piecewise_cuda_graph.mdx` added +299/-0 (299 lines); hunks: -0,0 +1,299; symbols: per_token_group_quant_8bit, add
+  - `docs/src/snippets/autoregressive/qwen36-deployment.jsx` modified +36/-5 (41 lines); hunks: -10,21 +10,28 @@ export const Qwen36Deployment = () => {; -59,10 +66,12 @@ export const Qwen36Deployment = () => {
+  - `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx` modified +20/-2 (22 lines); hunks: -101,6 +101,24 @@ This section provides deployment configurations optimized f...; -115,12 +133,12 @@ This section provides deployment configurations optimized...
 - Key code excerpts:
 
 ```diff
-diff -- docs_new/docs/advanced_features/separate_reasoning.mdx
-@@ -207,7 +207,7 @@ print_highlight("==== Text ====")
--The reasoning separation is enable by default when specify .
-+The reasoning separation is enable by default when specify .
-@@ -226,7 +226,7 @@ print_highlight("==== Original Output ====")
--### SGLang Native API
-+### SGLang Native API
-@@ -315,4 +315,3 @@ llm.shutdown()
-diff -- docs_new/docs/advanced_features/tool_parser.mdx
-@@ -718,7 +718,7 @@ for tool_call in tool_calls:
--> **Note:**
-+> **Note:**
-@@ -738,4 +738,3 @@ terminate_process(server_process)
-diff -- docs_new/docs/advanced_features/dp_dpa_smg_guide.mdx
-@@ -0,0 +1,509 @@
-+---
-+title: "DP, DPA and SGLang DP Router"
-+metatags:
+diff -- docs/src/snippets/autoregressive/qwen36-deployment.jsx
+@@ -10,21 +10,28 @@ export const Qwen36Deployment = () => {
++        { id: 'rtx-spark', label: 'RTX Spark', default: false },
+-      items: [
++      // RTX Spark only has a validated recipe for 35B-A3B NVFP4.
++      getDynamicItems: (values) => [
+-        { id: '27b', label: '27B (Dense)', default: false },
++        { id: '27b', label: '27B (Dense)', default: false, disabled: values.hardware === 'rtx-spark',
+diff -- docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx
+@@ -101,6 +101,24 @@ This section provides deployment configurations optimized for different hardware
++### RTX Spark: 35B-A3B NVFP4
++Select **RTX Spark** in the generator above to use the single-node, single-GPU recipe for
++[nvidia/Qwen3.6-35B-A3B-NVFP4](https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4)
++on [NVIDIA RTX Spark](https://www.nvidia.com/en-us/products/rtx-spark/), which
++pairs a Blackwell RTX GPU with a Grace CPU and offers up to 128GB of unified
++memory. The contributor tested this command on SGLang `main`. The recipe uses
 ```
 
 - Reviewed files:
-  - docs: `docs_new/docs/advanced_features/separate_reasoning.mdx` modified +2/-3; `docs_new/docs/advanced_features/tool_parser.mdx` modified +1/-2; `docs_new/docs/advanced_features/dp_dpa_smg_guide.mdx` added +509/-0; `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx` added +471/-0; `docs_new/docs/advanced_features/piecewise_cuda_graph.mdx` added +299/-0; `docs_new/docs/advanced_features/server_arguments.mdx` modified +241/-45
-- Risk and verification: This is mostly docs/examples in `docs_new/.gitignore`, `docs_new/cards/logos/google.png`, `docs_new/cards/logos/mova.png`; validation should confirm the documented command still maps to current CLI flags and model repo names.
+  - docs: `docs/src/snippets/autoregressive/qwen36-deployment.jsx` modified +36/-5; `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx` modified +20/-2
+- Risk and verification: This is mostly docs/examples in `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs/src/snippets/autoregressive/qwen36-deployment.jsx`; validation should confirm the documented command still maps to current CLI flags and model repo names.
 
-### PR #23474 - [Bugfix] Try to fix --cpu-offload-gb on hybrid linear-attn models
+### PR #38678 - [Doc] [NPU] cookbook: add NPU (A3 series) deployment scenarios for Qwen3.6
 
-- Link: https://github.com/sgl-project/sglang/pull/23474
-- Status/date: open / 2026-04-22
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +284/-8, 330 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Try to fix --cpu-offload-gb on hybrid linear-attn models"; model line: Qwen3.6; category: bug fix; main diff: `test/registered/unit/utils/test_offloader_tied_params.py`, `python/sglang/srt/utils/offloader.py`; technical summary: Covers "[Bugfix] Try to fix --cpu-offload-gb on hybrid linear-attn models"; the main implementation surface is `test/registered/unit/utils/test_offloader_tied_params.py`, `python/sglang/srt/utils/offloader.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `test/registered/unit/utils/test_offloader_tied_params.py` added +199/-0 (199 lines); hunks: -0,0 +1,199; symbols: _TiedChild, __init__, forward, _TiedParent, touching `_TiedChild, __init__, forward`; `python/sglang/srt/utils/offloader.py` modified +85/-8 (93 lines); hunks: -1,7 +1,7; -106,16 +106,52 @@ def maybe_offload_to_cpu(self, module: torch.nn.Module) ->...; symbols: maybe_offload_to_cpu, forward, touching `maybe_offload_to_cpu, forward`.
+- Link: https://github.com/sgl-project/sglang/pull/38678
+- Status/date: merged / 2026-10-21
+- Trace source: `git log --name-only -- <model-files>` found it through `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs/src/snippets/autoregressive/qwen36-deployment.jsx`; associated commits `9c10e0dd61f0`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +202/-5, 275 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Doc] [NPU] cookbook: add NPU (A3 series) deployment scenarios for Qwen3.6"; model line: Qwen3.6; category: docs/tests/CI; main diff: `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs/src/snippets/autoregressive/qwen36-deployment.jsx`; technical summary: Covers "[Doc] [NPU] cookbook: add NPU (A3 series) deployment scenarios for Qwen3.6"; the main implementation surface is `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs/src/snippets/autoregressive/qwen36-deployment.jsx`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx` modified +155/-2 (157 lines); hunks: -90,13 +90,15 @@ For the full Docker setup and other installation methods, pl...; -130,7 +132,8 @@ environment.; `docs/src/snippets/autoregressive/qwen36-deployment.jsx` modified +47/-3 (50 lines); hunks: -11,6 +11,17 @@ export const Qwen36Deployment = () => {; -27,8 +38,12 @@ export const Qwen36Deployment = () => {.
 - Code diff details:
-  - `test/registered/unit/utils/test_offloader_tied_params.py` added +199/-0 (199 lines); hunks: -0,0 +1,199; symbols: _TiedChild, __init__, forward, _TiedParent
-  - `python/sglang/srt/utils/offloader.py` modified +85/-8 (93 lines); hunks: -1,7 +1,7; -106,16 +106,52 @@ def maybe_offload_to_cpu(self, module: torch.nn.Module) ->...; symbols: maybe_offload_to_cpu, forward
+  - `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx` modified +155/-2 (157 lines); hunks: -90,13 +90,15 @@ For the full Docker setup and other installation methods, pl...; -130,7 +132,8 @@ environment.
+  - `docs/src/snippets/autoregressive/qwen36-deployment.jsx` modified +47/-3 (50 lines); hunks: -11,6 +11,17 @@ export const Qwen36Deployment = () => {; -27,8 +38,12 @@ export const Qwen36Deployment = () => {
 - Key code excerpts:
 
 ```diff
-diff -- test/registered/unit/utils/test_offloader_tied_params.py
-@@ -0,0 +1,199 @@
-+"""Tests for OffloaderV1 with tied parameters and view aliases (see issue #23150).
-+Two failure modes caused the Qwen3-Next / Qwen3.5 CPU-offload regression:
-+1. **Tied parameters**: a single nn.Parameter is registered under both a parent
-+   and a child module (Qwen3GatedDeltaNet + RadixLinearAttention share
-+   ``A_log`` / ``dt_bias``). state_dict() then lists the same tensor under
-+   multiple keys, and functional_call(..., tie_weights=True) rejects it when
-diff -- python/sglang/srt/utils/offloader.py
-@@ -1,7 +1,7 @@
--from typing import Callable, Generator, List, Optional
-+from typing import Callable, Dict, Generator, List, Optional
-@@ -106,16 +106,52 @@ def maybe_offload_to_cpu(self, module: torch.nn.Module) -> torch.nn.Module:
-+        # Record tensor views that alias each parameter's *original* storage
-+        # BEFORE we rebind .data to pinned CPU memory. Some hybrid linear-attn
-+        # models (e.g. Qwen3-Next) cache such views, which would otherwise point
+diff -- docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx
+@@ -90,13 +90,15 @@ For the full Docker setup and other installation methods, please refer to the [o
++On Ascend NPUs (Atlas 800I A3), follow [SGLang installation with NPU support](/docs/hardware-platforms/ascend-npus/getting-started/installation) and the [Ascend NPU quickstart](/d
+-**Interactive Command Generator**: Use the configuration selector below to automatically generate the appropriate deployment command for your hardware platform and capabilities.
++**Interactive Command Generator**: Use the configuration selector below to automatically generate the appropriate deployment command for your hardware platform and capabilities, i
+@@ -130,7 +132,8 @@ environment.
+-- Hardware requirements:
++- **Ascend NPU (Atlas 800I A3):** Each card has 2 dies, so `--tp-size` is twice the card count (1 card → `--tp-size 2`). Add `--attention-backend ascend --device npu` and `--mamba
+diff -- docs/src/snippets/autoregressive/qwen36-deployment.jsx
+@@ -11,6 +11,17 @@ export const Qwen36Deployment = () => {
++        { id: 'a3', label: 'A3 (NPU)', default: false },
++      ],
++    },
++    // Atlas 800I A3: 1 card = 2 dies, so --tp-size is twice the card count.
++    npuCards: {
++      name: 'npuCards',
 ```
 
 - Reviewed files:
-  - tests: `test/registered/unit/utils/test_offloader_tied_params.py` added +199/-0
-  - runtime: `python/sglang/srt/utils/offloader.py` modified +85/-8
-- Risk and verification: The diff ships test coverage in `test/registered/unit/utils/test_offloader_tied_params.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+  - docs: `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx` modified +155/-2; `docs/src/snippets/autoregressive/qwen36-deployment.jsx` modified +47/-3
+- Risk and verification: This is mostly docs/examples in `docs/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs/src/snippets/autoregressive/qwen36-deployment.jsx`; validation should confirm the documented command still maps to current CLI flags and model repo names.
 
-### PR #23467 - fix: dot-boundary match in is_layer_skipped for FP8 modules_to_not_convert
+### PR #46212 - [Feat] [NPU] Quant: support Qwen3.6-35B-A3B-FP8 which is block FP8 MOE.
 
-- Link: https://github.com/sgl-project/sglang/pull/23467
-- Status/date: merged / 2026-04-22
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +31/-4, 63 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "fix: dot-boundary match in is_layer_skipped for FP8 modules_to_not_convert"; model line: Qwen3.6; category: bug fix; main diff: `python/sglang/srt/layers/quantization/utils.py`; technical summary: Covers "fix: dot-boundary match in is_layer_skipped for FP8 modules_to_not_convert"; the main implementation surface is `python/sglang/srt/layers/quantization/utils.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `python/sglang/srt/layers/quantization/utils.py` modified +31/-4 (35 lines); hunks: -43,6 +43,28 @@ def __getattr__(self, name):; -56,16 +78,19 @@ def is_layer_skipped(; symbols: __getattr__, _module_path_match, is_layer_skipped, touching `__getattr__, _module_path_match, is_layer_skipped`.
+- Link: https://github.com/sgl-project/sglang/pull/46212
+- Status/date: merged / 2026-10-29
+- Trace source: `git log --name-only -- <model-files>` found it through `test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py`; associated commits `019008afe0b0`
+- Diff scope read: GitHub Pull Request files API returned 11 files, +586/-54, 830 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Feat] [NPU] Quant: support Qwen3.6-35B-A3B-FP8 which is block FP8 MOE."; model line: Qwen3.6; category: performance/backend optimization; main diff: `test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py`; technical summary: Covers "[Feat] [NPU] Quant: support Qwen3.6-35B-A3B-FP8 which is block FP8 MOE."; the main implementation surface is `test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py` added +141/-0 (141 lines); hunks: -0,0 +1,141; symbols: TestNpuQwen36BlockFp8Gsm8k, setUpClass, tearDownClass, test_gsm8k, touching `TestNpuQwen36BlockFp8Gsm8k, setUpClass, tearDownClass`.
 - Code diff details:
-  - `python/sglang/srt/layers/quantization/utils.py` modified +31/-4 (35 lines); hunks: -43,6 +43,28 @@ def __getattr__(self, name):; -56,16 +78,19 @@ def is_layer_skipped(; symbols: __getattr__, _module_path_match, is_layer_skipped
+  - `test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py` added +141/-0 (141 lines); hunks: -0,0 +1,141; symbols: TestNpuQwen36BlockFp8Gsm8k, setUpClass, tearDownClass, test_gsm8k
 - Key code excerpts:
 
 ```diff
-diff -- python/sglang/srt/layers/quantization/utils.py
-@@ -43,6 +43,28 @@ def __getattr__(self, name):
-+def _module_path_match(ignored: str, prefix: str) -> bool:
-+    # Match on dotted module-path boundaries so that `mlp.gate` does NOT
-+    # match `mlp.gate_up_proj`. Needed for quant configs (e.g. Qwen3.6-FP8)
-+    # whose `modules_to_not_convert` lists MoE-template names like `mlp.gate`
-+    # that collide with fused dense MLP names by plain substring.
-+    if ignored == prefix:
+diff -- test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py
+@@ -0,0 +1,141 @@
++"""Qwen3.6 native block-FP8 or MXFP8 TP2 + NEXTN accuracy on Ascend 950DT.
++Set QWEN36_FP8_MODEL_PATH and GSM8K_DATA_PATH to local files for offline runs.
++ASCEND_RT_VISIBLE_DEVICES selects the two devices; the test never pins card IDs.
++SGLANG_NPU_ARCH35_REQUANT_BLOCK_FP8=0/1 selects native/MXFP8 (default: 0).
++The legacy run_eval backend is intentional: preserve the deployment's chat,
++5-shot scoring protocol. With a 1319-row test.jsonl, its first five rows are
 ```
 
 - Reviewed files:
-  - runtime: `python/sglang/srt/layers/quantization/utils.py` modified +31/-4
-- Risk and verification: Runtime changes concentrate in `python/sglang/srt/layers/quantization/utils.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #23486 - docs(cookbook): add Qwen3.6-27B dense variant
-
-- Link: https://github.com/sgl-project/sglang/pull/23486
-- Status/date: merged / 2026-04-22
-- Trace source: `git log --name-only -- <model-files>` found it through `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs_new/src/snippets/autoregressive/qwen36-deployment.jsx`; associated commits `de962f327432`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +55/-17, 170 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "docs(cookbook): add Qwen3.6-27B dense variant"; model line: Qwen3.6; category: performance/backend optimization; main diff: `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs_new/src/snippets/autoregressive/qwen36-deployment.jsx`; technical summary: Covers "docs(cookbook): add Qwen3.6-27B dense variant"; the main implementation surface is `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs_new/src/snippets/autoregressive/qwen36-deployment.jsx`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx` modified +30/-10 (40 lines); hunks: -1,26 +1,29; -29,30 +32,43 @@ Qwen3.6 features a Gated Delta Networks combined with sparse...; `docs_new/src/snippets/autoregressive/qwen36-deployment.jsx` modified +25/-7 (32 lines); hunks: -10,6 +10,14 @@ export const Qwen36Deployment = () => {; -66,9 +74,18 @@ export const Qwen36Deployment = () => {.
-- Code diff details:
-  - `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx` modified +30/-10 (40 lines); hunks: -1,26 +1,29; -29,30 +32,43 @@ Qwen3.6 features a Gated Delta Networks combined with sparse...
-  - `docs_new/src/snippets/autoregressive/qwen36-deployment.jsx` modified +25/-7 (32 lines); hunks: -10,6 +10,14 @@ export const Qwen36Deployment = () => {; -66,9 +74,18 @@ export const Qwen36Deployment = () => {
-- Key code excerpts:
-
-```diff
-diff -- docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx
-@@ -1,26 +1,29 @@
--    description: "Deploy Qwen3.6 with SGLang - open-weight 35B MoE multimodal model with 3B active parameters, thinking preservation, tool calling, MTP, and long-context support."
-+    description: "Deploy Qwen3.6 with SGLang - open-weight multimodal series with a 35B MoE (3B active) variant and a 27B dense variant, hybrid reasoning, tool calling, MTP, and l
--[Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B) is the first open-weight variant of the Qwen3.6 series developed by Alibaba. Built on direct feedback from the commu
-+The Qwen3.6 series is developed by Alibaba. Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, delivering substantial upgrades in a
--Qwen3.6 features a Gated Delta Networks combined with sparse Mixture-of-Experts architecture (35B total parameters, 3B activated), supporting multimodal inputs (text, image, video
-+- [Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B) — **Sparse MoE** (35B total, 3B active) on a Gated Delta Networks backbone.
-diff -- docs_new/src/snippets/autoregressive/qwen36-deployment.jsx
-@@ -10,6 +10,14 @@ export const Qwen36Deployment = () => {
-+    modelSize: {
-+      name: 'modelSize',
-+      title: 'Model Size',
-+      items: [
-+        { id: '35b-a3b', label: '35B-A3B (MoE)', default: true },
-+        { id: '27b', label: '27B (Dense)', default: false },
-```
-
-- Reviewed files:
-  - docs: `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx` modified +30/-10; `docs_new/src/snippets/autoregressive/qwen36-deployment.jsx` modified +25/-7
-- Risk and verification: This is mostly docs/examples in `docs_new/cookbook/autoregressive/Qwen/Qwen3.6.mdx`, `docs_new/src/snippets/autoregressive/qwen36-deployment.jsx`; validation should confirm the documented command still maps to current CLI flags and model repo names.
+  - tests: `test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py` added +141/-0
+- Risk and verification: The diff ships test coverage in `test/registered/accuracy/models/test_npu_qwen36_block_fp8_gsm8k.py`, `test/registered/unit/npu/quantization/test_npu_mxfp8_linear.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
 
 ## Gap-Closure Notes
 

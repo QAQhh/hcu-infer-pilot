@@ -4,14 +4,17 @@
 
 | File | Git-traced PRs |
 | --- | --- |
-| `python/sglang/srt/models/moss_vl.py` | [#23454](https://github.com/sgl-project/sglang/pull/23454), [#23932](https://github.com/sgl-project/sglang/pull/23932) |
+| `python/sglang/srt/arg_groups/model_overrides/moss_vl.py` | no direct PR-number commit |
+| `python/sglang/srt/models/moss_vl.py` | [#23454](https://github.com/sgl-project/sglang/pull/23454), [#23932](https://github.com/sgl-project/sglang/pull/23932), [#28940](https://github.com/sgl-project/sglang/pull/28940) |
 | `python/sglang/srt/multimodal/processors/moss_vl.py` | [#23454](https://github.com/sgl-project/sglang/pull/23454) |
+| `test/registered/unit/models/test_moss_vl_processor.py` | no direct PR-number commit |
 
 ## PR Coverage Summary
 
-- Git-traced PRs: 2
+- Git-traced PRs: 3
 - Extra PRs preserved from existing docs: 0
-- Total PRs in this document: 2
+- Total PRs in this document: 3
+- Auto-classification note: PRs that cannot be safely pinned to one model family go into the framework `shared/` bucket; cross-model PRs stay under the primary model bucket and are labeled as cross-model evidence in the body.
 - File trace command: `git log --name-only -- <model-files>`
 - Diff audit source: GitHub Pull Request files API
 
@@ -21,6 +24,7 @@
 | --- | --- | --- | --- | --- |
 | 2026-04-24 | [#23454](https://github.com/sgl-project/sglang/pull/23454) | merged | [srt] Add Moss-VL Python runtime support | `python/sglang/srt/models/moss_vl.py`, `python/sglang/srt/multimodal/processors/moss_vl.py` |
 | 2026-04-30 | [#23932](https://github.com/sgl-project/sglang/pull/23932) | merged | [moss-vl] use Conv3dLayer and remove no-op flat_encoder_result | `python/sglang/srt/models/moss_vl.py` |
+| 2026-06-24 | [#28940](https://github.com/sgl-project/sglang/pull/28940) | merged | [VLM] Qwen3-VL / Moss-VL ViT preprocessing optimizations | `python/sglang/srt/models/moss_vl.py` |
 
 ## Per-PR Diff Audit Cards
 
@@ -28,7 +32,7 @@
 
 - Link: https://github.com/sgl-project/sglang/pull/23454
 - Status/date: merged / 2026-04-24
-- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/moss_vl.py`, `python/sglang/srt/multimodal/processors/moss_vl.py`; associated commits `59724e90a9b8`; preserved from an explicit existing history/skill citation
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/moss_vl.py`, `python/sglang/srt/multimodal/processors/moss_vl.py`; associated commits `59724e90a9b8`
 - Diff scope read: GitHub Pull Request files API returned 10 files, +2401/-6, 2611 readable patch lines; this card prioritizes model-related and high-change files.
 - Motivation: Title: "[srt] Add Moss-VL Python runtime support"; model line: MOSS-VL; category: model support/runtime entry; main diff: `python/sglang/srt/models/moss_vl.py`, `python/sglang/srt/multimodal/processors/moss_vl.py`; technical summary: Covers "[srt] Add Moss-VL Python runtime support"; the main implementation surface is `python/sglang/srt/models/moss_vl.py`, `python/sglang/srt/multimodal/processors/moss_vl.py`. File-level evidence, code excerpts, and validation risks are preserved below.
 - Key implementation: `python/sglang/srt/models/moss_vl.py` added +1643/-0 (1643 lines); hunks: -0,0 +1,1643; symbols: MossVLVisionMLP, __init__, forward, MossVLVisionPatchEmbed, touching `MossVLVisionMLP, __init__, forward`; `python/sglang/srt/multimodal/processors/moss_vl.py` added +612/-0 (612 lines); hunks: -0,0 +1,612; symbols: MossVLImageProcessor, __init__, _build_mm_items, _build_vision_token_info, touching `MossVLImageProcessor, __init__, _build_mm_items`.
@@ -86,6 +90,33 @@ diff -- python/sglang/srt/models/moss_vl.py
 - Reviewed files:
   - runtime: `python/sglang/srt/models/moss_vl.py` modified +12/-60
 - Risk and verification: Runtime changes concentrate in `python/sglang/srt/models/moss_vl.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #28940 - [VLM] Qwen3-VL / Moss-VL ViT preprocessing optimizations
+
+- Link: https://github.com/sgl-project/sglang/pull/28940
+- Status/date: merged / 2026-06-24
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/moss_vl.py`; associated commits `0df796473b76`
+- Diff scope read: GitHub Pull Request files API returned 6 files, +476/-10, 558 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[VLM] Qwen3-VL / Moss-VL ViT preprocessing optimizations"; model line: MOSS-VL; category: performance/backend optimization; main diff: `python/sglang/srt/models/moss_vl.py`; technical summary: Covers "[VLM] Qwen3-VL / Moss-VL ViT preprocessing optimizations"; the main implementation surface is `python/sglang/srt/models/moss_vl.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `python/sglang/srt/models/moss_vl.py` modified +126/-1 (127 lines); hunks: -15,6 +15,7; -49,6 +50,10; symbols: fast_pos_embed_interpolate, fast_pos_embed_interpolate_vectorized, _exclusive_prefix, forward, touching `fast_pos_embed_interpolate, fast_pos_embed_interpolate_vectorized, _exclusive_prefix`.
+- Code diff details:
+  - `python/sglang/srt/models/moss_vl.py` modified +126/-1 (127 lines); hunks: -15,6 +15,7; -49,6 +50,10; symbols: fast_pos_embed_interpolate, fast_pos_embed_interpolate_vectorized, _exclusive_prefix, forward
+- Key code excerpts:
+
+```diff
+diff -- python/sglang/srt/models/moss_vl.py
+@@ -15,6 +15,7 @@
++from sglang.srt.environ import envs
+@@ -49,6 +50,10 @@
++# Below this image count the per-image loop beats the vectorized path (which has a
++# fixed setup cost); both give the same result.
++_VECTORIZED_VL_POS_EMBED_MIN_IMAGES = 6
+@@ -391,6 +396,120 @@ def fast_pos_embed_interpolate(self, grid_thw: torch.Tensor) -> torch.Tensor:
+```
+
+- Reviewed files:
+  - runtime: `python/sglang/srt/models/moss_vl.py` modified +126/-1
+- Risk and verification: The diff ships test coverage in `test/registered/models/test_vit_pos_embed_interpolate.py`, `test/registered/unit/multimodal/test_base_processor_image_decode.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
 
 ## Gap-Closure Notes
 

@@ -5,15 +5,16 @@
 | File | Git-traced PRs |
 | --- | --- |
 | `python/sglang/srt/configs/step3p5.py` | [#18084](https://github.com/sgl-project/sglang/pull/18084) |
-| `python/sglang/srt/models/step3p5.py` | [#18084](https://github.com/sgl-project/sglang/pull/18084), [#22076](https://github.com/sgl-project/sglang/pull/22076), [#22773](https://github.com/sgl-project/sglang/pull/22773) |
+| `python/sglang/srt/models/step3p5.py` | [#18084](https://github.com/sgl-project/sglang/pull/18084), [#22076](https://github.com/sgl-project/sglang/pull/22076), [#22773](https://github.com/sgl-project/sglang/pull/22773), [#41082](https://github.com/sgl-project/sglang/pull/41082), [#41198](https://github.com/sgl-project/sglang/pull/41198), [#41437](https://github.com/sgl-project/sglang/pull/41437), [#41754](https://github.com/sgl-project/sglang/pull/41754), [#42302](https://github.com/sgl-project/sglang/pull/42302) |
 | `python/sglang/srt/models/step3p5_mtp.py` | [#18084](https://github.com/sgl-project/sglang/pull/18084) |
-| `test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py` | [#24105](https://github.com/sgl-project/sglang/pull/24105) |
+| `test/registered/e2e/models/test_step3p5_flash_chain_mtp.py` | no direct PR-number commit |
 
 ## PR Coverage Summary
 
-- Git-traced PRs: 4
-- Extra PRs preserved from existing docs: 4
+- Git-traced PRs: 8
+- Extra PRs preserved from existing docs: 0
 - Total PRs in this document: 8
+- Auto-classification note: PRs that cannot be safely pinned to one model family go into the framework `shared/` bucket; cross-model PRs stay under the primary model bucket and are labeled as cross-model evidence in the body.
 - File trace command: `git log --name-only -- <model-files>`
 - Diff audit source: GitHub Pull Request files API
 
@@ -21,145 +22,22 @@
 
 | Date | PR | State | Title | Main files |
 | --- | --- | --- | --- | --- |
-| 2025-07-31 | [#8583](https://github.com/sgl-project/sglang/pull/8583) | merged | model: support Step3V | `python/sglang/srt/models/step3_vl.py`, `python/sglang/srt/multimodal/processors/step3_vl.py`, `python/sglang/srt/function_call/step3_detector.py` |
-| 2025-08-03 | [#8699](https://github.com/sgl-project/sglang/pull/8699) | merged | feat: Support DP Attention for step3_vl | `python/sglang/srt/layers/attention/vision.py`, `python/sglang/srt/models/step3_vl.py`, `python/sglang/srt/multimodal/processors/step3_vl.py` |
-| 2025-08-27 | [#9695](https://github.com/sgl-project/sglang/pull/9695) | merged | [router] add step3 tool parser | `sgl-router/src/tool_parser/parsers/step3_parser.rs`, `sgl-router/tests/tool_parser_step3.rs`, `sgl-router/src/tool_parser/registry.rs` |
 | 2026-02-02 | [#18084](https://github.com/sgl-project/sglang/pull/18084) | merged | add Step-3.5-Flash model support | `python/sglang/srt/models/step3p5.py`, `python/sglang/srt/models/step3p5_mtp.py`, `python/sglang/srt/configs/step3p5.py` |
-| 2026-03-04 | [#18564](https://github.com/sgl-project/sglang/pull/18564) | merged | [Feature] implement the standard multi-layer MTP for step3p5 | `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`, `python/sglang/srt/speculative/multi_layer_eagle_draft_extend_cuda_graph_runner.py` |
 | 2026-04-04 | [#22076](https://github.com/sgl-project/sglang/pull/22076) | merged | Tiny fix step3.5-flash launch crash | `python/sglang/srt/models/step3p5.py` |
 | 2026-04-16 | [#22773](https://github.com/sgl-project/sglang/pull/22773) | merged | [Step3p5] Optimize allreduce in MoE layers | `python/sglang/srt/models/step3p5.py` |
-| 2026-04-29 | [#24105](https://github.com/sgl-project/sglang/pull/24105) | merged | relax the threshold in test_step3p5_flash_chain_mtp | `test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py` |
+| 2026-09-24 | [#41082](https://github.com/sgl-project/sglang/pull/41082) | merged | [Fix] Step-3.5: stop dense layers from summing their output twice under DP attention | `python/sglang/srt/models/step3p5.py` |
+| 2026-09-25 | [#41198](https://github.com/sgl-project/sglang/pull/41198) | merged | [Refactor] Move Step-3.5, GLM5-Next, Dots3, MiniMax-M3 and Qwen3.5 onto ffn_exit | `python/sglang/srt/models/step3p5.py` |
+| 2026-09-27 | [#41437](https://github.com/sgl-project/sglang/pull/41437) | merged | [Refactor] Step-3.5: complete the dense MLP's sum through ffn_exit | `python/sglang/srt/models/step3p5.py` |
+| 2026-09-30 | [#41754](https://github.com/sgl-project/sglang/pull/41754) | merged | [Fix] Step-3.5: build the shared expert without TP under all-to-all MoE backends | `python/sglang/srt/models/step3p5.py` |
+| 2026-10-03 | [#42302](https://github.com/sgl-project/sglang/pull/42302) | merged | [Fix] Step-3.5 DeepEP routed scaling and Sarvam shared expert under dense TP1 | `python/sglang/srt/models/step3p5.py` |
 
 ## Per-PR Diff Audit Cards
-
-### PR #8583 - model: support Step3V
-
-- Link: https://github.com/sgl-project/sglang/pull/8583
-- Status/date: merged / 2025-07-31
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 16 files, +2340/-23, 2530 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "model: support Step3V"; model line: Step 3.5; category: model support/runtime entry; main diff: `python/sglang/srt/models/step3_vl.py`, `python/sglang/srt/multimodal/processors/step3_vl.py`, `python/sglang/srt/function_call/step3_detector.py`; technical summary: Covers "model: support Step3V"; the main implementation surface is `python/sglang/srt/models/step3_vl.py`, `python/sglang/srt/multimodal/processors/step3_vl.py`, `python/sglang/srt/function_call/step3_detector.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `python/sglang/srt/models/step3_vl.py` added +994/-0 (994 lines); hunks: -0,0 +1,994; symbols: Step3TextMLP, __init__, forward, Step3TextMoEMLP, touching `Step3TextMLP, __init__, forward`; `python/sglang/srt/multimodal/processors/step3_vl.py` added +515/-0 (515 lines); hunks: -0,0 +1,515; symbols: GPUToTensor, forward, Step3VisionProcessor, __init__, touching `GPUToTensor, forward, Step3VisionProcessor`; `python/sglang/srt/function_call/step3_detector.py` added +436/-0 (436 lines); hunks: -0,0 +1,436; symbols: get_argument_type, parse_arguments, Step3Detector, __init__, touching `get_argument_type, parse_arguments, Step3Detector`; `python/sglang/srt/configs/step3_vl.py` added +172/-0 (172 lines); hunks: -0,0 +1,172; symbols: Step3VisionEncoderConfig, __init__, Step3TextConfig, Step3VLConfig, touching `Step3VisionEncoderConfig, __init__, Step3TextConfig`.
-- Code diff details:
-  - `python/sglang/srt/models/step3_vl.py` added +994/-0 (994 lines); hunks: -0,0 +1,994; symbols: Step3TextMLP, __init__, forward, Step3TextMoEMLP
-  - `python/sglang/srt/multimodal/processors/step3_vl.py` added +515/-0 (515 lines); hunks: -0,0 +1,515; symbols: GPUToTensor, forward, Step3VisionProcessor, __init__
-  - `python/sglang/srt/function_call/step3_detector.py` added +436/-0 (436 lines); hunks: -0,0 +1,436; symbols: get_argument_type, parse_arguments, Step3Detector, __init__
-  - `python/sglang/srt/configs/step3_vl.py` added +172/-0 (172 lines); hunks: -0,0 +1,172; symbols: Step3VisionEncoderConfig, __init__, Step3TextConfig, Step3VLConfig
-  - `test/srt/test_reasoning_parser.py` modified +112/-0 (112 lines); hunks: -493,5 +493,117 @@ def test_qwen3_thinking_streaming_scenario(self):; symbols: test_qwen3_thinking_streaming_scenario, TestBufferLossBugFix, test_partial_end_tag_buffer_loss_bug, test_partial_start_tag_buffer_preservation
-- Key code excerpts:
-
-```diff
-diff -- python/sglang/srt/models/step3_vl.py
-@@ -0,0 +1,994 @@
-+import logging
-+import math
-+from collections.abc import Iterable
-+from math import sqrt
-+from typing import Any, Dict, Iterable, List, Literal, Optional, Tuple, TypedDict, Union
-+import torch
-diff -- python/sglang/srt/multimodal/processors/step3_vl.py
-@@ -0,0 +1,515 @@
-+import math
-+import re
-+from itertools import product
-+from typing import List, Literal, Optional, TypedDict, Union
-+import numpy as np
-+import torch
-diff -- python/sglang/srt/function_call/step3_detector.py
-@@ -0,0 +1,436 @@
-```
-
-- Reviewed files:
-  - runtime: `python/sglang/srt/models/step3_vl.py` added +994/-0; `python/sglang/srt/multimodal/processors/step3_vl.py` added +515/-0; `python/sglang/srt/function_call/step3_detector.py` added +436/-0; `python/sglang/srt/configs/step3_vl.py` added +172/-0; `python/sglang/srt/configs/__init__.py` modified +8/-0; `python/sglang/srt/configs/model_config.py` modified +3/-0
-  - tests: `test/srt/test_reasoning_parser.py` modified +112/-0
-- Risk and verification: The diff ships test coverage in `test/srt/test_reasoning_parser.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
-
-### PR #8699 - feat: Support DP Attention for step3_vl
-
-- Link: https://github.com/sgl-project/sglang/pull/8699
-- Status/date: merged / 2025-08-03
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 3 files, +25/-6, 107 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "feat: Support DP Attention for step3_vl"; model line: Step 3.5; category: model support/runtime entry; main diff: `python/sglang/srt/layers/attention/vision.py`, `python/sglang/srt/models/step3_vl.py`, `python/sglang/srt/multimodal/processors/step3_vl.py`; technical summary: Covers "feat: Support DP Attention for step3_vl"; the main implementation surface is `python/sglang/srt/layers/attention/vision.py`, `python/sglang/srt/models/step3_vl.py`, `python/sglang/srt/multimodal/processors/step3_vl.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `python/sglang/srt/layers/attention/vision.py` modified +13/-5 (18 lines); hunks: -11,6 +11,7; -365,19 +366,20 @@ def __init__(; symbols: __init__, touching `__init__`; `python/sglang/srt/models/step3_vl.py` modified +9/-0 (9 lines); hunks: -531,11 +531,18 @@ def __init__(; -544,6 +551,8 @@ def __init__(; symbols: __init__, touching `__init__`; `python/sglang/srt/multimodal/processors/step3_vl.py` modified +3/-1 (4 lines); hunks: -8,7 +8,7; -276,6 +276,8 @@ def __init__(; symbols: __init__, touching `__init__`.
-- Code diff details:
-  - `python/sglang/srt/layers/attention/vision.py` modified +13/-5 (18 lines); hunks: -11,6 +11,7; -365,19 +366,20 @@ def __init__(; symbols: __init__
-  - `python/sglang/srt/models/step3_vl.py` modified +9/-0 (9 lines); hunks: -531,11 +531,18 @@ def __init__(; -544,6 +551,8 @@ def __init__(; symbols: __init__
-  - `python/sglang/srt/multimodal/processors/step3_vl.py` modified +3/-1 (4 lines); hunks: -8,7 +8,7; -276,6 +276,8 @@ def __init__(; symbols: __init__
-- Key code excerpts:
-
-```diff
-diff -- python/sglang/srt/layers/attention/vision.py
-@@ -11,6 +11,7 @@
-+from sglang.srt.layers.dp_attention import get_attention_tp_rank, get_attention_tp_size
-@@ -365,19 +366,20 @@ def __init__(
--        world_size = parallel_state.get_tensor_model_parallel_world_size()
--        self.tp_size = world_size
--        self.tp_rank = parallel_state.get_tensor_model_parallel_rank()
-+        attn_tp_rank = get_attention_tp_rank()
-diff -- python/sglang/srt/models/step3_vl.py
-@@ -531,11 +531,18 @@ def __init__(
-+        # Since this is a dense model,
-+        # the MLP component likewise adopts a DP-MLP approach modeled after DP Attention.
-+        # This choice may not represent the optimal solution and remains open to further deliberation.
-+        attn_tp_rank = get_attention_tp_rank()
-+        attn_tp_size = get_attention_tp_size()
-+            tp_rank=attn_tp_rank,
-diff -- python/sglang/srt/multimodal/processors/step3_vl.py
-@@ -8,7 +8,7 @@
-```
-
-- Reviewed files:
-  - runtime: `python/sglang/srt/layers/attention/vision.py` modified +13/-5; `python/sglang/srt/models/step3_vl.py` modified +9/-0; `python/sglang/srt/multimodal/processors/step3_vl.py` modified +3/-1
-- Risk and verification: Runtime changes concentrate in `python/sglang/srt/layers/attention/vision.py`, `python/sglang/srt/models/step3_vl.py`, `python/sglang/srt/multimodal/processors/step3_vl.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #9695 - [router] add step3 tool parser
-
-- Link: https://github.com/sgl-project/sglang/pull/9695
-- Status/date: merged / 2025-08-27
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 5 files, +600/-2, 634 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[router] add step3 tool parser"; model line: Step 3.5; category: model support/runtime entry; main diff: `sgl-router/src/tool_parser/parsers/step3_parser.rs`, `sgl-router/tests/tool_parser_step3.rs`, `sgl-router/src/tool_parser/registry.rs`; technical summary: Covers "[router] add step3 tool parser"; the main implementation surface is `sgl-router/src/tool_parser/parsers/step3_parser.rs`, `sgl-router/tests/tool_parser_step3.rs`, `sgl-router/src/tool_parser/registry.rs`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `sgl-router/src/tool_parser/parsers/step3_parser.rs` added +348/-0 (348 lines); hunks: -0,0 +1,348; `sgl-router/tests/tool_parser_step3.rs` added +245/-0 (245 lines); hunks: -0,0 +1,245; `sgl-router/src/tool_parser/registry.rs` modified +3/-1 (4 lines); hunks: -1,5 +1,5; -113,6 +113,8 @@ impl ParserRegistry {; `sgl-router/src/tool_parser/parsers/mod.rs` modified +3/-0 (3 lines); hunks: -9,12 +9,15 @@ pub mod llama_parser;.
-- Code diff details:
-  - `sgl-router/src/tool_parser/parsers/step3_parser.rs` added +348/-0 (348 lines); hunks: -0,0 +1,348
-  - `sgl-router/tests/tool_parser_step3.rs` added +245/-0 (245 lines); hunks: -0,0 +1,245
-  - `sgl-router/src/tool_parser/registry.rs` modified +3/-1 (4 lines); hunks: -1,5 +1,5; -113,6 +113,8 @@ impl ParserRegistry {
-  - `sgl-router/src/tool_parser/parsers/mod.rs` modified +3/-0 (3 lines); hunks: -9,12 +9,15 @@ pub mod llama_parser;
-  - `sgl-router/src/tool_parser/mod.rs` modified +1/-1 (2 lines); hunks: -25,5 +25,5 @@ pub use types::{FunctionCall, PartialToolCall, StreamResult, T...
-- Key code excerpts:
-
-```diff
-diff -- sgl-router/src/tool_parser/parsers/step3_parser.rs
-@@ -0,0 +1,348 @@
-+use async_trait::async_trait;
-+use regex::Regex;
-+use serde_json::Value;
-+use crate::tool_parser::{
-+    errors::{ToolParserError, ToolParserResult},
-+    state::ParseState,
-diff -- sgl-router/tests/tool_parser_step3.rs
-@@ -0,0 +1,245 @@
-+//! Step3 Parser Integration Tests
-+use sglang_router_rs::tool_parser::{ParseState, Step3Parser, StreamResult, ToolParser};
-+#[tokio::test]
-+async fn test_step3_complete_parsing() {
-+    let parser = Step3Parser::new();
-+    // Test single tool call
-diff -- sgl-router/src/tool_parser/registry.rs
-@@ -1,5 +1,5 @@
-```
-
-- Reviewed files:
-  - runtime: `sgl-router/src/tool_parser/parsers/step3_parser.rs` added +348/-0; `sgl-router/src/tool_parser/registry.rs` modified +3/-1; `sgl-router/src/tool_parser/parsers/mod.rs` modified +3/-0; `sgl-router/src/tool_parser/mod.rs` modified +1/-1
-  - tests: `sgl-router/tests/tool_parser_step3.rs` added +245/-0
-- Risk and verification: The diff ships test coverage in `sgl-router/tests/tool_parser_step3.rs`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
 
 ### PR #18084 - add Step-3.5-Flash model support
 
 - Link: https://github.com/sgl-project/sglang/pull/18084
 - Status/date: merged / 2026-02-02
-- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/configs/step3p5.py`, `python/sglang/srt/models/step3p5.py`, `python/sglang/srt/models/step3p5_mtp.py`; associated commits `980d2936cd9a`; preserved from an explicit existing history/skill citation
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/configs/step3p5.py`, `python/sglang/srt/models/step3p5.py`, `python/sglang/srt/models/step3p5_mtp.py`; associated commits `980d2936cd9a`
 - Diff scope read: GitHub Pull Request files API returned 15 files, +1557/-12, 1711 readable patch lines; this card prioritizes model-related and high-change files.
 - Motivation: Title: "add Step-3.5-Flash model support"; model line: Step 3.5; category: performance/backend optimization; main diff: `python/sglang/srt/models/step3p5.py`, `python/sglang/srt/models/step3p5_mtp.py`, `python/sglang/srt/configs/step3p5.py`; technical summary: Covers "add Step-3.5-Flash model support"; the main implementation surface is `python/sglang/srt/models/step3p5.py`, `python/sglang/srt/models/step3p5_mtp.py`, `python/sglang/srt/configs/step3p5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
 - Key implementation: `python/sglang/srt/models/step3p5.py` added +1037/-0 (1037 lines); hunks: -0,0 +1,1037; symbols: Step3p5MLP, __init__, forward, Step3p5MoEMLP, touching `Step3p5MLP, __init__, forward`; `python/sglang/srt/models/step3p5_mtp.py` added +336/-0 (336 lines); hunks: -0,0 +1,336; symbols: get_spec_layer_idx_from_weight_name, SharedHead, __init__, forward, touching `get_spec_layer_idx_from_weight_name, SharedHead, __init__`; `python/sglang/srt/configs/step3p5.py` added +97/-0 (97 lines); hunks: -0,0 +1,97; symbols: Step3p5Config, __init__, touching `Step3p5Config, __init__`.
@@ -194,47 +72,11 @@ diff -- python/sglang/srt/configs/step3p5.py
   - runtime: `python/sglang/srt/models/step3p5.py` added +1037/-0; `python/sglang/srt/models/step3p5_mtp.py` added +336/-0; `python/sglang/srt/configs/step3p5.py` added +97/-0
 - Risk and verification: Runtime changes concentrate in `python/sglang/srt/configs/__init__.py`, `python/sglang/srt/configs/model_config.py`, `python/sglang/srt/configs/step3p5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #18564 - [Feature] implement the standard multi-layer MTP for step3p5
-
-- Link: https://github.com/sgl-project/sglang/pull/18564
-- Status/date: merged / 2026-03-04
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +31/-2, 61 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Feature] implement the standard multi-layer MTP for step3p5"; model line: Step 3.5; category: performance/backend optimization; main diff: `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`, `python/sglang/srt/speculative/multi_layer_eagle_draft_extend_cuda_graph_runner.py`; technical summary: Covers "[Feature] implement the standard multi-layer MTP for step3p5"; the main implementation surface is `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`, `python/sglang/srt/speculative/multi_layer_eagle_draft_extend_cuda_graph_runner.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py` modified +21/-2 (23 lines); hunks: -127,6 +127,11 @@ def __init__(; -382,6 +387,15 @@ def _draft_extend_for_prefill(; symbols: __init__, _draft_extend_for_prefill, forward_batch_generation, touching `__init__, _draft_extend_for_prefill, forward_batch_generation`; `python/sglang/srt/speculative/multi_layer_eagle_draft_extend_cuda_graph_runner.py` modified +10/-0 (10 lines); hunks: -387,6 +387,16 @@ def run_once():; symbols: run_once, touching `run_once`.
-- Code diff details:
-  - `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py` modified +21/-2 (23 lines); hunks: -127,6 +127,11 @@ def __init__(; -382,6 +387,15 @@ def _draft_extend_for_prefill(; symbols: __init__, _draft_extend_for_prefill, forward_batch_generation
-  - `python/sglang/srt/speculative/multi_layer_eagle_draft_extend_cuda_graph_runner.py` modified +10/-0 (10 lines); hunks: -387,6 +387,16 @@ def run_once():; symbols: run_once
-- Key code excerpts:
-
-```diff
-diff -- python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py
-@@ -127,6 +127,11 @@ def __init__(
-+        # Chain-style MTP: each step propagates its own output hidden states to the
-+        # next step.  Non-chain: each step uses the target model's hidden states.
-+        draft_arch = self.draft_worker.model_config.hf_config.architectures[0]
-+        self.chain_mtp_hidden_states = draft_arch in ["Step3p5MTP"]
-@@ -382,6 +387,15 @@ def _draft_extend_for_prefill(
-+            # Chain-style: use this step's output hidden_states as next step's input
-diff -- python/sglang/srt/speculative/multi_layer_eagle_draft_extend_cuda_graph_runner.py
-@@ -387,6 +387,16 @@ def run_once():
-+            # Chain-style MTP: overwrite self.hidden_states with the draft model's
-+            # output (hidden_states_before_norm) so that assign_new_state_triton
-+            # propagates each MTP layer's own output to the next MTP layer,
-+            # rather than always feeding the target model's hidden states.
-+            if (
-+                self.eagle_worker.chain_mtp_hidden_states
-```
-
-- Reviewed files:
-  - runtime: `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py` modified +21/-2; `python/sglang/srt/speculative/multi_layer_eagle_draft_extend_cuda_graph_runner.py` modified +10/-0
-- Risk and verification: Runtime changes concentrate in `python/sglang/srt/speculative/multi_layer_eagle_draft_extend_cuda_graph_runner.py`, `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
 ### PR #22076 - Tiny fix step3.5-flash launch crash
 
 - Link: https://github.com/sgl-project/sglang/pull/22076
 - Status/date: merged / 2026-04-04
-- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/step3p5.py`; associated commits `ef130312434c`; preserved from an explicit existing history/skill citation
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/step3p5.py`; associated commits `ef130312434c`
 - Diff scope read: GitHub Pull Request files API returned 1 files, +0/-1, 8 readable patch lines; this card prioritizes model-related and high-change files.
 - Motivation: Title: "Tiny fix step3.5-flash launch crash"; model line: Step 3.5; category: bug fix; main diff: `python/sglang/srt/models/step3p5.py`; technical summary: Covers "Tiny fix step3.5-flash launch crash"; the main implementation surface is `python/sglang/srt/models/step3p5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
 - Key implementation: `python/sglang/srt/models/step3p5.py` modified +0/-1 (1 lines); hunks: -667,7 +667,6 @@ def __init__(; symbols: __init__, touching `__init__`.
@@ -256,7 +98,7 @@ diff -- python/sglang/srt/models/step3p5.py
 
 - Link: https://github.com/sgl-project/sglang/pull/22773
 - Status/date: merged / 2026-04-16
-- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/step3p5.py`; associated commits `b8794baa6d61`; preserved from an explicit existing history/skill citation
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/step3p5.py`; associated commits `b8794baa6d61`
 - Diff scope read: GitHub Pull Request files API returned 1 files, +59/-57, 211 readable patch lines; this card prioritizes model-related and high-change files.
 - Motivation: Title: "[Step3p5] Optimize allreduce in MoE layers"; model line: Step 3.5; category: performance/backend optimization; main diff: `python/sglang/srt/models/step3p5.py`; technical summary: Covers "[Step3p5] Optimize allreduce in MoE layers"; the main implementation surface is `python/sglang/srt/models/step3p5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
 - Key implementation: `python/sglang/srt/models/step3p5.py` modified +59/-57 (116 lines); hunks: -1,5 +1,3; -57,7 +55,6; symbols: __init__, touching `__init__`.
@@ -279,28 +121,140 @@ diff -- python/sglang/srt/models/step3p5.py
   - runtime: `python/sglang/srt/models/step3p5.py` modified +59/-57
 - Risk and verification: Runtime changes concentrate in `python/sglang/srt/models/step3p5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #24105 - relax the threshold in test_step3p5_flash_chain_mtp
+### PR #41082 - [Fix] Step-3.5: stop dense layers from summing their output twice under DP attention
 
-- Link: https://github.com/sgl-project/sglang/pull/24105
-- Status/date: merged / 2026-04-29
-- Trace source: `git log --name-only -- <model-files>` found it through `test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py`; associated commits `2bbd30a27a23`
-- Diff scope read: GitHub Pull Request files API returned 1 files, +1/-1, 9 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "relax the threshold in test_step3p5_flash_chain_mtp"; model line: Step 3.5; category: performance/backend optimization; main diff: `test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py`; technical summary: Covers "relax the threshold in test_step3p5_flash_chain_mtp"; the main implementation surface is `test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py` modified +1/-1 (2 lines); hunks: -97,7 +97,7 @@ def test_gsm8k(self):; symbols: test_gsm8k, touching `test_gsm8k`.
+- Link: https://github.com/sgl-project/sglang/pull/41082
+- Status/date: merged / 2026-09-24
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/step3p5.py`; associated commits `7c9f74c6e109`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +67/-4, 79 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Fix] Step-3.5: stop dense layers from summing their output twice under DP attention"; model line: Step 3.5; category: bug fix; main diff: `python/sglang/srt/models/step3p5.py`; technical summary: Covers "[Fix] Step-3.5: stop dense layers from summing their output twice under DP attention"; the main implementation surface is `python/sglang/srt/models/step3p5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `python/sglang/srt/models/step3p5.py` modified +6/-4 (10 lines); hunks: -633,10 +633,12 @@ def forward(; symbols: forward, touching `forward`.
 - Code diff details:
-  - `test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py` modified +1/-1 (2 lines); hunks: -97,7 +97,7 @@ def test_gsm8k(self):; symbols: test_gsm8k
+  - `python/sglang/srt/models/step3p5.py` modified +6/-4 (10 lines); hunks: -633,10 +633,12 @@ def forward(; symbols: forward
 - Key code excerpts:
 
 ```diff
-diff -- test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py
-@@ -97,7 +97,7 @@ def test_gsm8k(self):
--            self.assertGreater(metrics["score"], 0.84)
-+            self.assertGreater(metrics["score"], 0.83)
+diff -- python/sglang/srt/models/step3p5.py
+@@ -633,10 +633,12 @@ def forward(
+-            hidden_states = self.mlp(hidden_states)
+-            # Dense MLP uses reduce_results=True, so the output is already
+-            # all-reduced.  Do NOT set the fusion flag — otherwise the next
+-            # layer would all-reduce again, multiplying values by world_size.
++            # The dense MLP all-reduces its own output unless postprocess
++            # reduce-scatters it; it never leaves the sum to the next layer.
 ```
 
 - Reviewed files:
-  - tests: `test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py` modified +1/-1
-- Risk and verification: The diff ships test coverage in `test/registered/8-gpu-models/test_step3p5_flash_chain_mtp.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+  - runtime: `python/sglang/srt/models/step3p5.py` modified +6/-4
+- Risk and verification: The diff ships test coverage in `test/registered/unit/models/test_step3p5_dense_reduce_scatter.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #41198 - [Refactor] Move Step-3.5, GLM5-Next, Dots3, MiniMax-M3 and Qwen3.5 onto ffn_exit
+
+- Link: https://github.com/sgl-project/sglang/pull/41198
+- Status/date: merged / 2026-09-25
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/step3p5.py`; associated commits `b7f6d04a9af1`
+- Diff scope read: GitHub Pull Request files API returned 6 files, +50/-219, 402 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Refactor] Move Step-3.5, GLM5-Next, Dots3, MiniMax-M3 and Qwen3.5 onto ffn_exit"; model line: Step 3.5; category: model implementation change; main diff: `python/sglang/srt/models/step3p5.py`; technical summary: Covers "[Refactor] Move Step-3.5, GLM5-Next, Dots3, MiniMax-M3 and Qwen3.5 onto ffn_exit"; the main implementation surface is `python/sglang/srt/models/step3p5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `python/sglang/srt/models/step3p5.py` modified +24/-41 (65 lines); hunks: -11,11 +11,7; -609,45 +605,32 @@ def forward(; symbols: forward, Step3p5Model, touching `forward, Step3p5Model`.
+- Code diff details:
+  - `python/sglang/srt/models/step3p5.py` modified +24/-41 (65 lines); hunks: -11,11 +11,7; -609,45 +605,32 @@ def forward(; symbols: forward, Step3p5Model
+- Key code excerpts:
+
+```diff
+diff -- python/sglang/srt/models/step3p5.py
+@@ -11,11 +11,7 @@
+-from sglang.srt.layers.communicator import (
+-    LayerCommunicator,
+-    LayerScatterModes,
+-    UnreducedOutput,
+-)
++from sglang.srt.layers.communicator import LayerCommunicator, LayerScatterModes
+```
+
+- Reviewed files:
+  - runtime: `python/sglang/srt/models/step3p5.py` modified +24/-41
+- Risk and verification: The diff ships test coverage in `test/registered/unit/models/test_step3p5_dense_reduce_scatter.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #41437 - [Refactor] Step-3.5: complete the dense MLP's sum through ffn_exit
+
+- Link: https://github.com/sgl-project/sglang/pull/41437
+- Status/date: merged / 2026-09-27
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/step3p5.py`; associated commits `55d2ee554635`
+- Diff scope read: GitHub Pull Request files API returned 3 files, +31/-17, 110 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Refactor] Step-3.5: complete the dense MLP's sum through ffn_exit"; model line: Step 3.5; category: model implementation change; main diff: `python/sglang/srt/models/step3p5.py`; technical summary: Covers "[Refactor] Step-3.5: complete the dense MLP's sum through ffn_exit"; the main implementation surface is `python/sglang/srt/models/step3p5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `python/sglang/srt/models/step3p5.py` modified +5/-11 (16 lines); hunks: -572,6 +572,9 @@ def __init__(; -618,18 +621,9 @@ def forward(; symbols: __init__, forward, Step3p5Model, touching `__init__, forward, Step3p5Model`.
+- Code diff details:
+  - `python/sglang/srt/models/step3p5.py` modified +5/-11 (16 lines); hunks: -572,6 +572,9 @@ def __init__(; -618,18 +621,9 @@ def forward(; symbols: __init__, forward, Step3p5Model
+- Key code excerpts:
+
+```diff
+diff -- python/sglang/srt/models/step3p5.py
+@@ -572,6 +572,9 @@ def __init__(
++            # The dense MLP all-reduces its own output unless postprocess
++            # reduce-scatters it; it never leaves the sum to the next layer.
++            allow_deferred_ffn_reduction=self.use_moe,
+@@ -618,18 +621,9 @@ def forward(
+-        # The dense MLP all-reduces its own output unless postprocess
+-        # reduce-scatters it; it never leaves the sum to the next layer.
+```
+
+- Reviewed files:
+  - runtime: `python/sglang/srt/models/step3p5.py` modified +5/-11
+- Risk and verification: The diff ships test coverage in `test/registered/unit/models/test_last_layer_communicator.py`, `test/registered/unit/models/test_step3p5_dense_reduce_scatter.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #41754 - [Fix] Step-3.5: build the shared expert without TP under all-to-all MoE backends
+
+- Link: https://github.com/sgl-project/sglang/pull/41754
+- Status/date: merged / 2026-09-30
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/step3p5.py`; associated commits `9ee065e49a12`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +33/-19, 135 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Fix] Step-3.5: build the shared expert without TP under all-to-all MoE backends"; model line: Step 3.5; category: bug fix; main diff: `python/sglang/srt/models/step3p5.py`; technical summary: Covers "[Fix] Step-3.5: build the shared expert without TP under all-to-all MoE backends"; the main implementation surface is `python/sglang/srt/models/step3p5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `python/sglang/srt/models/step3p5.py` modified +33/-19 (52 lines); hunks: -4,9 +4,6; -32,6 +29,7; symbols: forward, get_moe_weights, forward_normal, touching `forward, get_moe_weights, forward_normal`.
+- Code diff details:
+  - `python/sglang/srt/models/step3p5.py` modified +33/-19 (52 lines); hunks: -4,9 +4,6; -32,6 +29,7; symbols: forward, get_moe_weights, forward_normal
+- Key code excerpts:
+
+```diff
+diff -- python/sglang/srt/models/step3p5.py
+@@ -4,9 +4,6 @@
+-from sglang.srt.distributed import (
+-    tensor_model_parallel_all_reduce,
+-)
+@@ -32,6 +29,7 @@
++    should_use_flashinfer_cutlass_moe_fp4_allgather,
+@@ -50,7 +48,7 @@
+```
+
+- Reviewed files:
+  - runtime: `python/sglang/srt/models/step3p5.py` modified +33/-19
+- Risk and verification: Runtime changes concentrate in `python/sglang/srt/models/step3p5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #42302 - [Fix] Step-3.5 DeepEP routed scaling and Sarvam shared expert under dense TP1
+
+- Link: https://github.com/sgl-project/sglang/pull/42302
+- Status/date: merged / 2026-10-03
+- Trace source: `git log --name-only -- <model-files>` found it through `python/sglang/srt/models/step3p5.py`; associated commits `be20e7453cc8`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +18/-8, 62 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Fix] Step-3.5 DeepEP routed scaling and Sarvam shared expert under dense TP1"; model line: Step 3.5; category: bug fix; main diff: `python/sglang/srt/models/step3p5.py`; technical summary: Covers "[Fix] Step-3.5 DeepEP routed scaling and Sarvam shared expert under dense TP1"; the main implementation surface is `python/sglang/srt/models/step3p5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `python/sglang/srt/models/step3p5.py` modified +10/-2 (12 lines); hunks: -236,7 +236,13 @@ def forward_deepep(; -252,8 +258,10 @@ def forward_deepep(; symbols: forward_deepep, touching `forward_deepep`.
+- Code diff details:
+  - `python/sglang/srt/models/step3p5.py` modified +10/-2 (12 lines); hunks: -236,7 +236,13 @@ def forward_deepep(; -252,8 +258,10 @@ def forward_deepep(; symbols: forward_deepep
+- Key code excerpts:
+
+```diff
+diff -- python/sglang/srt/models/step3p5.py
+@@ -236,7 +236,13 @@ def forward_deepep(
+-            router_logits, _ = self.gate(hidden_states)
++            if self.need_fp32_gate:
++                router_logits = torch.matmul(
++                    hidden_states.to(torch.float32),
++                    self.gate.weight.t().to(torch.float32),
++                )
+```
+
+- Reviewed files:
+  - runtime: `python/sglang/srt/models/step3p5.py` modified +10/-2
+- Risk and verification: Runtime changes concentrate in `python/sglang/srt/models/sarvam_moe.py`, `python/sglang/srt/models/step3p5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
 ## Gap-Closure Notes
 
