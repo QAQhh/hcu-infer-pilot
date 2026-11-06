@@ -4,13 +4,16 @@
 
 | 文件 | git 追溯到的 PR |
 | --- | --- |
-| - | 当前主线没有匹配到实现文件 |
+| `tests/evals/gsm8k/configs/humming/Qwen3.6-35B-A3B-NVFP4-humming.yaml` | 无直接 PR 号提交 |
+| `tests/lora/test_qwen36_moe_lora.py` | 无直接 PR 号提交 |
 
 ## PR 覆盖总览
 
 - git 追溯 PR 数: 0
 - 原文档显式引用补充 PR 数: 0
 - 当前文档总 PR 数: 0
+
+- 自动归类说明: 无法安全锚定到单一模型家族的 PR 会进入 framework `shared/` 桶；同一 PR 若同时触及多个模型线，会保留在主模型桶并在正文里标注为 cross-model 证据。
 - 文件追溯命令: `git log --name-only -- <model-files>`
 - diff 审计来源: GitHub Pull Request files API
 
@@ -26,7 +29,7 @@
 
 - 结论: 未确认到可归入 vllm Qwen3.6 模型支持或优化主线的公开 PR。
 - 检索方式: 已对匹配文件执行 `git log --name-only -- <model-files>`，并检查原 history/skill 中的显式 PR 链接。
-- 覆盖文件: 当前主线没有匹配到实现文件
+- 覆盖文件: `tests/evals/gsm8k/configs/humming/Qwen3.6-35B-A3B-NVFP4-humming.yaml`；`tests/lora/test_qwen36_moe_lora.py`
 - 后续验收: 如果该模型后续出现实现文件或 PR，必须补齐同一模板的逐 PR diff 卡。
 
 ## 补漏结论

@@ -7,9 +7,6 @@ Filter policy:
 
 Current buckets:
 
-- `LOCAL_ONLY_COMMITS_v0.5.8_dev_to_v0.5.12_dev_by_branch.md` - local-only commit index for `v0.5.8_dev..v0.5.12_dev`
-- `LOCAL_ONLY_COMMITS_v0.5.12_dev_to_v0.5.18_by_branch.md` - local-only commit index for `v0.5.12_dev..v0.5.15.post1_dev..release/20260825_v0.5.18`, generated from `HYGON-AI/sglang-das` by `tools/append_hg_history_branch_segments.py`
-- `AITER_LOCAL_COMMITS.md` - local-only AITER PR/commit index with source SGLang branch/update provenance (not tracked in this repository)
 - `deepseek-v3-r1`
 - `deepseek-v31`
 - `deepseek-v32`
@@ -38,7 +35,5 @@ Current buckets:
 - `qwen3-next`
 - `qwen35`
 - `qwen36`
-- `qwen4-exp`
 - `step35`
 - `shared`
-- `unclassified`
