@@ -40,6 +40,7 @@ class KernelStub:
         self.canonical_name = name
         self.category = "compute"
         self.stage = stage
+        self.tid = 0
         self.dur = 100.0
         self.ts = 0.0
 

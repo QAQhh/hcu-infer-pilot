@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import sys
 from collections import Counter, defaultdict
@@ -45,6 +46,20 @@ def add_boolean_flag(
         parser.set_defaults(**{name: False})
 
 
+def parse_capture_workload(value: str) -> dict:
+    """Read request metadata supplied by the capture producer, not stage tensor shapes."""
+    try:
+        workload = json.loads(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError("capture workload must be a JSON object") from exc
+    keys = ("input_tokens", "output_tokens", "requests", "concurrency")
+    if not isinstance(workload, dict) or any(
+        type(workload.get(key)) is not int or workload[key] <= 0 for key in keys
+    ):
+        raise argparse.ArgumentTypeError("capture workload requires positive integer lengths, requests and concurrency")
+    return {key: workload[key] for key in keys}
+
+
 def build_triage_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="analyze_llm_torch_profile.py",
@@ -71,6 +86,12 @@ def build_triage_parser() -> argparse.ArgumentParser:
         type=str,
         default=None,
         help="Single trace file or profile directory to triage.",
+    )
+    parser.add_argument(
+        "--capture-workload-json",
+        type=parse_capture_workload,
+        default=None,
+        help="Actual capture request metadata as JSON: input_tokens, output_tokens, requests, concurrency.",
     )
     parser.add_argument(
         "--url",
@@ -424,6 +445,15 @@ def stage_display(stage: str) -> str:
 
 
 def stage_workload_note(stage: str, args: argparse.Namespace) -> str:
+    workload = getattr(args, "capture_workload_json", None)
+    if workload is not None:
+        return (
+            f"capture request: input_len={workload['input_tokens']}, output_len={workload['output_tokens']}, "
+            f"requests={workload['requests']}, concurrency={workload['concurrency']}; "
+            "not per-stage tensor shapes"
+        )
+    if not any(getattr(args, name, None) for name in ("url", "mapping_url", "formal_url")):
+        return "capture request shape unknown; live-capture defaults are not trace evidence"
     if stage in {"extend", "prefill"}:
         return f"input_len={args.prefill_input_len}, output_len={args.prefill_output_len}"
     if stage == "decode":
