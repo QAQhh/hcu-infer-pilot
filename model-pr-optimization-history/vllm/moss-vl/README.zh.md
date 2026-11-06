@@ -11,6 +11,8 @@
 - git 追溯 PR 数: 0
 - 原文档显式引用补充 PR 数: 0
 - 当前文档总 PR 数: 0
+
+- 自动归类说明: 无法安全锚定到单一模型家族的 PR 会进入 framework `shared/` 桶；同一 PR 若同时触及多个模型线，会保留在主模型桶并在正文里标注为 cross-model 证据。
 - 文件追溯命令: `git log --name-only -- <model-files>`
 - diff 审计来源: GitHub Pull Request files API
 

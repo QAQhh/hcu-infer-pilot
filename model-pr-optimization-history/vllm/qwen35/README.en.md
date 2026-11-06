@@ -4,26 +4,62 @@
 
 | File | Git-traced PRs |
 | --- | --- |
-| `examples/pooling/score/colqwen3_5_rerank_online.py` | [#36887](https://github.com/vllm-project/vllm/pull/36887) |
-| `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` | [#38083](https://github.com/vllm-project/vllm/pull/38083) |
+| `examples/pooling/score/colqwen3_5_rerank_online.py` | [#36887](https://github.com/vllm-project/vllm/pull/36887), [#46108](https://github.com/vllm-project/vllm/pull/46108) |
+| `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` | [#38083](https://github.com/vllm-project/vllm/pull/38083), [#45002](https://github.com/vllm-project/vllm/pull/45002), [#51293](https://github.com/vllm-project/vllm/pull/51293) |
 | `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml` | [#38083](https://github.com/vllm-project/vllm/pull/38083) |
-| `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml` | [#38664](https://github.com/vllm-project/vllm/pull/38664) |
-| `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` | [#38083](https://github.com/vllm-project/vllm/pull/38083), [#38632](https://github.com/vllm-project/vllm/pull/38632) |
-| `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` | [#38083](https://github.com/vllm-project/vllm/pull/38083) |
+| `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml` | [#46520](https://github.com/vllm-project/vllm/pull/46520) |
+| `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-EMU-TP2.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` | [#44700](https://github.com/vllm-project/vllm/pull/44700), [#49881](https://github.com/vllm-project/vllm/pull/49881), [#52007](https://github.com/vllm-project/vllm/pull/52007) |
+| `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` | [#38083](https://github.com/vllm-project/vllm/pull/38083), [#38632](https://github.com/vllm-project/vllm/pull/38632), [#52007](https://github.com/vllm-project/vllm/pull/52007) |
+| `tests/evals/gsm8k/configs/Qwen3.5-4B-Octave-k3v3-compact.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/Qwen3.5-4B-Octave-k3v3.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/Qwen3.5-4B-Octave-k3v4.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/Qwen3.5-4B-watermark.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-35B-A3B-FP8-humming-act-fp8.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-35B-A3B-FP8-humming.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-35B-A3B-experts-int8-humming-act-int8.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-35B-A3B-experts-int8-humming.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-35B-A3B-int6wc-hadamard-humming-act-int8.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-35B-A3B-int6wc-hadamard-humming.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-4B-quantized.w4a16-humming-act-fp8.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-4B-quantized.w4a16-humming-act-int8.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-4B-quantized.w4a16-humming.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-9B-int6wc-hadamard-humming-act-int8.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/humming/Qwen3.5-9B-int6wc-hadamard-humming.yaml` | no direct PR-number commit |
+| `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` | [#38083](https://github.com/vllm-project/vllm/pull/38083), [#44700](https://github.com/vllm-project/vllm/pull/44700) |
 | `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` | [#38155](https://github.com/vllm-project/vllm/pull/38155), [#38664](https://github.com/vllm-project/vllm/pull/38664) |
+| `tests/evals/mrcr/configs/Qwen3.5-4B.yaml` | no direct PR-number commit |
 | `tests/lora/test_qwen35_densemodel_lora.py` | [#37816](https://github.com/vllm-project/vllm/pull/37816) |
-| `tests/models/multimodal/pooling/test_colqwen3_5.py` | [#36887](https://github.com/vllm-project/vllm/pull/36887) |
-| `vllm/model_executor/models/colqwen3_5.py` | [#36887](https://github.com/vllm-project/vllm/pull/36887) |
-| `vllm/model_executor/models/qwen3_5.py` | [#34110](https://github.com/vllm-project/vllm/pull/34110), [#34198](https://github.com/vllm-project/vllm/pull/34198), [#34200](https://github.com/vllm-project/vllm/pull/34200), [#34313](https://github.com/vllm-project/vllm/pull/34313), [#34489](https://github.com/vllm-project/vllm/pull/34489), [#34492](https://github.com/vllm-project/vllm/pull/34492), [#34512](https://github.com/vllm-project/vllm/pull/34512), [#34683](https://github.com/vllm-project/vllm/pull/34683), [#34697](https://github.com/vllm-project/vllm/pull/34697), [#34719](https://github.com/vllm-project/vllm/pull/34719), [#34723](https://github.com/vllm-project/vllm/pull/34723), [#35617](https://github.com/vllm-project/vllm/pull/35617), ... (18 total) |
-| `vllm/model_executor/models/qwen3_5_mtp.py` | [#34110](https://github.com/vllm-project/vllm/pull/34110), [#34512](https://github.com/vllm-project/vllm/pull/34512), [#35581](https://github.com/vllm-project/vllm/pull/35581), [#37114](https://github.com/vllm-project/vllm/pull/37114), [#38832](https://github.com/vllm-project/vllm/pull/38832) |
-| `vllm/transformers_utils/configs/qwen3_5.py` | [#34512](https://github.com/vllm-project/vllm/pull/34512), [#34554](https://github.com/vllm-project/vllm/pull/34554), [#34604](https://github.com/vllm-project/vllm/pull/34604), [#34610](https://github.com/vllm-project/vllm/pull/34610) |
-| `vllm/transformers_utils/configs/qwen3_5_moe.py` | [#34512](https://github.com/vllm-project/vllm/pull/34512), [#34554](https://github.com/vllm-project/vllm/pull/34554), [#34604](https://github.com/vllm-project/vllm/pull/34604), [#34610](https://github.com/vllm-project/vllm/pull/34610) |
+| `tests/model_executor/test_qwen3_5_quantization.py` | no direct PR-number commit |
+| `tests/models/multimodal/pooling/test_colqwen3_5.py` | [#36887](https://github.com/vllm-project/vllm/pull/36887), [#46108](https://github.com/vllm-project/vllm/pull/46108), [#49372](https://github.com/vllm-project/vllm/pull/49372) |
+| `tests/models/qwen3_5/__init__.py` | [#64509](https://github.com/vllm-project/vllm/pull/64509) |
+| `tests/models/qwen3_5/test_fused_allreduce_norm_quant.py` | [#64723](https://github.com/vllm-project/vllm/pull/64723) |
+| `tests/models/qwen3_5/test_gdn_ba_overlap.py` | no direct PR-number commit |
+| `tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py` | [#64509](https://github.com/vllm-project/vllm/pull/64509) |
+| `tests/models/test_qwen3_5.py` | [#51012](https://github.com/vllm-project/vllm/pull/51012) |
+| `tests/models/test_qwen3_5_mtp_config.py` | [#50734](https://github.com/vllm-project/vllm/pull/50734), [#55369](https://github.com/vllm-project/vllm/pull/55369), [#62111](https://github.com/vllm-project/vllm/pull/62111) |
+| `tests/v1/e2e/spec_decode/mtp/qwen3_5/__init__.py` | no direct PR-number commit |
+| `tests/v1/e2e/spec_decode/mtp/qwen3_5/test_mtp.py` | [#62111](https://github.com/vllm-project/vllm/pull/62111) |
+| `tests/v1/e2e/spec_decode/mtp/qwen3_5/test_rejected_placeholders.py` | no direct PR-number commit |
+| `vllm/model_executor/models/colqwen3_5.py` | [#36887](https://github.com/vllm-project/vllm/pull/36887), [#46108](https://github.com/vllm-project/vllm/pull/46108), [#54847](https://github.com/vllm-project/vllm/pull/54847) |
+| `vllm/model_executor/models/qwen3_5.py` | [#34110](https://github.com/vllm-project/vllm/pull/34110), [#34198](https://github.com/vllm-project/vllm/pull/34198), [#34200](https://github.com/vllm-project/vllm/pull/34200), [#34313](https://github.com/vllm-project/vllm/pull/34313), [#34489](https://github.com/vllm-project/vllm/pull/34489), [#34492](https://github.com/vllm-project/vllm/pull/34492), [#34512](https://github.com/vllm-project/vllm/pull/34512), [#34683](https://github.com/vllm-project/vllm/pull/34683), [#34697](https://github.com/vllm-project/vllm/pull/34697), [#34719](https://github.com/vllm-project/vllm/pull/34719), [#34723](https://github.com/vllm-project/vllm/pull/34723), [#35617](https://github.com/vllm-project/vllm/pull/35617), ... (30 total) |
+| `vllm/model_executor/models/qwen3_5_mtp.py` | [#34110](https://github.com/vllm-project/vllm/pull/34110), [#34512](https://github.com/vllm-project/vllm/pull/34512), [#35581](https://github.com/vllm-project/vllm/pull/35581), [#37114](https://github.com/vllm-project/vllm/pull/37114), [#38832](https://github.com/vllm-project/vllm/pull/38832), [#42716](https://github.com/vllm-project/vllm/pull/42716), [#45002](https://github.com/vllm-project/vllm/pull/45002), [#48816](https://github.com/vllm-project/vllm/pull/48816), [#62111](https://github.com/vllm-project/vllm/pull/62111) |
+| `vllm/models/qwen3_5/__init__.py` | [#51012](https://github.com/vllm-project/vllm/pull/51012) |
+| `vllm/models/qwen3_5/nvidia/__init__.py` | [#51012](https://github.com/vllm-project/vllm/pull/51012) |
+| `vllm/models/qwen3_5/nvidia/model.py` | [#51012](https://github.com/vllm-project/vllm/pull/51012), [#64425](https://github.com/vllm-project/vllm/pull/64425), [#64509](https://github.com/vllm-project/vllm/pull/64509), [#64723](https://github.com/vllm-project/vllm/pull/64723) |
+| `vllm/models/qwen3_5/nvidia/mtp.py` | [#51012](https://github.com/vllm-project/vllm/pull/51012), [#62111](https://github.com/vllm-project/vllm/pull/62111) |
+| `vllm/models/qwen3_5/nvidia/ops/__init__.py` | [#51012](https://github.com/vllm-project/vllm/pull/51012) |
+| `vllm/models/qwen3_5/nvidia/ops/fused_allreduce_norm_quant.py` | [#64723](https://github.com/vllm-project/vllm/pull/64723) |
+| `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py` | [#51012](https://github.com/vllm-project/vllm/pull/51012), [#64509](https://github.com/vllm-project/vllm/pull/64509) |
+| `vllm/models/qwen3_5/nvidia/ops/fused_norm_quant.py` | [#64509](https://github.com/vllm-project/vllm/pull/64509) |
 
 ## PR Coverage Summary
 
-- Git-traced PRs: 29
-- Extra PRs preserved from existing docs: 6
-- Total PRs in this document: 34
+- Git-traced PRs: 54
+- Extra PRs preserved from existing docs: 0
+- Total PRs in this document: 54
+
+- Auto-classification note: PRs that cannot be safely pinned to one model family go into the framework `shared/` bucket; cross-model PRs stay under the primary model bucket and are labeled as cross-model evidence in the body.
 - File trace command: `git log --name-only -- <model-files>`
 - Diff audit source: GitHub Pull Request files API
 
@@ -31,624 +67,1184 @@
 
 | Date | PR | State | Title | Main files |
 | --- | --- | --- | --- | --- |
-| 2026-01-07 | [#31104](https://github.com/vllm-project/vllm/pull/31104) | merged | [BugFix] LoRA: Support loading base_layer of experts | `vllm/model_executor/layers/fused_moe/layer.py`, `vllm/model_executor/models/deepseek_v2.py`, `vllm/model_executor/models/llama4.py` |
-| 2026-01-12 | [#32199](https://github.com/vllm-project/vllm/pull/32199) | merged | [BUGFIX] Add missed remaping of the names of fp8 kv-scale | `vllm/model_executor/models/qwen3_next.py` |
-| 2026-02-09 | [#34110](https://github.com/vllm-project/vllm/pull/34110) | merged | [MODEL] Adding Support for Qwen3.5 Models | `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py` |
-| 2026-02-10 | [#34198](https://github.com/vllm-project/vllm/pull/34198) | merged | [Bugfix] Adopt `ChunkGatedDeltaRule` for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-10 | [#34200](https://github.com/vllm-project/vllm/pull/34200) | merged | [Bugfix] Fix mamba cache dtype for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-11 | [#34313](https://github.com/vllm-project/vllm/pull/34313) | merged | [Bugfix] Fix weight naming in Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-13 | [#34489](https://github.com/vllm-project/vllm/pull/34489) | merged | [Bugfix] Fix mamba state dtype setting for Qwen3-Next and Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-13 | [#34512](https://github.com/vllm-project/vllm/pull/34512) | merged | [Misc] Port Qwen3.5 Configs | `vllm/transformers_utils/configs/qwen3_5_moe.py`, `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-14 | [#34554](https://github.com/vllm-project/vllm/pull/34554) | merged | [Bugfix] Fix Qwen3.5 config loading | `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py` |
-| 2026-02-16 | [#34604](https://github.com/vllm-project/vllm/pull/34604) | merged | [Misc] fix qwen3.5 config | `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py` |
-| 2026-02-16 | [#34610](https://github.com/vllm-project/vllm/pull/34610) | merged | Revert "[Misc] fix qwen3.5 config" | `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py` |
-| 2026-02-16 | [#34492](https://github.com/vllm-project/vllm/pull/34492) | merged | [Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-17 | [#34683](https://github.com/vllm-project/vllm/pull/34683) | merged | Revert "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj" | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-18 | [#34723](https://github.com/vllm-project/vllm/pull/34723) | merged | [Bugfix] Fix prefix creation for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-18 | [#34697](https://github.com/vllm-project/vllm/pull/34697) | merged | [Bugfix] Redo Qwen3.5/Qwen3-Next GDN projector fusion | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-19 | [#34719](https://github.com/vllm-project/vllm/pull/34719) | merged | [Bugfix] Qwen3.5 kv-scale weight remapping | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-02-26 | [#35289](https://github.com/vllm-project/vllm/pull/35289) | merged | [Bugfix] [Qwen3.5]Fix Qwen3.5 FP8 quantization: tuple shard_id weight loading | `vllm/model_executor/layers/linear.py` |
-| 2026-02-28 | [#35581](https://github.com/vllm-project/vllm/pull/35581) | merged | Fix Qwen3_5MTP packed_modules_mapping for gate_up_proj | `vllm/model_executor/models/qwen3_5_mtp.py` |
-| 2026-03-01 | [#35617](https://github.com/vllm-project/vllm/pull/35617) | merged | [Bugfix][Model] Fix Qwen3.5/Qwen3Next ignoring --dtype flag on older GPUs | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-03-11 | [#36658](https://github.com/vllm-project/vllm/pull/36658) | merged | Add: Eagle3 support for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-03-17 | [#36887](https://github.com/vllm-project/vllm/pull/36887) | merged | [Model] Add ColQwen3.5 4.5B support | `vllm/model_executor/models/colqwen3_5.py`, `tests/models/multimodal/pooling/test_colqwen3_5.py`, `examples/pooling/score/colqwen3_5_rerank_online.py` |
-| 2026-03-19 | [#37448](https://github.com/vllm-project/vllm/pull/37448) | merged | Fix AttributeError in Qwen3.5 GDN layers with quantized models | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-03-20 | [#36976](https://github.com/vllm-project/vllm/pull/36976) | merged | [Bugfix][LoRA] Fix Qwen35 LoRA | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-03-23 | [#37816](https://github.com/vllm-project/vllm/pull/37816) | merged | [CI/Build][LoRA] Update Qwen35 LoRA testing | `tests/lora/test_qwen35_densemodel_lora.py` |
-| 2026-03-26 | [#38083](https://github.com/vllm-project/vllm/pull/38083) | merged | [Bugfix] Fix DeepGemm E8M0 accuracy degradation for Qwen3.5 FP8 on Blackwell | `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml` |
-| 2026-03-26 | [#38155](https://github.com/vllm-project/vllm/pull/38155) | merged | [ROCm][CI] Add LM Eval Qwen3.5 Models test for MI355 | `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` |
-| 2026-03-27 | [#37975](https://github.com/vllm-project/vllm/pull/37975) | merged | [Model] Extract GatedDeltaNetAttention into shared layer for Qwen3Next and Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-03-31 | [#38632](https://github.com/vllm-project/vllm/pull/38632) | merged | [CI] fix LM Eval Qwen3.5 Models (B200) | `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` |
-| 2026-04-02 | [#38650](https://github.com/vllm-project/vllm/pull/38650) | closed | [Bugfix] Enable MTP for the official Qwen3.5 NVFP4 checkpoint | `vllm/model_executor/models/qwen3_5_mtp.py` |
-| 2026-04-03 | [#38832](https://github.com/vllm-project/vllm/pull/38832) | merged | [Bugfix] Fix NVFP4+MTP crash: force unquantized mtp.fc for Qwen3.5 | `vllm/model_executor/models/qwen3_5_mtp.py` |
-| 2026-04-03 | [#38664](https://github.com/vllm-project/vllm/pull/38664) | merged | [CI][ROCm] Add Qwen3.5-35B-A3B-MXFP4 model eval into CI | `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` |
-| 2026-04-03 | [#38927](https://github.com/vllm-project/vllm/pull/38927) | merged | [Bugfix][LoRA] Fix missing in_proj_z in Qwen3_5ForConditionalGenerati… | `vllm/model_executor/models/qwen3_5.py` |
-| 2026-04-08 | [#39181](https://github.com/vllm-project/vllm/pull/39181) | merged | [Bugfix]Fix EP precision for Qwen3.5, Qwen3-Next | `vllm/model_executor/models/qwen2_moe.py`, `vllm/model_executor/models/qwen3_next.py` |
+| 2026-11-03 | [#64723](https://github.com/vllm-project/vllm/pull/64723) | merged | [Perf][Qwen3.5] (NVIDIA path) Fused AR+norm+quant | `tests/models/qwen3_5/test_fused_allreduce_norm_quant.py`, `vllm/models/qwen3_5/nvidia/ops/fused_allreduce_norm_quant.py`, `vllm/models/qwen3_5/nvidia/model.py` |
+| 2026-10-30 | [#62111](https://github.com/vllm-project/vllm/pull/62111) | merged | [Bugfix] Fix multi-layer MTP module selection for Qwen3.5 and Qwen3-Next | `tests/models/test_qwen3_5_mtp_config.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/model_executor/models/qwen3_next_mtp.py` |
+| 2026-10-30 | [#64509](https://github.com/vllm-project/vllm/pull/64509) | merged | [Perf][Qwen3.5] (NVIDIA-only) Fused norm+quant and gate+quant | `vllm/models/qwen3_5/nvidia/ops/fused_norm_quant.py`, `vllm/models/qwen3_5/nvidia/model.py`, `tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py` |
+| 2026-10-29 | [#64425](https://github.com/vllm-project/vllm/pull/64425) | merged | [Perf] Qwen3.5 GDN: overlap in_proj_ba with in_proj_qkvz on the aux stream | `vllm/models/qwen3_5/nvidia/model.py` |
+| 2026-10-29 | [#51012](https://github.com/vllm-project/vllm/pull/51012) | merged | [Models] Deprecate `torch.compile` for Qwen3.5 models | `vllm/models/qwen3_5/nvidia/model.py`, `vllm/models/qwen3_5/nvidia/mtp.py`, `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py` |
+| 2026-10-10 | [#59853](https://github.com/vllm-project/vllm/pull/59853) | merged | [Model] Drop the 4x M-RoPE cache headroom for Qwen3-VL, Qwen3.5 and Qwen3.8 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-09-29 | [#51289](https://github.com/vllm-project/vllm/pull/51289) | merged | [Model] Extend device-side mm normalization to Qwen3VL/Qwen3.5/Qwen4Next | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-09-07 | [#55369](https://github.com/vllm-project/vllm/pull/55369) | merged | [Bugfix][Spec Decode] Resolve n_predict from text_config for Qwen3.5 multimodal MTP | `tests/models/test_qwen3_5_mtp_config.py` |
+| 2026-09-02 | [#54847](https://github.com/vllm-project/vllm/pull/54847) | merged | [Bugfix] Fix ColQwen3.5 pooler projector initialization | `vllm/model_executor/models/colqwen3_5.py` |
+| 2026-08-19 | [#48850](https://github.com/vllm-project/vllm/pull/48850) | merged | [Bugfix][LoRA] Add embedding_modules for Qwen3.5 CausalLM | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-08-12 | [#52007](https://github.com/vllm-project/vllm/pull/52007) | merged | [CI Bug] Fix ci qwen3.5 | `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` |
+| 2026-08-10 | [#50734](https://github.com/vllm-project/vllm/pull/50734) | merged | [Bugfix][Model] Fix Qwen3.5 MTP for text-only checkpoints | `tests/models/test_qwen3_5_mtp_config.py` |
+| 2026-08-07 | [#51293](https://github.com/vllm-project/vllm/pull/51293) | merged | [CI] Re-enable FI autotune in GSM8K config for Qwen3.5-35B-A3B | `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` |
+| 2026-08-06 | [#50355](https://github.com/vllm-project/vllm/pull/50355) | merged | [Model] Fix weight prefix mapping for native Qwen3.5 text-only checkp… | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-07-29 | [#50210](https://github.com/vllm-project/vllm/pull/50210) | merged | [Model] Support Qwen3.5 text-only dense and MoE models | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-07-28 | [#49881](https://github.com/vllm-project/vllm/pull/49881) | merged | [CI] Increase Qwen3.5 MTP GSM8K generation length | `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` |
+| 2026-07-27 | [#48912](https://github.com/vllm-project/vllm/pull/48912) | merged | [Model] Enable EVS for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-07-26 | [#49372](https://github.com/vllm-project/vllm/pull/49372) | merged | [Bugfix] Respect declared attention contract for ColQwen3.5 retrievers | `tests/models/multimodal/pooling/test_colqwen3_5.py` |
+| 2026-07-23 | [#48816](https://github.com/vllm-project/vllm/pull/48816) | merged | Fix GPTQ quantized Qwen3.5 MTP weight loading with spec decode | `vllm/model_executor/models/qwen3_5_mtp.py` |
+| 2026-06-23 | [#44434](https://github.com/vllm-project/vllm/pull/44434) | merged | [ROCm][Bugfix][Perf] enable shared expert fusion for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-06-23 | [#46520](https://github.com/vllm-project/vllm/pull/46520) | merged | [ROCm][CI] Shard LM Eval Qwen3-5 Models (B200-MI355) in AMD CI | `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml` |
+| 2026-06-22 | [#46108](https://github.com/vllm-project/vllm/pull/46108) | merged | [Model] ColQwen3.5: fix retrieval correctness (bias + bidirectional) | `tests/models/multimodal/pooling/test_colqwen3_5.py`, `vllm/model_executor/models/colqwen3_5.py`, `examples/pooling/score/colqwen3_5_rerank_online.py` |
+| 2026-06-09 | [#45002](https://github.com/vllm-project/vllm/pull/45002) | merged | [Bugfix] fix qwen3.5 ep weight loading | `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` |
+| 2026-06-06 | [#44700](https://github.com/vllm-project/vllm/pull/44700) | merged | [PERF] [Qwen3.5] Split mixed prefill+decode batches: route decodes to the recurrent kernel | `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` |
+| 2026-05-17 | [#42716](https://github.com/vllm-project/vllm/pull/42716) | merged | Fix Weight loading for Qwen3.5-MTP and Qwen3-VL using runai_streamer | `vllm/model_executor/models/qwen3_5_mtp.py` |
+| 2026-05-14 | [#42521](https://github.com/vllm-project/vllm/pull/42521) | merged | [Fix] Weight loading for qwen3_5 using runai_streamer | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-05-13 | [#42151](https://github.com/vllm-project/vllm/pull/42151) | merged | [MM][Perf][CG] Support ViT full CUDA graph for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-05-10 | [#37912](https://github.com/vllm-project/vllm/pull/37912) | merged | [Bugfix] Fuse Qwen3.5 in_qkvz_proj forwarding with LoRA enabled | `vllm/model_executor/models/qwen3_5.py` |
 | 2026-04-21 | [#37114](https://github.com/vllm-project/vllm/pull/37114) | merged | [Bugfix] LoRA: extend expert base_layer loading to Qwen3.5 and Step3.x | `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py` |
+| 2026-04-03 | [#38927](https://github.com/vllm-project/vllm/pull/38927) | merged | [Bugfix][LoRA] Fix missing in_proj_z in Qwen3_5ForConditionalGenerati… | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-04-03 | [#38664](https://github.com/vllm-project/vllm/pull/38664) | merged | [CI][ROCm] Add Qwen3.5-35B-A3B-MXFP4 model eval into CI | `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` |
+| 2026-04-03 | [#38832](https://github.com/vllm-project/vllm/pull/38832) | merged | [Bugfix] Fix NVFP4+MTP crash: force unquantized mtp.fc for Qwen3.5 | `vllm/model_executor/models/qwen3_5_mtp.py` |
+| 2026-03-31 | [#38632](https://github.com/vllm-project/vllm/pull/38632) | merged | [CI] fix LM Eval Qwen3.5 Models (B200) | `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` |
+| 2026-03-27 | [#37975](https://github.com/vllm-project/vllm/pull/37975) | merged | [Model] Extract GatedDeltaNetAttention into shared layer for Qwen3Next and Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-03-26 | [#38155](https://github.com/vllm-project/vllm/pull/38155) | merged | [ROCm][CI] Add LM Eval Qwen3.5 Models test for MI355 | `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` |
+| 2026-03-26 | [#38083](https://github.com/vllm-project/vllm/pull/38083) | merged | [Bugfix] Fix DeepGemm E8M0 accuracy degradation for Qwen3.5 FP8 on Blackwell | `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml` |
+| 2026-03-23 | [#37816](https://github.com/vllm-project/vllm/pull/37816) | merged | [CI/Build][LoRA] Update Qwen35 LoRA testing | `tests/lora/test_qwen35_densemodel_lora.py` |
+| 2026-03-20 | [#36976](https://github.com/vllm-project/vllm/pull/36976) | merged | [Bugfix][LoRA] Fix Qwen35 LoRA | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-03-19 | [#37448](https://github.com/vllm-project/vllm/pull/37448) | merged | Fix AttributeError in Qwen3.5 GDN layers with quantized models | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-03-17 | [#36887](https://github.com/vllm-project/vllm/pull/36887) | merged | [Model] Add ColQwen3.5 4.5B support | `vllm/model_executor/models/colqwen3_5.py`, `tests/models/multimodal/pooling/test_colqwen3_5.py`, `examples/pooling/score/colqwen3_5_rerank_online.py` |
+| 2026-03-11 | [#36658](https://github.com/vllm-project/vllm/pull/36658) | merged | Add: Eagle3 support for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-03-01 | [#35617](https://github.com/vllm-project/vllm/pull/35617) | merged | [Bugfix][Model] Fix Qwen3.5/Qwen3Next ignoring --dtype flag on older GPUs | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-28 | [#35581](https://github.com/vllm-project/vllm/pull/35581) | merged | Fix Qwen3_5MTP packed_modules_mapping for gate_up_proj | `vllm/model_executor/models/qwen3_5_mtp.py` |
+| 2026-02-19 | [#34719](https://github.com/vllm-project/vllm/pull/34719) | merged | [Bugfix] Qwen3.5 kv-scale weight remapping | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-18 | [#34697](https://github.com/vllm-project/vllm/pull/34697) | merged | [Bugfix] Redo Qwen3.5/Qwen3-Next GDN projector fusion | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-18 | [#34723](https://github.com/vllm-project/vllm/pull/34723) | merged | [Bugfix] Fix prefix creation for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-17 | [#34683](https://github.com/vllm-project/vllm/pull/34683) | merged | Revert "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj" | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-16 | [#34492](https://github.com/vllm-project/vllm/pull/34492) | merged | [Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-13 | [#34512](https://github.com/vllm-project/vllm/pull/34512) | merged | [Misc] Port Qwen3.5 Configs | `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py` |
+| 2026-02-13 | [#34489](https://github.com/vllm-project/vllm/pull/34489) | merged | [Bugfix] Fix mamba state dtype setting for Qwen3-Next and Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-11 | [#34313](https://github.com/vllm-project/vllm/pull/34313) | merged | [Bugfix] Fix weight naming in Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-10 | [#34200](https://github.com/vllm-project/vllm/pull/34200) | merged | [Bugfix] Fix mamba cache dtype for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-10 | [#34198](https://github.com/vllm-project/vllm/pull/34198) | merged | [Bugfix] Adopt `ChunkGatedDeltaRule` for Qwen3.5 | `vllm/model_executor/models/qwen3_5.py` |
+| 2026-02-09 | [#34110](https://github.com/vllm-project/vllm/pull/34110) | merged | [MODEL] Adding Support for Qwen3.5 Models | `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py` |
 
 ## Per-PR Diff Audit Cards
 
-### PR #31104 - [BugFix] LoRA: Support loading base_layer of experts
+### PR #64723 - [Perf][Qwen3.5] (NVIDIA path) Fused AR+norm+quant
 
-- Link: https://github.com/vllm-project/vllm/pull/31104
-- Status/date: merged / 2026-01-07
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 35 files, +46/-3, 319 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[BugFix] LoRA: Support loading base_layer of experts"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/layers/fused_moe/layer.py`, `vllm/model_executor/models/deepseek_v2.py`, `vllm/model_executor/models/llama4.py`; technical summary: Covers "[BugFix] LoRA: Support loading base_layer of experts"; the main implementation surface is `vllm/model_executor/layers/fused_moe/layer.py`, `vllm/model_executor/models/deepseek_v2.py`, `vllm/model_executor/models/llama4.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/layers/fused_moe/layer.py` modified +10/-3 (13 lines); hunks: -2007,6 +2007,7 @@ def combine_output(states: torch.Tensor) -> torch.Tensor:; -2025,13 +2026,19 @@ def make_expert_params_mapping(; symbols: combine_output, make_expert_params_mapping, touching `combine_output, make_expert_params_mapping`; `vllm/model_executor/models/deepseek_v2.py` modified +2/-0 (2 lines); hunks: -1486,6 +1486,7 @@ def get_expert_mapping(self) -> list[tuple[str, str, int,...; -1519,6 +1520,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch....; symbols: get_expert_mapping, load_weights, touching `get_expert_mapping, load_weights`; `vllm/model_executor/models/llama4.py` modified +2/-0 (2 lines); hunks: -539,6 +539,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; -548,6 +549,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; symbols: load_weights, touching `load_weights`; `vllm/model_executor/models/afmoe.py` modified +1/-0 (1 lines); hunks: -475,6 +475,7 @@ def get_expert_mapping(self) -> list[tuple[str, str, int, st...; symbols: get_expert_mapping, touching `get_expert_mapping`.
+- Link: https://github.com/vllm-project/vllm/pull/64723
+- Status/date: merged / 2026-11-03
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/models/qwen3_5/test_fused_allreduce_norm_quant.py`, `vllm/models/qwen3_5/nvidia/model.py`, `vllm/models/qwen3_5/nvidia/ops/fused_allreduce_norm_quant.py`; associated commits `523991fec066`
+- Diff scope read: GitHub Pull Request files API returned 4 files, +424/-46, 547 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Perf][Qwen3.5] (NVIDIA path) Fused AR+norm+quant"; model line: Qwen3.5; category: performance/backend optimization; main diff: `tests/models/qwen3_5/test_fused_allreduce_norm_quant.py`, `vllm/models/qwen3_5/nvidia/ops/fused_allreduce_norm_quant.py`, `vllm/models/qwen3_5/nvidia/model.py`; technical summary: Covers "[Perf][Qwen3.5] (NVIDIA path) Fused AR+norm+quant"; the main implementation surface is `tests/models/qwen3_5/test_fused_allreduce_norm_quant.py`, `vllm/models/qwen3_5/nvidia/ops/fused_allreduce_norm_quant.py`, `vllm/models/qwen3_5/nvidia/model.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/models/qwen3_5/test_fused_allreduce_norm_quant.py` added +186/-0 (186 lines); hunks: -0,0 +1,186; symbols: _worker, make_linear, run_one, test_forward_fused, touching `_worker, make_linear, run_one`; `vllm/models/qwen3_5/nvidia/ops/fused_allreduce_norm_quant.py` added +167/-0 (167 lines); hunks: -0,0 +1,167; symbols: _get_workspace, fused_allreduce_gemma_rms_norm_quant, touching `_get_workspace, fused_allreduce_gemma_rms_norm_quant`; `vllm/models/qwen3_5/nvidia/model.py` modified +69/-46 (115 lines); hunks: -125,6 +125,7; -179,13 +180,21 @@ class Qwen3_5RMSNorm(nn.Module):; symbols: Qwen3_5RMSNorm, __init__, forward, touching `Qwen3_5RMSNorm, __init__, forward`.
 - Code diff details:
-  - `vllm/model_executor/layers/fused_moe/layer.py` modified +10/-3 (13 lines); hunks: -2007,6 +2007,7 @@ def combine_output(states: torch.Tensor) -> torch.Tensor:; -2025,13 +2026,19 @@ def make_expert_params_mapping(; symbols: combine_output, make_expert_params_mapping
-  - `vllm/model_executor/models/deepseek_v2.py` modified +2/-0 (2 lines); hunks: -1486,6 +1486,7 @@ def get_expert_mapping(self) -> list[tuple[str, str, int,...; -1519,6 +1520,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch....; symbols: get_expert_mapping, load_weights
-  - `vllm/model_executor/models/llama4.py` modified +2/-0 (2 lines); hunks: -539,6 +539,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; -548,6 +549,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; symbols: load_weights
-  - `vllm/model_executor/models/afmoe.py` modified +1/-0 (1 lines); hunks: -475,6 +475,7 @@ def get_expert_mapping(self) -> list[tuple[str, str, int, st...; symbols: get_expert_mapping
-  - `vllm/model_executor/models/bailing_moe.py` modified +1/-0 (1 lines); hunks: -476,6 +476,7 @@ def forward(; symbols: forward, get_expert_mapping
+  - `tests/models/qwen3_5/test_fused_allreduce_norm_quant.py` added +186/-0 (186 lines); hunks: -0,0 +1,186; symbols: _worker, make_linear, run_one, test_forward_fused
+  - `vllm/models/qwen3_5/nvidia/ops/fused_allreduce_norm_quant.py` added +167/-0 (167 lines); hunks: -0,0 +1,167; symbols: _get_workspace, fused_allreduce_gemma_rms_norm_quant
+  - `vllm/models/qwen3_5/nvidia/model.py` modified +69/-46 (115 lines); hunks: -125,6 +125,7; -179,13 +180,21 @@ class Qwen3_5RMSNorm(nn.Module):; symbols: Qwen3_5RMSNorm, __init__, forward
 - Key code excerpts:
 
 ```diff
-diff -- vllm/model_executor/layers/fused_moe/layer.py
-@@ -2007,6 +2007,7 @@ def combine_output(states: torch.Tensor) -> torch.Tensor:
-+        model: torch.nn.Module,
-@@ -2025,13 +2026,19 @@ def make_expert_params_mapping(
-+        base_layer = (
-+            "base_layer."
-+            if any(".base_layer." in name for name, _ in model.named_parameters())
-+            else ""
-diff -- vllm/model_executor/models/deepseek_v2.py
-@@ -1486,6 +1486,7 @@ def get_expert_mapping(self) -> list[tuple[str, str, int, str]]:
-+            self,
-@@ -1519,6 +1520,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
-+            self,
-diff -- vllm/model_executor/models/llama4.py
-@@ -539,6 +539,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
-+            self,
-@@ -548,6 +549,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
-+            self,
+diff -- tests/models/qwen3_5/test_fused_allreduce_norm_quant.py
+@@ -0,0 +1,186 @@
++# SPDX-License-Identifier: Apache-2.0
++# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
++"""TP2: ``Qwen3_5RMSNorm.forward_fused`` vs the unfused chain it replaces,
++(all-reduce +) Gemma norm, then scaled_fp8_quant / scaled_fp4_quant, for real
++ModelOpt static FP8 and NVFP4 consumers.
++All cases run in one 2-rank spawn; spawning per case re-imports vLLM and
+diff -- vllm/models/qwen3_5/nvidia/ops/fused_allreduce_norm_quant.py
+@@ -0,0 +1,167 @@
++# SPDX-License-Identifier: Apache-2.0
++# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
++"""TP all-reduce + residual add + Gemma RMSNorm + consumer input quant.
++Calls FlashInfer's ``kARResidualRMSNormOut{FP8,FP4}Quant`` patterns directly
++(no torch.compile custom op). The kernel writes the bf16 normed activation
++(GDN's ``in_proj_ba`` reads it) next to the static FP8 / NVFP4 codes; its
+diff -- vllm/models/qwen3_5/nvidia/model.py
+@@ -125,6 +125,7 @@
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/layers/fused_moe/layer.py` modified +10/-3; `vllm/model_executor/models/deepseek_v2.py` modified +2/-0; `vllm/model_executor/models/llama4.py` modified +2/-0; `vllm/model_executor/models/afmoe.py` modified +1/-0; `vllm/model_executor/models/bailing_moe.py` modified +1/-0; `vllm/model_executor/models/deepseek_eagle.py` modified +1/-0
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/fused_moe/layer.py`, `vllm/model_executor/models/afmoe.py`, `vllm/model_executor/models/bailing_moe.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+  - tests: `tests/models/qwen3_5/test_fused_allreduce_norm_quant.py` added +186/-0
+  - runtime: `vllm/models/qwen3_5/nvidia/ops/fused_allreduce_norm_quant.py` added +167/-0; `vllm/models/qwen3_5/nvidia/model.py` modified +69/-46
+- Risk and verification: The diff ships test coverage in `tests/models/qwen3_5/test_fused_allreduce_norm_quant.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
 
-### PR #32199 - [BUGFIX] Add missed remaping of the names of fp8 kv-scale
+### PR #62111 - [Bugfix] Fix multi-layer MTP module selection for Qwen3.5 and Qwen3-Next
 
-- Link: https://github.com/vllm-project/vllm/pull/32199
-- Status/date: merged / 2026-01-12
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +7/-0, 21 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[BUGFIX] Add missed remaping of the names of fp8 kv-scale"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_next.py`; technical summary: Covers "[BUGFIX] Add missed remaping of the names of fp8 kv-scale"; the main implementation surface is `vllm/model_executor/models/qwen3_next.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_next.py` modified +7/-0 (7 lines); hunks: -64,6 +64,7; -1065,6 +1066,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch...; symbols: load_weights, touching `load_weights`.
+- Link: https://github.com/vllm-project/vllm/pull/62111
+- Status/date: merged / 2026-10-30
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/models/test_qwen3_5_mtp_config.py`, `tests/v1/e2e/spec_decode/mtp/qwen3_5/test_mtp.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/models/qwen3_5/nvidia/mtp.py`; associated commits `dd5f5eebd7a0`
+- Diff scope read: GitHub Pull Request files API returned 9 files, +222/-16, 388 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Fix multi-layer MTP module selection for Qwen3.5 and Qwen3-Next"; model line: Qwen3.5; category: bug fix; main diff: `tests/models/test_qwen3_5_mtp_config.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/model_executor/models/qwen3_next_mtp.py`; technical summary: Covers "[Bugfix] Fix multi-layer MTP module selection for Qwen3.5 and Qwen3-Next"; the main implementation surface is `tests/models/test_qwen3_5_mtp_config.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/model_executor/models/qwen3_next_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/models/test_qwen3_5_mtp_config.py` modified +64/-1 (65 lines); hunks: -2,11 +2,18; -119,3 +126,59 @@ def test_mtp_override_downloads_real_hf_hub_configs(; symbols: test_mtp_override_downloads_real_hf_hub_configs, test_mtp_num_hidden_layers_selects_multi_module_mtp, touching `test_mtp_override_downloads_real_hf_hub_configs, test_mtp_num_hidden_layers_selects_multi_module_mtp`; `vllm/model_executor/models/qwen3_5_mtp.py` modified +22/-4 (26 lines); hunks: -28,6 +28,9; -59,7 +62,8; symbols: Qwen3_5MultiTokenPredictor, load_weights, Qwen3_5MTP, forward, touching `Qwen3_5MultiTokenPredictor, load_weights, Qwen3_5MTP`; `vllm/model_executor/models/qwen3_next_mtp.py` modified +19/-4 (23 lines); hunks: -41,7 +41,17; -171,7 +181,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; symbols: should_torch_compile_mtp_drafter, Qwen3NextMultiTokenPredictor, load_weights, Qwen3NextMTP, touching `should_torch_compile_mtp_drafter, Qwen3NextMultiTokenPredictor, load_weights`; `vllm/models/qwen3_5/nvidia/mtp.py` modified +15/-2 (17 lines); hunks: -255,10 +255,15 @@ def forward( # type: ignore[override]; -269,6 +274,14 @@ def compute_logits(; symbols: forward, compute_logits, get_top_tokens, is_unused_checkpoint_weight, touching `forward, compute_logits, get_top_tokens`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_next.py` modified +7/-0 (7 lines); hunks: -64,6 +64,7; -1065,6 +1066,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch...; symbols: load_weights
+  - `tests/models/test_qwen3_5_mtp_config.py` modified +64/-1 (65 lines); hunks: -2,11 +2,18; -119,3 +126,59 @@ def test_mtp_override_downloads_real_hf_hub_configs(; symbols: test_mtp_override_downloads_real_hf_hub_configs, test_mtp_num_hidden_layers_selects_multi_module_mtp
+  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +22/-4 (26 lines); hunks: -28,6 +28,9; -59,7 +62,8; symbols: Qwen3_5MultiTokenPredictor, load_weights, Qwen3_5MTP, forward
+  - `vllm/model_executor/models/qwen3_next_mtp.py` modified +19/-4 (23 lines); hunks: -41,7 +41,17; -171,7 +181,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; symbols: should_torch_compile_mtp_drafter, Qwen3NextMultiTokenPredictor, load_weights, Qwen3NextMTP
+  - `vllm/models/qwen3_5/nvidia/mtp.py` modified +15/-2 (17 lines); hunks: -255,10 +255,15 @@ def forward( # type: ignore[override]; -269,6 +274,14 @@ def compute_logits(; symbols: forward, compute_logits, get_top_tokens, is_unused_checkpoint_weight
+  - `tests/v1/e2e/spec_decode/mtp/qwen3_5/test_mtp.py` modified +76/-0 (76 lines); hunks: -1,20 +1,96; symbols: _add_random_mtp_module, test_mtp_draft_steps_use_their_own_module
 - Key code excerpts:
 
 ```diff
-diff -- vllm/model_executor/models/qwen3_next.py
-@@ -64,6 +64,7 @@
-+    maybe_remap_kv_scale_name,
-@@ -1065,6 +1066,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
-+            # Remapping the name of FP8 kv-scale.
-+            if name.endswith("scale"):
-+                name = maybe_remap_kv_scale_name(name, params_dict)
-+                if name is None:
+diff -- tests/models/test_qwen3_5_mtp_config.py
+@@ -2,11 +2,18 @@
++from pathlib import Path
+-from transformers import AutoConfig, PreTrainedConfig
++from transformers import (
++    AutoConfig,
++    PreTrainedConfig,
++    Qwen3_5Config,
+diff -- vllm/model_executor/models/qwen3_5_mtp.py
+@@ -28,6 +28,9 @@
++from vllm.model_executor.models.qwen3_next_mtp import (
++    should_torch_compile_mtp_drafter,
++)
+@@ -59,7 +62,8 @@
+-    }
++    },
+diff -- vllm/model_executor/models/qwen3_next_mtp.py
+@@ -41,7 +41,17 @@
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_next.py` modified +7/-0
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+  - tests: `tests/models/test_qwen3_5_mtp_config.py` modified +64/-1; `tests/v1/e2e/spec_decode/mtp/qwen3_5/test_mtp.py` modified +76/-0
+  - runtime: `vllm/model_executor/models/qwen3_5_mtp.py` modified +22/-4; `vllm/model_executor/models/qwen3_next_mtp.py` modified +19/-4; `vllm/models/qwen3_5/nvidia/mtp.py` modified +15/-2
+- Risk and verification: The diff ships test coverage in `tests/model_executor/layers/test_fused_shared_expert.py`, `tests/models/test_qwen3_5_mtp_config.py`, `tests/v1/e2e/spec_decode/mtp/qwen3_5/test_mtp.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
 
-### PR #34110 - [MODEL] Adding Support for Qwen3.5 Models
+### PR #64509 - [Perf][Qwen3.5] (NVIDIA-only) Fused norm+quant and gate+quant
 
-- Link: https://github.com/vllm-project/vllm/pull/34110
-- Status/date: merged / 2026-02-09
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `9562912cead1`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 11 files, +1501/-9, 1631 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[MODEL] Adding Support for Qwen3.5 Models"; model line: Qwen3.5; category: model support/runtime entry; main diff: `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "[MODEL] Adding Support for Qwen3.5 Models"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` added +993/-0 (993 lines); hunks: -0,0 +1,993; symbols: Qwen3_5ProcessingInfo, get_hf_config, Qwen3_5MoeProcessingInfo, Qwen3_5GatedDeltaNet, touching `Qwen3_5ProcessingInfo, get_hf_config, Qwen3_5MoeProcessingInfo`; `vllm/model_executor/models/qwen3_5_mtp.py` added +447/-0 (447 lines); hunks: -0,0 +1,447; symbols: Qwen3_5MultiTokenPredictor, __init__, embed_input_ids, forward, touching `Qwen3_5MultiTokenPredictor, __init__, embed_input_ids`.
+- Link: https://github.com/vllm-project/vllm/pull/64509
+- Status/date: merged / 2026-10-30
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/models/qwen3_5/__init__.py`, `tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py`, `vllm/models/qwen3_5/nvidia/model.py`, `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py`, `vllm/models/qwen3_5/nvidia/ops/fused_norm_quant.py`; associated commits `6c19299fca37`
+- Diff scope read: GitHub Pull Request files API returned 11 files, +668/-34, 994 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Perf][Qwen3.5] (NVIDIA-only) Fused norm+quant and gate+quant"; model line: Qwen3.5; category: performance/backend optimization; main diff: `vllm/models/qwen3_5/nvidia/ops/fused_norm_quant.py`, `vllm/models/qwen3_5/nvidia/model.py`, `tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py`; technical summary: Covers "[Perf][Qwen3.5] (NVIDIA-only) Fused norm+quant and gate+quant"; the main implementation surface is `vllm/models/qwen3_5/nvidia/ops/fused_norm_quant.py`, `vllm/models/qwen3_5/nvidia/model.py`, `tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/models/qwen3_5/nvidia/ops/fused_norm_quant.py` added +216/-0 (216 lines); hunks: -0,0 +1,216; symbols: _rcp_approx_ftz, _cvt_e2m1x2, _gemma_add_rms_norm_quant_kernel, gemma_add_rms_norm_quant, touching `_rcp_approx_ftz, _cvt_e2m1x2, _gemma_add_rms_norm_quant_kernel`; `vllm/models/qwen3_5/nvidia/model.py` modified +125/-18 (143 lines); hunks: -50,6 +50,11; -60,6 +65,14; symbols: _norm_quant_key, _fused_gdn_gated_rms_norm_quant, Qwen3_5RMSNorm, forward, touching `_norm_quant_key, _fused_gdn_gated_rms_norm_quant, Qwen3_5RMSNorm`; `tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py` added +109/-0 (109 lines); hunks: -0,0 +1,109; symbols: _fp8_codes, _fp4_codes, _swizzled_sf_rows, test_gemma_add_rms_norm_quant_matches_chain, touching `_fp8_codes, _fp4_codes, _swizzled_sf_rows`; `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py` modified +15/-0 (15 lines); hunks: -14,6 +14,7 @@ def _fused_gdn_gated_rms_norm_kernel(; -24,6 +25,7 @@ def _fused_gdn_gated_rms_norm_kernel(; symbols: _fused_gdn_gated_rms_norm_kernel, fused_gdn_gated_rms_norm, touching `_fused_gdn_gated_rms_norm_kernel, fused_gdn_gated_rms_norm`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` added +993/-0 (993 lines); hunks: -0,0 +1,993; symbols: Qwen3_5ProcessingInfo, get_hf_config, Qwen3_5MoeProcessingInfo, Qwen3_5GatedDeltaNet
-  - `vllm/model_executor/models/qwen3_5_mtp.py` added +447/-0 (447 lines); hunks: -0,0 +1,447; symbols: Qwen3_5MultiTokenPredictor, __init__, embed_input_ids, forward
+  - `vllm/models/qwen3_5/nvidia/ops/fused_norm_quant.py` added +216/-0 (216 lines); hunks: -0,0 +1,216; symbols: _rcp_approx_ftz, _cvt_e2m1x2, _gemma_add_rms_norm_quant_kernel, gemma_add_rms_norm_quant
+  - `vllm/models/qwen3_5/nvidia/model.py` modified +125/-18 (143 lines); hunks: -50,6 +50,11; -60,6 +65,14; symbols: _norm_quant_key, _fused_gdn_gated_rms_norm_quant, Qwen3_5RMSNorm, forward
+  - `tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py` added +109/-0 (109 lines); hunks: -0,0 +1,109; symbols: _fp8_codes, _fp4_codes, _swizzled_sf_rows, test_gemma_add_rms_norm_quant_matches_chain
+  - `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py` modified +15/-0 (15 lines); hunks: -14,6 +14,7 @@ def _fused_gdn_gated_rms_norm_kernel(; -24,6 +25,7 @@ def _fused_gdn_gated_rms_norm_kernel(; symbols: _fused_gdn_gated_rms_norm_kernel, fused_gdn_gated_rms_norm
+  - `tests/models/qwen3_5/__init__.py` added +2/-0 (2 lines); hunks: -0,0 +1,2
 - Key code excerpts:
 
 ```diff
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -0,0 +1,993 @@
+diff -- vllm/models/qwen3_5/nvidia/ops/fused_norm_quant.py
+@@ -0,0 +1,216 @@
++# SPDX-License-Identifier: Apache-2.0
++# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
++"""Gemma (1 + w) add-RMSNorm fused with the consumer linear's input quant.
++Replaces ``gemma_fused_add_rmsnorm`` followed by a standalone static FP8
++(``scaled_fp8_quant``) or NVFP4 (``scaled_fp4_quant``) kernel. The quantized
++values are computed from the bf16-rounded normed activation with the same
+diff -- vllm/models/qwen3_5/nvidia/model.py
+@@ -50,6 +50,11 @@
++from vllm.model_executor.layers.fusion.quant_activation import (
++    QuantizedActivation,
++    get_input_quant_key,
++)
++from vllm.model_executor.layers.linear import LinearBase
+@@ -60,6 +65,14 @@
+diff -- tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py
+@@ -0,0 +1,109 @@
+```
+
+- Reviewed files:
+  - runtime: `vllm/models/qwen3_5/nvidia/ops/fused_norm_quant.py` added +216/-0; `vllm/models/qwen3_5/nvidia/model.py` modified +125/-18; `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py` modified +15/-0
+  - tests: `tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py` added +109/-0; `tests/models/qwen3_5/__init__.py` added +2/-0
+- Risk and verification: The diff ships test coverage in `tests/kernels/core/test_fused_sigmoid_gate_mul.py`, `tests/kernels/mamba/test_gdn_output_projection.py`, `tests/models/qwen3_5/__init__.py`, `tests/models/qwen3_5/test_gemma_add_rms_norm_quant.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #64425 - [Perf] Qwen3.5 GDN: overlap in_proj_ba with in_proj_qkvz on the aux stream
+
+- Link: https://github.com/vllm-project/vllm/pull/64425
+- Status/date: merged / 2026-10-29
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/models/qwen3_5/nvidia/model.py`; associated commits `914d61fc538a`
+- Diff scope read: GitHub Pull Request files API returned 3 files, +45/-2, 114 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Perf] Qwen3.5 GDN: overlap in_proj_ba with in_proj_qkvz on the aux stream"; model line: Qwen3.5; category: performance/backend optimization; main diff: `vllm/models/qwen3_5/nvidia/model.py`; technical summary: Covers "[Perf] Qwen3.5 GDN: overlap in_proj_ba with in_proj_qkvz on the aux stream"; the main implementation surface is `vllm/models/qwen3_5/nvidia/model.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/models/qwen3_5/nvidia/model.py` modified +2/-0 (2 lines); hunks: -190,6 +190,8 @@ def __init__(; symbols: __init__, touching `__init__`.
+- Code diff details:
+  - `vllm/models/qwen3_5/nvidia/model.py` modified +2/-0 (2 lines); hunks: -190,6 +190,8 @@ def __init__(; symbols: __init__
+- Key code excerpts:
+
+```diff
+diff -- vllm/models/qwen3_5/nvidia/model.py
+@@ -190,6 +190,8 @@ def __init__(
++                # This path runs outside torch.compile, as the overlap requires.
++                overlap_ba_proj=True,
+```
+
+- Reviewed files:
+  - runtime: `vllm/models/qwen3_5/nvidia/model.py` modified +2/-0
+- Risk and verification: The diff ships test coverage in `tests/kernels/mamba/test_gdn_fused_mtp.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #51012 - [Models] Deprecate `torch.compile` for Qwen3.5 models
+
+- Link: https://github.com/vllm-project/vllm/pull/51012
+- Status/date: merged / 2026-10-29
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/models/test_qwen3_5.py`, `vllm/models/qwen3_5/__init__.py`, `vllm/models/qwen3_5/nvidia/__init__.py`, `vllm/models/qwen3_5/nvidia/model.py`, `vllm/models/qwen3_5/nvidia/mtp.py` and 7 files; associated commits `d6fbd9478249`
+- Diff scope read: GitHub Pull Request files API returned 29 files, +2029/-21, 2322 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Models] Deprecate `torch.compile` for Qwen3.5 models"; model line: Qwen3.5; category: performance/backend optimization; main diff: `vllm/models/qwen3_5/nvidia/model.py`, `vllm/models/qwen3_5/nvidia/mtp.py`, `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py`; technical summary: Covers "[Models] Deprecate `torch.compile` for Qwen3.5 models"; the main implementation surface is `vllm/models/qwen3_5/nvidia/model.py`, `vllm/models/qwen3_5/nvidia/mtp.py`, `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/models/qwen3_5/nvidia/model.py` added +939/-0 (939 lines); hunks: -0,0 +1,939; symbols: Qwen3_5RMSNorm, __init__, forward, Qwen3_5DecoderLayer, touching `Qwen3_5RMSNorm, __init__, forward`; `vllm/models/qwen3_5/nvidia/mtp.py` added +295/-0 (295 lines); hunks: -0,0 +1,295; symbols: Qwen3_5MultiTokenPredictor, __init__, embed_input_ids, forward, touching `Qwen3_5MultiTokenPredictor, __init__, embed_input_ids`; `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py` added +123/-0 (123 lines); hunks: -0,0 +1,123; symbols: _fused_gdn_gated_rms_norm_kernel, fused_gdn_gated_rms_norm, touching `_fused_gdn_gated_rms_norm_kernel, fused_gdn_gated_rms_norm`; `vllm/models/qwen3_5/__init__.py` added +48/-0 (48 lines); hunks: -0,0 +1,48.
+- Code diff details:
+  - `vllm/models/qwen3_5/nvidia/model.py` added +939/-0 (939 lines); hunks: -0,0 +1,939; symbols: Qwen3_5RMSNorm, __init__, forward, Qwen3_5DecoderLayer
+  - `vllm/models/qwen3_5/nvidia/mtp.py` added +295/-0 (295 lines); hunks: -0,0 +1,295; symbols: Qwen3_5MultiTokenPredictor, __init__, embed_input_ids, forward
+  - `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py` added +123/-0 (123 lines); hunks: -0,0 +1,123; symbols: _fused_gdn_gated_rms_norm_kernel, fused_gdn_gated_rms_norm
+  - `vllm/models/qwen3_5/__init__.py` added +48/-0 (48 lines); hunks: -0,0 +1,48
+  - `tests/models/test_qwen3_5.py` added +47/-0 (47 lines); hunks: -0,0 +1,47; symbols: test_qwen3_5_models_use_platform_specific_implementation, test_qwen3_5_nvidia_models_do_not_use_torch_compile_wrapper, test_qwen3_5_legacy_models_keep_torch_compile_wrapper
+- Key code excerpts:
+
+```diff
+diff -- vllm/models/qwen3_5/nvidia/model.py
+@@ -0,0 +1,939 @@
 +# SPDX-License-Identifier: Apache-2.0
 +# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
 +# Copyright 2025 The vLLM team.
 +# Copyright 2025 The Qwen Team.
 +# Copyright 2025 The HuggingFace Inc. team.
 +# All rights reserved.
-diff -- vllm/model_executor/models/qwen3_5_mtp.py
-@@ -0,0 +1,447 @@
+diff -- vllm/models/qwen3_5/nvidia/mtp.py
+@@ -0,0 +1,295 @@
 +# SPDX-License-Identifier: Apache-2.0
 +# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
 +"""Inference-only Qwen3_5 MTP model."""
-+import typing
-+from collections.abc import Callable, Iterable
++from collections.abc import Iterable
 +import torch
++from torch import nn
+diff -- vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py
+@@ -0,0 +1,123 @@
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` added +993/-0; `vllm/model_executor/models/qwen3_5_mtp.py` added +447/-0
-- Risk and verification: The diff ships test coverage in `tests/models/registry.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+  - runtime: `vllm/models/qwen3_5/nvidia/model.py` added +939/-0; `vllm/models/qwen3_5/nvidia/mtp.py` added +295/-0; `vllm/models/qwen3_5/nvidia/ops/fused_gdn_gated_norm.py` added +123/-0; `vllm/models/qwen3_5/__init__.py` added +48/-0; `vllm/models/qwen3_5/nvidia/__init__.py` added +2/-0; `vllm/models/qwen3_5/nvidia/ops/__init__.py` added +2/-0
+  - tests: `tests/models/test_qwen3_5.py` added +47/-0
+- Risk and verification: The diff ships test coverage in `.buildkite/hardware_tests/cpu.yaml`, `tests/conftest.py`, `tests/kernels/core/test_fused_pre_fc_norms.py`, `tests/kernels/core/test_fused_sigmoid_gate_mul.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
 
-### PR #34198 - [Bugfix] Adopt `ChunkGatedDeltaRule` for Qwen3.5
+### PR #59853 - [Model] Drop the 4x M-RoPE cache headroom for Qwen3-VL, Qwen3.5 and Qwen3.8
 
-- Link: https://github.com/vllm-project/vllm/pull/34198
-- Status/date: merged / 2026-02-10
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `047a457fa4af`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +3/-0, 17 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Adopt `ChunkGatedDeltaRule` for Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Adopt `ChunkGatedDeltaRule` for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +3/-0 (3 lines); hunks: -99,6 +99,7; -268,6 +269,8 @@ def __init__(; symbols: __init__, touching `__init__`.
+- Link: https://github.com/vllm-project/vllm/pull/59853
+- Status/date: merged / 2026-10-10
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `a98247ab4db6`
+- Diff scope read: GitHub Pull Request files API returned 11 files, +56/-6, 275 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Model] Drop the 4x M-RoPE cache headroom for Qwen3-VL, Qwen3.5 and Qwen3.8"; model line: Qwen3.5; category: model implementation change; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Model] Drop the 4x M-RoPE cache headroom for Qwen3-VL, Qwen3.5 and Qwen3.8"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +2/-0 (2 lines); hunks: -91,6 +91,7; -161,6 +162,7 @@ def __init__(; symbols: __init__, touching `__init__`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +3/-0 (3 lines); hunks: -99,6 +99,7; -268,6 +269,8 @@ def __init__(; symbols: __init__
+  - `vllm/model_executor/models/qwen3_5.py` modified +2/-0 (2 lines); hunks: -91,6 +91,7; -161,6 +162,7 @@ def __init__(; symbols: __init__
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5.py
-@@ -99,6 +99,7 @@
-+    ChunkGatedDeltaRule,
-@@ -268,6 +269,8 @@ def __init__(
-+        self.chunk_gated_delta_rule = ChunkGatedDeltaRule()
+@@ -91,6 +91,7 @@
++    mrope_positions_factor,
+@@ -161,6 +162,7 @@ def __init__(
++                mrope_positions_factor=mrope_positions_factor(vllm_config),
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +2/-0
+- Risk and verification: Runtime changes concentrate in `vllm/config/model.py`, `vllm/model_executor/layers/rotary_embedding/__init__.py`, `vllm/model_executor/layers/rotary_embedding/mrope.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #51289 - [Model] Extend device-side mm normalization to Qwen3VL/Qwen3.5/Qwen4Next
+
+- Link: https://github.com/vllm-project/vllm/pull/51289
+- Status/date: merged / 2026-09-29
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `491f44adfa42`
+- Diff scope read: GitHub Pull Request files API returned 11 files, +87/-25, 321 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Model] Extend device-side mm normalization to Qwen3VL/Qwen3.5/Qwen4Next"; model line: Qwen3.5; category: model implementation change; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Model] Extend device-side mm normalization to Qwen3VL/Qwen3.5/Qwen4Next"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +3/-0 (3 lines); hunks: -39,6 +39,7; -517,6 +518,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__, touching `__init__`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +3/-0 (3 lines); hunks: -39,6 +39,7; -517,6 +518,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -39,6 +39,7 @@
++from vllm.model_executor.layers.fusion.mm_input_norm import build_mm_input_norm
+@@ -517,6 +518,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = "model"):
++                input_norm=build_mm_input_norm(self.model_config),
+@@ -739,6 +741,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = "model"):
++                input_norm=build_mm_input_norm(self.model_config),
 ```
 
 - Reviewed files:
   - runtime: `vllm/model_executor/models/qwen3_5.py` modified +3/-0
+- Risk and verification: The diff ships test coverage in `tests/models/multimodal/generation_ppl_test/ppl_utils.py`, `tests/models/multimodal/generation_ppl_test/test_qwen.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #55369 - [Bugfix][Spec Decode] Resolve n_predict from text_config for Qwen3.5 multimodal MTP
+
+- Link: https://github.com/vllm-project/vllm/pull/55369
+- Status/date: merged / 2026-09-07
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/models/test_qwen3_5_mtp_config.py`; associated commits `b339d75a410e`
+- Diff scope read: GitHub Pull Request files API returned 3 files, +101/-9, 145 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix][Spec Decode] Resolve n_predict from text_config for Qwen3.5 multimodal MTP"; model line: Qwen3.5; category: bug fix; main diff: `tests/models/test_qwen3_5_mtp_config.py`; technical summary: Covers "[Bugfix][Spec Decode] Resolve n_predict from text_config for Qwen3.5 multimodal MTP"; the main implementation surface is `tests/models/test_qwen3_5_mtp_config.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/models/test_qwen3_5_mtp_config.py` modified +96/-8 (104 lines); hunks: -1,19 +1,45; -26,8 +52,70 @@ def _mtp_config(model_type: str) -> PretrainedConfig:; symbols: _mtp_config, _multimodal_wrapper_mtp_config, test_mtp_override_recognizes_text_only_types, touching `_mtp_config, _multimodal_wrapper_mtp_config, test_mtp_override_recognizes_text_only_types`.
+- Code diff details:
+  - `tests/models/test_qwen3_5_mtp_config.py` modified +96/-8 (104 lines); hunks: -1,19 +1,45; -26,8 +52,70 @@ def _mtp_config(model_type: str) -> PretrainedConfig:; symbols: _mtp_config, _multimodal_wrapper_mtp_config, test_mtp_override_recognizes_text_only_types
+- Key code excerpts:
+
+```diff
+diff -- tests/models/test_qwen3_5_mtp_config.py
+@@ -1,19 +1,45 @@
+-"""CPU-only tests for Qwen3.5 text-only MTP speculative decoding."""
++"""CPU-only tests for Qwen3.5 MTP speculative decoding config overrides."""
++from typing import Any
+-from transformers import PretrainedConfig
++from transformers import AutoConfig, PretrainedConfig
++_CHECKPOINTS = {
+```
+
+- Reviewed files:
+  - tests: `tests/models/test_qwen3_5_mtp_config.py` modified +96/-8
+- Risk and verification: The diff ships test coverage in `tests/models/test_qwen3_5_mtp_config.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #54847 - [Bugfix] Fix ColQwen3.5 pooler projector initialization
+
+- Link: https://github.com/vllm-project/vllm/pull/54847
+- Status/date: merged / 2026-09-02
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/colqwen3_5.py`; associated commits `dbf1a044eacd`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +10/-17, 64 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Fix ColQwen3.5 pooler projector initialization"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/colqwen3_5.py`; technical summary: Covers "[Bugfix] Fix ColQwen3.5 pooler projector initialization"; the main implementation surface is `vllm/model_executor/models/colqwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/colqwen3_5.py` modified +10/-17 (27 lines); hunks: -121,13 +121,13 @@ class ColQwen3_5Model(; -187,7 +187,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: ColQwen3_5Model, __init__, forward, load_weights, touching `ColQwen3_5Model, __init__, forward`.
+- Code diff details:
+  - `vllm/model_executor/models/colqwen3_5.py` modified +10/-17 (27 lines); hunks: -121,13 +121,13 @@ class ColQwen3_5Model(; -187,7 +187,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: ColQwen3_5Model, __init__, forward, load_weights
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/colqwen3_5.py
+@@ -121,13 +121,13 @@ class ColQwen3_5Model(
+-    The model produces per-token embeddings by:
++    The model produces L2-normalized per-token embeddings by:
+-    2. Projecting hidden states through a linear layer (hidden_size -> embed_dim)
+-    3. L2 normalization is handled by the pooler via PoolerNormalize
++    2. Projection and L2-normalization via the pooler (TokenEmbeddingPoolerHead)
+-        custom_text_proj: Linear projection from hidden_size to embed_dim
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/colqwen3_5.py` modified +10/-17
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/colqwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #48850 - [Bugfix][LoRA] Add embedding_modules for Qwen3.5 CausalLM
+
+- Link: https://github.com/vllm-project/vllm/pull/48850
+- Status/date: merged / 2026-08-19
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `5a4c8d99242e`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +5/-0, 12 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix][LoRA] Add embedding_modules for Qwen3.5 CausalLM"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix][LoRA] Add embedding_modules for Qwen3.5 CausalLM"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +5/-0 (5 lines); hunks: -309,6 +309,11 @@ class Qwen3_5ForCausalLMBase(; symbols: Qwen3_5ForCausalLMBase, touching `Qwen3_5ForCausalLMBase`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +5/-0 (5 lines); hunks: -309,6 +309,11 @@ class Qwen3_5ForCausalLMBase(; symbols: Qwen3_5ForCausalLMBase
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -309,6 +309,11 @@ class Qwen3_5ForCausalLMBase(
++    # Maps PEFT embed/lm_head LoRA targets onto vLLM embedding wrappers.
++    embedding_modules = {
++        "embed_tokens": "input_embeddings",
++        "lm_head": "output_embeddings",
++    }
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +5/-0
 - Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #34200 - [Bugfix] Fix mamba cache dtype for Qwen3.5
+### PR #52007 - [CI Bug] Fix ci qwen3.5
 
-- Link: https://github.com/vllm-project/vllm/pull/34200
-- Status/date: merged / 2026-02-10
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `9615575afc0d`; preserved from an explicit existing history/skill citation
+- Link: https://github.com/vllm-project/vllm/pull/52007
+- Status/date: merged / 2026-08-12
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`; associated commits `0fb168e6ee54`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +2/-2, 14 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[CI Bug] Fix ci qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`; technical summary: Covers "[CI Bug] Fix ci qwen3.5"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` modified +1/-1 (2 lines); hunks: -8,6 +8,6 @@ server_args: >-; `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` modified +1/-1 (2 lines); hunks: -7,4 +7,4 @@ server_args: >-.
+- Code diff details:
+  - `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` modified +1/-1 (2 lines); hunks: -8,6 +8,6 @@ server_args: >-
+  - `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` modified +1/-1 (2 lines); hunks: -7,4 +7,4 @@ server_args: >-
+- Key code excerpts:
+
+```diff
+diff -- tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml
+@@ -8,6 +8,6 @@ server_args: >-
+-  --max-num-seqs 384
++  --max-num-seqs 256
+diff -- tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml
+@@ -7,4 +7,4 @@ server_args: >-
+-  --max-num-seqs 512
++  --max-num-seqs 256
+```
+
+- Reviewed files:
+  - tests: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` modified +1/-1; `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` modified +1/-1
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #50734 - [Bugfix][Model] Fix Qwen3.5 MTP for text-only checkpoints
+
+- Link: https://github.com/vllm-project/vllm/pull/50734
+- Status/date: merged / 2026-08-10
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/models/test_qwen3_5_mtp_config.py`; associated commits `900d09f91a1f`
+- Diff scope read: GitHub Pull Request files API returned 3 files, +55/-7, 77 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix][Model] Fix Qwen3.5 MTP for text-only checkpoints"; model line: Qwen3.5; category: bug fix; main diff: `tests/models/test_qwen3_5_mtp_config.py`; technical summary: Covers "[Bugfix][Model] Fix Qwen3.5 MTP for text-only checkpoints"; the main implementation surface is `tests/models/test_qwen3_5_mtp_config.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/models/test_qwen3_5_mtp_config.py` added +33/-0 (33 lines); hunks: -0,0 +1,33; symbols: _mtp_config, test_mtp_override_recognizes_text_only_types, touching `_mtp_config, test_mtp_override_recognizes_text_only_types`.
+- Code diff details:
+  - `tests/models/test_qwen3_5_mtp_config.py` added +33/-0 (33 lines); hunks: -0,0 +1,33; symbols: _mtp_config, test_mtp_override_recognizes_text_only_types
+- Key code excerpts:
+
+```diff
+diff -- tests/models/test_qwen3_5_mtp_config.py
+@@ -0,0 +1,33 @@
++# SPDX-License-Identifier: Apache-2.0
++# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
++"""CPU-only tests for Qwen3.5 text-only MTP speculative decoding."""
++import pytest
++from transformers import PretrainedConfig
++from vllm.config.speculative import SpeculativeConfig
+```
+
+- Reviewed files:
+  - tests: `tests/models/test_qwen3_5_mtp_config.py` added +33/-0
+- Risk and verification: The diff ships test coverage in `tests/models/test_qwen3_5_mtp_config.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #51293 - [CI] Re-enable FI autotune in GSM8K config for Qwen3.5-35B-A3B
+
+- Link: https://github.com/vllm-project/vllm/pull/51293
+- Status/date: merged / 2026-08-07
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`; associated commits `5ac2684976ee`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +0/-1, 6 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[CI] Re-enable FI autotune in GSM8K config for Qwen3.5-35B-A3B"; model line: Qwen3.5; category: docs/tests/CI; main diff: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`; technical summary: Covers "[CI] Re-enable FI autotune in GSM8K config for Qwen3.5-35B-A3B"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +0/-1 (1 lines); hunks: -7,4 +7,3 @@ server_args: >-.
+- Code diff details:
+  - `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +0/-1 (1 lines); hunks: -7,4 +7,3 @@ server_args: >-
+- Key code excerpts:
+
+```diff
+diff -- tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml
+@@ -7,4 +7,3 @@ server_args: >-
+-  --no-enable-flashinfer-autotune
+```
+
+- Reviewed files:
+  - tests: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +0/-1
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #50355 - [Model] Fix weight prefix mapping for native Qwen3.5 text-only checkp…
+
+- Link: https://github.com/vllm-project/vllm/pull/50355
+- Status/date: merged / 2026-08-06
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `febea17f6aa9`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +13/-2, 36 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Model] Fix weight prefix mapping for native Qwen3.5 text-only checkp…"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Model] Fix weight prefix mapping for native Qwen3.5 text-only checkp…"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +8/-1 (9 lines); hunks: -303,6 +303,13 @@ class Qwen3_5ForCausalLMBase(; -416,7 +423,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; symbols: Qwen3_5ForCausalLMBase, __init__, load_weights, Qwen3_5ForCausalLM, touching `Qwen3_5ForCausalLMBase, __init__, load_weights`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +8/-1 (9 lines); hunks: -303,6 +303,13 @@ class Qwen3_5ForCausalLMBase(; -416,7 +423,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; symbols: Qwen3_5ForCausalLMBase, __init__, load_weights, Qwen3_5ForCausalLM
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -303,6 +303,13 @@ class Qwen3_5ForCausalLMBase(
++    # Some community text-only checkpoints keep the extraneous
++    # `model.language_model.` prefix inherited from the VL training stack.
++    # Strip it so both prefixed and clean checkpoints load correctly.
++    hf_to_vllm_mapper = WeightsMapper(
++        orig_to_new_prefix={"model.language_model.": "model."},
++    )
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +8/-1
+- Risk and verification: The diff ships test coverage in `tests/models/registry.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #50210 - [Model] Support Qwen3.5 text-only dense and MoE models
+
+- Link: https://github.com/vllm-project/vllm/pull/50210
+- Status/date: merged / 2026-07-29
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `ad5d29db702c`
+- Diff scope read: GitHub Pull Request files API returned 5 files, +62/-0, 113 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Model] Support Qwen3.5 text-only dense and MoE models"; model line: Qwen3.5; category: model support/runtime entry; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Model] Support Qwen3.5 text-only dense and MoE models"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +40/-0 (40 lines); hunks: -282,6 +282,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; -361,6 +362,45 @@ def forward(; symbols: load_weights, Qwen3_5ForCausalLMBase, forward, get_mamba_state_dtype_from_config, touching `load_weights, Qwen3_5ForCausalLMBase, forward`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +40/-0 (40 lines); hunks: -282,6 +282,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Te...; -361,6 +362,45 @@ def forward(; symbols: load_weights, Qwen3_5ForCausalLMBase, forward, get_mamba_state_dtype_from_config
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -282,6 +282,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
++    IsHybrid,
+@@ -361,6 +362,45 @@ def forward(
++    @classmethod
++    def get_mamba_state_dtype_from_config(
++        cls,
++        vllm_config: "VllmConfig",
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +40/-0
+- Risk and verification: The diff ships test coverage in `tests/models/registry.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #49881 - [CI] Increase Qwen3.5 MTP GSM8K generation length
+
+- Link: https://github.com/vllm-project/vllm/pull/49881
+- Status/date: merged / 2026-07-28
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`; associated commits `25ace8fe5df0`
 - Diff scope read: GitHub Pull Request files API returned 1 files, +2/-1, 11 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Fix mamba cache dtype for Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Fix mamba cache dtype for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +2/-1 (3 lines); hunks: -867,8 +867,9 @@ def get_mamba_state_dtype_from_config(; symbols: get_mamba_state_dtype_from_config, touching `get_mamba_state_dtype_from_config`.
+- Motivation: Title: "[CI] Increase Qwen3.5 MTP GSM8K generation length"; model line: Qwen3.5; category: performance/backend optimization; main diff: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`; technical summary: Covers "[CI] Increase Qwen3.5 MTP GSM8K generation length"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` modified +2/-1 (3 lines); hunks: -3,8 +3,9 @@ accuracy_threshold: 0.88.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +2/-1 (3 lines); hunks: -867,8 +867,9 @@ def get_mamba_state_dtype_from_config(; symbols: get_mamba_state_dtype_from_config
+  - `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` modified +2/-1 (3 lines); hunks: -3,8 +3,9 @@ accuracy_threshold: 0.88
+- Key code excerpts:
+
+```diff
+diff -- tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml
+@@ -3,8 +3,9 @@ accuracy_threshold: 0.88
++max_tokens: 12000
+-  --max-model-len 4096
++  --max-model-len 16384
+```
+
+- Reviewed files:
+  - tests: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` modified +2/-1
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #48912 - [Model] Enable EVS for Qwen3.5
+
+- Link: https://github.com/vllm-project/vllm/pull/48912
+- Status/date: merged / 2026-07-27
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `dbccc5ae328d`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +32/-12, 79 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Model] Enable EVS for Qwen3.5"; model line: Qwen3.5; category: model support/runtime entry; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Model] Enable EVS for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +32/-12 (44 lines); hunks: -53,6 +53,7; -397,8 +398,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__, Qwen3_5ForConditionalGeneration, embed_input_ids, recompute_mrope_positions, touching `__init__, Qwen3_5ForConditionalGeneration, embed_input_ids`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +32/-12 (44 lines); hunks: -53,6 +53,7; -397,8 +398,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__, Qwen3_5ForConditionalGeneration, embed_input_ids, recompute_mrope_positions
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5.py
-@@ -867,8 +867,9 @@ def get_mamba_state_dtype_from_config(
-+        mamba_ssm_dtype = vllm_config.model_config.hf_text_config.mamba_ssm_dtype
--            vllm_config.model_config.dtype, vllm_config.cache_config.mamba_cache_dtype
-+            vllm_config.model_config.dtype, mamba_ssm_dtype
+@@ -53,6 +53,7 @@
++from vllm.tokenizers.registry import cached_tokenizer_from_config
+@@ -397,8 +398,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
+-    # Qwen3.5 does not support multimodal pruning (EVS).
+-    supports_multimodal_pruning = False
++    supports_multimodal_pruning = True
+@@ -416,8 +416,21 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = "model"):
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +2/-1
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +32/-12
 - Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #34313 - [Bugfix] Fix weight naming in Qwen3.5
+### PR #49372 - [Bugfix] Respect declared attention contract for ColQwen3.5 retrievers
 
-- Link: https://github.com/vllm-project/vllm/pull/34313
-- Status/date: merged / 2026-02-11
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `0b20469c627e`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +1/-1, 9 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Fix weight naming in Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Fix weight naming in Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +1/-1 (2 lines); hunks: -206,7 +206,7 @@ def __init__(; symbols: __init__, touching `__init__`.
+- Link: https://github.com/vllm-project/vllm/pull/49372
+- Status/date: merged / 2026-07-26
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/models/multimodal/pooling/test_colqwen3_5.py`; associated commits `1240c74c0a47`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +135/-16, 180 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Respect declared attention contract for ColQwen3.5 retrievers"; model line: Qwen3.5; category: bug fix; main diff: `tests/models/multimodal/pooling/test_colqwen3_5.py`; technical summary: Covers "[Bugfix] Respect declared attention contract for ColQwen3.5 retrievers"; the main implementation surface is `tests/models/multimodal/pooling/test_colqwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/models/multimodal/pooling/test_colqwen3_5.py` modified +103/-8 (111 lines); hunks: -7,6 +7,8; -154,19 +156,112 @@ def test_colqwen3_5_relevance_ordering(; symbols: test_colqwen3_5_relevance_ordering, test_colqwen3_5_config_enables_bidirectional_attention, test_colqwen3_5_config_applies_declared_attention_contract, test_colqwen3_5_config_rejects_invalid_attention_contract, touching `test_colqwen3_5_relevance_ordering, test_colqwen3_5_config_enables_bidirectional_attention, test_colqwen3_5_config_applies_declared_attention_contract`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +1/-1 (2 lines); hunks: -206,7 +206,7 @@ def __init__(; symbols: __init__
+  - `tests/models/multimodal/pooling/test_colqwen3_5.py` modified +103/-8 (111 lines); hunks: -7,6 +7,8; -154,19 +156,112 @@ def test_colqwen3_5_relevance_ordering(; symbols: test_colqwen3_5_relevance_ordering, test_colqwen3_5_config_enables_bidirectional_attention, test_colqwen3_5_config_applies_declared_attention_contract, test_colqwen3_5_config_rejects_invalid_attention_contract
 - Key code excerpts:
 
 ```diff
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -206,7 +206,7 @@ def __init__(
--            prefix=f"{prefix}.in_proj_ba",
-+            prefix=f"{prefix}.in_proj_b",
+diff -- tests/models/multimodal/pooling/test_colqwen3_5.py
+@@ -7,6 +7,8 @@
++from types import SimpleNamespace
+@@ -154,19 +156,112 @@ def test_colqwen3_5_relevance_ordering(
+-def test_colqwen3_5_config_enables_bidirectional_attention() -> None:
+-    """ColQwen3.5 retrieval must be served BIDIRECTIONAL (is_causal=False) so the
+-    full_attention layers build with AttentionType.ENCODER_ONLY. This guards the
+-    silent-causal regression (no GPU / model load needed)."""
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +1/-1
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+  - tests: `tests/models/multimodal/pooling/test_colqwen3_5.py` modified +103/-8
+- Risk and verification: The diff ships test coverage in `tests/models/multimodal/pooling/test_colqwen3_5.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
 
-### PR #34489 - [Bugfix] Fix mamba state dtype setting for Qwen3-Next and Qwen3.5
+### PR #48816 - Fix GPTQ quantized Qwen3.5 MTP weight loading with spec decode
 
-- Link: https://github.com/vllm-project/vllm/pull/34489
-- Status/date: merged / 2026-02-13
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `eea3024f43e0`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 4 files, +42/-6, 91 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Fix mamba state dtype setting for Qwen3-Next and Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Fix mamba state dtype setting for Qwen3-Next and Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +3/-2 (5 lines); hunks: -870,9 +870,10 @@ def get_mamba_state_dtype_from_config(; symbols: get_mamba_state_dtype_from_config, touching `get_mamba_state_dtype_from_config`.
+- Link: https://github.com/vllm-project/vllm/pull/48816
+- Status/date: merged / 2026-07-23
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `c8db00b16cc1`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +12/-2, 38 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "Fix GPTQ quantized Qwen3.5 MTP weight loading with spec decode"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "Fix GPTQ quantized Qwen3.5 MTP weight loading with spec decode"; the main implementation surface is `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5_mtp.py` modified +12/-2 (14 lines); hunks: -103,6 +103,16 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; -111,11 +121,10 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; symbols: __init__, forward, touching `__init__, forward`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +3/-2 (5 lines); hunks: -870,9 +870,10 @@ def get_mamba_state_dtype_from_config(; symbols: get_mamba_state_dtype_from_config
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -870,9 +870,10 @@ def get_mamba_state_dtype_from_config(
--        mamba_ssm_dtype = vllm_config.model_config.hf_text_config.mamba_ssm_dtype
--            vllm_config.model_config.dtype, mamba_ssm_dtype
-+            vllm_config.model_config.dtype,
-+            vllm_config.cache_config.mamba_cache_dtype,
-+            vllm_config.cache_config.mamba_ssm_cache_dtype,
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +3/-2
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/mamba/mamba_utils.py`, `vllm/model_executor/models/config.py`, `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #34512 - [Misc] Port Qwen3.5 Configs
-
-- Link: https://github.com/vllm-project/vllm/pull/34512
-- Status/date: merged / 2026-02-13
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; associated commits `5885e330efea`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 6 files, +410/-12, 473 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Misc] Port Qwen3.5 Configs"; model line: Qwen3.5; category: model implementation change; main diff: `vllm/transformers_utils/configs/qwen3_5_moe.py`, `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Misc] Port Qwen3.5 Configs"; the main implementation surface is `vllm/transformers_utils/configs/qwen3_5_moe.py`, `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/transformers_utils/configs/qwen3_5_moe.py` added +201/-0 (201 lines); hunks: -0,0 +1,201; symbols: Qwen3_5MoeTextConfig, __init__, Qwen3_5MoeVisionConfig, Qwen3_5MoeConfig, touching `Qwen3_5MoeTextConfig, __init__, Qwen3_5MoeVisionConfig`; `vllm/transformers_utils/configs/qwen3_5.py` added +189/-0 (189 lines); hunks: -0,0 +1,189; symbols: Qwen3_5TextConfig, __init__, Qwen3_5VisionConfig, Qwen3_5Config, touching `Qwen3_5TextConfig, __init__, Qwen3_5VisionConfig`; `vllm/model_executor/models/qwen3_5.py` modified +8/-8 (16 lines); hunks: -31,14 +31,6; -87,6 +79,14; `vllm/model_executor/models/qwen3_5_mtp.py` modified +2/-4 (6 lines); hunks: -7,10 +7,6; -27,6 +23,8.
-- Code diff details:
-  - `vllm/transformers_utils/configs/qwen3_5_moe.py` added +201/-0 (201 lines); hunks: -0,0 +1,201; symbols: Qwen3_5MoeTextConfig, __init__, Qwen3_5MoeVisionConfig, Qwen3_5MoeConfig
-  - `vllm/transformers_utils/configs/qwen3_5.py` added +189/-0 (189 lines); hunks: -0,0 +1,189; symbols: Qwen3_5TextConfig, __init__, Qwen3_5VisionConfig, Qwen3_5Config
-  - `vllm/model_executor/models/qwen3_5.py` modified +8/-8 (16 lines); hunks: -31,14 +31,6; -87,6 +79,14
-  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +2/-4 (6 lines); hunks: -7,10 +7,6; -27,6 +23,8
-- Key code excerpts:
-
-```diff
-diff -- vllm/transformers_utils/configs/qwen3_5_moe.py
-@@ -0,0 +1,201 @@
-+# SPDX-License-Identifier: Apache-2.0
-+# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
-+# Copyright 2025 The Qwen Team and The HuggingFace Inc. team.
-+# All rights reserved.
-+#
-+# Licensed under the Apache License, Version 2.0 (the "License");
-diff -- vllm/transformers_utils/configs/qwen3_5.py
-@@ -0,0 +1,189 @@
-+# SPDX-License-Identifier: Apache-2.0
-+# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
-+# Copyright 2025 The Qwen Team and The HuggingFace Inc. team.
-+# All rights reserved.
-+#
-+# Licensed under the Apache License, Version 2.0 (the "License");
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -31,14 +31,6 @@
-```
-
-- Reviewed files:
-  - runtime: `vllm/transformers_utils/configs/qwen3_5_moe.py` added +201/-0; `vllm/transformers_utils/configs/qwen3_5.py` added +189/-0; `vllm/model_executor/models/qwen3_5.py` modified +8/-8; `vllm/model_executor/models/qwen3_5_mtp.py` modified +2/-4
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/transformers_utils/config.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #34554 - [Bugfix] Fix Qwen3.5 config loading
-
-- Link: https://github.com/vllm-project/vllm/pull/34554
-- Status/date: merged / 2026-02-14
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; associated commits `2f186635cbcb`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +18/-10, 72 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Fix Qwen3.5 config loading"; model line: Qwen3.5; category: bug fix; main diff: `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; technical summary: Covers "[Bugfix] Fix Qwen3.5 config loading"; the main implementation surface is `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/transformers_utils/configs/qwen3_5.py` modified +9/-5 (14 lines); hunks: -72,10 +72,6 @@ def __init__(; -111,6 +107,13 @@ def __init__(; symbols: __init__, Qwen3_5VisionConfig, touching `__init__, Qwen3_5VisionConfig`; `vllm/transformers_utils/configs/qwen3_5_moe.py` modified +9/-5 (14 lines); hunks: -79,10 +79,6 @@ def __init__(; -123,6 +119,13 @@ def __init__(; symbols: __init__, Qwen3_5MoeVisionConfig, touching `__init__, Qwen3_5MoeVisionConfig`.
-- Code diff details:
-  - `vllm/transformers_utils/configs/qwen3_5.py` modified +9/-5 (14 lines); hunks: -72,10 +72,6 @@ def __init__(; -111,6 +107,13 @@ def __init__(; symbols: __init__, Qwen3_5VisionConfig
-  - `vllm/transformers_utils/configs/qwen3_5_moe.py` modified +9/-5 (14 lines); hunks: -79,10 +79,6 @@ def __init__(; -123,6 +119,13 @@ def __init__(; symbols: __init__, Qwen3_5MoeVisionConfig
-- Key code excerpts:
-
-```diff
-diff -- vllm/transformers_utils/configs/qwen3_5.py
-@@ -72,10 +72,6 @@ def __init__(
--        self.pad_token_id = pad_token_id
--        self.bos_token_id = bos_token_id
--        self.eos_token_id = eos_token_id
--        self.tie_word_embeddings = tie_word_embeddings
-@@ -111,6 +107,13 @@ def __init__(
-+        # Set these AFTER super().__init__() because transformers v4's
-diff -- vllm/transformers_utils/configs/qwen3_5_moe.py
-@@ -79,10 +79,6 @@ def __init__(
--        self.pad_token_id = pad_token_id
--        self.bos_token_id = bos_token_id
--        self.eos_token_id = eos_token_id
--        self.tie_word_embeddings = tie_word_embeddings
-@@ -123,6 +119,13 @@ def __init__(
-+        # Set these AFTER super().__init__() because transformers v4's
-```
-
-- Reviewed files:
-  - runtime: `vllm/transformers_utils/configs/qwen3_5.py` modified +9/-5; `vllm/transformers_utils/configs/qwen3_5_moe.py` modified +9/-5
-- Risk and verification: Runtime changes concentrate in `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #34604 - [Misc] fix qwen3.5 config
-
-- Link: https://github.com/vllm-project/vllm/pull/34604
-- Status/date: merged / 2026-02-16
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; associated commits `9521002f0ace`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +4/-4, 26 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Misc] fix qwen3.5 config"; model line: Qwen3.5; category: bug fix; main diff: `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; technical summary: Covers "[Misc] fix qwen3.5 config"; the main implementation surface is `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/transformers_utils/configs/qwen3_5.py` modified +2/-2 (4 lines); hunks: -68,10 +68,10 @@ def __init__(; symbols: __init__, touching `__init__`; `vllm/transformers_utils/configs/qwen3_5_moe.py` modified +2/-2 (4 lines); hunks: -75,10 +75,10 @@ def __init__(; symbols: __init__, touching `__init__`.
-- Code diff details:
-  - `vllm/transformers_utils/configs/qwen3_5.py` modified +2/-2 (4 lines); hunks: -68,10 +68,10 @@ def __init__(; symbols: __init__
-  - `vllm/transformers_utils/configs/qwen3_5_moe.py` modified +2/-2 (4 lines); hunks: -75,10 +75,10 @@ def __init__(; symbols: __init__
-- Key code excerpts:
-
-```diff
-diff -- vllm/transformers_utils/configs/qwen3_5.py
-@@ -68,10 +68,10 @@ def __init__(
--        kwargs["ignore_keys_at_rope_validation"] = [
-+        kwargs["ignore_keys_at_rope_validation"] = {
--        ]
-+        }
-diff -- vllm/transformers_utils/configs/qwen3_5_moe.py
-@@ -75,10 +75,10 @@ def __init__(
--        kwargs["ignore_keys_at_rope_validation"] = [
-+        kwargs["ignore_keys_at_rope_validation"] = {
--        ]
-+        }
-```
-
-- Reviewed files:
-  - runtime: `vllm/transformers_utils/configs/qwen3_5.py` modified +2/-2; `vllm/transformers_utils/configs/qwen3_5_moe.py` modified +2/-2
-- Risk and verification: Runtime changes concentrate in `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #34610 - Revert "[Misc] fix qwen3.5 config"
-
-- Link: https://github.com/vllm-project/vllm/pull/34610
-- Status/date: merged / 2026-02-16
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; associated commits `b5475d053442`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +4/-4, 26 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "Revert "[Misc] fix qwen3.5 config""; model line: Qwen3.5; category: bug fix; main diff: `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; technical summary: Covers "Revert "[Misc] fix qwen3.5 config""; the main implementation surface is `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/transformers_utils/configs/qwen3_5.py` modified +2/-2 (4 lines); hunks: -68,10 +68,10 @@ def __init__(; symbols: __init__, touching `__init__`; `vllm/transformers_utils/configs/qwen3_5_moe.py` modified +2/-2 (4 lines); hunks: -75,10 +75,10 @@ def __init__(; symbols: __init__, touching `__init__`.
-- Code diff details:
-  - `vllm/transformers_utils/configs/qwen3_5.py` modified +2/-2 (4 lines); hunks: -68,10 +68,10 @@ def __init__(; symbols: __init__
-  - `vllm/transformers_utils/configs/qwen3_5_moe.py` modified +2/-2 (4 lines); hunks: -75,10 +75,10 @@ def __init__(; symbols: __init__
-- Key code excerpts:
-
-```diff
-diff -- vllm/transformers_utils/configs/qwen3_5.py
-@@ -68,10 +68,10 @@ def __init__(
--        kwargs["ignore_keys_at_rope_validation"] = {
-+        kwargs["ignore_keys_at_rope_validation"] = [
--        }
-+        ]
-diff -- vllm/transformers_utils/configs/qwen3_5_moe.py
-@@ -75,10 +75,10 @@ def __init__(
--        kwargs["ignore_keys_at_rope_validation"] = {
-+        kwargs["ignore_keys_at_rope_validation"] = [
--        }
-+        ]
-```
-
-- Reviewed files:
-  - runtime: `vllm/transformers_utils/configs/qwen3_5.py` modified +2/-2; `vllm/transformers_utils/configs/qwen3_5_moe.py` modified +2/-2
-- Risk and verification: Runtime changes concentrate in `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/transformers_utils/configs/qwen3_5_moe.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #34492 - [Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj
-
-- Link: https://github.com/vllm-project/vllm/pull/34492
-- Status/date: merged / 2026-02-16
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `3bb4e4311c6d`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 3 files, +87/-182, 404 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj"; model line: Qwen3.5; category: performance/backend optimization; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +32/-166 (198 lines); hunks: -30,36 +30,20; -73,11 +57,8; symbols: get_hf_config, Qwen3_5GatedDeltaNet, __init__, fix_query_key_value_ordering, touching `get_hf_config, Qwen3_5GatedDeltaNet, __init__`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +32/-166 (198 lines); hunks: -30,36 +30,20; -73,11 +57,8; symbols: get_hf_config, Qwen3_5GatedDeltaNet, __init__, fix_query_key_value_ordering
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -30,36 +30,20 @@
--from transformers.activations import ACT2FN
--    CacheConfig,
--    ModelConfig,
--    SpeculativeConfig,
--    get_current_vllm_config,
--    divide,
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +32/-166
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/linear.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #34683 - Revert "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj"
-
-- Link: https://github.com/vllm-project/vllm/pull/34683
-- Status/date: merged / 2026-02-17
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `1d65283e95f4`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 3 files, +182/-87, 402 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "Revert "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj""; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "Revert "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj""; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +166/-32 (198 lines); hunks: -30,20 +30,36; -57,8 +73,11; symbols: get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering, __init__, touching `get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +166/-32 (198 lines); hunks: -30,20 +30,36; -57,8 +73,11; symbols: get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering, __init__
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -30,20 +30,36 @@
-+from transformers.activations import ACT2FN
-+    CacheConfig,
-+    ModelConfig,
-+    SpeculativeConfig,
-+    get_current_vllm_config,
-+    divide,
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +166/-32
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/linear.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #34723 - [Bugfix] Fix prefix creation for Qwen3.5
-
-- Link: https://github.com/vllm-project/vllm/pull/34723
-- Status/date: merged / 2026-02-18
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `909b14719725`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +6/-5, 32 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Fix prefix creation for Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Fix prefix creation for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +6/-5 (11 lines); hunks: -542,9 +542,10 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; -620,7 +621,7 @@ def get_expert_mapping(self) -> list[tuple[str, str, int, st...; symbols: __init__, get_expert_mapping, Qwen3_5ForConditionalGeneration, touching `__init__, get_expert_mapping, Qwen3_5ForConditionalGeneration`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +6/-5 (11 lines); hunks: -542,9 +542,10 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; -620,7 +621,7 @@ def get_expert_mapping(self) -> list[tuple[str, str, int, st...; symbols: __init__, get_expert_mapping, Qwen3_5ForConditionalGeneration
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -542,9 +542,10 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
--        self.model = Qwen3_5Model(
--            vllm_config=vllm_config, prefix=maybe_prefix(prefix, "model")
--        )
-+        # Deal with the case where the prefix is already "language_model" since
-+        # Qwen/Qwen3.5-397B-A17B has naming like: model.language_model.layers.0
-+        model_prefix = prefix if "model" in prefix else "model"
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +6/-5
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #34697 - [Bugfix] Redo Qwen3.5/Qwen3-Next GDN projector fusion
-
-- Link: https://github.com/vllm-project/vllm/pull/34697
-- Status/date: merged / 2026-02-18
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `c0bd8b13da36`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 3 files, +102/-192, 477 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Redo Qwen3.5/Qwen3-Next GDN projector fusion"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Redo Qwen3.5/Qwen3-Next GDN projector fusion"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +43/-170 (213 lines); hunks: -30,36 +30,20; -73,11 +57,8; symbols: get_hf_config, Qwen3_5GatedDeltaNet, __init__, fix_query_key_value_ordering, touching `get_hf_config, Qwen3_5GatedDeltaNet, __init__`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +43/-170 (213 lines); hunks: -30,36 +30,20; -73,11 +57,8; symbols: get_hf_config, Qwen3_5GatedDeltaNet, __init__, fix_query_key_value_ordering
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -30,36 +30,20 @@
--from transformers.activations import ACT2FN
--    CacheConfig,
--    ModelConfig,
--    SpeculativeConfig,
--    get_current_vllm_config,
--    divide,
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +43/-170
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/linear.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #34719 - [Bugfix] Qwen3.5 kv-scale weight remapping
-
-- Link: https://github.com/vllm-project/vllm/pull/34719
-- Status/date: merged / 2026-02-19
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `6fff24f30fe2`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +7/-0, 21 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Qwen3.5 kv-scale weight remapping"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Qwen3.5 kv-scale weight remapping"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +7/-0 (7 lines); hunks: -57,6 +57,7; -397,6 +398,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights, touching `load_weights`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +7/-0 (7 lines); hunks: -57,6 +57,7; -397,6 +398,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -57,6 +57,7 @@
-+    maybe_remap_kv_scale_name,
-@@ -397,6 +398,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
-+            # Remapping the name of FP8 kv-scale.
-+            if name.endswith("scale"):
-+                name = maybe_remap_kv_scale_name(name, params_dict)
-+                if name is None:
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +7/-0
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #35289 - [Bugfix] [Qwen3.5]Fix Qwen3.5 FP8 quantization: tuple shard_id weight loading
-
-- Link: https://github.com/vllm-project/vllm/pull/35289
-- Status/date: merged / 2026-02-26
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +19/-8, 55 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] [Qwen3.5]Fix Qwen3.5 FP8 quantization: tuple shard_id weight loading"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/layers/linear.py`; technical summary: Covers "[Bugfix] [Qwen3.5]Fix Qwen3.5 FP8 quantization: tuple shard_id weight loading"; the main implementation surface is `vllm/model_executor/layers/linear.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/layers/linear.py` modified +19/-8 (27 lines); hunks: -731,16 +731,16 @@ def weight_loader(; -768,7 +768,7 @@ def weight_loader(; symbols: weight_loader, touching `weight_loader`.
-- Code diff details:
-  - `vllm/model_executor/layers/linear.py` modified +19/-8 (27 lines); hunks: -731,16 +731,16 @@ def weight_loader(; -768,7 +768,7 @@ def weight_loader(; symbols: weight_loader
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/layers/linear.py
-@@ -731,16 +731,16 @@ def weight_loader(
--        # FIXME(Isotr0py): Enable tuple shard_id for BNB quantization.
--        if isinstance(loaded_shard_id, tuple):
--            raise NotImplementedError(
--                "Shard id with multiple indices is not supported in weight_loader, "
--                "please use weight_loader_v2 instead."
--            )
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/layers/linear.py` modified +19/-8
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/linear.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #35581 - Fix Qwen3_5MTP packed_modules_mapping for gate_up_proj
-
-- Link: https://github.com/vllm-project/vllm/pull/35581
-- Status/date: merged / 2026-02-28
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `63d7972f13d1`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +1/-1, 9 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "Fix Qwen3_5MTP packed_modules_mapping for gate_up_proj"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "Fix Qwen3_5MTP packed_modules_mapping for gate_up_proj"; the main implementation surface is `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5_mtp.py` modified +1/-1 (2 lines); hunks: -339,7 +339,7 @@ class Qwen3_5MTP(nn.Module, SupportsMultiModal):; symbols: Qwen3_5MTP, __init__, touching `Qwen3_5MTP, __init__`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +1/-1 (2 lines); hunks: -339,7 +339,7 @@ class Qwen3_5MTP(nn.Module, SupportsMultiModal):; symbols: Qwen3_5MTP, __init__
+  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +12/-2 (14 lines); hunks: -103,6 +103,16 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; -111,11 +121,10 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; symbols: __init__, forward
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5_mtp.py
-@@ -339,7 +339,7 @@ class Qwen3_5MTP(nn.Module, SupportsMultiModal):
--        "gate_up_proj": ["up_proj", "down_proj"],
-+        "gate_up_proj": ["gate_proj", "up_proj"],
+@@ -103,6 +103,16 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
++        # GPTQ: quantized checkpoints may exclude MTP from quantization via
++        # quantization_config.dynamic with "-:pattern" entries. When detected,
++        # disable quantization for MTP layers so they use unquantized params.
++        original_quant = vllm_config.quant_config
++        if quant_config and quant_config.get_name() not in ("modelopt_fp4",):
++            hf_qc = getattr(model_config.hf_config, "quantization_config", None)
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5_mtp.py` modified +1/-1
+  - runtime: `vllm/model_executor/models/qwen3_5_mtp.py` modified +12/-2
 - Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5_mtp.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #35617 - [Bugfix][Model] Fix Qwen3.5/Qwen3Next ignoring --dtype flag on older GPUs
+### PR #44434 - [ROCm][Bugfix][Perf] enable shared expert fusion for Qwen3.5
 
-- Link: https://github.com/vllm-project/vllm/pull/35617
-- Status/date: merged / 2026-03-01
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `afd089f231d7`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +0/-5, 40 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix][Model] Fix Qwen3.5/Qwen3Next ignoring --dtype flag on older GPUs"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix][Model] Fix Qwen3.5/Qwen3Next ignoring --dtype flag on older GPUs"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +0/-2 (2 lines); hunks: -274,15 +274,13 @@ def __init__(; symbols: __init__, touching `__init__`.
+- Link: https://github.com/vllm-project/vllm/pull/44434
+- Status/date: merged / 2026-06-23
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `80e511772f3e`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +48/-4, 87 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[ROCm][Bugfix][Perf] enable shared expert fusion for Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[ROCm][Bugfix][Perf] enable shared expert fusion for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +19/-0 (19 lines); hunks: -30,6 +30,7; -314,6 +315,15 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights, touching `load_weights`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +0/-2 (2 lines); hunks: -274,15 +274,13 @@ def __init__(; symbols: __init__
+  - `vllm/model_executor/models/qwen3_5.py` modified +19/-0 (19 lines); hunks: -30,6 +30,7; -314,6 +315,15 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5.py
-@@ -274,15 +274,13 @@ def __init__(
--                    dtype=config.dtype,
--                    dtype=config.dtype,
+@@ -30,6 +30,7 @@
++from vllm._aiter_ops import rocm_aiter_ops
+@@ -314,6 +315,15 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
++        from vllm.config import get_current_vllm_config
++        from .qwen3_next import _is_shared_expert_fse_compatible
++        is_fse = (
++            rocm_aiter_ops.is_fusion_moe_shared_experts_enabled()
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +0/-2
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +19/-0
 - Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #36658 - Add: Eagle3 support for Qwen3.5
+### PR #46520 - [ROCm][CI] Shard LM Eval Qwen3-5 Models (B200-MI355) in AMD CI
 
-- Link: https://github.com/vllm-project/vllm/pull/36658
-- Status/date: merged / 2026-03-11
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `9d07a3d6e472`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +25/-2, 83 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "Add: Eagle3 support for Qwen3.5"; model line: Qwen3.5; category: model support/runtime entry; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "Add: Eagle3 support for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +11/-0 (11 lines); hunks: -75,6 +75,7; -353,6 +354,8 @@ def get_layer(prefix: str):; symbols: get_layer, load_fused_expert_weights, load_weights, Qwen3_5ForCausalLMBase, touching `get_layer, load_fused_expert_weights, load_weights`.
+- Link: https://github.com/vllm-project/vllm/pull/46520
+- Status/date: merged / 2026-06-23
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml`; associated commits `b28103e1ca8b`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +5/-3, 33 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[ROCm][CI] Shard LM Eval Qwen3-5 Models (B200-MI355) in AMD CI"; model line: Qwen3.5; category: performance/backend optimization; main diff: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml`; technical summary: Covers "[ROCm][CI] Shard LM Eval Qwen3-5 Models (B200-MI355) in AMD CI"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml` modified +1/-0 (1 lines); hunks: -3,6 +3,7 @@ accuracy_threshold: 0.89.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +11/-0 (11 lines); hunks: -75,6 +75,7; -353,6 +354,8 @@ def get_layer(prefix: str):; symbols: get_layer, load_fused_expert_weights, load_weights, Qwen3_5ForCausalLMBase
+  - `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml` modified +1/-0 (1 lines); hunks: -3,6 +3,7 @@ accuracy_threshold: 0.89
+- Key code excerpts:
+
+```diff
+diff -- tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml
+@@ -3,6 +3,7 @@ accuracy_threshold: 0.89
++startup_max_wait_seconds: 3600
+```
+
+- Reviewed files:
+  - tests: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml` modified +1/-0
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-AITER-TP2.yaml`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #46108 - [Model] ColQwen3.5: fix retrieval correctness (bias + bidirectional)
+
+- Link: https://github.com/vllm-project/vllm/pull/46108
+- Status/date: merged / 2026-06-22
+- Trace source: `git log --name-only -- <model-files>` found it through `examples/pooling/score/colqwen3_5_rerank_online.py`, `tests/models/multimodal/pooling/test_colqwen3_5.py`, `vllm/model_executor/models/colqwen3_5.py`; associated commits `3c8e49596c3f`
+- Diff scope read: GitHub Pull Request files API returned 7 files, +79/-5, 167 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Model] ColQwen3.5: fix retrieval correctness (bias + bidirectional)"; model line: Qwen3.5; category: bug fix; main diff: `tests/models/multimodal/pooling/test_colqwen3_5.py`, `vllm/model_executor/models/colqwen3_5.py`, `examples/pooling/score/colqwen3_5_rerank_online.py`; technical summary: Covers "[Model] ColQwen3.5: fix retrieval correctness (bias + bidirectional)"; the main implementation surface is `tests/models/multimodal/pooling/test_colqwen3_5.py`, `vllm/model_executor/models/colqwen3_5.py`, `examples/pooling/score/colqwen3_5_rerank_online.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/models/multimodal/pooling/test_colqwen3_5.py` modified +18/-0 (18 lines); hunks: -152,3 +152,21 @@ def test_colqwen3_5_relevance_ordering(; symbols: test_colqwen3_5_relevance_ordering, test_colqwen3_5_config_enables_bidirectional_attention, touching `test_colqwen3_5_relevance_ordering, test_colqwen3_5_config_enables_bidirectional_attention`; `vllm/model_executor/models/colqwen3_5.py` modified +9/-1 (10 lines); hunks: -15,6 +15,7; -166,12 +167,19 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; symbols: __init__, touching `__init__`; `examples/pooling/score/colqwen3_5_rerank_online.py` modified +17/-1 (18 lines); hunks: -7,11 +7,27.
+- Code diff details:
+  - `tests/models/multimodal/pooling/test_colqwen3_5.py` modified +18/-0 (18 lines); hunks: -152,3 +152,21 @@ def test_colqwen3_5_relevance_ordering(; symbols: test_colqwen3_5_relevance_ordering, test_colqwen3_5_config_enables_bidirectional_attention
+  - `vllm/model_executor/models/colqwen3_5.py` modified +9/-1 (10 lines); hunks: -15,6 +15,7; -166,12 +167,19 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; symbols: __init__
+  - `examples/pooling/score/colqwen3_5_rerank_online.py` modified +17/-1 (18 lines); hunks: -7,11 +7,27
+- Key code excerpts:
+
+```diff
+diff -- tests/models/multimodal/pooling/test_colqwen3_5.py
+@@ -152,3 +152,21 @@ def test_colqwen3_5_relevance_ordering(
++def test_colqwen3_5_config_enables_bidirectional_attention() -> None:
++    """ColQwen3.5 retrieval must be served BIDIRECTIONAL (is_causal=False) so the
++    full_attention layers build with AttentionType.ENCODER_ONLY. This guards the
++    silent-causal regression (no GPU / model load needed)."""
++    from types import SimpleNamespace
++    from vllm.model_executor.models.config import (
+diff -- vllm/model_executor/models/colqwen3_5.py
+@@ -15,6 +15,7 @@
++- vultr/VultronRetrieverPrime-Qwen3.5-8B
+@@ -166,12 +167,19 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
++        # ColPali defines `custom_text_proj = nn.Linear(hidden, dim)`, i.e.
++        # bias=True by default, and the trained ColQwen3.5 checkpoints ship a
++        # `custom_text_proj.bias`. Construct with a bias and zero-initialize it:
++        # a (legacy) bias-less checkpoint then behaves identically to bias=False,
+diff -- examples/pooling/score/colqwen3_5_rerank_online.py
+@@ -7,11 +7,27 @@
+```
+
+- Reviewed files:
+  - tests: `tests/models/multimodal/pooling/test_colqwen3_5.py` modified +18/-0
+  - runtime: `vllm/model_executor/models/colqwen3_5.py` modified +9/-1
+  - docs: `examples/pooling/score/colqwen3_5_rerank_online.py` modified +17/-1
+- Risk and verification: The diff ships test coverage in `tests/models/multimodal/pooling/test_colqwen3_5.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #45002 - [Bugfix] fix qwen3.5 ep weight loading
+
+- Link: https://github.com/vllm-project/vllm/pull/45002
+- Status/date: merged / 2026-06-09
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `ca4cfd873163`
+- Diff scope read: GitHub Pull Request files API returned 3 files, +32/-14, 72 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] fix qwen3.5 ep weight loading"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`; technical summary: Covers "[Bugfix] fix qwen3.5 ep weight loading"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +17/-7 (24 lines); hunks: -36,6 +36,9; -294,13 +297,20 @@ def load_weights(self, weights: Iterable[tuple[str, torch....; symbols: load_weights, touching `load_weights`; `vllm/model_executor/models/qwen3_5_mtp.py` modified +14/-7 (21 lines); hunks: -209,13 +209,20 @@ def load_weights(self, weights: Iterable[tuple[str, torch....; symbols: load_weights, touching `load_weights`; `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +1/-0 (1 lines); hunks: -7,3 +7,4 @@ server_args: >-.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +17/-7 (24 lines); hunks: -36,6 +36,9; -294,13 +297,20 @@ def load_weights(self, weights: Iterable[tuple[str, torch....; symbols: load_weights
+  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +14/-7 (21 lines); hunks: -209,13 +209,20 @@ def load_weights(self, weights: Iterable[tuple[str, torch....; symbols: load_weights
+  - `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +1/-0 (1 lines); hunks: -7,3 +7,4 @@ server_args: >-
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5.py
-@@ -75,6 +75,7 @@
-+    SupportsEagle3,
-@@ -353,6 +354,8 @@ def get_layer(prefix: str):
-+        self.aux_hidden_state_layers: tuple[int, ...] = ()
-@@ -536,6 +539,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
-+    SupportsEagle3,
-@@ -592,6 +596,13 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
+@@ -36,6 +36,9 @@
++from vllm.model_executor.layers.fused_moe import (
++    fused_moe_make_expert_params_mapping,
++)
+@@ -294,13 +297,20 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
+-        base_layer = (
+-            "base_layer." if any(".base_layer." in name for name in params_dict) else ""
+diff -- vllm/model_executor/models/qwen3_5_mtp.py
+@@ -209,13 +209,20 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
+-        base_layer = (
+-            "base_layer." if any(".base_layer." in name for name in params_dict) else ""
+-        )
+-        fused_expert_params_mapping = [
+-            (f"experts.{base_layer}w13_weight", "experts.gate_up_proj", 0, "w1"),
+-            (f"experts.{base_layer}w2_weight", "experts.down_proj", 0, "w2"),
+diff -- tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml
+@@ -7,3 +7,4 @@ server_args: >-
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +11/-0
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +17/-7; `vllm/model_executor/models/qwen3_5_mtp.py` modified +14/-7
+  - tests: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +1/-0
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #44700 - [PERF] [Qwen3.5] Split mixed prefill+decode batches: route decodes to the recurrent kernel
+
+- Link: https://github.com/vllm-project/vllm/pull/44700
+- Status/date: merged / 2026-06-06
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt`; associated commits `fa27d4e9cf3c`
+- Diff scope read: GitHub Pull Request files API returned 5 files, +426/-31, 625 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[PERF] [Qwen3.5] Split mixed prefill+decode batches: route decodes to the recurrent kernel"; model line: Qwen3.5; category: performance/backend optimization; main diff: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt`; technical summary: Covers "[PERF] [Qwen3.5] Split mixed prefill+decode batches: route decodes to the recurrent kernel"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` added +12/-0 (12 lines); hunks: -0,0 +1,12; `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` modified +2/-1 (3 lines); hunks: -1,3 +1,4.
+- Code diff details:
+  - `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` added +12/-0 (12 lines); hunks: -0,0 +1,12
+  - `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` modified +2/-1 (3 lines); hunks: -1,3 +1,4
+- Key code excerpts:
+
+```diff
+diff -- tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml
+@@ -0,0 +1,12 @@
++model_name: "nvidia/Qwen3.5-397B-A17B-NVFP4"
++accuracy_threshold: 0.88
++tolerance: 0.03
++num_questions: 1319
++num_fewshot: 5
++server_args: >-
+diff -- tests/evals/gsm8k/configs/models-qwen35-blackwell.txt
+@@ -1,3 +1,4 @@
+-Qwen3.5-397B-A17B-NVFP4-DEP2.yaml
++Qwen3.5-397B-A17B-NVFP4-DEP2.yaml
++Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml
+```
+
+- Reviewed files:
+  - tests: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml` added +12/-0; `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` modified +2/-1
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2-MTP.yaml`, `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt`, `tests/kernels/mamba/test_gdn_forward_core_split.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #42716 - Fix Weight loading for Qwen3.5-MTP and Qwen3-VL using runai_streamer
+
+- Link: https://github.com/vllm-project/vllm/pull/42716
+- Status/date: merged / 2026-05-17
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `a94189295b8b`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +4/-4, 22 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "Fix Weight loading for Qwen3.5-MTP and Qwen3-VL using runai_streamer"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "Fix Weight loading for Qwen3.5-MTP and Qwen3-VL using runai_streamer"; the main implementation surface is `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5_mtp.py` modified +2/-2 (4 lines); hunks: -175,8 +175,8 @@ def load_fused_expert_weights(; symbols: load_fused_expert_weights, touching `load_fused_expert_weights`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +2/-2 (4 lines); hunks: -175,8 +175,8 @@ def load_fused_expert_weights(; symbols: load_fused_expert_weights
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5_mtp.py
+@@ -175,8 +175,8 @@ def load_fused_expert_weights(
+-                shard_id,
+-                expert_id,
++                shard_id=shard_id,
++                expert_id=expert_id,
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5_mtp.py` modified +2/-2
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/model_executor/models/qwen3_vl_moe.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #42521 - [Fix] Weight loading for qwen3_5 using runai_streamer
+
+- Link: https://github.com/vllm-project/vllm/pull/42521
+- Status/date: merged / 2026-05-14
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `ca60a4e84f9a`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +2/-2, 11 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Fix] Weight loading for qwen3_5 using runai_streamer"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Fix] Weight loading for qwen3_5 using runai_streamer"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +2/-2 (4 lines); hunks: -262,8 +262,8 @@ def load_fused_expert_weights(; symbols: load_fused_expert_weights, touching `load_fused_expert_weights`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +2/-2 (4 lines); hunks: -262,8 +262,8 @@ def load_fused_expert_weights(; symbols: load_fused_expert_weights
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -262,8 +262,8 @@ def load_fused_expert_weights(
+-                shard_id,
+-                expert_id,
++                shard_id=shard_id,
++                expert_id=expert_id,
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +2/-2
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #42151 - [MM][Perf][CG] Support ViT full CUDA graph for Qwen3.5
+
+- Link: https://github.com/vllm-project/vllm/pull/42151
+- Status/date: merged / 2026-05-13
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `92def124bcb7`
+- Diff scope read: GitHub Pull Request files API returned 4 files, +112/-5, 187 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[MM][Perf][CG] Support ViT full CUDA graph for Qwen3.5"; model line: Qwen3.5; category: performance/backend optimization; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[MM][Perf][CG] Support ViT full CUDA graph for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +2/-0 (2 lines); hunks: -565,6 +565,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; -778,6 +779,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__, touching `__init__`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +2/-0 (2 lines); hunks: -565,6 +565,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; -778,6 +779,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -565,6 +565,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = "model"):
++        self.model_config = vllm_config.model_config
+@@ -778,6 +779,7 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = "model"):
++        self.model_config = vllm_config.model_config
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +2/-0
+- Risk and verification: The diff ships test coverage in `tests/models/multimodal/generation/test_vit_cudagraph.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #37912 - [Bugfix] Fuse Qwen3.5 in_qkvz_proj forwarding with LoRA enabled
+
+- Link: https://github.com/vllm-project/vllm/pull/37912
+- Status/date: merged / 2026-05-10
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `48698b1b9b30`
+- Diff scope read: GitHub Pull Request files API returned 4 files, +84/-111, 341 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Fuse Qwen3.5 in_qkvz_proj forwarding with LoRA enabled"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Fuse Qwen3.5 in_qkvz_proj forwarding with LoRA enabled"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +4/-43 (47 lines); hunks: -138,7 +138,6 @@ def __init__(; -217,7 +216,6 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__, load_fused_expert_weights, load_weights, touching `__init__, load_fused_expert_weights, load_weights`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +4/-43 (47 lines); hunks: -138,7 +138,6 @@ def __init__(; -217,7 +216,6 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__, load_fused_expert_weights, load_weights
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -138,7 +138,6 @@ def __init__(
+-                create_in_proj_qkvz=vllm_config.lora_config is None,
+@@ -217,7 +216,6 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
+-        self.enable_lora = vllm_config.lora_config is not None
+@@ -276,6 +274,9 @@ def load_fused_expert_weights(
++            # GDN
++            ("in_proj_qkvz", "in_proj_qkv", (0, 1, 2)),
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +4/-43
+- Risk and verification: Runtime changes concentrate in `vllm/lora/layers/column_parallel_linear.py`, `vllm/lora/model_manager.py`, `vllm/model_executor/layers/mamba/gdn_linear_attn.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #37114 - [Bugfix] LoRA: extend expert base_layer loading to Qwen3.5 and Step3.x
+
+- Link: https://github.com/vllm-project/vllm/pull/37114
+- Status/date: merged / 2026-04-21
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `908a713488db`
+- Diff scope read: GitHub Pull Request files API returned 6 files, +34/-16, 104 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] LoRA: extend expert base_layer loading to Qwen3.5 and Step3.x"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "[Bugfix] LoRA: extend expert base_layer loading to Qwen3.5 and Step3.x"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +5/-2 (7 lines); hunks: -306,9 +306,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights, touching `load_weights`; `vllm/model_executor/models/qwen3_5_mtp.py` modified +5/-2 (7 lines); hunks: -207,9 +207,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights, touching `load_weights`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +5/-2 (7 lines); hunks: -306,9 +306,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights
+  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +5/-2 (7 lines); hunks: -207,9 +207,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -306,9 +306,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
++        base_layer = (
++            "base_layer." if any(".base_layer." in name for name in params_dict) else ""
++        )
+-            ("experts.w13_weight", "experts.gate_up_proj", 0, "w1"),
+-            ("experts.w2_weight", "experts.down_proj", 0, "w2"),
++            (f"experts.{base_layer}w13_weight", "experts.gate_up_proj", 0, "w1"),
+diff -- vllm/model_executor/models/qwen3_5_mtp.py
+@@ -207,9 +207,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
++        base_layer = (
++            "base_layer." if any(".base_layer." in name for name in params_dict) else ""
++        )
+-            ("experts.w13_weight", "experts.gate_up_proj", 0, "w1"),
+-            ("experts.w2_weight", "experts.down_proj", 0, "w2"),
++            (f"experts.{base_layer}w13_weight", "experts.gate_up_proj", 0, "w1"),
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +5/-2; `vllm/model_executor/models/qwen3_5_mtp.py` modified +5/-2
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/model_executor/models/qwen3_vl_moe.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #38927 - [Bugfix][LoRA] Fix missing in_proj_z in Qwen3_5ForConditionalGenerati…
+
+- Link: https://github.com/vllm-project/vllm/pull/38927
+- Status/date: merged / 2026-04-03
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `81994e1d0ea6`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +1/-0, 8 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix][LoRA] Fix missing in_proj_z in Qwen3_5ForConditionalGenerati…"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix][LoRA] Fix missing in_proj_z in Qwen3_5ForConditionalGenerati…"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +1/-0 (1 lines); hunks: -620,6 +620,7 @@ def update_packed_mapping(self, enable_lora: bool):; symbols: update_packed_mapping, embed_input_ids, touching `update_packed_mapping, embed_input_ids`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +1/-0 (1 lines); hunks: -620,6 +620,7 @@ def update_packed_mapping(self, enable_lora: bool):; symbols: update_packed_mapping, embed_input_ids
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -620,6 +620,7 @@ def update_packed_mapping(self, enable_lora: bool):
++            self.packed_modules_mapping["in_proj_z"] = ["in_proj_z"]
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +1/-0
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #38664 - [CI][ROCm] Add Qwen3.5-35B-A3B-MXFP4 model eval into CI
+
+- Link: https://github.com/vllm-project/vllm/pull/38664
+- Status/date: merged / 2026-04-03
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; associated commits `201d2ea5bfb9`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +9/-0, 12 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[CI][ROCm] Add Qwen3.5-35B-A3B-MXFP4 model eval into CI"; model line: Qwen3.5; category: performance/backend optimization; main diff: `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; technical summary: Covers "[CI][ROCm] Add Qwen3.5-35B-A3B-MXFP4 model eval into CI"; the main implementation surface is `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` modified +1/-0 (1 lines); hunks: -1 +1,2.
+- Code diff details:
+  - `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` modified +1/-0 (1 lines); hunks: -1 +1,2
+- Key code excerpts:
+
+```diff
+diff -- tests/evals/gsm8k/configs/models-qwen35-mi355.txt
+@@ -1 +1,2 @@
++Qwen3.5-35B-A3B-MXFP4-TP2.yaml
+```
+
+- Reviewed files:
+  - tests: `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` modified +1/-0
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #38832 - [Bugfix] Fix NVFP4+MTP crash: force unquantized mtp.fc for Qwen3.5
+
+- Link: https://github.com/vllm-project/vllm/pull/38832
+- Status/date: merged / 2026-04-03
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `771913e4a024`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +10/-1, 24 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Fix NVFP4+MTP crash: force unquantized mtp.fc for Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "[Bugfix] Fix NVFP4+MTP crash: force unquantized mtp.fc for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5_mtp.py` modified +10/-1 (11 lines); hunks: -75,13 +75,22 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__, touching `__init__`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +10/-1 (11 lines); hunks: -75,13 +75,22 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5_mtp.py
+@@ -75,13 +75,22 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
++        # Workaround: mtp.fc is stored as BF16 in NVFP4 checkpoints but is
++        # missing from hf_quant_config.json exclude_modules. Force unquantized.
++        # Ref: https://github.com/vllm-project/vllm/pull/38650
++        # Ref: https://github.com/NVIDIA/Model-Optimizer/pull/1124
++        fc_quant = (
++            None
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5_mtp.py` modified +10/-1
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5_mtp.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #38632 - [CI] fix LM Eval Qwen3.5 Models (B200)
+
+- Link: https://github.com/vllm-project/vllm/pull/38632
+- Status/date: merged / 2026-03-31
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`; associated commits `ea7bfde6e40d`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +1/-0, 5 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[CI] fix LM Eval Qwen3.5 Models (B200)"; model line: Qwen3.5; category: bug fix; main diff: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`; technical summary: Covers "[CI] fix LM Eval Qwen3.5 Models (B200)"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` modified +1/-0 (1 lines); hunks: -7,3 +7,4 @@ server_args: >-.
+- Code diff details:
+  - `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` modified +1/-0 (1 lines); hunks: -7,3 +7,4 @@ server_args: >-
+- Key code excerpts:
+
+```diff
+diff -- tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml
+@@ -7,3 +7,4 @@ server_args: >-
++  --max-num-seqs 512
+```
+
+- Reviewed files:
+  - tests: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` modified +1/-0
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #37975 - [Model] Extract GatedDeltaNetAttention into shared layer for Qwen3Next and Qwen3.5
+
+- Link: https://github.com/vllm-project/vllm/pull/37975
+- Status/date: merged / 2026-03-27
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `a8eab8f30dda`
+- Diff scope read: GitHub Pull Request files API returned 3 files, +1053/-1126, 2304 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Model] Extract GatedDeltaNetAttention into shared layer for Qwen3Next and Qwen3.5"; model line: Qwen3.5; category: model implementation change; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Model] Extract GatedDeltaNetAttention into shared layer for Qwen3Next and Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +4/-151 (155 lines); hunks: -28,7 +28,6; -40,18 +39,14; symbols: get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering, __init__, touching `get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +4/-151 (155 lines); hunks: -28,7 +28,6; -40,18 +39,14; symbols: get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering, __init__
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -28,7 +28,6 @@
+-from einops import rearrange
+@@ -40,18 +39,14 @@
+-from vllm.model_executor.layers.linear import (
+-    ColumnParallelLinear,
+-    MergedColumnParallelLinear,
+-)
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +4/-151
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/mamba/gdn_linear_attn.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #38155 - [ROCm][CI] Add LM Eval Qwen3.5 Models test for MI355
+
+- Link: https://github.com/vllm-project/vllm/pull/38155
+- Status/date: merged / 2026-03-26
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; associated commits `9c3ae04bfe65`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +25/-0, 30 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[ROCm][CI] Add LM Eval Qwen3.5 Models test for MI355"; model line: Qwen3.5; category: docs/tests/CI; main diff: `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; technical summary: Covers "[ROCm][CI] Add LM Eval Qwen3.5 Models test for MI355"; the main implementation surface is `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` added +1/-0 (1 lines); hunks: -0,0 +1.
+- Code diff details:
+  - `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` added +1/-0 (1 lines); hunks: -0,0 +1
+- Key code excerpts:
+
+```diff
+diff -- tests/evals/gsm8k/configs/models-qwen35-mi355.txt
+@@ -0,0 +1 @@
++Qwen3.5-35B-A3B-DEP2.yaml
+```
+
+- Reviewed files:
+  - tests: `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` added +1/-0
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #38083 - [Bugfix] Fix DeepGemm E8M0 accuracy degradation for Qwen3.5 FP8 on Blackwell
+
+- Link: https://github.com/vllm-project/vllm/pull/38083
+- Status/date: merged / 2026-03-26
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt`; associated commits `52069012fe53`
+- Diff scope read: GitHub Pull Request files API returned 10 files, +69/-11, 177 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Fix DeepGemm E8M0 accuracy degradation for Qwen3.5 FP8 on Blackwell"; model line: Qwen3.5; category: bug fix; main diff: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml`; technical summary: Covers "[Bugfix] Fix DeepGemm E8M0 accuracy degradation for Qwen3.5 FP8 on Blackwell"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` added +9/-0 (9 lines); hunks: -0,0 +1,9; `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +2/-1 (3 lines); hunks: -1,5 +1,6; `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml` modified +2/-1 (3 lines); hunks: -1,5 +1,6; `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` modified +2/-0 (2 lines); hunks: -1 +1,3.
+- Code diff details:
+  - `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` added +9/-0 (9 lines); hunks: -0,0 +1,9
+  - `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +2/-1 (3 lines); hunks: -1,5 +1,6
+  - `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml` modified +2/-1 (3 lines); hunks: -1,5 +1,6
+  - `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` modified +2/-0 (2 lines); hunks: -1 +1,3
+- Key code excerpts:
+
+```diff
+diff -- tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml
+@@ -0,0 +1,9 @@
++model_name: "nvidia/Qwen3.5-397B-A17B-NVFP4"
++accuracy_threshold: 0.88
++tolerance: 0.03
++num_questions: 1319
++num_fewshot: 5
++server_args: >-
+diff -- tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml
+@@ -1,5 +1,6 @@
+-accuracy_threshold: 0.86
++accuracy_threshold: 0.84
++tolerance: 0.03
+diff -- tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml
+@@ -1,5 +1,6 @@
+-accuracy_threshold: 0.86
++accuracy_threshold: 0.79
++tolerance: 0.03
+```
+
+- Reviewed files:
+  - tests: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` added +9/-0; `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +2/-1; `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml` modified +2/-1; `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` modified +2/-0
+- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #37816 - [CI/Build][LoRA] Update Qwen35 LoRA testing
+
+- Link: https://github.com/vllm-project/vllm/pull/37816
+- Status/date: merged / 2026-03-23
+- Trace source: `git log --name-only -- <model-files>` found it through `tests/lora/test_qwen35_densemodel_lora.py`; associated commits `1f0d21064137`
+- Diff scope read: GitHub Pull Request files API returned 4 files, +369/-135, 529 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[CI/Build][LoRA] Update Qwen35 LoRA testing"; model line: Qwen3.5; category: docs/tests/CI; main diff: `tests/lora/test_qwen35_densemodel_lora.py`; technical summary: Covers "[CI/Build][LoRA] Update Qwen35 LoRA testing"; the main implementation surface is `tests/lora/test_qwen35_densemodel_lora.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `tests/lora/test_qwen35_densemodel_lora.py` added +361/-0 (361 lines); hunks: -0,0 +1,361; symbols: _assert_exact_outputs, _assert_prefix_outputs, _run_text_lora_sample, _run_vl_lora_sample, touching `_assert_exact_outputs, _assert_prefix_outputs, _run_text_lora_sample`.
+- Code diff details:
+  - `tests/lora/test_qwen35_densemodel_lora.py` added +361/-0 (361 lines); hunks: -0,0 +1,361; symbols: _assert_exact_outputs, _assert_prefix_outputs, _run_text_lora_sample, _run_vl_lora_sample
+- Key code excerpts:
+
+```diff
+diff -- tests/lora/test_qwen35_densemodel_lora.py
+@@ -0,0 +1,361 @@
++# SPDX-License-Identifier: Apache-2.0
++# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
++from transformers import AutoTokenizer
++import vllm
++import vllm.config
++from vllm.assets.image import ImageAsset
+```
+
+- Reviewed files:
+  - tests: `tests/lora/test_qwen35_densemodel_lora.py` added +361/-0
+- Risk and verification: The diff ships test coverage in `tests/lora/conftest.py`, `tests/lora/test_qwen35_densemodel_lora.py`, `tests/lora/test_qwen35_densemoel_lora.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #36976 - [Bugfix][LoRA] Fix Qwen35 LoRA
+
+- Link: https://github.com/vllm-project/vllm/pull/36976
+- Status/date: merged / 2026-03-20
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `8fbe3f303fbf`
+- Diff scope read: GitHub Pull Request files API returned 5 files, +257/-46, 464 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix][LoRA] Fix Qwen35 LoRA"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix][LoRA] Fix Qwen35 LoRA"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +100/-23 (123 lines); hunks: -32,17 +32,18; -130,6 +131,40 @@ def fix_query_key_value_ordering(; symbols: fix_query_key_value_ordering, __init__, create_qkvz_proj, forward, touching `fix_query_key_value_ordering, __init__, create_qkvz_proj`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +100/-23 (123 lines); hunks: -32,17 +32,18; -130,6 +131,40 @@ def fix_query_key_value_ordering(; symbols: fix_query_key_value_ordering, __init__, create_qkvz_proj, forward
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -32,17 +32,18 @@
+-from vllm.config import (
+-    VllmConfig,
+-)
++from vllm.config import VllmConfig
+-from vllm.model_executor.layers.linear import MergedColumnParallelLinear
++from vllm.model_executor.layers.linear import (
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +100/-23
+- Risk and verification: The diff ships test coverage in `tests/lora/conftest.py`, `tests/lora/test_qwen35_densemoel_lora.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+
+### PR #37448 - Fix AttributeError in Qwen3.5 GDN layers with quantized models
+
+- Link: https://github.com/vllm-project/vllm/pull/37448
+- Status/date: merged / 2026-03-19
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `4120a05ff1d0`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +4/-4, 22 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "Fix AttributeError in Qwen3.5 GDN layers with quantized models"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "Fix AttributeError in Qwen3.5 GDN layers with quantized models"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +2/-2 (4 lines); hunks: -182,8 +182,8 @@ def forward(; symbols: forward, touching `forward`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +2/-2 (4 lines); hunks: -182,8 +182,8 @@ def forward(; symbols: forward
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -182,8 +182,8 @@ def forward(
+-            self.in_proj_qkvz.weight.shape[0],
+-            self.in_proj_ba.weight.shape[0],
++            sum(self.in_proj_qkvz.output_sizes) // self.tp_size,
++            sum(self.in_proj_ba.output_sizes) // self.tp_size,
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +2/-2
 - Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
 ### PR #36887 - [Model] Add ColQwen3.5 4.5B support
 
 - Link: https://github.com/vllm-project/vllm/pull/36887
 - Status/date: merged / 2026-03-17
-- Trace source: `git log --name-only -- <model-files>` found it through `examples/pooling/score/colqwen3_5_rerank_online.py`, `tests/models/multimodal/pooling/test_colqwen3_5.py`, `vllm/model_executor/models/colqwen3_5.py`; associated commits `c0745a851a4f`; preserved from an explicit existing history/skill citation
+- Trace source: `git log --name-only -- <model-files>` found it through `examples/pooling/score/colqwen3_5_rerank_online.py`, `tests/models/multimodal/pooling/test_colqwen3_5.py`, `vllm/model_executor/models/colqwen3_5.py`; associated commits `c0745a851a4f`
 - Diff scope read: GitHub Pull Request files API returned 8 files, +579/-0, 619 readable patch lines; this card prioritizes model-related and high-change files.
 - Motivation: Title: "[Model] Add ColQwen3.5 4.5B support"; model line: Qwen3.5; category: docs/tests/CI; main diff: `vllm/model_executor/models/colqwen3_5.py`, `tests/models/multimodal/pooling/test_colqwen3_5.py`, `examples/pooling/score/colqwen3_5_rerank_online.py`; technical summary: Covers "[Model] Add ColQwen3.5 4.5B support"; the main implementation surface is `vllm/model_executor/models/colqwen3_5.py`, `tests/models/multimodal/pooling/test_colqwen3_5.py`, `examples/pooling/score/colqwen3_5_rerank_online.py`. File-level evidence, code excerpts, and validation risks are preserved below.
 - Key implementation: `vllm/model_executor/models/colqwen3_5.py` added +246/-0 (246 lines); hunks: -0,0 +1,246; symbols: ColQwen3_5ProcessingInfo, get_hf_config, get_hf_processor, _supports_video, touching `ColQwen3_5ProcessingInfo, get_hf_config, get_hf_processor`; `tests/models/multimodal/pooling/test_colqwen3_5.py` added +154/-0 (154 lines); hunks: -0,0 +1,154; symbols: _run_token_embed_test, _run_late_interaction_test, _run_relevance_test, test_colqwen3_5_token_embed, touching `_run_token_embed_test, _run_late_interaction_test, _run_relevance_test`; `examples/pooling/score/colqwen3_5_rerank_online.py` added +130/-0 (130 lines); hunks: -0,0 +1,130; symbols: rerank_text, score_text, score_text_top_n, main, touching `rerank_text, score_text, score_text_top_n`.
@@ -685,368 +1281,385 @@ diff -- examples/pooling/score/colqwen3_5_rerank_online.py
   - docs: `examples/pooling/score/colqwen3_5_rerank_online.py` added +130/-0
 - Risk and verification: The diff ships test coverage in `tests/models/multimodal/pooling/test_colqwen3_5.py`, `tests/models/registry.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
 
-### PR #37448 - Fix AttributeError in Qwen3.5 GDN layers with quantized models
+### PR #36658 - Add: Eagle3 support for Qwen3.5
 
-- Link: https://github.com/vllm-project/vllm/pull/37448
-- Status/date: merged / 2026-03-19
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `4120a05ff1d0`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +4/-4, 22 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "Fix AttributeError in Qwen3.5 GDN layers with quantized models"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "Fix AttributeError in Qwen3.5 GDN layers with quantized models"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +2/-2 (4 lines); hunks: -182,8 +182,8 @@ def forward(; symbols: forward, touching `forward`.
+- Link: https://github.com/vllm-project/vllm/pull/36658
+- Status/date: merged / 2026-03-11
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `9d07a3d6e472`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +25/-2, 83 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "Add: Eagle3 support for Qwen3.5"; model line: Qwen3.5; category: model support/runtime entry; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "Add: Eagle3 support for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +11/-0 (11 lines); hunks: -75,6 +75,7; -353,6 +354,8 @@ def get_layer(prefix: str):; symbols: get_layer, load_fused_expert_weights, load_weights, Qwen3_5ForCausalLMBase, touching `get_layer, load_fused_expert_weights, load_weights`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +2/-2 (4 lines); hunks: -182,8 +182,8 @@ def forward(; symbols: forward
+  - `vllm/model_executor/models/qwen3_5.py` modified +11/-0 (11 lines); hunks: -75,6 +75,7; -353,6 +354,8 @@ def get_layer(prefix: str):; symbols: get_layer, load_fused_expert_weights, load_weights, Qwen3_5ForCausalLMBase
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5.py
-@@ -182,8 +182,8 @@ def forward(
--            self.in_proj_qkvz.weight.shape[0],
--            self.in_proj_ba.weight.shape[0],
-+            sum(self.in_proj_qkvz.output_sizes) // self.tp_size,
-+            sum(self.in_proj_ba.output_sizes) // self.tp_size,
+@@ -75,6 +75,7 @@
++    SupportsEagle3,
+@@ -353,6 +354,8 @@ def get_layer(prefix: str):
++        self.aux_hidden_state_layers: tuple[int, ...] = ()
+@@ -536,6 +539,7 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
++    SupportsEagle3,
+@@ -592,6 +596,13 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +2/-2
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +11/-0
 - Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #36976 - [Bugfix][LoRA] Fix Qwen35 LoRA
+### PR #35617 - [Bugfix][Model] Fix Qwen3.5/Qwen3Next ignoring --dtype flag on older GPUs
 
-- Link: https://github.com/vllm-project/vllm/pull/36976
-- Status/date: merged / 2026-03-20
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `8fbe3f303fbf`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 5 files, +257/-46, 464 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix][LoRA] Fix Qwen35 LoRA"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix][LoRA] Fix Qwen35 LoRA"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +100/-23 (123 lines); hunks: -32,17 +32,18; -130,6 +131,40 @@ def fix_query_key_value_ordering(; symbols: fix_query_key_value_ordering, __init__, create_qkvz_proj, forward, touching `fix_query_key_value_ordering, __init__, create_qkvz_proj`.
+- Link: https://github.com/vllm-project/vllm/pull/35617
+- Status/date: merged / 2026-03-01
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `afd089f231d7`
+- Diff scope read: GitHub Pull Request files API returned 2 files, +0/-5, 40 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix][Model] Fix Qwen3.5/Qwen3Next ignoring --dtype flag on older GPUs"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix][Model] Fix Qwen3.5/Qwen3Next ignoring --dtype flag on older GPUs"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +0/-2 (2 lines); hunks: -274,15 +274,13 @@ def __init__(; symbols: __init__, touching `__init__`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +100/-23 (123 lines); hunks: -32,17 +32,18; -130,6 +131,40 @@ def fix_query_key_value_ordering(; symbols: fix_query_key_value_ordering, __init__, create_qkvz_proj, forward
+  - `vllm/model_executor/models/qwen3_5.py` modified +0/-2 (2 lines); hunks: -274,15 +274,13 @@ def __init__(; symbols: __init__
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5.py
-@@ -32,17 +32,18 @@
--from vllm.config import (
--    VllmConfig,
--)
-+from vllm.config import VllmConfig
--from vllm.model_executor.layers.linear import MergedColumnParallelLinear
-+from vllm.model_executor.layers.linear import (
+@@ -274,15 +274,13 @@ def __init__(
+-                    dtype=config.dtype,
+-                    dtype=config.dtype,
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +100/-23
-- Risk and verification: The diff ships test coverage in `tests/lora/conftest.py`, `tests/lora/test_qwen35_densemoel_lora.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +0/-2
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #37816 - [CI/Build][LoRA] Update Qwen35 LoRA testing
+### PR #35581 - Fix Qwen3_5MTP packed_modules_mapping for gate_up_proj
 
-- Link: https://github.com/vllm-project/vllm/pull/37816
-- Status/date: merged / 2026-03-23
-- Trace source: `git log --name-only -- <model-files>` found it through `tests/lora/test_qwen35_densemodel_lora.py`; associated commits `1f0d21064137`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 4 files, +369/-135, 529 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[CI/Build][LoRA] Update Qwen35 LoRA testing"; model line: Qwen3.5; category: docs/tests/CI; main diff: `tests/lora/test_qwen35_densemodel_lora.py`; technical summary: Covers "[CI/Build][LoRA] Update Qwen35 LoRA testing"; the main implementation surface is `tests/lora/test_qwen35_densemodel_lora.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `tests/lora/test_qwen35_densemodel_lora.py` added +361/-0 (361 lines); hunks: -0,0 +1,361; symbols: _assert_exact_outputs, _assert_prefix_outputs, _run_text_lora_sample, _run_vl_lora_sample, touching `_assert_exact_outputs, _assert_prefix_outputs, _run_text_lora_sample`.
+- Link: https://github.com/vllm-project/vllm/pull/35581
+- Status/date: merged / 2026-02-28
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `63d7972f13d1`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +1/-1, 9 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "Fix Qwen3_5MTP packed_modules_mapping for gate_up_proj"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "Fix Qwen3_5MTP packed_modules_mapping for gate_up_proj"; the main implementation surface is `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5_mtp.py` modified +1/-1 (2 lines); hunks: -339,7 +339,7 @@ class Qwen3_5MTP(nn.Module, SupportsMultiModal):; symbols: Qwen3_5MTP, __init__, touching `Qwen3_5MTP, __init__`.
 - Code diff details:
-  - `tests/lora/test_qwen35_densemodel_lora.py` added +361/-0 (361 lines); hunks: -0,0 +1,361; symbols: _assert_exact_outputs, _assert_prefix_outputs, _run_text_lora_sample, _run_vl_lora_sample
-- Key code excerpts:
-
-```diff
-diff -- tests/lora/test_qwen35_densemodel_lora.py
-@@ -0,0 +1,361 @@
-+# SPDX-License-Identifier: Apache-2.0
-+# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
-+from transformers import AutoTokenizer
-+import vllm
-+import vllm.config
-+from vllm.assets.image import ImageAsset
-```
-
-- Reviewed files:
-  - tests: `tests/lora/test_qwen35_densemodel_lora.py` added +361/-0
-- Risk and verification: The diff ships test coverage in `tests/lora/conftest.py`, `tests/lora/test_qwen35_densemodel_lora.py`, `tests/lora/test_qwen35_densemoel_lora.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
-
-### PR #38083 - [Bugfix] Fix DeepGemm E8M0 accuracy degradation for Qwen3.5 FP8 on Blackwell
-
-- Link: https://github.com/vllm-project/vllm/pull/38083
-- Status/date: merged / 2026-03-26
-- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt`; associated commits `52069012fe53`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 10 files, +69/-11, 177 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Fix DeepGemm E8M0 accuracy degradation for Qwen3.5 FP8 on Blackwell"; model line: Qwen3.5; category: bug fix; main diff: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml`; technical summary: Covers "[Bugfix] Fix DeepGemm E8M0 accuracy degradation for Qwen3.5 FP8 on Blackwell"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` added +9/-0 (9 lines); hunks: -0,0 +1,9; `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +2/-1 (3 lines); hunks: -1,5 +1,6; `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml` modified +2/-1 (3 lines); hunks: -1,5 +1,6; `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` modified +2/-0 (2 lines); hunks: -1 +1,3.
-- Code diff details:
-  - `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` added +9/-0 (9 lines); hunks: -0,0 +1,9
-  - `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +2/-1 (3 lines); hunks: -1,5 +1,6
-  - `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml` modified +2/-1 (3 lines); hunks: -1,5 +1,6
-  - `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` modified +2/-0 (2 lines); hunks: -1 +1,3
-- Key code excerpts:
-
-```diff
-diff -- tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml
-@@ -0,0 +1,9 @@
-+model_name: "nvidia/Qwen3.5-397B-A17B-NVFP4"
-+accuracy_threshold: 0.88
-+tolerance: 0.03
-+num_questions: 1319
-+num_fewshot: 5
-+server_args: >-
-diff -- tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml
-@@ -1,5 +1,6 @@
--accuracy_threshold: 0.86
-+accuracy_threshold: 0.84
-+tolerance: 0.03
-diff -- tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml
-@@ -1,5 +1,6 @@
--accuracy_threshold: 0.86
-+accuracy_threshold: 0.79
-+tolerance: 0.03
-```
-
-- Reviewed files:
-  - tests: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` added +9/-0; `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml` modified +2/-1; `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml` modified +2/-1; `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt` modified +2/-0
-- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-FP8-DEP2.yaml`, `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-blackwell.txt`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
-
-### PR #38155 - [ROCm][CI] Add LM Eval Qwen3.5 Models test for MI355
-
-- Link: https://github.com/vllm-project/vllm/pull/38155
-- Status/date: merged / 2026-03-26
-- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; associated commits `9c3ae04bfe65`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +25/-0, 30 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[ROCm][CI] Add LM Eval Qwen3.5 Models test for MI355"; model line: Qwen3.5; category: docs/tests/CI; main diff: `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; technical summary: Covers "[ROCm][CI] Add LM Eval Qwen3.5 Models test for MI355"; the main implementation surface is `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` added +1/-0 (1 lines); hunks: -0,0 +1.
-- Code diff details:
-  - `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` added +1/-0 (1 lines); hunks: -0,0 +1
-- Key code excerpts:
-
-```diff
-diff -- tests/evals/gsm8k/configs/models-qwen35-mi355.txt
-@@ -0,0 +1 @@
-+Qwen3.5-35B-A3B-DEP2.yaml
-```
-
-- Reviewed files:
-  - tests: `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` added +1/-0
-- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
-
-### PR #37975 - [Model] Extract GatedDeltaNetAttention into shared layer for Qwen3Next and Qwen3.5
-
-- Link: https://github.com/vllm-project/vllm/pull/37975
-- Status/date: merged / 2026-03-27
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `a8eab8f30dda`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 3 files, +1053/-1126, 2304 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Model] Extract GatedDeltaNetAttention into shared layer for Qwen3Next and Qwen3.5"; model line: Qwen3.5; category: model implementation change; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Model] Extract GatedDeltaNetAttention into shared layer for Qwen3Next and Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +4/-151 (155 lines); hunks: -28,7 +28,6; -40,18 +39,14; symbols: get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering, __init__, touching `get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +4/-151 (155 lines); hunks: -28,7 +28,6; -40,18 +39,14; symbols: get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering, __init__
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/models/qwen3_5.py
-@@ -28,7 +28,6 @@
--from einops import rearrange
-@@ -40,18 +39,14 @@
--from vllm.model_executor.layers.linear import (
--    ColumnParallelLinear,
--    MergedColumnParallelLinear,
--)
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +4/-151
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/mamba/gdn_linear_attn.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #38632 - [CI] fix LM Eval Qwen3.5 Models (B200)
-
-- Link: https://github.com/vllm-project/vllm/pull/38632
-- Status/date: merged / 2026-03-31
-- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`; associated commits `ea7bfde6e40d`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +1/-0, 5 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[CI] fix LM Eval Qwen3.5 Models (B200)"; model line: Qwen3.5; category: bug fix; main diff: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`; technical summary: Covers "[CI] fix LM Eval Qwen3.5 Models (B200)"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` modified +1/-0 (1 lines); hunks: -7,3 +7,4 @@ server_args: >-.
-- Code diff details:
-  - `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` modified +1/-0 (1 lines); hunks: -7,3 +7,4 @@ server_args: >-
-- Key code excerpts:
-
-```diff
-diff -- tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml
-@@ -7,3 +7,4 @@ server_args: >-
-+  --max-num-seqs 512
-```
-
-- Reviewed files:
-  - tests: `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml` modified +1/-0
-- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-397B-A17B-NVFP4-DEP2.yaml`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
-
-### PR #38650 - [Bugfix] Enable MTP for the official Qwen3.5 NVFP4 checkpoint
-
-- Link: https://github.com/vllm-project/vllm/pull/38650
-- Status/date: closed / 2026-04-02
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +25/-9, 70 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Enable MTP for the official Qwen3.5 NVFP4 checkpoint"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "[Bugfix] Enable MTP for the official Qwen3.5 NVFP4 checkpoint"; the main implementation surface is `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5_mtp.py` modified +25/-9 (34 lines); hunks: -15,6 +15,7; -43,6 +44,15; symbols: _get_qwen3_5_mtp_quant_config, __init__, touching `_get_qwen3_5_mtp_quant_config, __init__`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +25/-9 (34 lines); hunks: -15,6 +15,7; -43,6 +44,15; symbols: _get_qwen3_5_mtp_quant_config, __init__
+  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +1/-1 (2 lines); hunks: -339,7 +339,7 @@ class Qwen3_5MTP(nn.Module, SupportsMultiModal):; symbols: Qwen3_5MTP, __init__
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5_mtp.py
-@@ -15,6 +15,7 @@
-+from vllm.model_executor.layers.quantization import QuantizationConfig
-@@ -43,6 +44,15 @@
-+def _get_qwen3_5_mtp_quant_config(
-+    quant_config: QuantizationConfig | None,
-+) -> QuantizationConfig | None:
-+    # Qwen3.5 NVFP4 checkpoints keep the entire MTP branch in bf16 weights.
+@@ -339,7 +339,7 @@ class Qwen3_5MTP(nn.Module, SupportsMultiModal):
+-        "gate_up_proj": ["up_proj", "down_proj"],
++        "gate_up_proj": ["gate_proj", "up_proj"],
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5_mtp.py` modified +25/-9
+  - runtime: `vllm/model_executor/models/qwen3_5_mtp.py` modified +1/-1
 - Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5_mtp.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #38832 - [Bugfix] Fix NVFP4+MTP crash: force unquantized mtp.fc for Qwen3.5
+### PR #34719 - [Bugfix] Qwen3.5 kv-scale weight remapping
 
-- Link: https://github.com/vllm-project/vllm/pull/38832
-- Status/date: merged / 2026-04-03
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `771913e4a024`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +10/-1, 24 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] Fix NVFP4+MTP crash: force unquantized mtp.fc for Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "[Bugfix] Fix NVFP4+MTP crash: force unquantized mtp.fc for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5_mtp.py` modified +10/-1 (11 lines); hunks: -75,13 +75,22 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__, touching `__init__`.
+- Link: https://github.com/vllm-project/vllm/pull/34719
+- Status/date: merged / 2026-02-19
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `6fff24f30fe2`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +7/-0, 21 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Qwen3.5 kv-scale weight remapping"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Qwen3.5 kv-scale weight remapping"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +7/-0 (7 lines); hunks: -57,6 +57,7; -397,6 +398,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights, touching `load_weights`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +10/-1 (11 lines); hunks: -75,13 +75,22 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str =...; symbols: __init__
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/models/qwen3_5_mtp.py
-@@ -75,13 +75,22 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
-+        # Workaround: mtp.fc is stored as BF16 in NVFP4 checkpoints but is
-+        # missing from hf_quant_config.json exclude_modules. Force unquantized.
-+        # Ref: https://github.com/vllm-project/vllm/pull/38650
-+        # Ref: https://github.com/NVIDIA/Model-Optimizer/pull/1124
-+        fc_quant = (
-+            None
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5_mtp.py` modified +10/-1
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5_mtp.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #38664 - [CI][ROCm] Add Qwen3.5-35B-A3B-MXFP4 model eval into CI
-
-- Link: https://github.com/vllm-project/vllm/pull/38664
-- Status/date: merged / 2026-04-03
-- Trace source: `git log --name-only -- <model-files>` found it through `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; associated commits `201d2ea5bfb9`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +9/-0, 12 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[CI][ROCm] Add Qwen3.5-35B-A3B-MXFP4 model eval into CI"; model line: Qwen3.5; category: performance/backend optimization; main diff: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; technical summary: Covers "[CI][ROCm] Add Qwen3.5-35B-A3B-MXFP4 model eval into CI"; the main implementation surface is `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml` added +8/-0 (8 lines); hunks: -0,0 +1,8; `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` modified +1/-0 (1 lines); hunks: -1 +1,2.
-- Code diff details:
-  - `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml` added +8/-0 (8 lines); hunks: -0,0 +1,8
-  - `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` modified +1/-0 (1 lines); hunks: -1 +1,2
-- Key code excerpts:
-
-```diff
-diff -- tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml
-@@ -0,0 +1,8 @@
-+model_name: "amd/Qwen3.5-35B-A3B-MXFP4"
-+accuracy_threshold: 0.82
-+tolerance: 0.03
-+num_questions: 1319
-+num_fewshot: 5
-+server_args: >-
-diff -- tests/evals/gsm8k/configs/models-qwen35-mi355.txt
-@@ -1 +1,2 @@
-+Qwen3.5-35B-A3B-MXFP4-TP2.yaml
-```
-
-- Reviewed files:
-  - tests: `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml` added +8/-0; `tests/evals/gsm8k/configs/models-qwen35-mi355.txt` modified +1/-0
-- Risk and verification: The diff ships test coverage in `tests/evals/gsm8k/configs/Qwen3.5-35B-A3B-MXFP4-TP2.yaml`, `tests/evals/gsm8k/configs/models-qwen35-mi355.txt`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
-
-### PR #38927 - [Bugfix][LoRA] Fix missing in_proj_z in Qwen3_5ForConditionalGenerati…
-
-- Link: https://github.com/vllm-project/vllm/pull/38927
-- Status/date: merged / 2026-04-03
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `81994e1d0ea6`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 1 files, +1/-0, 8 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix][LoRA] Fix missing in_proj_z in Qwen3_5ForConditionalGenerati…"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix][LoRA] Fix missing in_proj_z in Qwen3_5ForConditionalGenerati…"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +1/-0 (1 lines); hunks: -620,6 +620,7 @@ def update_packed_mapping(self, enable_lora: bool):; symbols: update_packed_mapping, embed_input_ids, touching `update_packed_mapping, embed_input_ids`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +1/-0 (1 lines); hunks: -620,6 +620,7 @@ def update_packed_mapping(self, enable_lora: bool):; symbols: update_packed_mapping, embed_input_ids
+  - `vllm/model_executor/models/qwen3_5.py` modified +7/-0 (7 lines); hunks: -57,6 +57,7; -397,6 +398,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5.py
-@@ -620,6 +620,7 @@ def update_packed_mapping(self, enable_lora: bool):
-+            self.packed_modules_mapping["in_proj_z"] = ["in_proj_z"]
+@@ -57,6 +57,7 @@
++    maybe_remap_kv_scale_name,
+@@ -397,6 +398,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
++            # Remapping the name of FP8 kv-scale.
++            if name.endswith("scale"):
++                name = maybe_remap_kv_scale_name(name, params_dict)
++                if name is None:
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +1/-0
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +7/-0
 - Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
 
-### PR #39181 - [Bugfix]Fix EP precision for Qwen3.5, Qwen3-Next
+### PR #34697 - [Bugfix] Redo Qwen3.5/Qwen3-Next GDN projector fusion
 
-- Link: https://github.com/vllm-project/vllm/pull/39181
-- Status/date: merged / 2026-04-08
-- Trace source: preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 2 files, +4/-0, 32 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix]Fix EP precision for Qwen3.5, Qwen3-Next"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen2_moe.py`, `vllm/model_executor/models/qwen3_next.py`; technical summary: Covers "[Bugfix]Fix EP precision for Qwen3.5, Qwen3-Next"; the main implementation surface is `vllm/model_executor/models/qwen2_moe.py`, `vllm/model_executor/models/qwen3_next.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen2_moe.py` modified +3/-0 (3 lines); hunks: -80,6 +80,7 @@ def __init__(; -88,6 +89,7 @@ def __init__(; symbols: __init__, touching `__init__`; `vllm/model_executor/models/qwen3_next.py` modified +1/-0 (1 lines); hunks: -140,6 +140,7 @@ def __init__(self, vllm_config: VllmConfig, prefix: str = ""):; symbols: __init__, touching `__init__`.
+- Link: https://github.com/vllm-project/vllm/pull/34697
+- Status/date: merged / 2026-02-18
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `c0bd8b13da36`
+- Diff scope read: GitHub Pull Request files API returned 3 files, +102/-192, 477 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Redo Qwen3.5/Qwen3-Next GDN projector fusion"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Redo Qwen3.5/Qwen3-Next GDN projector fusion"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +43/-170 (213 lines); hunks: -30,36 +30,20; -73,11 +57,8; symbols: get_hf_config, Qwen3_5GatedDeltaNet, __init__, fix_query_key_value_ordering, touching `get_hf_config, Qwen3_5GatedDeltaNet, __init__`.
 - Code diff details:
-  - `vllm/model_executor/models/qwen2_moe.py` modified +3/-0 (3 lines); hunks: -80,6 +80,7 @@ def __init__(; -88,6 +89,7 @@ def __init__(; symbols: __init__
-  - `vllm/model_executor/models/qwen3_next.py` modified +1/-0 (1 lines); hunks: -140,6 +140,7 @@ def __init__(self, vllm_config: VllmConfig, prefix: str = ""):; symbols: __init__
-- Key code excerpts:
-
-```diff
-diff -- vllm/model_executor/models/qwen2_moe.py
-@@ -80,6 +80,7 @@ def __init__(
-+        is_sequence_parallel: bool = False,
-@@ -88,6 +89,7 @@ def __init__(
-+            disable_tp=is_sequence_parallel,
-@@ -96,6 +98,7 @@ def __init__(
-+            disable_tp=is_sequence_parallel,
-diff -- vllm/model_executor/models/qwen3_next.py
-@@ -140,6 +140,7 @@ def __init__(self, vllm_config: VllmConfig, prefix: str = ""):
-+                is_sequence_parallel=self.is_sequence_parallel,
-```
-
-- Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen2_moe.py` modified +3/-0; `vllm/model_executor/models/qwen3_next.py` modified +1/-0
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen2_moe.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
-
-### PR #37114 - [Bugfix] LoRA: extend expert base_layer loading to Qwen3.5 and Step3.x
-
-- Link: https://github.com/vllm-project/vllm/pull/37114
-- Status/date: merged / 2026-04-21
-- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `908a713488db`; preserved from an explicit existing history/skill citation
-- Diff scope read: GitHub Pull Request files API returned 6 files, +34/-16, 104 readable patch lines; this card prioritizes model-related and high-change files.
-- Motivation: Title: "[Bugfix] LoRA: extend expert base_layer loading to Qwen3.5 and Step3.x"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "[Bugfix] LoRA: extend expert base_layer loading to Qwen3.5 and Step3.x"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
-- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +5/-2 (7 lines); hunks: -306,9 +306,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights, touching `load_weights`; `vllm/model_executor/models/qwen3_5_mtp.py` modified +5/-2 (7 lines); hunks: -207,9 +207,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights, touching `load_weights`.
-- Code diff details:
-  - `vllm/model_executor/models/qwen3_5.py` modified +5/-2 (7 lines); hunks: -306,9 +306,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights
-  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +5/-2 (7 lines); hunks: -207,9 +207,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.T...; symbols: load_weights
+  - `vllm/model_executor/models/qwen3_5.py` modified +43/-170 (213 lines); hunks: -30,36 +30,20; -73,11 +57,8; symbols: get_hf_config, Qwen3_5GatedDeltaNet, __init__, fix_query_key_value_ordering
 - Key code excerpts:
 
 ```diff
 diff -- vllm/model_executor/models/qwen3_5.py
-@@ -306,9 +306,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
-+        base_layer = (
-+            "base_layer." if any(".base_layer." in name for name in params_dict) else ""
-+        )
--            ("experts.w13_weight", "experts.gate_up_proj", 0, "w1"),
--            ("experts.w2_weight", "experts.down_proj", 0, "w2"),
-+            (f"experts.{base_layer}w13_weight", "experts.gate_up_proj", 0, "w1"),
-diff -- vllm/model_executor/models/qwen3_5_mtp.py
-@@ -207,9 +207,12 @@ def load_weights(self, weights: Iterable[tuple[str, torch.Tensor]]) -> set[str]:
-+        base_layer = (
-+            "base_layer." if any(".base_layer." in name for name in params_dict) else ""
-+        )
--            ("experts.w13_weight", "experts.gate_up_proj", 0, "w1"),
--            ("experts.w2_weight", "experts.down_proj", 0, "w2"),
-+            (f"experts.{base_layer}w13_weight", "experts.gate_up_proj", 0, "w1"),
+@@ -30,36 +30,20 @@
+-from transformers.activations import ACT2FN
+-    CacheConfig,
+-    ModelConfig,
+-    SpeculativeConfig,
+-    get_current_vllm_config,
+-    divide,
 ```
 
 - Reviewed files:
-  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +5/-2; `vllm/model_executor/models/qwen3_5_mtp.py` modified +5/-2
-- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/model_executor/models/qwen3_vl_moe.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +43/-170
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/linear.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #34723 - [Bugfix] Fix prefix creation for Qwen3.5
+
+- Link: https://github.com/vllm-project/vllm/pull/34723
+- Status/date: merged / 2026-02-18
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `909b14719725`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +6/-5, 32 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Fix prefix creation for Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Fix prefix creation for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +6/-5 (11 lines); hunks: -542,9 +542,10 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; -620,7 +621,7 @@ def get_expert_mapping(self) -> list[tuple[str, str, int, st...; symbols: __init__, get_expert_mapping, Qwen3_5ForConditionalGeneration, touching `__init__, get_expert_mapping, Qwen3_5ForConditionalGeneration`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +6/-5 (11 lines); hunks: -542,9 +542,10 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str...; -620,7 +621,7 @@ def get_expert_mapping(self) -> list[tuple[str, str, int, st...; symbols: __init__, get_expert_mapping, Qwen3_5ForConditionalGeneration
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -542,9 +542,10 @@ def __init__(self, *, vllm_config: VllmConfig, prefix: str = ""):
+-        self.model = Qwen3_5Model(
+-            vllm_config=vllm_config, prefix=maybe_prefix(prefix, "model")
+-        )
++        # Deal with the case where the prefix is already "language_model" since
++        # Qwen/Qwen3.5-397B-A17B has naming like: model.language_model.layers.0
++        model_prefix = prefix if "model" in prefix else "model"
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +6/-5
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #34683 - Revert "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj"
+
+- Link: https://github.com/vllm-project/vllm/pull/34683
+- Status/date: merged / 2026-02-17
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `1d65283e95f4`
+- Diff scope read: GitHub Pull Request files API returned 3 files, +182/-87, 402 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "Revert "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj""; model line: Qwen3.5; category: performance/backend optimization; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "Revert "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj""; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +166/-32 (198 lines); hunks: -30,20 +30,36; -57,8 +73,11; symbols: get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering, __init__, touching `get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +166/-32 (198 lines); hunks: -30,20 +30,36; -57,8 +73,11; symbols: get_hf_config, Qwen3_5GatedDeltaNet, fix_query_key_value_ordering, __init__
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -30,20 +30,36 @@
++from transformers.activations import ACT2FN
++    CacheConfig,
++    ModelConfig,
++    SpeculativeConfig,
++    get_current_vllm_config,
++    divide,
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +166/-32
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/linear.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #34492 - [Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj
+
+- Link: https://github.com/vllm-project/vllm/pull/34492
+- Status/date: merged / 2026-02-16
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `3bb4e4311c6d`
+- Diff scope read: GitHub Pull Request files API returned 3 files, +87/-182, 404 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj"; model line: Qwen3.5; category: performance/backend optimization; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Models] Fuse Qwen3.5 GDN's qkvz_proj and ba_proj"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +32/-166 (198 lines); hunks: -30,36 +30,20; -73,11 +57,8; symbols: get_hf_config, Qwen3_5GatedDeltaNet, __init__, fix_query_key_value_ordering, touching `get_hf_config, Qwen3_5GatedDeltaNet, __init__`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +32/-166 (198 lines); hunks: -30,36 +30,20; -73,11 +57,8; symbols: get_hf_config, Qwen3_5GatedDeltaNet, __init__, fix_query_key_value_ordering
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -30,36 +30,20 @@
+-from transformers.activations import ACT2FN
+-    CacheConfig,
+-    ModelConfig,
+-    SpeculativeConfig,
+-    get_current_vllm_config,
+-    divide,
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +32/-166
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/linear.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_next.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #34512 - [Misc] Port Qwen3.5 Configs
+
+- Link: https://github.com/vllm-project/vllm/pull/34512
+- Status/date: merged / 2026-02-13
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `5885e330efea`
+- Diff scope read: GitHub Pull Request files API returned 6 files, +410/-12, 473 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Misc] Port Qwen3.5 Configs"; model line: Qwen3.5; category: model implementation change; main diff: `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "[Misc] Port Qwen3.5 Configs"; the main implementation surface is `vllm/transformers_utils/configs/qwen3_5.py`, `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/transformers_utils/configs/qwen3_5.py` added +189/-0 (189 lines); hunks: -0,0 +1,189; symbols: Qwen3_5TextConfig, __init__, Qwen3_5VisionConfig, Qwen3_5Config, touching `Qwen3_5TextConfig, __init__, Qwen3_5VisionConfig`; `vllm/model_executor/models/qwen3_5.py` modified +8/-8 (16 lines); hunks: -31,14 +31,6; -87,6 +79,14; `vllm/model_executor/models/qwen3_5_mtp.py` modified +2/-4 (6 lines); hunks: -7,10 +7,6; -27,6 +23,8.
+- Code diff details:
+  - `vllm/transformers_utils/configs/qwen3_5.py` added +189/-0 (189 lines); hunks: -0,0 +1,189; symbols: Qwen3_5TextConfig, __init__, Qwen3_5VisionConfig, Qwen3_5Config
+  - `vllm/model_executor/models/qwen3_5.py` modified +8/-8 (16 lines); hunks: -31,14 +31,6; -87,6 +79,14
+  - `vllm/model_executor/models/qwen3_5_mtp.py` modified +2/-4 (6 lines); hunks: -7,10 +7,6; -27,6 +23,8
+- Key code excerpts:
+
+```diff
+diff -- vllm/transformers_utils/configs/qwen3_5.py
+@@ -0,0 +1,189 @@
++# SPDX-License-Identifier: Apache-2.0
++# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
++# Copyright 2025 The Qwen Team and The HuggingFace Inc. team.
++# All rights reserved.
++#
++# Licensed under the Apache License, Version 2.0 (the "License");
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -31,14 +31,6 @@
+-from transformers.models.qwen3_5.configuration_qwen3_5 import (
+-    Qwen3_5Config,
+-    Qwen3_5TextConfig,
+-)
+-from transformers.models.qwen3_5_moe.configuration_qwen3_5_moe import (
+-    Qwen3_5MoeConfig,
+diff -- vllm/model_executor/models/qwen3_5_mtp.py
+@@ -7,10 +7,6 @@
+```
+
+- Reviewed files:
+  - runtime: `vllm/transformers_utils/configs/qwen3_5.py` added +189/-0; `vllm/model_executor/models/qwen3_5.py` modified +8/-8; `vllm/model_executor/models/qwen3_5_mtp.py` modified +2/-4
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`, `vllm/transformers_utils/config.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #34489 - [Bugfix] Fix mamba state dtype setting for Qwen3-Next and Qwen3.5
+
+- Link: https://github.com/vllm-project/vllm/pull/34489
+- Status/date: merged / 2026-02-13
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `eea3024f43e0`
+- Diff scope read: GitHub Pull Request files API returned 4 files, +42/-6, 91 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Fix mamba state dtype setting for Qwen3-Next and Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Fix mamba state dtype setting for Qwen3-Next and Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +3/-2 (5 lines); hunks: -870,9 +870,10 @@ def get_mamba_state_dtype_from_config(; symbols: get_mamba_state_dtype_from_config, touching `get_mamba_state_dtype_from_config`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +3/-2 (5 lines); hunks: -870,9 +870,10 @@ def get_mamba_state_dtype_from_config(; symbols: get_mamba_state_dtype_from_config
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -870,9 +870,10 @@ def get_mamba_state_dtype_from_config(
+-        mamba_ssm_dtype = vllm_config.model_config.hf_text_config.mamba_ssm_dtype
+-            vllm_config.model_config.dtype, mamba_ssm_dtype
++            vllm_config.model_config.dtype,
++            vllm_config.cache_config.mamba_cache_dtype,
++            vllm_config.cache_config.mamba_ssm_cache_dtype,
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +3/-2
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/layers/mamba/mamba_utils.py`, `vllm/model_executor/models/config.py`, `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #34313 - [Bugfix] Fix weight naming in Qwen3.5
+
+- Link: https://github.com/vllm-project/vllm/pull/34313
+- Status/date: merged / 2026-02-11
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `0b20469c627e`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +1/-1, 9 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Fix weight naming in Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Fix weight naming in Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +1/-1 (2 lines); hunks: -206,7 +206,7 @@ def __init__(; symbols: __init__, touching `__init__`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +1/-1 (2 lines); hunks: -206,7 +206,7 @@ def __init__(; symbols: __init__
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -206,7 +206,7 @@ def __init__(
+-            prefix=f"{prefix}.in_proj_ba",
++            prefix=f"{prefix}.in_proj_b",
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +1/-1
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #34200 - [Bugfix] Fix mamba cache dtype for Qwen3.5
+
+- Link: https://github.com/vllm-project/vllm/pull/34200
+- Status/date: merged / 2026-02-10
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `9615575afc0d`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +2/-1, 11 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Fix mamba cache dtype for Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Fix mamba cache dtype for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +2/-1 (3 lines); hunks: -867,8 +867,9 @@ def get_mamba_state_dtype_from_config(; symbols: get_mamba_state_dtype_from_config, touching `get_mamba_state_dtype_from_config`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +2/-1 (3 lines); hunks: -867,8 +867,9 @@ def get_mamba_state_dtype_from_config(; symbols: get_mamba_state_dtype_from_config
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -867,8 +867,9 @@ def get_mamba_state_dtype_from_config(
++        mamba_ssm_dtype = vllm_config.model_config.hf_text_config.mamba_ssm_dtype
+-            vllm_config.model_config.dtype, vllm_config.cache_config.mamba_cache_dtype
++            vllm_config.model_config.dtype, mamba_ssm_dtype
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +2/-1
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #34198 - [Bugfix] Adopt `ChunkGatedDeltaRule` for Qwen3.5
+
+- Link: https://github.com/vllm-project/vllm/pull/34198
+- Status/date: merged / 2026-02-10
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`; associated commits `047a457fa4af`
+- Diff scope read: GitHub Pull Request files API returned 1 files, +3/-0, 17 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[Bugfix] Adopt `ChunkGatedDeltaRule` for Qwen3.5"; model line: Qwen3.5; category: bug fix; main diff: `vllm/model_executor/models/qwen3_5.py`; technical summary: Covers "[Bugfix] Adopt `ChunkGatedDeltaRule` for Qwen3.5"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` modified +3/-0 (3 lines); hunks: -99,6 +99,7; -268,6 +269,8 @@ def __init__(; symbols: __init__, touching `__init__`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` modified +3/-0 (3 lines); hunks: -99,6 +99,7; -268,6 +269,8 @@ def __init__(; symbols: __init__
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -99,6 +99,7 @@
++    ChunkGatedDeltaRule,
+@@ -268,6 +269,8 @@ def __init__(
++        self.chunk_gated_delta_rule = ChunkGatedDeltaRule()
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` modified +3/-0
+- Risk and verification: Runtime changes concentrate in `vllm/model_executor/models/qwen3_5.py`; regression risk is weight loading, parallel sharding, attention/MoE backend selection, and parser output.
+
+### PR #34110 - [MODEL] Adding Support for Qwen3.5 Models
+
+- Link: https://github.com/vllm-project/vllm/pull/34110
+- Status/date: merged / 2026-02-09
+- Trace source: `git log --name-only -- <model-files>` found it through `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; associated commits `9562912cead1`
+- Diff scope read: GitHub Pull Request files API returned 11 files, +1501/-9, 1631 readable patch lines; this card prioritizes model-related and high-change files.
+- Motivation: Title: "[MODEL] Adding Support for Qwen3.5 Models"; model line: Qwen3.5; category: model support/runtime entry; main diff: `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`; technical summary: Covers "[MODEL] Adding Support for Qwen3.5 Models"; the main implementation surface is `vllm/model_executor/models/qwen3_5.py`, `vllm/model_executor/models/qwen3_5_mtp.py`. File-level evidence, code excerpts, and validation risks are preserved below.
+- Key implementation: `vllm/model_executor/models/qwen3_5.py` added +993/-0 (993 lines); hunks: -0,0 +1,993; symbols: Qwen3_5ProcessingInfo, get_hf_config, Qwen3_5MoeProcessingInfo, Qwen3_5GatedDeltaNet, touching `Qwen3_5ProcessingInfo, get_hf_config, Qwen3_5MoeProcessingInfo`; `vllm/model_executor/models/qwen3_5_mtp.py` added +447/-0 (447 lines); hunks: -0,0 +1,447; symbols: Qwen3_5MultiTokenPredictor, __init__, embed_input_ids, forward, touching `Qwen3_5MultiTokenPredictor, __init__, embed_input_ids`.
+- Code diff details:
+  - `vllm/model_executor/models/qwen3_5.py` added +993/-0 (993 lines); hunks: -0,0 +1,993; symbols: Qwen3_5ProcessingInfo, get_hf_config, Qwen3_5MoeProcessingInfo, Qwen3_5GatedDeltaNet
+  - `vllm/model_executor/models/qwen3_5_mtp.py` added +447/-0 (447 lines); hunks: -0,0 +1,447; symbols: Qwen3_5MultiTokenPredictor, __init__, embed_input_ids, forward
+- Key code excerpts:
+
+```diff
+diff -- vllm/model_executor/models/qwen3_5.py
+@@ -0,0 +1,993 @@
++# SPDX-License-Identifier: Apache-2.0
++# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
++# Copyright 2025 The vLLM team.
++# Copyright 2025 The Qwen Team.
++# Copyright 2025 The HuggingFace Inc. team.
++# All rights reserved.
+diff -- vllm/model_executor/models/qwen3_5_mtp.py
+@@ -0,0 +1,447 @@
++# SPDX-License-Identifier: Apache-2.0
++# SPDX-FileCopyrightText: Copyright contributors to the vLLM project
++"""Inference-only Qwen3_5 MTP model."""
++import typing
++from collections.abc import Callable, Iterable
++import torch
+```
+
+- Reviewed files:
+  - runtime: `vllm/model_executor/models/qwen3_5.py` added +993/-0; `vllm/model_executor/models/qwen3_5_mtp.py` added +447/-0
+- Risk and verification: The diff ships test coverage in `tests/models/registry.py`; future changes in this area should rerun those tests plus a minimal launch or accuracy smoke.
 
 ## Gap-Closure Notes
 
