@@ -11,6 +11,8 @@
 - Git-traced PRs: 0
 - Extra PRs preserved from existing docs: 0
 - Total PRs in this document: 0
+
+- Auto-classification note: PRs that cannot be safely pinned to one model family go into the framework `shared/` bucket; cross-model PRs stay under the primary model bucket and are labeled as cross-model evidence in the body.
 - File trace command: `git log --name-only -- <model-files>`
 - Diff audit source: GitHub Pull Request files API
 
