@@ -45,6 +45,7 @@ REGULAR_SKILLS=(
   "model-pr-optimization-hg-history|${REPO_ROOT}/model-pr-optimization-hg-history"
   "lightop-kernel-knowledge|${REPO_ROOT}/skills/lightop-skills/knowledge"
   "hcu-aiter-moe-tuning|${REPO_ROOT}/skills/hcu-aiter-moe-tuning"
+  "hipblaslt-rocblas-tuning|${REPO_ROOT}/skills/hipblaslt-rocblas-tuning"
 )
 
 HUMANIZE_SKILLS=(
@@ -134,6 +135,7 @@ resolve_repo_root() {
     "model-pr-optimization-hg-history|${REPO_ROOT}/model-pr-optimization-hg-history"
     "lightop-kernel-knowledge|${REPO_ROOT}/skills/lightop-skills/knowledge"
     "hcu-aiter-moe-tuning|${REPO_ROOT}/skills/hcu-aiter-moe-tuning"
+    "hipblaslt-rocblas-tuning|${REPO_ROOT}/skills/hipblaslt-rocblas-tuning"
   )
 }
 

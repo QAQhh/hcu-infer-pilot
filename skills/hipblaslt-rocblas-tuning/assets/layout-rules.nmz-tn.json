@@ -1,0 +1,23 @@
+[
+  {
+    "name": "INT8 TN outer-vector scale; single GEMM; activation M is BLAS -n",
+    "library": "hipblaslt",
+    "match": {"--transA": "T", "--transB": "N", "--a_type": "i8_r", "--d_type": "bf16_r", "--batch_count": "1"},
+    "token_axis": "-n",
+    "linear": ["--stride_b", "--stride_c", "--stride_d"]
+  },
+  {
+    "name": "BF16 TN single GEMM; capture missing strides stays implicit",
+    "library": "rocblas",
+    "match": {"--transposeA": "T", "--transposeB": "N", "--a_type": "bf16_r", "--batch_count": "1"},
+    "token_axis": "-n",
+    "linear": ["--stride_c", "--stride_d"]
+  },
+  {
+    "name": "BF16 TN 16 interleaved heads; A/B stride fixed, C/D token-dependent",
+    "library": "rocblas",
+    "match": {"--transposeA": "T", "--transposeB": "N", "--a_type": "bf16_r", "--batch_count": "16"},
+    "token_axis": "-n",
+    "linear": ["--stride_c", "--stride_d"]
+  }
+]

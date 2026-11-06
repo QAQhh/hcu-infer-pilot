@@ -89,8 +89,22 @@ gemma4, glm-vlm-ocr, glm45, glm46-glm47, glm5-glm51, gpt-oss,
 hunyuan3-preview, intern-s1, internvl35, kimi, llama4, mimo-v2-flash,
 minimax, mistral-small-4, mixtral-quark-int4fp8-moe, moss-vl,
 nemotron-super, qwen-vlm-omni-asr, qwen3-coder, qwen3-core,
-qwen3-next, qwen35, qwen36, step35
+qwen3-next, qwen35, qwen36, qwen4-exp, step35
 ```
+
+`qwen4-exp` (Qwen3.8-Flash-Next, `qwen4_exp`) exists for `sglang` only. The
+`sglang` tree also has an `unclassified` bucket for merge-only and bulk
+sync/rename commits that cannot be tied to one model or to shared runtime
+code; search it last.
+
+Branch coverage of the `sglang` tree (details in `sglang/README.md`):
+
+- `v0.5.8_dev` to `v0.5.12_dev`: `sglang/LOCAL_ONLY_COMMITS_v0.5.8_dev_to_v0.5.12_dev_by_branch.md`
+- `v0.5.12_dev` to `v0.5.15.post1_dev` to `release/20260825_v0.5.18`:
+  `sglang/LOCAL_ONLY_COMMITS_v0.5.12_dev_to_v0.5.18_by_branch.md`
+
+Each model doc holds one marker-delimited block per update; read the newest
+block first.
 
 ## SOTA Loop Contract
 

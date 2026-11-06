@@ -170,3 +170,221 @@
 - Risk and verification: Touches scheduling, cache, PD, or MTP paths; verify prefill/decode ordering, first-token correctness, concurrency, and long-context stability.
 
 <!-- LOCAL_ONLY_DEV_BRANCH_UPDATE_END -->
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_START -->
+## Local-only branch update from v0.5.12_dev to release/20260825_v0.5.18
+
+### Coverage Note
+
+- Source repository: `HYGON-AI/sglang-das`; branch tips: `v0.5.12_dev`@`6c946e92f`, `v0.5.15.post1_dev`@`c8ba30447`, `release/20260825_v0.5.18`@`2c841655f`
+- Scope: only local fork commits that are not reachable from `sgl-project/sglang` GitHub refs; merge commits are kept.
+- Generated date: 2026-11-03
+- Commits in this section: 11 (merges: 3)
+- Branch segments: `v0.5.12_dev..v0.5.15.post1_dev`, `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Classification note: commits matching a concrete model name or model file enter that model bucket (possibly several); other runtime, backend, CI and test commits enter `shared`; merge-only or no-relevant-path commits enter `unclassified`. Bulk sync/rename commits touching more than 150 files (e.g. squash syncs of official main) also enter only `unclassified`: they carry upstream code and are not local-only implementations. Auto-classified; diffs were not reviewed one by one.
+
+### Touched Files
+
+| File | Local commits |
+| --- | --- |
+| `python/sglang/srt/model_executor/forward_batch_info.py` | `502516539`, `723ac998c` |
+| `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py` | `2ac651d8f`, `3c2b52667` |
+| `python/sglang/srt/utils/hf_transformers/config.py` | `0cf9a653e`, `502516539` |
+| `test/registered/unit/utils/test_hf_transformers.py` | `0cf9a653e`, `502516539` |
+| `.github/workflows/nightly-test-hcu.yml` | `2b4271498` |
+| `.github/workflows/pr-test-hcu.yml` | `723ac998c` |
+| `benchmark/glm53/README.md` | `98e923533` |
+| `python/sglang/srt/disaggregation/mooncake/conn.py` | `100533036` |
+| `python/sglang/srt/disaggregation/mooncake/source_drain.py` | `100533036` |
+| `python/sglang/srt/disaggregation/prefill.py` | `100533036` |
+| `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py` | `723ac998c` |
+| `python/sglang/srt/distributed/device_communicators/triton_symm_mem_ag.py` | `723ac998c` |
+| `python/sglang/srt/environ.py` | `723ac998c` |
+| `python/sglang/srt/layers/attention/dsa/dsa_topk_backend.py` | `723ac998c` |
+| `python/sglang/srt/layers/attention/dsa/hcu_sparse_mqa.py` | `98e923533` |
+| `python/sglang/srt/layers/attention/dsa/utils.py` | `723ac998c` |
+| `python/sglang/srt/layers/attention/dsa_backend.py` | `723ac998c` |
+| `python/sglang/srt/layers/cp/cp_decode_attn_tp.py` | `723ac998c` |
+| `python/sglang/srt/layers/cp/interleave.py` | `723ac998c` |
+| `python/sglang/srt/layers/cp/utils.py` | `723ac998c` |
+| `python/sglang/srt/layers/moe/fused_moe_triton/layer.py` | `2ac651d8f` |
+| `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py` | `723ac998c` |
+| `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` | `98e923533` |
+| `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py` | `723ac998c` |
+| `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py` | `2ac651d8f` |
+| `python/sglang/srt/managers/overlap_utils.py` | `98e923533` |
+| `python/sglang/srt/managers/schedule_batch.py` | `100533036` |
+| `python/sglang/srt/managers/scheduler.py` | `100533036` |
+| `python/sglang/srt/mem_cache/cleanup.py` | `100533036` |
+| `python/sglang/srt/mem_cache/common.py` | `100533036` |
+| `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py` | `100533036` |
+| `python/sglang/srt/mem_cache/unified_cache/unified_cache_linker.py` | `100533036` |
+| `python/sglang/srt/mem_cache/unified_radix_cache.py` | `100533036` |
+| `python/sglang/srt/model_executor/model_runner_components/cuda_graph_setup.py` | `723ac998c` |
+| `python/sglang/srt/model_executor/pool_configurator.py` | `502516539` |
+| `python/sglang/srt/models/deepseek_common/attention_forward_methods/forward_mla_rocm.py` | `98e923533` |
+| `python/sglang/srt/models/deepseek_v2.py` | `98e923533` |
+| `python/sglang/srt/server_args.py` | `723ac998c` |
+| `python/sglang/srt/speculative/eagle_utils.py` | `723ac998c` |
+| `python/sglang/srt/speculative/eagle_worker_v2.py` | `723ac998c` |
+| ... | 37 more files omitted |
+
+### Timeline
+
+| Date | Commit | Branch update | Category | Title | Main files |
+| --- | --- | --- | --- | --- | --- |
+| 2026-08-07 | `2b4271498` | `v0.5.12_dev..v0.5.15.post1_dev` | 模型支持/运行时入口 | ci(hcu): publish nine-model accuracy results | `.github/workflows/nightly-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py` and 11 files in total |
+| 2026-08-19 | `0cf9a653e` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(glm5.2): restore raw DSA config fields | `python/sglang/srt/utils/hf_transformers/config.py`, `test/registered/unit/utils/test_hf_transformers.py` |
+| 2026-08-26 | `502516539` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | style: format GLM 5.2 forward-port files | `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/model_executor/pool_configurator.py`, `python/sglang/srt/utils/hf_transformers/config.py` and 5 files in total |
+| 2026-08-27 | `cff97568f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge feature/glm52-forward-port-v0.5.18 into release/20260825_v0.5.18 | no direct file change / merge |
+| 2026-08-28 | `11852ed1c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #256 from luosyx/feature/release-20260825_v0.5.18-glm52-forward-port | no direct file change / merge |
+| 2026-08-31 | `3a160688a` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 通用实现调整 | Merge pull request #262 from luosyx/feature/release-20260825_v0.5.18-glm52-forward-port | no direct file change / merge |
+| 2026-09-17 | `98e923533` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(glm53): 修正 FP8 权重映射并优化 HCU Decode 路径 (#384) | `benchmark/glm53/README.md`, `python/sglang/srt/layers/attention/dsa/hcu_sparse_mqa.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py` and 6 files in total |
+| 2026-09-30 | `100533036` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | [Fix][Unified Cache] Retry external KV abort cleanup after forward and source drain (#455) | `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/mooncake/source_drain.py`, `python/sglang/srt/disaggregation/prefill.py` and 21 files in total |
+| 2026-10-09 | `723ac998c` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | 修复 GLM-5.1/5.2 DSA 服务兼容性并优化 CP decode FlashMLA (#475) | `.github/workflows/pr-test-hcu.yml`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/device_communicators/triton_symm_mem_ag.py` and 32 files in total |
+| 2026-10-12 | `2ac651d8f` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 性能/后端优化 | fix(w4a8): 兼容 GLM5.3-w4a8 模型的 compressed-tensors 打包权重 (#506) | `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`, `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py` |
+| 2026-10-15 | `3c2b52667` | `v0.5.15.post1_dev..release/20260825_v0.5.18` | 缺陷修复 | fix(GLM5.3 w4a8): skip unused packed expert shape metadata (#539) | `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py` |
+
+### Per-Commit Audit Cards
+
+#### Commit `2b4271498` - ci(hcu): publish nine-model accuracy results
+
+- Full hash: `2b4271498f3d9031d0080accfa4dea9eccd10a59`
+- Date/author: 2026-08-07 / LvJIA-RG
+- Branch update: `v0.5.12_dev..v0.5.15.post1_dev`
+- Auto category: 模型支持/运行时入口
+- Main files: `.github/workflows/nightly-test-hcu.yml`, `scripts/ci/hcu/hcu_ci_notify_feishu.py`, `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`, `test/registered/hcu/accuracy/bw1100/test_cookbook_text_gsm8k_eval_hcu.py`, `test/registered/hcu/accuracy/bw1100/test_deepseek_v32_eval_hcu.py`, `test/registered/hcu/accuracy/bw1100/test_glm51_int8_eval_hcu.py`, `test/registered/hcu/accuracy/bw1100/test_gsm8k_eval_hcu.py`, `test/registered/hcu/accuracy/bw1100/test_kimi_k26_eval_hcu.py` 等 11 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/nightly-test-hcu.yml`
+  - other: `scripts/ci/hcu/hcu_ci_notify_feishu.py`; `scripts/ci/hcu/test_hcu_ci_notify_feishu.py`
+  - tests: `test/registered/hcu/accuracy/bw1100/test_cookbook_text_gsm8k_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_deepseek_v32_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_glm51_int8_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_gsm8k_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_kimi_k26_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_minimax_m25_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_mmlu_eval_hcu.py`; `test/registered/hcu/accuracy/bw1100/test_qwen35_eval_hcu.py`
+- Risk and verification: Includes test-related changes; rerun the matching tests plus a minimal model launch or generation smoke.
+
+#### Commit `0cf9a653e` - fix(glm5.2): restore raw DSA config fields
+
+- Full hash: `0cf9a653eda76ddefec1c3044692433d1d033a36`
+- Date/author: 2026-08-19 / maxiaobetter
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/utils/hf_transformers/config.py`, `test/registered/unit/utils/test_hf_transformers.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/utils/hf_transformers/config.py`
+  - tests: `test/registered/unit/utils/test_hf_transformers.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `502516539` - style: format GLM 5.2 forward-port files
+
+- Full hash: `5025165399aca0f6c482556c12bf53fbc4b870fd`
+- Date/author: 2026-08-26 / maxiaobetter
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/model_executor/forward_batch_info.py`, `python/sglang/srt/model_executor/pool_configurator.py`, `python/sglang/srt/utils/hf_transformers/config.py`, `test/registered/moe/test_topk_padded_region.py`, `test/registered/unit/utils/test_hf_transformers.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/model_executor/pool_configurator.py`; `python/sglang/srt/utils/hf_transformers/config.py`
+  - tests: `test/registered/moe/test_topk_padded_region.py`; `test/registered/unit/utils/test_hf_transformers.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+#### Commit `cff97568f` - Merge feature/glm52-forward-port-v0.5.18 into release/20260825_v0.5.18
+
+- Full hash: `cff97568fd17b74e707f3552bafc924abfa175de`
+- Date/author: 2026-08-27 / luosyx
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `11852ed1c` - Merge pull request #256 from luosyx/feature/release-20260825_v0.5.18-glm52-forward-port
+
+- Full hash: `11852ed1c2f6b2b26cb168a892c927efe95cbb7a`
+- Date/author: 2026-08-28 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `3a160688a` - Merge pull request #262 from luosyx/feature/release-20260825_v0.5.18-glm52-forward-port
+
+- Full hash: `3a160688a388a5ddcb84d8bfe1ca2451df609dda`
+- Date/author: 2026-08-31 / lizhigong
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 通用实现调整
+- Main files: no direct file change / merge
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Risk and verification: A merge commit has no direct file diff; the substance is in the commits it brings in.
+
+#### Commit `98e923533` - fix(glm53): 修正 FP8 权重映射并优化 HCU Decode 路径 (#384)
+
+- Full hash: `98e92353399b9cf708523b02834b4894a3aa3321`
+- Date/author: 2026-09-17 / maxiaobetter
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: `benchmark/glm53/README.md`, `python/sglang/srt/layers/attention/dsa/hcu_sparse_mqa.py`, `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`, `python/sglang/srt/managers/overlap_utils.py`, `python/sglang/srt/models/deepseek_common/attention_forward_methods/forward_mla_rocm.py`, `python/sglang/srt/models/deepseek_v2.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - docs-bench: `benchmark/glm53/README.md`
+  - other: `python/sglang/srt/managers/overlap_utils.py`
+  - runtime-model: `python/sglang/srt/models/deepseek_v2.py`
+  - runtime-perf: `python/sglang/srt/layers/attention/dsa/hcu_sparse_mqa.py`; `python/sglang/srt/layers/moe/token_dispatcher/deepep.py`; `python/sglang/srt/models/deepseek_common/attention_forward_methods/forward_mla_rocm.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `100533036` - [Fix][Unified Cache] Retry external KV abort cleanup after forward and source drain (#455)
+
+- Full hash: `10053303694ba99167f7e17c585757fe3cf851bb`
+- Date/author: 2026-09-30 / ybhe1110
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/disaggregation/mooncake/conn.py`, `python/sglang/srt/disaggregation/mooncake/source_drain.py`, `python/sglang/srt/disaggregation/prefill.py`, `python/sglang/srt/managers/schedule_batch.py`, `python/sglang/srt/managers/scheduler.py`, `python/sglang/srt/mem_cache/cleanup.py`, `python/sglang/srt/mem_cache/common.py`, `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py` 等 21 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - other: `python/sglang/srt/disaggregation/mooncake/conn.py`; `python/sglang/srt/disaggregation/mooncake/source_drain.py`; `python/sglang/srt/disaggregation/prefill.py`; `python/sglang/srt/managers/schedule_batch.py`
+  - runtime-perf: `python/sglang/srt/managers/scheduler.py`; `python/sglang/srt/mem_cache/cleanup.py`; `python/sglang/srt/mem_cache/common.py`; `python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py`; `python/sglang/srt/mem_cache/unified_cache/unified_cache_linker.py`; `python/sglang/srt/mem_cache/unified_radix_cache.py`
+  - tests: `python/sglang/test/kits/linker_load_failure_kit.py`; `python/sglang/test/mooncake_utils.py`; `test/registered/radix_cache/unified_radix_tree/linker/test_unified_cache_linker_kl_dsv4.py`; `test/registered/radix_cache/unified_radix_tree/linker/test_unified_cache_linker_kl_glm52.py`; `test/registered/unit/disaggregation/test_external_kv_abort_drain.py`; `test/registered/unit/disaggregation/test_external_kv_cleanup_resources.py`; `test/registered/unit/disaggregation/test_pp_pd_consensus.py`; `test/registered/unit/disaggregation/test_prefill_abort_cleanup.py` 等 11 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `723ac998c` - 修复 GLM-5.1/5.2 DSA 服务兼容性并优化 CP decode FlashMLA (#475)
+
+- Full hash: `723ac998c384e495b66f57119382a3434d2d4152`
+- Date/author: 2026-10-09 / qieshiniao
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: `.github/workflows/pr-test-hcu.yml`, `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`, `python/sglang/srt/distributed/device_communicators/triton_symm_mem_ag.py`, `python/sglang/srt/environ.py`, `python/sglang/srt/layers/attention/dsa/dsa_topk_backend.py`, `python/sglang/srt/layers/attention/dsa/utils.py`, `python/sglang/srt/layers/attention/dsa_backend.py`, `python/sglang/srt/layers/cp/cp_decode_attn_tp.py` 等 32 个文件
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - ci: `.github/workflows/pr-test-hcu.yml`
+  - other: `python/sglang/srt/environ.py`; `python/sglang/srt/layers/cp/cp_decode_attn_tp.py`; `python/sglang/srt/layers/cp/interleave.py`; `python/sglang/srt/layers/cp/utils.py`; `python/sglang/srt/speculative/eagle_utils.py`
+  - runtime-model: `python/sglang/srt/model_executor/forward_batch_info.py`; `python/sglang/srt/server_args.py`; `python/sglang/srt/speculative/eagle_worker_v2.py`; `python/sglang/srt/speculative/frozen_kv_mtp_worker_v2.py`; `python/sglang/srt/speculative/multi_layer_eagle_worker_v2.py`
+  - runtime-perf: `python/sglang/srt/distributed/device_communicators/custom_all_reduce.py`; `python/sglang/srt/distributed/device_communicators/triton_symm_mem_ag.py`; `python/sglang/srt/layers/attention/dsa/dsa_topk_backend.py`; `python/sglang/srt/layers/attention/dsa/utils.py`; `python/sglang/srt/layers/attention/dsa_backend.py`; `python/sglang/srt/layers/moe/moe_runner/triton_utils/moe_align_block_size.py`; `python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_fp8_moe.py`; `python/sglang/srt/model_executor/model_runner_components/cuda_graph_setup.py`
+  - tests: `test/registered/hcu/unit/test_hcu_cp_decode_attn_tp_scale.py`; `test/registered/hcu/unit/test_hcu_dsa_cp_alignment.py`; `test/registered/hcu/unit/test_hcu_eagle_sampling_compat.py`; `test/registered/hcu/unit/test_hcu_eagle_verify_sync.py`; `test/registered/hcu/unit/test_hcu_flashmla_decode_h16.py`; `test/registered/hcu/unit/test_hcu_flashmla_decode_h16_memory.py`; `test/registered/hcu/unit/test_hcu_lightop_moe_routing_api.py`; `test/registered/hcu/unit/test_hcu_multimem_all_gather_guard.py` 等 13 个文件
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `2ac651d8f` - fix(w4a8): 兼容 GLM5.3-w4a8 模型的 compressed-tensors 打包权重 (#506)
+
+- Full hash: `2ac651d8f6b78dcc8214119e733c4ba55be15945`
+- Date/author: 2026-10-12 / maxiaobetter
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 性能/后端优化
+- Main files: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`, `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`, `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`
+  - runtime-perf: `python/sglang/srt/layers/moe/fused_moe_triton/layer.py`; `python/sglang/srt/layers/quantization/slimquant_w4a8_marlin.py`
+- Risk and verification: Touches performance or backend paths; validate the idea with prefill/decode trace evidence, throughput, and correctness smoke tests.
+
+#### Commit `3c2b52667` - fix(GLM5.3 w4a8): skip unused packed expert shape metadata (#539)
+
+- Full hash: `3c2b5266717c24b831160a3c2f8c09b7f765d313`
+- Date/author: 2026-10-15 / Songge
+- Branch update: `v0.5.15.post1_dev..release/20260825_v0.5.18`
+- Auto category: 缺陷修复
+- Main files: `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`
+- Implementation signal: This commit comes from a local dev branch update and is not in `sgl-project/sglang` GitHub refs; prioritize matched model files, performance backends, scheduling/cache, parser/tokenizer, and test coverage.
+- Touched files (grouped by path, not read file by file):
+  - runtime-model: `python/sglang/srt/models/deepseek_common/deepseek_weight_loader.py`
+- Risk and verification: Touches model runtime entry points; risk is weight loading, parallel sharding, parser/tokenizer behavior, and short-generation correctness.
+
+<!-- LOCAL_ONLY_BRANCH_UPDATE_V0_5_12_TO_V0_5_18_END -->
