@@ -1,0 +1,1079 @@
+{
+  "$schema_note": "Reusable kernel-family catalog for Hygon HCU/HIP optimization. It guides agent reasoning and automatic handoff decisions; it is not a substitute for correctness, benchmark, hipprof, and dccobjdump gates.",
+  "$version": "0.2",
+  "families": {
+    "attention": {
+      "priority": 1,
+      "aliases": [
+        "qk",
+        "av",
+        "qk_av",
+        "masked_attention",
+        "causal_attention",
+        "bias_attention",
+        "flash_attention",
+        "paged_attention"
+      ],
+      "scope": "QK/AV attention kernels, causal or padding masks, relative/position bias, scale, activation, dropout-free inference paths, and fused attention epilogues.",
+      "profiler_symptoms": [
+        "kernels or op names contain attention, qk, qkv, av, causal, mask, bias, score, softmax, paged, flash",
+        "hipMemcpy or layout kernels surround QK/AV and indicate padding/transposition overhead",
+        "softmax, bias, mask, and activation are separate kernels around matmul-like work",
+        "low CU activity on skinny decode or current-token eval path",
+        "high LDS, waitcnt, or barrier stall around tiled score/value loops"
+      ],
+      "required_contract_fields": [
+        "B or batch",
+        "H or heads",
+        "Q or query_length",
+        "K or key_length",
+        "D or head_dim",
+        "dtype",
+        "layout for q/k/v/out",
+        "mask semantics",
+        "bias semantics",
+        "scale semantics",
+        "causal direction",
+        "training_or_inference"
+      ],
+      "semantic_traps": [
+        "Causal mask direction and inclusive/exclusive diagonal must match reference exactly.",
+        "Relative bias bucketization can be a separate semantic op; do not fold it unless bucket contract is captured.",
+        "Forward-only eval fast paths must not be used for training when backward semantics differ.",
+        "Softmax numerical stability requires max subtraction and explicit tolerance policy.",
+        "Dropout, RNG, and deterministic training paths require separate handling.",
+        "Jagged or padded attention must preserve invalid-token zeroing and length semantics."
+      ],
+      "candidate_methods": [
+        "compute.mmac_tensor_core",
+        "memory.lds_tiling",
+        "memory.matrix_load_mls",
+        "memory.ds_read_matrix_layout",
+        "memory.lds_bank_conflict",
+        "memory.epilogue_fusion",
+        "latency.waitcnt_pipeline",
+        "latency.reduce_barrier",
+        "latency.persistent_scheduler",
+        "latency.split_k_streamk",
+        "latency.salu_valu_phase_balance"
+      ],
+      "branch_generator_plan": [
+        "split QK, softmax, and AV attribution before replacing the whole attention block",
+        "try fusion of bias/mask/scale/activation when parity is simple and tensors are contiguous",
+        "try head-major or contiguous layout variants only when layout conversion cost is included in e2e benchmark",
+        "try decode/current-token specialized path separately from full-sequence training",
+        "prefer CK Tile or source-backed HCU examples for matrix-core QK/AV work"
+      ],
+      "correctness_gates": [
+        "operator parity on tiny shapes with unique q/k/v/bias values",
+        "real shape parity with max_abs and max_rel error",
+        "mask edge cases: empty, first token, last token, full length, ragged length",
+        "training backward parity if optimization is enabled with gradients",
+        "fallback path test for unsupported dtype/layout/mask"
+      ],
+      "stop_reasons": [
+        "profile shows attention share below target threshold after accepted changes",
+        "QK/AV already uses proven MMAC/CK Tile path and remaining time is memory movement outside kernel",
+        "semantic contract is incomplete for mask/bias/dropout/backward",
+        "candidate branch improves microbench but fails e2e or accuracy gate",
+        "layout conversion cost cancels kernel-only speedup"
+      ],
+      "library_references": [
+        "ROCm AITER attention kernels",
+        "Composable Kernel / CK Tile attention and GEMM examples",
+        "FlashAttention ROCm CK/Triton backend",
+        "vLLM ROCm paged attention"
+      ]
+    },
+    "gather_scatter_index_add_embedding_backward": {
+      "priority": 2,
+      "aliases": [
+        "gather",
+        "scatter",
+        "scatter_add",
+        "index_add",
+        "index_select",
+        "embedding",
+        "embedding_backward",
+        "bincount_backward",
+        "atomic_add"
+      ],
+      "scope": "Irregular indexed reads/writes, embedding forward/backward, index_add/scatter_add, histogram/bincount-style gradient reduction, and duplicate-index accumulation.",
+      "profiler_symptoms": [
+        "kernels or ops contain index_select, index_add, scatter, gather, embedding, bincount, atomic",
+        "global memory request pressure is high while arithmetic intensity is low",
+        "atomic pressure or serialization dominates duplicate-index backward",
+        "profile attribution points to PyTorch index_select_backward or embedding backward",
+        "small output domain with large repeated input ids indicates reduce-by-key opportunity"
+      ],
+      "required_contract_fields": [
+        "input tensor shape and dtype",
+        "index tensor shape and dtype",
+        "output tensor shape and dtype",
+        "index bounds and negative-index policy",
+        "duplicate index semantics",
+        "accumulation operation",
+        "determinism requirements",
+        "sorted or unsorted indices",
+        "known small output domain if any"
+      ],
+      "semantic_traps": [
+        "Duplicate indices require accumulation for index_add/scatter_add/embedding backward; plain scatter is not equivalent.",
+        "Atomic accumulation changes floating-point order and may need tolerance or deterministic fallback.",
+        "Out-of-bound, negative, padding_idx, and ignore-index semantics must match framework behavior.",
+        "In-place alias between input/output/index must be captured before replacing a framework op.",
+        "Small-domain reduction can beat atomics, but only when bucket/domain size is known and stable."
+      ],
+      "candidate_methods": [
+        "memory.coalesced_access",
+        "compute.thread_coarsening",
+        "compute.register_pressure_control",
+        "latency.ilp_unroll",
+        "latency.waitcnt_pipeline",
+        "latency.wavefront_shuffle_ds_bpermute",
+        "latency.reduce_barrier",
+        "memory.cache_policy_glc_slc"
+      ],
+      "branch_generator_plan": [
+        "coarsened flat-index gather/scatter baseline",
+        "duplicate-aware atomic branch for general index_add",
+        "small-domain bucket-reduction branch for histogram or embedding-gradient style updates",
+        "sorted-index segmented reduction branch when sorted or sortable ids are available",
+        "two-phase local accumulation plus global atomic branch when duplicate rate is high"
+      ],
+      "correctness_gates": [
+        "random unique indices",
+        "high duplicate-rate indices",
+        "boundary indices: 0 and last valid id",
+        "padding/ignore index if applicable",
+        "comparison against framework op for forward and backward",
+        "repeat-run nondeterminism tolerance check when atomics are used"
+      ],
+      "stop_reasons": [
+        "duplicate rate is low and memory coalescing branch already saturates bandwidth",
+        "duplicate rate is high but output domain is too large for local reduction",
+        "deterministic accumulation is required and atomic branch cannot satisfy tolerance",
+        "index bounds or alias semantics cannot be proven",
+        "framework-level rewrite removes hotspot without custom kernel"
+      ],
+      "library_references": [
+        "FBGEMM GPU jagged and embedding operators",
+        "TorchRec embedding pipeline",
+        "rocPRIM reduce-by-key and histogram-style primitives"
+      ]
+    },
+    "jagged_ragged_sparse": {
+      "priority": 3,
+      "aliases": [
+        "jagged",
+        "ragged",
+        "sparse",
+        "offsets",
+        "lengths",
+        "csr",
+        "segment",
+        "packed_sequence"
+      ],
+      "scope": "Variable-length tensor kernels, lengths/offsets based layouts, CSR-like sparse rows, jagged-to-dense or dense-to-jagged transforms, and ragged attention/reduction paths.",
+      "profiler_symptoms": [
+        "ops or kernels contain jagged, ragged, lengths, offsets, csr, segment, pack, pad, dense_to_jagged, jagged_to_dense",
+        "many tiny kernels around padding, masking, or copy transforms",
+        "hipMemcpy or memset appears between jagged layout conversion steps",
+        "low CU activity from short rows or imbalanced segment lengths",
+        "scatter/gather kernels dominate around sequence packing"
+      ],
+      "required_contract_fields": [
+        "values shape and dtype",
+        "lengths shape and dtype",
+        "offsets shape and dtype",
+        "max_length or padded dimension",
+        "total nnz",
+        "row count",
+        "empty segment semantics",
+        "padding value",
+        "sortedness or monotonic offsets",
+        "output layout"
+      ],
+      "semantic_traps": [
+        "Offsets must be monotonic and final offset must equal nnz.",
+        "Empty segments and max-length truncation are common correctness failures.",
+        "Padding value and invalid-token zeroing must match the model path.",
+        "Dense conversion may appear faster in microbench but regress memory footprint or e2e.",
+        "Load balance across rows matters more than flat element count for ragged kernels."
+      ],
+      "candidate_methods": [
+        "memory.coalesced_access",
+        "memory.aligned_layout_transform",
+        "compute.launch_config_wave64",
+        "compute.thread_coarsening",
+        "latency.persistent_scheduler",
+        "latency.reduce_barrier",
+        "latency.wavefront_shuffle_ds_bpermute",
+        "latency.salu_valu_phase_balance"
+      ],
+      "branch_generator_plan": [
+        "one-row-per-block branch for medium rows",
+        "one-wave-per-row branch for short rows on wave64",
+        "persistent work-queue branch for highly imbalanced row lengths",
+        "fuse jagged layout conversion with consumer when the consumer is single-use",
+        "specialize max_length buckets when dynamic shape distribution is stable"
+      ],
+      "correctness_gates": [
+        "empty rows",
+        "single-element rows",
+        "max-length rows",
+        "random ragged distribution",
+        "all rows same length as dense-equivalent control",
+        "offset monotonicity and final nnz assertions"
+      ],
+      "stop_reasons": [
+        "profile shows conversion kernels, not jagged compute, are the true bottleneck",
+        "row-length distribution is too dynamic for a single specialized kernel",
+        "padding/layout transform cost exceeds fused-kernel gain",
+        "contract capture cannot prove offsets/lengths semantics",
+        "load imbalance remains but persistent scheduler overhead cancels benefit"
+      ],
+      "library_references": [
+        "FBGEMM GPU jagged tensor operators",
+        "TorchRec JaggedTensor operators",
+        "rocPRIM segmented primitives"
+      ]
+    },
+    "segmented_reduction": {
+      "priority": 4,
+      "aliases": [
+        "segment_reduce",
+        "segmented_reduce",
+        "reduce_by_key",
+        "histogram",
+        "bincount",
+        "bucket_reduce",
+        "group_reduce"
+      ],
+      "scope": "Reductions over variable-size groups or keys, including reduce-by-key, histogram/bincount, grouped sums, and gradient accumulation by bucket.",
+      "profiler_symptoms": [
+        "ops or kernels contain segment, reduce_by_key, bincount, histogram, bucket, group_reduce",
+        "index_add/scatter_add hotspot has high duplicate rate",
+        "atomicAdd dominates and output domain is much smaller than input size",
+        "separate sort/unique/reduce stages appear around sparse gradients",
+        "barrier or LDS pressure appears in custom row/group reductions"
+      ],
+      "required_contract_fields": [
+        "values shape and dtype",
+        "segment ids or offsets shape and dtype",
+        "number of segments or output domain",
+        "reduction op",
+        "initial value",
+        "sortedness of keys",
+        "duplicate distribution",
+        "determinism requirements"
+      ],
+      "semantic_traps": [
+        "Unsorted key reduction and offset-based segmented reduction are different contracts.",
+        "Floating accumulation order can change numerical results.",
+        "Empty segment initial values must match reference.",
+        "Atomic and two-phase reductions need explicit output initialization semantics.",
+        "Segment id bounds must be validated or safely guarded."
+      ],
+      "candidate_methods": [
+        "memory.coalesced_access",
+        "memory.lds_tiling",
+        "compute.thread_coarsening",
+        "compute.register_pressure_control",
+        "latency.wavefront_shuffle_ds_bpermute",
+        "latency.reduce_barrier",
+        "latency.waitcnt_pipeline",
+        "latency.persistent_scheduler"
+      ],
+      "branch_generator_plan": [
+        "small-domain histogram branch with per-block partials",
+        "offset-based one-block-per-segment branch",
+        "wave-level short-segment branch",
+        "two-phase partial reduction plus final combine",
+        "reduce-by-key branch only when sorted keys or sorting cost is included"
+      ],
+      "correctness_gates": [
+        "empty segments",
+        "single large segment",
+        "many tiny segments",
+        "random unsorted keys",
+        "high duplicate-rate keys",
+        "repeat-run tolerance for non-deterministic atomics"
+      ],
+      "stop_reasons": [
+        "keys are unsorted and sort cost exceeds reduction gain",
+        "duplicate distribution does not justify local accumulation",
+        "output domain too large for practical per-block partials",
+        "deterministic result is required but branch relies on unordered atomics",
+        "library primitive is available and faster than custom branch"
+      ],
+      "library_references": [
+        "rocPRIM reduce_by_key, segmented_reduce, scan, histogram primitives",
+        "hipCUB CUB-compatible segmented primitives"
+      ]
+    },
+    "custom_autograd_backward": {
+      "priority": 5,
+      "aliases": [
+        "backward",
+        "grad",
+        "autograd",
+        "custom_backward",
+        "index_select_backward",
+        "embedding_backward",
+        "scatter_backward"
+      ],
+      "scope": "Model-local custom backward kernels replacing expensive generic autograd paths such as index_select_backward, index_add accumulation, gather/scatter backward, normalization backward, or fused forward recomputation.",
+      "profiler_symptoms": [
+        "torch or framework attribution points to backward/autograd node rather than forward kernel",
+        "kernel names contain backward, grad, index_select_backward, embedding_backward, index_add",
+        "forward is cheap but backward launches multiple gather/scatter/reduction kernels",
+        "autograd saves large tensors or performs extra copies/syncs",
+        "manual PyTorch primitive rewrite improves semantics but profiler still shows generic index_add/scatter"
+      ],
+      "required_contract_fields": [
+        "forward input/output shapes and dtypes",
+        "saved tensors",
+        "grad_output shape and dtype",
+        "gradient outputs required by autograd",
+        "which inputs require grad",
+        "alias/in-place semantics",
+        "accumulation and reduction semantics",
+        "fallback conditions"
+      ],
+      "semantic_traps": [
+        "Backward must return gradients for exactly the same inputs and None for non-differentiable inputs.",
+        "Saved tensor lifetime and device placement must match framework autograd expectations.",
+        "Recomputation can change numerical results if forward uses approximate math or random state.",
+        "Atomic gradient accumulation can be nondeterministic.",
+        "Training path requires stricter parity than eval-only fast path."
+      ],
+      "candidate_methods": [
+        "memory.coalesced_access",
+        "memory.lds_tiling",
+        "compute.thread_coarsening",
+        "compute.register_pressure_control",
+        "latency.wavefront_shuffle_ds_bpermute",
+        "latency.reduce_barrier",
+        "latency.waitcnt_pipeline",
+        "memory.epilogue_fusion"
+      ],
+      "branch_generator_plan": [
+        "start with model-local Python autograd wrapper and native fallback",
+        "capture forward/backward parity before writing HIP",
+        "specialize backward reduction when output domain is small or duplicate rate is high",
+        "fuse backward elementwise scale/bias/reduction when saved tensors are already available",
+        "keep env-controlled fallback until long-run accuracy is accepted"
+      ],
+      "correctness_gates": [
+        "torch.autograd.gradcheck when dtype and op permit",
+        "manual forward/backward parity against original implementation",
+        "small, real, and boundary shape tests",
+        "fallback path test with env off/on",
+        "short training smoke and project accuracy gate"
+      ],
+      "stop_reasons": [
+        "gradcheck or backward parity fails outside tolerance",
+        "saved tensor contract cannot be proven from project code",
+        "HIP branch is faster in isolation but training step or memory regresses",
+        "framework-level custom autograd wrapper already removes generic hotspot",
+        "operation participates in unsupported in-place or alias path"
+      ],
+      "library_references": [
+        "PyTorch custom autograd Function patterns",
+        "FBGEMM/TorchRec embedding backward implementations",
+        "rocPRIM segmented reduction primitives for gradient accumulation"
+      ]
+    },
+    "softmax_layernorm_row_reduction": {
+      "priority": 6,
+      "aliases": [
+        "softmax",
+        "layernorm",
+        "layer_norm",
+        "rmsnorm",
+        "rms_norm",
+        "row_reduce",
+        "row_reduction",
+        "normalization"
+      ],
+      "scope": "Row-wise softmax, layernorm, rmsnorm, masked row reductions, and fused row-wise epilogues.",
+      "profiler_symptoms": [
+        "kernels or ops contain softmax, layernorm, rmsnorm, norm, row_reduce",
+        "separate max/sum/exp/divide or norm/mul/add kernels appear around one row operation",
+        "bandwidth-bound row reductions read the same row multiple times",
+        "hidden size or row width is stable across iterations",
+        "training path has separate backward norm/reduction hotspots"
+      ],
+      "required_contract_fields": [
+        "row count",
+        "row width",
+        "dtype and accumulation dtype",
+        "epsilon",
+        "gamma/beta or affine semantics",
+        "mask semantics if any",
+        "input/output stride and contiguity",
+        "training_or_inference",
+        "saved tensors needed for backward"
+      ],
+      "semantic_traps": [
+        "Softmax must subtract max before exp for numerical stability.",
+        "Mask must be applied before normalization when reference semantics require it.",
+        "LayerNorm and RMSNorm are not interchangeable.",
+        "Backward may require saved mean/invstd or exact recomputation policy.",
+        "Tail columns and non-contiguous strides commonly break vectorized branches."
+      ],
+      "candidate_methods": [
+        "memory.coalesced_access",
+        "memory.lds_tiling",
+        "compute.thread_coarsening",
+        "compute.register_pressure_control",
+        "latency.wavefront_shuffle_ds_bpermute",
+        "latency.reduce_barrier",
+        "latency.ilp_unroll",
+        "memory.epilogue_fusion"
+      ],
+      "branch_generator_plan": [
+        "one-row-per-block softmax or norm branch",
+        "one-wave-per-row branch for short rows",
+        "split-row branch for long rows with second-stage combine",
+        "fuse bias/mask/scale or residual only after semantic contract is captured",
+        "generate backward only when saved tensor contract is explicit"
+      ],
+      "correctness_gates": [
+        "all-equal rows",
+        "large positive and negative values",
+        "masked rows and all-masked row if supported",
+        "row width not divisible by vector width",
+        "epsilon sensitivity",
+        "forward and backward parity when training is enabled"
+      ],
+      "stop_reasons": [
+        "row width is too small and launch overhead dominates",
+        "row width is too large and split overhead cancels gain",
+        "library/framework already fuses the operation",
+        "backward contract is incomplete",
+        "numerical tolerance fails on real-shape data"
+      ],
+      "library_references": [
+        "ROCm AITER fused norm kernels",
+        "Triton fused softmax and layernorm tutorials as algorithmic patterns",
+        "rocPRIM reduction primitives"
+      ]
+    },
+    "matmul_gemm": {
+      "priority": 7,
+      "aliases": [
+        "matmul",
+        "gemm",
+        "bmm",
+        "batched_gemm",
+        "mm",
+        "linear",
+        "dense",
+        "grouped_gemm",
+        "moe_gemm",
+        "ck_tile",
+        "mmac",
+        "mfma"
+      ],
+      "scope": "Dense, batched, grouped, sparse, quantized, or fused-epilogue matrix multiplication kernels.",
+      "profiler_symptoms": [
+        "kernels or ops contain gemm, matmul, bmm, linear, moe, ck, blas, mmac, mfma",
+        "GEMM-like kernel has low achieved FLOPs",
+        "separate epilogue kernels for bias, activation, scale, quant/dequant, or layout conversion",
+        "many small GEMMs cause launch overhead",
+        "generated ISA lacks expected matrix-core instruction"
+      ],
+      "required_contract_fields": [
+        "M,N,K and batch/group dims",
+        "A/B/C dtype and accumulation dtype",
+        "layout and stride for A/B/C",
+        "transpose flags",
+        "alpha/beta semantics",
+        "epilogue operations",
+        "alignment constraints",
+        "shape distribution or bucket stability"
+      ],
+      "semantic_traps": [
+        "Do not replace a tuned BLAS or CK path with naive HIP.",
+        "Epilogue fusion must preserve beta, bias, scale, activation, and dtype rounding semantics.",
+        "Layout conversion cost must be included in e2e benchmark.",
+        "Quantized GEMM requires exact scale, zero-point, and saturation rules.",
+        "Generated source intent is not proof; check ISA."
+      ],
+      "candidate_methods": [
+        "compute.mmac_tensor_core",
+        "memory.lds_tiling",
+        "memory.matrix_load_mls",
+        "memory.ds_read_matrix_layout",
+        "memory.lds_bank_conflict",
+        "compute.register_pressure_control",
+        "latency.waitcnt_pipeline",
+        "memory.epilogue_fusion",
+        "latency.persistent_scheduler",
+        "latency.split_k_streamk"
+      ],
+      "branch_generator_plan": [
+        "use rocBLAS/hipBLAS or CK Tile as first route for standard GEMM",
+        "generate tiled LDS HIP only as baseline or for custom fused shapes",
+        "try fused epilogue when output is single-use",
+        "bucket small/grouped GEMMs to reduce launch overhead",
+        "inspect dccobjdump for matrix instruction and resource usage"
+      ],
+      "correctness_gates": [
+        "small non-square matrices",
+        "transpose variants",
+        "alpha/beta behavior",
+        "non-contiguous leading dimensions",
+        "dtype-specific tolerance",
+        "epilogue parity",
+        "real-shape benchmark including conversion cost"
+      ],
+      "stop_reasons": [
+        "library path already saturates expected throughput",
+        "custom kernel improves microbench but loses e2e",
+        "epilogue semantics incomplete",
+        "shape distribution too dynamic for specialization",
+        "generated ISA does not contain intended matrix instruction"
+      ],
+      "library_references": [
+        "rocBLAS/hipBLAS",
+        "Composable Kernel / CK Tile",
+        "Hygon GEMM assembly examples",
+        "ROCm AITER GEMM/MoE kernels"
+      ]
+    },
+    "topk_sort_selection": {
+      "priority": 8,
+      "aliases": [
+        "topk",
+        "top_k",
+        "sort",
+        "argsort",
+        "partial_sort",
+        "selection",
+        "select",
+        "beam",
+        "sampling",
+        "routing",
+        "expert_select"
+      ],
+      "scope": "Top-k, sorting, partial sorting, selection, routing, beam-search, and candidate filtering kernels.",
+      "profiler_symptoms": [
+        "kernels or ops contain topk, sort, argsort, select, partial_sort, beam, sample, route, expert",
+        "multiple kernels implement compare, prefix, compact, and gather stages",
+        "CPU sync reads candidate counts or selected sizes",
+        "full sort appears when only K elements are needed",
+        "MoE or retrieval route dominated by selection plus dispatch"
+      ],
+      "required_contract_fields": [
+        "input shape and axis",
+        "K or threshold",
+        "sort direction",
+        "tie-breaking behavior",
+        "stable or unstable ordering requirement",
+        "value/index outputs",
+        "NaN and Inf handling",
+        "dtype",
+        "approximation allowed or exact required"
+      ],
+      "semantic_traps": [
+        "Changing candidate set changes model semantics.",
+        "Tie ordering may affect downstream results.",
+        "Approximate selection is opt-in only.",
+        "NaN behavior must match framework reference.",
+        "Optimizing topk alone can regress dispatch or gather stages."
+      ],
+      "candidate_methods": [
+        "memory.coalesced_access",
+        "compute.thread_coarsening",
+        "compute.register_pressure_control",
+        "latency.wavefront_shuffle_ds_bpermute",
+        "latency.reduce_barrier",
+        "latency.persistent_scheduler",
+        "memory.cache_policy_glc_slc"
+      ],
+      "branch_generator_plan": [
+        "replace full sort with partial sort or block top-k when exact top-k suffices",
+        "use per-wave or per-block register candidates for small K",
+        "use rocPRIM partial_sort/select/radix sort as baseline",
+        "fuse threshold/compact/gather only when output ordering contract is captured",
+        "profile whole routing pipeline for MoE/retrieval"
+      ],
+      "correctness_gates": [
+        "ties",
+        "NaN/Inf if supported",
+        "K=0 or K=1 if supported",
+        "K near axis length",
+        "repeated values",
+        "indices and values parity",
+        "downstream metric gate"
+      ],
+      "stop_reasons": [
+        "full ordering is semantically required",
+        "tie behavior cannot be matched",
+        "library primitive is faster or near bandwidth ceiling",
+        "selection is not a top share after pipeline profiling",
+        "optimized selection changes downstream distribution"
+      ],
+      "library_references": [
+        "rocPRIM partial_sort/select/sort primitives",
+        "AITER MoE routing patterns",
+        "framework topk/sort references"
+      ]
+    },
+    "layout_transform_copy_pack": {
+      "priority": 9,
+      "aliases": [
+        "transpose",
+        "permute",
+        "contiguous",
+        "copy",
+        "pack",
+        "unpack",
+        "pad",
+        "unpad",
+        "reshape",
+        "layout",
+        "dense_to_jagged",
+        "jagged_to_dense",
+        "memcpy",
+        "memset"
+      ],
+      "scope": "Layout transforms, packing/unpacking, padding/unpadding, contiguous conversion, dtype packing, and copy/memset kernels around compute.",
+      "profiler_symptoms": [
+        "hipMemcpy, copy, contiguous, transpose, pad, unpad, pack, unpack kernels surround hot compute",
+        "compute kernel is fast but e2e region still slow",
+        "many small layout kernels appear between framework ops",
+        "data is converted to a layout then converted back immediately",
+        "VRAM bandwidth is high with low arithmetic work"
+      ],
+      "required_contract_fields": [
+        "source and destination shape",
+        "source and destination stride/layout",
+        "dtype",
+        "padding value",
+        "valid-token or mask semantics",
+        "aliasing/in-place behavior",
+        "consumer and producer ops",
+        "whether layout is reused by multiple consumers"
+      ],
+      "semantic_traps": [
+        "Removing a copy can expose aliasing bugs.",
+        "Contiguous conversion may be required by downstream library.",
+        "Padding value and invalid-token zeroing are semantic, not cosmetic.",
+        "Layout change must include conversion cost in benchmark.",
+        "Async copies require correct synchronization before host/device reads."
+      ],
+      "candidate_methods": [
+        "memory.coalesced_access",
+        "memory.aligned_layout_transform",
+        "compute.thread_coarsening",
+        "latency.ilp_unroll",
+        "memory.cache_policy_glc_slc",
+        "memory.epilogue_fusion"
+      ],
+      "branch_generator_plan": [
+        "fuse transform with single-use producer or consumer",
+        "replace generic contiguous conversion with shape-specialized copy",
+        "vectorize aligned copy or pack",
+        "avoid transform entirely by changing consumer layout",
+        "batch small copies and remove redundant copies"
+      ],
+      "correctness_gates": [
+        "non-contiguous input",
+        "tail dimensions not divisible by vector width",
+        "padding and invalid-token tests",
+        "aliasing test",
+        "consumer parity with transformed layout",
+        "e2e benchmark including all copies"
+      ],
+      "stop_reasons": [
+        "copy is required by external IO or library contract",
+        "layout is reused enough that fusion hurts another consumer",
+        "alignment/tail constraints prevent safe vectorization",
+        "benchmark gain disappears when full region is measured",
+        "host/device sync is the true bottleneck"
+      ],
+      "library_references": [
+        "HIP memory management and stream semantics",
+        "FBGEMM jagged layout conversion patterns",
+        "AITER pack/unpack and cache layout patterns"
+      ]
+    },
+    "conv_pool_stencil": {
+      "priority": 10,
+      "aliases": [
+        "conv",
+        "convolution",
+        "depthwise",
+        "pool",
+        "maxpool",
+        "avgpool",
+        "stencil",
+        "im2col",
+        "winograd"
+      ],
+      "scope": "Convolution, depthwise convolution, pooling, stencil, and im2col-style kernels.",
+      "profiler_symptoms": [
+        "kernels or ops contain conv, convolution, depthwise, pool, stencil, im2col, miopen",
+        "MIOpen fallback or many small conv launches dominate",
+        "im2col or layout transform dominates before GEMM",
+        "depthwise or small-channel conv is memory-bound",
+        "pooling has low arithmetic intensity and poor coalescing"
+      ],
+      "required_contract_fields": [
+        "N,C,H,W or equivalent layout",
+        "kernel size",
+        "stride",
+        "padding",
+        "dilation",
+        "groups",
+        "dtype and accumulation dtype",
+        "input/output layout",
+        "activation or bias fusion",
+        "training_or_inference"
+      ],
+      "semantic_traps": [
+        "Padding convention must match framework exactly.",
+        "Groups/depthwise change memory reuse and indexing.",
+        "Dilation and stride off-by-one errors are common.",
+        "Pooling tie behavior and NaN behavior may matter.",
+        "Backward contracts for conv/pool are separate kernels."
+      ],
+      "candidate_methods": [
+        "memory.coalesced_access",
+        "memory.lds_tiling",
+        "compute.thread_coarsening",
+        "compute.register_pressure_control",
+        "memory.epilogue_fusion",
+        "latency.reduce_barrier",
+        "latency.persistent_scheduler"
+      ],
+      "branch_generator_plan": [
+        "use MIOpen/library path first for standard conv",
+        "avoid im2col materialization when direct kernel or fused path is possible",
+        "specialize depthwise/small-channel kernels separately",
+        "fuse bias/activation/pooling epilogue when single-use",
+        "benchmark against library including layout conversion"
+      ],
+      "correctness_gates": [
+        "odd kernel sizes",
+        "stride and dilation variants",
+        "zero and nonzero padding",
+        "groups/depthwise",
+        "small spatial dimensions",
+        "dtype tolerance",
+        "backward parity if training"
+      ],
+      "stop_reasons": [
+        "MIOpen/library path already fastest",
+        "custom kernel only wins for unsupported rare shape",
+        "layout conversion dominates but cannot be changed",
+        "backward not supported for training path",
+        "padding/group semantics incomplete"
+      ],
+      "library_references": [
+        "MIOpen",
+        "Composable Kernel convolution examples",
+        "HIP stencil patterns"
+      ]
+    },
+    "quant_dequant_cast_pack": {
+      "priority": 11,
+      "aliases": [
+        "quant",
+        "dequant",
+        "fp8",
+        "int8",
+        "int4",
+        "cast",
+        "convert",
+        "pack_bits",
+        "unpack_bits",
+        "scale",
+        "zero_point",
+        "saturation"
+      ],
+      "scope": "Quantization, dequantization, dtype cast, scale application, zero-point, FP8/INT8/INT4 packing and unpacking.",
+      "profiler_symptoms": [
+        "kernels contain quant, dequant, cast, convert, fp8, int8, int4, pack, unpack, scale",
+        "conversion kernels surround GEMM or attention",
+        "global memory bandwidth dominates simple cast/scale kernels",
+        "FP8 or INT4 path has separate pack/unpack overhead",
+        "quantized model e2e does not improve despite faster GEMM"
+      ],
+      "required_contract_fields": [
+        "input/output dtype",
+        "scale shape and broadcast semantics",
+        "zero point",
+        "rounding mode",
+        "saturation/clamp range",
+        "packing layout",
+        "per-tensor/per-channel/per-token scale",
+        "accumulation dtype",
+        "consumer operation"
+      ],
+      "semantic_traps": [
+        "Rounding and saturation are semantic.",
+        "Scale broadcast axis must match reference.",
+        "Packed INT4 nibble order must be exact.",
+        "FP8 format e4m3/e5m2 and architecture conversion path must be explicit.",
+        "Changing accumulation precision can alter accuracy."
+      ],
+      "candidate_methods": [
+        "memory.coalesced_access",
+        "compute.thread_coarsening",
+        "compute.register_pressure_control",
+        "latency.ilp_unroll",
+        "memory.epilogue_fusion",
+        "compute.mmac_tensor_core"
+      ],
+      "branch_generator_plan": [
+        "fuse dequant with consuming GEMM/attention when possible",
+        "fuse quant with producer epilogue",
+        "vectorize pack/unpack when alignment is proven",
+        "use architecture-backed FP8 conversion builtins only with compile probe/source evidence",
+        "keep opt-in flag for precision-changing variants"
+      ],
+      "correctness_gates": [
+        "boundary values",
+        "rounding halfway cases",
+        "saturation edges",
+        "scale broadcast axes",
+        "packed layout roundtrip",
+        "real model quality gate"
+      ],
+      "stop_reasons": [
+        "precision or rounding contract incomplete",
+        "conversion cost is already hidden by consumer",
+        "fused path changes model quality",
+        "unsupported architecture-specific builtin",
+        "packing layout cannot be proven"
+      ],
+      "library_references": [
+        "ROCm AITER quantization and FP8 kernels",
+        "Hygon FP8 builtin references",
+        "CK Tile quantized GEMM examples"
+      ]
+    },
+    "communication_collective_fusion": {
+      "priority": 12,
+      "aliases": [
+        "allreduce",
+        "all_gather",
+        "allgather",
+        "reduce_scatter",
+        "broadcast",
+        "collective",
+        "rccl",
+        "deepep",
+        "flux",
+        "comm_fusion",
+        "overlap"
+      ],
+      "scope": "Communication collectives, communication-compute fusion, dispatch/combine kernels, and overlap patterns.",
+      "profiler_symptoms": [
+        "RCCL or collective calls dominate timeline",
+        "GPU kernels wait around communication",
+        "allgather/reducescatter followed by GEMM or norm",
+        "dispatch/combine appears around MoE routing",
+        "network or Hyswitch counters indicate communication bottleneck"
+      ],
+      "required_contract_fields": [
+        "world size and topology",
+        "tensor shape and dtype",
+        "collective type",
+        "reduction op",
+        "stream dependency",
+        "compute consumer/producer",
+        "ordering and synchronization semantics",
+        "distributed accuracy requirements"
+      ],
+      "semantic_traps": [
+        "Collective ordering must be identical across ranks.",
+        "Overlap must not read incomplete data.",
+        "Fusion may change synchronization visibility.",
+        "Numerical reduction order can change.",
+        "Benchmark must include all ranks and real topology."
+      ],
+      "candidate_methods": [
+        "latency.persistent_scheduler",
+        "latency.waitcnt_pipeline",
+        "memory.epilogue_fusion",
+        "compute.thread_coarsening",
+        "memory.coalesced_access"
+      ],
+      "branch_generator_plan": [
+        "first profile per-rank and collective timeline",
+        "overlap communication with independent compute",
+        "fuse dispatch/combine with local compute when semantics allow",
+        "use DeepEP/Flux patterns as references for MoE style traffic",
+        "validate with distributed correctness and hang detection"
+      ],
+      "correctness_gates": [
+        "multi-rank smoke",
+        "same collective order",
+        "timeout/hang detection",
+        "numeric tolerance for reductions",
+        "e2e throughput across real topology"
+      ],
+      "stop_reasons": [
+        "single-rank benchmark cannot validate communication optimization",
+        "topology or runtime does not support overlap",
+        "collective ordering cannot be safely changed",
+        "gain only appears in synthetic setup",
+        "hang risk exceeds expected gain"
+      ],
+      "library_references": [
+        "RCCL",
+        "DeepEP Hygon reports",
+        "Flux communication-compute fusion reports"
+      ]
+    },
+    "random_dropout_sampling": {
+      "priority": 13,
+      "aliases": [
+        "dropout",
+        "random",
+        "rng",
+        "sampling",
+        "multinomial",
+        "bernoulli",
+        "curand",
+        "rocrand",
+        "philox"
+      ],
+      "scope": "Random number generation, dropout, sampling, and stochastic kernels.",
+      "profiler_symptoms": [
+        "kernels or ops contain dropout, random, rng, sampling, multinomial, bernoulli, philox",
+        "CPU synchronization around sampling",
+        "dropout blocks fusion in training",
+        "random state setup dominates small kernels",
+        "determinism or seed constraints appear in tests"
+      ],
+      "required_contract_fields": [
+        "RNG algorithm",
+        "seed and offset semantics",
+        "determinism requirement",
+        "training_or_inference",
+        "probability distribution",
+        "mask output semantics",
+        "dtype",
+        "state update behavior"
+      ],
+      "semantic_traps": [
+        "Changing RNG sequence changes training semantics.",
+        "Dropout mask must match scaling convention.",
+        "Inference may disable dropout entirely.",
+        "Parallel RNG offset must be deterministic across shapes/ranks if required.",
+        "Sampling tie/probability behavior affects model output."
+      ],
+      "candidate_methods": [
+        "compute.thread_coarsening",
+        "memory.coalesced_access",
+        "latency.ilp_unroll",
+        "memory.epilogue_fusion"
+      ],
+      "branch_generator_plan": [
+        "avoid fusing stochastic ops unless RNG contract is explicit",
+        "separate inference no-random fast path",
+        "batch random generation or fuse mask application with consumer",
+        "use rocRAND/framework RNG when deterministic contract is strict",
+        "mark approximate sampling changes as opt-in"
+      ],
+      "correctness_gates": [
+        "fixed seed reproducibility",
+        "distribution sanity test",
+        "dropout scaling parity",
+        "training smoke",
+        "multi-rank seed/offset if distributed"
+      ],
+      "stop_reasons": [
+        "RNG sequence must be bitwise stable and custom path cannot match",
+        "sampling semantics affect accuracy",
+        "dropout disabled in target eval path",
+        "RNG is not material share of runtime",
+        "framework RNG state integration is unsafe"
+      ],
+      "library_references": [
+        "rocRAND",
+        "framework Philox/RNG implementations"
+      ]
+    },
+    "host_device_bubble": {
+      "priority": 14,
+      "aliases": [
+        "bubble",
+        "gap",
+        "hipmemcpy",
+        "memcpy",
+        "sync",
+        "synchronize",
+        "allocation",
+        "dataloader",
+        "host",
+        "cpu_wait",
+        "stream_wait"
+      ],
+      "scope": "Host scheduling gaps, device idle bubbles, host-device copies, synchronization, allocation, and data pipeline stalls.",
+      "profiler_symptoms": [
+        "timeline has gaps between GPU kernels",
+        "HIP runtime time is high but kernel time is low",
+        "hipMemcpy/hipMemcpyWithStream/memset/allocation/sync appears near hot region",
+        "GPU utilization drops between steps or during eval",
+        "profiler on/off changes runtime significantly"
+      ],
+      "required_contract_fields": [
+        "step boundaries",
+        "host timings",
+        "copy size/direction",
+        "tensor device and pinned status",
+        "stream dependencies",
+        "synchronization callsite",
+        "data loader settings",
+        "metric host reads"
+      ],
+      "semantic_traps": [
+        "Removing synchronization can read stale data.",
+        "Async copy requires correct dependency graph.",
+        "Pinned memory changes performance but not semantics; still benchmark e2e.",
+        "Metric code may intentionally sync for correctness.",
+        "Profiler overhead can look like a bubble."
+      ],
+      "candidate_methods": [
+        "latency.host_instrumentation",
+        "memory.aligned_layout_transform",
+        "memory.coalesced_access",
+        "latency.persistent_scheduler"
+      ],
+      "branch_generator_plan": [
+        "add host instrumentation first",
+        "profile with and without profiler",
+        "remove or batch unnecessary copies",
+        "move invariant preprocessing out of hot loop",
+        "overlap copy and compute only with proven dependencies"
+      ],
+      "correctness_gates": [
+        "same input ordering",
+        "same sample count",
+        "same metric denominator",
+        "explicit sync before host reads",
+        "benchmark includes required copies"
+      ],
+      "stop_reasons": [
+        "bubble below noise threshold",
+        "copy required by external IO and cannot overlap",
+        "metric/data ordering would change",
+        "profiler overhead is the main source",
+        "host bottleneck outside project scope"
+      ],
+      "library_references": [
+        "HIP stream and memory management docs",
+        "HCU profiler reports",
+        "host instrumentation workflow"
+      ]
+    }
+  }
+}

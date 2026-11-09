@@ -1,0 +1,6 @@
+interface:
+  display_name: "LightOp 算子知识"
+  short_description: "为 DCU/ROCm 上的 LightOp 融合算子开发与优化检索 HIP 优化方法及本地、上游实现证据"
+  default_prompt: "使用 $lightop-kernel-knowledge 描述一个有代表性的任务。"
+policy:
+  allow_implicit_invocation: true

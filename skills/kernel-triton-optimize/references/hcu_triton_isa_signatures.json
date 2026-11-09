@@ -1,0 +1,192 @@
+{
+  "$note": "ttgir_patterns match Triton cache .ttgir MLIR (tt./ttg./amdg. ops). isa_patterns match the isa layer in isa_check.py: .amdgcn cache assembly plus dccobjdump output on hsaco. Do not use llir_patterns, llir_check_optional, llvm.hcu.*, or MLIR ops in isa_patterns.",
+  "$version": "0.5",
+  "$ttgir_sources": [
+    "triton/include/triton/Dialect/Triton/IR/TritonOps.td",
+    "triton/include/triton/Dialect/Triton/IR/TritonAttrDefs.td",
+    "triton/include/triton/Dialect/TritonGPU/IR/TritonGPUOps.td",
+    "triton/include/triton/Dialect/TritonGPU/IR/TritonGPUAttrDefs.td",
+    "triton/third_party/amd/include/Dialect/TritonAMDGPU/IR/TritonAMDGPUOps.td"
+  ],
+  "methods": {
+    "triton.dot_mmac_shape": {
+      "isa_check_optional": false,
+      "ttgir_check_optional": false,
+      "ttgir_patterns": [
+        "\\btt\\.dot(?:_scaled)?\\b",
+        "#ttg\\.dot_op<",
+        "#ttg\\.amd_mfma<",
+        "mmacLayout\\s*=\\s*\"(?:legacy|interleave|transpose|interleave_transpose|mfma)\"",
+        "\\b(?:lhs|rhs)\\s*=\\s*#tt<\"(?:fp16|bf16)\">",
+        "\\btt\\.dot(?:_scaled)?\\b[^\\n]*\\b(?:f16|bf16)\\b"
+      ],
+      "isa_patterns": [
+        "\\bv_mmac(?:_[a-z0-9]+)+\\b",
+        "\\bmmop\\b"
+      ],
+      "require_any": true
+    },
+    "triton.low_precision_fp8_bf8": {
+      "isa_check_optional": false,
+      "ttgir_check_optional": false,
+      "ttgir_patterns": [
+        "\\btt\\.dot_scaled\\b",
+        "\\btt\\.dot\\b[^\\n]*f8E[45]M[23][A-Za-z0-9]*",
+        "f8E[45]M[23][A-Za-z0-9]*[^\\n]*#ttg\\.dot_op<",
+        "\\b(?:lhs|rhs)\\s*=\\s*#tt<\"(?:e4m3|e5m2|e2m1|e2m3|e3m2)\">",
+        "\\btt\\.dot(?:_scaled)?\\b[^\\n]*\\bf8E[45]M[23]FN?\\b",
+        "\\bamdg\\.scaled_upcast_fp8\\b"
+      ],
+      "isa_patterns": [
+        "\\bv_cvt(?:_[a-z0-9]+)*(?:fp8|bf8|tf32)",
+        "\\bv_mmac_[a-z0-9_]*(?:fp8|bf8|tf32)[a-z0-9_]*\\b"
+      ],
+      "require_any": true
+    },
+    "triton.program_geometry_occupancy": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.work_granularity": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.register_pressure_control": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.fast_math_lowering": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.tile_shape": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.coalesced_load_store": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.vectorized_load_store": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": [
+        "\\b(?:global|buffer|flat)_(?:load|store)_dwordx[234]\\b",
+        "\\b(?:global|buffer|flat)_(?:load|store)_b(?:64|128)\\b"
+      ],
+      "require_any": true
+    },
+    "triton.layout_stride_transform": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.async_copy_global_to_lds": {
+      "isa_check_optional": false,
+      "ttgir_check_optional": false,
+      "ttgir_patterns": [
+        "\\bamdg\\.buffer_load_to_local\\b",
+        "\\bttg\\.async_copy_global_to_local\\b"
+      ],
+      "isa_patterns": [
+        "\\braw_buffer_load_lds\\b",
+        "\\bbuffer_load_[a-z0-9x_]+\\b.*\\blds\\b",
+        "\\bglobal_load_[a-z0-9x_]+\\b.*\\blds\\b"
+      ],
+      "require_any": true
+    },
+    "triton.matrix_ds_mls": {
+      "isa_check_optional": false,
+      "ttgir_check_optional": false,
+      "ttgir_patterns": [
+        "\\btt\\.matrix_load\\b",
+        "\\bamdg\\.matrix_load_to_local\\b",
+        "\\bamdg\\.local_load_packed_tranposed\\b"
+      ],
+      "isa_patterns": [
+        "\\bmatrix_load(?:_[a-z0-9]+)*\\b",
+        "\\bmls\\b",
+        "\\bds_read_m32x16_b16(?:_alt)?\\b",
+        "\\bds_read_m32x32_b8\\b",
+        "\\bds_read_m32x64_b4\\b",
+        "\\bds_read_m32x8_b32\\b",
+        "\\bds_read_matrix(?:_trans)?_format_[a-z0-9_]+\\b"
+      ],
+      "require_any": true
+    },
+    "triton.layout_conversion_optimization": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.cache_policy_buffer_ops": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": false,
+      "ttgir_patterns": [
+        "cacheModifier\\s*=\\s*(?:#tt<\"(?!none)[^\"]+\">|\\w+)"
+      ],
+      "isa_patterns": [
+        "\\bglc\\b",
+        "\\bslc\\b"
+      ],
+      "require_any": true
+    },
+    "triton.block_size": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.mask_simplification": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.num_stages_pipeline": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.barrier_scope_reduction": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.persistent_programs": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.split_k_streamk": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    },
+    "triton.runtime_config_key": {
+      "isa_check_optional": true,
+      "ttgir_check_optional": true,
+      "ttgir_patterns": [],
+      "isa_patterns": []
+    }
+  }
+}

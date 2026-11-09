@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dcu Profiler Report"
+  short_description: "Use when a LightOp DCU/ROCm operator needs profiling evidence: run hipprof or deeper ROCm/DTK profil"
+  default_prompt: "Use $dcu-profiler-report to describe a representative task."
+policy:
+  allow_implicit_invocation: true

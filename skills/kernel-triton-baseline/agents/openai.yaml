@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kernel Triton Baseline"
+  short_description: "海光 HCU Python/Triton 正确性优先基线生成器。从 Torch/Python/Triton 参考实现 + shape hints 生成 benchmark 兼容的 kernel.py "
+  default_prompt: "Use $kernel-triton-baseline to describe a representative task."
+
+policy:
+  allow_implicit_invocation: true

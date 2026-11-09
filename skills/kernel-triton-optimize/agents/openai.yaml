@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kernel Triton Optimize"
+  short_description: "海光 HCU/HCU Python/Triton kernel 的 roofline 驱动迭代优化器。通过固定配置 benchmark、xcu/hipprof profiling、本地 KB 知识检索"
+  default_prompt: "Use $kernel-triton-optimize to describe a representative task."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kernel Hip Handbook"
+  short_description: "海光 BW 系列 HCU HIP Kernel 深度性能优化指南（3500+ 行）。覆盖 roofline 分析、指令级优化（ISA 验证、dccobjdump）、共享内存/LDS 调优、Occupa"
+  default_prompt: "Use $kernel-hip-handbook to describe a representative task."
+
+policy:
+  allow_implicit_invocation: true

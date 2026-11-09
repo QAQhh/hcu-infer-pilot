@@ -1,0 +1,4 @@
+interface:
+  display_name: HCU Model & Kernel Optimizer
+  short_description: 一体化诊断、验证并优化海光 HCU 模型、算子与内核性能
+  default_prompt: Use $kernel-model-triage to build a reproducible HCU model-to-kernel performance and correctness optimization loop.

@@ -1,0 +1,2 @@
+# pip install pyyaml numpy
+# 需要 HCU 环境: hipcc + hipprof + dccobjdump + rocminfo + rocm-smi

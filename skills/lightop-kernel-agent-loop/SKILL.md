@@ -1,0 +1,26 @@
+---
+name: lightop-kernel-agent-loop
+description: 在 DCU/ROCm 上新增或优化 LightOp 算子：恢复语义与工作负载契约，依据 HIP 性能证据选择优化方法，完成实现、构建、正确性、基准测量、ISA 核验和消融归因。
+---
+
+# LightOp 算子智能体闭环
+
+直接执行证据驱动的 HIP 优化闭环，不使用 Humanize、RLCR、Stop hook 或外部复核 CLI 驱动算子优化。
+
+开始前阅读[完整工作流](references/full-workflow.md)和[HIP 优化规则](references/hip-optimization-rules.md)。前者定义 LightOp 集成与验收，后者将 `kernel-hip-handbook` 和 `kernel-hip-optimize` 的知识转化为本闭环的选法、验证与停止规则。命令路径相对于对应 Skill 根目录解析。
+
+## 必须执行的优化规则
+
+1. 恢复 K/R/W/E，核实实际 gfx、工具链、设备状态和基线；先正确性、再同卡配对计时和 profiling。
+2. 根据 FLOPs/读写字节、实测带宽、PMC 与资源信息区分 compute/memory/latency/launch 瓶颈。按证据选择结构重构、访存、wave64 归约、LDS、寄存器、流水线或 shape 特化；不机械套用手册参数或收益数字。
+3. 每个候选围绕一个主要假设，记录来源、适用条件、预期指标变化和父版本。保留当前最佳可回退实现，候选按顺序在同一空闲卡验证。
+4. 保持 LightOp `.cu` 源码、wrapper/绑定/config 和 `python setup.py install` 集成契约。矩阵路径优先考虑本工程已支持的 CK Tile/HCU 实现；不将独立 optimizer 的 `solve(...)` scaffold 直接作为 LightOp 集成结果。
+5. 每个候选经构建、正确性、同步 benchmark、profile 后决策。涉及 builtin、向量指令、MMAC 或流水线的声明，还需目标编译探针及最终二进制的 `dccobjdump` 证据。
+6. 分开判定“候选实测加速”和“方法贡献成立”。对组合优化做受控消融；无关符号、空 dump 或占位消融不能证明有效性。
+7. 更新 `.lightop-kernel-agent/` 状态；达到目标并完成回归才报告达标。预算耗尽、证据不足或平台期按详细规则停止并报告当前最佳及未达标项。
+
+## 配套知识与性能分析
+
+研究使用内置 [lightop-kernel-knowledge](assets/lightop-kernel-knowledge/instructions.md)，性能分析使用 [dcu-profiler-report](assets/dcu-profiler-report/instructions.md)。两者包含所需脚本和离线来源索引；命令相对于各自目录运行。
+
+深度优化按 [HIP 优化规则](references/hip-optimization-rules.md) 中的来源映射读取同级 `kernel-hip-handbook` / `kernel-hip-optimize`。它们是扩展知识来源，不是启动依赖；缺失时仍可执行本文及内置规则，但不能声称读取了缺失资料或调用不存在的脚本。

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kernel Hip Optimize"
+  short_description: "海光 HCU HIP/CK Tile kernel 迭代优化器。使用 hipprof→roofline 量化→ISA 验证（dccobjdump）→Branch 探索→Ablation 归因→经验记录"
+  default_prompt: "Use $kernel-hip-optimize to describe a representative task."
+
+policy:
+  allow_implicit_invocation: true

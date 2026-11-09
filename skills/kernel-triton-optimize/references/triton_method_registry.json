@@ -1,0 +1,373 @@
+{
+  "$signatures": "references/hcu_triton_isa_signatures.json",
+  "methods": {
+    "triton.dot_mmac_shape": {
+      "axis": "compute",
+      "priority": 1,
+      "min_sm": 928,
+      "hip_equivalent": "compute.mmac_tensor_core",
+      "evidence": [
+        "triton_cache",
+        "ttgir",
+        "llir",
+        "isa",
+        "timing"
+      ],
+      "require_any": true
+    },
+    "triton.low_precision_fp8_bf8": {
+      "axis": "compute",
+      "priority": 2,
+      "min_sm": 928,
+      "path_min_sm": {
+        "fp8_bf8": 938,
+        "tf32": 928
+      },
+      "hip_equivalent": "compute.mixed_precision_fp8_bf8",
+      "evidence": [
+        "llir",
+        "isa",
+        "accuracy",
+        "timing"
+      ],
+      "require_any": true
+    },
+    "triton.program_geometry_occupancy": {
+      "axis": "compute",
+      "priority": 3,
+      "min_sm": 928,
+      "hip_equivalent": "compute.launch_config_wave64",
+      "evidence": [
+        "active_config",
+        "metadata",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.work_granularity": {
+      "axis": "compute",
+      "priority": 5,
+      "min_sm": 928,
+      "hip_equivalent": "compute.thread_coarsening",
+      "evidence": [
+        "source",
+        "active_config",
+        "metadata",
+        "resource_usage",
+        "correctness",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.register_pressure_control": {
+      "axis": "compute",
+      "priority": 6,
+      "min_sm": 928,
+      "hip_equivalent": "compute.register_pressure_control",
+      "evidence": [
+        "metadata",
+        "resource_usage",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.fast_math_lowering": {
+      "axis": "compute",
+      "priority": 7,
+      "min_sm": 928,
+      "hip_equivalent": "compute.fast_math_intrinsics",
+      "evidence": [
+        "llir",
+        "isa",
+        "accuracy",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.tile_shape": {
+      "axis": "compute",
+      "priority": 9,
+      "min_sm": 928,
+      "triton_added": true,
+      "evidence": [
+        "active_config",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.coalesced_load_store": {
+      "axis": "memory",
+      "priority": 1,
+      "min_sm": 928,
+      "hip_equivalent": "memory.coalesced_access",
+      "evidence": [
+        "source",
+        "addressing",
+        "bandwidth",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.vectorized_load_store": {
+      "axis": "memory",
+      "priority": 3,
+      "min_sm": 928,
+      "hip_equivalent": "memory.vectorized_global_access",
+      "evidence": [
+        "axis_info",
+        "ttgir",
+        "llir",
+        "isa",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.layout_stride_transform": {
+      "axis": "memory",
+      "priority": 4,
+      "min_sm": 928,
+      "hip_equivalent": "memory.aligned_layout_transform",
+      "evidence": [
+        "source",
+        "addressing",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.async_copy_global_to_lds": {
+      "axis": "memory",
+      "priority": 5,
+      "min_sm": 928,
+      "hip_equivalent": "memory.global_to_lds_async",
+      "evidence": [
+        "llir",
+        "isa",
+        "timing"
+      ],
+      "require_any": true
+    },
+    "triton.matrix_ds_mls": {
+      "axis": "memory",
+      "priority": 6,
+      "min_sm": 936,
+      "hip_equivalent": [
+        "memory.matrix_load_mls",
+        "memory.ds_read_matrix_layout"
+      ],
+      "evidence": [
+        "ttgir",
+        "llir",
+        "isa",
+        "correctness",
+        "timing"
+      ],
+      "require_any": true
+    },
+    "triton.layout_conversion_optimization": {
+      "axis": "memory",
+      "priority": 7,
+      "min_sm": 928,
+      "triton_added": true,
+      "evidence": [
+        "ttgir_delta",
+        "lds_traffic",
+        "timing"
+      ],
+      "isa_check_optional": true,
+      "description": "Optimize layout conversion between #ttg.blocked and #ttg.dot_op encodings. Layout conversion via ttg.convert_layout generates LDS traffic; reducing unnecessary conversions or choosing tile sizes that minimize conversion overhead improves performance."
+    },
+    "triton.cache_policy_buffer_ops": {
+      "axis": "memory",
+      "priority": 10,
+      "min_sm": 928,
+      "hip_equivalent": "memory.cache_policy_glc_slc",
+      "evidence": [
+        "env",
+        "triton_cache",
+        "isa",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.epilogue_fusion": {
+      "axis": "memory",
+      "priority": 11,
+      "min_sm": 928,
+      "hip_equivalent": "memory.epilogue_fusion",
+      "evidence": [
+        "source",
+        "kernel_count",
+        "memory_traffic",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.block_size": {
+      "axis": "memory",
+      "priority": 12,
+      "min_sm": 928,
+      "triton_added": true,
+      "evidence": [
+        "active_config",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.mask_simplification": {
+      "axis": "memory",
+      "secondary_axes": [
+        "compute"
+      ],
+      "secondary_priorities": {
+        "compute": 4
+      },
+      "priority": 2,
+      "min_sm": 928,
+      "triton_added": true,
+      "evidence": [
+        "source",
+        "ttir",
+        "ttgir",
+        "llir",
+        "isa",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.num_stages_pipeline": {
+      "axis": "latency",
+      "priority": 1,
+      "min_sm": 928,
+      "hip_equivalent": "latency.waitcnt_pipeline",
+      "evidence": [
+        "active_config",
+        "resource_usage",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.ilp_unroll": {
+      "axis": "latency",
+      "priority": 2,
+      "min_sm": 928,
+      "hip_equivalent": "latency.ilp_unroll",
+      "evidence": [
+        "source",
+        "resource_usage",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.barrier_scope_reduction": {
+      "axis": "latency",
+      "priority": 3,
+      "min_sm": 928,
+      "hip_equivalent": "latency.reduce_barrier",
+      "evidence": [
+        "ttgir_delta",
+        "isa_delta",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.split_k_streamk": {
+      "axis": "latency",
+      "priority": 4,
+      "secondary_axes": [
+        "compute"
+      ],
+      "secondary_priorities": {
+        "compute": 6
+      },
+      "min_sm": 928,
+      "hip_equivalent": "latency.split_k_streamk",
+      "evidence": [
+        "source",
+        "active_config",
+        "correctness",
+        "timing"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.persistent_programs": {
+      "axis": "latency",
+      "priority": 5,
+      "min_sm": 928,
+      "hip_equivalent": "latency.persistent_scheduler",
+      "evidence": [
+        "source",
+        "active_config",
+        "timing"
+      ],
+      "isa_check_optional": true
+    }
+  },
+  "required_practices": {
+    "triton.shape_family_workflow": {
+      "min_sm": 928,
+      "triton_added": true,
+      "scope": "pre_axis_shape_family_split",
+      "not_methods_json": true,
+      "max_families": 3,
+      "family_names": [
+        "small",
+        "middle",
+        "large"
+      ],
+      "evidence": [
+        "shape_family_plan",
+        "per_family_runs",
+        "per_family_final_bench",
+        "dispatch_manifest"
+      ],
+      "isa_check_optional": true
+    },
+    "triton.runtime_config_key": {
+      "min_sm": 928,
+      "triton_added": true,
+      "scope": "cross_axis_config_dispatch",
+      "not_methods_json": true,
+      "evidence": [
+        "active_config",
+        "accepted_configs",
+        "timing"
+      ],
+      "isa_check_optional": true
+    }
+  },
+  "coupled_methods": [
+    {
+      "ids": [
+        "triton.dot_mmac_shape",
+        "triton.matrix_ds_mls"
+      ],
+      "note": "HCU matmul staging is dot/MMAC + combined MLS+DS-read path; do not split MLS and ds_read into separate method claims."
+    },
+    {
+      "ids": [
+        "triton.program_geometry_occupancy",
+        "triton.work_granularity",
+        "triton.register_pressure_control",
+        "triton.num_stages_pipeline"
+      ],
+      "note": "Geometry, per-lane work granularity, pressure, and stage count are tightly coupled; avoid double-counting one config change."
+    },
+    {
+      "ids": [
+        "triton.coalesced_load_store",
+        "triton.vectorized_load_store",
+        "triton.mask_simplification",
+        "triton.work_granularity",
+        "triton.block_size"
+      ],
+      "note": "Memory config and source changes may overlap; per-lane work changes can affect block size, coalescing, and vectorization, so keep attribution explicit."
+    },
+    {
+      "ids": [
+        "triton.layout_conversion_optimization",
+        "triton.matrix_ds_mls"
+      ],
+      "note": "Layout conversion and DS matrix read are tightly coupled; optimizing one may affect the other."
+    }
+  ]
+}

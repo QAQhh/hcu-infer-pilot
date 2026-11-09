@@ -1,0 +1,2 @@
+# pip install triton numpy pyyaml
+# 需要 HCU 环境: xcu/hipprof + dccobjdump + Triton 编译器
