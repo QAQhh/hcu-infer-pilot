@@ -1,0 +1,4 @@
+interface:
+  display_name: "hipBLASLt / rocBLAS GEMM 调优"
+  short_description: "抓取32k真实GEMM，幂次点调优并补齐全部尺寸，验证算子精度和性能"
+  default_prompt: "使用 $hipblaslt-rocblas-tuning 抓取32k输入的GEMM shape，对幂次M调优、最近点补齐，并验证单算子精度和性能。"

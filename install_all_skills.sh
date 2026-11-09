@@ -48,6 +48,7 @@ REGULAR_SKILLS=(
   "kb-update|${REPO_ROOT}/skills/kb-update"
   "kb-ingest|${REPO_ROOT}/skills/kb-ingest"
   "kb-search|${REPO_ROOT}/skills/kb-search"
+  "hipblaslt-rocblas-tuning|${REPO_ROOT}/skills/hipblaslt-rocblas-tuning"
 )
 
 HUMANIZE_SKILLS=(
@@ -94,6 +95,7 @@ Installed skills:
   kb-update
   kb-ingest
   kb-search
+  hipblaslt-rocblas-tuning
   ask-codex
   ask-gemini
   humanize
@@ -140,6 +142,10 @@ resolve_repo_root() {
     "model-pr-optimization-hg-history|${REPO_ROOT}/model-pr-optimization-hg-history"
     "lightop-kernel-knowledge|${REPO_ROOT}/skills/lightop-skills/knowledge"
     "hcu-aiter-moe-tuning|${REPO_ROOT}/skills/hcu-aiter-moe-tuning"
+    "kb-update|${REPO_ROOT}/skills/kb-update"
+    "kb-ingest|${REPO_ROOT}/skills/kb-ingest"
+    "kb-search|${REPO_ROOT}/skills/kb-search"
+    "hipblaslt-rocblas-tuning|${REPO_ROOT}/skills/hipblaslt-rocblas-tuning"
   )
 }
 
